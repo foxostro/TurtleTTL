@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:TheMachine-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -101,7 +100,7 @@ $EndSheet
 $Sheet
 S 6500 5800 1500 500 
 U 5D2C12A5
-F0 "Sheet5D2C12A4" 50
+F0 "Bus Display" 50
 F1 "Bus Display.sch" 50
 $EndSheet
 $Sheet

@@ -57,7 +57,7 @@ F 3 "~" H 5750 2750 50  0001 C CNN
 	1    5750 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 6500 3000 2    50   Output ~ 0
+Text GLabel 6300 3000 2    50   Output ~ 0
 ~RST
 Wire Wire Line
 	4600 3000 5000 3000
@@ -68,7 +68,7 @@ Wire Wire Line
 	5750 3100 5750 3000
 Connection ~ 5750 3000
 Wire Wire Line
-	5750 3000 6500 3000
+	5750 3000 6300 3000
 Wire Wire Line
 	5750 3000 5750 2900
 $Comp
