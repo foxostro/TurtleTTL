@@ -313,6 +313,19 @@ Text GLabel 9350 5850 2    50   Output ~ 0
 ClockRate1
 Text GLabel 9350 5700 2    50   Output ~ 0
 ClockRate0
+$Comp
+L Device:R_Network09_US RN?
+U 1 1 5D2074CE
+P 4950 2400
+F 0 "RN?" V 5575 2400 50  0000 C CNN
+F 1 "4.7K" V 5484 2400 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 5525 2400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4950 2400 50  0001 C CNN
+	1    4950 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 2800 4600 2800
 Connection ~ 4600 2800
 Wire Wire Line
 	4600 2800 4600 3400
@@ -342,75 +355,58 @@ F 3 "~" H 6350 1550 50  0001 C CNN
 	1    6350 1550
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	6650 1750 6650 3300
+Wire Wire Line
+	6550 1750 6550 2500
+Wire Wire Line
+	6450 1750 6450 2400
+Wire Wire Line
+	6350 1750 6350 2300
+Wire Wire Line
+	6250 2900 6250 2200
+Wire Wire Line
+	6150 1750 6150 2100
+Wire Wire Line
+	6050 1750 6050 2000
 NoConn ~ 5950 1750
 Wire Wire Line
-	6750 1750 6750 2000
+	6750 1750 6750 2600
 Wire Wire Line
 	6750 2600 8650 2600
+Wire Wire Line
+	5150 2000 6050 2000
+Connection ~ 6050 2000
+Wire Wire Line
+	6050 2000 6050 2700
+Wire Wire Line
+	5150 2100 6150 2100
+Connection ~ 6150 2100
+Wire Wire Line
+	6150 2100 6150 2800
+Wire Wire Line
+	5150 2200 6250 2200
+Connection ~ 6250 2200
+Wire Wire Line
+	6250 2200 6250 1750
+Wire Wire Line
+	5150 2300 6350 2300
+Connection ~ 6350 2300
+Wire Wire Line
+	6350 2300 6350 3200
+Wire Wire Line
+	5150 2400 6450 2400
+Connection ~ 6450 2400
+Wire Wire Line
+	6450 2400 6450 3100
+Wire Wire Line
+	5150 2500 6550 2500
+Connection ~ 6550 2500
+Wire Wire Line
+	6550 2500 6550 3000
+Wire Wire Line
+	5150 2600 6750 2600
+Connection ~ 6750 2600
+NoConn ~ 5150 2700
 NoConn ~ 5150 2800
-Wire Wire Line
-	4750 2800 4600 2800
-$Comp
-L Device:R_Network09_US RN?
-U 1 1 5D2074CE
-P 4950 2400
-F 0 "RN?" V 5575 2400 50  0000 C CNN
-F 1 "4.7K" V 5484 2400 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP10" V 5525 2400 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4950 2400 50  0001 C CNN
-	1    4950 2400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6650 1750 6650 2100
-Wire Wire Line
-	6550 1750 6550 2200
-Wire Wire Line
-	6450 1750 6450 2300
-Wire Wire Line
-	6350 1750 6350 2400
-Wire Wire Line
-	6250 1750 6250 2500
-Wire Wire Line
-	6150 1750 6150 2600
-Wire Wire Line
-	6050 1750 6050 2700
-Wire Wire Line
-	5150 2000 6750 2000
-Connection ~ 6750 2000
-Wire Wire Line
-	6750 2000 6750 2600
-Wire Wire Line
-	5150 2100 6650 2100
-Connection ~ 6650 2100
-Wire Wire Line
-	6650 2100 6650 3300
-Wire Wire Line
-	5150 2200 6550 2200
-Connection ~ 6550 2200
-Wire Wire Line
-	6550 2200 6550 3000
-Wire Wire Line
-	5150 2300 6450 2300
-Connection ~ 6450 2300
-Wire Wire Line
-	6450 2300 6450 3100
-Wire Wire Line
-	5150 2400 6350 2400
-Connection ~ 6350 2400
-Wire Wire Line
-	6350 2400 6350 3200
-Wire Wire Line
-	5150 2500 6250 2500
-Connection ~ 6250 2500
-Wire Wire Line
-	6250 2500 6250 2900
-Wire Wire Line
-	5150 2600 6150 2600
-Connection ~ 6150 2600
-Wire Wire Line
-	6150 2600 6150 2800
-Wire Wire Line
-	5150 2700 6050 2700
-Connection ~ 6050 2700
 $EndSCHEMATC
