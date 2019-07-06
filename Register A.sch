@@ -11,7 +11,7 @@ Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Register A is wired to the ALU's A operand."
 $EndDescr
 $Comp
 L 74xx:74LS245 U?

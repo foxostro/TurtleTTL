@@ -11,12 +11,14 @@ Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Register B is wired to the ALU's B operand."
 $EndDescr
 $Comp
 L 74xx:74LS245 U?
 U 1 1 5D29B68D
 P 5300 3300
+AR Path="/5D2C0CA7/5D29B68D" Ref="U?"  Part="1" 
+AR Path="/5D2C0D13/5D29B68D" Ref="U?"  Part="1" 
 F 0 "U?" H 5300 4281 50  0000 C CNN
 F 1 "74LS245" H 5300 4190 50  0000 C CNN
 F 2 "" H 5300 3300 50  0001 C CNN
@@ -28,6 +30,8 @@ $Comp
 L 74xx:74LS377 U?
 U 1 1 5D29B693
 P 7350 3300
+AR Path="/5D2C0CA7/5D29B693" Ref="U?"  Part="1" 
+AR Path="/5D2C0D13/5D29B693" Ref="U?"  Part="1" 
 F 0 "U?" H 7350 4281 50  0000 C CNN
 F 1 "74LS377" H 7350 4190 50  0000 C CNN
 F 2 "" H 7350 3300 50  0001 C CNN
@@ -41,6 +45,8 @@ $Comp
 L power:VCC #PWR?
 U 1 1 5D29B69A
 P 6350 2400
+AR Path="/5D2C0CA7/5D29B69A" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C0D13/5D29B69A" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 6350 2250 50  0001 C CNN
 F 1 "VCC" H 6367 2573 50  0000 C CNN
 F 2 "" H 6350 2400 50  0001 C CNN
@@ -52,6 +58,8 @@ $Comp
 L power:GND #PWR?
 U 1 1 5D29B6A0
 P 7350 4150
+AR Path="/5D2C0CA7/5D29B6A0" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C0D13/5D29B6A0" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7350 3900 50  0001 C CNN
 F 1 "GND" H 7355 3977 50  0000 C CNN
 F 2 "" H 7350 4150 50  0001 C CNN
