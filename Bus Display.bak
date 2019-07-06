@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:TheMachine-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 17
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -14,4 +13,126 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L LED:HDSP-4830_2 BAR?
+U 1 1 5D20C448
+P 5500 3100
+F 0 "BAR?" V 5454 3630 50  0000 L CNN
+F 1 "HDSP-4830_2" V 5545 3630 50  0000 L CNN
+F 2 "Display:HDSP-4830" H 5500 2300 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 3500 3300 50  0001 C CNN
+	1    5500 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L LED:HDSP-4830_2 BAR?
+U 1 1 5D20E58E
+P 7300 3100
+F 0 "BAR?" V 7254 3630 50  0000 L CNN
+F 1 "HDSP-4830_2" V 7345 3630 50  0000 L CNN
+F 2 "Display:HDSP-4830" H 7300 2300 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 5300 3300 50  0001 C CNN
+	1    7300 3100
+	0    1    1    0   
+$EndComp
+NoConn ~ 6800 3300
+NoConn ~ 6900 3300
+NoConn ~ 5000 3300
+NoConn ~ 5100 3300
+$Comp
+L Device:R_Network08_US RN?
+U 1 1 5D21D836
+P 7300 3650
+F 0 "RN?" H 6820 3604 50  0000 R CNN
+F 1 "R_Network08_US" H 6820 3695 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 7775 3650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7300 3650 50  0001 C CNN
+	1    7300 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Network08_US RN?
+U 1 1 5D21FD87
+P 5500 3650
+F 0 "RN?" H 5020 3604 50  0000 R CNN
+F 1 "R_Network08_US" H 5020 3695 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 5975 3650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5500 3650 50  0001 C CNN
+	1    5500 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 3300 7000 3450
+Wire Wire Line
+	7100 3450 7100 3300
+Wire Wire Line
+	7200 3300 7200 3450
+Wire Wire Line
+	7300 3450 7300 3300
+Wire Wire Line
+	7400 3300 7400 3450
+Wire Wire Line
+	7500 3450 7500 3300
+Wire Wire Line
+	7600 3300 7600 3450
+Wire Wire Line
+	7700 3450 7700 3300
+Wire Wire Line
+	5900 3300 5900 3450
+Wire Wire Line
+	5800 3450 5800 3300
+Wire Wire Line
+	5700 3300 5700 3450
+Wire Wire Line
+	5600 3450 5600 3300
+Wire Wire Line
+	5500 3300 5500 3450
+Wire Wire Line
+	5400 3450 5400 3300
+Wire Wire Line
+	5300 3300 5300 3450
+Wire Wire Line
+	5200 3450 5200 3300
+$Comp
+L Device:R_Network08_US RN?
+U 1 1 5D225626
+P 4600 2350
+F 0 "RN?" V 5125 2350 50  0000 C CNN
+F 1 "R_Network08_US" V 5034 2350 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 5075 2350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4600 2350 50  0001 C CNN
+	1    4600 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Network08_US RN?
+U 1 1 5D227C74
+P 8150 2450
+F 0 "RN?" V 7533 2450 50  0000 C CNN
+F 1 "R_Network08_US" V 7624 2450 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 8625 2450 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8150 2450 50  0001 C CNN
+	1    8150 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 4000 5900 3850
+Wire Wire Line
+	5900 4000 7700 4000
+Wire Wire Line
+	7700 4000 7700 3850
+Wire Wire Line
+	8350 2050 8500 2050
+Wire Wire Line
+	8500 2050 8500 4000
+Wire Wire Line
+	8500 4000 7700 4000
+Connection ~ 7700 4000
+Wire Wire Line
+	4400 2750 4300 2750
+Wire Wire Line
+	4300 2750 4300 4000
+Wire Wire Line
+	4300 4000 5900 4000
+Connection ~ 5900 4000
 $EndSCHEMATC
