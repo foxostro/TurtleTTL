@@ -5,7 +5,7 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 10 19
-Title ""
+Title "Output Display"
 Date ""
 Rev ""
 Comp ""
