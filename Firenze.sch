@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 18
+Sheet 1 19
 Title "Firenze"
 Date ""
 Rev ""
@@ -68,31 +68,31 @@ F0 "Output Register" 50
 F1 "Output Register.sch" 50
 $EndSheet
 $Sheet
-S 6500 1600 1500 500 
+S 6500 2300 1500 500 
 U 5D2C0CA7
 F0 "Register A" 50
 F1 "Register A.sch" 50
 $EndSheet
 $Sheet
-S 6500 2300 1500 500 
+S 6500 3000 1500 500 
 U 5D2C0CE4
 F0 "ALU" 50
 F1 "ALU.sch" 50
 $EndSheet
 $Sheet
-S 6500 3000 1500 500 
+S 6500 3700 1500 500 
 U 5D2C0D13
 F0 "Register B" 50
 F1 "Register B.sch" 50
 $EndSheet
 $Sheet
-S 6500 3700 1500 500 
+S 6500 4400 1500 500 
 U 5D2C0D47
 F0 "Transfer Register" 50
 F1 "Transfer Register.sch" 50
 $EndSheet
 $Sheet
-S 6500 4400 1500 500 
+S 6500 5100 1500 500 
 U 5D2C1188
 F0 "Data RAM" 50
 F1 "Data RAM.sch" 50
@@ -114,5 +114,11 @@ S 4500 3700 1500 500
 U 5D2C14C3
 F0 "Instruction Register" 50
 F1 "Instruction Register.sch" 50
+$EndSheet
+$Sheet
+S 6500 1600 1500 450 
+U 5D29E36D
+F0 "Register D" 50
+F1 "Register D.sch" 50
 $EndSheet
 $EndSCHEMATC
