@@ -78,9 +78,9 @@ Wire Wire Line
 Wire Wire Line
 	5800 3550 5850 3550
 Text GLabel 3200 1750 0    50   Input ~ 0
-~AO
-Text GLabel 3200 2050 0    50   Input ~ 0
 ~AI
+Text GLabel 3200 2050 0    50   Input ~ 0
+~AO
 Text GLabel 3200 1900 0    50   Input ~ 0
 CLK0
 Wire Wire Line
