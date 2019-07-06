@@ -5,7 +5,7 @@ EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 4 19
-Title ""
+Title "Power-on Reset"
 Date ""
 Rev ""
 Comp ""
