@@ -107,8 +107,8 @@ $EndSheet
 $Sheet
 S 4500 5800 1500 500 
 U 5D2C13FD
-F0 "Control Word DIsplay" 50
-F1 "Control Word DIsplay.sch" 50
+F0 "Control Word Display" 50
+F1 "Control Word Display.sch" 50
 $EndSheet
 $Sheet
 S 4500 3700 1500 500 
