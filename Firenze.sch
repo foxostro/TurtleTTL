@@ -65,8 +65,8 @@ $EndSheet
 $Sheet
 S 6500 900  1500 500 
 U 5D2C0C74
-F0 "Output Register" 50
-F1 "Output Register.sch" 50
+F0 "Output Display" 50
+F1 "Output Display.sch" 50
 $EndSheet
 $Sheet
 S 6500 2300 1500 500 
