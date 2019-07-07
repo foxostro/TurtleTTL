@@ -49,20 +49,6 @@ F 3 "" H 6350 2450 50  0001 C CNN
 	1    6350 2450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D230698
-P 7350 4200
-F 0 "#PWR?" H 7350 3950 50  0001 C CNN
-F 1 "GND" H 7355 4027 50  0000 C CNN
-F 2 "" H 7350 4200 50  0001 C CNN
-F 3 "" H 7350 4200 50  0001 C CNN
-	1    7350 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 4200 7350 4150
-Connection ~ 7350 4150
 Wire Wire Line
 	5300 2550 6350 2550
 Wire Wire Line
@@ -221,52 +207,52 @@ ALUA1
 Text GLabel 6550 5600 3    50   Output ~ 0
 ALUA0
 Wire Wire Line
-	5850 5600 5850 3550
+	5850 5600 5850 5100
 Connection ~ 5850 3550
 Wire Wire Line
 	5850 3550 6850 3550
 Wire Wire Line
-	5950 5600 5950 3450
+	5950 5600 5950 5150
 Wire Wire Line
 	5800 3450 5950 3450
 Connection ~ 5950 3450
 Wire Wire Line
 	5950 3450 6850 3450
 Wire Wire Line
-	6050 5600 6050 3350
+	6050 5600 6050 5200
 Connection ~ 6050 3350
 Wire Wire Line
 	6050 3350 5800 3350
 Wire Wire Line
-	6150 5600 6150 3250
+	6150 5600 6150 5250
 Wire Wire Line
 	5800 3250 6150 3250
 Connection ~ 6150 3250
 Wire Wire Line
 	6150 3250 6850 3250
 Wire Wire Line
-	6250 5600 6250 3150
+	6250 5600 6250 5300
 Wire Wire Line
 	5800 3150 6250 3150
 Connection ~ 6250 3150
 Wire Wire Line
 	6250 3150 6850 3150
 Wire Wire Line
-	6350 5600 6350 3050
+	6350 5600 6350 5350
 Wire Wire Line
 	5800 3050 6350 3050
 Connection ~ 6350 3050
 Wire Wire Line
 	6350 3050 6850 3050
 Wire Wire Line
-	6450 5600 6450 2950
+	6450 5600 6450 5400
 Wire Wire Line
 	5800 2950 6450 2950
 Connection ~ 6450 2950
 Wire Wire Line
 	6450 2950 6850 2950
 Wire Wire Line
-	6550 5600 6550 2850
+	6550 5600 6550 5450
 Wire Wire Line
 	5800 2850 6550 2850
 Connection ~ 6550 2850
@@ -293,4 +279,342 @@ Wire Wire Line
 	8900 3850 8900 1750
 Wire Wire Line
 	3200 1750 8900 1750
+$Comp
+L Device:LED D?
+U 1 1 5D6C655C
+P 3400 6100
+AR Path="/5D2C07CD/5D6C655C" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C655C" Ref="D?"  Part="1" 
+F 0 "D?" V 3439 5983 50  0000 R CNN
+F 1 "LED" V 3348 5983 50  0000 R CNN
+F 2 "" H 3400 6100 50  0001 C CNN
+F 3 "~" H 3400 6100 50  0001 C CNN
+	1    3400 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5D6C6562
+P 3750 6100
+AR Path="/5D2C07CD/5D6C6562" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C6562" Ref="D?"  Part="1" 
+F 0 "D?" V 3789 5983 50  0000 R CNN
+F 1 "LED" V 3698 5983 50  0000 R CNN
+F 2 "" H 3750 6100 50  0001 C CNN
+F 3 "~" H 3750 6100 50  0001 C CNN
+	1    3750 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5D6C6568
+P 4100 6100
+AR Path="/5D2C07CD/5D6C6568" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C6568" Ref="D?"  Part="1" 
+F 0 "D?" V 4139 5983 50  0000 R CNN
+F 1 "LED" V 4048 5983 50  0000 R CNN
+F 2 "" H 4100 6100 50  0001 C CNN
+F 3 "~" H 4100 6100 50  0001 C CNN
+	1    4100 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5D6C656E
+P 4450 6100
+AR Path="/5D2C07CD/5D6C656E" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C656E" Ref="D?"  Part="1" 
+F 0 "D?" V 4489 5983 50  0000 R CNN
+F 1 "LED" V 4398 5983 50  0000 R CNN
+F 2 "" H 4450 6100 50  0001 C CNN
+F 3 "~" H 4450 6100 50  0001 C CNN
+	1    4450 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5D6C6574
+P 3050 6100
+AR Path="/5D2C07CD/5D6C6574" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C6574" Ref="D?"  Part="1" 
+F 0 "D?" V 3089 5983 50  0000 R CNN
+F 1 "LED" V 2998 5983 50  0000 R CNN
+F 2 "" H 3050 6100 50  0001 C CNN
+F 3 "~" H 3050 6100 50  0001 C CNN
+	1    3050 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5D6C657A
+P 2700 6100
+AR Path="/5D2C07CD/5D6C657A" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C657A" Ref="D?"  Part="1" 
+F 0 "D?" V 2739 5983 50  0000 R CNN
+F 1 "LED" V 2648 5983 50  0000 R CNN
+F 2 "" H 2700 6100 50  0001 C CNN
+F 3 "~" H 2700 6100 50  0001 C CNN
+	1    2700 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5D6C6580
+P 2350 6100
+AR Path="/5D2C07CD/5D6C6580" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C6580" Ref="D?"  Part="1" 
+F 0 "D?" V 2389 5983 50  0000 R CNN
+F 1 "LED" V 2298 5983 50  0000 R CNN
+F 2 "" H 2350 6100 50  0001 C CNN
+F 3 "~" H 2350 6100 50  0001 C CNN
+	1    2350 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5D6C6586
+P 2000 6100
+AR Path="/5D2C07CD/5D6C6586" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C6586" Ref="D?"  Part="1" 
+F 0 "D?" V 2039 5983 50  0000 R CNN
+F 1 "LED" V 1948 5983 50  0000 R CNN
+F 2 "" H 2000 6100 50  0001 C CNN
+F 3 "~" H 2000 6100 50  0001 C CNN
+	1    2000 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D6C65BC
+P 2000 6550
+AR Path="/5D2C07CD/5D6C65BC" Ref="R?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C65BC" Ref="R?"  Part="1" 
+F 0 "R?" H 2068 6596 50  0000 L CNN
+F 1 "220Ω" H 2068 6505 50  0000 L CNN
+F 2 "" V 2040 6540 50  0001 C CNN
+F 3 "~" H 2000 6550 50  0001 C CNN
+	1    2000 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D6C65C2
+P 2350 6550
+AR Path="/5D2C07CD/5D6C65C2" Ref="R?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C65C2" Ref="R?"  Part="1" 
+F 0 "R?" H 2418 6596 50  0000 L CNN
+F 1 "220Ω" H 2418 6505 50  0000 L CNN
+F 2 "" V 2390 6540 50  0001 C CNN
+F 3 "~" H 2350 6550 50  0001 C CNN
+	1    2350 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D6C65C8
+P 2700 6550
+AR Path="/5D2C07CD/5D6C65C8" Ref="R?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C65C8" Ref="R?"  Part="1" 
+F 0 "R?" H 2768 6596 50  0000 L CNN
+F 1 "220Ω" H 2768 6505 50  0000 L CNN
+F 2 "" V 2740 6540 50  0001 C CNN
+F 3 "~" H 2700 6550 50  0001 C CNN
+	1    2700 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D6C65CE
+P 3050 6550
+AR Path="/5D2C07CD/5D6C65CE" Ref="R?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C65CE" Ref="R?"  Part="1" 
+F 0 "R?" H 3118 6596 50  0000 L CNN
+F 1 "220Ω" H 3118 6505 50  0000 L CNN
+F 2 "" V 3090 6540 50  0001 C CNN
+F 3 "~" H 3050 6550 50  0001 C CNN
+	1    3050 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D6C65D4
+P 3400 6550
+AR Path="/5D2C07CD/5D6C65D4" Ref="R?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C65D4" Ref="R?"  Part="1" 
+F 0 "R?" H 3468 6596 50  0000 L CNN
+F 1 "220Ω" H 3468 6505 50  0000 L CNN
+F 2 "" V 3440 6540 50  0001 C CNN
+F 3 "~" H 3400 6550 50  0001 C CNN
+	1    3400 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D6C65DA
+P 3750 6550
+AR Path="/5D2C07CD/5D6C65DA" Ref="R?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C65DA" Ref="R?"  Part="1" 
+F 0 "R?" H 3818 6596 50  0000 L CNN
+F 1 "220Ω" H 3818 6505 50  0000 L CNN
+F 2 "" V 3790 6540 50  0001 C CNN
+F 3 "~" H 3750 6550 50  0001 C CNN
+	1    3750 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D6C65E0
+P 4100 6550
+AR Path="/5D2C07CD/5D6C65E0" Ref="R?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C65E0" Ref="R?"  Part="1" 
+F 0 "R?" H 4168 6596 50  0000 L CNN
+F 1 "220Ω" H 4168 6505 50  0000 L CNN
+F 2 "" V 4140 6540 50  0001 C CNN
+F 3 "~" H 4100 6550 50  0001 C CNN
+	1    4100 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D6C65E6
+P 4450 6550
+AR Path="/5D2C07CD/5D6C65E6" Ref="R?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C65E6" Ref="R?"  Part="1" 
+F 0 "R?" H 4518 6596 50  0000 L CNN
+F 1 "220Ω" H 4518 6505 50  0000 L CNN
+F 2 "" V 4490 6540 50  0001 C CNN
+F 3 "~" H 4450 6550 50  0001 C CNN
+	1    4450 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6700 2000 6800
+Wire Wire Line
+	2000 6800 2350 6800
+Wire Wire Line
+	2350 6700 2350 6800
+Connection ~ 2350 6800
+Wire Wire Line
+	2350 6800 2700 6800
+Wire Wire Line
+	2700 6700 2700 6800
+Connection ~ 2700 6800
+Wire Wire Line
+	2700 6800 3050 6800
+Wire Wire Line
+	3050 6700 3050 6800
+Connection ~ 3050 6800
+Wire Wire Line
+	3050 6800 3400 6800
+Wire Wire Line
+	3400 6700 3400 6800
+Connection ~ 3400 6800
+Wire Wire Line
+	3400 6800 3750 6800
+Wire Wire Line
+	3750 6700 3750 6800
+Connection ~ 3750 6800
+Wire Wire Line
+	3750 6800 4100 6800
+Wire Wire Line
+	4100 6700 4100 6800
+Connection ~ 4100 6800
+Wire Wire Line
+	4100 6800 4450 6800
+Wire Wire Line
+	4450 6700 4450 6800
+$Comp
+L power:GND #PWR?
+U 1 1 5D6C6649
+P 1700 6800
+AR Path="/5D2C07CD/5D6C6649" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C0CA7/5D6C6649" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1700 6550 50  0001 C CNN
+F 1 "GND" H 1705 6627 50  0000 C CNN
+F 2 "" H 1700 6800 50  0001 C CNN
+F 3 "" H 1700 6800 50  0001 C CNN
+	1    1700 6800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 6800
+Wire Wire Line
+	2000 6250 2000 6400
+Wire Wire Line
+	2350 6250 2350 6400
+Wire Wire Line
+	2700 6400 2700 6250
+Wire Wire Line
+	3050 6250 3050 6400
+Wire Wire Line
+	3400 6400 3400 6250
+Wire Wire Line
+	3750 6250 3750 6400
+Wire Wire Line
+	4100 6400 4100 6250
+Wire Wire Line
+	4450 6250 4450 6400
+Wire Wire Line
+	2000 5100 5850 5100
+Wire Wire Line
+	2000 5100 2000 5950
+Connection ~ 5850 5100
+Wire Wire Line
+	5850 5100 5850 3550
+Wire Wire Line
+	2350 5150 5950 5150
+Wire Wire Line
+	2350 5150 2350 5950
+Connection ~ 5950 5150
+Wire Wire Line
+	5950 5150 5950 3450
+Wire Wire Line
+	2700 5200 6050 5200
+Wire Wire Line
+	2700 5200 2700 5950
+Connection ~ 6050 5200
+Wire Wire Line
+	6050 5200 6050 3350
+Wire Wire Line
+	3050 5250 6150 5250
+Wire Wire Line
+	3050 5250 3050 5950
+Connection ~ 6150 5250
+Wire Wire Line
+	6150 5250 6150 3250
+Wire Wire Line
+	3400 5300 6250 5300
+Wire Wire Line
+	3400 5300 3400 5950
+Connection ~ 6250 5300
+Wire Wire Line
+	6250 5300 6250 3150
+Wire Wire Line
+	3750 5350 6350 5350
+Wire Wire Line
+	3750 5350 3750 5950
+Connection ~ 6350 5350
+Wire Wire Line
+	6350 5350 6350 3050
+Wire Wire Line
+	4100 5400 6450 5400
+Wire Wire Line
+	4100 5400 4100 5950
+Connection ~ 6450 5400
+Wire Wire Line
+	6450 5400 6450 2950
+Wire Wire Line
+	4450 5450 6550 5450
+Wire Wire Line
+	4450 5450 4450 5950
+Connection ~ 6550 5450
+Wire Wire Line
+	6550 5450 6550 2850
+Wire Wire Line
+	4350 4150 1700 4150
+Wire Wire Line
+	1700 4150 1700 6800
+Wire Wire Line
+	1700 6800 2000 6800
+Connection ~ 4350 4150
+Connection ~ 1700 6800
 $EndSCHEMATC
