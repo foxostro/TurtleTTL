@@ -558,4 +558,68 @@ Wire Bus Line
 	5650 3850 5650 6000
 Wire Bus Line
 	9850 1500 9850 3000
+Text Label 10150 1600 2    50   ~ 0
+IR00
+Text Label 10150 1700 2    50   ~ 0
+IR01
+Text Label 10150 1800 2    50   ~ 0
+IR02
+Text Label 10150 1900 2    50   ~ 0
+IR03
+Text Label 10150 2000 2    50   ~ 0
+IR04
+Text Label 10150 2100 2    50   ~ 0
+IR05
+Text Label 10150 2200 2    50   ~ 0
+IR06
+Text Label 10150 2300 2    50   ~ 0
+IR07
+Text Label 10150 2400 2    50   ~ 0
+IR08
+Text Label 10150 2500 2    50   ~ 0
+IR09
+Text Label 10150 2600 2    50   ~ 0
+IR10
+Text Label 10150 2700 2    50   ~ 0
+IR11
+Text Label 10150 2800 2    50   ~ 0
+IR12
+Text Label 10150 2900 2    50   ~ 0
+IR13
+Text Label 10150 3000 2    50   ~ 0
+IR14
+Text Label 10150 3100 2    50   ~ 0
+IR15
+Text Label 5500 3950 2    50   ~ 0
+IR00
+Text Label 5500 4050 2    50   ~ 0
+IR01
+Text Label 5500 4150 2    50   ~ 0
+IR02
+Text Label 5500 4250 2    50   ~ 0
+IR03
+Text Label 5500 4350 2    50   ~ 0
+IR04
+Text Label 5500 4450 2    50   ~ 0
+IR05
+Text Label 5500 4550 2    50   ~ 0
+IR06
+Text Label 5500 4650 2    50   ~ 0
+IR07
+Text Label 8800 3950 2    50   ~ 0
+IR08
+Text Label 8800 4050 2    50   ~ 0
+IR09
+Text Label 8800 4150 2    50   ~ 0
+IR10
+Text Label 8800 4250 2    50   ~ 0
+IR11
+Text Label 8800 4350 2    50   ~ 0
+IR12
+Text Label 8800 4450 2    50   ~ 0
+IR13
+Text Label 8800 4550 2    50   ~ 0
+IR14
+Text Label 8800 4650 2    50   ~ 0
+IR15
 $EndSCHEMATC
