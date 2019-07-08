@@ -231,7 +231,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 1450 7300 1450
 Wire Wire Line
-	1550 1750 1900 1750
+	1550 1750 1800 1750
 Wire Wire Line
 	650  750  650  800 
 Wire Wire Line
@@ -355,7 +355,7 @@ F 3 "74xx\\74LS393.pdf" H 3750 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 3850 3150 3850
+	2450 3850 2800 3850
 Wire Wire Line
 	3250 1750 3150 1750
 Wire Wire Line
@@ -686,4 +686,16 @@ Wire Wire Line
 	9800 4250 9800 1750
 Wire Wire Line
 	9800 1750 9700 1750
+Wire Wire Line
+	1800 1750 1800 2000
+Wire Wire Line
+	1800 2000 2800 2000
+Wire Wire Line
+	2800 2000 2800 3850
+Connection ~ 1800 1750
+Wire Wire Line
+	1800 1750 1900 1750
+Connection ~ 2800 3850
+Wire Wire Line
+	2800 3850 3150 3850
 $EndSCHEMATC
