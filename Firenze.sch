@@ -117,7 +117,7 @@ F0 "Instruction Register" 50
 F1 "Instruction Register.sch" 50
 $EndSheet
 $Sheet
-S 6500 1600 1500 450 
+S 6500 1600 1500 500 
 U 5D29E36D
 F0 "Register D" 50
 F1 "Register D.sch" 50
