@@ -671,6 +671,7 @@ Text Label 8850 3300 2    50   ~ 0
 IROM15
 Wire Bus Line
 	7550 1700 8450 1700
+Connection ~ 7550 1700
 Wire Bus Line
 	3500 1700 3500 2700
 Wire Bus Line
@@ -683,5 +684,4 @@ Wire Bus Line
 	1500 1600 1500 3100
 Wire Bus Line
 	8450 1700 8450 3200
-Connection ~ 7550 1700
 $EndSCHEMATC
