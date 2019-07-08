@@ -56,19 +56,6 @@ F 3 "" H 7600 5100 50  0001 C CNN
 	1    7600 5100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D2B9D49
-P 3550 1500
-AR Path="/5D2B9D49" Ref="#PWR?"  Part="1" 
-AR Path="/5D2A71D6/5D2B9D49" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3550 1350 50  0001 C CNN
-F 1 "+5V" H 3565 1673 50  0000 C CNN
-F 2 "" H 3550 1500 50  0001 C CNN
-F 3 "" H 3550 1500 50  0001 C CNN
-	1    3550 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3050 4800 3050 5100
 Wire Wire Line
@@ -427,4 +414,15 @@ Wire Wire Line
 Wire Wire Line
 	4100 2500 5000 2500
 Connection ~ 5000 2500
+$Comp
+L power:VCC #PWR?
+U 1 1 5D233769
+P 3550 1500
+F 0 "#PWR?" H 3550 1350 50  0001 C CNN
+F 1 "VCC" H 3567 1673 50  0000 C CNN
+F 2 "" H 3550 1500 50  0001 C CNN
+F 3 "" H 3550 1500 50  0001 C CNN
+	1    3550 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

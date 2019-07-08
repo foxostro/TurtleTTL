@@ -11,8 +11,8 @@ Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "of course, this is a machine. Hence the name."
+Comment4 "\"Firenze\" is the name of my TTL microcomputer. Firenze is another name for Florence and,"
 $EndDescr
 $Sheet
 S 4500 900  1500 500 
