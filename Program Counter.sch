@@ -579,37 +579,37 @@ Connection ~ 5400 1600
 Wire Bus Line
 	5400 1600 7100 1600
 Text GLabel 9050 4600 2    50   Output ~ 0
-IR00
+PC00
 Text GLabel 9050 4700 2    50   Output ~ 0
-IR01
+PC01
 Text GLabel 9050 4800 2    50   Output ~ 0
-IR02
+PC02
 Text GLabel 9050 4900 2    50   Output ~ 0
-IR03
+PC03
 Text GLabel 9050 5000 2    50   Output ~ 0
-IR04
+PC04
 Text GLabel 9050 5100 2    50   Output ~ 0
-IR05
+PC05
 Text GLabel 9050 5200 2    50   Output ~ 0
-IR06
+PC06
 Text GLabel 9050 5300 2    50   Output ~ 0
-IR07
+PC07
 Text GLabel 9050 5400 2    50   Output ~ 0
-IR08
+PC08
 Text GLabel 9050 5500 2    50   Output ~ 0
-IR09
+PC09
 Text GLabel 9050 5600 2    50   Output ~ 0
-IR10
+PC10
 Text GLabel 9050 5700 2    50   Output ~ 0
-IR11
+PC11
 Text GLabel 9050 5800 2    50   Output ~ 0
-IR12
+PC12
 Text GLabel 9050 5900 2    50   Output ~ 0
-IR13
+PC13
 Text GLabel 9050 6000 2    50   Output ~ 0
-IR14
+PC14
 Text GLabel 9050 6100 2    50   Output ~ 0
-IR15
+PC15
 Entry Wire Line
 	8650 4600 8750 4700
 Entry Wire Line
