@@ -1,18 +1,17 @@
 EESchema Schematic File Version 4
-LIBS:Firenze-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 19
-Title "Firenze"
+Title "Turtle TTL"
 Date ""
 Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "of course, this is a machine. Hence the name."
-Comment4 "\"Firenze\" is the name of my TTL microcomputer. Firenze is another name for Florence and,"
+Comment3 ""
+Comment4 "TTL microcomputer built from 74xx series logic chips."
 $EndDescr
 $Sheet
 S 4500 900  1500 500 

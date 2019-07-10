@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Firenze-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
