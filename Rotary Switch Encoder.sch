@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:TurtleTTL-cache
 EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -424,4 +425,6 @@ F 3 "" H 3550 1500 50  0001 C CNN
 	1    3550 1500
 	1    0    0    -1  
 $EndComp
+Text Notes 1650 6500 0    50   ~ 0
+TODO: Need to debounce the rotary switch inputs.
 $EndSCHEMATC
