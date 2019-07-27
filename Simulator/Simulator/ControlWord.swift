@@ -47,5 +47,23 @@ class ControlWord: NSObject {
             result += HLT ? (1<<15) : 0
             return result
         }
+        set(contents) {
+            CO  = (contents & (1<<0))  != 0
+            J   = (contents & (1<<1))  != 0
+            YI  = (contents & (1<<2))  != 0
+            XI  = (contents & (1<<3))  != 0
+            YO  = (contents & (1<<4))  != 0
+            XO  = (contents & (1<<5))  != 0
+            MO  = (contents & (1<<6))  != 0
+            MI  = (contents & (1<<7))  != 0
+            EO  = (contents & (1<<8))  != 0
+            FI  = (contents & (1<<9))  != 0
+            AO  = (contents & (1<<10)) != 0
+            AI  = (contents & (1<<11)) != 0
+            BO  = (contents & (1<<12)) != 0
+            BI  = (contents & (1<<13)) != 0
+            DI  = (contents & (1<<14)) != 0
+            HLT = (contents & (1<<15)) != 0
+        }
     }
 }

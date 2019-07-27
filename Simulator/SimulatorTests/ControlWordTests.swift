@@ -21,4 +21,9 @@ class ControlWordTests: XCTestCase {
         controlWord.HLT = true
         XCTAssertEqual(controlWord.contents, 1<<15)
     }
+    func testSettingContentsSetsHLTSignal() {
+        let controlWord = ControlWord()
+        controlWord.contents = 1<<15
+        XCTAssertEqual(controlWord.HLT, true)
+    }
 }
