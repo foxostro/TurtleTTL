@@ -9,8 +9,9 @@
 import Cocoa
 
 class ProgramCounter: NSObject {
-    var value: UInt16 = 0
+    var contents: UInt16 = 0
+    
     func increment() {
-        value += 1
+        contents += 1
     }
 }

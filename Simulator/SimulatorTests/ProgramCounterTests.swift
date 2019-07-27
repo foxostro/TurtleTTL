@@ -13,12 +13,12 @@ import XCTest
 class ProgramCounterTests: XCTestCase {
     func testInitializedToZero() {
         let pc = ProgramCounter()
-        XCTAssertEqual(pc.value, 0)
+        XCTAssertEqual(pc.contents, 0)
     }
     
     func testIncrement() {
         let pc = ProgramCounter()
         pc.increment()
-        XCTAssertEqual(pc.value, 1)
+        XCTAssertEqual(pc.contents, 1)
     }
 }
