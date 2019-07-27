@@ -1,5 +1,5 @@
 //
-//  Memory.swift
+//  RAM.swift
 //  Simulator
 //
 //  Created by Andrew Fox on 7/27/19.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class Memory: NSObject {
+class RAM: NSObject {
     let size: Int
     var contents: [UInt8]
     init(size: Int) {

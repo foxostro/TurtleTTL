@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F86EDA522ECB7E400375A00 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EDA422ECB7E400375A00 /* Memory.swift */; };
-		6F86EDA722ECB99500375A00 /* MemoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EDA622ECB99500375A00 /* MemoryTests.swift */; };
+		6F86EDA522ECB7E400375A00 /* RAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EDA422ECB7E400375A00 /* RAM.swift */; };
+		6F86EDA722ECB99500375A00 /* RAMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EDA622ECB99500375A00 /* RAMTests.swift */; };
 		6F86EDAA22ECBD2800375A00 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EDA922ECBD2800375A00 /* Register.swift */; };
 		6F86EDAC22ECBD8600375A00 /* ProgramCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EDAB22ECBD8600375A00 /* ProgramCounter.swift */; };
 		6F86EDAE22ECBDD000375A00 /* ProgramCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EDAD22ECBDD000375A00 /* ProgramCounterTests.swift */; };
@@ -32,8 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F86EDA422ECB7E400375A00 /* Memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
-		6F86EDA622ECB99500375A00 /* MemoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryTests.swift; sourceTree = "<group>"; };
+		6F86EDA422ECB7E400375A00 /* RAM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAM.swift; sourceTree = "<group>"; };
+		6F86EDA622ECB99500375A00 /* RAMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMTests.swift; sourceTree = "<group>"; };
 		6F86EDA922ECBD2800375A00 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		6F86EDAB22ECBD8600375A00 /* ProgramCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCounter.swift; sourceTree = "<group>"; };
 		6F86EDAD22ECBDD000375A00 /* ProgramCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCounterTests.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		6FF1995522ECB36F00C255A2 /* Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				6F86EDA422ECB7E400375A00 /* Memory.swift */,
+				6F86EDA422ECB7E400375A00 /* RAM.swift */,
 				6F86EDA922ECBD2800375A00 /* Register.swift */,
 				6F86EDB322ECC4A400375A00 /* InstructionRegister.swift */,
 				6F86EDAB22ECBD8600375A00 /* ProgramCounter.swift */,
@@ -108,7 +108,7 @@
 		6FF1996822ECB37000C255A2 /* SimulatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				6F86EDA622ECB99500375A00 /* MemoryTests.swift */,
+				6F86EDA622ECB99500375A00 /* RAMTests.swift */,
 				6F86EDAD22ECBDD000375A00 /* ProgramCounterTests.swift */,
 				6F86EDB122ECC05500375A00 /* ControlWordTests.swift */,
 				6FF1996B22ECB37000C255A2 /* Info.plist */,
@@ -217,7 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F86EDB422ECC4A400375A00 /* InstructionRegister.swift in Sources */,
-				6F86EDA522ECB7E400375A00 /* Memory.swift in Sources */,
+				6F86EDA522ECB7E400375A00 /* RAM.swift in Sources */,
 				6FF1995922ECB36F00C255A2 /* ViewController.swift in Sources */,
 				6F86EDAA22ECBD2800375A00 /* Register.swift in Sources */,
 				6F86EDAC22ECBD8600375A00 /* ProgramCounter.swift in Sources */,
@@ -231,7 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F86EDB222ECC05500375A00 /* ControlWordTests.swift in Sources */,
-				6F86EDA722ECB99500375A00 /* MemoryTests.swift in Sources */,
+				6F86EDA722ECB99500375A00 /* RAMTests.swift in Sources */,
 				6F86EDAE22ECBDD000375A00 /* ProgramCounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
