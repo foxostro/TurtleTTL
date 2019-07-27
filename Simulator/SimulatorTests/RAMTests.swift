@@ -12,14 +12,14 @@ import XCTest
 
 class RAMTests: XCTestCase {
     func testContentsInitializedToZero() {
-        let memory = RAM(size:65536)
+        let memory = RAM()
         for i in 0..<memory.size {
             XCTAssertEqual(memory.contents[i], 0)
         }
     }
     
     func testContentsModifiable() {
-        let memory = RAM(size:65536)
+        let memory = RAM()
         let value: UInt8 = 127
         for i in 0..<memory.size {
             memory.contents[i] = value
