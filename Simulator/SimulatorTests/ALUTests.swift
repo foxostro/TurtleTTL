@@ -148,7 +148,6 @@ class ALUTests: XCTestCase {
         alu.carryIn = 0
         alu.update()
         XCTAssertEqual(alu.result, 0)
-        XCTAssertEqual(alu.carryFlag, 1)
     }
     
     ////////////////////////////////////////////////////////////////////////////
@@ -205,17 +204,54 @@ class ALUTests: XCTestCase {
         alu.mode = 0
         alu.carryIn = 1
         alu.update()
-        XCTAssertEqual(alu.result, (alu.a & ~alu.b) + (alu.a | alu.b))
+        XCTAssertEqual(alu.result, 170)
     }
     
     func testAAndBPlusAOrBPlusOne() {
         let alu = ALU()
-        alu.a = 0b00000001
-        alu.b = 0b00000001
+        alu.a = 0b10101010
+        alu.b = 0b10101010
         alu.s = 0b0101
         alu.mode = 0
         alu.carryIn = 0
         alu.update()
-        XCTAssertEqual(alu.result, (alu.a & alu.b) + (alu.a | alu.b) + 1)
+        XCTAssertEqual(alu.result, 171)
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////
+    
+    func testAXorB() {
+        let alu = ALU()
+        alu.a = 0b01010101
+        alu.b = 0b00110011
+        alu.s = 0b0110
+        alu.mode = 1
+        alu.update()
+        XCTAssertEqual(alu.result, 0b01100110)
+    }
+    
+    func testAMinusBMinusOne() {
+        let alu = ALU()
+        alu.a = 3
+        alu.b = 1
+        alu.s = 0b0110
+        alu.mode = 0
+        alu.carryIn = 1
+        alu.update()
+        XCTAssertEqual(alu.result, 1)
+        XCTAssertEqual(alu.carryFlag, 0)
+    }
+    
+    func testAMinusB() {
+        let alu = ALU()
+        alu.a = 2
+        alu.b = 1
+        alu.s = 0b0110
+        alu.mode = 0
+        alu.carryIn = 0
+        alu.update()
+        XCTAssertEqual(alu.result, 1)
+        XCTAssertEqual(alu.carryFlag, 0)
+        XCTAssertEqual(alu.equalFlag, 0)
     }
 }
