@@ -1,5 +1,5 @@
 //
-//  RAM.swift
+//  InstructionROM.swift
 //  Simulator
 //
 //  Created by Andrew Fox on 7/27/19.
@@ -8,11 +8,11 @@
 
 import Cocoa
 
-class RAM: NSObject {
+class InstructionROM: NSObject {
     let size: Int = 32768
-    var contents: [UInt8]
+    var contents: [UInt16]
     override init() {
-        contents = Array<UInt8>()
+        contents = Array<UInt16>()
         contents.reserveCapacity(size)
         for _ in 0..<size {
             contents.append(0)
