@@ -64,23 +64,23 @@ class ComputerTests: XCTestCase {
         hlt.HLT = true
 
         // NOP
-        computer.instructionDecoder.store(opcode: 0, value: nop.contents)
+        computer.instructionDecoder.store(opcode: 0, controlWord: nop)
         computer.instructionROM.store(address: 0, opcode: 0, immediate: 0)
 
         // Set register A to immediate value 1.
-        computer.instructionDecoder.store(opcode: 1, value: lda.contents)
+        computer.instructionDecoder.store(opcode: 1, controlWord: lda)
         computer.instructionROM.store(address: 1, opcode: 1, immediate: 1)
 
         // Set register A to "A plus 1"
-        computer.instructionDecoder.store(opcode: 2, value: sum.contents)
+        computer.instructionDecoder.store(opcode: 2, controlWord: sum)
         computer.instructionROM.store(address: 2, opcode: 2, immediate: 0)
         
         // Set register A to "A plus 1"
-        computer.instructionDecoder.store(opcode: 3, value: sum.contents)
+        computer.instructionDecoder.store(opcode: 3, controlWord: sum)
         computer.instructionROM.store(address: 3, opcode: 3, immediate: 0)
 
         // Halt
-        computer.instructionDecoder.store(opcode: 4, value: hlt.contents)
+        computer.instructionDecoder.store(opcode: 4, controlWord: hlt)
         computer.instructionROM.store(address: 4, opcode: 4, immediate: 0)
 
         computer.execute()

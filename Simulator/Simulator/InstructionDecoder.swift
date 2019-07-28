@@ -35,6 +35,10 @@ class InstructionDecoder: NSObject {
         lowerROM[opcode] = UInt8( value & 0x00ff)
     }
     
+    func store(opcode:Int, controlWord:ControlWord) {
+        store(opcode: opcode, value: controlWord.contents)
+    }
+    
     func load(opcode:Int) -> UInt16 {
         return UInt16(upperROM[opcode])<<8 | UInt16(lowerROM[opcode])
     }
