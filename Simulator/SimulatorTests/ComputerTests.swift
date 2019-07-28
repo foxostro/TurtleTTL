@@ -87,4 +87,63 @@ class ComputerTests: XCTestCase {
         
         XCTAssertEqual(computer.registerA.contents, 3)
     }
+    
+    func testRAMStoreLoad() {
+        let computer = Computer()
+        
+        let nop = 0
+        let nopControl = ControlWord()
+        computer.instructionDecoder.store(opcode: nop, controlWord: nopControl)
+        
+        let ldx = 1
+        let ldxControl = ControlWord()
+        ldxControl.CO = false
+        ldxControl.XI = false
+        computer.instructionDecoder.store(opcode: ldx, controlWord: ldxControl)
+        
+        let ldy = 2
+        let ldyControl = ControlWord()
+        ldxControl.CO = false
+        ldxControl.YI = false
+        computer.instructionDecoder.store(opcode: ldy, controlWord: ldyControl)
+        
+        let store = 3
+        let storeControl = ControlWord()
+        storeControl.MI = false
+        storeControl.CO = false
+        computer.instructionDecoder.store(opcode: store, controlWord: storeControl)
+        
+        let load = 4
+        let loadControl = ControlWord()
+        loadControl.MO = false
+        loadControl.AI = false
+        computer.instructionDecoder.store(opcode: load, controlWord: loadControl)
+        
+        let hlt = 5
+        let hltControl = ControlWord()
+        hltControl.HLT = true
+        computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
+        
+        // NOP
+        computer.instructionROM.store(address: 0, opcode: nop, immediate: 0)
+        
+        // Set register X to immediate value 0.
+        computer.instructionROM.store(address: 1, opcode: ldx, immediate: 0)
+        
+        // Set register Y to immediate value 0.
+        computer.instructionROM.store(address: 2, opcode: ldy, immediate: 0)
+        
+        // Store immediate value to RAM
+        computer.instructionROM.store(address: 3, opcode: store, immediate: 42)
+        
+        // Load value from RAM to register A
+        computer.instructionROM.store(address: 4, opcode: load, immediate: 0)
+        
+        // Halt
+        computer.instructionROM.store(address: 5, opcode: hlt, immediate: 0)
+        
+        computer.execute()
+        
+        XCTAssertEqual(computer.registerA.contents, 42)
+    }
 }
