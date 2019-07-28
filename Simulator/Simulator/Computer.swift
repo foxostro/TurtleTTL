@@ -15,7 +15,7 @@ class Computer: NSObject {
     let registerD = Register()
     let registerX = Register()
     let registerY = Register()
-    let registerFlags = Register()
+    let flags = Flags()
     let dataRAM = RAM()
     let programCounter = ProgramCounter()
     let alu = ALU()
@@ -29,7 +29,8 @@ class Computer: NSObject {
     override init() {
         pipelineStageFetch = PipelineFetchStage(withProgramCounter: programCounter,
                                                 withInstructionROM: instructionROM)
-        pipelineStageDecode = PipelineStageDecode(withDecoder: instructionDecoder)
+        pipelineStageDecode = PipelineStageDecode(withDecoder: instructionDecoder,
+                                                  flags: flags)
         pipelineStageExecute = PipelineStageExecute(controlWordRegister: controlWordRegister,
                                                     registerA: registerA,
                                                     registerB: registerB,
@@ -37,7 +38,7 @@ class Computer: NSObject {
                                                     registerD: registerD,
                                                     registerX: registerX,
                                                     registerY: registerY,
-                                                    registerFlags: registerFlags,
+                                                    flags: flags,
                                                     dataRAM: dataRAM,
                                                     programCounter: programCounter,
                                                     alu: alu)

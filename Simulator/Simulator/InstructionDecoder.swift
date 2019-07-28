@@ -30,16 +30,33 @@ class InstructionDecoder: NSObject {
         }
     }
     
-    func store(opcode:Int, value:UInt16) {
-        upperROM[opcode] = UInt8((value & 0xff00) >> 8)
-        lowerROM[opcode] = UInt8( value & 0x00ff)
+    func load(opcode:Int, carryFlag:Int) -> UInt16 {
+        return load(address: makeAddress(opcode: opcode, carryFlag: carryFlag))
+    }
+    
+    func load(address:Int) -> UInt16 {
+        return UInt16(upperROM[address])<<8 | UInt16(lowerROM[address])
     }
     
     func store(opcode:Int, controlWord:ControlWord) {
-        store(opcode: opcode, value: controlWord.contents)
+        store(opcode: opcode, carryFlag: 0, controlWord: controlWord)
+        store(opcode: opcode, carryFlag: 1, controlWord: controlWord)
     }
     
-    func load(opcode:Int) -> UInt16 {
-        return UInt16(upperROM[opcode])<<8 | UInt16(lowerROM[opcode])
+    func store(opcode:Int, carryFlag:Int, controlWord:ControlWord) {
+        store(address: makeAddress(opcode:opcode, carryFlag:carryFlag),
+              value: controlWord.contents)
+    }
+    
+    func store(address:Int, value:UInt16) {
+        upperROM[address] = UInt8((value & 0xff00) >> 8)
+        lowerROM[address] = UInt8( value & 0x00ff)
+    }
+    
+    func makeAddress(opcode:Int, carryFlag:Int) -> Int {
+        // The physical construction of the instruction decoder circuit has the
+        // opcode feeding into the lower eight bits of the ROM address.
+        // The flags aren't hooked up yet, but I would use bits 8 and 9.
+        return carryFlag<<8 | opcode
     }
 }

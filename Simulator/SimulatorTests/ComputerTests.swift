@@ -23,11 +23,11 @@ class ComputerTests: XCTestCase {
         let computer = Computer()
         
         // NOP
-        computer.instructionDecoder.store(opcode: 0, value: 0b0111111111111111)
+        computer.instructionDecoder.store(address: 0, value: 0b0111111111111111)
         computer.instructionROM.store(address: 0, value: 0b0000000000000000)
         
         // Set register A to immediate value 1.
-        computer.instructionDecoder.store(opcode: 1, value: 0b0111011111111110)
+        computer.instructionDecoder.store(address: 1, value: 0b0111011111111110)
         computer.instructionROM.store(address: 1, value: 0b0000000100000001)
         
         computer.reset()
@@ -185,6 +185,152 @@ class ComputerTests: XCTestCase {
         
         computer.execute()
         
+        XCTAssertEqual(computer.registerA.contents, 1)
+    }
+    
+    func testConditionalJumpOnCarry_DontTakeTheJump() {
+        let computer = Computer()
+        
+        let nop = 0
+        let nopControl = ControlWord()
+        computer.instructionDecoder.store(opcode: nop, controlWord: nopControl)
+        
+        let hlt = 1
+        let hltControl = ControlWord()
+        hltControl.HLT = true
+        computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
+        
+        let lda = 2
+        let ldaControl = ControlWord()
+        ldaControl.CO = false
+        ldaControl.AI = false
+        computer.instructionDecoder.store(opcode: lda, controlWord: ldaControl)
+        
+        let ldb = 3
+        let ldbControl = ControlWord()
+        ldbControl.CO = false
+        ldbControl.BI = false
+        computer.instructionDecoder.store(opcode: ldb, controlWord: ldbControl)
+        
+        let ldx = 4
+        let ldxControl = ControlWord()
+        ldxControl.CO = false
+        ldxControl.XI = false
+        computer.instructionDecoder.store(opcode: ldx, controlWord: ldxControl)
+        
+        let ldy = 5
+        let ldyControl = ControlWord()
+        ldyControl.CO = false
+        ldyControl.YI = false
+        computer.instructionDecoder.store(opcode: ldy, controlWord: ldyControl)
+        
+        let alu = 6
+        let aluControl = ControlWord()
+        aluControl.EO = false
+        aluControl.DI = false
+        aluControl.FI = false
+        computer.instructionDecoder.store(opcode: alu, controlWord: aluControl)
+        
+        let jc = 7
+        let jcControl = ControlWord()
+        jcControl.J = false
+        computer.instructionDecoder.store(opcode: jc,
+                                          carryFlag:1,
+                                          controlWord: jcControl)
+        computer.instructionDecoder.store(opcode: jc,
+                                          carryFlag:0,
+                                          controlWord: nopControl)
+        
+        computer.provideInstructions([
+            Instruction(opcode: nop, immediate: 0),          // NOP
+            Instruction(opcode: lda, immediate: 2),          // LDA $2
+            Instruction(opcode: ldb, immediate: 1),          // LDB $1
+            Instruction(opcode: ldx, immediate: 0),          // LDX $0
+            Instruction(opcode: ldy, immediate: 11),         // LDY $0
+            Instruction(opcode: alu, immediate: 0b00000110), // SUB
+            Instruction(opcode: nop, immediate: 0),          // NOP (We must at least one instruction between setting the flags and testing the flags)
+            Instruction(opcode:  jc, immediate: 0),          // JC $11
+            Instruction(opcode: nop, immediate: 0),          // NOP (We must have two NOPs following a jump to prevent the pipeline from filling with incorrect instructions)
+            Instruction(opcode: nop, immediate: 0),          // NOP
+            Instruction(opcode: lda, immediate: 42),         // LDA $42
+            Instruction(opcode: hlt, immediate: 0)])         // HLT
+        
+        computer.execute()
+        
+        XCTAssertEqual(computer.registerD.contents, 1)
+        XCTAssertEqual(computer.registerA.contents, 42)
+    }
+    
+    func testConditionalJumpOnCarry_TakeTheJump() {
+        let computer = Computer()
+        
+        let nop = 0
+        let nopControl = ControlWord()
+        computer.instructionDecoder.store(opcode: nop, controlWord: nopControl)
+        
+        let hlt = 1
+        let hltControl = ControlWord()
+        hltControl.HLT = true
+        computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
+        
+        let lda = 2
+        let ldaControl = ControlWord()
+        ldaControl.CO = false
+        ldaControl.AI = false
+        computer.instructionDecoder.store(opcode: lda, controlWord: ldaControl)
+        
+        let ldb = 3
+        let ldbControl = ControlWord()
+        ldbControl.CO = false
+        ldbControl.BI = false
+        computer.instructionDecoder.store(opcode: ldb, controlWord: ldbControl)
+        
+        let ldx = 4
+        let ldxControl = ControlWord()
+        ldxControl.CO = false
+        ldxControl.XI = false
+        computer.instructionDecoder.store(opcode: ldx, controlWord: ldxControl)
+        
+        let ldy = 5
+        let ldyControl = ControlWord()
+        ldyControl.CO = false
+        ldyControl.YI = false
+        computer.instructionDecoder.store(opcode: ldy, controlWord: ldyControl)
+        
+        let alu = 6
+        let aluControl = ControlWord()
+        aluControl.EO = false
+        aluControl.DI = false
+        aluControl.FI = false
+        computer.instructionDecoder.store(opcode: alu, controlWord: aluControl)
+        
+        let jc = 7
+        let jcControl = ControlWord()
+        jcControl.J = false
+        computer.instructionDecoder.store(opcode: jc,
+                                          carryFlag:1,
+                                          controlWord: jcControl)
+        computer.instructionDecoder.store(opcode: jc,
+                                          carryFlag:0,
+                                          controlWord: nopControl)
+        
+        computer.provideInstructions([
+            Instruction(opcode: nop, immediate: 0),          // NOP
+            Instruction(opcode: lda, immediate: 1),          // LDA $1
+            Instruction(opcode: ldb, immediate: 2),          // LDB $2
+            Instruction(opcode: ldx, immediate: 0),          // LDX $0
+            Instruction(opcode: ldy, immediate: 11),         // LDY $0
+            Instruction(opcode: alu, immediate: 0b00000110), // SUB
+            Instruction(opcode: nop, immediate: 0),          // NOP (We must at least one instruction between setting the flags and testing the flags)
+            Instruction(opcode:  jc, immediate: 0),          // JC $11
+            Instruction(opcode: nop, immediate: 0),          // NOP (We must have two NOPs following a jump to prevent the pipeline from filling with incorrect instructions)
+            Instruction(opcode: nop, immediate: 0),          // NOP
+            Instruction(opcode: lda, immediate: 42),         // LDA $42
+            Instruction(opcode: hlt, immediate: 0)])         // HLT
+        
+        computer.execute()
+        
+        XCTAssertEqual(computer.registerD.contents, 255)
         XCTAssertEqual(computer.registerA.contents, 1)
     }
 }

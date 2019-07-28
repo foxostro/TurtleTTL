@@ -16,7 +16,7 @@ class PipelineStageExecute: NSObject {
     let registerD:Register
     let registerX:Register
     let registerY:Register
-    let registerFlags:Register
+    let flags:Flags
     let dataRAM:RAM
     let programCounter:ProgramCounter
     let alu:ALU
@@ -30,7 +30,7 @@ class PipelineStageExecute: NSObject {
          registerD:Register,
          registerX:Register,
          registerY:Register,
-         registerFlags:Register,
+         flags:Flags,
          dataRAM:RAM,
          programCounter:ProgramCounter,
          alu:ALU) {
@@ -41,7 +41,7 @@ class PipelineStageExecute: NSObject {
         self.registerD = registerD
         self.registerX = registerX
         self.registerY = registerY
-        self.registerFlags = registerFlags
+        self.flags = flags
         self.dataRAM = dataRAM
         self.programCounter = programCounter
         self.alu = alu
@@ -51,7 +51,17 @@ class PipelineStageExecute: NSObject {
         controlWordRegister.contents = controlTuple.controlWord.contents
         registerC.contents = controlTuple.immediate
         bus = 0
+        updateALU()
         processControlSignals()
+    }
+    
+    func updateALU() {
+        alu.s = registerC.contents & 0b1111
+        alu.carryIn = Int(registerC.contents & 0b10000) >> 4
+        alu.mode = Int(registerC.contents & 0b100000) >> 5
+        alu.a = registerA.contents
+        alu.b = registerB.contents
+        alu.update()
     }
     
     func processControlSignals() {
@@ -83,21 +93,21 @@ class PipelineStageExecute: NSObject {
             }
         }
         if (false == controlWordRegister.EO) {
-            alu.s = registerC.contents & 0b1111
-            alu.carryIn = Int(registerC.contents & 0b10000) >> 4
-            alu.mode = Int(registerC.contents & 0b100000) >> 5
-            alu.a = registerA.contents
-            alu.b = registerB.contents
-            alu.update()
             bus = alu.result
             if (!isResetting) {
                 NSLog("EO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.FI) {
-            registerFlags.contents = UInt8(alu.carryFlag | alu.equalFlag<<1)
+            let oldFlags = Flags()
+            oldFlags.carryFlag = flags.carryFlag
+            oldFlags.equalFlag = flags.equalFlag
+            
+            flags.carryFlag = alu.carryFlag
+            flags.equalFlag = alu.equalFlag
+            
             if (!isResetting) {
-                NSLog("FI -- flags are now %d", registerFlags.contents)
+                NSLog("FI -- flags changing from %@ to %@", oldFlags, flags)
             }
         }
         if (false == controlWordRegister.AO) {
@@ -151,7 +161,7 @@ class PipelineStageExecute: NSObject {
         }
         if (false == controlWordRegister.J) {
             if (!isResetting) {
-                NSLog("J -- unconditional jump to %d", UInt16(valueOfXYPair()))
+                NSLog("J -- jump to %d", UInt16(valueOfXYPair()))
             }
             programCounter.contents = UInt16(valueOfXYPair())
         }
