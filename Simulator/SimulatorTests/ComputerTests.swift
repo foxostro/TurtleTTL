@@ -103,8 +103,8 @@ class ComputerTests: XCTestCase {
         
         let ldy = 2
         let ldyControl = ControlWord()
-        ldxControl.CO = false
-        ldxControl.YI = false
+        ldyControl.CO = false
+        ldyControl.YI = false
         computer.instructionDecoder.store(opcode: ldy, controlWord: ldyControl)
         
         let store = 3
@@ -125,16 +125,66 @@ class ComputerTests: XCTestCase {
         computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
         
         computer.provideInstructions([
-            Instruction(opcode: nop, immediate: 0),
-            Instruction(opcode: ldx, immediate: 0),
-            Instruction(opcode: ldy, immediate: 0),
-            Instruction(opcode: ldy, immediate: 0),
-            Instruction(opcode: store, immediate: 42),
-            Instruction(opcode: load, immediate: 0),
-            Instruction(opcode: hlt, immediate: 0)])
+            Instruction(opcode: nop, immediate: 0),    // NOP
+            Instruction(opcode: ldx, immediate: 0),    // LDX $0
+            Instruction(opcode: ldy, immediate: 0),    // LDY $0
+            Instruction(opcode: store, immediate: 42), // STORE $42
+            Instruction(opcode: load, immediate: 0),   // LOAD A
+            Instruction(opcode: hlt, immediate: 0)])   // HLT
         
         computer.execute()
         
         XCTAssertEqual(computer.registerA.contents, 42)
+    }
+    
+    func testUnconditionalJump() {
+        let computer = Computer()
+        
+        let nop = 0
+        let nopControl = ControlWord()
+        computer.instructionDecoder.store(opcode: nop, controlWord: nopControl)
+        
+        let hlt = 1
+        let hltControl = ControlWord()
+        hltControl.HLT = true
+        computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
+        
+        let lda = 2
+        let ldaControl = ControlWord()
+        ldaControl.CO = false
+        ldaControl.AI = false
+        computer.instructionDecoder.store(opcode: lda, controlWord: ldaControl)
+        
+        let ldx = 3
+        let ldxControl = ControlWord()
+        ldxControl.CO = false
+        ldxControl.XI = false
+        computer.instructionDecoder.store(opcode: ldx, controlWord: ldxControl)
+        
+        let ldy = 4
+        let ldyControl = ControlWord()
+        ldyControl.CO = false
+        ldyControl.YI = false
+        computer.instructionDecoder.store(opcode: ldy, controlWord: ldyControl)
+        
+        let jmp = 5
+        let jmpControl = ControlWord()
+        jmpControl.J = false
+        computer.instructionDecoder.store(opcode: jmp, controlWord: jmpControl)
+        
+        computer.provideInstructions([
+            Instruction(opcode: nop, immediate: 0),  // NOP
+            Instruction(opcode: lda, immediate: 1),  // LDA $1
+            Instruction(opcode: ldx, immediate: 0),  // LDX $0
+            Instruction(opcode: ldy, immediate: 8),  // LDY $0
+            Instruction(opcode: jmp, immediate: 0),  // JMP $8
+            Instruction(opcode: nop, immediate: 0),  // NOP
+            Instruction(opcode: nop, immediate: 0),  // NOP
+            Instruction(opcode: lda, immediate: 2),  // LDA $2
+            Instruction(opcode: hlt, immediate: 0)]) // HLT
+        
+        computer.execute()
+        
+        XCTAssertEqual(computer.registerA.contents, 1)
     }
 }
