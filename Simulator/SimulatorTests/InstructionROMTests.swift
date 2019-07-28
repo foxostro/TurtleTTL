@@ -15,7 +15,7 @@ class InstructionROMTests: XCTestCase {
         let memory = InstructionROM()
         XCTAssertEqual(memory.size, 32768)
         for i in 0..<memory.size {
-            XCTAssertEqual(memory.load(address: i), 0)
+            XCTAssertEqual(memory.load(address: i).value, 0)
         }
     }
     
@@ -23,6 +23,6 @@ class InstructionROMTests: XCTestCase {
         let memory = InstructionROM()
         let value: UInt16 = 32767
         memory.store(address: 0, value: value)
-        XCTAssertEqual(memory.load(address: 0), value)
+        XCTAssertEqual(memory.load(address: 0).value, value)
     }
 }

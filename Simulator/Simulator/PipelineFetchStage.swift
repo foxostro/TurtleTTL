@@ -21,10 +21,7 @@ class PipelineFetchStage: NSObject {
     func fetch() -> Instruction {
         let oldInstruction = instructionRegister
         let pc = programCounter.contents
-        let newInstructionValue = instructionROM.load(address: Int(pc))
-        let newInstruction = Instruction()
-        newInstruction.opcode = UInt8(newInstructionValue >> 8 & 0xff)
-        newInstruction.immediate = UInt8(newInstructionValue & 0xff)
+        let newInstruction = instructionROM.load(address: Int(pc))
         NSLog("Fetched new instruction from memory: opcode=0b%@, immediate=%d",
               String(newInstruction.opcode, radix: 2),
               newInstruction.immediate)

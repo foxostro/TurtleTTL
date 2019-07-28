@@ -40,7 +40,10 @@ class InstructionROM: NSObject {
         lowerROM[Int(address)] = UInt8(immediate)
     }
     
-    func load(address:Int) -> UInt16 {
-        return UInt16(upperROM[address])<<8 | UInt16(lowerROM[address])
+    func load(address:Int) -> Instruction {
+        let instruction = Instruction()
+        instruction.opcode = upperROM[address]
+        instruction.immediate = lowerROM[address]
+        return instruction
     }
 }

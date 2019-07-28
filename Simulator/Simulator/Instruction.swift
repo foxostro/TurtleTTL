@@ -11,4 +11,9 @@ import Cocoa
 class Instruction: NSObject {
     var opcode:UInt8 = 0
     var immediate:UInt8 = 0
+    var value:UInt16 {
+        get {
+            return UInt16(Int(opcode) << 8 | Int(immediate))
+        }
+    }
 }
