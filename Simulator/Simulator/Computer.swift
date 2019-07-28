@@ -75,4 +75,8 @@ class Computer: NSObject {
             haltlessStep()
         }
     }
+    
+    func provideInstructions(_ instructions: [Instruction]) {
+        instructionROM.store(instructions)
+    }
 }

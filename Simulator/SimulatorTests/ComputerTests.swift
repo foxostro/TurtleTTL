@@ -124,23 +124,14 @@ class ComputerTests: XCTestCase {
         hltControl.HLT = true
         computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
         
-        // NOP
-        computer.instructionROM.store(address: 0, opcode: nop, immediate: 0)
-        
-        // Set register X to immediate value 0.
-        computer.instructionROM.store(address: 1, opcode: ldx, immediate: 0)
-        
-        // Set register Y to immediate value 0.
-        computer.instructionROM.store(address: 2, opcode: ldy, immediate: 0)
-        
-        // Store immediate value to RAM
-        computer.instructionROM.store(address: 3, opcode: store, immediate: 42)
-        
-        // Load value from RAM to register A
-        computer.instructionROM.store(address: 4, opcode: load, immediate: 0)
-        
-        // Halt
-        computer.instructionROM.store(address: 5, opcode: hlt, immediate: 0)
+        computer.provideInstructions([
+            Instruction(opcode: nop, immediate: 0),
+            Instruction(opcode: ldx, immediate: 0),
+            Instruction(opcode: ldy, immediate: 0),
+            Instruction(opcode: ldy, immediate: 0),
+            Instruction(opcode: store, immediate: 42),
+            Instruction(opcode: load, immediate: 0),
+            Instruction(opcode: hlt, immediate: 0)])
         
         computer.execute()
         

@@ -40,10 +40,22 @@ class InstructionROM: NSObject {
         lowerROM[Int(address)] = UInt8(immediate)
     }
     
+    func store(address:Int, instruction:Instruction) {
+        store(address: address,
+              opcode: Int(instruction.opcode),
+              immediate: Int(instruction.immediate))
+    }
+    
     func load(address:Int) -> Instruction {
         let instruction = Instruction()
         instruction.opcode = upperROM[address]
         instruction.immediate = lowerROM[address]
         return instruction
+    }
+    
+    func store(_ instructions: [Instruction]) {
+        for i in 0..<instructions.count {
+            store(address: i, instruction: instructions[i])
+        }
     }
 }
