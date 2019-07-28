@@ -22,9 +22,7 @@ class PipelineFetchStage: NSObject {
         let oldInstruction = instructionRegister
         let pc = programCounter.contents
         let newInstruction = instructionROM.load(address: Int(pc))
-        NSLog("Fetched new instruction from memory: opcode=0b%@, immediate=%d",
-              String(newInstruction.opcode, radix: 2),
-              newInstruction.immediate)
+        NSLog("Fetched new instruction from memory: %@", newInstruction)
         
         instructionRegister = newInstruction
         programCounter.increment()
