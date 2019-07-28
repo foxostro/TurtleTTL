@@ -9,21 +9,21 @@
 import Cocoa
 
 class ControlWord: NSObject {
-    var CO:Bool = false
-    var J:Bool = false
-    var YI:Bool = false
-    var XI:Bool = false
-    var YO:Bool = false
-    var XO:Bool = false
-    var MO:Bool = false
-    var MI:Bool = false
-    var EO:Bool = false
-    var FI:Bool = false
-    var AO:Bool = false
-    var AI:Bool = false
-    var BO:Bool = false
-    var BI:Bool = false
-    var DI:Bool = false
+    var CO:Bool = true
+    var J:Bool = true
+    var YI:Bool = true
+    var XI:Bool = true
+    var YO:Bool = true
+    var XO:Bool = true
+    var MO:Bool = true
+    var MI:Bool = true
+    var EO:Bool = true
+    var FI:Bool = true
+    var AO:Bool = true
+    var AI:Bool = true
+    var BO:Bool = true
+    var BI:Bool = true
+    var DI:Bool = true
     var HLT:Bool = false
     
     var contents: UInt16 {
@@ -65,5 +65,11 @@ class ControlWord: NSObject {
             DI  = (contents & (1<<14)) != 0
             HLT = (contents & (1<<15)) != 0
         }
+    }
+    
+    func clone() -> ControlWord {
+        let result = ControlWord()
+        result.contents = contents
+        return result
     }
 }

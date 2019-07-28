@@ -11,15 +11,14 @@ import XCTest
 @testable import Simulator
 
 class ControlWordTests: XCTestCase {
-    func testRaisingCOSetsContentsBit() {
+    func testNOPDoesNotHalt() {
         let controlWord = ControlWord()
-        controlWord.CO = true
-        XCTAssertEqual(controlWord.contents, 1)
+        XCTAssertEqual(controlWord.HLT, false)
     }
-    func testRaisingHLTSetsContentsBit() {
+    func testModifyCOBit() {
         let controlWord = ControlWord()
-        controlWord.HLT = true
-        XCTAssertEqual(controlWord.contents, 1<<15)
+        controlWord.CO = false
+        XCTAssertEqual(controlWord.contents, 0b0111111111111110)
     }
     func testSettingContentsSetsHLTSignal() {
         let controlWord = ControlWord()

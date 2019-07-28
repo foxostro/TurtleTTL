@@ -18,12 +18,30 @@ class Computer: NSObject {
     let registerFlags = Register()
     let dataRAM = RAM()
     let programCounter = ProgramCounter()
+    let alu = ALU()
     let instructionROM = InstructionROM()
-    let instructionRegister = InstructionRegister()
     let instructionDecoder = InstructionDecoder()
     let controlWordRegister = ControlWord()
-    let alu = ALU()
-    var bus:UInt8 = 0
+    let pipelineStageFetch:PipelineFetchStage
+    let pipelineStageDecode:PipelineStageDecode
+    let pipelineStageExecute:PipelineStageExecute
+    
+    override init() {
+        pipelineStageFetch = PipelineFetchStage(withProgramCounter: programCounter,
+                                                withInstructionROM: instructionROM)
+        pipelineStageDecode = PipelineStageDecode(withDecoder: instructionDecoder)
+        pipelineStageExecute = PipelineStageExecute(controlWordRegister: controlWordRegister,
+                                                    registerA: registerA,
+                                                    registerB: registerB,
+                                                    registerC: registerC,
+                                                    registerD: registerD,
+                                                    registerX: registerX,
+                                                    registerY: registerY,
+                                                    registerFlags: registerFlags,
+                                                    dataRAM: dataRAM,
+                                                    programCounter: programCounter,
+                                                    alu: alu)
+    }
     
     func setContentsOfInstructionROM(withContents contents:[UInt16]) {
         assert(contents.count == 32768)
@@ -36,90 +54,29 @@ class Computer: NSObject {
     }
     
     func reset() {
-        programCounter.contents = 0
         for _ in 1...3 {
-            haltlessTick()
             programCounter.contents = 0
+            haltlessStep()
+        }
+        programCounter.contents = 0
+    }
+    
+    func step() {
+        if (false == controlWordRegister.HLT) {
+            haltlessStep()
         }
     }
     
-    func tick() {
-        if (!controlWordRegister.HLT) {
-            haltlessTick()
-        }
+    func haltlessStep() {
+        let instruction = pipelineStageFetch.fetch()
+        let controlTuple = pipelineStageDecode.decode(withInstruction: instruction)
+        pipelineStageExecute.execute(withControlTuple: controlTuple)
     }
     
-    func haltlessTick() {
-        let pc = programCounter.contents
-        programCounter.increment()
-        
-        let newInstruction = instructionROM.contents[Int(pc)]
-        let oldInstruction = instructionRegister.contents
-        instructionRegister.contents = newInstruction
-        
-        let opcode:UInt8 = UInt8(oldInstruction >> 8 & 0xff)
-        let immediate:UInt8 = UInt8(oldInstruction & 0xff)
-        
-        registerC.contents = immediate;
-        
-        let newControl = instructionDecoder.contents[Int(opcode)]
-        processControlSignals()
-        controlWordRegister.contents = newControl
-    }
-    
-    fileprivate func processControlSignals() {
-        bus = 0
-        alu.update()
-        
-        if (controlWordRegister.CO) {
-            bus = registerC.contents
+    func execute() {
+        reset()
+        while (false == controlWordRegister.HLT) {
+            haltlessStep()
         }
-        if (controlWordRegister.YO) {
-            bus = registerY.contents
-        }
-        if (controlWordRegister.XO) {
-            bus = registerX.contents
-        }
-        if (controlWordRegister.MO) {
-            bus = dataRAM.contents[valueOfXYPair()]
-        }
-        if (controlWordRegister.EO) {
-            bus = alu.result
-        }
-        if (controlWordRegister.FI) {
-            registerFlags.contents = UInt8(alu.carryFlag | alu.equalFlag<<1)
-        }
-        if (controlWordRegister.AO) {
-            bus = registerA.contents
-        }
-        if (controlWordRegister.BO) {
-            bus = registerB.contents
-        }
-        
-        if (controlWordRegister.YI) {
-            registerY.contents = bus
-        }
-        if (controlWordRegister.XI) {
-            registerX.contents = bus
-        }
-        if (controlWordRegister.AI) {
-            registerA.contents = bus
-        }
-        if (controlWordRegister.BI) {
-            registerB.contents = bus
-        }
-        if (controlWordRegister.DI) {
-            registerD.contents = bus
-        }
-        if (controlWordRegister.MI) {
-            dataRAM.contents[valueOfXYPair()] = bus
-        }
-        if (controlWordRegister.J) {
-            programCounter.contents = UInt16(valueOfXYPair())
-        }
-    }
-    
-    fileprivate func valueOfXYPair() -> Int {
-        return Int(registerX.contents<<8 | registerY.contents)
     }
 }
