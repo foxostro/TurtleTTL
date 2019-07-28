@@ -13,7 +13,7 @@ import XCTest
 class ComputerTests: XCTestCase {
     func testReset() {
         let computer = Computer()
-        computer.instructionROM.contents[0] = 0
+        computer.instructionROM.store(address: 0, value: 0)
         computer.reset()
         XCTAssertEqual(computer.programCounter.contents, 0)
         XCTAssertEqual(computer.registerC.contents, 0)
@@ -24,11 +24,11 @@ class ComputerTests: XCTestCase {
         
         // NOP
         computer.instructionDecoder.contents[0] = 0b0111111111111111
-        computer.instructionROM.contents[0] = 0b0000000000000000
+        computer.instructionROM.store(address: 0, value: 0b0000000000000000)
         
         // Set register A to immediate value 1.
         computer.instructionDecoder.contents[1] = 0b0111011111111110
-        computer.instructionROM.contents[1] = 0b0000000100000001
+        computer.instructionROM.store(address: 1, value: 0b0000000100000001)
         
         computer.reset()
         
@@ -65,23 +65,23 @@ class ComputerTests: XCTestCase {
 
         // NOP
         computer.instructionDecoder.contents[0] = nop.contents
-        computer.instructionROM.contents[0] = 0b0000000000000000
+        computer.instructionROM.store(address: 0, value: 0b0000000000000000)
 
         // Set register A to immediate value 1.
         computer.instructionDecoder.contents[1] = lda.contents
-        computer.instructionROM.contents[1] = 0b0000000100000001
+        computer.instructionROM.store(address: 1, value: 0b0000000100000001)
 
         // Set register A to "A plus 1"
         computer.instructionDecoder.contents[2] = sum.contents
-        computer.instructionROM.contents[2] = 0b0000001000000000
+        computer.instructionROM.store(address: 2, value: 0b0000001000000000)
         
         // Set register A to "A plus 1"
         computer.instructionDecoder.contents[3] = sum.contents
-        computer.instructionROM.contents[3] = 0b0000001100000000
+        computer.instructionROM.store(address: 3, value: 0b0000001100000000)
 
         // Halt
         computer.instructionDecoder.contents[4] = hlt.contents
-        computer.instructionROM.contents[4] = 0b0000010000000000
+        computer.instructionROM.store(address: 4, value: 0b0000010000000000)
 
         computer.execute()
         

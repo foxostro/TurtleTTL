@@ -43,16 +43,6 @@ class Computer: NSObject {
                                                     alu: alu)
     }
     
-    func setContentsOfInstructionROM(withContents contents:[UInt16]) {
-        assert(contents.count == 32768)
-        instructionROM.contents = contents
-    }
-    
-    func setContentsOfInstructionDecoder(withContents contents:[UInt16]) {
-        assert(contents.count == 131072)
-        instructionDecoder.contents = contents
-    }
-    
     func reset() {
         for _ in 1...3 {
             programCounter.contents = 0

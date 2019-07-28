@@ -18,4 +18,20 @@ class InstructionROM: NSObject {
             contents.append(0)
         }
     }
+    
+    func store(address:UInt16, value:UInt16) {
+        contents[Int(address)] = value
+    }
+    
+    func store(address:Int, value:UInt16) {
+        store(address: UInt16(address), value: value)
+    }
+    
+    func load(address:UInt16) -> UInt16 {
+        return contents[Int(address)]
+    }
+    
+    func load(address:Int) -> UInt16 {
+        return load(address: UInt16(address))
+    }
 }
