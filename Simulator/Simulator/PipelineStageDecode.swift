@@ -23,7 +23,8 @@ class PipelineStageDecode: NSObject {
         let oldTemp = temp
         temp = ControlTuple()
         temp.controlWord.contents = instructionDecoder.load(opcode: Int(instruction.opcode),
-                                                            carryFlag: flags.carryFlag)
+                                                            carryFlag: flags.carryFlag,
+                                                            equalFlag: flags.equalFlag)
         temp.immediate = instruction.immediate
         
         if (!isResetting) {

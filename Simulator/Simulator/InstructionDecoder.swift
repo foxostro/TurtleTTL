@@ -30,8 +30,10 @@ class InstructionDecoder: NSObject {
         }
     }
     
-    func load(opcode:Int, carryFlag:Int) -> UInt16 {
-        return load(address: makeAddress(opcode: opcode, carryFlag: carryFlag))
+    func load(opcode:Int, carryFlag:Int, equalFlag:Int) -> UInt16 {
+        return load(address: makeAddress(opcode: opcode,
+                                         carryFlag: carryFlag,
+                                         equalFlag: equalFlag))
     }
     
     func load(address:Int) -> UInt16 {
@@ -39,12 +41,16 @@ class InstructionDecoder: NSObject {
     }
     
     func store(opcode:Int, controlWord:ControlWord) {
-        store(opcode: opcode, carryFlag: 0, controlWord: controlWord)
-        store(opcode: opcode, carryFlag: 1, controlWord: controlWord)
+        store(opcode: opcode, carryFlag: 0, equalFlag: 0, controlWord: controlWord)
+        store(opcode: opcode, carryFlag: 1, equalFlag: 0, controlWord: controlWord)
+        store(opcode: opcode, carryFlag: 0, equalFlag: 1, controlWord: controlWord)
+        store(opcode: opcode, carryFlag: 1, equalFlag: 1, controlWord: controlWord)
     }
     
-    func store(opcode:Int, carryFlag:Int, controlWord:ControlWord) {
-        store(address: makeAddress(opcode:opcode, carryFlag:carryFlag),
+    func store(opcode:Int, carryFlag:Int, equalFlag:Int, controlWord:ControlWord) {
+        store(address: makeAddress(opcode: opcode,
+                                   carryFlag: carryFlag,
+                                   equalFlag: equalFlag),
               value: controlWord.contents)
     }
     
@@ -53,10 +59,11 @@ class InstructionDecoder: NSObject {
         lowerROM[address] = UInt8( value & 0x00ff)
     }
     
-    func makeAddress(opcode:Int, carryFlag:Int) -> Int {
+    func makeAddress(opcode:Int, carryFlag:Int, equalFlag:Int) -> Int {
         // The physical construction of the instruction decoder circuit has the
         // opcode feeding into the lower eight bits of the ROM address.
-        // The flags aren't hooked up yet, but I would use bits 8 and 9.
-        return carryFlag<<8 | opcode
+        // The carry flag is connected to address bit 9.
+        // The equal flag is connected to address bit 8.
+        return carryFlag<<9 | equalFlag<<8 | opcode
     }
 }

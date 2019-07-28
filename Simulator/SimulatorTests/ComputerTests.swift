@@ -235,11 +235,21 @@ class ComputerTests: XCTestCase {
         let jcControl = ControlWord()
         jcControl.J = false
         computer.instructionDecoder.store(opcode: jc,
+                                          carryFlag:0,
+                                          equalFlag:0,
+                                          controlWord: nopControl)
+        computer.instructionDecoder.store(opcode: jc,
                                           carryFlag:1,
+                                          equalFlag:0,
                                           controlWord: jcControl)
         computer.instructionDecoder.store(opcode: jc,
                                           carryFlag:0,
+                                          equalFlag:1,
                                           controlWord: nopControl)
+        computer.instructionDecoder.store(opcode: jc,
+                                          carryFlag:1,
+                                          equalFlag:1,
+                                          controlWord: jcControl)
         
         computer.provideInstructions([
             Instruction(opcode: nop, immediate: 0),          // NOP
@@ -309,9 +319,19 @@ class ComputerTests: XCTestCase {
         jcControl.J = false
         computer.instructionDecoder.store(opcode: jc,
                                           carryFlag:1,
+                                          equalFlag:0,
                                           controlWord: jcControl)
         computer.instructionDecoder.store(opcode: jc,
                                           carryFlag:0,
+                                          equalFlag:0,
+                                          controlWord: nopControl)
+        computer.instructionDecoder.store(opcode: jc,
+                                          carryFlag:1,
+                                          equalFlag:1,
+                                          controlWord: jcControl)
+        computer.instructionDecoder.store(opcode: jc,
+                                          carryFlag:0,
+                                          equalFlag:1,
                                           controlWord: nopControl)
         
         computer.provideInstructions([
