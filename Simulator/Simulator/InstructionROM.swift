@@ -30,20 +30,17 @@ class InstructionROM: NSObject {
         }
     }
     
-    func store(address:UInt16, value:UInt16) {
-        upperROM[Int(address)] = UInt8((value & 0xff00) >> 8)
-        lowerROM[Int(address)] = UInt8( value & 0x00ff)
-    }
-    
     func store(address:Int, value:UInt16) {
-        store(address: UInt16(address), value: value)
+        upperROM[address] = UInt8((value & 0xff00) >> 8)
+        lowerROM[address] = UInt8( value & 0x00ff)
     }
     
-    func load(address:UInt16) -> UInt16 {
-        return UInt16(upperROM[Int(address)])<<8 | UInt16(lowerROM[Int(address)])
+    func store(address:Int, opcode:Int, immediate:Int) {
+        upperROM[Int(address)] = UInt8(opcode)
+        lowerROM[Int(address)] = UInt8(immediate)
     }
     
     func load(address:Int) -> UInt16 {
-        return load(address: UInt16(address))
+        return UInt16(upperROM[address])<<8 | UInt16(lowerROM[address])
     }
 }

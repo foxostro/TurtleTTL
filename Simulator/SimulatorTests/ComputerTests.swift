@@ -65,23 +65,23 @@ class ComputerTests: XCTestCase {
 
         // NOP
         computer.instructionDecoder.store(opcode: 0, value: nop.contents)
-        computer.instructionROM.store(address: 0, value: 0b0000000000000000)
+        computer.instructionROM.store(address: 0, opcode: 0, immediate: 0)
 
         // Set register A to immediate value 1.
         computer.instructionDecoder.store(opcode: 1, value: lda.contents)
-        computer.instructionROM.store(address: 1, value: 0b0000000100000001)
+        computer.instructionROM.store(address: 1, opcode: 1, immediate: 1)
 
         // Set register A to "A plus 1"
         computer.instructionDecoder.store(opcode: 2, value: sum.contents)
-        computer.instructionROM.store(address: 2, value: 0b0000001000000000)
+        computer.instructionROM.store(address: 2, opcode: 2, immediate: 0)
         
         // Set register A to "A plus 1"
         computer.instructionDecoder.store(opcode: 3, value: sum.contents)
-        computer.instructionROM.store(address: 3, value: 0b0000001100000000)
+        computer.instructionROM.store(address: 3, opcode: 3, immediate: 0)
 
         // Halt
         computer.instructionDecoder.store(opcode: 4, value: hlt.contents)
-        computer.instructionROM.store(address: 4, value: 0b0000010000000000)
+        computer.instructionROM.store(address: 4, opcode: 4, immediate: 0)
 
         computer.execute()
         
