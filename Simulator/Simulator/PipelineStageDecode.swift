@@ -22,8 +22,8 @@ class PipelineStageDecode: NSObject {
         temp.controlWord.contents = instructionDecoder.load(opcode: Int(instruction.opcode))
         temp.immediate = instruction.immediate
         
-        NSLog("Decoded instruction %@ to control word 0b%@",
-              instruction, String(temp.controlWord.contents, radix: 2))
+        NSLog("Decoded instruction %@ to control word %@",
+              instruction, temp.controlWord)
         
         return oldTemp
     }

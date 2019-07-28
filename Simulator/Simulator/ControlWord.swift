@@ -72,4 +72,57 @@ class ControlWord: NSObject {
         result.contents = contents
         return result
     }
+    
+    override var description: String {
+        var signals = [String]()
+        if (false == CO) {
+            signals.append("CO")
+        }
+        if (false == J) {
+            signals.append("J")
+        }
+        if (false == YI) {
+            signals.append("YI")
+        }
+        if (false == XI) {
+            signals.append("XI")
+        }
+        if (false == YO) {
+            signals.append("YO")
+        }
+        if (false == XO) {
+            signals.append("XO")
+        }
+        if (false == MO) {
+            signals.append("MO")
+        }
+        if (false == MI) {
+            signals.append("MI")
+        }
+        if (false == EO) {
+            signals.append("EO")
+        }
+        if (false == FI) {
+            signals.append("FI")
+        }
+        if (false == AO) {
+            signals.append("AO")
+        }
+        if (false == AI) {
+            signals.append("AI")
+        }
+        if (false == BO) {
+            signals.append("BO")
+        }
+        if (false == BI) {
+            signals.append("BI")
+        }
+        if (false == DI) {
+            signals.append("DI")
+        }
+        if (true == HLT) {
+            signals.append("HLT")
+        }
+        return String(format: "{%@}", signals.joined(separator: ", "));
+    }
 }

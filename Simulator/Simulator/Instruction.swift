@@ -11,10 +11,12 @@ import Cocoa
 class Instruction: NSObject {
     var opcode:UInt8 = 0
     var immediate:UInt8 = 0
+    
     var value:UInt16 {
         return UInt16(Int(opcode) << 8 | Int(immediate))
     }
+    
     override var description: String {
-        return String(format: "{opcode=0x%x, immediate=0x%x}", opcode, immediate)
+        return String(format: "{op=0x%x, imm=0x%x}", opcode, immediate)
     }
 }
