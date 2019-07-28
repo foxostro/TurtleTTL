@@ -10,6 +10,7 @@ import Cocoa
 
 class PipelineStageDecode: NSObject {
     let instructionDecoder:InstructionDecoder
+    var isResetting = false
     private var temp = ControlTuple()
     
     init(withDecoder instructionDecoder:InstructionDecoder) {
@@ -22,8 +23,10 @@ class PipelineStageDecode: NSObject {
         temp.controlWord.contents = instructionDecoder.load(opcode: Int(instruction.opcode))
         temp.immediate = instruction.immediate
         
-        NSLog("Decoded instruction %@ to control word %@",
-              instruction, temp.controlWord)
+        if (!isResetting) {
+            NSLog("Decoded instruction %@ to control word %@",
+                  instruction, temp.controlWord)
+        }
         
         return oldTemp
     }

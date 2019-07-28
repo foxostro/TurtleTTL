@@ -12,6 +12,7 @@ class PipelineFetchStage: NSObject {
     var programCounter:ProgramCounter
     var instructionROM:InstructionROM
     var instructionRegister = Instruction()
+    var isResetting = false
     
     init(withProgramCounter programCounter:ProgramCounter, withInstructionROM instructionROM:InstructionROM) {
         self.programCounter = programCounter
@@ -22,7 +23,9 @@ class PipelineFetchStage: NSObject {
         let oldInstruction = instructionRegister
         let pc = programCounter.contents
         let newInstruction = instructionROM.load(address: Int(pc))
-        NSLog("Fetched new instruction from memory: %@", newInstruction)
+        if (!isResetting) {
+            NSLog("Fetched new instruction from memory: %@", newInstruction)
+        }
         
         instructionRegister = newInstruction
         programCounter.increment()

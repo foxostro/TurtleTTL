@@ -44,11 +44,17 @@ class Computer: NSObject {
     }
     
     func reset() {
+        pipelineStageFetch.isResetting = true
+        pipelineStageDecode.isResetting = true
+        pipelineStageExecute.isResetting = true
         for _ in 1...3 {
             programCounter.contents = 0
             haltlessStep()
         }
         programCounter.contents = 0
+        pipelineStageFetch.isResetting = false
+        pipelineStageDecode.isResetting = false
+        pipelineStageExecute.isResetting = false
     }
     
     func step() {
