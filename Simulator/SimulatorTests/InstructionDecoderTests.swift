@@ -15,7 +15,7 @@ class InstructionDecoderTests: XCTestCase {
         let decoder = InstructionDecoder()
         XCTAssertEqual(decoder.size, 131072)
         for i in 0..<decoder.size {
-            XCTAssertEqual(decoder.contents[i], 0)
+            XCTAssertEqual(decoder.load(opcode: i), 0)
         }
     }
     
@@ -23,10 +23,10 @@ class InstructionDecoderTests: XCTestCase {
         let decoder = InstructionDecoder()
         let value: UInt16 = 1234
         for i in 0..<decoder.size {
-            decoder.contents[i] = value
+            decoder.store(opcode: i, value: value)
         }
         for i in 0..<decoder.size {
-            XCTAssertEqual(decoder.contents[i], value)
+            XCTAssertEqual(decoder.load(opcode: i), value)
         }
     }
 }

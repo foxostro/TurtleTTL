@@ -19,7 +19,7 @@ class PipelineStageDecode: NSObject {
     func decode(withInstruction instruction:Instruction) -> ControlTuple {
         let oldTemp = temp
         temp = ControlTuple()
-        temp.controlWord.contents = instructionDecoder.contents[Int(instruction.opcode)]
+        temp.controlWord.contents = instructionDecoder.load(opcode: Int(instruction.opcode))
         temp.immediate = instruction.immediate
         
         NSLog("Decoded instruction with opcode=%d;immediate=%d to control word 0b%@",
