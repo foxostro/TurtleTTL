@@ -21,12 +21,8 @@ class InstructionROMTests: XCTestCase {
     
     func testContentsModifiable() {
         let memory = InstructionROM()
-        let value: UInt16 = 1234
-        for i in 0..<memory.size {
-            memory.store(address: i, value: value)
-        }
-        for i in 0..<memory.size {
-            XCTAssertEqual(memory.load(address: i), value)
-        }
+        let value: UInt16 = 32767
+        memory.store(address: 0, value: value)
+        XCTAssertEqual(memory.load(address: 0), value)
     }
 }
