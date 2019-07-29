@@ -16,16 +16,17 @@ class ViewController: NSViewController {
     @IBOutlet var registerD:NSTextField!
     @IBOutlet var registerX:NSTextField!
     @IBOutlet var registerY:NSTextField!
-    @IBOutlet var alu:NSTextField!
+    @IBOutlet var aluResult:NSTextField!
     @IBOutlet var controlWord:NSTextField!
     @IBOutlet var programCounter:NSTextField!
     @IBOutlet var bus:NSTextField!
+    @IBOutlet var outputDisplay:NSTextField!
     @IBOutlet var stepButton:NSButton!
     @IBOutlet var runButton:NSButton!
     var isExecuting = false {
         didSet {
             stepButton.isEnabled = !isExecuting
-            runButton.stringValue = isExecuting ? "Stop" : "Run"
+            runButton.title = isExecuting ? "Stop" : "Run"
         }
     }
 
@@ -139,13 +140,14 @@ class ViewController: NSViewController {
         registerA.stringValue = String(computer.registerA.contents, radix: 16)
         registerB.stringValue = String(computer.registerB.contents, radix: 16)
         registerC.stringValue = String(computer.registerC.contents, radix: 16)
-        registerD.stringValue = String(computer.registerD.contents)
+        registerD.stringValue = String(computer.registerD.contents, radix: 16)
         registerX.stringValue = String(computer.registerX.contents, radix: 16)
         registerY.stringValue = String(computer.registerY.contents, radix: 16)
-        alu.stringValue = String(computer.alu.result, radix: 16)
+        aluResult.stringValue = String(computer.alu.result, radix: 16)
         controlWord.stringValue = computer.controlWordRegister.description
         programCounter.stringValue = String(computer.programCounter.contents, radix: 16)
         bus.stringValue = String(computer.pipelineStageExecute.bus, radix: 16)
+        outputDisplay.stringValue = String(computer.registerD.contents)
     }
 }
 
