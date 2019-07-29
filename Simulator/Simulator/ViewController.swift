@@ -25,29 +25,13 @@ class ViewController: NSViewController {
     @IBOutlet var runButton:NSButton!
     @IBOutlet var eventLog:NSTextView!
     var logger:TextViewLogger!
-    
-    var isExecuting = false {
-        didSet {
-            stepButton.isEnabled = !isExecuting
-            runButton.title = isExecuting ? "Stop" : "Run"
-            runButton.keyEquivalent = isExecuting ? "." : "r"
-            runButton.keyEquivalentModifierMask = NSEvent.ModifierFlags.command
-        }
-    }
-    
-    var isHalted = false {
-        didSet {
-            isExecuting = false
-            stepButton.isEnabled = !isHalted
-            runButton.isEnabled = !isHalted
-        }
-    }
+    let executor = ComputerExecutor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLogger()
         feedExampleProgram()
-        startExecutionTimer()
+        setupExecutor()
     }
     
     func setupLogger() {
@@ -123,47 +107,57 @@ class ViewController: NSViewController {
             Instruction(opcode: hlt, immediate: 0)])         // HLT
     }
     
-    func startExecutionTimer() {
-        refresh()
+    func setupExecutor() {
+        executor.computer = computer
         
-        isHalted = false
-        isExecuting = false
-        computer.reset()
+        executor.onStep = {
+            self.refresh()
+        }
+        executor.didStart = {
+            self.makeStopButtonAvailable()
+        }
+        executor.didStop = {
+            self.makeRunButtonAvailable()
+        }
+        executor.didHalt = {
+            self.stepButton.isEnabled = false
+            self.runButton.isEnabled = false
+        }
+        executor.didReset = {
+            self.makeRunButtonAvailable()
+            self.stepButton.isEnabled = true
+            self.runButton.isEnabled = true
+            self.logger.clear()
+            self.refresh()
+        }
         
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: {timer in
-            self.tick()
-        })
+        executor.beginTimer()
+    }
+    
+    func makeRunButtonAvailable() {
+        stepButton.isEnabled = true
+        runButton.title = "Run"
+        runButton.keyEquivalent = "r"
+        runButton.keyEquivalentModifierMask = NSEvent.ModifierFlags.command
+    }
+    
+    func makeStopButtonAvailable() {
+        stepButton.isEnabled = false
+        runButton.title = "Stop"
+        runButton.keyEquivalent = "."
+        runButton.keyEquivalentModifierMask = NSEvent.ModifierFlags.command
     }
 
     @IBAction func step(_ sender: Any) {
-        if (!isExecuting) {
-            computer.step()
-            refresh()
-        }
+        executor.step()
     }
     
-    @IBAction func execute(_ sender: Any) {
-        isExecuting = !isExecuting
-    }
-    
-    func tick() {
-        if (computer.controlWordRegister.HLT) {
-            isExecuting = false
-            isHalted = true
-        }
-        
-        if (isExecuting) {
-            computer.step()
-            refresh()
-        }
+    @IBAction func runOrStop(_ sender: Any) {
+        executor.runOrStop()
     }
     
     @IBAction func reset(_ sender: Any) {
-        isHalted = false
-        isExecuting = false
-        computer.reset()
-        refresh()
-        logger.clear()
+        executor.reset()
     }
     
     @IBAction func modifyRegisterA(_ sender: Any) {

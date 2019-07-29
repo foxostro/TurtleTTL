@@ -750,7 +750,7 @@
                                                             <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                                         </buttonCell>
                                                         <connections>
-                                                            <action selector="execute:" target="XfG-lQ-9wD" id="b6i-h2-xL2"/>
+                                                            <action selector="runOrStop:" target="XfG-lQ-9wD" id="b6i-h2-xL2"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
