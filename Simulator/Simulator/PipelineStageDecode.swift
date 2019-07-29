@@ -29,7 +29,7 @@ class PipelineStageDecode: NSObject {
         temp.immediate = instruction.immediate
         
         if (!isResetting) {
-            logger?.log("Decoded instruction %@ to control word %@",
+            logger?.append("Decoded instruction %@ to control word %@",
                         instruction, temp.controlWord)
         }
         

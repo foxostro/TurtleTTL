@@ -23,7 +23,8 @@ class ViewController: NSViewController {
     @IBOutlet var outputDisplay:NSTextField!
     @IBOutlet var stepButton:NSButton!
     @IBOutlet var runButton:NSButton!
-    let logger = Logger()
+    @IBOutlet var eventLog:NSTextView!
+    var logger:TextViewLogger!
     
     var isExecuting = false {
         didSet {
@@ -50,10 +51,7 @@ class ViewController: NSViewController {
     }
     
     func setupLogger() {
-        logger.onLog = { (formattedString:String) in
-            NSLog(formattedString)
-        }
-        
+        logger = TextViewLogger(textView: eventLog)
         computer.logger = logger
     }
     
@@ -165,6 +163,7 @@ class ViewController: NSViewController {
         isExecuting = false
         computer.reset()
         refresh()
+        logger.clear()
     }
     
     @IBAction func modifyRegisterA(_ sender: Any) {

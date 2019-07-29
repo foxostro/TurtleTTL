@@ -25,7 +25,7 @@ class PipelineFetchStage: NSObject {
         let pc = programCounter.contents
         let newInstruction = instructionROM.load(address: Int(pc))
         if (!isResetting) {
-            logger?.log("Fetched new instruction from memory: %@", newInstruction)
+            logger?.append("Fetched new instruction from memory: %@", newInstruction)
         }
         
         instructionRegister = newInstruction

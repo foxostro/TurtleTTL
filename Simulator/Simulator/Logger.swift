@@ -9,10 +9,6 @@
 import Cocoa
 
 class Logger: NSObject {
-    var onLog:(String)->Void = {(String) in
-    }
-    
-    func log(_ format: String, _ args: CVarArg...) {
-        onLog(String(format:format, arguments:args))
+    func append(_ format: String, _ args: CVarArg...) {
     }
 }

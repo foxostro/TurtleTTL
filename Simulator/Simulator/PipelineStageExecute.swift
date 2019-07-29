@@ -69,31 +69,31 @@ class PipelineStageExecute: NSObject {
         if (false == controlWordRegister.CO) {
             bus = registerC.contents
             if (!isResetting) {
-                logger?.log("CO -- output %d onto bus", bus)
+                logger?.append("CO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.YO) {
             bus = registerY.contents
             if (!isResetting) {
-                logger?.log("YO -- output %d onto bus", bus)
+                logger?.append("YO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.XO) {
             bus = registerX.contents
             if (!isResetting) {
-                logger?.log("XO -- output %d onto bus", bus)
+                logger?.append("XO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.MO) {
             bus = dataRAM.contents[valueOfXYPair()]
             if (!isResetting) {
-                logger?.log("MO -- output %d onto bus", bus)
+                logger?.append("MO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.EO) {
             bus = alu.result
             if (!isResetting) {
-                logger?.log("EO -- output %d onto bus", bus)
+                logger?.append("EO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.FI) {
@@ -105,69 +105,69 @@ class PipelineStageExecute: NSObject {
             flags.equalFlag = alu.equalFlag
             
             if (!isResetting) {
-                logger?.log("FI -- flags changing from %@ to %@", oldFlags, flags)
+                logger?.append("FI -- flags changing from %@ to %@", oldFlags, flags)
             }
         }
         if (false == controlWordRegister.AO) {
             bus = registerA.contents
             if (!isResetting) {
-                logger?.log("AO -- output %d onto bus", bus)
+                logger?.append("AO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.BO) {
             bus = registerB.contents
             if (!isResetting) {
-                logger?.log("BO -- output %d onto bus", bus)
+                logger?.append("BO -- output %d onto bus", bus)
             }
         }
         
         if (false == controlWordRegister.YI) {
             if (!isResetting) {
-                logger?.log("YI -- input %d from bus", bus)
+                logger?.append("YI -- input %d from bus", bus)
             }
             registerY.contents = bus
         }
         if (false == controlWordRegister.XI) {
             if (!isResetting) {
-                logger?.log("XI -- input %d from bus", bus)
+                logger?.append("XI -- input %d from bus", bus)
             }
             registerX.contents = bus
         }
         if (false == controlWordRegister.AI) {
             if (!isResetting) {
-                logger?.log("AI -- input %d from bus", bus)
+                logger?.append("AI -- input %d from bus", bus)
             }
             registerA.contents = bus
         }
         if (false == controlWordRegister.BI) {
             if (!isResetting) {
-                logger?.log("BI -- input %d from bus", bus)
+                logger?.append("BI -- input %d from bus", bus)
             }
             registerB.contents = bus
         }
         if (false == controlWordRegister.DI) {
             if (!isResetting) {
-                logger?.log("DI -- input %d from bus", bus)
+                logger?.append("DI -- input %d from bus", bus)
             }
             registerD.contents = bus
         }
         if (false == controlWordRegister.MI) {
             if (!isResetting) {
-                logger?.log("MI -- input %d from bus", bus)
+                logger?.append("MI -- input %d from bus", bus)
             }
             dataRAM.contents[valueOfXYPair()] = bus
         }
         if (false == controlWordRegister.J) {
             if (!isResetting) {
-                logger?.log("J -- jump to %d", UInt16(valueOfXYPair()))
+                logger?.append("J -- jump to %d", UInt16(valueOfXYPair()))
             }
             programCounter.contents = UInt16(valueOfXYPair())
         }
         if (true == controlWordRegister.HLT) {
-            logger?.log("HLT")
+            logger?.append("HLT")
         }
         if (!isResetting) {
-            logger?.log("-----")
+            logger?.append("-----")
         }
     }
     
