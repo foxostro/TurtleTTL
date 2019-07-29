@@ -182,15 +182,15 @@ class ViewController: NSViewController {
     }
     
     func refresh() {
-        registerA.stringValue = String(computer.registerA.contents, radix: 16)
-        registerB.stringValue = String(computer.registerB.contents, radix: 16)
-        registerC.stringValue = String(computer.registerC.contents, radix: 16)
-        registerD.stringValue = String(computer.registerD.contents, radix: 16)
-        registerX.stringValue = String(computer.registerX.contents, radix: 16)
-        registerY.stringValue = String(computer.registerY.contents, radix: 16)
-        aluResult.stringValue = String(computer.alu.result, radix: 16)
+        registerA.stringValue = computer.registerA.stringValue
+        registerB.stringValue = computer.registerB.stringValue
+        registerC.stringValue = computer.registerC.stringValue
+        registerD.stringValue = computer.registerD.stringValue
+        registerX.stringValue = computer.registerX.stringValue
+        registerY.stringValue = computer.registerY.stringValue
+        aluResult.stringValue = computer.alu.stringValue
         controlWord.stringValue = computer.controlWordRegister.description
-        programCounter.stringValue = String(computer.programCounter.contents, radix: 16)
+        programCounter.stringValue = computer.programCounter.stringValue
         bus.stringValue = String(computer.pipelineStageExecute.bus, radix: 16)
         outputDisplay.stringValue = String(computer.registerD.contents)
     }
