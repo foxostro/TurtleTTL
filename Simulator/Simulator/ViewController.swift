@@ -206,7 +206,7 @@ class ViewController: NSViewController {
         aluResult.stringValue = computer.alu.stringValue
         controlWord.stringValue = computer.controlWordRegister.description
         programCounter.stringValue = computer.programCounter.stringValue
-        bus.stringValue = String(computer.pipelineStageExecute.bus, radix: 16)
+        bus.stringValue = computer.busStringValue
         outputDisplay.stringValue = String(computer.registerD.contents)
     }
 }

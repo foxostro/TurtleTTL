@@ -87,4 +87,8 @@ class Computer: NSObject {
     func provideInstructions(_ instructions: [Instruction]) {
         instructionROM.store(instructions)
     }
+    
+    var busStringValue:String {
+        return String(pipelineStageExecute.bus, radix: 16)
+    }
 }
