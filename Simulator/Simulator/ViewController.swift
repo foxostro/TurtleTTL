@@ -23,12 +23,21 @@ class ViewController: NSViewController {
     @IBOutlet var outputDisplay:NSTextField!
     @IBOutlet var stepButton:NSButton!
     @IBOutlet var runButton:NSButton!
+    
     var isExecuting = false {
         didSet {
             stepButton.isEnabled = !isExecuting
             runButton.title = isExecuting ? "Stop" : "Run"
             runButton.keyEquivalent = isExecuting ? "." : "r"
             runButton.keyEquivalentModifierMask = NSEvent.ModifierFlags.command
+        }
+    }
+    
+    var isHalted = false {
+        didSet {
+            isExecuting = false
+            stepButton.isEnabled = !isHalted
+            runButton.isEnabled = !isHalted
         }
     }
 
@@ -103,7 +112,9 @@ class ViewController: NSViewController {
         
         refresh()
         
+        isHalted = false
         isExecuting = false
+        computer.reset()
         
         Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: {timer in
             self.tick()
@@ -124,6 +135,7 @@ class ViewController: NSViewController {
     func tick() {
         if (computer.controlWordRegister.HLT) {
             isExecuting = false
+            isHalted = true
         }
         
         if (isExecuting) {
@@ -133,6 +145,7 @@ class ViewController: NSViewController {
     }
     
     @IBAction func reset(_ sender: Any) {
+        isHalted = false
         isExecuting = false
         computer.reset()
         refresh()
