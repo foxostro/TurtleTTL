@@ -27,6 +27,8 @@ class ViewController: NSViewController {
         didSet {
             stepButton.isEnabled = !isExecuting
             runButton.title = isExecuting ? "Stop" : "Run"
+            runButton.keyEquivalent = isExecuting ? "." : "r"
+            runButton.keyEquivalentModifierMask = NSEvent.ModifierFlags.command
         }
     }
 
@@ -133,6 +135,36 @@ class ViewController: NSViewController {
     @IBAction func reset(_ sender: Any) {
         isExecuting = false
         computer.reset()
+        refresh()
+    }
+    
+    @IBAction func modifyRegisterA(_ sender: Any) {
+        computer.registerA.stringValue = registerA.stringValue
+        refresh()
+    }
+    
+    @IBAction func modifyRegisterB(_ sender: Any) {
+        computer.registerB.stringValue = registerB.stringValue
+        refresh()
+    }
+    
+    @IBAction func modifyRegisterD(_ sender: Any) {
+        computer.registerD.stringValue = registerD.stringValue
+        refresh()
+    }
+    
+    @IBAction func modifyRegisterX(_ sender: Any) {
+        computer.registerX.stringValue = registerX.stringValue
+        refresh()
+    }
+    
+    @IBAction func modifyRegisterY(_ sender: Any) {
+        computer.registerY.stringValue = registerY.stringValue
+        refresh()
+    }
+    
+    @IBAction func modifyRegisterPC(_ sender: Any) {
+        computer.programCounter.stringValue = programCounter.stringValue
         refresh()
     }
     
