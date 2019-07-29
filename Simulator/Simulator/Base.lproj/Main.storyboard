@@ -723,6 +723,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="step:" target="XfG-lQ-9wD" id="5ML-TY-sGF"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uxN-1E-3li">
                                 <rect key="frame" x="501" y="692" width="68" height="32"/>
@@ -731,6 +734,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="execute:" target="XfG-lQ-9wD" id="b6i-h2-xL2"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0c-di-dx8" userLabel="A">
                                 <rect key="frame" x="507" y="350" width="63" height="22"/>
@@ -804,17 +810,8 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaz-SY-AcQ" userLabel="Control Word Upper">
-                                <rect key="frame" x="239" y="52" width="63" height="22"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" borderStyle="bezel" title="Label" drawsBackground="YES" id="5Na-LA-RzA">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSZ-PW-AH6" userLabel="Control Word Lower">
-                                <rect key="frame" x="313" y="51" width="63" height="22"/>
+                                <rect key="frame" x="239" y="51" width="135" height="22"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" borderStyle="bezel" title="Label" drawsBackground="YES" id="w9I-u6-vAL">
                                     <font key="font" metaFont="system"/>
@@ -838,11 +835,31 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="reset:" target="XfG-lQ-9wD" id="Fcc-iN-Jwk"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="alu" destination="yFa-cX-imF" id="z0T-G5-46k"/>
+                        <outlet property="bus" destination="qSl-1z-8P7" id="KnH-V5-R51"/>
+                        <outlet property="computer" destination="PpV-dj-gSv" id="g52-lV-CNE"/>
+                        <outlet property="controlWord" destination="dSZ-PW-AH6" id="Ifj-k3-U6R"/>
+                        <outlet property="programCounter" destination="quS-a1-g2o" id="xuJ-fg-kbT"/>
+                        <outlet property="registerA" destination="Z0c-di-dx8" id="KUR-dZ-7D1"/>
+                        <outlet property="registerB" destination="4w9-ht-fQq" id="lU3-Ff-HzK"/>
+                        <outlet property="registerC" destination="Egn-vF-jzT" id="YRS-e0-40i"/>
+                        <outlet property="registerD" destination="PGT-7a-JFE" id="U1I-3E-isP"/>
+                        <outlet property="registerX" destination="QFi-tj-df0" id="gGB-gu-6LW"/>
+                        <outlet property="registerY" destination="4sT-JG-DI8" id="eM3-Lr-iUs"/>
+                        <outlet property="runButton" destination="uxN-1E-3li" id="yrW-0C-v1V"/>
+                        <outlet property="stepButton" destination="vHF-hX-KMo" id="K2V-Dr-AWJ"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="UzL-l0-aAD"/>
+                <customObject id="PpV-dj-gSv" customClass="Computer" customModule="Simulator" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="74" y="1278"/>
         </scene>
