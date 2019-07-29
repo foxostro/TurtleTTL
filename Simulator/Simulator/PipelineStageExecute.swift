@@ -22,6 +22,7 @@ class PipelineStageExecute: NSObject {
     let alu:ALU
     var bus:UInt8 = 0
     var isResetting = false
+    var logger:Logger?
     
     init(controlWordRegister:ControlWord,
          registerA:Register,
@@ -65,37 +66,34 @@ class PipelineStageExecute: NSObject {
     }
     
     func processControlSignals() {
-        if (!isResetting) {
-            NSLog("executing:");
-        }
         if (false == controlWordRegister.CO) {
             bus = registerC.contents
             if (!isResetting) {
-                NSLog("CO -- output %d onto bus", bus)
+                logger?.log("CO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.YO) {
             bus = registerY.contents
             if (!isResetting) {
-                NSLog("YO -- output %d onto bus", bus)
+                logger?.log("YO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.XO) {
             bus = registerX.contents
             if (!isResetting) {
-                NSLog("XO -- output %d onto bus", bus)
+                logger?.log("XO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.MO) {
             bus = dataRAM.contents[valueOfXYPair()]
             if (!isResetting) {
-                NSLog("MO -- output %d onto bus", bus)
+                logger?.log("MO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.EO) {
             bus = alu.result
             if (!isResetting) {
-                NSLog("EO -- output %d onto bus", bus)
+                logger?.log("EO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.FI) {
@@ -107,66 +105,69 @@ class PipelineStageExecute: NSObject {
             flags.equalFlag = alu.equalFlag
             
             if (!isResetting) {
-                NSLog("FI -- flags changing from %@ to %@", oldFlags, flags)
+                logger?.log("FI -- flags changing from %@ to %@", oldFlags, flags)
             }
         }
         if (false == controlWordRegister.AO) {
             bus = registerA.contents
             if (!isResetting) {
-                NSLog("AO -- output %d onto bus", bus)
+                logger?.log("AO -- output %d onto bus", bus)
             }
         }
         if (false == controlWordRegister.BO) {
             bus = registerB.contents
             if (!isResetting) {
-                NSLog("BO -- output %d onto bus", bus)
+                logger?.log("BO -- output %d onto bus", bus)
             }
         }
         
         if (false == controlWordRegister.YI) {
             if (!isResetting) {
-                NSLog("YI -- input %d from bus", bus)
+                logger?.log("YI -- input %d from bus", bus)
             }
             registerY.contents = bus
         }
         if (false == controlWordRegister.XI) {
             if (!isResetting) {
-                NSLog("XI -- input %d from bus", bus)
+                logger?.log("XI -- input %d from bus", bus)
             }
             registerX.contents = bus
         }
         if (false == controlWordRegister.AI) {
             if (!isResetting) {
-                NSLog("AI -- input %d from bus", bus)
+                logger?.log("AI -- input %d from bus", bus)
             }
             registerA.contents = bus
         }
         if (false == controlWordRegister.BI) {
             if (!isResetting) {
-                NSLog("BI -- input %d from bus", bus)
+                logger?.log("BI -- input %d from bus", bus)
             }
             registerB.contents = bus
         }
         if (false == controlWordRegister.DI) {
             if (!isResetting) {
-                NSLog("DI -- input %d from bus", bus)
+                logger?.log("DI -- input %d from bus", bus)
             }
             registerD.contents = bus
         }
         if (false == controlWordRegister.MI) {
             if (!isResetting) {
-                NSLog("MI -- input %d from bus", bus)
+                logger?.log("MI -- input %d from bus", bus)
             }
             dataRAM.contents[valueOfXYPair()] = bus
         }
         if (false == controlWordRegister.J) {
             if (!isResetting) {
-                NSLog("J -- jump to %d", UInt16(valueOfXYPair()))
+                logger?.log("J -- jump to %d", UInt16(valueOfXYPair()))
             }
             programCounter.contents = UInt16(valueOfXYPair())
         }
+        if (true == controlWordRegister.HLT) {
+            logger?.log("HLT")
+        }
         if (!isResetting) {
-            NSLog("done executing.")
+            logger?.log("-----")
         }
     }
     

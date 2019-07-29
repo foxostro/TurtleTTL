@@ -25,6 +25,13 @@ class Computer: NSObject {
     let pipelineStageFetch:PipelineFetchStage
     let pipelineStageDecode:PipelineStageDecode
     let pipelineStageExecute:PipelineStageExecute
+    var logger:Logger? {
+        didSet {
+            pipelineStageFetch.logger = logger
+            pipelineStageDecode.logger = logger
+            pipelineStageExecute.logger = logger
+        }
+    }
     
     override init() {
         pipelineStageFetch = PipelineFetchStage(withProgramCounter: programCounter,

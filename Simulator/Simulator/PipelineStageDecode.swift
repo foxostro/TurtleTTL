@@ -13,6 +13,7 @@ class PipelineStageDecode: NSObject {
     let flags:Flags
     var isResetting = false
     private var temp = ControlTuple()
+    var logger:Logger?
     
     init(withDecoder instructionDecoder:InstructionDecoder, flags:Flags) {
         self.instructionDecoder = instructionDecoder
@@ -28,8 +29,8 @@ class PipelineStageDecode: NSObject {
         temp.immediate = instruction.immediate
         
         if (!isResetting) {
-            NSLog("Decoded instruction %@ to control word %@",
-                  instruction, temp.controlWord)
+            logger?.log("Decoded instruction %@ to control word %@",
+                        instruction, temp.controlWord)
         }
         
         return oldTemp

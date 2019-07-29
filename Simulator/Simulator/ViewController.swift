@@ -23,6 +23,7 @@ class ViewController: NSViewController {
     @IBOutlet var outputDisplay:NSTextField!
     @IBOutlet var stepButton:NSButton!
     @IBOutlet var runButton:NSButton!
+    let logger = Logger()
     
     var isExecuting = false {
         didSet {
@@ -40,10 +41,23 @@ class ViewController: NSViewController {
             runButton.isEnabled = !isHalted
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupLogger()
+        feedExampleProgram()
+        startExecutionTimer()
+    }
+    
+    func setupLogger() {
+        logger.onLog = { (formattedString:String) in
+            NSLog(formattedString)
+        }
+        
+        computer.logger = logger
+    }
+    
+    func feedExampleProgram() {
         let nop = 0
         let nopControl = ControlWord()
         computer.instructionDecoder.store(opcode: nop, controlWord: nopControl)
@@ -109,7 +123,9 @@ class ViewController: NSViewController {
             Instruction(opcode: lda, immediate: 1),          // LDA $1
             Instruction(opcode: ldb, immediate: 2),          // LDB $2
             Instruction(opcode: hlt, immediate: 0)])         // HLT
-        
+    }
+    
+    func startExecutionTimer() {
         refresh()
         
         isHalted = false

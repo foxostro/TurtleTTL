@@ -9,10 +9,11 @@
 import Cocoa
 
 class PipelineFetchStage: NSObject {
-    var programCounter:ProgramCounter
-    var instructionROM:InstructionROM
+    let programCounter:ProgramCounter
+    let instructionROM:InstructionROM
     var instructionRegister = Instruction()
     var isResetting = false
+    var logger:Logger?
     
     init(withProgramCounter programCounter:ProgramCounter, withInstructionROM instructionROM:InstructionROM) {
         self.programCounter = programCounter
@@ -24,7 +25,7 @@ class PipelineFetchStage: NSObject {
         let pc = programCounter.contents
         let newInstruction = instructionROM.load(address: Int(pc))
         if (!isResetting) {
-            NSLog("Fetched new instruction from memory: %@", newInstruction)
+            logger?.log("Fetched new instruction from memory: %@", newInstruction)
         }
         
         instructionRegister = newInstruction
