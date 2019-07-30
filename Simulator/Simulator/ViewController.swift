@@ -18,6 +18,7 @@ class ViewController: NSViewController {
     @IBOutlet var registerY:NSTextField!
     @IBOutlet var aluResult:NSTextField!
     @IBOutlet var controlWord:NSTextField!
+    @IBOutlet var controlSignals:NSTextField!
     @IBOutlet var programCounter:NSTextField!
     @IBOutlet var bus:NSTextField!
     @IBOutlet var outputDisplay:NSTextField!
@@ -198,7 +199,8 @@ class ViewController: NSViewController {
         registerX.stringValue = computer.registerX.stringValue
         registerY.stringValue = computer.registerY.stringValue
         aluResult.stringValue = computer.alu.stringValue
-        controlWord.stringValue = computer.controlWordRegister.description
+        controlWord.stringValue = computer.controlWordRegister.stringValue
+        controlSignals.stringValue = computer.controlWordRegister.description
         programCounter.stringValue = computer.programCounter.stringValue
         bus.stringValue = computer.busStringValue
         outputDisplay.stringValue = String(computer.registerD.contents)

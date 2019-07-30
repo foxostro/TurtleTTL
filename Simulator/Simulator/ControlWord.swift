@@ -67,6 +67,14 @@ class ControlWord: NSObject {
         }
     }
     
+    var stringValue: String {
+        var result = String(contents, radix: 2)
+        if result.count < 16 {
+            result = String(repeatElement("0", count: 16 - result.count)) + result
+        }
+        return result
+    }
+    
     func clone() -> ControlWord {
         let result = ControlWord()
         result.contents = contents
