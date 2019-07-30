@@ -13,11 +13,16 @@ class Memory: NSObject {
     var contents: [UInt8]
     
     var data: Data {
-        let data = NSMutableData()
-        for value in contents {
-            data.append(Data([value]))
+        get {
+            let data = NSMutableData()
+            for value in contents {
+                data.append(Data([value]))
+            }
+            return data as Data
         }
-        return data as Data
+        set(newData) {
+            contents = [UInt8](newData)
+        }
     }
     
     subscript(i:Int) -> UInt8 {
@@ -37,9 +42,5 @@ class Memory: NSObject {
             contents.append(0)
         }
         super.init()
-    }
-    
-    func write(url: URL) throws {
-        try data.write(to: url)
     }
 }

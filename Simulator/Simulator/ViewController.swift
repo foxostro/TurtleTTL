@@ -205,5 +205,49 @@ class ViewController: NSViewController {
         bus.stringValue = computer.busStringValue
         outputDisplay.stringValue = String(computer.registerD.contents)
     }
+    
+    @IBAction func save(sender: Any?) {
+        let lowerDecoderROM = self.computer.instructionDecoder.lowerROM.data
+        let upperDecoderROM = self.computer.instructionDecoder.upperROM.data
+        let lowerInstructionROM = self.computer.instructionROM.lowerROM.data
+        let upperInstructionROM = self.computer.instructionROM.upperROM.data
+        
+        let panel = NSSavePanel()
+        panel.canCreateDirectories = true
+        panel.begin { (response: NSApplication.ModalResponse) in
+            if (response == NSApplication.ModalResponse.OK) {
+                if let url = panel.url {
+                    do {
+                        try FileManager.default.createDirectory(at: url, withIntermediateDirectories: false, attributes: [:])
+                        try lowerDecoderROM.write(to: url.appendingPathComponent("Lower Decoder ROM.bin"))
+                        try upperDecoderROM.write(to: url.appendingPathComponent("Upper Decoder ROM.bin"))
+                        try lowerInstructionROM.write(to: url.appendingPathComponent("Lower Instruction ROM.bin"))
+                        try upperInstructionROM.write(to: url.appendingPathComponent("Upper Instruction ROM.bin"))
+                    } catch {
+                        NSAlert(error: error).runModal()
+                    }
+                }
+            }
+        }
+    }
+    
+    @IBAction func load(sender: Any?) {
+        let panel = NSOpenPanel()
+        panel.canChooseFiles = false
+        panel.canChooseDirectories = true
+        panel.begin { (response: NSApplication.ModalResponse) in
+            if (response == NSApplication.ModalResponse.OK) {
+                if let url = panel.url {
+                    do {
+                        try self.computer.instructionDecoder.lowerROM.data = Data(contentsOf: url.appendingPathComponent("Lower Decoder ROM.bin") as URL)
+                        try self.computer.instructionDecoder.upperROM.data = Data(contentsOf: url.appendingPathComponent("Upper Decoder ROM.bin") as URL)
+                        try self.computer.instructionROM.lowerROM.data = Data(contentsOf: url.appendingPathComponent("Lower Instruction ROM.bin") as URL)
+                        try self.computer.instructionROM.upperROM.data = Data(contentsOf: url.appendingPathComponent("Lower Instruction ROM.bin") as URL)
+                    } catch {
+                        NSAlert(error: error).runModal()
+                    }
+                }
+            }
+        }
+    }
 }
-

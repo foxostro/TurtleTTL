@@ -53,10 +53,10 @@ class InstructionDecoder: NSObject {
     }
     
     func writeUpperROM(url: URL) throws {
-        try upperROM.write(url: url)
+        try upperROM.data.write(to: url)
     }
     
     func writeLowerROM(url: URL) throws {
-        try lowerROM.write(url: url)
+        try lowerROM.data.write(to: url)
     }
 }
