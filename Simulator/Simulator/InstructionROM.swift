@@ -12,23 +12,8 @@ import Cocoa
 // This mirrors the physical construction of the Instruction ROM circuit which
 // uses two eight-bit EEPROM chips to form a sixteen-bit word.
 class InstructionROM: NSObject {
-    let size = 32768
-    var upperROM: [UInt8]
-    var lowerROM: [UInt8]
-    
-    override init() {
-        upperROM = Array<UInt8>()
-        upperROM.reserveCapacity(size)
-        for _ in 0..<size {
-            upperROM.append(0)
-        }
-        
-        lowerROM = Array<UInt8>()
-        lowerROM.reserveCapacity(size)
-        for _ in 0..<size {
-            lowerROM.append(0)
-        }
-    }
+    let upperROM = Memory(size: 32768)
+    let lowerROM = Memory(size: 32768)
     
     func store(address:Int, value:UInt16) {
         upperROM[address] = UInt8((value & 0xff00) >> 8)
@@ -36,8 +21,8 @@ class InstructionROM: NSObject {
     }
     
     func store(address:Int, opcode:Int, immediate:Int) {
-        upperROM[Int(address)] = UInt8(opcode)
-        lowerROM[Int(address)] = UInt8(immediate)
+        upperROM[address] = UInt8(opcode)
+        lowerROM[address] = UInt8(immediate)
     }
     
     func store(address:Int, instruction:Instruction) {

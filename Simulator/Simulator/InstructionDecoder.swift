@@ -12,23 +12,8 @@ import Cocoa
 // This mirrors the physical construction of the Instruction Decoder circuit
 // which uses two eight-bit EEPROM chips to form a sixteen-bit word.
 class InstructionDecoder: NSObject {
-    let size = 131072
-    var upperROM: [UInt8]
-    var lowerROM: [UInt8]
-    
-    override init() {
-        upperROM = Array<UInt8>()
-        upperROM.reserveCapacity(size)
-        for _ in 0..<size {
-            upperROM.append(0)
-        }
-        
-        lowerROM = Array<UInt8>()
-        lowerROM.reserveCapacity(size)
-        for _ in 0..<size {
-            lowerROM.append(0)
-        }
-    }
+    let upperROM = Memory(size: 131072)
+    let lowerROM = Memory(size: 131072)
     
     func load(opcode:Int, carryFlag:Int, equalFlag:Int) -> UInt16 {
         return load(address: makeAddress(opcode: opcode,
@@ -65,5 +50,13 @@ class InstructionDecoder: NSObject {
         // The carry flag is connected to address bit 9.
         // The equal flag is connected to address bit 8.
         return carryFlag<<9 | equalFlag<<8 | opcode
+    }
+    
+    func writeUpperROM(url: URL) throws {
+        try upperROM.write(url: url)
+    }
+    
+    func writeLowerROM(url: URL) throws {
+        try lowerROM.write(url: url)
     }
 }
