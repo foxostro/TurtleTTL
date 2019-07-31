@@ -206,14 +206,14 @@ class ViewController: NSViewController {
         outputDisplay.stringValue = String(computer.registerD.contents)
     }
     
-    @IBAction func save(sender: Any?) {
+    @IBAction func saveMicrocode(sender: Any?) {
         let panel = NSSavePanel()
         panel.canCreateDirectories = true
         panel.begin { (response: NSApplication.ModalResponse) in
             if (response == NSApplication.ModalResponse.OK) {
                 if let url = panel.url {
                     do {
-                        try self.computer.save(to: url)
+                        try self.computer.saveMicrocode(to: url)
                     } catch {
                         NSAlert(error: error).runModal()
                     }
@@ -222,7 +222,7 @@ class ViewController: NSViewController {
         }
     }
     
-    @IBAction func load(sender: Any?) {
+    @IBAction func loadMicrocode(sender: Any?) {
         let panel = NSOpenPanel()
         panel.canChooseFiles = false
         panel.canChooseDirectories = true
@@ -230,7 +230,40 @@ class ViewController: NSViewController {
             if (response == NSApplication.ModalResponse.OK) {
                 if let url = panel.url {
                     do {
-                        try self.computer.load(from: url)
+                        try self.computer.loadMicrocode(from: url)
+                    } catch {
+                        NSAlert(error: error).runModal()
+                    }
+                }
+            }
+        }
+    }
+    
+    @IBAction func saveProgram(sender: Any?) {
+        let panel = NSSavePanel()
+        panel.canCreateDirectories = true
+        panel.begin { (response: NSApplication.ModalResponse) in
+            if (response == NSApplication.ModalResponse.OK) {
+                if let url = panel.url {
+                    do {
+                        try self.computer.saveProgram(to: url)
+                    } catch {
+                        NSAlert(error: error).runModal()
+                    }
+                }
+            }
+        }
+    }
+    
+    @IBAction func loadProgram(sender: Any?) {
+        let panel = NSOpenPanel()
+        panel.canChooseFiles = false
+        panel.canChooseDirectories = true
+        panel.begin { (response: NSApplication.ModalResponse) in
+            if (response == NSApplication.ModalResponse.OK) {
+                if let url = panel.url {
+                    do {
+                        try self.computer.loadProgram(from: url)
                     } catch {
                         NSAlert(error: error).runModal()
                     }

@@ -706,17 +706,17 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Simulator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="679" height="430"/>
+                        <rect key="frame" x="0.0" y="0.0" width="739" height="459"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="25" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDj-5A-eHf">
-                                <rect key="frame" x="20" y="20" width="639" height="390"/>
+                                <rect key="frame" x="20" y="20" width="699" height="419"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7E-Vc-yWw">
-                                        <rect key="frame" x="0.0" y="0.0" width="203" height="390"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="419"/>
                                         <subviews>
                                             <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fA8-N3-gSy" userLabel="Controls">
-                                                <rect key="frame" x="0.0" y="369" width="202" height="21"/>
+                                                <rect key="frame" x="0.0" y="398" width="202" height="21"/>
                                                 <subviews>
                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zy6-ZW-ecc">
                                                         <rect key="frame" x="-6" y="-7" width="75" height="32"/>
@@ -765,35 +765,88 @@
                                                     <real value="3.4028234663852886e+38"/>
                                                 </customSpacing>
                                             </stackView>
-                                            <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFC-zp-Nnp" userLabel="ROM">
-                                                <rect key="frame" x="0.0" y="340" width="194" height="21"/>
+                                            <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFC-zp-Nnp" userLabel="Program">
+                                                <rect key="frame" x="0.0" y="369" width="208" height="21"/>
                                                 <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Hg-Il-VfH" userLabel="Program:">
+                                                        <rect key="frame" x="-2" y="4" width="72" height="17"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Program:" id="87X-ft-MJW">
+                                                            <font key="font" usesAppearanceFont="YES"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hj8-pX-AtG">
-                                                        <rect key="frame" x="-6" y="-7" width="103" height="32"/>
-                                                        <buttonCell key="cell" type="push" title="Save ROM" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bvs-PI-JUb">
+                                                        <rect key="frame" x="74" y="-7" width="70" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bvs-PI-JUb">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" metaFont="system"/>
                                                         </buttonCell>
                                                         <connections>
-                                                            <action selector="saveWithSender:" target="XfG-lQ-9wD" id="zaY-OK-Cjy"/>
+                                                            <action selector="saveProgramWithSender:" target="XfG-lQ-9wD" id="TR7-1a-eSy"/>
                                                         </connections>
                                                     </button>
                                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sZ1-Ef-4u8">
-                                                        <rect key="frame" x="97" y="-7" width="103" height="32"/>
-                                                        <buttonCell key="cell" type="push" title="Load ROM" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BNd-b1-KIk">
+                                                        <rect key="frame" x="144" y="-7" width="70" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="Load" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BNd-b1-KIk">
                                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                             <font key="font" metaFont="system"/>
                                                         </buttonCell>
                                                         <connections>
-                                                            <action selector="loadWithSender:" target="XfG-lQ-9wD" id="yNY-ch-xsf"/>
+                                                            <action selector="loadProgramWithSender:" target="XfG-lQ-9wD" id="vKb-oX-QgX"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                                 <visibilityPriorities>
                                                     <integer value="1000"/>
                                                     <integer value="1000"/>
+                                                    <integer value="1000"/>
                                                 </visibilityPriorities>
                                                 <customSpacing>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                </customSpacing>
+                                            </stackView>
+                                            <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="12" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U06-LG-Oap" userLabel="Microcode">
+                                                <rect key="frame" x="0.0" y="340" width="208" height="21"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QCc-Tx-rVU" userLabel="Microcode:">
+                                                        <rect key="frame" x="-2" y="4" width="72" height="17"/>
+                                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Microcode:" id="7KL-pV-iSI">
+                                                            <font key="font" usesAppearanceFont="YES"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ha1-jZ-R0f">
+                                                        <rect key="frame" x="74" y="-7" width="70" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="c9B-0X-N4c">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="saveMicrocodeWithSender:" target="XfG-lQ-9wD" id="yVG-FG-Se2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9ed-if-S6N">
+                                                        <rect key="frame" x="144" y="-7" width="70" height="32"/>
+                                                        <buttonCell key="cell" type="push" title="Load" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OjI-tU-mHS">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="loadMicrocodeWithSender:" target="XfG-lQ-9wD" id="zHs-Ph-QCD"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <visibilityPriorities>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                </visibilityPriorities>
+                                                <customSpacing>
+                                                    <real value="3.4028234663852886e+38"/>
                                                     <real value="3.4028234663852886e+38"/>
                                                     <real value="3.4028234663852886e+38"/>
                                                 </customSpacing>
@@ -1136,7 +1189,7 @@
                                             <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INz-y8-kkB" userLabel="Control Word 2">
                                                 <rect key="frame" x="92" y="25" width="50" height="17"/>
                                                 <subviews>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sqc-vl-S27">
+                                                    <textField horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sqc-vl-S27">
                                                         <rect key="frame" x="-2" y="0.0" width="54" height="17"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" usesSingleLineMode="YES" id="Cdw-RP-2C0">
                                                             <font key="font" metaFont="system"/>
@@ -1183,6 +1236,7 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="QCc-Tx-rVU" firstAttribute="trailing" secondItem="9Hg-Il-VfH" secondAttribute="trailing" id="AkI-fw-xpA"/>
                                             <constraint firstItem="PGT-7a-JFE" firstAttribute="leading" secondItem="HZa-7m-8a9" secondAttribute="leading" id="Fcb-0j-gDR"/>
                                             <constraint firstItem="dSZ-PW-AH6" firstAttribute="leading" secondItem="HZa-7m-8a9" secondAttribute="leading" id="Vpa-jv-r6x"/>
                                             <constraint firstItem="UNs-X6-Nip" firstAttribute="leading" secondItem="HZa-7m-8a9" secondAttribute="leading" id="Vs7-Ra-gO6"/>
@@ -1194,6 +1248,7 @@
                                             <constraint firstItem="yFa-cX-imF" firstAttribute="leading" secondItem="HZa-7m-8a9" secondAttribute="leading" id="yTt-cW-qxi"/>
                                         </constraints>
                                         <visibilityPriorities>
+                                            <integer value="1000"/>
                                             <integer value="1000"/>
                                             <integer value="1000"/>
                                             <integer value="1000"/>
@@ -1224,20 +1279,21 @@
                                             <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
                                         </customSpacing>
                                     </stackView>
                                     <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lec-KG-fe2">
-                                        <rect key="frame" x="228" y="29" width="411" height="361"/>
+                                        <rect key="frame" x="288" y="0.0" width="411" height="419"/>
                                         <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Ope-fl-7bT">
-                                            <rect key="frame" x="1" y="1" width="409" height="359"/>
+                                            <rect key="frame" x="1" y="1" width="409" height="417"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="u5j-2x-nqt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="409" height="359"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="409" height="417"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                    <size key="minSize" width="409" height="359"/>
+                                                    <size key="minSize" width="409" height="417"/>
                                                     <size key="maxSize" width="419" height="10000000"/>
                                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 </textView>
@@ -1248,11 +1304,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="1J2-FT-C4T">
-                                            <rect key="frame" x="394" y="1" width="16" height="359"/>
+                                            <rect key="frame" x="394" y="1" width="16" height="417"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                     </scrollView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="lec-KG-fe2" firstAttribute="top" secondItem="zy6-ZW-ecc" secondAttribute="top" id="OOX-3D-5A5"/>
+                                    <constraint firstItem="vQW-CY-biN" firstAttribute="bottom" secondItem="lec-KG-fe2" secondAttribute="bottom" id="v58-Za-0E1"/>
+                                </constraints>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>

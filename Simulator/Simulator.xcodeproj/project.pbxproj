@@ -132,6 +132,7 @@
 			children = (
 				6FF1995622ECB36F00C255A2 /* AppDelegate.swift */,
 				6FF1995822ECB36F00C255A2 /* ViewController.swift */,
+				6F86EDC522ED113800375A00 /* Computer.swift */,
 				6F790AEC22EEE9C200B38267 /* ComputerExecutor.swift */,
 				6F86EDA422ECB7E400375A00 /* RAM.swift */,
 				6F86EDA922ECBD2800375A00 /* Register.swift */,
@@ -144,7 +145,6 @@
 				6F86CC7F22F0001C008C6322 /* Memory.swift */,
 				6F86EDBD22ECC86400375A00 /* ALU.swift */,
 				6F86EDC122ECE51C00375A00 /* Chip74x181.swift */,
-				6F86EDC522ED113800375A00 /* Computer.swift */,
 				6F182C3022ED3AAA0027A981 /* Instruction.swift */,
 				6F182C3222ED3CB70027A981 /* ControlTuple.swift */,
 				6F182C2A22ED373C0027A981 /* PipelineFetchStage.swift */,
