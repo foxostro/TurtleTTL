@@ -11,22 +11,16 @@ import XCTest
 @testable import Simulator
 
 class InstructionDecoderTests: XCTestCase {
-    func testContentsInitializedToZero() {
+    func testContentsInitializedTo255() {
         let decoder = InstructionDecoder()
         XCTAssertEqual(decoder.size, 131072)
-        for i in 0..<decoder.size {
-            XCTAssertEqual(decoder.load(address: i), 0)
-        }
+        XCTAssertEqual(decoder.load(address: 0), 0xffff)
     }
     
     func testContentsModifiable() {
         let decoder = InstructionDecoder()
         let value: UInt16 = 1234
-        for i in 0..<decoder.size {
-            decoder.store(address: i, value: value)
-        }
-        for i in 0..<decoder.size {
-            XCTAssertEqual(decoder.load(address: i), value)
-        }
+        decoder.store(address: 0, value: value)
+        XCTAssertEqual(decoder.load(address: 0), value)
     }
 }

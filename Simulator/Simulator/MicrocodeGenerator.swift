@@ -9,4 +9,9 @@
 import Cocoa
 
 class MicrocodeGenerator: NSObject {
+    let lowerROM = Memory(size: 131072)
+    let upperROM = Memory(size: 131072)
+    
+    func generate() {
+    }
 }

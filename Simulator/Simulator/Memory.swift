@@ -39,7 +39,7 @@ class Memory: NSObject {
         contents = [UInt8]()
         contents.reserveCapacity(size)
         for _ in 0..<size {
-            contents.append(0)
+            contents.append(0xff)
         }
         super.init()
     }

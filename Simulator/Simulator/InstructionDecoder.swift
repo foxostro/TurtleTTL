@@ -12,6 +12,7 @@ import Cocoa
 // This mirrors the physical construction of the Instruction Decoder circuit
 // which uses two eight-bit EEPROM chips to form a sixteen-bit word.
 class InstructionDecoder: NSObject {
+    let size = 131072
     let upperROM = Memory(size: 131072)
     let lowerROM = Memory(size: 131072)
     

@@ -11,12 +11,10 @@ import XCTest
 @testable import Simulator
 
 class InstructionROMTests: XCTestCase {
-    func testContentsInitializedToZero() {
+    func testContentsInitializedTo255() {
         let memory = InstructionROM()
         XCTAssertEqual(memory.size, 32768)
-        for i in 0..<memory.size {
-            XCTAssertEqual(memory.load(address: i).value, 0)
-        }
+        XCTAssertEqual(memory.load(address: 0).value, 0xffff)
     }
     
     func testContentsModifiable() {
