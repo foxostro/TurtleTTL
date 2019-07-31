@@ -22,7 +22,7 @@ class AssemblerTests: XCTestCase {
         hlt = UInt8(microcodeGenerator.getOpcode(withMnemonic: "HLT")!)
     }
     
-    func testAssembleEmptyProgram() {
+    func testEmptyProgram() {
         let assembler = Assembler(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.end()
@@ -31,7 +31,7 @@ class AssemblerTests: XCTestCase {
         XCTAssertEqual(instructions[0].opcode, nop)
     }
     
-    func testAssembleNop() {
+    func testNop() {
         let assembler = Assembler(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.nop()
@@ -42,7 +42,7 @@ class AssemblerTests: XCTestCase {
         XCTAssertEqual(instructions[1].opcode, nop)
     }
     
-    func testAssembleHlt() {
+    func testHlt() {
         let assembler = Assembler(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.hlt()
@@ -53,7 +53,7 @@ class AssemblerTests: XCTestCase {
         XCTAssertEqual(instructions[1].opcode, hlt)
     }
     
-    func testAssembleMovFromScratch() {
+    func testMovFromScratch() {
         let assembler = Assembler(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.instruction(withMnemonic: "MOV D, C", immediate: 42)
@@ -65,10 +65,10 @@ class AssemblerTests: XCTestCase {
         XCTAssertEqual(instructions[1].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV D, C")!))
     }
     
-    func testAssembleGenericMovWithImmediate() {
+    func testGenericMovWithImmediate() {
         let assembler = Assembler(microcodeGenerator: microcodeGenerator)
         assembler.begin()
-        assembler.mov(destination: "D", source: "C", immediate: 42)
+        assembler.mov("D", "C", 42)
         assembler.end()
         let instructions = assembler.instructions
         XCTAssertEqual(instructions.count, 2)
@@ -77,10 +77,10 @@ class AssemblerTests: XCTestCase {
         XCTAssertEqual(instructions[1].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV D, C")!))
     }
     
-    func testAssembleLoadImmediate() {
+    func testLoadImmediate() {
         let assembler = Assembler(microcodeGenerator: microcodeGenerator)
         assembler.begin()
-        assembler.li(destination: "D", immediate: 42)
+        assembler.li("D", 42)
         assembler.end()
         let instructions = assembler.instructions
         XCTAssertEqual(instructions.count, 2)

@@ -50,14 +50,14 @@ class Assembler: NSObject {
     }
     
     // Load Immediate -- Loads an immediate value to the specified destination
-    func li(destination: String, immediate: Int) {
+    func li(_ destination: String, _ immediate: Int) {
         assert(isAssembling)
         // Load Immediate
-        mov(destination: destination, source: "C", immediate: immediate)
+        mov(destination, "C", immediate)
     }
     
     // Move -- Copy a value from one bus device to another.
-    func mov(destination: String, source: String, immediate: Int) {
+    func mov(_ destination: String, _ source: String, _ immediate: Int) {
         assert(isAssembling)
         let mnemonic = String(format: "MOV %@, %@", destination, source)
         instruction(withMnemonic: mnemonic, immediate: immediate)
