@@ -13,11 +13,13 @@ import XCTest
 class AssemblerTests: XCTestCase {
     var microcodeGenerator = MicrocodeGenerator()
     var nop: UInt8 = 0
+    var hlt: UInt8 = 0
     
     override func setUp() {
         microcodeGenerator = MicrocodeGenerator()
         microcodeGenerator.generate()
         nop = UInt8(microcodeGenerator.getOpcode(withMnemonic: "NOP")!)
+        hlt = UInt8(microcodeGenerator.getOpcode(withMnemonic: "HLT")!)
     }
     
     func testAssembleEmptyProgram() {
@@ -38,5 +40,28 @@ class AssemblerTests: XCTestCase {
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
         XCTAssertEqual(instructions[1].opcode, nop)
+    }
+    
+    func testAssembleHlt() {
+        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        assembler.begin()
+        assembler.hlt()
+        assembler.end()
+        let instructions = assembler.instructions
+        XCTAssertEqual(instructions.count, 2)
+        XCTAssertEqual(instructions[0].opcode, nop)
+        XCTAssertEqual(instructions[1].opcode, hlt)
+    }
+    
+    func testAssembleMov() {
+        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        assembler.begin()
+        assembler.instruction(withMnemonic: "MOV D, C", immediate: 42)
+        assembler.end()
+        let instructions = assembler.instructions
+        XCTAssertEqual(instructions.count, 2)
+        XCTAssertEqual(instructions[0].opcode, nop)
+        XCTAssertEqual(instructions[1].immediate, 42)
+        XCTAssertEqual(instructions[1].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV D, C")!))
     }
 }
