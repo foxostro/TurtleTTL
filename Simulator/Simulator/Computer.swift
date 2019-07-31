@@ -32,6 +32,10 @@ class Computer: NSObject {
             pipelineStageExecute.logger = logger
         }
     }
+    let lowerDecoderRomFilename = "Lower Decoder ROM.bin"
+    let upperDecoderRomFilename = "Upper Decoder ROM.bin"
+    let lowerInstructionROMFilename = "Lower Instruction ROM.bin"
+    let upperInstructionROMFilename = "Upper Instruction ROM.bin"
     
     override init() {
         pipelineStageFetch = PipelineFetchStage(withProgramCounter: programCounter,
@@ -90,5 +94,25 @@ class Computer: NSObject {
     
     var busStringValue:String {
         return String(pipelineStageExecute.bus, radix: 16)
+    }
+    
+    func save(to: URL) throws {
+        let lowerDecoderROM = instructionDecoder.lowerROM.data
+        let upperDecoderROM = instructionDecoder.upperROM.data
+        let lowerInstructionROM = instructionROM.lowerROM.data
+        let upperInstructionROM = instructionROM.upperROM.data
+        
+        try FileManager.default.createDirectory(at: to, withIntermediateDirectories: false, attributes: [:])
+        try lowerDecoderROM.write(to: to.appendingPathComponent(lowerDecoderRomFilename))
+        try upperDecoderROM.write(to: to.appendingPathComponent(upperDecoderRomFilename))
+        try lowerInstructionROM.write(to: to.appendingPathComponent(lowerInstructionROMFilename))
+        try upperInstructionROM.write(to: to.appendingPathComponent(upperInstructionROMFilename))
+    }
+    
+    func load(from: URL) throws {
+        try instructionDecoder.lowerROM.data = Data(contentsOf: from.appendingPathComponent(lowerDecoderRomFilename) as URL)
+        try instructionDecoder.upperROM.data = Data(contentsOf: from.appendingPathComponent(upperDecoderRomFilename) as URL)
+        try instructionROM.lowerROM.data = Data(contentsOf: from.appendingPathComponent(lowerInstructionROMFilename) as URL)
+        try instructionROM.upperROM.data = Data(contentsOf: from.appendingPathComponent(upperInstructionROMFilename) as URL)
     }
 }
