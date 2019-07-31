@@ -35,25 +35,25 @@ class Assembler: NSObject {
         isAssembling = false
     }
     
+    // Produce a generic instruction with the specified immediate value.
+    func instruction(withMnemonic mnemonic:String, immediate: Int) {
+        assert(isAssembling)
+        assert(immediate >= 0 && immediate <= 255)
+        let opcode = microcodeGenerator.getOpcode(withMnemonic: mnemonic)!
+        let inst = Instruction(opcode: opcode, immediate: immediate)
+        instructions.append(inst)
+    }
+    
     // No Operation -- Do nothing
     func nop() {
         assert(isAssembling)
-        let inst = Instruction(opcode: microcodeGenerator.getOpcode(withMnemonic: "NOP")!, immediate: 0)
-        instructions.append(inst)
+        instruction(withMnemonic: "NOP", immediate: 0)
     }
     
     // Halt -- Halt the computer until reset
     func hlt() {
         assert(isAssembling)
-        let inst = Instruction(opcode: microcodeGenerator.getOpcode(withMnemonic: "HLT")!, immediate: 0)
-        instructions.append(inst)
-    }
-    
-    // Load Immediate -- Loads an immediate value to the specified destination
-    func li(_ destination: String, _ immediate: Int) {
-        assert(isAssembling)
-        // Load Immediate
-        mov(destination, "C", immediate)
+        instruction(withMnemonic: "HLT", immediate: 0)
     }
     
     // Move -- Copy a value from one bus device to another.
@@ -63,12 +63,24 @@ class Assembler: NSObject {
         instruction(withMnemonic: mnemonic, immediate: immediate)
     }
     
-    // Produce a generic instruction with the specified immediate value.
-    func instruction(withMnemonic mnemonic:String, immediate: Int) {
+    // Move -- Copy a value from one bus device to another.
+    func mov(_ destination: String, _ source: String) {
         assert(isAssembling)
-        assert(immediate >= 0 && immediate <= 255)
-        let opcode = microcodeGenerator.getOpcode(withMnemonic: mnemonic)!
-        let inst = Instruction(opcode: opcode, immediate: immediate)
-        instructions.append(inst)
+        let mnemonic = String(format: "MOV %@, %@", destination, source)
+        instruction(withMnemonic: mnemonic, immediate: 0)
+    }
+    
+    // Load Immediate -- Loads an immediate value to the specified destination
+    func li(_ destination: String, _ immediate: Int) {
+        assert(isAssembling)
+        mov(destination, "C", immediate)
+    }
+    
+    // Addition -- The ALU adds the contents of the A and B registers and moves
+    // the result to the specified destination bus device.
+    func add(_ destination: String) {
+        assert(isAssembling)
+        let mnemonic = String(format: "ALU %@", destination)
+        instruction(withMnemonic: mnemonic, immediate: 0b011001)
     }
 }
