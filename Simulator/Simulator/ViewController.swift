@@ -46,7 +46,7 @@ class ViewController: NSViewController {
     func generateExampleProgram() -> [Instruction] {
         let assembler = Assembler(microcodeGenerator: microcodeGenerator)
         assembler.begin()
-        assembler.instruction(withMnemonic: "MOV D, C", immediate: 42)
+        assembler.li(destination: "D", immediate: 42)
         assembler.hlt()
         assembler.end()
         return assembler.instructions

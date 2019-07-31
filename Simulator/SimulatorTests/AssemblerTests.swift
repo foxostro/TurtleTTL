@@ -53,10 +53,34 @@ class AssemblerTests: XCTestCase {
         XCTAssertEqual(instructions[1].opcode, hlt)
     }
     
-    func testAssembleMov() {
+    func testAssembleMovFromScratch() {
         let assembler = Assembler(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.instruction(withMnemonic: "MOV D, C", immediate: 42)
+        assembler.end()
+        let instructions = assembler.instructions
+        XCTAssertEqual(instructions.count, 2)
+        XCTAssertEqual(instructions[0].opcode, nop)
+        XCTAssertEqual(instructions[1].immediate, 42)
+        XCTAssertEqual(instructions[1].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV D, C")!))
+    }
+    
+    func testAssembleGenericMovWithImmediate() {
+        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        assembler.begin()
+        assembler.mov(destination: "D", source: "C", immediate: 42)
+        assembler.end()
+        let instructions = assembler.instructions
+        XCTAssertEqual(instructions.count, 2)
+        XCTAssertEqual(instructions[0].opcode, nop)
+        XCTAssertEqual(instructions[1].immediate, 42)
+        XCTAssertEqual(instructions[1].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV D, C")!))
+    }
+    
+    func testAssembleLoadImmediate() {
+        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        assembler.begin()
+        assembler.li(destination: "D", immediate: 42)
         assembler.end()
         let instructions = assembler.instructions
         XCTAssertEqual(instructions.count, 2)
