@@ -16,6 +16,7 @@ class MicrocodeGenerator: NSObject {
     func generate() {
         nop()
         hlt()
+        mov()
     }
     
     func nop() {
@@ -30,6 +31,35 @@ class MicrocodeGenerator: NSObject {
         let controlWord = ControlWord()
         controlWord.HLT = true
         microcode.store(opcode: opcode, controlWord: controlWord)
+    }
+    
+    func mov() {
+        let outputToBus = [("A", {(_ controlWord: ControlWord) in controlWord.outputAToBus()}),
+                           ("B", {(_ controlWord: ControlWord) in controlWord.outputBToBus()}),
+                           ("C", {(_ controlWord: ControlWord) in controlWord.outputCToBus()}),
+                           ("X", {(_ controlWord: ControlWord) in controlWord.outputXToBus()}),
+                           ("Y", {(_ controlWord: ControlWord) in controlWord.outputYToBus()}),
+                           ("E", {(_ controlWord: ControlWord) in controlWord.outputEToBus()}),
+                           ("M", {(_ controlWord: ControlWord) in controlWord.outputMToBus()})]
+        
+        let inputFromBus = [("A", {(_ controlWord: ControlWord) in controlWord.inputAFromBus()}),
+                            ("B", {(_ controlWord: ControlWord) in controlWord.inputBFromBus()}),
+                            ("D", {(_ controlWord: ControlWord) in controlWord.inputDFromBus()}),
+                            ("X", {(_ controlWord: ControlWord) in controlWord.inputXFromBus()}),
+                            ("Y", {(_ controlWord: ControlWord) in controlWord.inputYFromBus()}),
+                            ("M", {(_ controlWord: ControlWord) in controlWord.inputMFromBus()})]
+        
+        for output in outputToBus {
+            for input in inputFromBus {
+                let controlWord = ControlWord()
+                input.1(controlWord)
+                output.1(controlWord)
+                let mnemonic = String(format: "MOV %@, %@", input.0, output.0)
+                let opcode = getNextOpcode()
+                mapMnemonicToOpcode[mnemonic] = opcode
+                microcode.store(opcode: opcode, controlWord: controlWord)
+            }
+        }
     }
     
     func getNextOpcode() -> Int {

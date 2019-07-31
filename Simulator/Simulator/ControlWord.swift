@@ -133,4 +133,128 @@ class ControlWord: NSObject {
         }
         return String(format: "{%@}", signals.joined(separator: ", "));
     }
+    
+    func outputAToBus() {
+        AO = false
+        BO = true
+        CO = true
+        XO = true
+        YO = true
+        EO = true
+        MO = true
+    }
+    
+    func outputBToBus() {
+        AO = true
+        BO = false
+        CO = true
+        XO = true
+        YO = true
+        EO = true
+        MO = true
+    }
+    
+    func outputCToBus() {
+        AO = true
+        BO = true
+        CO = false
+        XO = true
+        YO = true
+        EO = true
+        MO = true
+    }
+    
+    func outputXToBus() {
+        AO = true
+        BO = true
+        CO = true
+        XO = false
+        YO = true
+        EO = true
+        MO = true
+    }
+    
+    func outputYToBus() {
+        AO = true
+        BO = true
+        CO = true
+        XO = true
+        YO = false
+        EO = true
+        MO = true
+    }
+    
+    func outputEToBus() {
+        AO = true
+        BO = true
+        CO = true
+        XO = true
+        YO = true
+        EO = false
+        MO = true
+    }
+    
+    func outputMToBus() {
+        AO = true
+        BO = true
+        CO = true
+        XO = true
+        YO = true
+        EO = true
+        MO = false
+    }
+    
+    func inputAFromBus() {
+        AI = false
+        BI = true
+        DI = true
+        XI = true
+        YI = true
+        MI = true
+    }
+    
+    func inputBFromBus() {
+        AI = true
+        BI = false
+        DI = true
+        XI = true
+        YI = true
+        MI = true
+    }
+    
+    func inputDFromBus() {
+        AI = true
+        BI = true
+        DI = false
+        XI = true
+        YI = true
+        MI = true
+    }
+    
+    func inputXFromBus() {
+        AI = true
+        BI = true
+        DI = true
+        XI = false
+        YI = true
+        MI = true
+    }
+    
+    func inputYFromBus() {
+        AI = true
+        BI = true
+        DI = true
+        XI = true
+        YI = false
+        MI = true
+    }
+    
+    func inputMFromBus() {
+        AI = true
+        BI = true
+        DI = true
+        XI = true
+        YI = true
+        MI = false
+    }
 }

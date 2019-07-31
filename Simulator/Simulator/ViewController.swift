@@ -27,6 +27,7 @@ class ViewController: NSViewController {
     @IBOutlet var eventLog:NSTextView!
     var logger:TextViewLogger!
     let executor = ComputerExecutor()
+    let microcodeGenerator = MicrocodeGenerator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,78 +43,17 @@ class ViewController: NSViewController {
     }
     
     func generateMicrocode() {
-        let generator = MicrocodeGenerator()
-        generator.generate()
-        computer.instructionDecoder.lowerROM.data = generator.microcode.lowerROM.data
-        computer.instructionDecoder.upperROM.data = generator.microcode.upperROM.data
+        microcodeGenerator.generate()
+        computer.instructionDecoder.lowerROM.data = microcodeGenerator.microcode.lowerROM.data
+        computer.instructionDecoder.upperROM.data = microcodeGenerator.microcode.upperROM.data
     }
     
     func feedExampleProgram() {
-        let nop = 0
-        let nopControl = ControlWord()
-        computer.instructionDecoder.store(opcode: nop, controlWord: nopControl)
-        
-        let hlt = 1
-        let hltControl = ControlWord()
-        hltControl.HLT = true
-        computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
-        
-        let lda = 2
-        let ldaControl = ControlWord()
-        ldaControl.CO = false
-        ldaControl.AI = false
-        computer.instructionDecoder.store(opcode: lda, controlWord: ldaControl)
-        
-        let ldb = 3
-        let ldbControl = ControlWord()
-        ldbControl.CO = false
-        ldbControl.BI = false
-        computer.instructionDecoder.store(opcode: ldb, controlWord: ldbControl)
-        
-        let ldx = 4
-        let ldxControl = ControlWord()
-        ldxControl.CO = false
-        ldxControl.XI = false
-        computer.instructionDecoder.store(opcode: ldx, controlWord: ldxControl)
-        
-        let ldy = 5
-        let ldyControl = ControlWord()
-        ldyControl.CO = false
-        ldyControl.YI = false
-        computer.instructionDecoder.store(opcode: ldy, controlWord: ldyControl)
-        
-        let alu = 6
-        let aluControl = ControlWord()
-        aluControl.EO = false
-        aluControl.DI = false
-        aluControl.FI = false
-        computer.instructionDecoder.store(opcode: alu, controlWord: aluControl)
-        
-        let jc = 7
-        let jcControl = ControlWord()
-        jcControl.J = false
-        computer.instructionDecoder.store(opcode: jc,
-                                          carryFlag:1,
-                                          equalFlag:0,
-                                          controlWord: jcControl)
-        computer.instructionDecoder.store(opcode: jc,
-                                          carryFlag:0,
-                                          equalFlag:0,
-                                          controlWord: nopControl)
-        computer.instructionDecoder.store(opcode: jc,
-                                          carryFlag:1,
-                                          equalFlag:1,
-                                          controlWord: jcControl)
-        computer.instructionDecoder.store(opcode: jc,
-                                          carryFlag:0,
-                                          equalFlag:1,
-                                          controlWord: nopControl)
-        
         computer.provideInstructions([
-            Instruction(opcode: nop, immediate: 0),          // NOP
-            Instruction(opcode: lda, immediate: 1),          // LDA $1
-            Instruction(opcode: ldb, immediate: 2),          // LDB $2
-            Instruction(opcode: hlt, immediate: 0)])         // HLT
+            Instruction(opcode: microcodeGenerator.getOpcode(withMnemonic: "NOP")!, immediate: 0),
+            Instruction(opcode: microcodeGenerator.getOpcode(withMnemonic: "MOV D, C")!, immediate: 42),
+            Instruction(opcode: microcodeGenerator.getOpcode(withMnemonic: "HLT")!, immediate: 0)
+            ])
     }
     
     func setupExecutor() {

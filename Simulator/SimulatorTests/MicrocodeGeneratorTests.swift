@@ -26,4 +26,10 @@ class MicrocodeGeneratorTests: XCTestCase {
         let controlWord = generator.microcode.load(opcode: HLT!, carryFlag: 1, equalFlag: 1)
         XCTAssertTrue((controlWord & (1<<15)) != 0)
     }
+    
+    func testGetOpcode() {
+        let generator = MicrocodeGenerator()
+        generator.generate()
+        XCTAssertEqual(generator.getOpcode(withMnemonic: "NOP")!, 0)
+    }
 }
