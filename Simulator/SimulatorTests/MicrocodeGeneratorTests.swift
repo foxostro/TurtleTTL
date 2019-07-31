@@ -11,9 +11,19 @@ import XCTest
 @testable import Simulator
 
 class MicrocodeGeneratorTests: XCTestCase {
-    func testOpcodeZeroIsNOP() {
+    func testNOP() {
         let generator = MicrocodeGenerator()
         generator.generate()
-        XCTAssertEqual(generator.microcode.load(opcode: 0, carryFlag: 1, equalFlag: 1), ControlWord().contents)
+        
+        let NOP = generator.getOpcode(withMnemonic: "NOP")
+        XCTAssertEqual(generator.microcode.load(opcode: NOP!, carryFlag: 1, equalFlag: 1), ControlWord().contents)
+    }
+    
+    func testHLT() {
+        let generator = MicrocodeGenerator()
+        generator.generate()
+        let HLT = generator.getOpcode(withMnemonic: "HLT")
+        let controlWord = generator.microcode.load(opcode: HLT!, carryFlag: 1, equalFlag: 1)
+        XCTAssertTrue((controlWord & (1<<15)) != 0)
     }
 }

@@ -10,11 +10,35 @@ import Cocoa
 
 class MicrocodeGenerator: NSObject {
     let microcode = InstructionDecoder()
-    
-    let NOP = 0
-    let nopCtl = ControlWord()
+    var mapMnemonicToOpcode = [String:Int]()
+    var nextOpcode = 0
     
     func generate() {
-        microcode.store(opcode: NOP, controlWord: nopCtl)
+        nop()
+        hlt()
+    }
+    
+    func nop() {
+        let opcode = getNextOpcode()
+        mapMnemonicToOpcode["NOP"] = opcode
+        microcode.store(opcode: opcode, controlWord: ControlWord())
+    }
+    
+    func hlt() {
+        let opcode = getNextOpcode()
+        mapMnemonicToOpcode["HLT"] = opcode
+        let controlWord = ControlWord()
+        controlWord.HLT = true
+        microcode.store(opcode: opcode, controlWord: controlWord)
+    }
+    
+    func getNextOpcode() -> Int {
+        let opcode = nextOpcode
+        nextOpcode += 1
+        return opcode
+    }
+    
+    func getOpcode(withMnemonic mnemonic: String) -> Int? {
+        return mapMnemonicToOpcode[mnemonic]
     }
 }
