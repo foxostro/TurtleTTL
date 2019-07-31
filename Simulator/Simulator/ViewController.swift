@@ -28,6 +28,12 @@ class ViewController: NSViewController {
     var logger:TextViewLogger!
     let executor = ComputerExecutor()
     let microcodeGenerator = MicrocodeGenerator()
+    let assembler: Assembler
+    
+    required init?(coder: NSCoder) {
+        assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        super.init(coder: coder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

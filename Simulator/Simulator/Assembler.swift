@@ -1,0 +1,18 @@
+//
+//  Assembler.swift
+//  Simulator
+//
+//  Created by Andrew Fox on 7/30/19.
+//  Copyright © 2019 Andrew Fox. All rights reserved.
+//
+
+import Cocoa
+
+class Assembler: NSObject {
+    let microcodeGenerator: MicrocodeGenerator
+    
+    init(microcodeGenerator: MicrocodeGenerator) {
+        self.microcodeGenerator = microcodeGenerator
+        super.init()
+    }
+}
