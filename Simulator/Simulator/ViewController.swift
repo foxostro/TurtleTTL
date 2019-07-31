@@ -32,8 +32,9 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLogger()
-        generateMicrocode()
-        feedExampleProgram()
+        microcodeGenerator.generate()
+        computer.provideMicrocode(microcode: microcodeGenerator.microcode)
+        computer.provideInstructions(generateExampleProgram())
         setupExecutor()
     }
     
@@ -42,18 +43,12 @@ class ViewController: NSViewController {
         computer.logger = logger
     }
     
-    func generateMicrocode() {
-        microcodeGenerator.generate()
-        computer.instructionDecoder.lowerROM.data = microcodeGenerator.microcode.lowerROM.data
-        computer.instructionDecoder.upperROM.data = microcodeGenerator.microcode.upperROM.data
-    }
-    
-    func feedExampleProgram() {
-        computer.provideInstructions([
+    func generateExampleProgram() -> [Instruction] {
+        return [
             Instruction(opcode: microcodeGenerator.getOpcode(withMnemonic: "NOP")!, immediate: 0),
             Instruction(opcode: microcodeGenerator.getOpcode(withMnemonic: "MOV D, C")!, immediate: 42),
             Instruction(opcode: microcodeGenerator.getOpcode(withMnemonic: "HLT")!, immediate: 0)
-            ])
+        ]
     }
     
     func setupExecutor() {

@@ -123,4 +123,9 @@ class Computer: NSObject {
         try instructionROM.lowerROM.data = Data(contentsOf: from.appendingPathComponent(lowerInstructionROMFilename) as URL)
         try instructionROM.upperROM.data = Data(contentsOf: from.appendingPathComponent(upperInstructionROMFilename) as URL)
     }
+    
+    func provideMicrocode(microcode: InstructionDecoder) {
+        instructionDecoder.lowerROM.data = microcode.lowerROM.data
+        instructionDecoder.upperROM.data = microcode.upperROM.data
+    }
 }
