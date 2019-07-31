@@ -8,7 +8,12 @@
 
 import XCTest
 
+@testable import Simulator
+
 class MicrocodeGeneratorTests: XCTestCase {
-    func testExample() {
+    func testOpcodeZeroIsNOP() {
+        let generator = MicrocodeGenerator()
+        generator.generate()
+        XCTAssertEqual(generator.microcode.load(opcode: 0, carryFlag: 1, equalFlag: 1), ControlWord().contents)
     }
 }

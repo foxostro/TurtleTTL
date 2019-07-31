@@ -31,7 +31,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLogger()
-        generatorMicrocode()
+        generateMicrocode()
         feedExampleProgram()
         setupExecutor()
     }
@@ -41,11 +41,11 @@ class ViewController: NSViewController {
         computer.logger = logger
     }
     
-    func generatorMicrocode() {
+    func generateMicrocode() {
         let generator = MicrocodeGenerator()
         generator.generate()
-        computer.instructionDecoder.lowerROM.data = generator.lowerROM.data
-        computer.instructionDecoder.upperROM.data = generator.lowerROM.data
+        computer.instructionDecoder.lowerROM.data = generator.microcode.lowerROM.data
+        computer.instructionDecoder.upperROM.data = generator.microcode.upperROM.data
     }
     
     func feedExampleProgram() {

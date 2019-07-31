@@ -9,9 +9,12 @@
 import Cocoa
 
 class MicrocodeGenerator: NSObject {
-    let lowerROM = Memory(size: 131072)
-    let upperROM = Memory(size: 131072)
+    let microcode = InstructionDecoder()
+    
+    let NOP = 0
+    let nopCtl = ControlWord()
     
     func generate() {
+        microcode.store(opcode: NOP, controlWord: nopCtl)
     }
 }
