@@ -51,6 +51,17 @@ class AssemblerBackEndTests: XCTestCase {
         XCTAssertEqual(instructions[1].opcode, nop)
     }
     
+    func testHlt() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        backEnd.hlt()
+        backEnd.end()
+        let instructions = backEnd.instructions
+        XCTAssertEqual(instructions.count, 2)
+        XCTAssertEqual(instructions[0].opcode, nop)
+        XCTAssertEqual(instructions[1].opcode, hlt)
+    }
+    
     func makeBackEnd() -> AssemblerBackEnd {
         let codeGenerator = CodeGenerator(microcodeGenerator: microcodeGenerator)
         let assembler = AssemblerBackEnd(codeGenerator: codeGenerator)

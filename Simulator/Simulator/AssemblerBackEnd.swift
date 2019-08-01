@@ -31,6 +31,12 @@ class AssemblerBackEnd: NSObject {
         codeGenerator.nop()
     }
     
+    // Halt -- Halt the computer until reset
+    func hlt() {
+        assert(isAssembling)
+        codeGenerator.hlt()
+    }
+    
     // End emitting instructions.
     // After this call, the client can copy instructions out of "instructions".
     func end() {
