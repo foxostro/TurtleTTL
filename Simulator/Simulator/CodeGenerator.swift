@@ -11,13 +11,7 @@ import Cocoa
 class CodeGenerator: NSObject {
     let microcodeGenerator: MicrocodeGenerator
     var instructions = [Instruction]()
-    var isAssembling: Bool = false {
-        didSet {
-            if (isAssembling) {
-                nop()
-            }
-        }
-    }
+    private(set) var isAssembling: Bool = false
     
     init(microcodeGenerator: MicrocodeGenerator) {
         self.microcodeGenerator = microcodeGenerator
@@ -27,6 +21,7 @@ class CodeGenerator: NSObject {
     // Begin emitting instructions.
     func begin() {
         isAssembling = true
+        nop()
     }
     
     // End emitting instructions.
