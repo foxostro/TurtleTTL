@@ -44,17 +44,31 @@ class ViewController: NSViewController {
     }
     
     func generateExampleProgram() -> [Instruction] {
-        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
-        codeGen.begin()
-        try! codeGen.li("A", 0)
-        try! codeGen.li("B", 1)
-        for _ in 0...255 {
-            try! codeGen.add("A")
-            try! codeGen.mov("D", "A")
+        do {
+            return try tryGenerateExampleProgram()
+        } catch {
+            NSAlert(error: error).runModal()
+            return []
         }
-        codeGen.hlt()
-        codeGen.end()
-        return codeGen.instructions
+    }
+    
+    func tryGenerateExampleProgram() throws -> [Instruction] {
+        let a = makeAssemblerBackEnd()
+        a.begin()
+        try a.li("A", 0)
+        try a.li("B", 1)
+        try a.label("loop")
+        try a.add("A")
+        try a.mov("D", "A")
+        try a.jmp("loop")
+        a.end()
+        return a.instructions
+    }
+    
+    func makeAssemblerBackEnd() -> AssemblerBackEnd {
+        let codeGenerator = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        let assembler = AssemblerBackEnd(codeGenerator: codeGenerator)
+        return assembler
     }
     
     func setupExecutor() {
