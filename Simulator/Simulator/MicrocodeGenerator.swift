@@ -64,6 +64,7 @@ class MicrocodeGenerator: NSObject {
         hlt()
         mov()
         alu()
+        jmp()
     }
     
     func nop() {
@@ -107,6 +108,14 @@ class MicrocodeGenerator: NSObject {
             mapMnemonicToOpcode[mnemonic] = opcode
             microcode.store(opcode: opcode, controlWord: controlWord)
         }
+    }
+    
+    func jmp() {
+        let opcode = getNextOpcode()
+        mapMnemonicToOpcode["JMP"] = opcode
+        let controlWord = ControlWord()
+        controlWord.J = false
+        microcode.store(opcode: opcode, controlWord: controlWord)
     }
     
     func getNextOpcode() -> Int {

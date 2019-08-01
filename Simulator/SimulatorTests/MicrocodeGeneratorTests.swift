@@ -23,13 +23,27 @@ class MicrocodeGeneratorTests: XCTestCase {
         let generator = MicrocodeGenerator()
         generator.generate()
         let HLT = generator.getOpcode(withMnemonic: "HLT")
-        let controlWord = generator.microcode.load(opcode: HLT!, carryFlag: 1, equalFlag: 1)
-        XCTAssertTrue((controlWord & (1<<15)) != 0)
+        
+        let controlWord = ControlWord()
+        controlWord.contents = generator.microcode.load(opcode: HLT!, carryFlag: 1, equalFlag: 1);
+        
+        XCTAssertTrue(controlWord.HLT)
     }
     
     func testGetOpcode() {
         let generator = MicrocodeGenerator()
         generator.generate()
         XCTAssertEqual(generator.getOpcode(withMnemonic: "NOP")!, 0)
+    }
+    
+    func testJMP() {
+        let generator = MicrocodeGenerator()
+        generator.generate()
+        let JMP = generator.getOpcode(withMnemonic: "JMP")
+        
+        let controlWord = ControlWord()
+        controlWord.contents = generator.microcode.load(opcode: JMP!, carryFlag: 1, equalFlag: 1);
+        
+        XCTAssertFalse(controlWord.J)
     }
 }
