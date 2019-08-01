@@ -49,4 +49,17 @@ class AssemblerBackEnd: NSObject {
         assert(isAssembling)
         try codeGenerator.mov(destination, source)
     }
+    
+    // Load Immediate -- Loads an immediate value to the specified destination
+    func li(_ destination: String, _ immediate: Int) throws {
+        assert(isAssembling)
+        try codeGenerator.li(destination, immediate)
+    }
+    
+    // Addition -- The ALU adds the contents of the A and B registers and moves
+    // the result to the specified destination bus device.
+    func add(_ destination: String) throws {
+        assert(isAssembling)
+        try codeGenerator.add(destination)
+    }
 }

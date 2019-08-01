@@ -83,4 +83,40 @@ class AssemblerBackEndTests: XCTestCase {
         XCTAssertEqual(controlWord.AO, false)
         XCTAssertEqual(controlWord.DI, false)
     }
+    
+    func testLoadImmediate() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        try! backEnd.li("D", 42)
+        backEnd.end()
+        let instructions = backEnd.instructions
+        XCTAssertEqual(instructions.count, 2)
+        XCTAssertEqual(instructions[0].opcode, nop)
+        XCTAssertEqual(instructions[1].immediate, 42)
+        
+        let controlWord = ControlWord()
+        controlWord.contents = microcodeGenerator.microcode.load(opcode: Int(instructions[1].opcode), carryFlag: 0, equalFlag: 0)
+        
+        XCTAssertEqual(controlWord.CO, false)
+        XCTAssertEqual(controlWord.DI, false)
+    }
+    
+    func testAdd() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        try! backEnd.add("D")
+        backEnd.end()
+        let instructions = backEnd.instructions
+        
+        XCTAssertEqual(instructions.count, 2)
+        XCTAssertEqual(instructions[0].opcode, nop)
+        
+        XCTAssertEqual(instructions[1].immediate, 0b011001)
+        
+        let controlWord = ControlWord()
+        controlWord.contents = microcodeGenerator.microcode.load(opcode: Int(instructions[1].opcode), carryFlag: 0, equalFlag: 0)
+        
+        XCTAssertEqual(controlWord.EO, false)
+        XCTAssertEqual(controlWord.DI, false)
+    }
 }
