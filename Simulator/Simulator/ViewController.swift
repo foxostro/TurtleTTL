@@ -44,12 +44,23 @@ class ViewController: NSViewController {
     }
     
     func generateExampleProgram() -> [Instruction] {
+        var program = [Instruction]()
         do {
-            return try tryGenerateExampleProgram()
+            program = try tryGenerateExampleProgram()
+        } catch let error as AssemblerBackEnd.AssemblerBackEndError {
+            alert(withMessage: "Assembler Back End Error: " + error.message)
+        } catch let error as CodeGenerator.CodeGeneratorError {
+            alert(withMessage: "Code Generator Error: " + error.message)
         } catch {
-            NSAlert(error: error).runModal()
-            return []
+            alert(withMessage: "Unknown Error")
         }
+        return program
+    }
+    
+    func alert(withMessage message: String) {
+        let alert = NSAlert()
+        alert.messageText = message
+        alert.runModal()
     }
     
     func tryGenerateExampleProgram() throws -> [Instruction] {
