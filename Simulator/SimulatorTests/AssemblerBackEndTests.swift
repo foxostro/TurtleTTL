@@ -15,6 +15,12 @@ class AssemblerBackEndTests: XCTestCase {
     var nop: UInt8 = 0
     var hlt: UInt8 = 0
     
+    func makeBackEnd() -> AssemblerBackEnd {
+        let codeGenerator = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        let assembler = AssemblerBackEnd(codeGenerator: codeGenerator)
+        return assembler
+    }
+    
     override func setUp() {
         microcodeGenerator = MicrocodeGenerator()
         microcodeGenerator.generate()
@@ -62,9 +68,19 @@ class AssemblerBackEndTests: XCTestCase {
         XCTAssertEqual(instructions[1].opcode, hlt)
     }
     
-    func makeBackEnd() -> AssemblerBackEnd {
-        let codeGenerator = CodeGenerator(microcodeGenerator: microcodeGenerator)
-        let assembler = AssemblerBackEnd(codeGenerator: codeGenerator)
-        return assembler
+    func testMov() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        backEnd.mov("D", "A")
+        backEnd.end()
+        let instructions = backEnd.instructions
+        XCTAssertEqual(instructions.count, 2)
+        XCTAssertEqual(instructions[0].opcode, nop)
+        
+        let controlWord = ControlWord()
+        controlWord.contents = microcodeGenerator.microcode.load(opcode: Int(instructions[1].opcode), carryFlag: 0, equalFlag: 0)
+        
+        XCTAssertEqual(controlWord.AO, false)
+        XCTAssertEqual(controlWord.DI, false)
     }
 }

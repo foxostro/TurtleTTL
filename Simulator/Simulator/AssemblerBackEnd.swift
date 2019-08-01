@@ -25,6 +25,13 @@ class AssemblerBackEnd: NSObject {
         codeGenerator.begin()
     }
     
+    // End emitting instructions.
+    // After this call, the client can copy instructions out of "instructions".
+    func end() {
+        isAssembling = false
+        instructions = codeGenerator.instructions
+    }
+    
     // No Operation -- Do nothing
     func nop() {
         assert(isAssembling)
@@ -37,10 +44,9 @@ class AssemblerBackEnd: NSObject {
         codeGenerator.hlt()
     }
     
-    // End emitting instructions.
-    // After this call, the client can copy instructions out of "instructions".
-    func end() {
-        isAssembling = false
-        instructions = codeGenerator.instructions
+    // Move -- Copy a value from one bus device to another.
+    func mov(_ destination: String, _ source: String) {
+        assert(isAssembling)
+        codeGenerator.mov(destination, source)
     }
 }
