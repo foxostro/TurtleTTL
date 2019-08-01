@@ -21,7 +21,7 @@ class ComputerExecutor: NSObject {
             if (isExecuting) {
                 didStart()
             } else {
-                didStart()
+                didStop()
             }
         }
     }
