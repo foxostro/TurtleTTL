@@ -23,42 +23,42 @@ class CodeGeneratorTests: XCTestCase {
     }
     
     func testEmptyProgram() {
-        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
-        assembler.begin()
-        assembler.end()
-        let instructions = assembler.instructions
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        codeGen.end()
+        let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 1)
         XCTAssertEqual(instructions[0].opcode, nop)
     }
     
     func testNop() {
-        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
-        assembler.begin()
-        assembler.nop()
-        assembler.end()
-        let instructions = assembler.instructions
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        codeGen.nop()
+        codeGen.end()
+        let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
         XCTAssertEqual(instructions[1].opcode, nop)
     }
     
     func testHlt() {
-        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
-        assembler.begin()
-        assembler.hlt()
-        assembler.end()
-        let instructions = assembler.instructions
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        codeGen.hlt()
+        codeGen.end()
+        let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
         XCTAssertEqual(instructions[1].opcode, hlt)
     }
     
     func testMovFromScratch() {
-        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
-        assembler.begin()
-        assembler.instruction(withMnemonic: "MOV D, C", immediate: 42)
-        assembler.end()
-        let instructions = assembler.instructions
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        codeGen.instruction(withMnemonic: "MOV D, C", immediate: 42)
+        codeGen.end()
+        let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
         XCTAssertEqual(instructions[1].immediate, 42)
@@ -66,11 +66,11 @@ class CodeGeneratorTests: XCTestCase {
     }
     
     func testGenericMovWithImmediate() {
-        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
-        assembler.begin()
-        assembler.mov("D", "C", 42)
-        assembler.end()
-        let instructions = assembler.instructions
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        codeGen.mov("D", "C", 42)
+        codeGen.end()
+        let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
         XCTAssertEqual(instructions[1].immediate, 42)
@@ -78,11 +78,11 @@ class CodeGeneratorTests: XCTestCase {
     }
     
     func testLoadImmediate() {
-        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
-        assembler.begin()
-        assembler.li("D", 42)
-        assembler.end()
-        let instructions = assembler.instructions
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        codeGen.li("D", 42)
+        codeGen.end()
+        let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
         XCTAssertEqual(instructions[1].immediate, 42)
@@ -90,11 +90,11 @@ class CodeGeneratorTests: XCTestCase {
     }
     
     func testAdd() {
-        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
-        assembler.begin()
-        assembler.add("D")
-        assembler.end()
-        let instructions = assembler.instructions
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        codeGen.add("D")
+        codeGen.end()
+        let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
         XCTAssertEqual(instructions[1].immediate, 0b011001)
