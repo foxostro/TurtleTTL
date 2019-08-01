@@ -1,5 +1,5 @@
 //
-//  AssemblerTests.swift
+//  CodeGeneratorTests.swift
 //  SimulatorTests
 //
 //  Created by Andrew Fox on 7/30/19.
@@ -10,7 +10,7 @@ import XCTest
 
 @testable import Simulator
 
-class AssemblerTests: XCTestCase {
+class CodeGeneratorTests: XCTestCase {
     var microcodeGenerator = MicrocodeGenerator()
     var nop: UInt8 = 0
     var hlt: UInt8 = 0
@@ -23,7 +23,7 @@ class AssemblerTests: XCTestCase {
     }
     
     func testEmptyProgram() {
-        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.end()
         let instructions = assembler.instructions
@@ -32,7 +32,7 @@ class AssemblerTests: XCTestCase {
     }
     
     func testNop() {
-        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.nop()
         assembler.end()
@@ -43,7 +43,7 @@ class AssemblerTests: XCTestCase {
     }
     
     func testHlt() {
-        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.hlt()
         assembler.end()
@@ -54,7 +54,7 @@ class AssemblerTests: XCTestCase {
     }
     
     func testMovFromScratch() {
-        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.instruction(withMnemonic: "MOV D, C", immediate: 42)
         assembler.end()
@@ -66,7 +66,7 @@ class AssemblerTests: XCTestCase {
     }
     
     func testGenericMovWithImmediate() {
-        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.mov("D", "C", 42)
         assembler.end()
@@ -78,7 +78,7 @@ class AssemblerTests: XCTestCase {
     }
     
     func testLoadImmediate() {
-        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.li("D", 42)
         assembler.end()
@@ -90,7 +90,7 @@ class AssemblerTests: XCTestCase {
     }
     
     func testAdd() {
-        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.add("D")
         assembler.end()

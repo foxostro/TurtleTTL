@@ -1,5 +1,5 @@
 //
-//  Assembler.swift
+//  CodeGenerator.swift
 //  Simulator
 //
 //  Created by Andrew Fox on 7/30/19.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class Assembler: NSObject {
+class CodeGenerator: NSObject {
     let microcodeGenerator: MicrocodeGenerator
     var instructions = [Instruction]()
     var isAssembling: Bool = false {

@@ -44,7 +44,7 @@ class ViewController: NSViewController {
     }
     
     func generateExampleProgram() -> [Instruction] {
-        let assembler = Assembler(microcodeGenerator: microcodeGenerator)
+        let assembler = CodeGenerator(microcodeGenerator: microcodeGenerator)
         assembler.begin()
         assembler.li("A", 0)
         assembler.li("B", 1)

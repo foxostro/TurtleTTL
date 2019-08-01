@@ -37,8 +37,8 @@
 		6F86EDC822ED179C00375A00 /* ComputerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EDC722ED179C00375A00 /* ComputerTests.swift */; };
 		6FDFED7622F14BDD00AADA07 /* MicrocodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFED7522F14BDD00AADA07 /* MicrocodeGenerator.swift */; };
 		6FDFED7822F14BEF00AADA07 /* MicrocodeGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFED7722F14BEF00AADA07 /* MicrocodeGeneratorTests.swift */; };
-		6FDFED7A22F1627500AADA07 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFED7922F1627500AADA07 /* Assembler.swift */; };
-		6FDFED7C22F16D4100AADA07 /* AssemblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFED7B22F16D4100AADA07 /* AssemblerTests.swift */; };
+		6FDFED7A22F1627500AADA07 /* CodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFED7922F1627500AADA07 /* CodeGenerator.swift */; };
+		6FDFED7C22F16D4100AADA07 /* CodeGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDFED7B22F16D4100AADA07 /* CodeGeneratorTests.swift */; };
 		6FF1995722ECB36F00C255A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1995622ECB36F00C255A2 /* AppDelegate.swift */; };
 		6FF1995922ECB36F00C255A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF1995822ECB36F00C255A2 /* ViewController.swift */; };
 		6FF1995B22ECB37000C255A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF1995A22ECB37000C255A2 /* Assets.xcassets */; };
@@ -86,8 +86,8 @@
 		6F86EDC722ED179C00375A00 /* ComputerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerTests.swift; sourceTree = "<group>"; };
 		6FDFED7522F14BDD00AADA07 /* MicrocodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrocodeGenerator.swift; sourceTree = "<group>"; };
 		6FDFED7722F14BEF00AADA07 /* MicrocodeGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrocodeGeneratorTests.swift; sourceTree = "<group>"; };
-		6FDFED7922F1627500AADA07 /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
-		6FDFED7B22F16D4100AADA07 /* AssemblerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblerTests.swift; sourceTree = "<group>"; };
+		6FDFED7922F1627500AADA07 /* CodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGenerator.swift; sourceTree = "<group>"; };
+		6FDFED7B22F16D4100AADA07 /* CodeGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGeneratorTests.swift; sourceTree = "<group>"; };
 		6FF1995322ECB36F00C255A2 /* Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF1995622ECB36F00C255A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FF1995822ECB36F00C255A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 				6F790AEC22EEE9C200B38267 /* ComputerExecutor.swift */,
 				6F86EDC522ED113800375A00 /* Computer.swift */,
 				6FDFED7522F14BDD00AADA07 /* MicrocodeGenerator.swift */,
-				6FDFED7922F1627500AADA07 /* Assembler.swift */,
+				6FDFED7922F1627500AADA07 /* CodeGenerator.swift */,
 				6F86EDA422ECB7E400375A00 /* RAM.swift */,
 				6F86EDA922ECBD2800375A00 /* Register.swift */,
 				6F679BD422ED6FB0008C8E2C /* Flags.swift */,
@@ -175,7 +175,7 @@
 			children = (
 				6F86EDC722ED179C00375A00 /* ComputerTests.swift */,
 				6FDFED7722F14BEF00AADA07 /* MicrocodeGeneratorTests.swift */,
-				6FDFED7B22F16D4100AADA07 /* AssemblerTests.swift */,
+				6FDFED7B22F16D4100AADA07 /* CodeGeneratorTests.swift */,
 				6F86EDA622ECB99500375A00 /* RAMTests.swift */,
 				6F86EDAD22ECBDD000375A00 /* ProgramCounterTests.swift */,
 				6F86EDB122ECC05500375A00 /* ControlWordTests.swift */,
@@ -309,7 +309,7 @@
 				6FF1995722ECB36F00C255A2 /* AppDelegate.swift in Sources */,
 				6FDFED7622F14BDD00AADA07 /* MicrocodeGenerator.swift in Sources */,
 				6F790AED22EEE9C200B38267 /* ComputerExecutor.swift in Sources */,
-				6FDFED7A22F1627500AADA07 /* Assembler.swift in Sources */,
+				6FDFED7A22F1627500AADA07 /* CodeGenerator.swift in Sources */,
 				6F86EDB022ECBEC400375A00 /* ControlWord.swift in Sources */,
 				6F86CC8022F0001C008C6322 /* Memory.swift in Sources */,
 				6F790AE922EEDD1900B38267 /* Logger.swift in Sources */,
@@ -330,7 +330,7 @@
 				6F86EDB222ECC05500375A00 /* ControlWordTests.swift in Sources */,
 				6F86EDA722ECB99500375A00 /* RAMTests.swift in Sources */,
 				6F86EDAE22ECBDD000375A00 /* ProgramCounterTests.swift in Sources */,
-				6FDFED7C22F16D4100AADA07 /* AssemblerTests.swift in Sources */,
+				6FDFED7C22F16D4100AADA07 /* CodeGeneratorTests.swift in Sources */,
 				6F86EDB822ECC56400375A00 /* InstructionROMTests.swift in Sources */,
 				6F86EDC422ECF65B00375A00 /* Chip74x181Tests.swift in Sources */,
 				6F86EDBC22ECC72200375A00 /* InstructionDecoderTests.swift in Sources */,
