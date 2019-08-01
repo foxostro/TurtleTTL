@@ -12,19 +12,52 @@ class MicrocodeGenerator: NSObject {
     let microcode = InstructionDecoder()
     var mapMnemonicToOpcode = [String:Int]()
     var nextOpcode = 0
-    let outputToBus = [("A", {(_ controlWord: ControlWord) in controlWord.outputAToBus()}),
-                       ("B", {(_ controlWord: ControlWord) in controlWord.outputBToBus()}),
-                       ("C", {(_ controlWord: ControlWord) in controlWord.outputCToBus()}),
-                       ("X", {(_ controlWord: ControlWord) in controlWord.outputXToBus()}),
-                       ("Y", {(_ controlWord: ControlWord) in controlWord.outputYToBus()}),
-                       ("E", {(_ controlWord: ControlWord) in controlWord.outputEToBus()}),
-                       ("M", {(_ controlWord: ControlWord) in controlWord.outputMToBus()})]
-    let inputFromBus = [("A", {(_ controlWord: ControlWord) in controlWord.inputAFromBus()}),
-                        ("B", {(_ controlWord: ControlWord) in controlWord.inputBFromBus()}),
-                        ("D", {(_ controlWord: ControlWord) in controlWord.inputDFromBus()}),
-                        ("X", {(_ controlWord: ControlWord) in controlWord.inputXFromBus()}),
-                        ("Y", {(_ controlWord: ControlWord) in controlWord.inputYFromBus()}),
-                        ("M", {(_ controlWord: ControlWord) in controlWord.inputMFromBus()})]
+    
+    // Registers which can take in a value from the bus.
+    enum SourceRegister : CaseIterable {
+        case A, B, C, X, Y, E, M
+    }
+    
+    func modifyControlWord(controlWord: ControlWord, toOutputToBus: SourceRegister) {
+        switch toOutputToBus {
+        case .A:
+            controlWord.outputAToBus()
+        case .B:
+            controlWord.outputBToBus()
+        case .C:
+            controlWord.outputCToBus()
+        case .X:
+            controlWord.outputXToBus()
+        case .Y:
+            controlWord.outputYToBus()
+        case .E:
+            controlWord.outputEToBus()
+        case .M:
+            controlWord.outputMToBus()
+        }
+    }
+    
+    // Registers which can output a value to the bus.
+    enum DestinationRegister : CaseIterable {
+        case A, B, D, X, Y, M
+    }
+    
+    func modifyControlWord(controlWord: ControlWord, toInputFromBus: DestinationRegister) {
+        switch toInputFromBus {
+        case .A:
+            controlWord.inputAFromBus()
+        case .B:
+            controlWord.inputBFromBus()
+        case .D:
+            controlWord.inputDFromBus()
+        case .X:
+            controlWord.inputXFromBus()
+        case .Y:
+            controlWord.inputYFromBus()
+        case .M:
+            controlWord.inputMFromBus()
+        }
+    }
     
     func generate() {
         nop()
@@ -48,12 +81,14 @@ class MicrocodeGenerator: NSObject {
     }
     
     func mov() {
-        for output in outputToBus {
-            for input in inputFromBus {
+        for source in SourceRegister.allCases {
+            for destination in DestinationRegister.allCases {
                 let controlWord = ControlWord()
-                input.1(controlWord)
-                output.1(controlWord)
-                let mnemonic = String(format: "MOV %@, %@", input.0, output.0)
+                modifyControlWord(controlWord: controlWord, toOutputToBus: source)
+                modifyControlWord(controlWord: controlWord, toInputFromBus: destination)
+                let mnemonic = String(format: "MOV %@, %@",
+                                      String(describing: destination),
+                                      String(describing: source))
                 let opcode = getNextOpcode()
                 mapMnemonicToOpcode[mnemonic] = opcode
                 microcode.store(opcode: opcode, controlWord: controlWord)
@@ -62,12 +97,12 @@ class MicrocodeGenerator: NSObject {
     }
     
     func alu() {
-        for input in inputFromBus {
+        for destination in DestinationRegister.allCases {
             let controlWord = ControlWord()
-            input.1(controlWord)
-            controlWord.outputEToBus()
+            modifyControlWord(controlWord: controlWord, toOutputToBus: .E)
+            modifyControlWord(controlWord: controlWord, toInputFromBus: destination)
             controlWord.FI = false
-            let mnemonic = String(format: "ALU %@", input.0)
+            let mnemonic = String(format: "ALU %@", String(describing: destination))
             let opcode = getNextOpcode()
             mapMnemonicToOpcode[mnemonic] = opcode
             microcode.store(opcode: opcode, controlWord: controlWord)
