@@ -9,10 +9,19 @@
 import Cocoa
 
 class AssemblerBackEnd: NSObject {
+    struct AssemblerBackEndError: Error {
+        let message: String
+        
+        init(format: String, _ args: CVarArg...) {
+            message = String(format:format, arguments:args)
+        }
+    }
+    
 //    typealias Command = () throws -> ()
     var instructions = [Instruction]()
     private(set) var isAssembling: Bool = false
     let codeGenerator: CodeGenerator
+    var symbols = [String:Int]()
     
     required init(codeGenerator: CodeGenerator) {
         self.codeGenerator = codeGenerator
@@ -61,5 +70,23 @@ class AssemblerBackEnd: NSObject {
     func add(_ destination: String) throws {
         assert(isAssembling)
         try codeGenerator.add(destination)
+    }
+    
+    func label(_ name: String) throws {
+        assert(isAssembling)
+        if symbols[name] == nil {
+            symbols[name] = codeGenerator.programCounter
+        } else {
+            throw AssemblerBackEndError(format: "Duplicate label \"%@\"", name)
+        }
+    }
+    
+    func resolveSymbol(_ name: String) throws -> Int {
+        assert(isAssembling)
+        if let value = symbols[name] {
+            return value
+        } else {
+            throw AssemblerBackEndError(format: "Unrecognized symbol name \"%@\"", name)
+        }
     }
 }

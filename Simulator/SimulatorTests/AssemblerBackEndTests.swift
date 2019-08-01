@@ -119,4 +119,25 @@ class AssemblerBackEndTests: XCTestCase {
         XCTAssertEqual(controlWord.EO, false)
         XCTAssertEqual(controlWord.DI, false)
     }
+    
+    func testResolveUnrecognizedLabel() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        XCTAssertThrowsError(try backEnd.resolveSymbol(""))
+    }
+    
+    func testLabel() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        try! backEnd.label("foo")
+        XCTAssertEqual(try! backEnd.resolveSymbol("foo"), 1)
+    }
+    
+    func testDuplicateLabel() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        try! backEnd.label("foo")
+        XCTAssertThrowsError(try backEnd.label("foo"))
+    }
+    
 }
