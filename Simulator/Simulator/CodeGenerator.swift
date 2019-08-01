@@ -18,6 +18,7 @@ class CodeGenerator: NSObject {
     }
     
     let microcodeGenerator: MicrocodeGenerator
+    var programCounter = 0
     var instructions = [Instruction]()
     private(set) var isAssembling: Bool = false
     
@@ -29,6 +30,7 @@ class CodeGenerator: NSObject {
     // Begin emitting instructions.
     func begin() {
         isAssembling = true
+        programCounter = 0
         nop()
     }
     
@@ -51,6 +53,7 @@ class CodeGenerator: NSObject {
         } else {
             throw CodeGeneratorError(format: "Unrecognized mnemonic \"%@\"", mnemonic)
         }
+        programCounter += 1
     }
     
     // No Operation -- Do nothing
