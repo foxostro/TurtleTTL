@@ -53,10 +53,28 @@ class CodeGeneratorTests: XCTestCase {
         XCTAssertEqual(instructions[1].opcode, hlt)
     }
     
+    func testInstructionWithInvalidMnemonicThrows() {
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        XCTAssertThrowsError(try codeGen.instruction(withMnemonic: "", immediate: 0))
+    }
+    
+    func testInstructionWithNegativeImmediateThrows() {
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        XCTAssertThrowsError(try codeGen.instruction(withMnemonic: "NOP", immediate: -1))
+    }
+    
+    func testInstructionWithTooLargeImmediateThrows() {
+        let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
+        codeGen.begin()
+        XCTAssertThrowsError(try codeGen.instruction(withMnemonic: "NOP", immediate: 256))
+    }
+    
     func testMovFromScratch() {
         let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
         codeGen.begin()
-        codeGen.instruction(withMnemonic: "MOV D, C", immediate: 42)
+        try! codeGen.instruction(withMnemonic: "MOV D, C", immediate: 42)
         codeGen.end()
         let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)
@@ -68,7 +86,7 @@ class CodeGeneratorTests: XCTestCase {
     func testGenericMovWithImmediate() {
         let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
         codeGen.begin()
-        codeGen.mov("D", "C", 42)
+        try! codeGen.mov("D", "C", 42)
         codeGen.end()
         let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)
@@ -80,7 +98,7 @@ class CodeGeneratorTests: XCTestCase {
     func testLoadImmediate() {
         let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
         codeGen.begin()
-        codeGen.li("D", 42)
+        try! codeGen.li("D", 42)
         codeGen.end()
         let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)
@@ -92,7 +110,7 @@ class CodeGeneratorTests: XCTestCase {
     func testAdd() {
         let codeGen = CodeGenerator(microcodeGenerator: microcodeGenerator)
         codeGen.begin()
-        codeGen.add("D")
+        try! codeGen.add("D")
         codeGen.end()
         let instructions = codeGen.instructions
         XCTAssertEqual(instructions.count, 2)

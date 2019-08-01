@@ -68,10 +68,10 @@ class AssemblerBackEndTests: XCTestCase {
         XCTAssertEqual(instructions[1].opcode, hlt)
     }
     
-    func testMov() {
+    func testMov() throws {
         let backEnd = makeBackEnd()
         backEnd.begin()
-        backEnd.mov("D", "A")
+        try! backEnd.mov("D", "A")
         backEnd.end()
         let instructions = backEnd.instructions
         XCTAssertEqual(instructions.count, 2)

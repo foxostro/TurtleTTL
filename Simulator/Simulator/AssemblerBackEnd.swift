@@ -45,8 +45,8 @@ class AssemblerBackEnd: NSObject {
     }
     
     // Move -- Copy a value from one bus device to another.
-    func mov(_ destination: String, _ source: String) {
+    func mov(_ destination: String, _ source: String) throws {
         assert(isAssembling)
-        codeGenerator.mov(destination, source)
+        try codeGenerator.mov(destination, source)
     }
 }
