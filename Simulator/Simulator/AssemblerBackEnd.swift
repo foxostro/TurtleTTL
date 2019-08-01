@@ -103,6 +103,14 @@ class AssemblerBackEnd: NSObject {
         }
     }
     
+    func resolveSymbol(_ name: String) throws -> Int {
+        if let value = self.symbols[name] {
+            return value
+        } else {
+            throw AssemblerBackEndError(format: "Unrecognized symbol name \"%@\"", name)
+        }
+    }
+    
     // Jump -- Jump to the specified label.
     func jmp(_ name: String) throws {
         assert(isAssembling)
@@ -117,11 +125,18 @@ class AssemblerBackEnd: NSObject {
         programCounter += 5
     }
     
-    func resolveSymbol(_ name: String) throws -> Int {
-        if let value = self.symbols[name] {
-            return value
-        } else {
-            throw AssemblerBackEndError(format: "Unrecognized symbol name \"%@\"", name)
-        }
+    // Jump on Carry -- If the carry flag is set then jump to the specified
+    // label. Otherwise, do nothing.
+    func jc(_ name: String) throws {
+        assert(isAssembling)
+        commands.append({
+            let address = try self.resolveSymbol(name)
+            try self.codeGenerator.li("X", (address & 0xff00) >> 8)
+            try self.codeGenerator.li("Y", (address & 0xff))
+            self.codeGenerator.jc()
+            self.codeGenerator.nop()
+            self.codeGenerator.nop()
+        })
+        programCounter += 5
     }
 }

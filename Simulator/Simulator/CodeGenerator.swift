@@ -98,4 +98,11 @@ class CodeGenerator: NSObject {
         assert(isAssembling)
         try! instruction(withMnemonic: "JMP", immediate: 0)
     }
+    
+    // Jump on Carry -- If the carry flag is set then jump to the address
+    // specified by the XY register pair. Otherwise, do nothing.
+    func jc() {
+        assert(isAssembling)
+        try! instruction(withMnemonic: "JC", immediate: 0)
+    }
 }

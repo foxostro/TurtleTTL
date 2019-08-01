@@ -65,6 +65,7 @@ class MicrocodeGenerator: NSObject {
         mov()
         alu()
         jmp()
+        jc()
     }
     
     func nop() {
@@ -116,6 +117,18 @@ class MicrocodeGenerator: NSObject {
         let controlWord = ControlWord()
         controlWord.J = false
         microcode.store(opcode: opcode, controlWord: controlWord)
+    }
+    
+    func jc() {
+        // JC performs a jump when the carry flag is set.
+        let opcode = getNextOpcode()
+        mapMnemonicToOpcode["JC"] = opcode
+        let controlWord = ControlWord()
+        controlWord.J = false
+        microcode.store(opcode: opcode, carryFlag: 0, equalFlag: 0, controlWord: controlWord)
+        microcode.store(opcode: opcode, carryFlag: 1, equalFlag: 0, controlWord: ControlWord())
+        microcode.store(opcode: opcode, carryFlag: 0, equalFlag: 1, controlWord: controlWord)
+        microcode.store(opcode: opcode, carryFlag: 1, equalFlag: 1, controlWord: ControlWord())
     }
     
     func getNextOpcode() -> Int {

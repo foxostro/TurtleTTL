@@ -70,8 +70,10 @@ class ViewController: NSViewController {
         try a.li("B", 1)
         try a.label("loop")
         try a.add("A")
+        try a.jc("end")
         try a.mov("D", "A")
         try a.jmp("loop")
+        try a.label("end")
         a.hlt()
         try a.end()
         return a.instructions

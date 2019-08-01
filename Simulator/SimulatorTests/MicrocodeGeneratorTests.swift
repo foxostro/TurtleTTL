@@ -46,4 +46,18 @@ class MicrocodeGeneratorTests: XCTestCase {
         
         XCTAssertFalse(controlWord.J)
     }
+    
+    func testJC() {
+        let generator = MicrocodeGenerator()
+        generator.generate()
+        let JC = generator.getOpcode(withMnemonic: "JC")
+        
+        let controlWordOnBranchTaken = ControlWord()
+        controlWordOnBranchTaken.contents = generator.microcode.load(opcode: JC!, carryFlag: 0, equalFlag: 1);
+        XCTAssertFalse(controlWordOnBranchTaken.J)
+        
+        let controlWordOnBranchNotTaken = ControlWord()
+        controlWordOnBranchNotTaken.contents = generator.microcode.load(opcode: JC!, carryFlag: 1, equalFlag: 1);
+        XCTAssertTrue(controlWordOnBranchNotTaken.J)
+    }
 }

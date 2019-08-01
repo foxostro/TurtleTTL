@@ -201,4 +201,34 @@ class AssemblerBackEndTests: XCTestCase {
         // HLT halts the machine to stop it running.
         XCTAssertEqual(instructions[6].opcode, hlt)
     }
+    
+    func testJC() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        try! backEnd.label("foo")
+        try! backEnd.jc("foo")
+        try! backEnd.end()
+        let instructions = backEnd.instructions
+        
+        XCTAssertEqual(instructions.count, 6)
+        
+        // The first instruction in memory must be a NOP. Without this, CPU
+        // reset does not work.
+        XCTAssertEqual(instructions[0].opcode, nop)
+        
+        // Load the resolved label address into XY.
+        XCTAssertEqual(instructions[1].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV X, C")!))
+        XCTAssertEqual(instructions[1].immediate, 0)
+        XCTAssertEqual(instructions[2].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV Y, C")!))
+        XCTAssertEqual(instructions[2].immediate, 1)
+        
+        // The JC command jumps to the address in the XY register pair, but only
+        // if the carry flag is set.
+        XCTAssertEqual(instructions[3].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "JC")!))
+        
+        // JC must be followed by two NOPs. A jump does not clear the pipeline
+        // so this is necessary to ensure correct operation.
+        XCTAssertEqual(instructions[4].opcode, nop)
+        XCTAssertEqual(instructions[5].opcode, nop)
+    }
 }
