@@ -33,14 +33,14 @@ class AssemblerBackEndTests: XCTestCase {
         XCTAssertFalse(backEnd.isAssembling)
         backEnd.begin()
         XCTAssertTrue(backEnd.isAssembling)
-        backEnd.end()
+        try! backEnd.end()
         XCTAssertFalse(backEnd.isAssembling)
     }
     
     func testEmptyProgram() {
         let backEnd = makeBackEnd()
         backEnd.begin()
-        backEnd.end()
+        try! backEnd.end()
         let instructions = backEnd.instructions
         XCTAssertEqual(instructions.count, 1)
         XCTAssertEqual(instructions[0].opcode, nop)
@@ -50,7 +50,7 @@ class AssemblerBackEndTests: XCTestCase {
         let backEnd = makeBackEnd()
         backEnd.begin()
         backEnd.nop()
-        backEnd.end()
+        try! backEnd.end()
         let instructions = backEnd.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
@@ -61,7 +61,7 @@ class AssemblerBackEndTests: XCTestCase {
         let backEnd = makeBackEnd()
         backEnd.begin()
         backEnd.hlt()
-        backEnd.end()
+        try! backEnd.end()
         let instructions = backEnd.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
@@ -72,7 +72,7 @@ class AssemblerBackEndTests: XCTestCase {
         let backEnd = makeBackEnd()
         backEnd.begin()
         try! backEnd.mov("D", "A")
-        backEnd.end()
+        try! backEnd.end()
         let instructions = backEnd.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
@@ -88,7 +88,7 @@ class AssemblerBackEndTests: XCTestCase {
         let backEnd = makeBackEnd()
         backEnd.begin()
         try! backEnd.li("D", 42)
-        backEnd.end()
+        try! backEnd.end()
         let instructions = backEnd.instructions
         XCTAssertEqual(instructions.count, 2)
         XCTAssertEqual(instructions[0].opcode, nop)
@@ -105,7 +105,7 @@ class AssemblerBackEndTests: XCTestCase {
         let backEnd = makeBackEnd()
         backEnd.begin()
         try! backEnd.add("D")
-        backEnd.end()
+        try! backEnd.end()
         let instructions = backEnd.instructions
         
         XCTAssertEqual(instructions.count, 2)
@@ -145,7 +145,7 @@ class AssemblerBackEndTests: XCTestCase {
         backEnd.begin()
         try! backEnd.label("foo")
         try! backEnd.jmp("foo")
-        backEnd.end()
+        try! backEnd.end()
         let instructions = backEnd.instructions
         
         XCTAssertEqual(instructions.count, 6)
@@ -167,5 +167,38 @@ class AssemblerBackEndTests: XCTestCase {
         // so this is necessary to ensure correct operation.
         XCTAssertEqual(instructions[4].opcode, nop)
         XCTAssertEqual(instructions[5].opcode, nop)
+    }
+    
+    func testForwardJmp() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        try! backEnd.jmp("foo")
+        try! backEnd.label("foo")
+        backEnd.hlt()
+        try! backEnd.end()
+        let instructions = backEnd.instructions
+
+        XCTAssertEqual(instructions.count, 7)
+
+        // The first instruction in memory must be a NOP. Without this, CPU
+        // reset does not work.
+        XCTAssertEqual(instructions[0].opcode, nop)
+
+        // Load the resolved label address into XY.
+        XCTAssertEqual(instructions[1].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV X, C")!))
+        XCTAssertEqual(instructions[1].immediate, 0)
+        XCTAssertEqual(instructions[2].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV Y, C")!))
+        XCTAssertEqual(instructions[2].immediate, 6)
+
+        // The JMP command jumps to the address in the XY register pair.
+        XCTAssertEqual(instructions[3].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "JMP")!))
+
+        // JMP must be followed by two NOPs. A jump does not clear the pipeline
+        // so this is necessary to ensure correct operation.
+        XCTAssertEqual(instructions[4].opcode, nop)
+        XCTAssertEqual(instructions[5].opcode, nop)
+
+        // HLT halts the machine to stop it running.
+        XCTAssertEqual(instructions[6].opcode, hlt)
     }
 }

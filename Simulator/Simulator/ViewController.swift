@@ -61,7 +61,8 @@ class ViewController: NSViewController {
         try a.add("A")
         try a.mov("D", "A")
         try a.jmp("loop")
-        a.end()
+        a.hlt()
+        try a.end()
         return a.instructions
     }
     

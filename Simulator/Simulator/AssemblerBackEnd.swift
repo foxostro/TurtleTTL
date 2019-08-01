@@ -17,11 +17,13 @@ class AssemblerBackEnd: NSObject {
         }
     }
     
-//    typealias Command = () throws -> ()
     var instructions = [Instruction]()
     private(set) var isAssembling: Bool = false
     let codeGenerator: CodeGenerator
     var symbols = [String:Int]()
+    typealias Command = () throws -> ()
+    var commands = [Command]()
+    var programCounter = 0
     
     required init(codeGenerator: CodeGenerator) {
         self.codeGenerator = codeGenerator
@@ -31,73 +33,95 @@ class AssemblerBackEnd: NSObject {
     // Begin emitting instructions.
     func begin() {
         isAssembling = true
+        programCounter = 1
         codeGenerator.begin()
     }
     
     // End emitting instructions.
     // After this call, the client can copy instructions out of "instructions".
-    func end() {
-        isAssembling = false
+    func end() throws {
+        for i in 0..<commands.count {
+            try commands[i]()
+        }
+        codeGenerator.end()
         instructions = codeGenerator.instructions
+        isAssembling = false
     }
     
     // No Operation -- Do nothing
     func nop() {
         assert(isAssembling)
-        codeGenerator.nop()
+        commands.append({
+            self.codeGenerator.nop()
+        })
+        programCounter += 1
     }
     
     // Halt -- Halt the computer until reset
     func hlt() {
         assert(isAssembling)
-        codeGenerator.hlt()
+        commands.append({
+            self.codeGenerator.hlt()
+        })
+        programCounter += 1
     }
     
     // Move -- Copy a value from one bus device to another.
     func mov(_ destination: String, _ source: String) throws {
         assert(isAssembling)
-        try codeGenerator.mov(destination, source)
+        commands.append({
+            try self.codeGenerator.mov(destination, source)
+        })
+        programCounter += 1
     }
     
     // Load Immediate -- Loads an immediate value to the specified destination
     func li(_ destination: String, _ immediate: Int) throws {
         assert(isAssembling)
-        try codeGenerator.li(destination, immediate)
+        commands.append({
+            try self.codeGenerator.li(destination, immediate)
+        })
+        programCounter += 1
     }
     
     // Addition -- The ALU adds the contents of the A and B registers and moves
     // the result to the specified destination bus device.
     func add(_ destination: String) throws {
         assert(isAssembling)
-        try codeGenerator.add(destination)
+        commands.append({
+            try self.codeGenerator.add(destination)
+        })
+        programCounter += 1
     }
     
     func label(_ name: String) throws {
         assert(isAssembling)
         if symbols[name] == nil {
-            symbols[name] = codeGenerator.programCounter
+            symbols[name] = self.programCounter
         } else {
             throw AssemblerBackEndError(format: "Duplicate label \"%@\"", name)
-        }
-    }
-    
-    func resolveSymbol(_ name: String) throws -> Int {
-        assert(isAssembling)
-        if let value = symbols[name] {
-            return value
-        } else {
-            throw AssemblerBackEndError(format: "Unrecognized symbol name \"%@\"", name)
         }
     }
     
     // Jump -- Jump to the specified label.
     func jmp(_ name: String) throws {
         assert(isAssembling)
-        let address = try resolveSymbol(name)
-        try codeGenerator.li("X", (address & 0xff00) >> 8)
-        try codeGenerator.li("Y", (address & 0xff))
-        codeGenerator.jmp()
-        codeGenerator.nop()
-        codeGenerator.nop()
+        commands.append({
+            let address = try self.resolveSymbol(name)
+            try self.codeGenerator.li("X", (address & 0xff00) >> 8)
+            try self.codeGenerator.li("Y", (address & 0xff))
+            self.codeGenerator.jmp()
+            self.codeGenerator.nop()
+            self.codeGenerator.nop()
+        })
+        programCounter += 5
+    }
+    
+    func resolveSymbol(_ name: String) throws -> Int {
+        if let value = self.symbols[name] {
+            return value
+        } else {
+            throw AssemblerBackEndError(format: "Unrecognized symbol name \"%@\"", name)
+        }
     }
 }
