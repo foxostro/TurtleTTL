@@ -89,4 +89,15 @@ class AssemblerBackEnd: NSObject {
             throw AssemblerBackEndError(format: "Unrecognized symbol name \"%@\"", name)
         }
     }
+    
+    // Jump -- Jump to the specified label.
+    func jmp(_ name: String) throws {
+        assert(isAssembling)
+        let address = try resolveSymbol(name)
+        try codeGenerator.li("X", (address & 0xff00) >> 8)
+        try codeGenerator.li("Y", (address & 0xff))
+        codeGenerator.jmp()
+        codeGenerator.nop()
+        codeGenerator.nop()
+    }
 }
