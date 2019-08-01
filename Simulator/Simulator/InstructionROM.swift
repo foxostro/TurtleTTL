@@ -12,9 +12,9 @@ import Cocoa
 // This mirrors the physical construction of the Instruction ROM circuit which
 // uses two eight-bit EEPROM chips to form a sixteen-bit word.
 class InstructionROM: NSObject {
-    let size = 32768
-    let upperROM = Memory(size: 32768)
-    let lowerROM = Memory(size: 32768)
+    let size = 131072
+    let upperROM = Memory(size: 131072)
+    let lowerROM = Memory(size: 131072)
     
     func store(address:Int, value:UInt16) {
         upperROM[address] = UInt8((value & 0xff00) >> 8)

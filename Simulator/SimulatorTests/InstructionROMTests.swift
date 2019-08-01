@@ -13,7 +13,7 @@ import XCTest
 class InstructionROMTests: XCTestCase {
     func testContentsInitializedTo255() {
         let memory = InstructionROM()
-        XCTAssertEqual(memory.size, 32768)
+        XCTAssertEqual(memory.size, 131072)
         XCTAssertEqual(memory.load(address: 0).value, 0xffff)
     }
     

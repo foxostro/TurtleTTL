@@ -97,6 +97,8 @@ class Computer: NSObject {
     }
     
     func saveMicrocode(to: URL) throws {
+        // Use minipro on the command-line to flash the binary file to EEPROM:
+        //   % minipro -p SST29EE010 -y -w ./file.bin
         let lowerDecoderROM = instructionDecoder.lowerROM.data
         let upperDecoderROM = instructionDecoder.upperROM.data
         
@@ -111,6 +113,8 @@ class Computer: NSObject {
     }
     
     func saveProgram(to: URL) throws {
+        // Use minipro on the command-line to flash the binary file to EEPROM:
+        //   % minipro -p SST29EE010 -y -w ./file.bin
         let lowerInstructionROM = instructionROM.lowerROM.data
         let upperInstructionROM = instructionROM.upperROM.data
         
