@@ -186,6 +186,8 @@ class ViewController: NSViewController {
     @IBAction func saveMicrocode(sender: Any?) {
         let panel = NSSavePanel()
         panel.canCreateDirectories = true
+        panel.allowedFileTypes = ["microcode"]
+        panel.allowsOtherFileTypes = false
         panel.begin { (response: NSApplication.ModalResponse) in
             if (response == NSApplication.ModalResponse.OK) {
                 if let url = panel.url {
@@ -201,8 +203,8 @@ class ViewController: NSViewController {
     
     @IBAction func loadMicrocode(sender: Any?) {
         let panel = NSOpenPanel()
-        panel.canChooseFiles = false
-        panel.canChooseDirectories = true
+        panel.allowedFileTypes = ["microcode"]
+        panel.allowsOtherFileTypes = false
         panel.begin { (response: NSApplication.ModalResponse) in
             if (response == NSApplication.ModalResponse.OK) {
                 if let url = panel.url {
@@ -219,6 +221,8 @@ class ViewController: NSViewController {
     @IBAction func saveProgram(sender: Any?) {
         let panel = NSSavePanel()
         panel.canCreateDirectories = true
+        panel.allowedFileTypes = ["program"]
+        panel.allowsOtherFileTypes = false
         panel.begin { (response: NSApplication.ModalResponse) in
             if (response == NSApplication.ModalResponse.OK) {
                 if let url = panel.url {
@@ -234,8 +238,8 @@ class ViewController: NSViewController {
     
     @IBAction func loadProgram(sender: Any?) {
         let panel = NSOpenPanel()
-        panel.canChooseFiles = false
-        panel.canChooseDirectories = true
+        panel.allowedFileTypes = ["program"]
+        panel.allowsOtherFileTypes = false
         panel.begin { (response: NSApplication.ModalResponse) in
             if (response == NSApplication.ModalResponse.OK) {
                 if let url = panel.url {

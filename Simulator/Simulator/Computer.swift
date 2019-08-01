@@ -102,7 +102,9 @@ class Computer: NSObject {
         let lowerDecoderROM = instructionDecoder.lowerROM.data
         let upperDecoderROM = instructionDecoder.upperROM.data
         
-        try FileManager.default.createDirectory(at: to, withIntermediateDirectories: false, attributes: [:])
+        try FileManager.default.createDirectory(at: to,
+                                                withIntermediateDirectories: false,
+                                                attributes: [:])
         try lowerDecoderROM.write(to: to.appendingPathComponent(lowerDecoderRomFilename))
         try upperDecoderROM.write(to: to.appendingPathComponent(upperDecoderRomFilename))
     }
@@ -118,7 +120,9 @@ class Computer: NSObject {
         let lowerInstructionROM = instructionROM.lowerROM.data
         let upperInstructionROM = instructionROM.upperROM.data
         
-        try FileManager.default.createDirectory(at: to, withIntermediateDirectories: false, attributes: [:])
+        try FileManager.default.createDirectory(at: to,
+                                                withIntermediateDirectories: false,
+                                                attributes: [:])
         try lowerInstructionROM.write(to: to.appendingPathComponent(lowerInstructionROMFilename))
         try upperInstructionROM.write(to: to.appendingPathComponent(upperInstructionROMFilename))
     }
