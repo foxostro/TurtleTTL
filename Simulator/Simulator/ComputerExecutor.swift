@@ -49,7 +49,7 @@ class ComputerExecutor: NSObject {
         isExecuting = false
         reset()
         
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: {timer in
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: {timer in
             self.tick()
         })
     }
