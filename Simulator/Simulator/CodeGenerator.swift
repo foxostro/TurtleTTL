@@ -92,4 +92,10 @@ class CodeGenerator: NSObject {
         let mnemonic = String(format: "ALU %@", destination)
         try instruction(withMnemonic: mnemonic, immediate: 0b011001)
     }
+    
+    // Jump -- Jump to the address specified by the XY register pair.
+    func jmp() {
+        assert(isAssembling)
+        try! instruction(withMnemonic: "JMP", immediate: 0)
+    }
 }
