@@ -101,6 +101,76 @@ class AssemblerBackEndTests: XCTestCase {
         XCTAssertEqual(controlWord.DI, false)
     }
     
+    func testStoreToMemory() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        try! backEnd.store(address: 0xaabb, source: "A")
+        try! backEnd.end()
+        let instructions = backEnd.instructions
+        
+        XCTAssertEqual(instructions.count, 4)
+        
+        // The first instruction in memory must be a NOP. Without this, CPU
+        // reset does not work.
+        XCTAssertEqual(instructions[0].opcode, nop)
+        
+        // The next two instructions load an address into XY.
+        XCTAssertEqual(instructions[1].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV X, C")!))
+        XCTAssertEqual(instructions[1].immediate, 0xaa)
+        XCTAssertEqual(instructions[2].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV Y, C")!))
+        XCTAssertEqual(instructions[2].immediate, 0xbb)
+        
+        // And an instructions to store the A register in memory
+        let opcode = UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV M, A")!)
+        XCTAssertEqual(instructions[3].opcode, opcode)
+    }
+    
+    func testStoreToMemoryWithInvalidAddress() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        XCTAssertThrowsError(try backEnd.store(address: 0xffffff, source: "A"))
+    }
+    
+    func testLoadFromMemory() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        try! backEnd.store(address: 0xaabb, immediate: 42)
+        try! backEnd.load(address: 0xaabb, destination: "A")
+        try! backEnd.end()
+        let instructions = backEnd.instructions
+        
+        XCTAssertEqual(instructions.count, 7)
+        
+        // The first instruction in memory must be a NOP. Without this, CPU
+        // reset does not work.
+        XCTAssertEqual(instructions[0].opcode, nop)
+        
+        // The next two instructions load an address into XY.
+        XCTAssertEqual(instructions[1].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV X, C")!))
+        XCTAssertEqual(instructions[1].immediate, 0xaa)
+        XCTAssertEqual(instructions[2].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV Y, C")!))
+        XCTAssertEqual(instructions[2].immediate, 0xbb)
+        
+        // And an instructions to store the immediate value 42 in memory
+        XCTAssertEqual(instructions[3].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV M, C")!))
+        XCTAssertEqual(instructions[3].immediate, 42)
+        
+        // The next two instructions load an address into XY.
+        XCTAssertEqual(instructions[4].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV X, C")!))
+        XCTAssertEqual(instructions[4].immediate, 0xaa)
+        XCTAssertEqual(instructions[5].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV Y, C")!))
+        XCTAssertEqual(instructions[5].immediate, 0xbb)
+        
+        // And an instructions to store the A register in memory
+        XCTAssertEqual(instructions[6].opcode, UInt8(microcodeGenerator.getOpcode(withMnemonic: "MOV A, M")!))
+    }
+    
+    func testLoadFromMemoryWithInvalidAddress() {
+        let backEnd = makeBackEnd()
+        backEnd.begin()
+        XCTAssertThrowsError(try backEnd.load(address: 0xffffff, destination: "A"))
+    }
+    
     func testAdd() {
         let backEnd = makeBackEnd()
         backEnd.begin()

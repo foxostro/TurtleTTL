@@ -84,6 +84,48 @@ class AssemblerBackEnd: NSObject {
         programCounter += 1
     }
     
+    // Store -- Store the contents of a register to memory at the address.
+    func store(address: Int, source: String) throws {
+        assert(isAssembling)
+        if(address < 0 || address > 0xffff) {
+            throw AssemblerBackEndError(format: "Address is invalid: 0x%x", address)
+        }
+        commands.append({
+            try self.setAddress(address)
+            try self.codeGenerator.mov("M", source)
+        })
+        programCounter += 3
+    }
+    
+    // Store -- Store the contents of a register to memory at the address.
+    func store(address: Int, immediate: Int) throws {
+        assert(isAssembling)
+        if(address < 0 || address > 0xffff) {
+            throw AssemblerBackEndError(format: "Address is invalid: 0x%x", address)
+        }
+        if(immediate < 0 || immediate > 0xff) {
+            throw AssemblerBackEndError(format: "Immediate is invalid: 0x%x", address)
+        }
+        commands.append({
+            try self.setAddress(address)
+            try self.codeGenerator.instruction(withMnemonic: "MOV M, C", immediate: immediate)
+        })
+        programCounter += 3
+    }
+    
+    // Load -- Load the contents of the memory at the address to a register.
+    func load(address: Int, destination: String) throws {
+        assert(isAssembling)
+        if(address < 0 || address > 0xffff) {
+            throw AssemblerBackEndError(format: "Address is invalid: 0x%x", address)
+        }
+        commands.append({
+            try self.setAddress(address)
+            try self.codeGenerator.mov(destination, "M")
+        })
+        programCounter += 3
+    }
+    
     // Addition -- The ALU adds the contents of the A and B registers and moves
     // the result to the specified destination bus device.
     func add(_ destination: String) throws {
@@ -111,13 +153,24 @@ class AssemblerBackEnd: NSObject {
         }
     }
     
+    func setAddress(_ address: Int) throws {
+        if(address < 0 || address > 0xffff) {
+            throw AssemblerBackEndError(format: "Address is invalid: 0x%x", address)
+        }
+        try self.codeGenerator.li("X", (address & 0xff00) >> 8)
+        try self.codeGenerator.li("Y", (address & 0xff))
+    }
+    
+    func setAddress(withSymbol name: String) throws {
+        let address = try self.resolveSymbol(name)
+        try self.setAddress(address)
+    }
+    
     // Jump -- Jump to the specified label.
     func jmp(_ name: String) throws {
         assert(isAssembling)
         commands.append({
-            let address = try self.resolveSymbol(name)
-            try self.codeGenerator.li("X", (address & 0xff00) >> 8)
-            try self.codeGenerator.li("Y", (address & 0xff))
+            try self.setAddress(withSymbol: name)
             self.codeGenerator.jmp()
             self.codeGenerator.nop()
             self.codeGenerator.nop()
@@ -130,9 +183,7 @@ class AssemblerBackEnd: NSObject {
     func jc(_ name: String) throws {
         assert(isAssembling)
         commands.append({
-            let address = try self.resolveSymbol(name)
-            try self.codeGenerator.li("X", (address & 0xff00) >> 8)
-            try self.codeGenerator.li("Y", (address & 0xff))
+            try self.setAddress(withSymbol: name)
             self.codeGenerator.jc()
             self.codeGenerator.nop()
             self.codeGenerator.nop()
