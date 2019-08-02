@@ -1333,7 +1333,7 @@
                     <connections>
                         <outlet property="aluResult" destination="yFa-cX-imF" id="2d5-8I-pv2"/>
                         <outlet property="bus" destination="yFa-cX-imF" id="pH4-5l-AK7"/>
-                        <outlet property="computer" destination="PpV-dj-gSv" id="uU7-Nv-fVH"/>
+                        <outlet property="computer" destination="QI0-sg-86H" id="eKA-Bm-RMy"/>
                         <outlet property="controlSignals" destination="Sqc-vl-S27" id="tlZ-1C-r75"/>
                         <outlet property="controlWord" destination="Egn-vF-jzT" id="cRh-Mw-7Oe"/>
                         <outlet property="eventLog" destination="u5j-2x-nqt" id="EpM-Br-Vx9"/>
@@ -1351,7 +1351,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <userDefaultsController representsSharedInstance="YES" id="UzL-l0-aAD"/>
-                <customObject id="PpV-dj-gSv" customClass="Computer" customModule="Simulator" customModuleProvider="target"/>
+                <customObject id="QI0-sg-86H" customClass="Computer" customModule="TurtleTTL"/>
             </objects>
             <point key="canvasLocation" x="74" y="971.5"/>
         </scene>

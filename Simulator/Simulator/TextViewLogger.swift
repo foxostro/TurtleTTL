@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import TurtleTTL
 
 class TextViewLogger: Logger {
     let textView:NSTextView

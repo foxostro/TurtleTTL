@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import TurtleTTL
 
 class ViewController: NSViewController {
     @IBOutlet var computer:Computer!
