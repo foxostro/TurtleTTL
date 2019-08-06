@@ -163,7 +163,7 @@ public class PipelineStageExecute: NSObject {
             }
             programCounter.contents = UInt16(valueOfXYPair())
         }
-        if (true == controlWordRegister.HLT) {
+        if (false == controlWordRegister.HLT) {
             logger?.append("HLT")
         }
         if (!isResetting) {

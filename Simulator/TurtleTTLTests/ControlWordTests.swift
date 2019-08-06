@@ -12,12 +12,12 @@ import TurtleTTL
 class ControlWordTests: XCTestCase {
     func testNOPDoesNotHalt() {
         let controlWord = ControlWord()
-        XCTAssertEqual(controlWord.HLT, false)
+        XCTAssertEqual(controlWord.HLT, true)
     }
     func testModifyCOBit() {
         let controlWord = ControlWord()
         controlWord.CO = false
-        XCTAssertEqual(controlWord.contents, 0b0111111111111110)
+        XCTAssertEqual(controlWord.contents, 0b1111111111111110)
     }
     func testSettingContentsSetsHLTSignal() {
         let controlWord = ControlWord()

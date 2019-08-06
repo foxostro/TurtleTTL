@@ -22,11 +22,11 @@ class ComputerTests: XCTestCase {
         let computer = Computer()
         
         // NOP
-        computer.instructionDecoder.store(address: 0, value: 0b0111111111111111)
+        computer.instructionDecoder.store(address: 0, value: 0b1111111111111111)
         computer.instructionROM.store(address: 0, value: 0b0000000000000000)
         
         // Set register A to immediate value 1.
-        computer.instructionDecoder.store(address: 1, value: 0b0111011111111110)
+        computer.instructionDecoder.store(address: 1, value: 0b1111011111111110)
         computer.instructionROM.store(address: 1, value: 0b0000000100000001)
         
         computer.reset()
@@ -60,7 +60,7 @@ class ComputerTests: XCTestCase {
         sum.AI = false
         
         let hlt = ControlWord()
-        hlt.HLT = true
+        hlt.HLT = false
 
         // NOP
         computer.instructionDecoder.store(opcode: 0, controlWord: nop)
@@ -120,7 +120,7 @@ class ComputerTests: XCTestCase {
         
         let hlt = 5
         let hltControl = ControlWord()
-        hltControl.HLT = true
+        hltControl.HLT = false
         computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
         
         computer.provideInstructions([
@@ -145,7 +145,7 @@ class ComputerTests: XCTestCase {
         
         let hlt = 1
         let hltControl = ControlWord()
-        hltControl.HLT = true
+        hltControl.HLT = false
         computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
         
         let lda = 2
@@ -196,7 +196,7 @@ class ComputerTests: XCTestCase {
         
         let hlt = 1
         let hltControl = ControlWord()
-        hltControl.HLT = true
+        hltControl.HLT = false
         computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
         
         let lda = 2
@@ -279,7 +279,7 @@ class ComputerTests: XCTestCase {
         
         let hlt = 1
         let hltControl = ControlWord()
-        hltControl.HLT = true
+        hltControl.HLT = false
         computer.instructionDecoder.store(opcode: hlt, controlWord: hltControl)
         
         let lda = 2

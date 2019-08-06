@@ -70,7 +70,7 @@ public class Computer: NSObject {
     }
     
     public func step() {
-        if (false == controlWordRegister.HLT) {
+        if (true == controlWordRegister.HLT) {
             haltlessStep()
         }
     }
@@ -83,7 +83,7 @@ public class Computer: NSObject {
     
     public func execute() {
         reset()
-        while (false == controlWordRegister.HLT) {
+        while (true == controlWordRegister.HLT) {
             haltlessStep()
         }
     }

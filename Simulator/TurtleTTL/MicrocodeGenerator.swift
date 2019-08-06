@@ -78,7 +78,7 @@ public class MicrocodeGenerator: NSObject {
         let opcode = getNextOpcode()
         mapMnemonicToOpcode["HLT"] = opcode
         let controlWord = ControlWord()
-        controlWord.HLT = true
+        controlWord.HLT = false
         microcode.store(opcode: opcode, controlWord: controlWord)
     }
     

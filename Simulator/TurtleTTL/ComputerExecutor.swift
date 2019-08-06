@@ -55,7 +55,7 @@ public class ComputerExecutor: NSObject {
     }
     
     public func tick() {
-        if (computer.controlWordRegister.HLT) {
+        if (false == computer.controlWordRegister.HLT) {
             isExecuting = false
             isHalted = true
         }

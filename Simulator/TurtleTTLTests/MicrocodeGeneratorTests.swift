@@ -26,7 +26,7 @@ class MicrocodeGeneratorTests: XCTestCase {
         let controlWord = ControlWord()
         controlWord.contents = generator.microcode.load(opcode: HLT!, carryFlag: 1, equalFlag: 1);
         
-        XCTAssertTrue(controlWord.HLT)
+        XCTAssertFalse(controlWord.HLT)
     }
     
     func testGetOpcode() {

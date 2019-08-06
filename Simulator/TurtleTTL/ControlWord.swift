@@ -24,7 +24,7 @@ public class ControlWord: NSObject {
     public var BO:Bool = true
     public var BI:Bool = true
     public var DI:Bool = true
-    public var HLT:Bool = false
+    public var HLT:Bool = true
     
     public var contents: UInt16 {
         get {
@@ -128,7 +128,7 @@ public class ControlWord: NSObject {
         if (false == DI) {
             signals.append("DI")
         }
-        if (true == HLT) {
+        if (false == HLT) {
             signals.append("HLT")
         }
         return String(format: "{%@}", signals.joined(separator: ", "));
