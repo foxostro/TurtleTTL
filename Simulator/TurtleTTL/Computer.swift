@@ -22,7 +22,7 @@ public class Computer: NSObject {
     public let instructionROM = InstructionROM()
     public let instructionDecoder = InstructionDecoder()
     public let controlWordRegister = ControlWord()
-    public let pipelineStageFetch:PipelineFetchStage
+    public let pipelineStageFetch:PipelineStageFetch
     public let pipelineStageDecode:PipelineStageDecode
     public let pipelineStageExecute:PipelineStageExecute
     public var logger:Logger? {
@@ -38,7 +38,7 @@ public class Computer: NSObject {
     let upperInstructionROMFilename = "Upper Instruction ROM.bin"
     
     public override init() {
-        pipelineStageFetch = PipelineFetchStage(withProgramCounter: programCounter,
+        pipelineStageFetch = PipelineStageFetch(withProgramCounter: programCounter,
                                                 withInstructionROM: instructionROM)
         pipelineStageDecode = PipelineStageDecode(withDecoder: instructionDecoder,
                                                   flags: flags)

@@ -1,5 +1,5 @@
 //
-//  PipelineFetchStage.swift
+//  PipelineStageFetch.swift
 //  Simulator
 //
 //  Created by Andrew Fox on 7/27/19.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-public class PipelineFetchStage: NSObject {
+public class PipelineStageFetch: NSObject {
     public let programCounter:ProgramCounter
     public let instructionROM:InstructionROM
     public var instructionRegister = Instruction()
