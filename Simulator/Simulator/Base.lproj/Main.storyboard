@@ -1331,7 +1331,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="aluResult" destination="yFa-cX-imF" id="2d5-8I-pv2"/>
+                        <outlet property="aluResult" destination="Svr-fa-B7M" id="5si-Ry-nAI"/>
                         <outlet property="bus" destination="yFa-cX-imF" id="pH4-5l-AK7"/>
                         <outlet property="computer" destination="QI0-sg-86H" id="eKA-Bm-RMy"/>
                         <outlet property="controlSignals" destination="Sqc-vl-S27" id="tlZ-1C-r75"/>
