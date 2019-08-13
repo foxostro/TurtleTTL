@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6FF1995222ECB36F00C255A2"
-               BuildableName = "Simulator.app"
-               BlueprintName = "Simulator"
-               ReferencedContainer = "container:Simulator.xcodeproj">
+               BlueprintIdentifier = "6FE003D722F3F4C600221C4C"
+               BuildableName = "TurtleAssembler"
+               BlueprintName = "TurtleAssembler"
+               ReferencedContainer = "container:TurtleTools.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6FF1996422ECB37000C255A2"
-               BuildableName = "SimulatorTests.xctest"
-               BlueprintName = "SimulatorTests"
-               ReferencedContainer = "container:Simulator.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "6FE0038F22F3D75E00221C4C"
                BuildableName = "TurtleTTLTests.xctest"
                BlueprintName = "TurtleTTLTests"
-               ReferencedContainer = "container:Simulator.xcodeproj">
+               ReferencedContainer = "container:TurtleTools.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6FF1995222ECB36F00C255A2"
-            BuildableName = "Simulator.app"
-            BlueprintName = "Simulator"
-            ReferencedContainer = "container:Simulator.xcodeproj">
+            BlueprintIdentifier = "6FE003D722F3F4C600221C4C"
+            BuildableName = "TurtleAssembler"
+            BlueprintName = "TurtleAssembler"
+            ReferencedContainer = "container:TurtleTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +65,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6FF1995222ECB36F00C255A2"
-            BuildableName = "Simulator.app"
-            BlueprintName = "Simulator"
-            ReferencedContainer = "container:Simulator.xcodeproj">
+            BlueprintIdentifier = "6FE003D722F3F4C600221C4C"
+            BuildableName = "TurtleAssembler"
+            BlueprintName = "TurtleAssembler"
+            ReferencedContainer = "container:TurtleTools.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +84,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6FF1995222ECB36F00C255A2"
-            BuildableName = "Simulator.app"
-            BlueprintName = "Simulator"
-            ReferencedContainer = "container:Simulator.xcodeproj">
+            BlueprintIdentifier = "6FE003D722F3F4C600221C4C"
+            BuildableName = "TurtleAssembler"
+            BlueprintName = "TurtleAssembler"
+            ReferencedContainer = "container:TurtleTools.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

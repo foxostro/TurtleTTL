@@ -17,7 +17,7 @@
                BlueprintIdentifier = "6FE0038722F3D75E00221C4C"
                BuildableName = "TurtleTTL.framework"
                BlueprintName = "TurtleTTL"
-               ReferencedContainer = "container:Simulator.xcodeproj">
+               ReferencedContainer = "container:TurtleTools.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "6FE0038F22F3D75E00221C4C"
                BuildableName = "TurtleTTLTests.xctest"
                BlueprintName = "TurtleTTLTests"
-               ReferencedContainer = "container:Simulator.xcodeproj">
+               ReferencedContainer = "container:TurtleTools.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "6FE0038722F3D75E00221C4C"
             BuildableName = "TurtleTTL.framework"
             BlueprintName = "TurtleTTL"
-            ReferencedContainer = "container:Simulator.xcodeproj">
+            ReferencedContainer = "container:TurtleTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,7 +67,7 @@
             BlueprintIdentifier = "6FE0038722F3D75E00221C4C"
             BuildableName = "TurtleTTL.framework"
             BlueprintName = "TurtleTTL"
-            ReferencedContainer = "container:Simulator.xcodeproj">
+            ReferencedContainer = "container:TurtleTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -85,7 +85,7 @@
             BlueprintIdentifier = "6FE0038722F3D75E00221C4C"
             BuildableName = "TurtleTTL.framework"
             BlueprintName = "TurtleTTL"
-            ReferencedContainer = "container:Simulator.xcodeproj">
+            ReferencedContainer = "container:TurtleTools.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

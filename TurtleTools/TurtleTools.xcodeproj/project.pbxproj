@@ -470,7 +470,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6FF1994E22ECB36F00C255A2 /* Build configuration list for PBXProject "Simulator" */;
+			buildConfigurationList = 6FF1994E22ECB36F00C255A2 /* Build configuration list for PBXProject "TurtleTools" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -995,7 +995,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FF1994E22ECB36F00C255A2 /* Build configuration list for PBXProject "Simulator" */ = {
+		6FF1994E22ECB36F00C255A2 /* Build configuration list for PBXProject "TurtleTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FF1996C22ECB37000C255A2 /* Debug */,
