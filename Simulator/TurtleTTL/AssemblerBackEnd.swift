@@ -178,6 +178,18 @@ public class AssemblerBackEnd: NSObject {
         programCounter += 5
     }
     
+    // Jump -- Jump to the specified address.
+    public func jmp(_ address: Int) throws {
+        assert(isAssembling)
+        commands.append({
+            try self.setAddress(address)
+            self.codeGenerator.jmp()
+            self.codeGenerator.nop()
+            self.codeGenerator.nop()
+        })
+        programCounter += 5
+    }
+    
     // Jump on Carry -- If the carry flag is set then jump to the specified
     // label. Otherwise, do nothing.
     public func jc(_ name: String) throws {
