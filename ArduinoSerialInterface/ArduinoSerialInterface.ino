@@ -36,11 +36,7 @@ void setup() {
 void loop() {
   bool clk, sel, mi, mo, addr0;
   
-  while (true == (sel = digitalRead(pinSEL))) {
-    Serial.print("SEL: ");
-    Serial.print(sel);
-    Serial.print("\n");
-  }
+  while (true == (sel = digitalRead(pinSEL)));
 
   while (true) {
     clk = digitalRead(pinCLK);
