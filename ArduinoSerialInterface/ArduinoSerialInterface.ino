@@ -66,9 +66,7 @@ void loop() {
                    | (digitalRead(pinBus6) << 6)
                    | (digitalRead(pinBus7) << 7);
                    
-    Serial.print("got: ");
-    Serial.print(bus);
-    Serial.print("\n");
+    Serial.print((char)bus);
   } else {
     Serial.println("I think we just saw the MO signal go active.");
     pinMode(pinBus0, OUTPUT);
