@@ -86,17 +86,19 @@ void loop() {
       value = Serial.read();
     }
 
-    digitalWrite(pinBus0, (value & 1) != 0);
-    digitalWrite(pinBus1, (value & 2) != 0);
-    digitalWrite(pinBus2, (value & 4) != 0);
-    digitalWrite(pinBus3, (value & 8) != 0);
-    digitalWrite(pinBus4, (value & 16) != 0);
-    digitalWrite(pinBus5, (value & 32) != 0);
-    digitalWrite(pinBus6, (value & 64) != 0);
-    digitalWrite(pinBus7, (value & 128) != 0);
+    digitalWrite(pinBus0, (value>>0) & 1);
+    digitalWrite(pinBus1, (value>>1) & 1);
+    digitalWrite(pinBus2, (value>>2) & 1);
+    digitalWrite(pinBus3, (value>>3) & 1);
+    digitalWrite(pinBus4, (value>>4) & 1);
+    digitalWrite(pinBus5, (value>>5) & 1);
+    digitalWrite(pinBus6, (value>>6) & 1);
+    digitalWrite(pinBus7, (value>>7) & 1);
   }
 
-  // Wait for the next falling edge of the clock.
+  // Wait.
+  while (digitalRead(pinCLK));
+  while (!digitalRead(pinCLK));
   while (digitalRead(pinCLK));
 
   // Stop driving the bus.
