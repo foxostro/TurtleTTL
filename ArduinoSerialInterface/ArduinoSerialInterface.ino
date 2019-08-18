@@ -68,7 +68,6 @@ void loop() {
                    
     Serial.print((char)bus);
   } else {
-    Serial.println("I think we just saw the MO signal go active.");
     pinMode(pinBus0, OUTPUT);
     pinMode(pinBus1, OUTPUT);
     pinMode(pinBus2, OUTPUT);
