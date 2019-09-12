@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 18
+Sheet 1 20
 Title "Turtle TTL"
 Date ""
 Rev ""
@@ -115,5 +115,17 @@ S 6500 850  1500 500
 U 5D79C284
 F0 "Speed Control" 50
 F1 "Speed Control.sch" 50
+$EndSheet
+$Sheet
+S 4850 850  1500 500 
+U 5D7BD0EA
+F0 "Register XY" 50
+F1 "Register XY.sch" 50
+$EndSheet
+$Sheet
+S 4850 2250 1500 500 
+U 5D7BE200
+F0 "PC/IF" 50
+F1 "PC_IF.sch" 50
 $EndSheet
 $EndSCHEMATC
