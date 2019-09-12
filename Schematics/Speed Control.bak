@@ -5,14 +5,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 19 19
-Title "Speed Control"
+Title ""
 Date ""
 Rev ""
 Comp ""
 Comment1 ""
-Comment2 "An array of LEDs indicates the selected speed."
-Comment3 "Convert the output to a three-bit number which selects the clock rate."
-Comment4 "Form a Flash ADC from an array of voltage comparators."
+Comment2 ""
+Comment3 ""
+Comment4 ""
 $EndDescr
 $Comp
 L Comparator:LM393 U?
@@ -354,6 +354,17 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 7550 2000 50  0001 C CNN
 	1    7550 2000
 	0    1    1    0   
 $EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D80DB42
+P 1850 850
+F 0 "#PWR?" H 1850 700 50  0001 C CNN
+F 1 "VCC" H 1867 1023 50  0000 C CNN
+F 2 "" H 1850 850 50  0001 C CNN
+F 3 "" H 1850 850 50  0001 C CNN
+	1    1850 850 
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3950 1700 3950 1250
 Connection ~ 3950 1250
@@ -423,6 +434,8 @@ F 3 "~" H 1850 1250 50  0001 C CNN
 	1    1850 1250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1850 850  1850 1100
 Wire Wire Line
 	1850 1400 1850 1600
 Connection ~ 1850 1600
@@ -626,38 +639,38 @@ Wire Wire Line
 Wire Wire Line
 	5850 3750 9950 3750
 Wire Wire Line
-	9950 3750 9950 3000
+	9950 3750 9950 2400
 Connection ~ 9950 2400
 Wire Wire Line
 	5750 4350 5750 4150
 Wire Wire Line
 	5750 3650 8750 3650
 Wire Wire Line
-	8750 3650 8750 2900
+	8750 3650 8750 2400
 Connection ~ 8750 2400
 Wire Wire Line
 	5650 4350 5650 4050
 Wire Wire Line
 	5650 3550 7550 3550
 Wire Wire Line
-	7550 3550 7550 2800
+	7550 3550 7550 2400
 Connection ~ 7550 2400
 Wire Wire Line
 	5550 4350 5550 3950
 Wire Wire Line
 	5550 3450 6350 3450
 Wire Wire Line
-	6350 3450 6350 2700
+	6350 3450 6350 2400
 Connection ~ 6350 2400
 Wire Wire Line
-	5200 2400 5200 2600
+	5200 2400 5200 3450
 Wire Wire Line
 	5200 3450 5450 3450
 Wire Wire Line
 	5450 3450 5450 3850
 Connection ~ 5200 2400
 Wire Wire Line
-	4050 2400 4050 2500
+	4050 2400 4050 3550
 Wire Wire Line
 	4050 3550 5350 3550
 Wire Wire Line
@@ -744,177 +757,4 @@ Wire Wire Line
 Wire Wire Line
 	5550 5700 5650 5700
 Connection ~ 5650 5700
-Text GLabel 5250 6650 3    50   Output ~ 0
-ClockRate0
-Text GLabel 5350 6650 3    50   Output ~ 0
-ClockRate1
-Text GLabel 5450 6650 3    50   Output ~ 0
-ClockRate2
-Wire Wire Line
-	5250 5600 5250 6650
-Wire Wire Line
-	5350 5600 5350 6650
-Wire Wire Line
-	5450 5600 5450 6650
-$Comp
-L Device:R R?
-U 1 1 5D97CC48
-P 2650 2400
-F 0 "R?" V 2443 2400 50  0000 C CNN
-F 1 "1k" V 2534 2400 50  0000 C CNN
-F 2 "" V 2580 2400 50  0001 C CNN
-F 3 "~" H 2650 2400 50  0001 C CNN
-	1    2650 2400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5D97DDCC
-P 3800 2500
-F 0 "R?" V 3593 2500 50  0000 C CNN
-F 1 "1k" V 3684 2500 50  0000 C CNN
-F 2 "" V 3730 2500 50  0001 C CNN
-F 3 "~" H 3800 2500 50  0001 C CNN
-	1    3800 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5D97E7D7
-P 1000 800
-F 0 "#PWR?" H 1000 650 50  0001 C CNN
-F 1 "VCC" H 1017 973 50  0000 C CNN
-F 2 "" H 1000 800 50  0001 C CNN
-F 3 "" H 1000 800 50  0001 C CNN
-	1    1000 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 2400 1000 2400
-Wire Wire Line
-	1000 2400 1000 1000
-Wire Wire Line
-	2900 2400 2800 2400
-Wire Wire Line
-	3650 2500 1000 2500
-Wire Wire Line
-	1000 2500 1000 2400
-Connection ~ 1000 2400
-Wire Wire Line
-	4050 2500 3950 2500
-Connection ~ 4050 2500
-Wire Wire Line
-	4050 2500 4050 3550
-$Comp
-L Device:R R?
-U 1 1 5D99D8E1
-P 4950 2600
-F 0 "R?" V 4743 2600 50  0000 C CNN
-F 1 "1k" V 4834 2600 50  0000 C CNN
-F 2 "" V 4880 2600 50  0001 C CNN
-F 3 "~" H 4950 2600 50  0001 C CNN
-	1    4950 2600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5100 2600 5200 2600
-Connection ~ 5200 2600
-Wire Wire Line
-	5200 2600 5200 3450
-Wire Wire Line
-	4800 2600 1000 2600
-Wire Wire Line
-	1000 2600 1000 2500
-Connection ~ 1000 2500
-$Comp
-L Device:R R?
-U 1 1 5D9AF4B1
-P 6100 2700
-F 0 "R?" V 5893 2700 50  0000 C CNN
-F 1 "1k" V 5984 2700 50  0000 C CNN
-F 2 "" V 6030 2700 50  0001 C CNN
-F 3 "~" H 6100 2700 50  0001 C CNN
-	1    6100 2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6250 2700 6350 2700
-Connection ~ 6350 2700
-Wire Wire Line
-	6350 2700 6350 2400
-Wire Wire Line
-	5950 2700 1000 2700
-Wire Wire Line
-	1000 2700 1000 2600
-Connection ~ 1000 2600
-$Comp
-L Device:R R?
-U 1 1 5DA0DD43
-P 7300 2800
-F 0 "R?" V 7093 2800 50  0000 C CNN
-F 1 "1k" V 7184 2800 50  0000 C CNN
-F 2 "" V 7230 2800 50  0001 C CNN
-F 3 "~" H 7300 2800 50  0001 C CNN
-	1    7300 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7450 2800 7550 2800
-Connection ~ 7550 2800
-Wire Wire Line
-	7550 2800 7550 2400
-Wire Wire Line
-	7150 2800 1000 2800
-Wire Wire Line
-	1000 2800 1000 2700
-Connection ~ 1000 2700
-$Comp
-L Device:R R?
-U 1 1 5DA209AF
-P 8500 2900
-F 0 "R?" V 8293 2900 50  0000 C CNN
-F 1 "1k" V 8384 2900 50  0000 C CNN
-F 2 "" V 8430 2900 50  0001 C CNN
-F 3 "~" H 8500 2900 50  0001 C CNN
-	1    8500 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8650 2900 8750 2900
-Connection ~ 8750 2900
-Wire Wire Line
-	8750 2900 8750 2400
-Wire Wire Line
-	8350 2900 1000 2900
-Wire Wire Line
-	1000 2900 1000 2800
-Connection ~ 1000 2800
-$Comp
-L Device:R R?
-U 1 1 5DA34360
-P 9700 3000
-F 0 "R?" V 9493 3000 50  0000 C CNN
-F 1 "1k" V 9584 3000 50  0000 C CNN
-F 2 "" V 9630 3000 50  0001 C CNN
-F 3 "~" H 9700 3000 50  0001 C CNN
-	1    9700 3000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9850 3000 9950 3000
-Connection ~ 9950 3000
-Wire Wire Line
-	9950 3000 9950 2400
-Wire Wire Line
-	9550 3000 1000 3000
-Wire Wire Line
-	1000 3000 1000 2900
-Connection ~ 1000 2900
-Wire Wire Line
-	1850 1100 1850 1000
-Wire Wire Line
-	1850 1000 1000 1000
-Connection ~ 1000 1000
-Wire Wire Line
-	1000 1000 1000 800 
 $EndSCHEMATC
