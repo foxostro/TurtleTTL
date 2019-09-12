@@ -2,10 +2,10 @@ EESchema Schematic File Version 4
 LIBS:TurtleTTL-cache
 EELAYER 29 0
 EELAYER END
-$Descr A 11000 8500
+$Descr A4 11693 8268
 encoding utf-8
-Sheet 8 20
-Title "Instruction Decoder"
+Sheet 20 20
+Title ""
 Date ""
 Rev ""
 Comp ""
