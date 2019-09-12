@@ -15,12 +15,6 @@ Comment3 ""
 Comment4 "TTL microcomputer built from 74xx series logic chips."
 $EndDescr
 $Sheet
-S 4500 900  1500 500 
-U 5D2A71D6
-F0 "Rotary Switch Encoder" 50
-F1 "Rotary Switch Encoder.sch" 50
-$EndSheet
-$Sheet
 S 4500 1600 1500 500 
 U 5D2C0720
 F0 "Clock" 50
@@ -121,5 +115,11 @@ S 6500 1600 1500 500
 U 5D29E36D
 F0 "Register D" 50
 F1 "Register D.sch" 50
+$EndSheet
+$Sheet
+S 4500 900  1500 500 
+U 5D79C284
+F0 "Speed Control" 50
+F1 "Speed Control.sch" 50
 $EndSheet
 $EndSCHEMATC
