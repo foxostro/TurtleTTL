@@ -152,17 +152,6 @@ Wire Wire Line
 	650  2250 650  2350
 Wire Wire Line
 	650  2550 650  2650
-$Comp
-L power:GND #PWR?
-U 1 1 5D399663
-P 900 6750
-F 0 "#PWR?" H 900 6500 50  0001 C CNN
-F 1 "GND" H 905 6577 50  0000 C CNN
-F 2 "" H 900 6750 50  0001 C CNN
-F 3 "" H 900 6750 50  0001 C CNN
-	1    900  6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1850 3650 1850 3850
 Wire Wire Line
@@ -385,26 +374,10 @@ Connection ~ 7250 3850
 Wire Wire Line
 	7250 3850 8600 3850
 Wire Wire Line
-	900  3850 900  6700
-Connection ~ 900  3850
-Wire Wire Line
 	4000 6500 4000 6700
-Wire Wire Line
-	4000 6700 900  6700
-Connection ~ 900  6700
-Wire Wire Line
-	900  6700 900  6750
-Wire Wire Line
-	8400 800  10400 800 
-Wire Wire Line
-	10400 800  10400 4400
-Wire Wire Line
-	4000 4400 4000 4600
-Connection ~ 8400 800 
-Connection ~ 4000 6700
-Text GLabel 5200 4900 2    50   Output ~ 0
+Text GLabel 5200 4850 2    50   Output ~ 0
 CLK
-Text GLabel 5400 5000 2    50   Output ~ 0
+Text GLabel 5200 5000 2    50   Output ~ 0
 ~CLK
 $Comp
 L Device:R_US R?
@@ -447,8 +420,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 4900 3500 4900
 Connection ~ 1850 1450
-Wire Wire Line
-	2900 1750 2900 5000
 Wire Wire Line
 	2900 5000 3500 5000
 Connection ~ 2900 1750
@@ -559,17 +530,13 @@ $EndComp
 Wire Wire Line
 	4000 6700 4900 6700
 Wire Wire Line
-	4000 4400 10400 4400
-Wire Wire Line
-	4500 4900 5200 4900
-Wire Wire Line
 	4900 5700 4900 5850
 Wire Wire Line
 	4900 6150 4900 6700
 Wire Wire Line
 	4500 5000 4900 5000
 Wire Wire Line
-	4900 5000 5400 5000
+	4900 5000 5200 5000
 Wire Wire Line
 	4900 5000 4900 5400
 Connection ~ 4900 5000
@@ -587,4 +554,57 @@ Wire Wire Line
 	2000 5900 3500 5900
 Wire Wire Line
 	3500 5800 2000 5800
+Text GLabel 5200 4700 2    50   Output ~ 0
+FixedRateClock
+Wire Wire Line
+	4500 4900 4900 4900
+Wire Wire Line
+	4900 4900 4900 4850
+Wire Wire Line
+	4900 4850 5200 4850
+$Comp
+L power:VCC #PWR?
+U 1 1 5D90C7E6
+P 4000 4600
+F 0 "#PWR?" H 4000 4450 50  0001 C CNN
+F 1 "VCC" H 4017 4773 50  0000 C CNN
+F 2 "" H 4000 4600 50  0001 C CNN
+F 3 "" H 4000 4600 50  0001 C CNN
+	1    4000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D919C2F
+P 1850 3850
+F 0 "#PWR?" H 1850 3600 50  0001 C CNN
+F 1 "GND" H 1855 3677 50  0000 C CNN
+F 2 "" H 1850 3850 50  0001 C CNN
+F 3 "" H 1850 3850 50  0001 C CNN
+	1    1850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D91A0CA
+P 4000 6700
+F 0 "#PWR?" H 4000 6450 50  0001 C CNN
+F 1 "GND" H 4005 6527 50  0000 C CNN
+F 2 "" H 4000 6700 50  0001 C CNN
+F 3 "" H 4000 6700 50  0001 C CNN
+	1    4000 6700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 6700
+Wire Wire Line
+	2900 1750 2900 4300
+Wire Wire Line
+	5200 4700 4900 4700
+Wire Wire Line
+	4900 4700 4900 4300
+Wire Wire Line
+	4900 4300 2900 4300
+Connection ~ 2900 4300
+Wire Wire Line
+	2900 4300 2900 5000
 $EndSCHEMATC
