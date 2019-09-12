@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 7 19
+Sheet 7 18
 Title "Instruction RAM"
 Date ""
 Rev ""
