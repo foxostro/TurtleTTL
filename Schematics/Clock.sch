@@ -808,5 +808,12 @@ Wire Wire Line
 Connection ~ 8500 6300
 Connection ~ 8000 6300
 Wire Wire Line
-	4900 5000 4900 5400
+	4900 5000 4900 5150
+Text GLabel 5200 5150 2    50   Output ~ 0
+RegisterClock
+Wire Wire Line
+	5200 5150 4900 5150
+Connection ~ 4900 5150
+Wire Wire Line
+	4900 5150 4900 5400
 $EndSCHEMATC
