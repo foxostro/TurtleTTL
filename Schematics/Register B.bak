@@ -78,7 +78,7 @@ Text GLabel 3200 1700 0    50   Input ~ 0
 Text GLabel 3200 2000 0    50   Input ~ 0
 ~BO
 Text GLabel 3200 1850 0    50   Input ~ 0
-CLK0
+RegisterClock
 Wire Wire Line
 	7850 3500 8050 3500
 Wire Wire Line

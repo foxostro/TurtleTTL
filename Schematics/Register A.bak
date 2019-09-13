@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 11 20
+Sheet 10 20
 Title "Register A"
 Date ""
 Rev ""
@@ -69,7 +69,7 @@ Text GLabel 3200 1750 0    50   Input ~ 0
 Text GLabel 3200 2050 0    50   Input ~ 0
 ~AO
 Text GLabel 3200 1900 0    50   Input ~ 0
-CLK0
+RegisterClock
 Wire Wire Line
 	7850 3550 8050 3550
 Wire Wire Line

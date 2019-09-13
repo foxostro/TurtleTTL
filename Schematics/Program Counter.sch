@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 5 20
+Sheet 4 20
 Title "Program Counter"
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 950  4250 0    50   Input ~ 0
+Text GLabel 1050 4250 0    50   Input ~ 0
 ~J
 $Comp
 L 74xx:74LS161 U?
@@ -60,9 +60,9 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 7900 2600 50  0001 C CNN
 	1    7900 2600
 	1    0    0    -1  
 $EndComp
-Text GLabel 950  3950 0    50   Input ~ 0
-~Reset
-Text GLabel 950  4100 0    50   Input ~ 0
+Text GLabel 1050 3950 0    50   Input ~ 0
+~RST
+Text GLabel 1050 4100 0    50   Input ~ 0
 CE
 Wire Wire Line
 	2300 3100 2200 3100
@@ -81,15 +81,15 @@ Wire Wire Line
 Wire Wire Line
 	7300 3100 7300 3950
 Wire Wire Line
-	2200 3950 950  3950
-Text GLabel 950  3800 0    50   Input ~ 0
-Clock0
+	2200 3950 1050 3950
+Text GLabel 1050 3800 0    50   Input ~ 0
+ControlClock
 Wire Wire Line
 	2300 2900 2100 2900
 Wire Wire Line
 	2100 2900 2100 3800
 Wire Wire Line
-	2100 3800 950  3800
+	2100 3800 1050 3800
 Wire Wire Line
 	4000 2900 3800 2900
 Wire Wire Line
@@ -105,7 +105,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 2700 2000 2800
 Wire Wire Line
-	2000 4100 950  4100
+	2000 4100 1050 4100
 Wire Wire Line
 	4000 2700 3700 2700
 Wire Wire Line
@@ -173,7 +173,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 2600 1900 4250
 Wire Wire Line
-	1900 4250 950  4250
+	1900 4250 1050 4250
 Wire Wire Line
 	4000 2600 3600 2600
 Wire Wire Line
