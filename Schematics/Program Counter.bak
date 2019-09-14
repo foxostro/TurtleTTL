@@ -1041,6 +1041,93 @@ Wire Bus Line
 	9000 4900 9000 3850
 Wire Bus Line
 	9000 3850 10150 3850
+Connection ~ 9000 4900
+Wire Bus Line
+	9000 4900 10150 4900
+$Comp
+L Device:C C?
+U 1 1 5DCB8122
+P 850 7500
+F 0 "C?" H 965 7546 50  0000 L CNN
+F 1 "100nF" H 965 7455 50  0000 L CNN
+F 2 "" H 888 7350 50  0001 C CNN
+F 3 "~" H 850 7500 50  0001 C CNN
+	1    850  7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCB8128
+P 1350 7500
+F 0 "C?" H 1465 7546 50  0000 L CNN
+F 1 "100nF" H 1465 7455 50  0000 L CNN
+F 2 "" H 1388 7350 50  0001 C CNN
+F 3 "~" H 1350 7500 50  0001 C CNN
+	1    1350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCB812E
+P 1850 7500
+F 0 "C?" H 1965 7546 50  0000 L CNN
+F 1 "100nF" H 1965 7455 50  0000 L CNN
+F 2 "" H 1888 7350 50  0001 C CNN
+F 3 "~" H 1850 7500 50  0001 C CNN
+	1    1850 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCB8134
+P 2350 7500
+F 0 "C?" H 2465 7546 50  0000 L CNN
+F 1 "100nF" H 2465 7455 50  0000 L CNN
+F 2 "" H 2388 7350 50  0001 C CNN
+F 3 "~" H 2350 7500 50  0001 C CNN
+	1    2350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCB8140
+P 850 7650
+F 0 "#PWR?" H 850 7400 50  0001 C CNN
+F 1 "GND" H 855 7477 50  0000 C CNN
+F 2 "" H 850 7650 50  0001 C CNN
+F 3 "" H 850 7650 50  0001 C CNN
+	1    850  7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DCB8146
+P 850 7350
+F 0 "#PWR?" H 850 7200 50  0001 C CNN
+F 1 "VCC" H 867 7523 50  0000 C CNN
+F 2 "" H 850 7350 50  0001 C CNN
+F 3 "" H 850 7350 50  0001 C CNN
+	1    850  7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  7350 1350 7350
+Connection ~ 850  7350
+Wire Wire Line
+	1350 7350 1850 7350
+Connection ~ 1350 7350
+Wire Wire Line
+	1850 7350 2350 7350
+Connection ~ 1850 7350
+Wire Wire Line
+	2350 7650 1850 7650
+Wire Wire Line
+	1850 7650 1350 7650
+Connection ~ 1850 7650
+Wire Wire Line
+	1350 7650 850  7650
+Connection ~ 1350 7650
+Connection ~ 850  7650
 Wire Bus Line
 	8000 1700 8000 2300
 Wire Bus Line
@@ -1059,7 +1146,4 @@ Wire Bus Line
 	10150 1700 10150 3850
 Wire Bus Line
 	2300 4900 9000 4900
-Connection ~ 9000 4900
-Wire Bus Line
-	9000 4900 10150 4900
 $EndSCHEMATC
