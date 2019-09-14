@@ -287,8 +287,6 @@ Wire Bus Line
 Connection ~ 7550 1700
 Wire Bus Line
 	7550 1700 8450 1700
-Wire Bus Line
-	5600 1600 5600 3500
 $Comp
 L Device:C C?
 U 1 1 5DCD89FF
@@ -375,4 +373,6 @@ Wire Bus Line
 	7550 1700 7550 2700
 Wire Bus Line
 	3500 1700 3500 2700
+Wire Bus Line
+	5600 1600 5600 3500
 $EndSCHEMATC
