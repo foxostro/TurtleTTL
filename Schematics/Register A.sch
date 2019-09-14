@@ -655,6 +655,56 @@ Text Label 6450 5950 3    50   ~ 0
 A1
 Text Label 6550 5950 3    50   ~ 0
 A0
+$Comp
+L Device:C C?
+U 1 1 5DCF5DF7
+P 850 7500
+F 0 "C?" H 965 7546 50  0000 L CNN
+F 1 "100nF" H 965 7455 50  0000 L CNN
+F 2 "" H 888 7350 50  0001 C CNN
+F 3 "~" H 850 7500 50  0001 C CNN
+	1    850  7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCF5DFD
+P 1350 7500
+F 0 "C?" H 1465 7546 50  0000 L CNN
+F 1 "100nF" H 1465 7455 50  0000 L CNN
+F 2 "" H 1388 7350 50  0001 C CNN
+F 3 "~" H 1350 7500 50  0001 C CNN
+	1    1350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCF5E03
+P 850 7650
+F 0 "#PWR?" H 850 7400 50  0001 C CNN
+F 1 "GND" H 855 7477 50  0000 C CNN
+F 2 "" H 850 7650 50  0001 C CNN
+F 3 "" H 850 7650 50  0001 C CNN
+	1    850  7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DCF5E09
+P 850 7350
+F 0 "#PWR?" H 850 7200 50  0001 C CNN
+F 1 "VCC" H 867 7523 50  0000 C CNN
+F 2 "" H 850 7350 50  0001 C CNN
+F 3 "" H 850 7350 50  0001 C CNN
+	1    850  7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  7350 1350 7350
+Connection ~ 850  7350
+Wire Wire Line
+	1350 7650 850  7650
+Connection ~ 850  7650
 Wire Bus Line
 	2250 2550 2250 3450
 Wire Bus Line

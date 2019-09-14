@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 18 20
+Sheet 16 20
 Title "Instruction Register"
 Date ""
 Rev ""
@@ -552,12 +552,6 @@ Wire Wire Line
 	8850 4650 8650 4650
 Wire Bus Line
 	8950 1500 9850 1500
-Wire Bus Line
-	8950 1500 8950 6000
-Wire Bus Line
-	5650 3850 5650 6000
-Wire Bus Line
-	9850 1500 9850 3000
 Text Label 10150 1600 2    50   ~ 0
 IR00
 Text Label 10150 1700 2    50   ~ 0
@@ -622,4 +616,10 @@ Text Label 8800 4550 2    50   ~ 0
 IR14
 Text Label 8800 4650 2    50   ~ 0
 IR15
+Wire Bus Line
+	8950 1500 8950 6000
+Wire Bus Line
+	5650 3850 5650 6000
+Wire Bus Line
+	9850 1500 9850 3000
 $EndSCHEMATC
