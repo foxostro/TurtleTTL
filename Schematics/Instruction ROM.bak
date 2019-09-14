@@ -281,7 +281,7 @@ Entry Wire Line
 Entry Wire Line
 	3500 2100 3600 2200
 Wire Bus Line
-	3500 1700 8450 1700
+	3500 1700 7550 1700
 Wire Bus Line
 	5600 3500 5600 1600
 Wire Bus Line
@@ -319,5 +319,10 @@ Wire Wire Line
 Wire Wire Line
 	5150 2100 5900 2100
 Wire Bus Line
+	7550 1700 7550 2700
+Wire Bus Line
 	3500 1700 3500 2700
+Connection ~ 7550 1700
+Wire Bus Line
+	7550 1700 8450 1700
 $EndSCHEMATC

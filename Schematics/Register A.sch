@@ -637,10 +637,6 @@ Entry Wire Line
 	6450 6150 6550 6250
 Entry Wire Line
 	6550 6150 6650 6250
-Wire Bus Line
-	2250 2550 2250 3450
-Wire Bus Line
-	5950 6250 8500 6250
 Text GLabel 8500 6250 2    50   Output ~ 0
 A
 Text Label 5850 5950 3    50   ~ 0
@@ -659,4 +655,8 @@ Text Label 6450 5950 3    50   ~ 0
 A1
 Text Label 6550 5950 3    50   ~ 0
 A0
+Wire Bus Line
+	2250 2550 2250 3450
+Wire Bus Line
+	5950 6250 8500 6250
 $EndSCHEMATC
