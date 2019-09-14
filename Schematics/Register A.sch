@@ -174,69 +174,53 @@ Connection ~ 3750 3450
 Wire Wire Line
 	3800 3550 2350 3550
 Connection ~ 3800 3550
-Text GLabel 5850 5600 3    50   Output ~ 0
-ALUA7
-Text GLabel 5950 5600 3    50   Output ~ 0
-ALUA6
-Text GLabel 6050 5600 3    50   Output ~ 0
-ALUA5
-Text GLabel 6150 5600 3    50   Output ~ 0
-ALUA4
-Text GLabel 6250 5600 3    50   Output ~ 0
-ALUA3
-Text GLabel 6350 5600 3    50   Output ~ 0
-ALUA2
-Text GLabel 6450 5600 3    50   Output ~ 0
-ALUA1
-Text GLabel 6550 5600 3    50   Output ~ 0
-ALUA0
 Wire Wire Line
-	5850 5600 5850 5100
+	5850 6150 5850 5100
 Connection ~ 5850 3550
 Wire Wire Line
 	5850 3550 6850 3550
 Wire Wire Line
-	5950 5600 5950 5150
+	5950 6150 5950 5150
 Wire Wire Line
 	5800 3450 5950 3450
 Connection ~ 5950 3450
 Wire Wire Line
 	5950 3450 6850 3450
 Wire Wire Line
-	6050 5600 6050 5200
+	6050 6150 6050 5200
 Connection ~ 6050 3350
 Wire Wire Line
 	6050 3350 5800 3350
 Wire Wire Line
-	6150 5600 6150 5250
+	6150 6150 6150 5250
 Wire Wire Line
 	5800 3250 6150 3250
 Connection ~ 6150 3250
 Wire Wire Line
 	6150 3250 6850 3250
 Wire Wire Line
-	6250 5600 6250 5300
+	6250 6150 6250 5300
 Wire Wire Line
 	5800 3150 6250 3150
 Connection ~ 6250 3150
 Wire Wire Line
 	6250 3150 6850 3150
 Wire Wire Line
-	6350 5600 6350 5350
+	6350 6150 6350 5350
 Wire Wire Line
 	5800 3050 6350 3050
 Connection ~ 6350 3050
 Wire Wire Line
 	6350 3050 6850 3050
 Wire Wire Line
-	6450 5600 6450 5400
+	6450 6150 6450 5400
 Wire Wire Line
 	5800 2950 6450 2950
 Connection ~ 6450 2950
 Wire Wire Line
 	6450 2950 6850 2950
 Wire Wire Line
-	6550 5600 6550 5450
+	6550 6150 6550 5450
 Wire Wire Line
 	5800 2850 6550 2850
 Connection ~ 6550 2850
@@ -619,12 +603,8 @@ Text GLabel 1600 2550 0    50   BiDi ~ 0
 DataBus
 Wire Bus Line
 	1600 2550 2250 2550
-Wire Bus Line
-	2250 2550 2250 3450
 Entry Wire Line
 	2250 2750 2350 2850
-Text Label 2750 2850 2    50   ~ 0
-DataBus00
 Text Label 2750 2950 2    50   ~ 0
 DataBus01
 Text Label 2750 3050 2    50   ~ 0
@@ -639,4 +619,44 @@ Text Label 2750 3450 2    50   ~ 0
 DataBus06
 Text Label 2750 3550 2    50   ~ 0
 DataBus07
+Text Label 2750 2850 2    50   ~ 0
+DataBus00
+Entry Wire Line
+	5950 6250 5850 6150
+Entry Wire Line
+	5950 6150 6050 6250
+Entry Wire Line
+	6050 6150 6150 6250
+Entry Wire Line
+	6150 6150 6250 6250
+Entry Wire Line
+	6250 6150 6350 6250
+Entry Wire Line
+	6350 6150 6450 6250
+Entry Wire Line
+	6450 6150 6550 6250
+Entry Wire Line
+	6550 6150 6650 6250
+Wire Bus Line
+	2250 2550 2250 3450
+Wire Bus Line
+	5950 6250 8500 6250
+Text GLabel 8500 6250 2    50   Output ~ 0
+A
+Text Label 5850 5950 3    50   ~ 0
+A7
+Text Label 5950 5950 3    50   ~ 0
+A6
+Text Label 6050 5950 3    50   ~ 0
+A5
+Text Label 6150 5950 3    50   ~ 0
+A4
+Text Label 6250 5950 3    50   ~ 0
+A3
+Text Label 6350 5950 3    50   ~ 0
+A2
+Text Label 6450 5950 3    50   ~ 0
+A1
+Text Label 6550 5950 3    50   ~ 0
+A0
 $EndSCHEMATC

@@ -646,7 +646,7 @@ Wire Wire Line
 Connection ~ 3750 3400
 Wire Wire Line
 	3800 3500 2350 3500
+Connection ~ 3800 3500
 Wire Bus Line
 	2250 2500 2250 3400
-Connection ~ 3800 3500
 $EndSCHEMATC
