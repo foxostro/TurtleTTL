@@ -86,8 +86,6 @@ Wire Wire Line
 Wire Wire Line
 	3800 4650 3800 3500
 Wire Wire Line
-	3800 3500 4800 3500
-Wire Wire Line
 	8050 3500 8050 4650
 Wire Wire Line
 	7850 3400 8100 3400
@@ -97,10 +95,6 @@ Wire Wire Line
 	8100 4700 3750 4700
 Wire Wire Line
 	3750 4700 3750 3400
-Wire Wire Line
-	3750 3400 4800 3400
-Wire Wire Line
-	4800 3300 3700 3300
 Wire Wire Line
 	3700 3300 3700 4750
 Wire Wire Line
@@ -118,10 +112,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 4800 3650 3200
 Wire Wire Line
-	3650 3200 4800 3200
-Wire Wire Line
-	4800 3100 3600 3100
-Wire Wire Line
 	3600 3100 3600 4850
 Wire Wire Line
 	3600 4850 8250 4850
@@ -138,10 +128,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 4900 3550 3000
 Wire Wire Line
-	3550 3000 4800 3000
-Wire Wire Line
-	4800 2900 3500 2900
-Wire Wire Line
 	3500 2900 3500 4950
 Wire Wire Line
 	3500 4950 8350 4950
@@ -157,48 +143,6 @@ Wire Wire Line
 	8400 5000 3450 5000
 Wire Wire Line
 	3450 5000 3450 2800
-Wire Wire Line
-	3450 2800 4800 2800
-Text GLabel 2350 2800 0    50   BiDi ~ 0
-Bus00
-Text GLabel 2350 2900 0    50   BiDi ~ 0
-Bus01
-Text GLabel 2350 3000 0    50   BiDi ~ 0
-Bus02
-Text GLabel 2350 3100 0    50   BiDi ~ 0
-Bus03
-Text GLabel 2350 3200 0    50   BiDi ~ 0
-Bus04
-Text GLabel 2350 3300 0    50   BiDi ~ 0
-Bus05
-Text GLabel 2350 3400 0    50   BiDi ~ 0
-Bus06
-Wire Wire Line
-	3450 2800 2350 2800
-Connection ~ 3450 2800
-Wire Wire Line
-	2350 2900 3500 2900
-Connection ~ 3500 2900
-Wire Wire Line
-	3550 3000 2350 3000
-Connection ~ 3550 3000
-Wire Wire Line
-	3600 3100 2350 3100
-Connection ~ 3600 3100
-Wire Wire Line
-	3650 3200 2350 3200
-Connection ~ 3650 3200
-Wire Wire Line
-	3700 3300 2350 3300
-Connection ~ 3700 3300
-Wire Wire Line
-	3750 3400 2350 3400
-Connection ~ 3750 3400
-Text GLabel 2350 3500 0    50   BiDi ~ 0
-Bus07
-Wire Wire Line
-	3800 3500 2350 3500
-Connection ~ 3800 3500
 Text GLabel 5850 5550 3    50   Output ~ 0
 ALUB7
 Text GLabel 5950 5550 3    50   Output ~ 0
@@ -627,4 +571,82 @@ F 3 "~" H 4850 6650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 5400 4850 6500
+Entry Wire Line
+	2250 2800 2350 2900
+Entry Wire Line
+	2250 2900 2350 3000
+Entry Wire Line
+	2250 3000 2350 3100
+Entry Wire Line
+	2250 3100 2350 3200
+Entry Wire Line
+	2250 3200 2350 3300
+Entry Wire Line
+	2250 3300 2350 3400
+Entry Wire Line
+	2250 3400 2350 3500
+Text GLabel 1600 2500 0    50   BiDi ~ 0
+DataBus
+Wire Bus Line
+	1600 2500 2250 2500
+Entry Wire Line
+	2250 2700 2350 2800
+Text Label 2750 2800 2    50   ~ 0
+DataBus00
+Text Label 2750 2900 2    50   ~ 0
+DataBus01
+Text Label 2750 3000 2    50   ~ 0
+DataBus02
+Text Label 2750 3100 2    50   ~ 0
+DataBus03
+Text Label 2750 3200 2    50   ~ 0
+DataBus04
+Text Label 2750 3300 2    50   ~ 0
+DataBus05
+Text Label 2750 3400 2    50   ~ 0
+DataBus06
+Text Label 2750 3500 2    50   ~ 0
+DataBus07
+Wire Wire Line
+	3450 2800 4800 2800
+Wire Wire Line
+	3500 2900 4800 2900
+Wire Wire Line
+	3550 3000 4800 3000
+Wire Wire Line
+	3600 3100 4800 3100
+Wire Wire Line
+	3650 3200 4800 3200
+Wire Wire Line
+	3700 3300 4800 3300
+Wire Wire Line
+	3750 3400 4800 3400
+Wire Wire Line
+	3800 3500 4800 3500
+Wire Wire Line
+	2350 2800 3450 2800
+Connection ~ 3450 2800
+Wire Wire Line
+	2350 2900 3500 2900
+Connection ~ 3500 2900
+Wire Wire Line
+	3550 3000 2350 3000
+Connection ~ 3550 3000
+Wire Wire Line
+	2350 3100 3600 3100
+Connection ~ 3600 3100
+Wire Wire Line
+	3650 3200 2350 3200
+Connection ~ 3650 3200
+Wire Wire Line
+	2350 3300 3700 3300
+Connection ~ 3700 3300
+Wire Wire Line
+	2350 3400 3750 3400
+Connection ~ 3750 3400
+Wire Wire Line
+	3800 3500 2350 3500
+Wire Bus Line
+	2250 2500 2250 3400
+Connection ~ 3800 3500
 $EndSCHEMATC

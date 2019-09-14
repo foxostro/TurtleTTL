@@ -186,134 +186,6 @@ Wire Wire Line
 	7400 2600 7000 2600
 Wire Wire Line
 	7000 2600 7000 4250
-Text GLabel 950  4600 0    50   Input ~ 0
-Bus00
-Text GLabel 950  4700 0    50   Input ~ 0
-Bus01
-Text GLabel 950  4800 0    50   Input ~ 0
-Bus02
-Text GLabel 950  4900 0    50   Input ~ 0
-Bus03
-Text GLabel 950  5000 0    50   Input ~ 0
-Bus04
-Text GLabel 950  5100 0    50   Input ~ 0
-Bus05
-Text GLabel 950  5200 0    50   Input ~ 0
-Bus06
-Text GLabel 950  5300 0    50   Input ~ 0
-Bus07
-Entry Wire Line
-	1250 4600 1350 4500
-Entry Wire Line
-	1250 4700 1350 4600
-Entry Wire Line
-	1250 4800 1350 4700
-Entry Wire Line
-	1250 4900 1350 4800
-Entry Wire Line
-	1250 5000 1350 4900
-Entry Wire Line
-	1250 5100 1350 5000
-Entry Wire Line
-	1250 5200 1350 5100
-Entry Wire Line
-	1250 5300 1350 5200
-Text GLabel 950  5400 0    50   Input ~ 0
-Bus08
-Text GLabel 950  5500 0    50   Input ~ 0
-Bus09
-Text GLabel 950  5600 0    50   Input ~ 0
-Bus10
-Text GLabel 950  5700 0    50   Input ~ 0
-Bus11
-Text GLabel 950  5800 0    50   Input ~ 0
-Bus12
-Text GLabel 950  5900 0    50   Input ~ 0
-Bus13
-Text GLabel 950  6000 0    50   Input ~ 0
-Bus14
-Text GLabel 950  6100 0    50   Input ~ 0
-Bus15
-Entry Wire Line
-	1250 5400 1350 5300
-Entry Wire Line
-	1250 5500 1350 5400
-Entry Wire Line
-	1250 5600 1350 5500
-Entry Wire Line
-	1250 5700 1350 5600
-Entry Wire Line
-	1250 5800 1350 5700
-Entry Wire Line
-	1250 5900 1350 5800
-Entry Wire Line
-	1250 6000 1350 5900
-Entry Wire Line
-	1250 6100 1350 6000
-Wire Wire Line
-	950  4600 1250 4600
-Wire Wire Line
-	950  4700 1250 4700
-Wire Wire Line
-	950  4800 1250 4800
-Wire Wire Line
-	950  4900 1250 4900
-Wire Wire Line
-	950  5000 1250 5000
-Wire Wire Line
-	950  5100 1250 5100
-Wire Wire Line
-	950  5200 1250 5200
-Wire Wire Line
-	950  5300 1250 5300
-Wire Wire Line
-	950  5400 1250 5400
-Wire Wire Line
-	950  5500 1250 5500
-Wire Wire Line
-	950  5600 1250 5600
-Wire Wire Line
-	950  5700 1250 5700
-Wire Wire Line
-	950  5800 1250 5800
-Wire Wire Line
-	950  5900 1250 5900
-Wire Wire Line
-	950  6000 1250 6000
-Wire Wire Line
-	950  6100 1250 6100
-Text Label 1000 4600 0    50   ~ 0
-Bus00
-Text Label 1000 4700 0    50   ~ 0
-Bus01
-Text Label 1000 4800 0    50   ~ 0
-Bus02
-Text Label 1000 4900 0    50   ~ 0
-Bus03
-Text Label 1000 5000 0    50   ~ 0
-Bus04
-Text Label 1000 5100 0    50   ~ 0
-Bus05
-Text Label 1000 5200 0    50   ~ 0
-Bus06
-Text Label 1000 5300 0    50   ~ 0
-Bus07
-Text Label 1000 5400 0    50   ~ 0
-Bus08
-Text Label 1000 5500 0    50   ~ 0
-Bus09
-Text Label 1000 5600 0    50   ~ 0
-Bus10
-Text Label 1000 5700 0    50   ~ 0
-Bus11
-Text Label 1000 5800 0    50   ~ 0
-Bus12
-Text Label 1000 5900 0    50   ~ 0
-Bus13
-Text Label 1000 6000 0    50   ~ 0
-Bus14
-Text Label 1000 6100 0    50   ~ 0
-Bus15
 Entry Wire Line
 	2000 2000 2100 2100
 Entry Wire Line
@@ -1289,25 +1161,153 @@ Connection ~ 8650 4300
 Wire Bus Line
 	7800 4300 8650 4300
 Wire Bus Line
-	7100 1600 7100 2300
+	2300 4900 7800 4900
 Wire Bus Line
-	2000 1600 2000 2300
+	8650 4300 8650 6000
 Wire Bus Line
-	3700 1600 3700 2300
-Wire Bus Line
-	5400 1600 5400 2300
-Wire Bus Line
-	3550 1700 3550 2300
+	8650 1700 8650 4300
 Wire Bus Line
 	6950 1700 6950 2300
 Wire Bus Line
 	5250 1700 5250 2300
 Wire Bus Line
-	8650 1700 8650 4300
+	3550 1700 3550 2300
+Wire Bus Line
+	7100 1600 7100 2300
+Wire Bus Line
+	5400 1600 5400 2300
+Wire Bus Line
+	3700 1600 3700 2300
+Wire Bus Line
+	2000 1600 2000 2300
 Wire Bus Line
 	1350 1600 1350 6000
-Wire Bus Line
-	2300 4900 7800 4900
-Wire Bus Line
-	8650 4300 8650 6000
+Text Label 1000 6100 0    50   ~ 0
+Bus15
+Text Label 1000 6000 0    50   ~ 0
+Bus14
+Text Label 1000 5900 0    50   ~ 0
+Bus13
+Text Label 1000 5800 0    50   ~ 0
+Bus12
+Text Label 1000 5700 0    50   ~ 0
+Bus11
+Text Label 1000 5600 0    50   ~ 0
+Bus10
+Text Label 1000 5500 0    50   ~ 0
+Bus09
+Text Label 1000 5400 0    50   ~ 0
+Bus08
+Text Label 1000 5300 0    50   ~ 0
+Bus07
+Text Label 1000 5200 0    50   ~ 0
+Bus06
+Text Label 1000 5100 0    50   ~ 0
+Bus05
+Text Label 1000 5000 0    50   ~ 0
+Bus04
+Text Label 1000 4900 0    50   ~ 0
+Bus03
+Text Label 1000 4800 0    50   ~ 0
+Bus02
+Text Label 1000 4700 0    50   ~ 0
+Bus01
+Text Label 1000 4600 0    50   ~ 0
+Bus00
+Wire Wire Line
+	950  6100 1250 6100
+Wire Wire Line
+	950  6000 1250 6000
+Wire Wire Line
+	950  5900 1250 5900
+Wire Wire Line
+	950  5800 1250 5800
+Wire Wire Line
+	950  5700 1250 5700
+Wire Wire Line
+	950  5600 1250 5600
+Wire Wire Line
+	950  5500 1250 5500
+Wire Wire Line
+	950  5400 1250 5400
+Wire Wire Line
+	950  5300 1250 5300
+Wire Wire Line
+	950  5200 1250 5200
+Wire Wire Line
+	950  5100 1250 5100
+Wire Wire Line
+	950  5000 1250 5000
+Wire Wire Line
+	950  4900 1250 4900
+Wire Wire Line
+	950  4800 1250 4800
+Wire Wire Line
+	950  4700 1250 4700
+Wire Wire Line
+	950  4600 1250 4600
+Entry Wire Line
+	1250 6100 1350 6000
+Entry Wire Line
+	1250 6000 1350 5900
+Entry Wire Line
+	1250 5900 1350 5800
+Entry Wire Line
+	1250 5800 1350 5700
+Entry Wire Line
+	1250 5700 1350 5600
+Entry Wire Line
+	1250 5600 1350 5500
+Entry Wire Line
+	1250 5500 1350 5400
+Entry Wire Line
+	1250 5400 1350 5300
+Text GLabel 950  6100 0    50   Input ~ 0
+Bus15
+Text GLabel 950  6000 0    50   Input ~ 0
+Bus14
+Text GLabel 950  5900 0    50   Input ~ 0
+Bus13
+Text GLabel 950  5800 0    50   Input ~ 0
+Bus12
+Text GLabel 950  5700 0    50   Input ~ 0
+Bus11
+Text GLabel 950  5600 0    50   Input ~ 0
+Bus10
+Text GLabel 950  5500 0    50   Input ~ 0
+Bus09
+Text GLabel 950  5400 0    50   Input ~ 0
+Bus08
+Entry Wire Line
+	1250 5300 1350 5200
+Entry Wire Line
+	1250 5200 1350 5100
+Entry Wire Line
+	1250 5100 1350 5000
+Entry Wire Line
+	1250 5000 1350 4900
+Entry Wire Line
+	1250 4900 1350 4800
+Entry Wire Line
+	1250 4800 1350 4700
+Entry Wire Line
+	1250 4700 1350 4600
+Entry Wire Line
+	1250 4600 1350 4500
+Text GLabel 950  5300 0    50   Input ~ 0
+Bus07
+Text GLabel 950  5200 0    50   Input ~ 0
+Bus06
+Text GLabel 950  5100 0    50   Input ~ 0
+Bus05
+Text GLabel 950  5000 0    50   Input ~ 0
+Bus04
+Text GLabel 950  4900 0    50   Input ~ 0
+Bus03
+Text GLabel 950  4800 0    50   Input ~ 0
+Bus02
+Text GLabel 950  4700 0    50   Input ~ 0
+Bus01
+Text GLabel 950  4600 0    50   Input ~ 0
+Bus00
 $EndSCHEMATC

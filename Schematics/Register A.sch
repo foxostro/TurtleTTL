@@ -150,20 +150,6 @@ Wire Wire Line
 	3450 5050 3450 2850
 Wire Wire Line
 	3450 2850 4800 2850
-Text GLabel 2350 2850 0    50   BiDi ~ 0
-Bus00
-Text GLabel 2350 2950 0    50   BiDi ~ 0
-Bus01
-Text GLabel 2350 3050 0    50   BiDi ~ 0
-Bus02
-Text GLabel 2350 3150 0    50   BiDi ~ 0
-Bus03
-Text GLabel 2350 3250 0    50   BiDi ~ 0
-Bus04
-Text GLabel 2350 3350 0    50   BiDi ~ 0
-Bus05
-Text GLabel 2350 3450 0    50   BiDi ~ 0
-Bus06
 Wire Wire Line
 	3450 2850 2350 2850
 Connection ~ 3450 2850
@@ -185,8 +171,6 @@ Connection ~ 3700 3350
 Wire Wire Line
 	3750 3450 2350 3450
 Connection ~ 3750 3450
-Text GLabel 2350 3550 0    50   BiDi ~ 0
-Bus07
 Wire Wire Line
 	3800 3550 2350 3550
 Connection ~ 3800 3550
@@ -617,4 +601,42 @@ Wire Wire Line
 	1700 6800 2000 6800
 Connection ~ 4350 4150
 Connection ~ 1700 6800
+Entry Wire Line
+	2250 2850 2350 2950
+Entry Wire Line
+	2250 2950 2350 3050
+Entry Wire Line
+	2250 3050 2350 3150
+Entry Wire Line
+	2250 3150 2350 3250
+Entry Wire Line
+	2250 3250 2350 3350
+Entry Wire Line
+	2250 3350 2350 3450
+Entry Wire Line
+	2250 3450 2350 3550
+Text GLabel 1600 2550 0    50   BiDi ~ 0
+DataBus
+Wire Bus Line
+	1600 2550 2250 2550
+Wire Bus Line
+	2250 2550 2250 3450
+Entry Wire Line
+	2250 2750 2350 2850
+Text Label 2750 2850 2    50   ~ 0
+DataBus00
+Text Label 2750 2950 2    50   ~ 0
+DataBus01
+Text Label 2750 3050 2    50   ~ 0
+DataBus02
+Text Label 2750 3150 2    50   ~ 0
+DataBus03
+Text Label 2750 3250 2    50   ~ 0
+DataBus04
+Text Label 2750 3350 2    50   ~ 0
+DataBus05
+Text Label 2750 3450 2    50   ~ 0
+DataBus06
+Text Label 2750 3550 2    50   ~ 0
+DataBus07
 $EndSCHEMATC
