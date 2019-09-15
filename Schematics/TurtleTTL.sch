@@ -128,4 +128,10 @@ U 5D7BE200
 F0 "PC/IF" 50
 F1 "PC_IF.sch" 50
 $EndSheet
+$Sheet
+S 3200 5750 1500 500 
+U 5DD4FB60
+F0 "Serial" 50
+F1 "Serial.sch" 50
+$EndSheet
 $EndSCHEMATC
