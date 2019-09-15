@@ -12,7 +12,7 @@ Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "The Instruction Decoder decodes an eight bit opcode into a sixteen-bit control word."
 $EndDescr
 $Comp
 L Memory_EEPROM:GLS29EE010 U?
@@ -725,6 +725,8 @@ $Comp
 L Device:C C?
 U 1 1 5DC56D68
 P 7150 950
+AR Path="/5D2C0761/5DC56D68" Ref="C?"  Part="1" 
+AR Path="/5D2C0B92/5DC56D68" Ref="C?"  Part="1" 
 F 0 "C?" H 7265 996 50  0000 L CNN
 F 1 "100nF" H 7265 905 50  0000 L CNN
 F 2 "" H 7188 800 50  0001 C CNN
@@ -736,6 +738,8 @@ $Comp
 L Device:C C?
 U 1 1 5DC56D6E
 P 7650 950
+AR Path="/5D2C0761/5DC56D6E" Ref="C?"  Part="1" 
+AR Path="/5D2C0B92/5DC56D6E" Ref="C?"  Part="1" 
 F 0 "C?" H 7765 996 50  0000 L CNN
 F 1 "100nF" H 7765 905 50  0000 L CNN
 F 2 "" H 7688 800 50  0001 C CNN
@@ -747,6 +751,8 @@ $Comp
 L Device:C C?
 U 1 1 5DC56D74
 P 8150 950
+AR Path="/5D2C0761/5DC56D74" Ref="C?"  Part="1" 
+AR Path="/5D2C0B92/5DC56D74" Ref="C?"  Part="1" 
 F 0 "C?" H 8265 996 50  0000 L CNN
 F 1 "100nF" H 8265 905 50  0000 L CNN
 F 2 "" H 8188 800 50  0001 C CNN
@@ -758,6 +764,8 @@ $Comp
 L Device:C C?
 U 1 1 5DC56D7A
 P 8650 950
+AR Path="/5D2C0761/5DC56D7A" Ref="C?"  Part="1" 
+AR Path="/5D2C0B92/5DC56D7A" Ref="C?"  Part="1" 
 F 0 "C?" H 8765 996 50  0000 L CNN
 F 1 "100nF" H 8765 905 50  0000 L CNN
 F 2 "" H 8688 800 50  0001 C CNN
@@ -769,6 +777,8 @@ $Comp
 L Device:C C?
 U 1 1 5DC56D80
 P 9150 950
+AR Path="/5D2C0761/5DC56D80" Ref="C?"  Part="1" 
+AR Path="/5D2C0B92/5DC56D80" Ref="C?"  Part="1" 
 F 0 "C?" H 9265 996 50  0000 L CNN
 F 1 "100nF" H 9265 905 50  0000 L CNN
 F 2 "" H 9188 800 50  0001 C CNN
@@ -780,6 +790,8 @@ $Comp
 L power:GND #PWR?
 U 1 1 5DC56D86
 P 7150 1100
+AR Path="/5D2C0761/5DC56D86" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C0B92/5DC56D86" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7150 850 50  0001 C CNN
 F 1 "GND" H 7155 927 50  0000 C CNN
 F 2 "" H 7150 1100 50  0001 C CNN
@@ -791,6 +803,8 @@ $Comp
 L power:VCC #PWR?
 U 1 1 5DC56D8C
 P 7150 800
+AR Path="/5D2C0761/5DC56D8C" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C0B92/5DC56D8C" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7150 650 50  0001 C CNN
 F 1 "VCC" H 7167 973 50  0000 C CNN
 F 2 "" H 7150 800 50  0001 C CNN
@@ -826,6 +840,8 @@ $Comp
 L Device:C C?
 U 1 1 5DC65624
 P 9650 950
+AR Path="/5D2C0761/5DC65624" Ref="C?"  Part="1" 
+AR Path="/5D2C0B92/5DC65624" Ref="C?"  Part="1" 
 F 0 "C?" H 9765 996 50  0000 L CNN
 F 1 "100nF" H 9765 905 50  0000 L CNN
 F 2 "" H 9688 800 50  0001 C CNN
@@ -837,6 +853,8 @@ $Comp
 L Device:C C?
 U 1 1 5DC6562A
 P 10150 950
+AR Path="/5D2C0761/5DC6562A" Ref="C?"  Part="1" 
+AR Path="/5D2C0B92/5DC6562A" Ref="C?"  Part="1" 
 F 0 "C?" H 10265 996 50  0000 L CNN
 F 1 "100nF" H 10265 905 50  0000 L CNN
 F 2 "" H 10188 800 50  0001 C CNN
@@ -946,4 +964,6 @@ Wire Bus Line
 	5450 3000 5450 4900
 Wire Bus Line
 	1850 1250 1850 7250
+Text Notes 6500 6350 0    50   ~ 0
+The lower eight bits of the instruction\ncan be expressed onto the bus as a\nconstant value.
 $EndSCHEMATC
