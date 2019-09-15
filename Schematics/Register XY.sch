@@ -584,8 +584,6 @@ Text Label 6150 1900 2    50   ~ 0
 AddressBus14
 Text Label 6150 1800 2    50   ~ 0
 AddressBus15
-Wire Bus Line
-	5550 1250 5550 4850
 Wire Wire Line
 	5400 2500 6500 2500
 Wire Wire Line
@@ -618,6 +616,8 @@ Wire Wire Line
 	5400 4850 6500 4850
 Wire Wire Line
 	5400 4250 6500 4250
+Wire Bus Line
+	5550 1250 5550 4850
 Wire Bus Line
 	3350 1500 3350 4850
 Wire Bus Line
