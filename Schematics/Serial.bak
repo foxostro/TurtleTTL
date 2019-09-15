@@ -1,0 +1,163 @@
+EESchema Schematic File Version 4
+LIBS:TurtleTTL-cache
+EELAYER 29 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 21 21
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "An Arduino Nano serves as a serial interface module."
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 5D7E59B1
+P 5500 3350
+F 0 "A?" H 4900 4450 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 4950 4350 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5650 2400 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5500 2350 50  0001 C CNN
+	1    5500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D7E6F02
+P 5400 2350
+F 0 "#PWR?" H 5400 2200 50  0001 C CNN
+F 1 "VCC" H 5417 2523 50  0000 C CNN
+F 2 "" H 5400 2350 50  0001 C CNN
+F 3 "" H 5400 2350 50  0001 C CNN
+	1    5400 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5600 2350
+NoConn ~ 5700 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5D7E7F51
+P 5550 4450
+F 0 "#PWR?" H 5550 4200 50  0001 C CNN
+F 1 "GND" H 5555 4277 50  0000 C CNN
+F 2 "" H 5550 4450 50  0001 C CNN
+F 3 "" H 5550 4450 50  0001 C CNN
+	1    5550 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4350 5500 4400
+Wire Wire Line
+	5500 4400 5550 4400
+Wire Wire Line
+	5600 4400 5600 4350
+Wire Wire Line
+	5550 4400 5550 4450
+Connection ~ 5550 4400
+Wire Wire Line
+	5550 4400 5600 4400
+NoConn ~ 6000 3150
+NoConn ~ 5000 2750
+NoConn ~ 5000 2850
+NoConn ~ 6000 3450
+NoConn ~ 6000 3550
+NoConn ~ 6000 3650
+NoConn ~ 6000 3750
+NoConn ~ 6000 3850
+NoConn ~ 6000 3950
+NoConn ~ 6000 4050
+Text GLabel 3500 1750 0    50   Input ~ 0
+RegisterClock
+Wire Wire Line
+	6000 3350 6100 3350
+Wire Wire Line
+	6100 3350 6100 1750
+Wire Wire Line
+	6100 1750 3500 1750
+NoConn ~ 6000 2750
+NoConn ~ 6000 2850
+Text GLabel 3400 2100 0    50   Input ~ 0
+~MI
+Text GLabel 3400 4150 0    50   Input ~ 0
+AddressBus
+Wire Bus Line
+	3400 4150 4200 4150
+Entry Wire Line
+	4200 4150 4300 4050
+Wire Wire Line
+	4300 4050 5000 4050
+Text Label 4350 4050 0    50   ~ 0
+AddressBus00
+Text GLabel 3400 3950 0    50   BiDi ~ 0
+DataBus
+Wire Wire Line
+	5000 2950 3700 2950
+Wire Wire Line
+	3700 2950 3700 1900
+Text GLabel 3400 1900 0    50   Input ~ 0
+~MO
+Wire Wire Line
+	3700 1900 3400 1900
+Wire Wire Line
+	3400 2100 3600 2100
+Wire Wire Line
+	3600 2100 3600 3050
+Wire Wire Line
+	3600 3050 5000 3050
+Entry Wire Line
+	4300 3150 4200 3250
+Entry Wire Line
+	4300 3250 4200 3350
+Entry Wire Line
+	4300 3350 4200 3450
+Entry Wire Line
+	4300 3450 4200 3550
+Entry Wire Line
+	4300 3550 4200 3650
+Entry Wire Line
+	4300 3650 4200 3750
+Entry Wire Line
+	4300 3750 4200 3850
+Entry Wire Line
+	4300 3850 4200 3950
+Wire Bus Line
+	3400 3950 4200 3950
+Wire Wire Line
+	4300 3150 5000 3150
+Wire Wire Line
+	5000 3250 4300 3250
+Wire Wire Line
+	4300 3350 5000 3350
+Wire Wire Line
+	5000 3450 4300 3450
+Wire Wire Line
+	4300 3550 5000 3550
+Wire Wire Line
+	5000 3650 4300 3650
+Wire Wire Line
+	4300 3750 5000 3750
+Wire Wire Line
+	5000 3850 4300 3850
+Wire Bus Line
+	4200 3250 4200 3950
+Text Label 4350 3150 0    50   ~ 0
+DataBus0
+Text Label 4350 3250 0    50   ~ 0
+DataBus1
+Text Label 4350 3350 0    50   ~ 0
+DataBus2
+Text Label 4350 3450 0    50   ~ 0
+DataBus3
+Text Label 4350 3550 0    50   ~ 0
+DataBus4
+Text Label 4350 3650 0    50   ~ 0
+DataBus5
+Text Label 4350 3750 0    50   ~ 0
+DataBus6
+Text Label 4350 3850 0    50   ~ 0
+DataBus7
+$EndSCHEMATC
