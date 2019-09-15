@@ -331,8 +331,6 @@ Wire Wire Line
 	4150 3100 2450 3100
 Text GLabel 2450 3100 0    50   Input ~ 0
 RegisterClock
-Wire Bus Line
-	5600 2800 5600 1650
 $Comp
 L Device:LED D?
 U 1 1 5DD41542
@@ -664,21 +662,23 @@ Connection ~ 5950 6100
 Wire Wire Line
 	5950 6100 6100 6100
 Wire Wire Line
-	5150 2300 6250 2300
-Wire Wire Line
-	5150 2200 6250 2200
-Wire Wire Line
 	5150 2900 6250 2900
 Wire Wire Line
-	5150 2800 6250 2800
+	5150 2300 6250 2300
 Wire Wire Line
-	5150 2700 6250 2700
-Wire Wire Line
-	5150 2600 6250 2600
+	5150 2400 6250 2400
 Wire Wire Line
 	5150 2500 6250 2500
 Wire Wire Line
-	5150 2400 6250 2400
+	5150 2600 6250 2600
+Wire Wire Line
+	5150 2700 6250 2700
+Wire Wire Line
+	5150 2800 6250 2800
+Wire Wire Line
+	5150 2200 6250 2200
+Wire Bus Line
+	5600 1650 5600 2800
 Wire Bus Line
 	3100 1900 3100 2800
 Wire Bus Line
