@@ -100,19 +100,6 @@ F 3 "~" H 9600 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 5D7F1A08
-P 10100 6400
-AR Path="/5D2C0761/5D7F1A08" Ref="C?"  Part="1" 
-AR Path="/5D2C0CE4/5D7F1A08" Ref="C?"  Part="1" 
-F 0 "C?" H 10215 6446 50  0000 L CNN
-F 1 "100nF" H 10215 6355 50  0000 L CNN
-F 2 "" H 10138 6250 50  0001 C CNN
-F 3 "~" H 10100 6400 50  0001 C CNN
-	1    10100 6400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D7F1A0E
 P 8100 6550
@@ -148,13 +135,7 @@ Wire Wire Line
 	9100 6250 9600 6250
 Connection ~ 9100 6250
 Wire Wire Line
-	9600 6250 10100 6250
-Connection ~ 9600 6250
-Wire Wire Line
-	10100 6550 9600 6550
-Wire Wire Line
 	9600 6550 9100 6550
-Connection ~ 9600 6550
 Wire Wire Line
 	9100 6550 8600 6550
 Connection ~ 9100 6550

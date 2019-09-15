@@ -93,7 +93,7 @@ F0 "Bus Display" 50
 F1 "Bus Display.sch" 50
 $EndSheet
 $Sheet
-S 6500 5750 1500 500 
+S 4850 5750 1500 500 
 U 5D2C13FD
 F0 "Control Word Display" 50
 F1 "Control Word Display.sch" 50
@@ -105,7 +105,7 @@ F0 "Instruction Register" 50
 F1 "Instruction Register.sch" 50
 $EndSheet
 $Sheet
-S 4850 5750 1500 500 
+S 3200 5750 1500 500 
 U 5D29E36D
 F0 "Register D" 50
 F1 "Register D.sch" 50
@@ -129,7 +129,7 @@ F0 "PC/IF" 50
 F1 "PC_IF.sch" 50
 $EndSheet
 $Sheet
-S 3200 5750 1500 500 
+S 3200 5050 1500 500 
 U 5DD4FB60
 F0 "Serial" 50
 F1 "Serial.sch" 50

@@ -849,29 +849,10 @@ F 3 "~" H 9650 950 50  0001 C CNN
 	1    9650 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5DC6562A
-P 10150 950
-AR Path="/5D2C0761/5DC6562A" Ref="C?"  Part="1" 
-AR Path="/5D2C0B92/5DC6562A" Ref="C?"  Part="1" 
-F 0 "C?" H 10265 996 50  0000 L CNN
-F 1 "100nF" H 10265 905 50  0000 L CNN
-F 2 "" H 10188 800 50  0001 C CNN
-F 3 "~" H 10150 950 50  0001 C CNN
-	1    10150 950 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9150 800  9650 800 
 Wire Wire Line
-	9650 800  10150 800 
-Connection ~ 9650 800 
-Wire Wire Line
-	10150 1100 9650 1100
-Wire Wire Line
 	9650 1100 9150 1100
-Connection ~ 9650 1100
 Connection ~ 9150 800 
 Connection ~ 9150 1100
 $Comp
@@ -954,6 +935,8 @@ Wire Bus Line
 Connection ~ 5450 3000
 Text GLabel 9950 3000 2    50   Output ~ 0
 ControlWord
+Text Notes 6500 6350 0    50   ~ 0
+The lower eight bits of the instruction\ncan be expressed onto the bus as a\nconstant value.
 Wire Bus Line
 	6200 4550 6200 5250
 Wire Bus Line
@@ -964,6 +947,8 @@ Wire Bus Line
 	5450 3000 5450 4900
 Wire Bus Line
 	1850 1250 1850 7250
-Text Notes 6500 6350 0    50   ~ 0
-The lower eight bits of the instruction\ncan be expressed onto the bus as a\nconstant value.
+Text Notes 4150 650  0    50   ~ 0
+ID/EX registers
+Text Notes 2600 700  0    50   ~ 0
+Microcode ROMs
 $EndSCHEMATC

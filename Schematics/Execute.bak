@@ -14,4 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 4650 3600 0    50   ~ 0
+TODO: What does the “Execute” module do that isn’t already covered by ID?
 $EndSCHEMATC
