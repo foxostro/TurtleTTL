@@ -11,9 +11,7 @@ Rev ""
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "control signals around the board."
+Comment4 "The Execute Unit doesn't do much. At this point, it simply maps the control word to"
 $EndDescr
-Text Notes 4650 3600 0    50   ~ 0
-TODO: What does the “Execute” module do that isn’t already covered by ID?
 $EndSCHEMATC

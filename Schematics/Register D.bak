@@ -234,10 +234,6 @@ Text GLabel 9450 4100 2    50   Output ~ 0
 DeviceSelect
 Wire Bus Line
 	9450 4100 7400 4100
-Wire Bus Line
-	3350 2400 3350 3200
-Wire Bus Line
-	7400 2700 7400 4100
 Text Label 7300 2600 2    50   ~ 0
 DeviceSelect0
 Text Label 7300 2700 2    50   ~ 0
@@ -254,4 +250,8 @@ Text Label 7300 3200 2    50   ~ 0
 DeviceSelect6
 Text Label 7300 3300 2    50   ~ 0
 DeviceSelect7
+Wire Bus Line
+	3350 2400 3350 3200
+Wire Bus Line
+	7400 2700 7400 4100
 $EndSCHEMATC

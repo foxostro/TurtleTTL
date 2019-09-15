@@ -200,25 +200,25 @@ Entry Wire Line
 Wire Wire Line
 	2750 2200 2950 2200
 Text Label 2800 2200 0    50   ~ 0
-C0
+C3
 Entry Wire Line
 	2650 2200 2750 2300
 Wire Wire Line
 	2750 2300 2950 2300
 Text Label 2800 2300 0    50   ~ 0
-C1
+C2
 Entry Wire Line
 	2650 2300 2750 2400
 Wire Wire Line
 	2750 2400 2950 2400
 Text Label 2800 2400 0    50   ~ 0
-C2
+C1
 Entry Wire Line
 	2650 2400 2750 2500
 Wire Wire Line
 	2750 2500 2950 2500
 Text Label 2800 2500 0    50   ~ 0
-C3
+C0
 Text GLabel 1250 2100 0    50   Input ~ 0
 C
 Entry Wire Line
@@ -226,13 +226,13 @@ Entry Wire Line
 Wire Wire Line
 	2750 2700 2950 2700
 Text Label 2800 2700 0    50   ~ 0
-C4
+C5
 Entry Wire Line
 	2650 2700 2750 2800
 Wire Wire Line
 	2750 2800 2950 2800
 Text Label 2800 2800 0    50   ~ 0
-C5
+C4
 NoConn ~ 4150 2600
 NoConn ~ 4150 2700
 Wire Bus Line
@@ -267,31 +267,31 @@ Wire Bus Line
 NoConn ~ 4150 5300
 NoConn ~ 4150 5200
 Text Label 2800 5300 0    50   ~ 0
-C4
+C5
 Wire Wire Line
 	2750 5300 2950 5300
 Entry Wire Line
 	2650 5200 2750 5300
 Text Label 2800 5100 0    50   ~ 0
-C3
+C0
 Wire Wire Line
 	2750 5100 2950 5100
 Entry Wire Line
 	2650 5000 2750 5100
 Text Label 2800 5000 0    50   ~ 0
-C2
+C1
 Wire Wire Line
 	2750 5000 2950 5000
 Entry Wire Line
 	2650 4900 2750 5000
 Text Label 2800 4900 0    50   ~ 0
-C1
+C2
 Wire Wire Line
 	2750 4900 2950 4900
 Entry Wire Line
 	2650 4800 2750 4900
 Text Label 2800 4800 0    50   ~ 0
-C0
+C3
 Wire Wire Line
 	2750 4800 2950 4800
 Entry Wire Line
@@ -694,25 +694,25 @@ Wire Wire Line
 	7700 3350 7700 5000
 Wire Wire Line
 	7700 5000 6900 5000
-Text Notes 3050 7800 2    50   ~ 0
-TODO: Verify the order of bits used from the constant register.
 NoConn ~ 4850 5750
-Wire Bus Line
-	2650 1300 2650 1600
-Wire Bus Line
-	2650 1700 2650 2000
-Wire Bus Line
-	2650 4300 2650 4600
-Wire Bus Line
-	2650 3900 2650 4200
-Wire Bus Line
-	2650 4700 2650 5200
-Wire Bus Line
-	2650 2100 2650 2700
 Wire Bus Line
 	5350 1200 5350 2000
 Wire Bus Line
 	4700 1200 4700 4600
 Wire Bus Line
 	7350 1500 7350 2950
+Wire Bus Line
+	2650 3900 2650 4200
+Wire Bus Line
+	2650 4300 2650 4600
+Wire Bus Line
+	2650 4700 2650 5200
+Wire Bus Line
+	2650 2100 2650 2700
+Wire Bus Line
+	2650 1700 2650 2000
+Wire Bus Line
+	2650 1300 2650 1600
+Text Notes 3050 7800 2    50   ~ 0
+TODO: Verify the order of bits used from the constant register.
 $EndSCHEMATC
