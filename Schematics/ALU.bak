@@ -713,6 +713,9 @@ Wire Wire Line
 	7700 3350 7700 5000
 Wire Wire Line
 	7700 5000 6900 5000
+Text Notes 3050 7800 2    50   ~ 0
+TODO: Verify the order of bits used from the constant register.
+NoConn ~ 4850 5750
 Wire Bus Line
 	2650 1300 2650 1600
 Wire Bus Line
@@ -731,6 +734,4 @@ Wire Bus Line
 	4700 1200 4700 4600
 Wire Bus Line
 	7350 1500 7350 2950
-Text Notes 3050 7800 2    50   ~ 0
-TODO: Verify the order of bits used from the constant register.
 $EndSCHEMATC
