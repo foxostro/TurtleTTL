@@ -35,21 +35,21 @@ Wire Bus Line
 Entry Wire Line
 	8200 2100 8100 2200
 Text Label 7700 2300 0    50   ~ 0
-DataBus01
+DataBus1
 Text Label 7700 2400 0    50   ~ 0
-DataBus02
+DataBus2
 Text Label 7700 2500 0    50   ~ 0
-DataBus03
+DataBus3
 Text Label 7700 2600 0    50   ~ 0
-DataBus04
+DataBus4
 Text Label 7700 2700 0    50   ~ 0
-DataBus05
+DataBus5
 Text Label 7700 2800 0    50   ~ 0
-DataBus06
+DataBus6
 Text Label 7700 2900 0    50   ~ 0
-DataBus07
+DataBus7
 Text Label 7700 2200 0    50   ~ 0
-DataBus00
+DataBus0
 $Comp
 L Device:C C?
 U 1 1 5DD6C85F
@@ -237,21 +237,21 @@ Wire Bus Line
 Entry Wire Line
 	3000 2100 3100 2200
 Text Label 3500 2300 2    50   ~ 0
-DataBus01
+DataBus1
 Text Label 3500 2400 2    50   ~ 0
-DataBus02
+DataBus2
 Text Label 3500 2500 2    50   ~ 0
-DataBus03
+DataBus3
 Text Label 3500 2600 2    50   ~ 0
-DataBus04
+DataBus4
 Text Label 3500 2700 2    50   ~ 0
-DataBus05
+DataBus5
 Text Label 3500 2800 2    50   ~ 0
-DataBus06
+DataBus6
 Text Label 3500 2900 2    50   ~ 0
-DataBus07
+DataBus7
 Text Label 3500 2200 2    50   ~ 0
-DataBus00
+DataBus0
 Wire Wire Line
 	3100 2900 4050 2900
 Wire Wire Line
@@ -307,21 +307,21 @@ B
 Wire Bus Line
 	8850 1650 5500 1650
 Text Label 5350 2900 2    50   ~ 0
-A0
+B7
 Text Label 5350 2800 2    50   ~ 0
-A1
+B6
 Text Label 5350 2700 2    50   ~ 0
-A2
+B5
 Text Label 5350 2600 2    50   ~ 0
-A3
+B4
 Text Label 5350 2500 2    50   ~ 0
-A4
+B3
 Text Label 5350 2400 2    50   ~ 0
-A5
+B2
 Text Label 5350 2300 2    50   ~ 0
-A6
+B1
 Text Label 5350 2200 2    50   ~ 0
-A7
+B0
 Wire Wire Line
 	2600 3800 5900 3800
 Wire Wire Line

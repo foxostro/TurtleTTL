@@ -867,72 +867,60 @@ F 3 "" H 2900 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	5350 1350 5450 1450
+	5550 1350 5650 1450
 Entry Wire Line
-	5350 1450 5450 1550
+	5550 1450 5650 1550
 Entry Wire Line
-	5350 1550 5450 1650
+	5550 1550 5650 1650
 Entry Wire Line
-	5350 1650 5450 1750
+	5550 1650 5650 1750
 Entry Wire Line
-	5350 1750 5450 1850
+	5550 1750 5650 1850
 Entry Wire Line
-	5350 1850 5450 1950
+	5550 1850 5650 1950
 Entry Wire Line
-	5350 1950 5450 2050
+	5550 1950 5650 2050
 Entry Wire Line
-	5350 2050 5450 2150
+	5550 2050 5650 2150
 Entry Wire Line
-	5350 4300 5450 4200
+	5550 4300 5650 4200
 Entry Wire Line
-	5350 4400 5450 4300
+	5550 4400 5650 4300
 Entry Wire Line
-	5350 4500 5450 4400
+	5550 4500 5650 4400
 Entry Wire Line
-	5350 4600 5450 4500
+	5550 4600 5650 4500
 Entry Wire Line
-	5350 4700 5450 4600
+	5550 4700 5650 4600
 Entry Wire Line
-	5350 4800 5450 4700
+	5550 4800 5650 4700
 Entry Wire Line
-	5350 4900 5450 4800
+	5550 4900 5650 4800
 Entry Wire Line
-	5350 5000 5450 4900
+	5550 5000 5650 4900
 Wire Wire Line
-	5350 1350 4900 1350
+	5550 1350 4900 1350
 Wire Wire Line
-	4900 1450 5350 1450
+	4900 1450 5550 1450
 Wire Wire Line
-	5350 1550 4900 1550
+	5550 1550 4900 1550
 Wire Wire Line
-	4900 1650 5350 1650
+	4900 1650 5550 1650
 Wire Wire Line
-	5350 1750 4900 1750
+	5550 1750 4900 1750
 Wire Wire Line
-	4900 1850 5350 1850
+	4900 1850 5550 1850
 Wire Wire Line
-	5350 1950 4900 1950
+	5550 1950 4900 1950
 Wire Wire Line
-	4900 2050 5350 2050
+	4900 2050 5550 2050
 Wire Wire Line
-	5350 4300 4900 4300
+	5550 4900 4900 4900
 Wire Wire Line
-	4900 4400 5350 4400
-Wire Wire Line
-	5350 4500 4900 4500
-Wire Wire Line
-	4900 4600 5350 4600
-Wire Wire Line
-	5350 4700 4900 4700
-Wire Wire Line
-	4900 4800 5350 4800
-Wire Wire Line
-	5350 4900 4900 4900
-Wire Wire Line
-	4900 5000 5350 5000
+	4900 5000 5550 5000
 Wire Bus Line
-	5450 3000 9950 3000
-Connection ~ 5450 3000
+	5650 3000 9950 3000
+Connection ~ 5650 3000
 Text GLabel 9950 3000 2    50   Output ~ 0
 ControlWord
 Text Notes 6500 6350 0    50   ~ 0
@@ -941,14 +929,58 @@ Text Notes 4150 650  0    50   ~ 0
 ID/EX registers
 Text Notes 2600 700  0    50   ~ 0
 Microcode ROMs
+Text Label 4950 1350 0    50   ~ 0
+ControlWord00
+Text Label 4950 1450 0    50   ~ 0
+ControlWord01
+Text Label 4950 1550 0    50   ~ 0
+ControlWord02
+Text Label 4950 1650 0    50   ~ 0
+ControlWord03
+Text Label 4950 1750 0    50   ~ 0
+ControlWord04
+Text Label 4950 1850 0    50   ~ 0
+ControlWord05
+Text Label 4950 1950 0    50   ~ 0
+ControlWord06
+Text Label 4950 2050 0    50   ~ 0
+ControlWord07
+Wire Wire Line
+	4900 4800 5550 4800
+Wire Wire Line
+	4900 4700 5550 4700
+Wire Wire Line
+	4900 4600 5550 4600
+Wire Wire Line
+	4900 4500 5550 4500
+Wire Wire Line
+	4900 4400 5550 4400
+Wire Wire Line
+	4900 4300 5550 4300
 Wire Bus Line
 	6200 4550 6200 5250
 Wire Bus Line
+	5650 3000 5650 4900
+Wire Bus Line
 	9750 4550 9750 5550
 Wire Bus Line
-	5450 1450 5450 3000
-Wire Bus Line
-	5450 3000 5450 4900
+	5650 1450 5650 3000
 Wire Bus Line
 	1850 1250 1850 7250
+Text Label 4950 4300 0    50   ~ 0
+ControlWord08
+Text Label 4950 4400 0    50   ~ 0
+ControlWord09
+Text Label 4950 4500 0    50   ~ 0
+ControlWord10
+Text Label 4950 4600 0    50   ~ 0
+ControlWord11
+Text Label 4950 4700 0    50   ~ 0
+ControlWord12
+Text Label 4950 4800 0    50   ~ 0
+ControlWord13
+Text Label 4950 4900 0    50   ~ 0
+ControlWord14
+Text Label 4950 5000 0    50   ~ 0
+ControlWord15
 $EndSCHEMATC
