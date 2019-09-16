@@ -48,7 +48,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6800 3200 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small R?
 U 1 1 5D2B5346
 P 2300 4100
 F 0 "R?" H 2368 4146 50  0000 L CNN
@@ -142,25 +142,12 @@ Wire Wire Line
 Connection ~ 1000 4700
 Wire Wire Line
 	1000 4700 1700 4700
-$Comp
-L Device:R_Small_US R?
-U 1 1 5D2B4959
-P 2300 3900
-F 0 "R?" H 2368 3946 50  0000 L CNN
-F 1 "1kΩ" H 2368 3855 50  0000 L CNN
-F 2 "" H 2300 3900 50  0001 C CNN
-F 3 "~" H 2300 3900 50  0001 C CNN
-	1    2300 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2300 4000 2200 4000
 Wire Wire Line
 	2300 4200 2200 4200
 Wire Wire Line
 	2200 3800 2200 3700
-Wire Wire Line
-	2200 3700 2800 3700
 Wire Wire Line
 	1000 4650 1000 4700
 $Comp
@@ -183,8 +170,6 @@ Wire Wire Line
 Connection ~ 2300 4200
 Connection ~ 1000 4450
 Connection ~ 2300 4000
-Wire Wire Line
-	2300 3800 2300 3600
 Wire Wire Line
 	2300 3600 1700 3600
 Wire Wire Line
@@ -407,4 +392,21 @@ Wire Wire Line
 	10200 3000 10250 3000
 Wire Wire Line
 	10250 3000 10250 4400
+Wire Wire Line
+	2200 3700 2800 3700
+$Comp
+L Device:R_Small R?
+U 1 1 5D2B4959
+P 2300 3850
+F 0 "R?" H 2368 3896 50  0000 L CNN
+F 1 "1kΩ" H 2368 3805 50  0000 L CNN
+F 2 "" H 2300 3850 50  0001 C CNN
+F 3 "~" H 2300 3850 50  0001 C CNN
+	1    2300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3950 2300 4000
+Wire Wire Line
+	2300 3600 2300 3750
 $EndSCHEMATC

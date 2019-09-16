@@ -695,24 +695,24 @@ Wire Wire Line
 Wire Wire Line
 	7700 5000 6900 5000
 NoConn ~ 4850 5750
+Text Notes 3050 7800 2    50   ~ 0
+TODO: Verify the order of bits used from the constant register.
+Wire Bus Line
+	2650 1300 2650 1600
+Wire Bus Line
+	2650 1700 2650 2000
+Wire Bus Line
+	2650 4300 2650 4600
+Wire Bus Line
+	2650 3900 2650 4200
+Wire Bus Line
+	2650 4700 2650 5200
+Wire Bus Line
+	2650 2100 2650 2700
 Wire Bus Line
 	5350 1200 5350 2000
 Wire Bus Line
 	4700 1200 4700 4600
 Wire Bus Line
 	7350 1500 7350 2950
-Wire Bus Line
-	2650 3900 2650 4200
-Wire Bus Line
-	2650 4300 2650 4600
-Wire Bus Line
-	2650 4700 2650 5200
-Wire Bus Line
-	2650 2100 2650 2700
-Wire Bus Line
-	2650 1700 2650 2000
-Wire Bus Line
-	2650 1300 2650 1600
-Text Notes 3050 7800 2    50   ~ 0
-TODO: Verify the order of bits used from the constant register.
 $EndSCHEMATC

@@ -488,7 +488,7 @@ F 3 "~" H 7450 5350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4B9345
 P 2200 5800
 F 0 "R?" H 2268 5846 50  0000 L CNN
@@ -499,7 +499,7 @@ F 3 "~" H 2200 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4B9B45
 P 2550 5800
 F 0 "R?" H 2618 5846 50  0000 L CNN
@@ -510,7 +510,7 @@ F 3 "~" H 2550 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4B9F5F
 P 2900 5800
 F 0 "R?" H 2968 5846 50  0000 L CNN
@@ -521,7 +521,7 @@ F 3 "~" H 2900 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BA4B8
 P 3250 5800
 F 0 "R?" H 3318 5846 50  0000 L CNN
@@ -532,7 +532,7 @@ F 3 "~" H 3250 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BAA4B
 P 3600 5800
 F 0 "R?" H 3668 5846 50  0000 L CNN
@@ -543,7 +543,7 @@ F 3 "~" H 3600 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BB101
 P 3950 5800
 F 0 "R?" H 4018 5846 50  0000 L CNN
@@ -554,7 +554,7 @@ F 3 "~" H 3950 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BB48A
 P 4300 5800
 F 0 "R?" H 4368 5846 50  0000 L CNN
@@ -565,7 +565,7 @@ F 3 "~" H 4300 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BB9E3
 P 4650 5800
 F 0 "R?" H 4718 5846 50  0000 L CNN
@@ -576,7 +576,7 @@ F 3 "~" H 4650 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BBDA6
 P 5000 5800
 F 0 "R?" H 5068 5846 50  0000 L CNN
@@ -587,7 +587,7 @@ F 3 "~" H 5000 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BC0D8
 P 5350 5800
 F 0 "R?" H 5418 5846 50  0000 L CNN
@@ -598,7 +598,7 @@ F 3 "~" H 5350 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BC49B
 P 5700 5800
 F 0 "R?" H 5768 5846 50  0000 L CNN
@@ -609,7 +609,7 @@ F 3 "~" H 5700 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BC807
 P 6050 5800
 F 0 "R?" H 6118 5846 50  0000 L CNN
@@ -620,7 +620,7 @@ F 3 "~" H 6050 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BCBAD
 P 6400 5800
 F 0 "R?" H 6468 5846 50  0000 L CNN
@@ -631,7 +631,7 @@ F 3 "~" H 6400 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BCF36
 P 6750 5800
 F 0 "R?" H 6818 5846 50  0000 L CNN
@@ -642,7 +642,7 @@ F 3 "~" H 6750 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BD19D
 P 7100 5800
 F 0 "R?" H 7168 5846 50  0000 L CNN
@@ -653,22 +653,20 @@ F 3 "~" H 7100 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D4BD509
-P 7450 5750
-F 0 "R?" H 7518 5796 50  0000 L CNN
-F 1 "220Ω" H 7518 5705 50  0000 L CNN
-F 2 "" V 7490 5740 50  0001 C CNN
-F 3 "~" H 7450 5750 50  0001 C CNN
-	1    7450 5750
+P 7450 5800
+F 0 "R?" H 7518 5846 50  0000 L CNN
+F 1 "220Ω" H 7518 5755 50  0000 L CNN
+F 2 "" V 7490 5790 50  0001 C CNN
+F 3 "~" H 7450 5800 50  0001 C CNN
+	1    7450 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2200 5950 2200 6050
 Wire Wire Line
-	2200 6050 2550 6050
-Wire Wire Line
-	7450 6050 7450 5900
+	7450 6050 7450 5950
 Wire Wire Line
 	2550 5950 2550 6050
 Connection ~ 2550 6050
@@ -742,12 +740,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5D533285
-P 2200 6050
-F 0 "#PWR?" H 2200 5800 50  0001 C CNN
-F 1 "GND" H 2205 5877 50  0000 C CNN
-F 2 "" H 2200 6050 50  0001 C CNN
-F 3 "" H 2200 6050 50  0001 C CNN
-	1    2200 6050
+P 2400 6050
+F 0 "#PWR?" H 2400 5800 50  0001 C CNN
+F 1 "GND" H 2405 5877 50  0000 C CNN
+F 2 "" H 2400 6050 50  0001 C CNN
+F 3 "" H 2400 6050 50  0001 C CNN
+	1    2400 6050
 	1    0    0    -1  
 $EndComp
 Connection ~ 2200 6050
@@ -780,7 +778,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 5650 7100 5500
 Wire Wire Line
-	7450 5500 7450 5600
+	7450 5500 7450 5650
 Entry Wire Line
 	2550 5000 2650 4900
 Entry Wire Line
@@ -1146,4 +1144,9 @@ Wire Bus Line
 	10150 1700 10150 3850
 Wire Bus Line
 	2300 4900 9000 4900
+Connection ~ 2400 6050
+Wire Wire Line
+	2400 6050 2550 6050
+Wire Wire Line
+	2200 6050 2400 6050
 $EndSCHEMATC

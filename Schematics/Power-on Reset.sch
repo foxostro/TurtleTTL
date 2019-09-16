@@ -50,7 +50,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 2500 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small R?
 U 1 1 5D9A05E9
 P 3100 1300
 AR Path="/5D2C0720/5D9A05E9" Ref="R?"  Part="1" 
@@ -63,7 +63,7 @@ F 3 "~" H 3100 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small R?
 U 1 1 5D9A05EF
 P 1300 1300
 AR Path="/5D2C0720/5D9A05EF" Ref="R?"  Part="1" 
@@ -224,7 +224,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 2100 4350 2100
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D9B683B
 P 4150 4850
 AR Path="/5D2C0720/5D9B683B" Ref="R?"  Part="1" 

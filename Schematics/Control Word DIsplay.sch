@@ -703,12 +703,12 @@ Wire Wire Line
 	8800 4050 8950 4050
 Text Notes 5650 4250 0    50   ~ 0
 Control Word LED Indicators
-Wire Bus Line
-	1550 2500 8850 2500
 Text Label 8600 3150 1    50   ~ 0
 ControlWord01
 Text Label 8950 3150 1    50   ~ 0
 ControlWord00
 Text Notes 3750 5450 0    50   ~ 0
 TODO: These signals are active-low. The LEDs should be wired to light up when they go active.
+Wire Bus Line
+	1550 2500 8850 2500
 $EndSCHEMATC

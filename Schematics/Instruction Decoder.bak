@@ -937,6 +937,10 @@ Text GLabel 9950 3000 2    50   Output ~ 0
 ControlWord
 Text Notes 6500 6350 0    50   ~ 0
 The lower eight bits of the instruction\ncan be expressed onto the bus as a\nconstant value.
+Text Notes 4150 650  0    50   ~ 0
+ID/EX registers
+Text Notes 2600 700  0    50   ~ 0
+Microcode ROMs
 Wire Bus Line
 	6200 4550 6200 5250
 Wire Bus Line
@@ -947,8 +951,4 @@ Wire Bus Line
 	5450 3000 5450 4900
 Wire Bus Line
 	1850 1250 1850 7250
-Text Notes 4150 650  0    50   ~ 0
-ID/EX registers
-Text Notes 2600 700  0    50   ~ 0
-Microcode ROMs
 $EndSCHEMATC
