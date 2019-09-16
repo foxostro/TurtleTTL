@@ -10,9 +10,9 @@ Date ""
 Rev ""
 Comp ""
 Comment1 ""
-Comment2 ""
-Comment3 "are directed to the output display when device zero is selected via the D register."
-Comment4 "The output display is assigned to device slot zero. Reads and writes to the M register"
+Comment2 "are directed to the output display when device zero is selected via the D register."
+Comment3 "The output display is assigned to device slot zero. Reads and writes to the M register"
+Comment4 "Display a number in a four character LED display."
 $EndDescr
 Entry Wire Line
 	7900 4600 7800 4700
