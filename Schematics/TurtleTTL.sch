@@ -89,8 +89,8 @@ $EndSheet
 $Sheet
 S 4650 5650 1500 500 
 U 5D2C13FD
-F0 "Control Word" 50
-F1 "Control Word.sch" 50
+F0 "Execute" 50
+F1 "Execute.sch" 50
 $EndSheet
 $Sheet
 S 4650 4250 1500 500 
