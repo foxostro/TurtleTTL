@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 11 24
+Sheet 8 24
 Title "ALU"
 Date ""
 Rev ""
@@ -200,25 +200,25 @@ Entry Wire Line
 Wire Wire Line
 	2250 2150 2450 2150
 Text Label 2300 2150 0    50   ~ 0
-C3
+C0
 Entry Wire Line
 	2150 2150 2250 2250
 Wire Wire Line
 	2250 2250 2450 2250
 Text Label 2300 2250 0    50   ~ 0
-C2
+C1
 Entry Wire Line
 	2150 2250 2250 2350
 Wire Wire Line
 	2250 2350 2450 2350
 Text Label 2300 2350 0    50   ~ 0
-C1
+C2
 Entry Wire Line
 	2150 2350 2250 2450
 Wire Wire Line
 	2250 2450 2450 2450
 Text Label 2300 2450 0    50   ~ 0
-C0
+C3
 Text GLabel 750  2050 0    50   Input ~ 0
 C
 Entry Wire Line
@@ -273,25 +273,25 @@ Wire Wire Line
 Entry Wire Line
 	2150 5150 2250 5250
 Text Label 2300 5050 0    50   ~ 0
-C0
+C3
 Wire Wire Line
 	2250 5050 2450 5050
 Entry Wire Line
 	2150 4950 2250 5050
 Text Label 2300 4950 0    50   ~ 0
-C1
+C2
 Wire Wire Line
 	2250 4950 2450 4950
 Entry Wire Line
 	2150 4850 2250 4950
 Text Label 2300 4850 0    50   ~ 0
-C2
+C1
 Wire Wire Line
 	2250 4850 2450 4850
 Entry Wire Line
 	2150 4750 2250 4850
 Text Label 2300 4750 0    50   ~ 0
-C3
+C0
 Wire Wire Line
 	2250 4750 2450 4750
 Entry Wire Line
@@ -691,8 +691,6 @@ Wire Wire Line
 Wire Wire Line
 	7050 950  7050 2300
 NoConn ~ 4350 5700
-Text Notes 3050 7800 2    50   ~ 0
-TODO: Verify the order of bits used from the constant register.
 $Comp
 L Device:LED D?
 U 1 1 5D907BF3

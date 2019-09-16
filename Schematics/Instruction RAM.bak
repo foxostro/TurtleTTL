@@ -355,11 +355,11 @@ IRAM15
 Text GLabel 1050 2450 0    50   Input ~ 0
 DeviceSelect
 Text Label 1400 2250 0    50   ~ 0
-DeviceSelect4
+DeviceSelect3
 Entry Wire Line
 	1300 2350 1400 2250
 Text Label 1400 2650 0    50   ~ 0
-DeviceSelect3
+DeviceSelect4
 Entry Wire Line
 	1300 2550 1400 2650
 Wire Bus Line
@@ -370,8 +370,6 @@ Wire Bus Line
 Connection ~ 6300 3600
 Wire Bus Line
 	6300 3600 6300 5800
-Text Notes 3050 2450 2    50   ~ 0
-TODO: Review device slot assignments here
 Wire Wire Line
 	1400 2650 2100 2650
 Text GLabel 6800 2750 0    50   Input ~ 0
@@ -677,44 +675,6 @@ Wire Bus Line
 	4100 6500 1050 6500
 Text GLabel 1050 6500 0    50   Input ~ 0
 AddressBus
-Wire Wire Line
-	5800 5800 6800 5800
-Wire Wire Line
-	5800 5200 6800 5200
-Wire Wire Line
-	5800 5900 6800 5900
-Wire Wire Line
-	5800 5700 6800 5700
-Wire Wire Line
-	5800 5600 6800 5600
-Wire Wire Line
-	5800 5500 6800 5500
-Wire Wire Line
-	5800 5400 6800 5400
-Wire Wire Line
-	5800 5300 6800 5300
-Wire Wire Line
-	5800 2550 6800 2550
-Wire Wire Line
-	5800 2450 6800 2450
-Wire Wire Line
-	5800 2350 6800 2350
-Wire Wire Line
-	5800 2250 6800 2250
-Wire Wire Line
-	5800 2150 6800 2150
-Wire Wire Line
-	5800 2050 6800 2050
-Wire Wire Line
-	5800 1950 6800 1950
-Wire Wire Line
-	5800 1850 6800 1850
-Wire Bus Line
-	8300 3450 8300 5800
-Wire Bus Line
-	8300 1950 8300 3450
-Wire Bus Line
-	4100 1550 4100 6500
 $Comp
 L power:GND #PWR?
 U 1 1 5DBCC3A9
@@ -765,4 +725,42 @@ Text Notes 7600 1000 0    50   ~ 0
 Programs must take care to never read or write to Instruction RAM\nwhile the program counter is in the upper half of the address space.\nThis will surely lead to unexpected and incorrect operation.
 Wire Wire Line
 	6100 4000 3700 4000
+Wire Wire Line
+	5800 5800 6800 5800
+Wire Wire Line
+	5800 5200 6800 5200
+Wire Wire Line
+	5800 5900 6800 5900
+Wire Wire Line
+	5800 5700 6800 5700
+Wire Wire Line
+	5800 5600 6800 5600
+Wire Wire Line
+	5800 5500 6800 5500
+Wire Wire Line
+	5800 5400 6800 5400
+Wire Wire Line
+	5800 5300 6800 5300
+Wire Wire Line
+	5800 2550 6800 2550
+Wire Wire Line
+	5800 2450 6800 2450
+Wire Wire Line
+	5800 2350 6800 2350
+Wire Wire Line
+	5800 2250 6800 2250
+Wire Wire Line
+	5800 2150 6800 2150
+Wire Wire Line
+	5800 2050 6800 2050
+Wire Wire Line
+	5800 1950 6800 1950
+Wire Wire Line
+	5800 1850 6800 1850
+Wire Bus Line
+	8300 3450 8300 5800
+Wire Bus Line
+	8300 1950 8300 3450
+Wire Bus Line
+	4100 1550 4100 6500
 $EndSCHEMATC
