@@ -81,28 +81,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 1850 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
-U 1 1 5D39244B
-P 2450 2450
-F 0 "R?" H 2518 2496 50  0000 L CNN
-F 1 "47kΩ" H 2518 2405 50  0000 L CNN
-F 2 "" H 2450 2450 50  0001 C CNN
-F 3 "~" H 2450 2450 50  0001 C CNN
-	1    2450 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 5D39306C
-P 650 2450
-F 0 "R?" H 718 2496 50  0000 L CNN
-F 1 "220Ω" H 718 2405 50  0000 L CNN
-F 2 "" H 650 2450 50  0001 C CNN
-F 3 "~" H 650 2450 50  0001 C CNN
-	1    650  2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 5D393902
 P 900 3700
@@ -149,10 +127,6 @@ F 3 "" H 650 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	650  2250 650  2350
-Wire Wire Line
-	650  2550 650  2650
-Wire Wire Line
 	1850 3650 1850 3850
 Wire Wire Line
 	1850 3850 2450 3850
@@ -187,12 +161,7 @@ Wire Wire Line
 	2450 3800 2450 3850
 Connection ~ 2450 3850
 Wire Wire Line
-	2450 2550 2450 3250
-Connection ~ 2450 3250
-Wire Wire Line
 	1850 2250 2450 2250
-Wire Wire Line
-	2450 2250 2450 2350
 Connection ~ 1850 2250
 Wire Wire Line
 	2450 3450 2450 3600
@@ -380,7 +349,7 @@ CLK
 Text GLabel 5200 5000 2    50   Output ~ 0
 ~CLK
 $Comp
-L Device:R_US R?
+L Device:R R?
 U 1 1 5D43460F
 P 4900 6000
 F 0 "R?" H 4968 6046 50  0000 L CNN
@@ -816,4 +785,37 @@ Wire Wire Line
 Connection ~ 4900 5150
 Wire Wire Line
 	4900 5150 4900 5400
+Connection ~ 2450 3250
+Wire Wire Line
+	2450 2250 2450 2350
+Wire Wire Line
+	650  2550 650  2650
+Wire Wire Line
+	650  2250 650  2350
+Wire Wire Line
+	2450 2550 2450 3250
+$Comp
+L Device:R_Small R?
+U 1 1 5D39244B
+P 2450 2450
+F 0 "R?" H 2518 2496 50  0000 L CNN
+F 1 "47kΩ" H 2518 2405 50  0000 L CNN
+F 2 "" H 2450 2450 50  0001 C CNN
+F 3 "~" H 2450 2450 50  0001 C CNN
+	1    2450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D39306C
+P 650 2450
+F 0 "R?" H 718 2496 50  0000 L CNN
+F 1 "220Ω" H 718 2405 50  0000 L CNN
+F 2 "" H 650 2450 50  0001 C CNN
+F 3 "~" H 650 2450 50  0001 C CNN
+	1    650  2450
+	1    0    0    -1  
+$EndComp
+Text Notes 950  4150 0    50   ~ 0
+TODO: What should connect to Q?
 $EndSCHEMATC

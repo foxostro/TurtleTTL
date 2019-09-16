@@ -46,8 +46,6 @@ Text GLabel 8800 3700 3    50   Output ~ 0
 ~J
 Text GLabel 9150 3700 3    50   Output ~ 0
 ~CO
-Wire Bus Line
-	1750 3000 9050 3000
 Text Label 9150 3650 1    50   ~ 0
 ControlWord00
 Text Label 8800 3650 1    50   ~ 0
@@ -146,4 +144,6 @@ Entry Wire Line
 	4250 3100 4150 3000
 Entry Wire Line
 	3900 3100 3800 3000
+Wire Bus Line
+	1750 3000 9050 3000
 $EndSCHEMATC
