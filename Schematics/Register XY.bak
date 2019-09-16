@@ -41,21 +41,21 @@ Wire Bus Line
 Entry Wire Line
 	8550 1700 8450 1800
 Text Label 8050 1900 0    50   ~ 0
-DataBus01
+DataBus1
 Text Label 8050 2000 0    50   ~ 0
-DataBus02
+DataBus2
 Text Label 8050 2100 0    50   ~ 0
-DataBus03
+DataBus3
 Text Label 8050 2200 0    50   ~ 0
-DataBus04
+DataBus4
 Text Label 8050 2300 0    50   ~ 0
-DataBus05
+DataBus5
 Text Label 8050 2400 0    50   ~ 0
-DataBus06
+DataBus6
 Text Label 8050 2500 0    50   ~ 0
-DataBus07
+DataBus7
 Text Label 8050 1800 0    50   ~ 0
-DataBus00
+DataBus0
 $Comp
 L Device:C C?
 U 1 1 5D84633A
@@ -263,21 +263,21 @@ Wire Bus Line
 Entry Wire Line
 	3350 1700 3450 1800
 Text Label 3850 1900 2    50   ~ 0
-DataBus01
+DataBus1
 Text Label 3850 2000 2    50   ~ 0
-DataBus02
+DataBus2
 Text Label 3850 2100 2    50   ~ 0
-DataBus03
+DataBus3
 Text Label 3850 2200 2    50   ~ 0
-DataBus04
+DataBus4
 Text Label 3850 2300 2    50   ~ 0
-DataBus05
+DataBus5
 Text Label 3850 2400 2    50   ~ 0
-DataBus06
+DataBus6
 Text Label 3850 2500 2    50   ~ 0
-DataBus07
+DataBus7
 Text Label 3850 1800 2    50   ~ 0
-DataBus00
+DataBus0
 Wire Wire Line
 	3450 2500 4400 2500
 Wire Wire Line
@@ -321,21 +321,21 @@ Entry Wire Line
 Entry Wire Line
 	8550 4150 8450 4250
 Text Label 8050 4350 0    50   ~ 0
-DataBus01
+DataBus1
 Text Label 8050 4450 0    50   ~ 0
-DataBus02
+DataBus2
 Text Label 8050 4550 0    50   ~ 0
-DataBus03
+DataBus3
 Text Label 8050 4650 0    50   ~ 0
-DataBus04
+DataBus4
 Text Label 8050 4750 0    50   ~ 0
-DataBus05
+DataBus5
 Text Label 8050 4850 0    50   ~ 0
-DataBus06
+DataBus6
 Text Label 8050 4950 0    50   ~ 0
-DataBus07
+DataBus7
 Text Label 8050 4250 0    50   ~ 0
-DataBus00
+DataBus0
 Wire Wire Line
 	8450 4950 7500 4950
 Wire Wire Line
@@ -443,21 +443,21 @@ Entry Wire Line
 Entry Wire Line
 	3350 4150 3450 4250
 Text Label 3850 4350 2    50   ~ 0
-DataBus01
+DataBus1
 Text Label 3850 4450 2    50   ~ 0
-DataBus02
+DataBus2
 Text Label 3850 4550 2    50   ~ 0
-DataBus03
+DataBus3
 Text Label 3850 4650 2    50   ~ 0
-DataBus04
+DataBus4
 Text Label 3850 4750 2    50   ~ 0
-DataBus05
+DataBus5
 Text Label 3850 4850 2    50   ~ 0
-DataBus06
+DataBus6
 Text Label 3850 4950 2    50   ~ 0
-DataBus07
+DataBus7
 Text Label 3850 4250 2    50   ~ 0
-DataBus00
+DataBus0
 Wire Wire Line
 	3450 4950 4400 4950
 Wire Wire Line

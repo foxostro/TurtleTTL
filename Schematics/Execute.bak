@@ -14,136 +14,829 @@ Comment2 ""
 Comment3 "control signals around the board."
 Comment4 "The Execute Unit doesn't do much. At this point, it simply maps the control word to"
 $EndDescr
-Text GLabel 3900 3700 3    50   Output ~ 0
-~HLT
-Text GLabel 4250 3700 3    50   Output ~ 0
-~DI
-Text GLabel 4600 3700 3    50   Output ~ 0
-~BI
-Text GLabel 4950 3700 3    50   Output ~ 0
-~BO
-Text GLabel 5300 3700 3    50   Output ~ 0
-~AI
-Text GLabel 5650 3700 3    50   Output ~ 0
-~AO
-Text GLabel 6000 3700 3    50   Output ~ 0
-~FI
-Text GLabel 6350 3700 3    50   Output ~ 0
-~EO
-Text GLabel 6700 3700 3    50   Output ~ 0
-~MI
-Text GLabel 7050 3700 3    50   Output ~ 0
-~MO
-Text GLabel 7400 3700 3    50   Output ~ 0
-~XO
-Text GLabel 7750 3700 3    50   Output ~ 0
-~YO
-Text GLabel 8100 3700 3    50   Output ~ 0
-~XI
-Text GLabel 8450 3700 3    50   Output ~ 0
-~YI
-Text GLabel 8800 3700 3    50   Output ~ 0
-~J
-Text GLabel 9150 3700 3    50   Output ~ 0
-~CO
-Text Label 9150 3650 1    50   ~ 0
-ControlWord00
-Text Label 8800 3650 1    50   ~ 0
-ControlWord01
-Wire Wire Line
-	9150 3100 9150 3700
-Wire Wire Line
-	8800 3100 8800 3700
-Wire Wire Line
-	8450 3100 8450 3700
-Wire Wire Line
-	8100 3100 8100 3700
-Wire Wire Line
-	7750 3100 7750 3700
-Wire Wire Line
-	7400 3100 7400 3700
-Wire Wire Line
-	7050 3100 7050 3700
-Wire Wire Line
-	6700 3100 6700 3700
-Wire Wire Line
-	6350 3100 6350 3700
-Wire Wire Line
-	6000 3100 6000 3700
-Wire Wire Line
-	5650 3100 5650 3700
-Wire Wire Line
-	5300 3100 5300 3700
-Wire Wire Line
-	4950 3100 4950 3700
-Wire Wire Line
-	4600 3100 4600 3700
-Wire Wire Line
-	4250 3100 4250 3700
-Wire Wire Line
-	3900 3100 3900 3700
-Text Label 8450 3650 1    50   ~ 0
-ControlWord02
-Text Label 8100 3650 1    50   ~ 0
-ControlWord03
-Text Label 7750 3650 1    50   ~ 0
-ControlWord04
-Text Label 7400 3650 1    50   ~ 0
-ControlWord05
-Text Label 7050 3650 1    50   ~ 0
-ControlWord06
-Text Label 6700 3650 1    50   ~ 0
-ControlWord07
-Text Label 6350 3650 1    50   ~ 0
-ControlWord08
-Text Label 6000 3650 1    50   ~ 0
-ControlWord09
-Text Label 5650 3650 1    50   ~ 0
-ControlWord10
-Text Label 5300 3650 1    50   ~ 0
-ControlWord11
-Text Label 4950 3650 1    50   ~ 0
-ControlWord12
-Text Label 4600 3650 1    50   ~ 0
-ControlWord13
-Text Label 4250 3650 1    50   ~ 0
-ControlWord14
-Text Label 3900 3650 1    50   ~ 0
-ControlWord15
-Text GLabel 1750 3000 0    50   Input ~ 0
+Text GLabel 2150 2650 0    50   Input ~ 0
 ControlWord
+$Comp
+L Device:LED D?
+U 1 1 5DC800DF
+P 5300 3500
+AR Path="/5D2C07CD/5DC800DF" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC800DF" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC800DF" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC800DF" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC800DF" Ref="D?"  Part="1" 
+F 0 "D?" V 5339 3383 50  0000 R CNN
+F 1 "LED" V 5248 3383 50  0000 R CNN
+F 2 "" H 5300 3500 50  0001 C CNN
+F 3 "~" H 5300 3500 50  0001 C CNN
+	1    5300 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC800E5
+P 5650 3500
+AR Path="/5D2C07CD/5DC800E5" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC800E5" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC800E5" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC800E5" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC800E5" Ref="D?"  Part="1" 
+F 0 "D?" V 5689 3383 50  0000 R CNN
+F 1 "LED" V 5598 3383 50  0000 R CNN
+F 2 "" H 5650 3500 50  0001 C CNN
+F 3 "~" H 5650 3500 50  0001 C CNN
+	1    5650 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC800EB
+P 6000 3500
+AR Path="/5D2C07CD/5DC800EB" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC800EB" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC800EB" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC800EB" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC800EB" Ref="D?"  Part="1" 
+F 0 "D?" V 6039 3383 50  0000 R CNN
+F 1 "LED" V 5948 3383 50  0000 R CNN
+F 2 "" H 6000 3500 50  0001 C CNN
+F 3 "~" H 6000 3500 50  0001 C CNN
+	1    6000 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC800F1
+P 6350 3500
+AR Path="/5D2C07CD/5DC800F1" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC800F1" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC800F1" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC800F1" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC800F1" Ref="D?"  Part="1" 
+F 0 "D?" V 6389 3383 50  0000 R CNN
+F 1 "LED" V 6298 3383 50  0000 R CNN
+F 2 "" H 6350 3500 50  0001 C CNN
+F 3 "~" H 6350 3500 50  0001 C CNN
+	1    6350 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC800F7
+P 4950 3500
+AR Path="/5D2C07CD/5DC800F7" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC800F7" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC800F7" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC800F7" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC800F7" Ref="D?"  Part="1" 
+F 0 "D?" V 4989 3383 50  0000 R CNN
+F 1 "LED" V 4898 3383 50  0000 R CNN
+F 2 "" H 4950 3500 50  0001 C CNN
+F 3 "~" H 4950 3500 50  0001 C CNN
+	1    4950 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC800FD
+P 4600 3500
+AR Path="/5D2C07CD/5DC800FD" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC800FD" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC800FD" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC800FD" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC800FD" Ref="D?"  Part="1" 
+F 0 "D?" V 4639 3383 50  0000 R CNN
+F 1 "LED" V 4548 3383 50  0000 R CNN
+F 2 "" H 4600 3500 50  0001 C CNN
+F 3 "~" H 4600 3500 50  0001 C CNN
+	1    4600 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC80103
+P 4250 3500
+AR Path="/5D2C07CD/5DC80103" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC80103" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC80103" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC80103" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC80103" Ref="D?"  Part="1" 
+F 0 "D?" V 4289 3383 50  0000 R CNN
+F 1 "LED" V 4198 3383 50  0000 R CNN
+F 2 "" H 4250 3500 50  0001 C CNN
+F 3 "~" H 4250 3500 50  0001 C CNN
+	1    4250 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC80109
+P 3900 3500
+AR Path="/5D2C07CD/5DC80109" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC80109" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC80109" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC80109" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC80109" Ref="D?"  Part="1" 
+F 0 "D?" V 3939 3383 50  0000 R CNN
+F 1 "LED" V 3848 3383 50  0000 R CNN
+F 2 "" H 3900 3500 50  0001 C CNN
+F 3 "~" H 3900 3500 50  0001 C CNN
+	1    3900 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 4100 3900 4200
+Wire Wire Line
+	3900 4200 4250 4200
+Wire Wire Line
+	4250 4100 4250 4200
+Connection ~ 4250 4200
+Wire Wire Line
+	4250 4200 4600 4200
+Wire Wire Line
+	4600 4100 4600 4200
+Connection ~ 4600 4200
+Wire Wire Line
+	4600 4200 4950 4200
+Wire Wire Line
+	4950 4100 4950 4200
+Connection ~ 4950 4200
+Wire Wire Line
+	4950 4200 5300 4200
+Wire Wire Line
+	5300 4100 5300 4200
+Connection ~ 5300 4200
+Wire Wire Line
+	5300 4200 5650 4200
+Wire Wire Line
+	5650 4100 5650 4200
+Connection ~ 5650 4200
+Wire Wire Line
+	5650 4200 6000 4200
+Wire Wire Line
+	6000 4100 6000 4200
+Connection ~ 6000 4200
+Wire Wire Line
+	6000 4200 6350 4200
+Wire Wire Line
+	6350 4100 6350 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5DC80124
+P 9000 4300
+AR Path="/5D2C07CD/5DC80124" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C0CA7/5DC80124" Ref="#PWR?"  Part="1" 
+AR Path="/5D7BD0EA/5DC80124" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C12A5/5DC80124" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C13FD/5DC80124" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9000 4050 50  0001 C CNN
+F 1 "GND" H 9005 4127 50  0000 C CNN
+F 2 "" H 9000 4300 50  0001 C CNN
+F 3 "" H 9000 4300 50  0001 C CNN
+	1    9000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3650 3900 3800
+Wire Wire Line
+	4250 3650 4250 3800
+Wire Wire Line
+	4600 3800 4600 3650
+Wire Wire Line
+	4950 3650 4950 3800
+Wire Wire Line
+	5300 3800 5300 3650
+Wire Wire Line
+	5650 3650 5650 3800
+Wire Wire Line
+	6000 3800 6000 3650
+Wire Wire Line
+	6350 3650 6350 3800
+$Comp
+L Device:R R?
+U 1 1 5DC80132
+P 3900 3950
+AR Path="/5D2C12A5/5DC80132" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC80132" Ref="R?"  Part="1" 
+F 0 "R?" H 3970 3996 50  0000 L CNN
+F 1 "220Ω" H 3970 3905 50  0000 L CNN
+F 2 "" V 3830 3950 50  0001 C CNN
+F 3 "~" H 3900 3950 50  0001 C CNN
+	1    3900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC80138
+P 4250 3950
+AR Path="/5D2C12A5/5DC80138" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC80138" Ref="R?"  Part="1" 
+F 0 "R?" H 4320 3996 50  0000 L CNN
+F 1 "220Ω" H 4320 3905 50  0000 L CNN
+F 2 "" V 4180 3950 50  0001 C CNN
+F 3 "~" H 4250 3950 50  0001 C CNN
+	1    4250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC8013E
+P 4600 3950
+AR Path="/5D2C12A5/5DC8013E" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC8013E" Ref="R?"  Part="1" 
+F 0 "R?" H 4670 3996 50  0000 L CNN
+F 1 "220Ω" H 4670 3905 50  0000 L CNN
+F 2 "" V 4530 3950 50  0001 C CNN
+F 3 "~" H 4600 3950 50  0001 C CNN
+	1    4600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC80144
+P 4950 3950
+AR Path="/5D2C12A5/5DC80144" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC80144" Ref="R?"  Part="1" 
+F 0 "R?" H 5020 3996 50  0000 L CNN
+F 1 "220Ω" H 5020 3905 50  0000 L CNN
+F 2 "" V 4880 3950 50  0001 C CNN
+F 3 "~" H 4950 3950 50  0001 C CNN
+	1    4950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC8014A
+P 5300 3950
+AR Path="/5D2C12A5/5DC8014A" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC8014A" Ref="R?"  Part="1" 
+F 0 "R?" H 5370 3996 50  0000 L CNN
+F 1 "220Ω" H 5370 3905 50  0000 L CNN
+F 2 "" V 5230 3950 50  0001 C CNN
+F 3 "~" H 5300 3950 50  0001 C CNN
+	1    5300 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC80150
+P 5650 3950
+AR Path="/5D2C12A5/5DC80150" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC80150" Ref="R?"  Part="1" 
+F 0 "R?" H 5720 3996 50  0000 L CNN
+F 1 "220Ω" H 5720 3905 50  0000 L CNN
+F 2 "" V 5580 3950 50  0001 C CNN
+F 3 "~" H 5650 3950 50  0001 C CNN
+	1    5650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC80156
+P 6000 3950
+AR Path="/5D2C12A5/5DC80156" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC80156" Ref="R?"  Part="1" 
+F 0 "R?" H 6070 3996 50  0000 L CNN
+F 1 "220Ω" H 6070 3905 50  0000 L CNN
+F 2 "" V 5930 3950 50  0001 C CNN
+F 3 "~" H 6000 3950 50  0001 C CNN
+	1    6000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC8015C
+P 6350 3950
+AR Path="/5D2C12A5/5DC8015C" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC8015C" Ref="R?"  Part="1" 
+F 0 "R?" H 6420 3996 50  0000 L CNN
+F 1 "220Ω" H 6420 3905 50  0000 L CNN
+F 2 "" V 6280 3950 50  0001 C CNN
+F 3 "~" H 6350 3950 50  0001 C CNN
+	1    6350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC80162
+P 8100 3500
+AR Path="/5D2C07CD/5DC80162" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC80162" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC80162" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC80162" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC80162" Ref="D?"  Part="1" 
+F 0 "D?" V 8139 3383 50  0000 R CNN
+F 1 "LED" V 8048 3383 50  0000 R CNN
+F 2 "" H 8100 3500 50  0001 C CNN
+F 3 "~" H 8100 3500 50  0001 C CNN
+	1    8100 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC80168
+P 8450 3500
+AR Path="/5D2C07CD/5DC80168" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC80168" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC80168" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC80168" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC80168" Ref="D?"  Part="1" 
+F 0 "D?" V 8489 3383 50  0000 R CNN
+F 1 "LED" V 8398 3383 50  0000 R CNN
+F 2 "" H 8450 3500 50  0001 C CNN
+F 3 "~" H 8450 3500 50  0001 C CNN
+	1    8450 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC8016E
+P 8800 3500
+AR Path="/5D2C07CD/5DC8016E" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC8016E" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC8016E" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC8016E" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC8016E" Ref="D?"  Part="1" 
+F 0 "D?" V 8839 3383 50  0000 R CNN
+F 1 "LED" V 8748 3383 50  0000 R CNN
+F 2 "" H 8800 3500 50  0001 C CNN
+F 3 "~" H 8800 3500 50  0001 C CNN
+	1    8800 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC80174
+P 9150 3500
+AR Path="/5D2C07CD/5DC80174" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC80174" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC80174" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC80174" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC80174" Ref="D?"  Part="1" 
+F 0 "D?" V 9189 3383 50  0000 R CNN
+F 1 "LED" V 9098 3383 50  0000 R CNN
+F 2 "" H 9150 3500 50  0001 C CNN
+F 3 "~" H 9150 3500 50  0001 C CNN
+	1    9150 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC8017A
+P 7750 3500
+AR Path="/5D2C07CD/5DC8017A" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC8017A" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC8017A" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC8017A" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC8017A" Ref="D?"  Part="1" 
+F 0 "D?" V 7789 3383 50  0000 R CNN
+F 1 "LED" V 7698 3383 50  0000 R CNN
+F 2 "" H 7750 3500 50  0001 C CNN
+F 3 "~" H 7750 3500 50  0001 C CNN
+	1    7750 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC80180
+P 7400 3500
+AR Path="/5D2C07CD/5DC80180" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC80180" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC80180" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC80180" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC80180" Ref="D?"  Part="1" 
+F 0 "D?" V 7439 3383 50  0000 R CNN
+F 1 "LED" V 7348 3383 50  0000 R CNN
+F 2 "" H 7400 3500 50  0001 C CNN
+F 3 "~" H 7400 3500 50  0001 C CNN
+	1    7400 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC80186
+P 7050 3500
+AR Path="/5D2C07CD/5DC80186" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC80186" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC80186" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC80186" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC80186" Ref="D?"  Part="1" 
+F 0 "D?" V 7089 3383 50  0000 R CNN
+F 1 "LED" V 6998 3383 50  0000 R CNN
+F 2 "" H 7050 3500 50  0001 C CNN
+F 3 "~" H 7050 3500 50  0001 C CNN
+	1    7050 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC8018C
+P 6700 3500
+AR Path="/5D2C07CD/5DC8018C" Ref="D?"  Part="1" 
+AR Path="/5D2C0CA7/5DC8018C" Ref="D?"  Part="1" 
+AR Path="/5D7BD0EA/5DC8018C" Ref="D?"  Part="1" 
+AR Path="/5D2C12A5/5DC8018C" Ref="D?"  Part="1" 
+AR Path="/5D2C13FD/5DC8018C" Ref="D?"  Part="1" 
+F 0 "D?" V 6739 3383 50  0000 R CNN
+F 1 "LED" V 6648 3383 50  0000 R CNN
+F 2 "" H 6700 3500 50  0001 C CNN
+F 3 "~" H 6700 3500 50  0001 C CNN
+	1    6700 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 4100 6700 4200
+Wire Wire Line
+	6700 4200 7050 4200
+Wire Wire Line
+	7050 4100 7050 4200
+Connection ~ 7050 4200
+Wire Wire Line
+	7050 4200 7400 4200
+Wire Wire Line
+	7400 4100 7400 4200
+Connection ~ 7400 4200
+Wire Wire Line
+	7400 4200 7750 4200
+Wire Wire Line
+	7750 4100 7750 4200
+Connection ~ 7750 4200
+Wire Wire Line
+	7750 4200 8100 4200
+Wire Wire Line
+	8100 4100 8100 4200
+Connection ~ 8100 4200
+Wire Wire Line
+	8100 4200 8450 4200
+Wire Wire Line
+	8450 4100 8450 4200
+Connection ~ 8450 4200
+Wire Wire Line
+	8450 4200 8800 4200
+Wire Wire Line
+	8800 4100 8800 4200
+Connection ~ 8800 4200
+Wire Wire Line
+	8800 4200 9000 4200
+Wire Wire Line
+	9150 4100 9150 4200
+Wire Wire Line
+	6700 3650 6700 3800
+Wire Wire Line
+	7050 3650 7050 3800
+Wire Wire Line
+	7400 3800 7400 3650
+Wire Wire Line
+	7750 3650 7750 3800
+Wire Wire Line
+	8100 3800 8100 3650
+Wire Wire Line
+	8450 3650 8450 3800
+Wire Wire Line
+	8800 3800 8800 3650
+Wire Wire Line
+	9150 3650 9150 3800
+$Comp
+L Device:R R?
+U 1 1 5DC801AF
+P 6700 3950
+AR Path="/5D2C12A5/5DC801AF" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC801AF" Ref="R?"  Part="1" 
+F 0 "R?" H 6770 3996 50  0000 L CNN
+F 1 "220Ω" H 6770 3905 50  0000 L CNN
+F 2 "" V 6630 3950 50  0001 C CNN
+F 3 "~" H 6700 3950 50  0001 C CNN
+	1    6700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC801B5
+P 7050 3950
+AR Path="/5D2C12A5/5DC801B5" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC801B5" Ref="R?"  Part="1" 
+F 0 "R?" H 7120 3996 50  0000 L CNN
+F 1 "220Ω" H 7120 3905 50  0000 L CNN
+F 2 "" V 6980 3950 50  0001 C CNN
+F 3 "~" H 7050 3950 50  0001 C CNN
+	1    7050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC801BB
+P 7400 3950
+AR Path="/5D2C12A5/5DC801BB" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC801BB" Ref="R?"  Part="1" 
+F 0 "R?" H 7470 3996 50  0000 L CNN
+F 1 "220Ω" H 7470 3905 50  0000 L CNN
+F 2 "" V 7330 3950 50  0001 C CNN
+F 3 "~" H 7400 3950 50  0001 C CNN
+	1    7400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC801C1
+P 7750 3950
+AR Path="/5D2C12A5/5DC801C1" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC801C1" Ref="R?"  Part="1" 
+F 0 "R?" H 7820 3996 50  0000 L CNN
+F 1 "220Ω" H 7820 3905 50  0000 L CNN
+F 2 "" V 7680 3950 50  0001 C CNN
+F 3 "~" H 7750 3950 50  0001 C CNN
+	1    7750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC801C7
+P 8100 3950
+AR Path="/5D2C12A5/5DC801C7" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC801C7" Ref="R?"  Part="1" 
+F 0 "R?" H 8170 3996 50  0000 L CNN
+F 1 "220Ω" H 8170 3905 50  0000 L CNN
+F 2 "" V 8030 3950 50  0001 C CNN
+F 3 "~" H 8100 3950 50  0001 C CNN
+	1    8100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC801CD
+P 8450 3950
+AR Path="/5D2C12A5/5DC801CD" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC801CD" Ref="R?"  Part="1" 
+F 0 "R?" H 8520 3996 50  0000 L CNN
+F 1 "220Ω" H 8520 3905 50  0000 L CNN
+F 2 "" V 8380 3950 50  0001 C CNN
+F 3 "~" H 8450 3950 50  0001 C CNN
+	1    8450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC801D3
+P 8800 3950
+AR Path="/5D2C12A5/5DC801D3" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC801D3" Ref="R?"  Part="1" 
+F 0 "R?" H 8870 3996 50  0000 L CNN
+F 1 "220Ω" H 8870 3905 50  0000 L CNN
+F 2 "" V 8730 3950 50  0001 C CNN
+F 3 "~" H 8800 3950 50  0001 C CNN
+	1    8800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC801D9
+P 9150 3950
+AR Path="/5D2C12A5/5DC801D9" Ref="R?"  Part="1" 
+AR Path="/5D2C13FD/5DC801D9" Ref="R?"  Part="1" 
+F 0 "R?" H 9220 3996 50  0000 L CNN
+F 1 "220Ω" H 9220 3905 50  0000 L CNN
+F 2 "" V 9080 3950 50  0001 C CNN
+F 3 "~" H 9150 3950 50  0001 C CNN
+	1    9150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4200 6350 4200
+Connection ~ 6700 4200
+Connection ~ 6350 4200
 Entry Wire Line
-	9150 3100 9050 3000
+	4350 2650 4250 2750
 Entry Wire Line
-	8800 3100 8700 3000
+	4700 2650 4600 2750
 Entry Wire Line
-	8450 3100 8350 3000
+	5050 2650 4950 2750
 Entry Wire Line
-	8100 3100 8000 3000
+	5400 2650 5300 2750
 Entry Wire Line
-	7750 3100 7650 3000
+	5750 2650 5650 2750
 Entry Wire Line
-	7400 3100 7300 3000
+	6100 2650 6000 2750
 Entry Wire Line
-	7050 3100 6950 3000
+	6450 2650 6350 2750
 Entry Wire Line
-	6700 3100 6600 3000
+	6800 2650 6700 2750
 Entry Wire Line
-	6350 3100 6250 3000
+	7150 2650 7050 2750
 Entry Wire Line
-	6000 3100 5900 3000
+	7500 2650 7400 2750
 Entry Wire Line
-	5650 3100 5550 3000
+	7850 2650 7750 2750
 Entry Wire Line
-	5300 3100 5200 3000
+	8200 2650 8100 2750
 Entry Wire Line
-	4950 3100 4850 3000
+	8550 2650 8450 2750
 Entry Wire Line
-	4600 3100 4500 3000
+	8900 2650 8800 2750
 Entry Wire Line
-	4250 3100 4150 3000
+	9250 2650 9150 2750
+Text Label 3900 3300 1    50   ~ 0
+ControlWord15
+Text Label 4250 3300 1    50   ~ 0
+ControlWord14
+Text Label 4600 3300 1    50   ~ 0
+ControlWord13
+Text Label 4950 3300 1    50   ~ 0
+ControlWord12
+Text Label 5300 3300 1    50   ~ 0
+ControlWord11
+Text Label 5650 3300 1    50   ~ 0
+ControlWord10
+Text Label 6000 3300 1    50   ~ 0
+ControlWord09
+Text Label 6350 3300 1    50   ~ 0
+ControlWord08
+Text Label 6700 3300 1    50   ~ 0
+ControlWord07
+Text Label 7050 3300 1    50   ~ 0
+ControlWord06
+Text Label 7400 3300 1    50   ~ 0
+ControlWord05
+Text Label 7750 3300 1    50   ~ 0
+ControlWord04
+Text Label 8100 3300 1    50   ~ 0
+ControlWord03
+Wire Wire Line
+	3900 2750 3900 3350
+Wire Wire Line
+	4250 2750 4250 3350
+Wire Wire Line
+	4600 2750 4600 3350
+Wire Wire Line
+	4950 2750 4950 3350
+Wire Wire Line
+	5300 2750 5300 3350
+Wire Wire Line
+	5650 2750 5650 3350
+Wire Wire Line
+	6000 2750 6000 3350
+Wire Wire Line
+	6350 2750 6350 3350
+Wire Wire Line
+	6700 2750 6700 3350
+Wire Wire Line
+	7050 2750 7050 3350
+Wire Wire Line
+	7400 2750 7400 3350
+Wire Wire Line
+	7750 2750 7750 3350
+Wire Wire Line
+	8100 2750 8100 3350
+Wire Wire Line
+	8450 2750 8450 3350
+Wire Wire Line
+	8800 2750 8800 3350
+Wire Wire Line
+	9150 2750 9150 3350
+Wire Wire Line
+	9000 4200 9000 4300
+Connection ~ 9000 4200
+Wire Wire Line
+	9000 4200 9150 4200
+Text Notes 5850 4400 0    50   ~ 0
+Control Word LED Indicators
+Text Label 8800 3300 1    50   ~ 0
+ControlWord01
+Text Label 9150 3300 1    50   ~ 0
+ControlWord00
+Text Notes 3950 5600 0    50   ~ 0
+TODO: These signals are active-low. The LEDs should be wired to light up when they go active.
 Entry Wire Line
-	3900 3100 3800 3000
+	4000 2650 3900 2750
+Text Label 8450 3300 1    50   ~ 0
+ControlWord02
+Entry Wire Line
+	4100 2550 4000 2650
+Entry Wire Line
+	4450 2550 4350 2650
+Entry Wire Line
+	4800 2550 4700 2650
+Entry Wire Line
+	5150 2550 5050 2650
+Entry Wire Line
+	5500 2550 5400 2650
+Entry Wire Line
+	5850 2550 5750 2650
+Entry Wire Line
+	6200 2550 6100 2650
+Entry Wire Line
+	6550 2550 6450 2650
+Entry Wire Line
+	6900 2550 6800 2650
+Entry Wire Line
+	7250 2550 7150 2650
+Entry Wire Line
+	7600 2550 7500 2650
+Entry Wire Line
+	7950 2550 7850 2650
+Entry Wire Line
+	8300 2550 8200 2650
+Entry Wire Line
+	8650 2550 8550 2650
+Entry Wire Line
+	9000 2550 8900 2650
+Entry Wire Line
+	9350 2550 9250 2650
+Text Label 4100 2000 3    50   ~ 0
+ControlWord15
+Text Label 4450 2000 3    50   ~ 0
+ControlWord14
+Text Label 4800 2000 3    50   ~ 0
+ControlWord13
+Text Label 5150 2000 3    50   ~ 0
+ControlWord12
+Text Label 5500 2000 3    50   ~ 0
+ControlWord11
+Text Label 5850 2000 3    50   ~ 0
+ControlWord10
+Text Label 6200 2000 3    50   ~ 0
+ControlWord09
+Text Label 6550 2000 3    50   ~ 0
+ControlWord08
+Text Label 6900 2000 3    50   ~ 0
+ControlWord07
+Text Label 7250 2000 3    50   ~ 0
+ControlWord06
+Text Label 7600 2000 3    50   ~ 0
+ControlWord05
+Text Label 7950 2000 3    50   ~ 0
+ControlWord04
+Text Label 8300 2000 3    50   ~ 0
+ControlWord03
+Text Label 8650 2000 3    50   ~ 0
+ControlWord02
+Wire Wire Line
+	4100 2550 4100 1950
+Wire Wire Line
+	4450 2550 4450 1950
+Wire Wire Line
+	4800 2550 4800 1950
+Wire Wire Line
+	5150 2550 5150 1950
+Wire Wire Line
+	5500 2550 5500 1950
+Wire Wire Line
+	5850 2550 5850 1950
+Wire Wire Line
+	6200 2550 6200 1950
+Wire Wire Line
+	6550 2550 6550 1950
+Wire Wire Line
+	6900 2550 6900 1950
+Wire Wire Line
+	7250 2550 7250 1950
+Wire Wire Line
+	7600 2550 7600 1950
+Wire Wire Line
+	7950 2550 7950 1950
+Wire Wire Line
+	8300 2550 8300 1950
+Wire Wire Line
+	8650 2550 8650 1950
+Wire Wire Line
+	9000 2550 9000 1950
+Wire Wire Line
+	9350 2550 9350 1950
+Text Label 9000 2000 3    50   ~ 0
+ControlWord01
+Text Label 9350 2000 3    50   ~ 0
+ControlWord00
+Text GLabel 9350 1950 1    50   Output ~ 0
+~CO
+Text GLabel 9000 1950 1    50   Output ~ 0
+~J
+Text GLabel 8650 1950 1    50   Output ~ 0
+~YI
+Text GLabel 8300 1950 1    50   Output ~ 0
+~XI
+Text GLabel 7950 1950 1    50   Output ~ 0
+~YO
+Text GLabel 7600 1950 1    50   Output ~ 0
+~XO
+Text GLabel 7250 1950 1    50   Output ~ 0
+~MO
+Text GLabel 6900 1950 1    50   Output ~ 0
+~MI
+Text GLabel 6550 1950 1    50   Output ~ 0
+~EO
+Text GLabel 6200 1950 1    50   Output ~ 0
+~FI
+Text GLabel 5850 1950 1    50   Output ~ 0
+~AO
+Text GLabel 5500 1950 1    50   Output ~ 0
+~AI
+Text GLabel 5150 1950 1    50   Output ~ 0
+~BO
+Text GLabel 4800 1950 1    50   Output ~ 0
+~BI
+Text GLabel 4450 1950 1    50   Output ~ 0
+~DI
+Text GLabel 4100 1950 1    50   Output ~ 0
+~HLT
 Wire Bus Line
-	1750 3000 9050 3000
+	2150 2650 9500 2650
 $EndSCHEMATC
