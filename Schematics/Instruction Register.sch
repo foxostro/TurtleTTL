@@ -876,17 +876,6 @@ Wire Wire Line
 Connection ~ 2350 7900
 $Comp
 L Device:C C?
-U 1 1 5D813D2F
-P 4850 7750
-F 0 "C?" H 4965 7796 50  0000 L CNN
-F 1 "100nF" H 4965 7705 50  0000 L CNN
-F 2 "" H 4888 7600 50  0001 C CNN
-F 3 "~" H 4850 7750 50  0001 C CNN
-	1    4850 7750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
 U 1 1 5D813D35
 P 4350 7750
 F 0 "C?" H 4465 7796 50  0000 L CNN
@@ -899,25 +888,18 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5D813D3B
-P 4850 7900
-F 0 "#PWR?" H 4850 7650 50  0001 C CNN
-F 1 "GND" H 4855 7727 50  0000 C CNN
-F 2 "" H 4850 7900 50  0001 C CNN
-F 3 "" H 4850 7900 50  0001 C CNN
-	1    4850 7900
+P 1850 7900
+F 0 "#PWR?" H 1850 7650 50  0001 C CNN
+F 1 "GND" H 1855 7727 50  0000 C CNN
+F 2 "" H 1850 7900 50  0001 C CNN
+F 3 "" H 1850 7900 50  0001 C CNN
+	1    1850 7900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3850 7600 4350 7600
 Wire Wire Line
-	4350 7600 4850 7600
-Connection ~ 4350 7600
-Wire Wire Line
-	4350 7900 4850 7900
-Connection ~ 4850 7900
-Wire Wire Line
 	4350 7900 3850 7900
-Connection ~ 4350 7900
 Connection ~ 3850 7600
 $Comp
 L Device:LED D?
@@ -1489,6 +1471,7 @@ Wire Wire Line
 	900  7300 1050 7300
 Wire Wire Line
 	700  7300 900  7300
+Connection ~ 1850 7900
 Wire Bus Line
 	7900 750  7900 2400
 Wire Bus Line
