@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 21
+Sheet 1 20
 Title "Turtle TTL"
 Date ""
 Rev ""
