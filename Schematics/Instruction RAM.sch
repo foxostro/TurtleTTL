@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 19 24
+Sheet 12 24
 Title "Instruction RAM"
 Date ""
 Rev ""
@@ -365,11 +365,7 @@ Entry Wire Line
 Wire Bus Line
 	1300 2350 1300 2450
 Connection ~ 8300 3450
-Wire Bus Line
-	6300 1950 6300 3600
 Connection ~ 6300 3600
-Wire Bus Line
-	6300 3600 6300 5800
 Wire Wire Line
 	1400 2650 2100 2650
 Text GLabel 6800 2750 0    50   Input ~ 0
@@ -726,37 +722,41 @@ Programs must take care to never read or write to Instruction RAM\nwhile the pro
 Wire Wire Line
 	6100 4000 3700 4000
 Wire Wire Line
-	5800 5800 6800 5800
-Wire Wire Line
-	5800 5200 6800 5200
-Wire Wire Line
 	5800 5900 6800 5900
 Wire Wire Line
-	5800 5700 6800 5700
-Wire Wire Line
-	5800 5600 6800 5600
-Wire Wire Line
-	5800 5500 6800 5500
-Wire Wire Line
-	5800 5400 6800 5400
-Wire Wire Line
-	5800 5300 6800 5300
-Wire Wire Line
-	5800 2550 6800 2550
-Wire Wire Line
-	5800 2450 6800 2450
-Wire Wire Line
-	5800 2350 6800 2350
-Wire Wire Line
-	5800 2250 6800 2250
-Wire Wire Line
-	5800 2150 6800 2150
-Wire Wire Line
-	5800 2050 6800 2050
+	5800 1850 6800 1850
 Wire Wire Line
 	5800 1950 6800 1950
 Wire Wire Line
-	5800 1850 6800 1850
+	5800 2050 6800 2050
+Wire Wire Line
+	5800 2150 6800 2150
+Wire Wire Line
+	5800 2250 6800 2250
+Wire Wire Line
+	5800 2350 6800 2350
+Wire Wire Line
+	5800 2450 6800 2450
+Wire Wire Line
+	5800 2550 6800 2550
+Wire Wire Line
+	5800 5200 6800 5200
+Wire Wire Line
+	5800 5300 6800 5300
+Wire Wire Line
+	5800 5400 6800 5400
+Wire Wire Line
+	5800 5500 6800 5500
+Wire Wire Line
+	5800 5600 6800 5600
+Wire Wire Line
+	5800 5800 6800 5800
+Wire Wire Line
+	5800 5700 6800 5700
+Wire Bus Line
+	6300 1950 6300 3600
+Wire Bus Line
+	6300 3600 6300 5800
 Wire Bus Line
 	8300 3450 8300 5800
 Wire Bus Line

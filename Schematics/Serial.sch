@@ -4,8 +4,8 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 16 24
-Title ""
+Sheet 4 24
+Title "Serial I/O"
 Date ""
 Rev ""
 Comp ""

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 8 24
+Sheet 23 24
 Title "ALU"
 Date ""
 Rev ""
@@ -471,13 +471,13 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 5900 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	4100 1550 4200 1650
+	4100 1550 4200 1450
 Entry Wire Line
-	4100 1650 4200 1750
+	4100 1650 4200 1550
 Entry Wire Line
-	4100 1750 4200 1850
+	4100 1750 4200 1650
 Entry Wire Line
-	4100 1850 4200 1950
+	4100 1850 4200 1750
 Wire Wire Line
 	4100 1550 3650 1550
 Wire Wire Line
@@ -487,13 +487,13 @@ Wire Wire Line
 Wire Wire Line
 	3650 1850 4100 1850
 Entry Wire Line
-	4100 4150 4200 4250
+	4100 4150 4200 4050
 Entry Wire Line
-	4100 4250 4200 4350
+	4100 4250 4200 4150
 Entry Wire Line
-	4100 4350 4200 4450
+	4100 4350 4200 4250
 Entry Wire Line
-	4100 4450 4200 4550
+	4100 4450 4200 4350
 Wire Wire Line
 	4100 4150 3650 4150
 Wire Wire Line
@@ -1151,7 +1151,7 @@ Wire Bus Line
 Wire Bus Line
 	4850 1150 4850 1950
 Wire Bus Line
-	4200 1150 4200 4550
+	4200 1150 4200 4350
 Wire Bus Line
 	6900 4150 9400 4150
 Wire Bus Line

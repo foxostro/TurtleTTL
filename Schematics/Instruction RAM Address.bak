@@ -4,8 +4,8 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 24
-Title ""
+Sheet 11 24
+Title "Instruction RAM Address"
 Date ""
 Rev ""
 Comp ""
