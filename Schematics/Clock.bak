@@ -102,17 +102,6 @@ F 3 "~" H 2450 3700 50  0001 C CNN
 	1    2450 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_SPST SW?
-U 1 1 5D394C6A
-P 650 2850
-F 0 "SW?" V 604 2948 50  0000 L CNN
-F 1 "SW_SPST" V 695 2948 50  0000 L CNN
-F 2 "" H 650 2850 50  0001 C CNN
-F 3 "~" H 650 2850 50  0001 C CNN
-	1    650  2850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	650  3050 1350 3050
 $Comp
@@ -818,4 +807,17 @@ F 3 "~" H 650 2450 50  0001 C CNN
 $EndComp
 Text Notes 950  4150 0    50   ~ 0
 TODO: What should connect to Q?
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D843F11
+P 650 2850
+F 0 "SW?" V 696 2802 50  0000 R CNN
+F 1 "SW_Push" V 605 2802 50  0000 R CNN
+F 2 "" H 650 3050 50  0001 C CNN
+F 3 "~" H 650 3050 50  0001 C CNN
+	1    650  2850
+	0    -1   -1   0   
+$EndComp
+Text Notes 500  3200 0    50   ~ 0
+Manual Clock
 $EndSCHEMATC
