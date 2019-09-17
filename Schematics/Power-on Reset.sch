@@ -101,19 +101,6 @@ F 3 "~" H 3100 2550 50  0001 C CNN
 	1    3100 2550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_SPST SW?
-U 1 1 5D9A0601
-P 1300 1700
-AR Path="/5D2C0720/5D9A0601" Ref="SW?"  Part="1" 
-AR Path="/5D2C0761/5D9A0601" Ref="SW?"  Part="1" 
-F 0 "SW?" V 1254 1798 50  0000 L CNN
-F 1 "SW_SPST" V 1345 1798 50  0000 L CNN
-F 2 "" H 1300 1700 50  0001 C CNN
-F 3 "~" H 1300 1700 50  0001 C CNN
-	1    1300 1700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1300 1900 2000 1900
 Wire Wire Line
@@ -385,7 +372,7 @@ Text GLabel 9050 2850 2    50   Output ~ 0
 ControlClock
 Wire Wire Line
 	6800 2850 9050 2850
-Text Notes 1000 1750 0    50   ~ 0
+Text Notes 950  1750 0    50   ~ 0
 Reset
 Wire Wire Line
 	2500 3700 2500 3900
@@ -556,4 +543,15 @@ F 3 "" H 2700 7500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 7500 1900 7500
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D8069CB
+P 1300 1700
+F 0 "SW?" V 1346 1652 50  0000 R CNN
+F 1 "SW_Push" V 1255 1652 50  0000 R CNN
+F 2 "" H 1300 1900 50  0001 C CNN
+F 3 "~" H 1300 1900 50  0001 C CNN
+	1    1300 1700
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
