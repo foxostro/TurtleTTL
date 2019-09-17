@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 20 24
+Sheet 16 24
 Title ""
 Date ""
 Rev ""
@@ -70,14 +70,12 @@ NoConn ~ 6650 4400
 NoConn ~ 6650 4500
 NoConn ~ 6650 4600
 NoConn ~ 6650 4700
-Text GLabel 4150 2400 0    50   Input ~ 0
+Text GLabel 4050 2400 0    50   Input ~ 0
 RegisterClock
 Wire Wire Line
 	6650 4000 6750 4000
 Wire Wire Line
 	6750 4000 6750 2400
-Wire Wire Line
-	6750 2400 4150 2400
 NoConn ~ 6650 3400
 NoConn ~ 6650 3500
 Text GLabel 4050 2750 0    50   Input ~ 0
@@ -158,6 +156,8 @@ Text Label 5000 4400 0    50   ~ 0
 DataBus6
 Text Label 5000 4500 0    50   ~ 0
 DataBus7
+Wire Wire Line
+	4050 2400 6750 2400
 Wire Bus Line
 	4850 3900 4850 4600
 $EndSCHEMATC
