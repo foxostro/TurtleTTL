@@ -923,8 +923,6 @@ Wire Wire Line
 Wire Wire Line
 	6700 2200 6150 2200
 Wire Wire Line
-	6150 2100 6700 2100
-Wire Wire Line
 	6700 2900 6450 2900
 Wire Wire Line
 	7200 1800 7200 1500
@@ -1130,6 +1128,8 @@ Wire Wire Line
 	2400 6050 2550 6050
 Wire Wire Line
 	2200 6050 2400 6050
+Wire Wire Line
+	6700 2100 6150 2100
 Wire Bus Line
 	8000 1700 8000 2300
 Wire Bus Line
