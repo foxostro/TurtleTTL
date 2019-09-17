@@ -70,17 +70,6 @@ F 3 "74xx\\74LS393.pdf" H 7950 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Timer:LM555 U66
-U 1 1 5D38F3A1
-P 2000 4150
-F 0 "U66" H 1800 4650 50  0000 C CNN
-F 1 "LM555" H 1800 4550 50  0000 C CNN
-F 2 "" H 2000 4150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 2000 4150 50  0001 C CNN
-	1    2000 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C56
 U 1 1 5D393902
 P 1050 4600
@@ -92,14 +81,14 @@ F 3 "~" H 1050 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C57
+L Device:CP1 C57
 U 1 1 5D394118
-P 2600 4600
-F 0 "C57" H 2692 4646 50  0000 L CNN
-F 1 "10µF" H 2692 4555 50  0000 L CNN
-F 2 "" H 2600 4600 50  0001 C CNN
-F 3 "~" H 2600 4600 50  0001 C CNN
-	1    2600 4600
+P 2600 4550
+F 0 "C57" H 2692 4596 50  0000 L CNN
+F 1 "10µF" H 2692 4505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2600 4550 50  0001 C CNN
+F 3 "~" H 2600 4550 50  0001 C CNN
+	1    2600 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -139,9 +128,6 @@ Wire Wire Line
 Wire Wire Line
 	2000 3150 2600 3150
 Connection ~ 2000 3150
-Wire Wire Line
-	2600 4350 2600 4500
-Connection ~ 2600 4350
 Wire Wire Line
 	1700 1150 1700 800 
 Wire Wire Line
@@ -823,4 +809,18 @@ Wire Wire Line
 Connection ~ 4600 6700
 Wire Wire Line
 	4600 6700 5050 6700
+$Comp
+L Timer:LM555 U66
+U 1 1 5D38F3A1
+P 2000 4150
+F 0 "U66" H 1800 4650 50  0000 C CNN
+F 1 "LM555" H 1800 4550 50  0000 C CNN
+F 2 "" H 2000 4150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 2000 4150 50  0001 C CNN
+	1    2000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4350 2600 4400
+Connection ~ 2600 4350
 $EndSCHEMATC
