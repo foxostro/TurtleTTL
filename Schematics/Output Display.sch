@@ -11,7 +11,7 @@ Rev ""
 Comp ""
 Comment1 ""
 Comment2 "are directed to the output display when device zero is selected via the D register."
-Comment3 "The output display is assigned to device slot zero. Reads and writes to the M register"
+Comment3 "The output display is assigned to device slot one. Reads and writes to the M register"
 Comment4 "Display a number in a four character LED display."
 $EndDescr
 Entry Wire Line
@@ -762,6 +762,8 @@ Wire Wire Line
 Wire Wire Line
 	3600 6400 3750 6400
 Connection ~ 3600 6200
+Text Label 1400 6200 0    50   ~ 0
+DeviceSelect1
 Wire Wire Line
 	5600 5300 6400 5300
 Wire Wire Line
@@ -784,6 +786,4 @@ Wire Bus Line
 	7900 4200 7900 5200
 Wire Bus Line
 	6050 1850 6050 5200
-Text Label 1400 6200 0    50   ~ 0
-DeviceSelect1
 $EndSCHEMATC
