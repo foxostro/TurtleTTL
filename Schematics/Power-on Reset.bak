@@ -44,7 +44,7 @@ AR Path="/5D2C0720/5D9A05E3" Ref="U?"  Part="1"
 AR Path="/5D2C0761/5D9A05E3" Ref="U75"  Part="1" 
 F 0 "U75" H 2300 2600 50  0000 C CNN
 F 1 "LM555" H 2300 2500 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 2500 2100 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2500 2100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 2500 2100 50  0001 C CNN
 	1    2500 2100
 	1    0    0    -1  
