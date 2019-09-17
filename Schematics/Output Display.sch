@@ -759,7 +759,7 @@ U 1 1 5D2AC6ED
 P 6700 1650
 F 0 "U6" H 6400 2850 50  0000 C CNN
 F 1 "GLS29EE010" H 6400 2750 50  0000 C CNN
-F 2 "Package_DIP:DIP-24_W15.24mm_Socket" H 6700 1650 50  0001 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 6700 1650 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6700 1650 50  0001 C CNN
 	1    6700 1650
 	1    0    0    -1  
