@@ -377,7 +377,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS151" H 4150 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 6700 5050 6700
+	4150 6700 4600 6700
 Wire Wire Line
 	5050 5700 5050 5850
 Wire Wire Line
@@ -422,15 +422,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5D91A0CA
-P 4150 6700
-F 0 "#PWR?" H 4150 6450 50  0001 C CNN
-F 1 "GND" H 4155 6527 50  0000 C CNN
-F 2 "" H 4150 6700 50  0001 C CNN
-F 3 "" H 4150 6700 50  0001 C CNN
-	1    4150 6700
+P 4600 6700
+F 0 "#PWR?" H 4600 6450 50  0001 C CNN
+F 1 "GND" H 4605 6527 50  0000 C CNN
+F 2 "" H 4600 6700 50  0001 C CNN
+F 3 "" H 4600 6700 50  0001 C CNN
+	1    4600 6700
 	1    0    0    -1  
 $EndComp
-Connection ~ 4150 6700
 Wire Wire Line
 	3050 1750 3050 4000
 Wire Wire Line
@@ -821,4 +820,7 @@ Wire Wire Line
 	2500 3950 2950 3950
 Wire Wire Line
 	2950 5600 3650 5600
+Connection ~ 4600 6700
+Wire Wire Line
+	4600 6700 5050 6700
 $EndSCHEMATC

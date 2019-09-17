@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 "An Arduino Nano serves as a serial interface module."
 $EndDescr
 $Comp
-L MCU_Module:Arduino_Nano_v3.x A?
+L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5D7E59B1
 P 6150 4000
-F 0 "A?" H 5550 5100 50  0000 C CNN
+F 0 "A1" H 5550 5100 50  0000 C CNN
 F 1 "Arduino_Nano_v3.x" H 5600 5000 50  0000 C CNN
 F 2 "Module:Arduino_Nano" H 6300 3050 50  0001 L CNN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6150 3000 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6150 3000 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0122
 U 1 1 5D7E6F02
 P 6050 3000
-F 0 "#PWR?" H 6050 2850 50  0001 C CNN
+F 0 "#PWR0122" H 6050 2850 50  0001 C CNN
 F 1 "VCC" H 6067 3173 50  0000 C CNN
 F 2 "" H 6050 3000 50  0001 C CNN
 F 3 "" H 6050 3000 50  0001 C CNN
@@ -39,10 +39,10 @@ $EndComp
 NoConn ~ 6250 3000
 NoConn ~ 6350 3000
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0123
 U 1 1 5D7E7F51
 P 6200 5100
-F 0 "#PWR?" H 6200 4850 50  0001 C CNN
+F 0 "#PWR0123" H 6200 4850 50  0001 C CNN
 F 1 "GND" H 6205 4927 50  0000 C CNN
 F 2 "" H 6200 5100 50  0001 C CNN
 F 3 "" H 6200 5100 50  0001 C CNN
