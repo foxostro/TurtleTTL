@@ -721,10 +721,6 @@ Text Notes 7600 1000 0    50   ~ 0
 Programs must take care to never read or write to Instruction RAM\nwhile the program counter is in the upper half of the address space.\nThis will surely lead to unexpected and incorrect operation.
 Wire Wire Line
 	6100 4000 3700 4000
-Wire Bus Line
-	6300 1950 6300 3600
-Wire Bus Line
-	6300 3600 6300 5800
 Wire Wire Line
 	5800 5900 6800 5900
 Wire Wire Line
@@ -757,6 +753,10 @@ Wire Wire Line
 	5800 5800 6800 5800
 Wire Wire Line
 	5800 5700 6800 5700
+Wire Bus Line
+	6300 1950 6300 3600
+Wire Bus Line
+	6300 3600 6300 5800
 Wire Bus Line
 	8300 3450 8300 5800
 Wire Bus Line
