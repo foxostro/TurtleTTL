@@ -15,10 +15,10 @@ Comment3 "A button is also provided to manually reset the machine."
 Comment4 "The MCP100 provides Power-on Reset functionality."
 $EndDescr
 $Comp
-L Power_Supervisor:MCP100-450D U74
+L Power_Supervisor:MCP100-450D U71
 U 1 1 5D20BFD7
 P 2600 4300
-F 0 "U74" H 2371 4346 50  0000 R CNN
+F 0 "U71" H 2371 4346 50  0000 R CNN
 F 1 "MCP100-450D" H 2371 4255 50  0000 R CNN
 F 2 "Package_TO_SOT_THT:TO-92" H 2200 4450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11187f.pdf" H 2300 4550 50  0001 C CNN
@@ -41,8 +41,8 @@ L Timer:LM555 U?
 U 1 1 5D9A05E3
 P 2500 2100
 AR Path="/5D2C0720/5D9A05E3" Ref="U?"  Part="1" 
-AR Path="/5D2C0761/5D9A05E3" Ref="U73"  Part="1" 
-F 0 "U73" H 2300 2600 50  0000 C CNN
+AR Path="/5D2C0761/5D9A05E3" Ref="U70"  Part="1" 
+F 0 "U70" H 2300 2600 50  0000 C CNN
 F 1 "LM555" H 2300 2500 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 2500 2100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 2500 2100 50  0001 C CNN
@@ -179,10 +179,10 @@ Wire Wire Line
 Wire Wire Line
 	2500 2700 2500 2800
 $Comp
-L 74xx:74LS04 U75
+L 74xx:74LS04 U72
 U 1 1 5D9AC574
 P 3800 1900
-F 0 "U75" H 3800 2217 50  0000 C CNN
+F 0 "U72" H 3800 2217 50  0000 C CNN
 F 1 "74LS04" H 3800 2126 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 3800 1900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3800 1900 50  0001 C CNN
@@ -190,10 +190,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3800 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS08 U76
+L 74xx:74LS08 U73
 U 1 1 5D9AD4D0
 P 4650 2000
-F 0 "U76" H 4650 2325 50  0000 C CNN
+F 0 "U73" H 4650 2325 50  0000 C CNN
 F 1 "74LS08" H 4650 2234 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 4650 2000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4650 2000 50  0001 C CNN
@@ -252,10 +252,10 @@ Text GLabel 9050 2000 2    50   Output ~ 0
 Wire Wire Line
 	4950 2000 5000 2000
 $Comp
-L 74xx:74LS157 U77
+L 74xx:74LS157 U74
 U 1 1 5D9BAEF9
 P 6300 3450
-F 0 "U77" H 6500 4350 50  0000 C CNN
+F 0 "U74" H 6500 4350 50  0000 C CNN
 F 1 "74LS157" H 6500 4250 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 6300 3450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 6300 3450 50  0001 C CNN
