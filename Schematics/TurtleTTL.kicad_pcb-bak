@@ -4206,7 +4206,7 @@
   )
 
   (module Package_TO_SOT_THT:TO-92 (layer F.Cu) (tedit 5A279852) (tstamp 5D828A8D)
-    (at 460.5655 -2.3495)
+    (at 460.5655 -4.8895)
     (descr "TO-92 leads molded, narrow, drill 0.75mm (see NXP sot054_po.pdf)")
     (tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
     (path /5D2C0761/5D20BFD7)
@@ -4243,7 +4243,7 @@
   )
 
   (module Package_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D828A71)
-    (at 458.1525 12.065)
+    (at 439.42 5.08)
     (descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0761/5D9A05E3)
@@ -5596,7 +5596,7 @@
   )
 
   (module Capacitor_THT:CP_Radial_D5.0mm_P2.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D826712)
-    (at 525.78 -5.08)
+    (at 563.88 -7.62)
     (descr "CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor")
     (path /5D2C0761/5D8FC81C)
@@ -7101,7 +7101,7 @@
   )
 
   (module Button_Switch_THT:SW_PUSH_6mm_H5mm (layer F.Cu) (tedit 5A02FE31) (tstamp 5D827F26)
-    (at 437.7055 14.859)
+    (at 462.28 12.7)
     (descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=5mm")
     (tags "tact sw push 6mm")
     (path /5D2C0761/5D8069CB)
@@ -9628,7 +9628,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D81FD17)
-    (at 474.9165 4.3815 180)
+    (at 474.9165 1.8415 180)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D2C0761/5D9B683B)
@@ -13359,7 +13359,7 @@
   )
 
   (module Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal (layer F.Cu) (tedit 5B0886BD) (tstamp 5D827169)
-    (at 527.05 1.27)
+    (at 565.15 -1.27)
     (descr "Barrel Jack, 2.0mm ID, 5.5mm OD, 24V, 8A, no switch, https://www.cui.com/product/resource/pj-063ah.pdf")
     (tags "barrel jack cui dc power")
     (path /5D2C0761/5D812A8D)
@@ -15206,7 +15206,7 @@
   )
 
   (module LED_THT:LED_D5.0mm (layer F.Cu) (tedit 5995936A) (tstamp 5D826DC8)
-    (at 466.9155 -2.3495)
+    (at 466.9155 -4.8895)
     (descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
     (tags "LED diameter 5.0mm 2 pins")
     (path /5D2C0761/5D9B6841)
@@ -18101,7 +18101,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D826790)
-    (at 459.2955 4.0005)
+    (at 459.2955 1.4605)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0761/5D9F0A2F)
