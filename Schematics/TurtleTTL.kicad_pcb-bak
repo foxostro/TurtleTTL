@@ -975,7 +975,7 @@
   )
 
   (module Package_DIP:DIP-16_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D828A0B)
-    (at 471.94 -52.96)
+    (at 454.66 -66.04)
     (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D3FEA17)
@@ -1043,7 +1043,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8289C5)
-    (at 461.09 -58.11)
+    (at 502.92 -66.04)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D3898BC)
@@ -1105,7 +1105,7 @@
   )
 
   (module Package_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8289A3)
-    (at 483.34 -72.36)
+    (at 429.26 -66.04)
     (descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D38F3A1)
@@ -4295,7 +4295,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8289E9)
-    (at 450.24 -58.11)
+    (at 465.48 -65.73)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D7C9FC5)
@@ -5888,7 +5888,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D828A4F)
-    (at 494.19 -72.36)
+    (at 477.52 -66.04)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D38E544)
@@ -5946,7 +5946,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D828A2D)
-    (at 482.79 -52.96)
+    (at 490.22 -66.04)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D38C231)
@@ -7152,7 +7152,7 @@
   )
 
   (module Button_Switch_THT:SW_PUSH_6mm_H5mm (layer F.Cu) (tedit 5A02FE31) (tstamp 5D827F07)
-    (at 494.04 -53.01)
+    (at 419.1 -53.34)
     (descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=5mm")
     (tags "tact sw push 6mm")
     (path /5D2C0720/5D843F11)
@@ -9751,7 +9751,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D827951)
-    (at 450.19 -36.26)
+    (at 419.1 -68.58)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D2C0720/5D43460F)
@@ -9792,7 +9792,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D82793A)
-    (at 460.96 -36.26)
+    (at 441.96 -66.04)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D2C0720/5D39244B)
@@ -9833,7 +9833,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D827923)
-    (at 471.73 -33.61)
+    (at 419.1 -73.66)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D2C0720/5D39306C)
@@ -15242,7 +15242,7 @@
   )
 
   (module LED_THT:LED_D5.0mm (layer F.Cu) (tedit 5995936A) (tstamp 5D826DB6)
-    (at 502.64 -40.91)
+    (at 421.64 -60.96)
     (descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
     (tags "LED diameter 5.0mm 2 pins")
     (path /5D2C0720/5D42B044)
@@ -18374,7 +18374,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8266E8)
-    (at 515.84 -57.51)
+    (at 505.46 -73.66)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D9721F3)
@@ -18413,7 +18413,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8266D3)
-    (at 504.14 -46.41)
+    (at 480.06 -73.66)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D93673D)
@@ -18452,7 +18452,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8266BE)
-    (at 512.29 -53.31)
+    (at 520.7 -71.12)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D9721ED)
@@ -18491,7 +18491,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8266A9)
-    (at 482.5 -33.91)
+    (at 431.8 -73.66)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D936485)
@@ -18530,7 +18530,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D826694)
-    (at 504.14 -53.31)
+    (at 441.96 -73.66)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D9721E7)
@@ -18569,7 +18569,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D82667F)
-    (at 493.59 -44.76)
+    (at 454.66 -73.66)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D935F32)
@@ -18608,7 +18608,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D82666A)
-    (at 515.84 -60.96)
+    (at 492.76 -73.66)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D9721E1)
@@ -18647,7 +18647,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D826655)
-    (at 493.59 -41.31)
+    (at 556.26 -68.58)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D935B94)
@@ -18686,7 +18686,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D826640)
-    (at 504.14 -49.86)
+    (at 467.36 -73.66)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D9721DB)
@@ -18725,7 +18725,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D82662B)
-    (at 490.65 -33.91)
+    (at 554.15 -59.31)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D934C27)
@@ -18764,7 +18764,7 @@
   )
 
   (module Capacitor_THT:CP_Radial_D5.0mm_P2.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D826616)
-    (at 513.079775 -48.31)
+    (at 444.5 -58.42)
     (descr "CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor")
     (path /5D2C0720/5D394118)
@@ -18913,7 +18913,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D826593)
-    (at 493.59 -37.86)
+    (at 557.09 -63.26)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D393902)
@@ -21189,7 +21189,7 @@
   )
 
   (module Oscillator:Oscillator_DIP-14 (layer F.Cu) (tedit 58CD3344) (tstamp 5D8260BE)
-    (at 452.12 -63.5)
+    (at 515.62 -55.88)
     (descr "Oscillator, DIP14, http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf")
     (tags oscillator)
     (path /5D2C0720/5D387BCA)
