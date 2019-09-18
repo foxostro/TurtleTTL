@@ -141,27 +141,27 @@ Wire Wire Line
 Wire Wire Line
 	9650 4800 9450 4800
 Wire Bus Line
-	9750 3900 10300 3900
+	9750 3900 10100 3900
 Text Label 5000 4100 2    50   ~ 0
-IR00
+IR0
 Text Label 5000 4200 2    50   ~ 0
-IR01
+IR1
 Text Label 5000 4300 2    50   ~ 0
-IR02
+IR2
 Text Label 5000 4400 2    50   ~ 0
-IR03
+IR3
 Text Label 5000 4500 2    50   ~ 0
-IR04
+IR4
 Text Label 5000 4600 2    50   ~ 0
-IR05
+IR5
 Text Label 5000 4700 2    50   ~ 0
-IR06
+IR6
 Text Label 5000 4800 2    50   ~ 0
-IR07
+IR7
 Text Label 9600 4100 2    50   ~ 0
-IR08
+IR8
 Text Label 9600 4200 2    50   ~ 0
-IR09
+IR9
 Text Label 9600 4300 2    50   ~ 0
 IR10
 Text Label 9600 4400 2    50   ~ 0
@@ -317,12 +317,12 @@ F 3 "" H 4350 3100 50  0001 C CNN
 	1    4350 3100
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 3900 2    50   Output ~ 0
-IR
-Text GLabel 800  600  0    50   Input ~ 0
-IROM
-Text GLabel 800  750  0    50   Input ~ 0
-IRAM
+Text GLabel 10100 3900 2    50   Output ~ 0
+IR[0..15]
+Text GLabel 1000 600  0    50   Input ~ 0
+IROM[0..15]
+Text GLabel 1000 750  0    50   Input ~ 0
+IRAM[0..15]
 Entry Wire Line
 	1300 1500 1200 1400
 Entry Wire Line
@@ -340,15 +340,15 @@ Wire Wire Line
 Wire Wire Line
 	1600 1500 1300 1500
 Text Label 1300 1500 0    50   ~ 0
-IROM00
+IROM0
 Text Label 1300 1800 0    50   ~ 0
-IROM01
+IROM1
 Text Label 1300 2100 0    50   ~ 0
-IROM02
+IROM2
 Text Label 1300 2400 0    50   ~ 0
-IROM03
+IROM3
 Wire Bus Line
-	1200 600  800  600 
+	1200 600  1000 600 
 Entry Wire Line
 	1050 1500 1150 1600
 Entry Wire Line
@@ -366,15 +366,15 @@ Wire Wire Line
 Wire Wire Line
 	1600 1600 1150 1600
 Text Label 1300 1600 0    50   ~ 0
-IRAM00
+IRAM0
 Text Label 1300 1900 0    50   ~ 0
-IRAM01
+IRAM1
 Text Label 1300 2200 0    50   ~ 0
-IRAM02
+IRAM2
 Text Label 1300 2500 0    50   ~ 0
-IRAM03
+IRAM3
 Wire Bus Line
-	800  750  1050 750 
+	1000 750  1050 750 
 $Comp
 L 74xx:74LS157 U?
 U 1 1 5D24114A
@@ -388,16 +388,12 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 4350 2100 50  0001 C CNN
 	1    4350 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 800  900  0    50   Input ~ 0
-PC
-Wire Bus Line
-	800  900  900  900 
-Wire Bus Line
-	900  900  900  2600
+Text GLabel 950  3050 0    50   Input ~ 0
+PC[0..15]
 Entry Wire Line
-	900  2600 1000 2700
+	950  2600 1050 2700
 Wire Wire Line
-	1000 2700 1600 2700
+	1050 2700 1600 2700
 Text Label 1400 2700 0    50   ~ 0
 PC15
 Entry Wire Line
@@ -417,13 +413,13 @@ Wire Wire Line
 Wire Wire Line
 	3850 1500 3550 1500
 Text Label 3550 1500 0    50   ~ 0
-IROM04
+IROM4
 Text Label 3550 1800 0    50   ~ 0
-IROM05
+IROM5
 Text Label 3550 2100 0    50   ~ 0
-IROM06
+IROM6
 Text Label 3550 2400 0    50   ~ 0
-IROM07
+IROM7
 Entry Wire Line
 	3300 1500 3400 1600
 Entry Wire Line
@@ -441,13 +437,13 @@ Wire Wire Line
 Wire Wire Line
 	3850 1600 3400 1600
 Text Label 3550 1600 0    50   ~ 0
-IRAM04
+IRAM4
 Text Label 3550 1900 0    50   ~ 0
-IRAM05
+IRAM5
 Text Label 3550 2200 0    50   ~ 0
-IRAM06
+IRAM6
 Text Label 3550 2500 0    50   ~ 0
-IRAM07
+IRAM7
 Wire Bus Line
 	3150 900  3150 2600
 Entry Wire Line
@@ -461,8 +457,7 @@ Wire Bus Line
 	3300 750  1050 750 
 Connection ~ 1050 750 
 Wire Bus Line
-	3150 900  900  900 
-Connection ~ 900  900 
+	3150 900  950  900 
 Text Label 3650 2700 0    50   ~ 0
 PC15
 $Comp
@@ -534,9 +529,9 @@ Wire Wire Line
 Wire Wire Line
 	6150 1500 5850 1500
 Text Label 5850 1500 0    50   ~ 0
-IROM08
+IROM8
 Text Label 5850 1800 0    50   ~ 0
-IROM09
+IROM9
 Text Label 5850 2100 0    50   ~ 0
 IROM10
 Text Label 5850 2400 0    50   ~ 0
@@ -558,9 +553,9 @@ Wire Wire Line
 Wire Wire Line
 	6150 1600 5700 1600
 Text Label 5850 1600 0    50   ~ 0
-IRAM08
+IRAM8
 Text Label 5850 1900 0    50   ~ 0
-IRAM09
+IRAM9
 Text Label 5850 2200 0    50   ~ 0
 IRAM10
 Text Label 5850 2500 0    50   ~ 0
@@ -1546,25 +1541,25 @@ Wire Wire Line
 Wire Wire Line
 	5950 6450 5950 6250
 Text Label 5950 6350 0    50   ~ 0
-IR00
+IR0
 Text Label 5600 6350 0    50   ~ 0
-IR01
+IR1
 Text Label 5250 6350 0    50   ~ 0
-IR02
+IR2
 Text Label 4900 6350 0    50   ~ 0
-IR03
+IR3
 Text Label 4550 6350 0    50   ~ 0
-IR04
+IR4
 Text Label 4200 6350 0    50   ~ 0
-IR05
+IR5
 Text Label 3850 6350 0    50   ~ 0
-IR06
+IR6
 Text Label 3500 6350 0    50   ~ 0
-IR07
+IR7
 Text Label 3150 6350 0    50   ~ 0
-IR08
+IR8
 Text Label 2800 6350 0    50   ~ 0
-IR09
+IR9
 Text Label 2450 6350 0    50   ~ 0
 IR10
 Text Label 2100 6350 0    50   ~ 0
@@ -1602,6 +1597,14 @@ Wire Wire Line
 Wire Wire Line
 	700  7300 900  7300
 Connection ~ 1850 7900
+Wire Bus Line
+	950  2850 1100 2850
+Wire Bus Line
+	1100 2850 1100 3050
+Wire Bus Line
+	950  3050 1100 3050
+Wire Bus Line
+	950  900  950  2850
 Wire Bus Line
 	7900 750  7900 2400
 Wire Bus Line

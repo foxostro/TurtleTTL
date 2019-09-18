@@ -94,25 +94,25 @@ Entry Wire Line
 Entry Wire Line
 	5500 3600 5600 3500
 Text Label 5500 2100 2    50   ~ 0
-PC_IF00
+PC_IF0
 Text Label 5500 2200 2    50   ~ 0
-PC_IF01
+PC_IF1
 Text Label 5500 2300 2    50   ~ 0
-PC_IF02
+PC_IF2
 Text Label 5500 2400 2    50   ~ 0
-PC_IF03
+PC_IF3
 Text Label 5500 2500 2    50   ~ 0
-PC_IF04
+PC_IF4
 Text Label 5500 2600 2    50   ~ 0
-PC_IF05
+PC_IF5
 Text Label 5500 2700 2    50   ~ 0
-PC_IF06
+PC_IF6
 Text Label 5500 2800 2    50   ~ 0
-PC_IF07
+PC_IF7
 Text Label 5500 2900 2    50   ~ 0
-PC_IF08
+PC_IF8
 Text Label 5500 3000 2    50   ~ 0
-PC_IF09
+PC_IF9
 Text Label 5500 3100 2    50   ~ 0
 PC_IF10
 Text Label 5500 3200 2    50   ~ 0
@@ -200,17 +200,17 @@ Wire Wire Line
 Wire Wire Line
 	7450 2800 7150 2800
 Text Label 7450 2100 2    50   ~ 0
-IROM08
+IROM8
 Text Label 7450 2200 2    50   ~ 0
-IROM09
+IROM9
 Text Label 3900 2500 2    50   ~ 0
-IROM04
+IROM4
 Text Label 3900 2600 2    50   ~ 0
-IROM05
+IROM5
 Text Label 3900 2700 2    50   ~ 0
-IROM06
+IROM6
 Text Label 3900 2800 2    50   ~ 0
-IROM07
+IROM7
 Text Label 7450 2300 2    50   ~ 0
 IROM10
 Text Label 7450 2400 2    50   ~ 0
@@ -224,19 +224,19 @@ IROM14
 Text Label 7450 2800 2    50   ~ 0
 IROM15
 Text GLabel 8450 1700 2    50   Output ~ 0
-IROM
+IROM[0..15]
 Text GLabel 1500 1600 0    50   Input ~ 0
-PC_IF
+PC_IF[0..15]
 Wire Wire Line
 	6550 1500 5700 1500
 Text Label 3900 2400 2    50   ~ 0
-IROM03
+IROM3
 Text Label 3900 2300 2    50   ~ 0
-IROM02
+IROM2
 Text Label 3900 2200 2    50   ~ 0
-IROM01
+IROM1
 Text Label 3900 2100 2    50   ~ 0
-IROM00
+IROM0
 Wire Wire Line
 	3600 2100 3900 2100
 Wire Wire Line

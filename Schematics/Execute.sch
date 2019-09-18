@@ -15,9 +15,9 @@ Comment3 "a constant value."
 Comment4 "The lower eight bits of the instruction register can be expressed onto the data bus as"
 $EndDescr
 Text Label 8450 5200 1    50   ~ 0
-ControlWord00
+ControlWord0
 Text Label 8100 5200 1    50   ~ 0
-ControlWord01
+ControlWord1
 Text Notes 5150 6300 0    50   ~ 0
 Control Word LED Indicators
 Wire Wire Line
@@ -58,21 +58,21 @@ Wire Wire Line
 Wire Wire Line
 	3200 4650 3200 5250
 Text Label 7750 5200 1    50   ~ 0
-ControlWord02
+ControlWord2
 Text Label 7400 5200 1    50   ~ 0
-ControlWord03
+ControlWord3
 Text Label 7050 5200 1    50   ~ 0
-ControlWord04
+ControlWord4
 Text Label 6700 5200 1    50   ~ 0
-ControlWord05
+ControlWord5
 Text Label 6350 5200 1    50   ~ 0
-ControlWord06
+ControlWord6
 Text Label 6000 5200 1    50   ~ 0
-ControlWord07
+ControlWord7
 Text Label 5650 5200 1    50   ~ 0
-ControlWord08
+ControlWord8
 Text Label 5300 5200 1    50   ~ 0
-ControlWord09
+ControlWord9
 Text Label 4950 5200 1    50   ~ 0
 ControlWord10
 Text Label 4600 5200 1    50   ~ 0
@@ -86,7 +86,7 @@ ControlWord14
 Text Label 3200 5200 1    50   ~ 0
 ControlWord15
 Text GLabel 1500 4550 0    50   Input ~ 0
-ControlWord
+ControlWord[0..15]
 Entry Wire Line
 	8450 4650 8350 4550
 Entry Wire Line
@@ -793,10 +793,10 @@ Wire Wire Line
 	7250 2300 7650 2300
 Wire Wire Line
 	7650 2400 7250 2400
-Text GLabel 10050 2800 2    50   Output ~ 0
-DataBus
+Text GLabel 9900 2800 2    50   Output ~ 0
+DataBus[0..7]
 Wire Bus Line
-	10050 2800 7750 2800
+	9900 2800 7750 2800
 Text Label 7250 1700 0    50   ~ 0
 DataBus0
 Text Label 7250 1800 0    50   ~ 0
@@ -874,7 +874,7 @@ Entry Wire Line
 Entry Wire Line
 	5850 1600 5950 1700
 Text GLabel 1100 1050 0    50   Input ~ 0
-C
+C[0..7]
 Text Label 6050 1700 2    50   ~ 0
 C0
 Text Label 6050 1800 2    50   ~ 0
@@ -1312,9 +1312,9 @@ Entry Wire Line
 Entry Wire Line
 	8350 4550 8450 4450
 Text Label 8450 4400 1    50   ~ 0
-ControlWord00
+ControlWord0
 Text Label 8100 4400 1    50   ~ 0
-ControlWord01
+ControlWord1
 Wire Wire Line
 	8450 3800 8450 4450
 Wire Wire Line
@@ -1348,21 +1348,21 @@ Wire Wire Line
 Wire Wire Line
 	3200 3800 3200 4450
 Text Label 7750 4400 1    50   ~ 0
-ControlWord02
+ControlWord2
 Text Label 7400 4400 1    50   ~ 0
-ControlWord03
+ControlWord3
 Text Label 7050 4400 1    50   ~ 0
-ControlWord04
+ControlWord4
 Text Label 6700 4400 1    50   ~ 0
-ControlWord05
+ControlWord5
 Text Label 6350 4400 1    50   ~ 0
-ControlWord06
+ControlWord6
 Text Label 6000 4400 1    50   ~ 0
-ControlWord07
+ControlWord7
 Text Label 5650 4400 1    50   ~ 0
-ControlWord08
+ControlWord8
 Text Label 5300 4400 1    50   ~ 0
-ControlWord09
+ControlWord9
 Text Label 4950 4400 1    50   ~ 0
 ControlWord10
 Text Label 4600 4400 1    50   ~ 0

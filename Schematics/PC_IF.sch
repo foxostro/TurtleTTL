@@ -122,7 +122,7 @@ Connection ~ 3400 4050
 Wire Wire Line
 	3400 4050 3400 5100
 Text GLabel 2150 1350 0    50   Input ~ 0
-PC
+PC[0..15]
 Entry Wire Line
 	4550 2050 4450 1950
 Entry Wire Line
@@ -188,25 +188,25 @@ Wire Wire Line
 Wire Wire Line
 	4550 2050 5000 2050
 Text Label 4550 2050 0    50   ~ 0
-PC00
+PC0
 Text Label 4550 2150 0    50   ~ 0
-PC01
+PC1
 Text Label 4550 2250 0    50   ~ 0
-PC02
+PC2
 Text Label 4550 2350 0    50   ~ 0
-PC03
+PC3
 Text Label 4550 2450 0    50   ~ 0
-PC04
+PC4
 Text Label 4550 2550 0    50   ~ 0
-PC05
+PC5
 Text Label 4550 2650 0    50   ~ 0
-PC06
+PC6
 Text Label 4550 2750 0    50   ~ 0
-PC07
+PC7
 Text Label 4550 4200 0    50   ~ 0
-PC08
+PC8
 Text Label 4550 4300 0    50   ~ 0
-PC09
+PC9
 Text Label 4550 4400 0    50   ~ 0
 PC10
 Text Label 4550 4500 0    50   ~ 0
@@ -286,25 +286,25 @@ Wire Wire Line
 Wire Wire Line
 	6500 4900 6000 4900
 Text Label 6200 2050 0    50   ~ 0
-PC_IF00
+PC_IF0
 Text Label 6200 2150 0    50   ~ 0
-PC_IF01
+PC_IF1
 Text Label 6200 2250 0    50   ~ 0
-PC_IF02
+PC_IF2
 Text Label 6200 2350 0    50   ~ 0
-PC_IF03
+PC_IF3
 Text Label 6200 2450 0    50   ~ 0
-PC_IF04
+PC_IF4
 Text Label 6200 2550 0    50   ~ 0
-PC_IF05
+PC_IF5
 Text Label 6200 2650 0    50   ~ 0
-PC_IF06
+PC_IF6
 Text Label 6200 2750 0    50   ~ 0
-PC_IF07
+PC_IF7
 Text Label 6200 4200 0    50   ~ 0
-PC_IF08
+PC_IF8
 Text Label 6200 4300 0    50   ~ 0
-PC_IF09
+PC_IF9
 Text Label 6200 4400 0    50   ~ 0
 PC_IF10
 Text Label 6200 4500 0    50   ~ 0
@@ -318,7 +318,7 @@ PC_IF14
 Text Label 6200 4900 0    50   ~ 0
 PC_IF15
 Text GLabel 8850 5500 2    50   Output ~ 0
-PC_IF
+PC_IF[0..15]
 Wire Bus Line
 	8850 5500 6600 5500
 $Comp

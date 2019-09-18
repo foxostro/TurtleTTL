@@ -265,8 +265,8 @@ Text Label 8400 1900 1    50   ~ 0
 DataBus1
 Text Label 8750 1900 1    50   ~ 0
 DataBus0
-Text GLabel 1350 1450 0    50   Input ~ 0
-DataBus
+Text GLabel 1100 1450 0    50   Input ~ 0
+DataBus[0..7]
 Entry Wire Line
 	3800 1550 3700 1450
 Entry Wire Line
@@ -1052,8 +1052,8 @@ Entry Wire Line
 	8400 4450 8300 4350
 Entry Wire Line
 	8750 4450 8650 4350
-Text GLabel 1350 4350 0    50   Input ~ 0
-AddressBus
+Text GLabel 1300 4350 0    50   Input ~ 0
+AddressBus[0..15]
 Text Label 3500 5000 1    50   ~ 0
 AddressBus15
 Text Label 3850 5000 1    50   ~ 0
@@ -1067,25 +1067,25 @@ AddressBus11
 Text Label 5250 5000 1    50   ~ 0
 AddressBus10
 Text Label 5600 5000 1    50   ~ 0
-AddressBus09
+AddressBus9
 Text Label 5950 5000 1    50   ~ 0
-AddressBus08
+AddressBus8
 Text Label 6300 5000 1    50   ~ 0
-AddressBus07
+AddressBus7
 Text Label 6650 5000 1    50   ~ 0
-AddressBus06
+AddressBus6
 Text Label 7000 5000 1    50   ~ 0
-AddressBus05
+AddressBus5
 Text Label 7350 5000 1    50   ~ 0
-AddressBus04
+AddressBus4
 Text Label 7700 5000 1    50   ~ 0
-AddressBus03
+AddressBus3
 Text Label 8050 5000 1    50   ~ 0
-AddressBus02
+AddressBus2
 Text Label 8400 5000 1    50   ~ 0
-AddressBus01
+AddressBus1
 Text Label 8750 5000 1    50   ~ 0
-AddressBus00
+AddressBus0
 Wire Wire Line
 	3500 4450 3500 5050
 Wire Wire Line
@@ -1133,7 +1133,7 @@ Wire Wire Line
 Text Notes 5450 6100 0    50   ~ 0
 Address Bus LED Indicators
 Wire Bus Line
-	1350 1450 8650 1450
+	1100 1450 8650 1450
 Wire Bus Line
-	1350 4350 8650 4350
+	1300 4350 8650 4350
 $EndSCHEMATC

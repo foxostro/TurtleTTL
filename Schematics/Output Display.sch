@@ -469,7 +469,7 @@ Wire Wire Line
 Entry Wire Line
 	1400 6500 1500 6600
 Wire Bus Line
-	1100 6500 1400 6500
+	1350 6500 1400 6500
 Text GLabel 700  7000 0    50   Input ~ 0
 ~MO
 Wire Wire Line
@@ -487,8 +487,8 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3600 6900 50  0001 C CNN
 $EndComp
 Text GLabel 700  6200 0    50   Input ~ 0
 ~MI
-Text GLabel 1100 6500 0    50   Input ~ 0
-DeviceSelect
+Text GLabel 1350 6500 0    50   Input ~ 0
+DeviceSelect[0..15]
 Wire Wire Line
 	4050 6300 3900 6300
 Wire Wire Line
@@ -586,9 +586,9 @@ DataBus1
 Entry Wire Line
 	3600 4900 3700 5000
 Wire Bus Line
-	900  4700 3600 4700
-Text GLabel 900  4700 0    50   Input ~ 0
-DataBus
+	1100 4700 3600 4700
+Text GLabel 1100 4700 0    50   Input ~ 0
+DataBus[0..7]
 Entry Wire Line
 	3600 5600 3700 5700
 Entry Wire Line
@@ -720,9 +720,9 @@ DataBus1
 Entry Wire Line
 	7450 4900 7350 5000
 Wire Bus Line
-	10100 4600 7450 4600
-Text GLabel 10100 4600 2    50   Output ~ 0
-DataBus
+	9900 4600 7450 4600
+Text GLabel 9900 4600 2    50   Output ~ 0
+DataBus[0..7]
 Entry Wire Line
 	7450 5600 7350 5700
 Entry Wire Line

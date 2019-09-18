@@ -81,7 +81,7 @@ NoConn ~ 6650 3500
 Text GLabel 4050 2750 0    50   Input ~ 0
 ~MI
 Text GLabel 4050 4800 0    50   Input ~ 0
-AddressBus
+AddressBus[0..15]
 Wire Bus Line
 	4050 4800 4850 4800
 Entry Wire Line
@@ -89,9 +89,9 @@ Entry Wire Line
 Wire Wire Line
 	4950 4700 5650 4700
 Text Label 5000 4700 0    50   ~ 0
-AddressBus00
+AddressBus0
 Text GLabel 4050 4600 0    50   BiDi ~ 0
-DataBus
+DataBus[0..7]
 Wire Wire Line
 	5650 3600 4350 3600
 Wire Wire Line

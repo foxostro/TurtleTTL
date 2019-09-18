@@ -112,10 +112,10 @@ F 3 "" H 4850 4200 50  0001 C CNN
 	1    4850 4200
 	1    0    0    -1  
 $EndComp
-Text GLabel 1100 1700 0    50   Input ~ 0
-PC_IF
-Text GLabel 1100 1850 0    50   Input ~ 0
-AddressBus
+Text GLabel 1250 1700 0    50   Input ~ 0
+PC_IF[0..15]
+Text GLabel 1250 1850 0    50   Input ~ 0
+AddressBus[0..15]
 Entry Wire Line
 	1600 2600 1500 2500
 Entry Wire Line
@@ -133,15 +133,15 @@ Wire Wire Line
 Wire Wire Line
 	2100 2600 1600 2600
 Text Label 1600 2600 0    50   ~ 0
-PC_IF00
+PC_IF0
 Text Label 1600 2900 0    50   ~ 0
-PC_IF01
+PC_IF1
 Text Label 1600 3200 0    50   ~ 0
-PC_IF02
+PC_IF2
 Text Label 1600 3500 0    50   ~ 0
-PC_IF03
+PC_IF3
 Wire Bus Line
-	1500 1700 1100 1700
+	1500 1700 1250 1700
 Entry Wire Line
 	1450 2600 1550 2700
 Entry Wire Line
@@ -159,7 +159,7 @@ Wire Wire Line
 Wire Wire Line
 	2100 2700 1550 2700
 Wire Bus Line
-	1100 1850 1450 1850
+	1250 1850 1450 1850
 $Comp
 L 74xx:74LS157 U?
 U 1 1 5D83DAF0
@@ -197,13 +197,13 @@ Wire Wire Line
 Wire Wire Line
 	4350 2600 3850 2600
 Text Label 3850 2600 0    50   ~ 0
-PC_IF04
+PC_IF4
 Text Label 3850 2900 0    50   ~ 0
-PC_IF05
+PC_IF5
 Text Label 3850 3200 0    50   ~ 0
-PC_IF06
+PC_IF6
 Text Label 3850 3500 0    50   ~ 0
-PC_IF07
+PC_IF7
 Entry Wire Line
 	3700 2600 3800 2700
 Entry Wire Line
@@ -221,11 +221,11 @@ Wire Wire Line
 Wire Wire Line
 	4350 2700 3800 2700
 Text Label 3850 3000 0    50   ~ 0
-AddressBus05
+AddressBus5
 Text Label 3850 3300 0    50   ~ 0
-AddressBus06
+AddressBus6
 Text Label 3850 3600 0    50   ~ 0
-AddressBus07
+AddressBus7
 Entry Wire Line
 	3750 3700 3850 3800
 Wire Wire Line
@@ -295,17 +295,17 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 7150 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6150 2600 0    50   ~ 0
-PC_IF08
+PC_IF8
 Text Label 6150 2900 0    50   ~ 0
-PC_IF09
+PC_IF9
 Text Label 6150 3200 0    50   ~ 0
 PC_IF10
 Text Label 6150 3500 0    50   ~ 0
 PC_IF11
 Text Label 6150 2700 0    50   ~ 0
-AddressBus08
+AddressBus8
 Text Label 6150 3000 0    50   ~ 0
-AddressBus09
+AddressBus9
 Text Label 6150 3300 0    50   ~ 0
 AddressBus10
 Text Label 6150 3600 0    50   ~ 0
@@ -425,15 +425,15 @@ PC_IF15
 Connection ~ 3750 1700
 Connection ~ 3700 1850
 Text Label 3850 2700 0    50   ~ 0
-AddressBus04
+AddressBus4
 Text Label 1600 3600 0    50   ~ 0
-AddressBus03
+AddressBus3
 Text Label 1600 3300 0    50   ~ 0
-AddressBus02
+AddressBus2
 Text Label 1600 3000 0    50   ~ 0
-AddressBus01
+AddressBus1
 Text Label 1600 2700 0    50   ~ 0
-AddressBus00
+AddressBus0
 Entry Wire Line
 	3550 2600 3650 2700
 Entry Wire Line
@@ -450,8 +450,8 @@ Wire Wire Line
 	3550 2900 3100 2900
 Wire Wire Line
 	3100 2600 3550 2600
-Text GLabel 10700 4950 2    50   Output ~ 0
-IRAMAddr
+Text GLabel 10500 5550 2    50   Output ~ 0
+IRAMAddr[0..15]
 Entry Wire Line
 	8150 2600 8250 2700
 Entry Wire Line
@@ -486,20 +486,17 @@ Wire Wire Line
 	9950 2600 10400 2600
 Connection ~ 8250 4950
 Wire Bus Line
-	8250 4950 10500 4950
-Connection ~ 10500 4950
-Wire Bus Line
-	10500 4950 10700 4950
+	8250 4950 9500 4950
 Text Label 3500 2600 2    50   ~ 0
-IRAMAddr00
+IRAMAddr0
 Text Label 3500 2900 2    50   ~ 0
-IRAMAddr01
+IRAMAddr1
 Text Label 3500 3200 2    50   ~ 0
-IRAMAddr02
+IRAMAddr2
 Text Label 3500 3500 2    50   ~ 0
-IRAMAddr03
+IRAMAddr3
 Text Label 5750 2600 2    50   ~ 0
-IRAMAddr04
+IRAMAddr4
 Wire Wire Line
 	6650 2700 6050 2700
 Wire Wire Line
@@ -568,15 +565,15 @@ Connection ~ 6000 1700
 Wire Bus Line
 	6000 1700 3750 1700
 Text Label 5750 2900 2    50   ~ 0
-IRAMAddr05
+IRAMAddr5
 Text Label 5750 3200 2    50   ~ 0
-IRAMAddr06
+IRAMAddr6
 Text Label 5750 3500 2    50   ~ 0
-IRAMAddr07
+IRAMAddr7
 Text Label 8100 2600 2    50   ~ 0
-IRAMAddr08
+IRAMAddr8
 Text Label 8100 2900 2    50   ~ 0
-IRAMAddr09
+IRAMAddr9
 Text Label 8100 3200 2    50   ~ 0
 IRAMAddr10
 Text Label 8100 3500 2    50   ~ 0
@@ -692,11 +689,18 @@ Wire Wire Line
 Connection ~ 1250 7450
 Connection ~ 750  7450
 Wire Bus Line
+	10500 5550 9500 5550
+Wire Bus Line
+	9500 5550 9500 4950
+Connection ~ 9500 4950
+Wire Bus Line
+	9500 4950 10500 4950
+Wire Bus Line
+	6000 1700 6000 3700
+Wire Bus Line
 	5900 2700 5900 4950
 Wire Bus Line
 	5950 1850 5950 3500
-Wire Bus Line
-	10500 2700 10500 4950
 Wire Bus Line
 	8250 2700 8250 4950
 Wire Bus Line
@@ -714,5 +718,5 @@ Wire Bus Line
 Wire Bus Line
 	1500 1700 1500 3700
 Wire Bus Line
-	6000 1700 6000 3700
+	10500 2700 10500 4950
 $EndSCHEMATC

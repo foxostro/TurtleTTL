@@ -108,23 +108,23 @@ Wire Wire Line
 Wire Wire Line
 	7650 4450 7450 4450
 Text GLabel 1100 7250 0    50   Input ~ 0
-IR
+IR[0..15]
 Text Label 7500 4450 0    50   ~ 0
-IR00
+IR0
 Text Label 7500 4550 0    50   ~ 0
-IR01
+IR1
 Text Label 7500 4650 0    50   ~ 0
-IR02
+IR2
 Text Label 7500 4750 0    50   ~ 0
-IR03
+IR3
 Text Label 7500 4850 0    50   ~ 0
-IR04
+IR4
 Text Label 7500 4950 0    50   ~ 0
-IR05
+IR5
 Text Label 7500 5050 0    50   ~ 0
-IR06
+IR6
 Text Label 7500 5150 0    50   ~ 0
-IR07
+IR7
 Text GLabel 1100 7400 0    50   Input ~ 0
 ControlClock
 $Comp
@@ -346,9 +346,9 @@ Wire Wire Line
 Wire Wire Line
 	2250 5000 1950 5000
 Text Label 1950 4300 0    50   ~ 0
-IR08
+IR8
 Text Label 1950 4400 0    50   ~ 0
-IR09
+IR9
 Text Label 1950 4500 0    50   ~ 0
 IR10
 Text Label 1950 4600 0    50   ~ 0
@@ -394,9 +394,9 @@ Wire Wire Line
 Wire Wire Line
 	2250 2050 1950 2050
 Text Label 1950 1350 0    50   ~ 0
-IR08
+IR8
 Text Label 1950 1450 0    50   ~ 0
-IR09
+IR9
 Text Label 1950 1550 0    50   ~ 0
 IR10
 Text Label 1950 1650 0    50   ~ 0
@@ -640,21 +640,21 @@ ID/EX registers
 Text Notes 2600 700  0    50   ~ 0
 Microcode ROMs
 Text Label 4950 1350 0    50   ~ 0
-ControlWord00
+ControlWord0
 Text Label 4950 1450 0    50   ~ 0
-ControlWord01
+ControlWord1
 Text Label 4950 1550 0    50   ~ 0
-ControlWord02
+ControlWord2
 Text Label 4950 1650 0    50   ~ 0
-ControlWord03
+ControlWord3
 Text Label 4950 1750 0    50   ~ 0
-ControlWord04
+ControlWord4
 Text Label 4950 1850 0    50   ~ 0
-ControlWord05
+ControlWord5
 Text Label 4950 1950 0    50   ~ 0
-ControlWord06
+ControlWord6
 Text Label 4950 2050 0    50   ~ 0
-ControlWord07
+ControlWord7
 Wire Wire Line
 	4900 4800 5550 4800
 Wire Wire Line
@@ -668,9 +668,9 @@ Wire Wire Line
 Wire Wire Line
 	4900 4300 5550 4300
 Text Label 4950 4300 0    50   ~ 0
-ControlWord08
+ControlWord8
 Text Label 4950 4400 0    50   ~ 0
-ControlWord09
+ControlWord9
 Text Label 4950 4500 0    50   ~ 0
 ControlWord10
 Text Label 4950 4600 0    50   ~ 0
@@ -814,10 +814,10 @@ Entry Wire Line
 	5550 1450 5650 1550
 Entry Wire Line
 	5550 1350 5650 1450
-Text GLabel 9950 1450 2    50   Output ~ 0
-ControlWord
+Text GLabel 9700 1450 2    50   Output ~ 0
+ControlWord[0..15]
 Wire Bus Line
-	5650 1450 9950 1450
+	5650 1450 9700 1450
 Entry Wire Line
 	8800 5150 8900 5050
 Entry Wire Line
@@ -834,8 +834,8 @@ Entry Wire Line
 	8800 4550 8900 4450
 Entry Wire Line
 	8800 4450 8900 4350
-Text GLabel 9950 1600 2    50   Output ~ 0
-C
+Text GLabel 9700 1600 2    50   Output ~ 0
+C[0..7]
 Text Label 8800 4450 2    50   ~ 0
 C0
 Text Label 8800 4550 2    50   ~ 0
@@ -871,7 +871,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 5350 5800 7400
 Wire Bus Line
-	8900 1600 9950 1600
+	8900 1600 9700 1600
 Wire Bus Line
 	5700 5250 7350 5250
 Wire Wire Line

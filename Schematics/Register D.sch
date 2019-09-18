@@ -88,7 +88,7 @@ Wire Wire Line
 Entry Wire Line
 	3450 2600 3350 2500
 Text GLabel 1650 2400 0    50   Input ~ 0
-DataBus
+DataBus[0..7]
 Wire Bus Line
 	3350 2400 1650 2400
 Text Label 3500 2600 0    50   ~ 0
@@ -231,7 +231,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 3300 7300 3300
 Text GLabel 9450 4100 2    50   Output ~ 0
-DeviceSelect
+DeviceSelect[0..7]
 Wire Bus Line
 	9450 4100 7400 4100
 Text Label 7300 2600 2    50   ~ 0
@@ -567,7 +567,7 @@ Entry Wire Line
 Entry Wire Line
 	5100 4700 5000 4600
 Text GLabel 1450 4600 0    50   Input ~ 0
-DeviceSelect
+DeviceSelect[0..7]
 Text Label 2650 5250 1    50   ~ 0
 DeviceSelect7
 Text Label 3000 5250 1    50   ~ 0

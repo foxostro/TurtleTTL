@@ -154,25 +154,25 @@ Entry Wire Line
 Entry Wire Line
 	8150 2300 8250 2400
 Text Label 2000 2100 0    50   ~ 0
-AddressBus00
+AddressBus0
 Text Label 2000 2200 0    50   ~ 0
-AddressBus01
+AddressBus1
 Text Label 2000 2300 0    50   ~ 0
-AddressBus02
+AddressBus2
 Text Label 2000 2400 0    50   ~ 0
-AddressBus03
+AddressBus3
 Text Label 4050 2100 0    50   ~ 0
-AddressBus04
+AddressBus4
 Text Label 4050 2200 0    50   ~ 0
-AddressBus05
+AddressBus5
 Text Label 4050 2300 0    50   ~ 0
-AddressBus06
+AddressBus6
 Text Label 4050 2400 0    50   ~ 0
-AddressBus07
+AddressBus7
 Text Label 6150 2100 0    50   ~ 0
-AddressBus08
+AddressBus8
 Text Label 6150 2200 0    50   ~ 0
-AddressBus09
+AddressBus9
 Text Label 6150 2300 0    50   ~ 0
 AddressBus10
 Text Label 6150 2400 0    50   ~ 0
@@ -204,9 +204,9 @@ Wire Wire Line
 Wire Wire Line
 	3700 2100 3500 2100
 Text Label 3500 2100 0    50   ~ 0
-PC00
+PC0
 Text Label 3500 2200 0    50   ~ 0
-PC01
+PC1
 Wire Wire Line
 	1900 4250 4200 4250
 Connection ~ 1900 4250
@@ -233,13 +233,13 @@ Entry Wire Line
 Entry Wire Line
 	5800 2400 5900 2300
 Text Label 5600 2100 0    50   ~ 0
-PC04
+PC4
 Text Label 5600 2200 0    50   ~ 0
-PC05
+PC5
 Text Label 5600 2300 0    50   ~ 0
-PC06
+PC6
 Text Label 5600 2400 0    50   ~ 0
-PC07
+PC7
 Wire Wire Line
 	4200 4250 6250 4250
 Connection ~ 4200 4250
@@ -264,9 +264,9 @@ Entry Wire Line
 Entry Wire Line
 	7900 2400 8000 2300
 Text Label 7700 2100 0    50   ~ 0
-PC08
+PC8
 Text Label 7700 2200 0    50   ~ 0
-PC09
+PC9
 Text Label 7700 2300 0    50   ~ 0
 PC10
 Text Label 7700 2400 0    50   ~ 0
@@ -839,25 +839,25 @@ Wire Wire Line
 Wire Wire Line
 	7450 5200 7450 5000
 Text Label 7450 5100 0    50   ~ 0
-PC00
+PC0
 Text Label 7100 5100 0    50   ~ 0
-PC01
+PC1
 Text Label 6750 5100 0    50   ~ 0
-PC02
+PC2
 Text Label 6400 5100 0    50   ~ 0
-PC03
+PC3
 Text Label 6050 5100 0    50   ~ 0
-PC04
+PC4
 Text Label 5700 5100 0    50   ~ 0
-PC05
+PC5
 Text Label 5350 5100 0    50   ~ 0
-PC06
+PC6
 Text Label 5000 5100 0    50   ~ 0
-PC07
+PC7
 Text Label 4650 5100 0    50   ~ 0
-PC08
+PC8
 Text Label 4300 5100 0    50   ~ 0
-PC09
+PC9
 Text Label 3950 5100 0    50   ~ 0
 PC10
 Text Label 3600 5100 0    50   ~ 0
@@ -868,8 +868,8 @@ Text Label 2900 5100 0    50   ~ 0
 PC13
 Text Label 2550 5100 0    50   ~ 0
 PC14
-Text GLabel 10150 4900 2    50   Output ~ 0
-PC
+Text GLabel 10050 4900 2    50   Output ~ 0
+PC[0..15]
 Wire Wire Line
 	8800 2600 8400 2600
 Wire Wire Line
@@ -990,11 +990,11 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 5100 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3500 2400 0    50   ~ 0
-PC03
+PC3
 Text Label 3500 2300 0    50   ~ 0
-PC02
+PC2
 Text GLabel 1350 1600 0    50   Input ~ 0
-AddressBus
+AddressBus[0..15]
 Wire Wire Line
 	8100 2800 8100 2600
 Wire Wire Line
@@ -1038,7 +1038,7 @@ Wire Bus Line
 	9000 3850 10150 3850
 Connection ~ 9000 4900
 Wire Bus Line
-	9000 4900 10150 4900
+	9000 4900 10050 4900
 $Comp
 L Device:C C17
 U 1 1 5DCB8122

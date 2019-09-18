@@ -35,7 +35,7 @@ Entry Wire Line
 Entry Wire Line
 	8550 2400 8450 2500
 Text GLabel 9200 1400 2    50   Output ~ 0
-DataBus
+DataBus[0..7]
 Wire Bus Line
 	9200 1400 8550 1400
 Entry Wire Line
@@ -257,7 +257,7 @@ Entry Wire Line
 Entry Wire Line
 	3350 2400 3450 2500
 Text GLabel 2700 1500 0    50   Input ~ 0
-DataBus
+DataBus[0..7]
 Wire Bus Line
 	2700 1500 3350 1500
 Entry Wire Line
@@ -549,29 +549,29 @@ Entry Wire Line
 Entry Wire Line
 	5450 4350 5550 4250
 Text GLabel 9200 1250 2    50   Output ~ 0
-AddressBus
+AddressBus[0..15]
 Wire Bus Line
 	9200 1250 5550 1250
 Text Label 6150 4950 2    50   ~ 0
-AddressBus00
+AddressBus0
 Text Label 6150 4850 2    50   ~ 0
-AddressBus01
+AddressBus1
 Text Label 6150 4750 2    50   ~ 0
-AddressBus02
+AddressBus2
 Text Label 6150 4650 2    50   ~ 0
-AddressBus03
+AddressBus3
 Text Label 6150 4550 2    50   ~ 0
-AddressBus04
+AddressBus4
 Text Label 6150 4450 2    50   ~ 0
-AddressBus05
+AddressBus5
 Text Label 6150 4350 2    50   ~ 0
-AddressBus06
+AddressBus6
 Text Label 6150 4250 2    50   ~ 0
-AddressBus07
+AddressBus7
 Text Label 6150 2500 2    50   ~ 0
-AddressBus08
+AddressBus8
 Text Label 6150 2400 2    50   ~ 0
-AddressBus09
+AddressBus9
 Text Label 6150 2300 2    50   ~ 0
 AddressBus10
 Text Label 6150 2200 2    50   ~ 0

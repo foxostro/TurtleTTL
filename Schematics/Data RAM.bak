@@ -105,7 +105,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 3450 7950 3450
 Text Label 7400 2050 0    50   ~ 0
-AddressBus00
+AddressBus0
 Wire Wire Line
 	7950 2850 7350 2850
 Wire Wire Line
@@ -143,23 +143,23 @@ Wire Wire Line
 Entry Wire Line
 	7950 2050 8050 1950
 Text Label 7400 2150 0    50   ~ 0
-AddressBus01
+AddressBus1
 Text Label 7400 2250 0    50   ~ 0
-AddressBus02
+AddressBus2
 Text Label 7400 2350 0    50   ~ 0
-AddressBus03
+AddressBus3
 Text Label 7400 2450 0    50   ~ 0
-AddressBus04
+AddressBus4
 Text Label 7400 2550 0    50   ~ 0
-AddressBus05
+AddressBus5
 Text Label 7400 2650 0    50   ~ 0
-AddressBus06
+AddressBus6
 Text Label 7400 2750 0    50   ~ 0
-AddressBus07
+AddressBus7
 Text Label 7400 2850 0    50   ~ 0
-AddressBus08
+AddressBus8
 Text Label 7400 2950 0    50   ~ 0
-AddressBus09
+AddressBus9
 Text Label 7400 3050 0    50   ~ 0
 AddressBus10
 Text Label 7400 3150 0    50   ~ 0
@@ -195,7 +195,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 5750 7950 5750
 Text Label 7400 4350 0    50   ~ 0
-AddressBus00
+AddressBus0
 Wire Wire Line
 	7950 5150 7350 5150
 Wire Wire Line
@@ -233,23 +233,23 @@ Wire Wire Line
 Entry Wire Line
 	7950 4350 8050 4250
 Text Label 7400 4450 0    50   ~ 0
-AddressBus01
+AddressBus1
 Text Label 7400 4550 0    50   ~ 0
-AddressBus02
+AddressBus2
 Text Label 7400 4650 0    50   ~ 0
-AddressBus03
+AddressBus3
 Text Label 7400 4750 0    50   ~ 0
-AddressBus04
+AddressBus4
 Text Label 7400 4850 0    50   ~ 0
-AddressBus05
+AddressBus5
 Text Label 7400 4950 0    50   ~ 0
-AddressBus06
+AddressBus6
 Text Label 7400 5050 0    50   ~ 0
-AddressBus07
+AddressBus7
 Text Label 7400 5150 0    50   ~ 0
-AddressBus08
+AddressBus8
 Text Label 7400 5250 0    50   ~ 0
-AddressBus09
+AddressBus9
 Text Label 7400 5350 0    50   ~ 0
 AddressBus10
 Text Label 7400 5450 0    50   ~ 0
@@ -261,7 +261,7 @@ AddressBus13
 Text Label 7400 5750 0    50   ~ 0
 AddressBus14
 Text GLabel 1900 900  0    50   Input ~ 0
-AddressBus
+AddressBus[0..15]
 Wire Bus Line
 	8050 900  1900 900 
 Entry Wire Line
@@ -361,11 +361,11 @@ Wire Wire Line
 Text Label 5950 5450 0    50   ~ 0
 DataBus7
 Text GLabel 1900 1250 0    50   BiDi ~ 0
-DataBus
+DataBus[0..7]
 Wire Bus Line
 	5850 1250 1900 1250
 Text GLabel 1850 2000 0    50   Input ~ 0
-DeviceSelect
+DeviceSelect[0..7]
 Text GLabel 1850 1700 0    50   Input ~ 0
 ~MI
 $Comp
