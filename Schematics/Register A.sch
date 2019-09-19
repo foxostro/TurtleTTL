@@ -35,21 +35,21 @@ Wire Bus Line
 Entry Wire Line
 	8300 2100 8200 2200
 Text Label 7800 2300 0    50   ~ 0
-DataBus1
-Text Label 7800 2400 0    50   ~ 0
-DataBus2
-Text Label 7800 2500 0    50   ~ 0
-DataBus3
-Text Label 7800 2600 0    50   ~ 0
-DataBus4
-Text Label 7800 2700 0    50   ~ 0
-DataBus5
-Text Label 7800 2800 0    50   ~ 0
 DataBus6
+Text Label 7800 2400 0    50   ~ 0
+DataBus5
+Text Label 7800 2500 0    50   ~ 0
+DataBus4
+Text Label 7800 2600 0    50   ~ 0
+DataBus3
+Text Label 7800 2700 0    50   ~ 0
+DataBus2
+Text Label 7800 2800 0    50   ~ 0
+DataBus1
 Text Label 7800 2900 0    50   ~ 0
-DataBus7
-Text Label 7800 2200 0    50   ~ 0
 DataBus0
+Text Label 7800 2200 0    50   ~ 0
+DataBus7
 $Comp
 L Device:C C?
 U 1 1 5DD10F27
@@ -227,21 +227,21 @@ Wire Bus Line
 Entry Wire Line
 	3100 2100 3200 2200
 Text Label 3600 2300 2    50   ~ 0
-DataBus1
-Text Label 3600 2400 2    50   ~ 0
-DataBus2
-Text Label 3600 2500 2    50   ~ 0
-DataBus3
-Text Label 3600 2600 2    50   ~ 0
-DataBus4
-Text Label 3600 2700 2    50   ~ 0
-DataBus5
-Text Label 3600 2800 2    50   ~ 0
 DataBus6
+Text Label 3600 2400 2    50   ~ 0
+DataBus5
+Text Label 3600 2500 2    50   ~ 0
+DataBus4
+Text Label 3600 2600 2    50   ~ 0
+DataBus3
+Text Label 3600 2700 2    50   ~ 0
+DataBus2
+Text Label 3600 2800 2    50   ~ 0
+DataBus1
 Text Label 3600 2900 2    50   ~ 0
-DataBus7
-Text Label 3600 2200 2    50   ~ 0
 DataBus0
+Text Label 3600 2200 2    50   ~ 0
+DataBus7
 Wire Wire Line
 	3200 2900 4150 2900
 Wire Wire Line
@@ -296,21 +296,21 @@ A[0..7]
 Wire Bus Line
 	8950 1650 5600 1650
 Text Label 5450 2900 2    50   ~ 0
-A7
-Text Label 5450 2800 2    50   ~ 0
-A6
-Text Label 5450 2700 2    50   ~ 0
-A5
-Text Label 5450 2600 2    50   ~ 0
-A4
-Text Label 5450 2500 2    50   ~ 0
-A3
-Text Label 5450 2400 2    50   ~ 0
-A2
-Text Label 5450 2300 2    50   ~ 0
-A1
-Text Label 5450 2200 2    50   ~ 0
 A0
+Text Label 5450 2800 2    50   ~ 0
+A1
+Text Label 5450 2700 2    50   ~ 0
+A2
+Text Label 5450 2600 2    50   ~ 0
+A3
+Text Label 5450 2500 2    50   ~ 0
+A4
+Text Label 5450 2400 2    50   ~ 0
+A5
+Text Label 5450 2300 2    50   ~ 0
+A6
+Text Label 5450 2200 2    50   ~ 0
+A7
 Wire Wire Line
 	2700 3800 6000 3800
 Wire Wire Line
