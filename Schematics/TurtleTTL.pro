@@ -1,4 +1,4 @@
-update=Thursday, September 19, 2019 at 08:55:51 AM
+update=Thursday, September 19, 2019 at 10:46:40 AM
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=6
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -71,9 +71,6 @@ SolderPasteRatio=-0
 [pcbnew/Layer.In1.Cu]
 Name=Gnd1.Cu
 Type=1
-[pcbnew/Layer.In3.Cu]
+[pcbnew/Layer.In2.Cu]
 Name=Power.Cu
-Type=1
-[pcbnew/Layer.In4.Cu]
-Name=Gnd2.Cu
 Type=1
