@@ -324,10 +324,10 @@ Entry Wire Line
 Wire Wire Line
 	8850 1700 8850 1900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0179
 U 1 1 5D8AA8B4
 P 8850 1700
-F 0 "#PWR?" H 8850 1450 50  0001 C CNN
+F 0 "#PWR0179" H 8850 1450 50  0001 C CNN
 F 1 "GND" H 8855 1527 50  0000 C CNN
 F 2 "" H 8850 1700 50  0001 C CNN
 F 3 "" H 8850 1700 50  0001 C CNN
@@ -349,10 +349,10 @@ L Connector:Conn_01x09_Female J?
 U 1 1 5D870367
 P 8450 2100
 AR Path="/5D29E36D/5D870367" Ref="J?"  Part="1" 
-AR Path="/5D2C12A5/5D870367" Ref="J?"  Part="1" 
-F 0 "J?" V 8600 2050 50  0000 C CNN
+AR Path="/5D2C12A5/5D870367" Ref="J12"  Part="1" 
+F 0 "J12" V 8600 2050 50  0000 C CNN
 F 1 "Data Bus LED Connector" V 8700 2050 50  0000 C CNN
-F 2 "" H 8450 2100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 8450 2100 50  0001 C CNN
 F 3 "~" H 8450 2100 50  0001 C CNN
 	1    8450 2100
 	0    1    1    0   
@@ -396,12 +396,12 @@ Entry Wire Line
 Entry Wire Line
 	8350 1550 8250 1450
 $Comp
-L Connector:Conn_01x17_Female J?
+L Connector:Conn_01x17_Female J11
 U 1 1 5D8D33D7
 P 5900 5800
-F 0 "J?" V 5973 5780 50  0000 C CNN
+F 0 "J11" V 5973 5780 50  0000 C CNN
 F 1 "Address Bus LED Connector" V 6064 5780 50  0000 C CNN
-F 2 "" H 5900 5800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x17_P2.54mm_Vertical" H 5900 5800 50  0001 C CNN
 F 3 "~" H 5900 5800 50  0001 C CNN
 	1    5900 5800
 	0    1    1    0   

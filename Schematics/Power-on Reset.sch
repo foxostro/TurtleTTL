@@ -492,39 +492,6 @@ Wire Wire Line
 Connection ~ 7950 5900
 Connection ~ 7450 5900
 $Comp
-L Connector:Barrel_Jack J1
-U 1 1 5D812A8D
-P 1600 7400
-F 0 "J1" H 1657 7725 50  0000 C CNN
-F 1 "Barrel_Jack" H 1657 7634 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1650 7360 50  0001 C CNN
-F 3 "~" H 1650 7360 50  0001 C CNN
-	1    1600 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0163
-U 1 1 5D81CCD6
-P 3050 7200
-F 0 "#PWR0163" H 3050 7050 50  0001 C CNN
-F 1 "VCC" V 3067 7328 50  0000 L CNN
-F 2 "" H 3050 7200 50  0001 C CNN
-F 3 "" H 3050 7200 50  0001 C CNN
-	1    3050 7200
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0164
-U 1 1 5D82099E
-P 3050 7500
-F 0 "#PWR0164" H 3050 7250 50  0001 C CNN
-F 1 "GND" V 3055 7372 50  0000 R CNN
-F 2 "" H 3050 7500 50  0001 C CNN
-F 3 "" H 3050 7500 50  0001 C CNN
-	1    3050 7500
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Switch:SW_Push SW2
 U 1 1 5D8069CB
 P 1300 1700
@@ -535,31 +502,4 @@ F 3 "~" H 1300 1900 50  0001 C CNN
 	1    1300 1700
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:CP1 C?
-U 1 1 5D8FC81C
-P 2500 7350
-AR Path="/5D2C0720/5D8FC81C" Ref="C?"  Part="1" 
-AR Path="/5D2C0761/5D8FC81C" Ref="C69"  Part="1" 
-F 0 "C69" H 2592 7396 50  0000 L CNN
-F 1 "10µF" H 2592 7305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2500 7350 50  0001 C CNN
-F 3 "~" H 2500 7350 50  0001 C CNN
-	1    2500 7350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 7500 2500 7500
-Connection ~ 2500 7500
-Wire Wire Line
-	2500 7500 3050 7500
-Wire Wire Line
-	3050 7200 2500 7200
-Connection ~ 2500 7200
-Wire Wire Line
-	2100 7200 2100 7300
-Wire Wire Line
-	2100 7300 1900 7300
-Wire Wire Line
-	2100 7200 2500 7200
 $EndSCHEMATC

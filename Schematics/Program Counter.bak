@@ -560,14 +560,14 @@ Connection ~ 850  7650
 Wire Wire Line
 	6700 2100 6150 2100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR047
 U 1 1 5DB34FC7
 P 4800 5500
-AR Path="/5D2C07CD/5DB34FC7" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C07CD/5DB34FC7" Ref="#PWR047"  Part="1" 
 AR Path="/5D2C0CA7/5DB34FC7" Ref="#PWR?"  Part="1" 
 AR Path="/5D7BD0EA/5DB34FC7" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C12A5/5DB34FC7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4800 5250 50  0001 C CNN
+F 0 "#PWR047" H 4800 5250 50  0001 C CNN
 F 1 "GND" H 4805 5327 50  0000 C CNN
 F 2 "" H 4800 5500 50  0001 C CNN
 F 3 "" H 4800 5500 50  0001 C CNN
@@ -667,10 +667,10 @@ L Connector:Conn_01x17_Female J?
 U 1 1 5DB34FFE
 P 4000 5800
 AR Path="/5D2C12A5/5DB34FFE" Ref="J?"  Part="1" 
-AR Path="/5D2C07CD/5DB34FFE" Ref="J?"  Part="1" 
-F 0 "J?" V 4073 5780 50  0000 C CNN
+AR Path="/5D2C07CD/5DB34FFE" Ref="J3"  Part="1" 
+F 0 "J3" V 4073 5780 50  0000 C CNN
 F 1 "Program Counter LED Connector" V 4164 5780 50  0000 C CNN
-F 2 "" H 4000 5800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x17_P2.54mm_Vertical" H 4000 5800 50  0001 C CNN
 F 3 "~" H 4000 5800 50  0001 C CNN
 	1    4000 5800
 	0    1    1    0   
