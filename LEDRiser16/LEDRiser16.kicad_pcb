@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 6)
+    (drawings 7)
     (tracks 36)
     (zones 0)
     (modules 33)
@@ -18,7 +18,7 @@
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user hide)
+    (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -1421,6 +1421,9 @@
     )
   )
 
+  (gr_text "16-bit LED riser board, rev 1\nAndrew Fox" (at 111.252 76.962) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
   (dimension 11.176 (width 0.15) (layer Dwgs.User)
     (gr_text "11.176 mm" (at 137.19 75.438 270) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1434,7 +1437,7 @@
     (arrow2b (pts (xy 135.89 69.85) (xy 136.476421 70.976504)))
   )
   (dimension 45.212 (width 0.15) (layer Dwgs.User)
-    (gr_text "45.212 mm" (at 111.76 66.518001) (layer Dwgs.User) (tstamp 5D838516)
+    (gr_text "45.212 mm" (at 111.76 66.518001) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 89.154 69.85) (xy 89.154 67.23158)))
