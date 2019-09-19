@@ -134,12 +134,12 @@ $EndComp
 $Comp
 L Device:R_Network08 RN2
 U 1 1 5D8793E8
-P 4550 5000
-F 0 "RN2" V 3933 5000 50  0000 C CNN
-F 1 "10kΩ" V 4024 5000 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 5025 5000 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4550 5000 50  0001 C CNN
-	1    4550 5000
+P 4550 4800
+F 0 "RN2" V 3933 4800 50  0000 C CNN
+F 1 "10kΩ" V 4024 4800 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 5025 4800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4550 4800 50  0001 C CNN
+	1    4550 4800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -159,6 +159,30 @@ Wire Wire Line
 Wire Wire Line
 	4350 3600 4050 3600
 Wire Wire Line
+	4750 2900 5000 2900
+Wire Wire Line
+	5000 5950 3850 5950
+Connection ~ 3850 5950
+Wire Wire Line
+	4750 4400 5000 4400
+Wire Wire Line
+	5000 2900 5000 4400
+Connection ~ 5000 4400
+Wire Wire Line
+	5000 4400 5000 5950
+Wire Wire Line
+	4050 3700 4250 3700
+Wire Wire Line
+	4250 3700 4250 4400
+Wire Wire Line
+	4250 4400 4350 4400
+Wire Wire Line
+	4050 3800 4200 3800
+Wire Wire Line
+	4200 3800 4200 4500
+Wire Wire Line
+	4200 4500 4350 4500
+Wire Wire Line
 	4050 4600 4350 4600
 Wire Wire Line
 	4350 4700 4050 4700
@@ -170,20 +194,12 @@ Wire Wire Line
 	4050 5000 4350 5000
 Wire Wire Line
 	4350 5100 4050 5100
-Wire Wire Line
-	4050 5200 4350 5200
-Wire Wire Line
-	4350 5300 4050 5300
-Wire Wire Line
-	4750 2900 5000 2900
-Wire Wire Line
-	5000 5950 3850 5950
-Connection ~ 3850 5950
-Wire Wire Line
-	4750 4600 5000 4600
-Wire Wire Line
-	5000 2900 5000 4600
-Connection ~ 5000 4600
-Wire Wire Line
-	5000 4600 5000 5950
+NoConn ~ 4050 5200
+NoConn ~ 4050 5300
+NoConn ~ 4050 5400
+NoConn ~ 4050 5500
+NoConn ~ 3650 5500
+NoConn ~ 3650 5400
+NoConn ~ 3650 5300
+NoConn ~ 3650 5200
 $EndSCHEMATC

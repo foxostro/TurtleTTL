@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 "LED riser board with sixteen LEDs and a ground pin."
 $EndDescr
 $Comp
-L LED:HDSP-4830_2 BAR?
+L LED:HDSP-4830_2 BAR2
 U 1 1 5D83E98D
 P 3850 5000
-F 0 "BAR?" V 3804 5530 50  0000 L CNN
+F 0 "BAR2" V 3804 5530 50  0000 L CNN
 F 1 "HDSP-4830_2" V 3895 5530 50  0000 L CNN
 F 2 "Display:HDSP-4830" H 3850 4200 50  0001 C CNN
 F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 1850 5200 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 1850 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED:HDSP-4830_2 BAR?
+L LED:HDSP-4830_2 BAR1
 U 1 1 5D84B6C6
 P 3850 3300
-F 0 "BAR?" V 3804 3830 50  0000 L CNN
+F 0 "BAR1" V 3804 3830 50  0000 L CNN
 F 1 "HDSP-4830_2" V 3895 3830 50  0000 L CNN
 F 2 "Display:HDSP-4830" H 3850 2500 50  0001 C CNN
 F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 1850 3500 50  0001 C CNN
@@ -104,10 +104,10 @@ Wire Wire Line
 Wire Wire Line
 	3300 5100 3650 5100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 5D873AB0
 P 3850 5950
-F 0 "#PWR?" H 3850 5700 50  0001 C CNN
+F 0 "#PWR01" H 3850 5700 50  0001 C CNN
 F 1 "GND" H 3855 5777 50  0000 C CNN
 F 2 "" H 3850 5950 50  0001 C CNN
 F 3 "" H 3850 5950 50  0001 C CNN
@@ -121,10 +121,10 @@ Wire Wire Line
 Wire Wire Line
 	3250 4500 3250 5950
 $Comp
-L Device:R_Network08 RN?
+L Device:R_Network08 RN1
 U 1 1 5D876B42
 P 4550 3300
-F 0 "RN?" V 3933 3300 50  0000 C CNN
+F 0 "RN1" V 3933 3300 50  0000 C CNN
 F 1 "10kΩ" V 4024 3300 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP9" V 5025 3300 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4550 3300 50  0001 C CNN
@@ -132,10 +132,10 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4550 3300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Network08 RN?
+L Device:R_Network08 RN2
 U 1 1 5D8793E8
 P 4550 5000
-F 0 "RN?" V 3933 5000 50  0000 C CNN
+F 0 "RN2" V 3933 5000 50  0000 C CNN
 F 1 "10kΩ" V 4024 5000 50  0000 C CNN
 F 2 "Resistor_THT:R_Array_SIP9" V 5025 5000 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4550 5000 50  0001 C CNN
