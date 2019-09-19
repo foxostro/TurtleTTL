@@ -14,6 +14,28 @@ Comment2 ""
 Comment3 ""
 Comment4 "LED riser board with eight LEDs and a ground pin."
 $EndDescr
+$Comp
+L LED:HDSP-4830_2 BAR1
+U 1 1 5D84B6C6
+P 3850 3300
+F 0 "BAR1" V 3804 3830 50  0000 L CNN
+F 1 "HDSP-4830_2" V 3895 3830 50  0000 L CNN
+F 2 "Display:HDSP-4830" H 3850 2500 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 1850 3500 50  0001 C CNN
+	1    3850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x09_Male J1
+U 1 1 5D836F73
+P 2850 3200
+F 0 "J1" V 2685 3178 50  0000 C CNN
+F 1 "Conn_01x09_Male" V 2776 3178 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 2850 3200 50  0001 C CNN
+F 3 "~" H 2850 3200 50  0001 C CNN
+	1    2850 3200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3050 2900 3650 2900
 Wire Wire Line
@@ -33,12 +55,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR01
 U 1 1 5D873AB0
-P 3850 4000
-F 0 "#PWR01" H 3850 3750 50  0001 C CNN
-F 1 "GND" H 3855 3827 50  0000 C CNN
-F 2 "" H 3850 4000 50  0001 C CNN
-F 3 "" H 3850 4000 50  0001 C CNN
-	1    3850 4000
+P 5000 3050
+F 0 "#PWR01" H 5000 2800 50  0001 C CNN
+F 1 "GND" H 5005 2877 50  0000 C CNN
+F 2 "" H 5000 3050 50  0001 C CNN
+F 3 "" H 5000 3050 50  0001 C CNN
+	1    5000 3050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -71,40 +93,18 @@ Wire Wire Line
 Wire Wire Line
 	4750 2900 5000 2900
 Wire Wire Line
-	5000 4000 3850 4000
+	3050 2800 3350 2800
 Wire Wire Line
-	5000 2900 5000 4000
-$Comp
-L LED:HDSP-4830_2 BAR1
-U 1 1 5D84B6C6
-P 3850 3300
-F 0 "BAR1" V 3804 3830 50  0000 L CNN
-F 1 "HDSP-4830_2" V 3895 3830 50  0000 L CNN
-F 2 "Display:HDSP-4830" H 3850 2500 50  0001 C CNN
-F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 1850 3500 50  0001 C CNN
-	1    3850 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x09_Male J1
-U 1 1 5D836F73
-P 2850 3300
-F 0 "J1" V 2685 3278 50  0000 C CNN
-F 1 "Conn_01x09_Male" V 2776 3278 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 2850 3300 50  0001 C CNN
-F 3 "~" H 2850 3300 50  0001 C CNN
-	1    2850 3300
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3650 3800
+	3350 2800 3350 2100
+Wire Wire Line
+	3350 2100 5000 2100
+Wire Wire Line
+	5000 2100 5000 2900
+NoConn ~ 4050 3700
 NoConn ~ 4050 3800
 NoConn ~ 3650 3700
-NoConn ~ 4050 3700
+NoConn ~ 3650 3800
 Wire Wire Line
-	3050 3700 3250 3700
-Wire Wire Line
-	3250 3700 3250 4000
-Wire Wire Line
-	3250 4000 3850 4000
-Connection ~ 3850 4000
+	5000 2900 5000 3050
+Connection ~ 5000 2900
 $EndSCHEMATC
