@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 12 24
+Sheet 12 22
 Title "Instruction RAM"
 Date ""
 Rev ""
@@ -354,70 +354,26 @@ Text Label 6650 2550 2    50   ~ 0
 IRAM15
 Text GLabel 1250 2450 0    50   Input ~ 0
 DeviceSelect[0..7]
-Text Label 1400 2250 0    50   ~ 0
+Text Label 1400 1150 0    50   ~ 0
 DeviceSelect3
 Entry Wire Line
-	1300 2350 1400 2250
-Text Label 1400 2650 0    50   ~ 0
+	1300 1250 1400 1150
+Text Label 1400 4350 0    50   ~ 0
 DeviceSelect4
 Entry Wire Line
-	1300 2550 1400 2650
+	1300 4250 1400 4350
 Wire Bus Line
-	1300 2350 1300 2450
+	1300 1250 1300 2450
 Connection ~ 8300 3450
 Connection ~ 6300 3600
-Wire Wire Line
-	1400 2650 2100 2650
 Text GLabel 6800 2750 0    50   Input ~ 0
 ~MI
 Text GLabel 6800 6100 0    50   Input ~ 0
 ~MI
-$Sheet
-S 2200 3900 1500 500 
-U 5DA74300
-F0 "Lower Instruction RAM Control" 50
-F1 "Instruction RAM Control.sch" 50
-F2 "~OE" O R 3700 4100 50 
-F3 "~WE" O R 3700 4200 50 
-F4 "~OutToBus" O R 3700 4000 50 
-F5 "Select" I L 2200 4000 50 
-$EndSheet
-$Sheet
-S 2200 650  1500 500 
-U 5DA75946
-F0 "Upper Instruction RAM Control" 50
-F1 "Instruction RAM Control.sch" 50
-F2 "~OE" O R 3700 850 50 
-F3 "~WE" O R 3700 950 50 
-F4 "~OutToBus" O R 3700 750 50 
-F5 "Select" I L 2200 750 50 
-$EndSheet
-Wire Wire Line
-	2100 2650 2100 4000
-Wire Wire Line
-	2100 4000 2200 4000
-Wire Wire Line
-	2100 2250 2100 750 
-Wire Wire Line
-	2100 750  2200 750 
-Wire Wire Line
-	1400 2250 2100 2250
-Wire Wire Line
-	3700 950  6000 950 
-Wire Wire Line
-	6000 950  6000 1450
 Wire Wire Line
 	6000 1450 5800 1450
 Wire Wire Line
-	3700 850  6050 850 
-Wire Wire Line
-	6050 850  6050 1550
-Wire Wire Line
 	6050 1550 5800 1550
-Wire Wire Line
-	3700 750  6100 750 
-Wire Wire Line
-	6100 750  6100 2850
 Wire Wire Line
 	6100 2850 6800 2850
 $Comp
@@ -432,14 +388,6 @@ F 3 "" H 5800 1650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3700 4200 6000 4200
-Wire Wire Line
-	6000 4200 6000 4800
-Wire Wire Line
-	3700 4100 6050 4100
-Wire Wire Line
-	6050 4100 6050 4900
-Wire Wire Line
 	6800 6200 6100 6200
 Wire Wire Line
 	6100 6200 6100 4000
@@ -447,7 +395,7 @@ Wire Bus Line
 	1300 2450 1250 2450
 Connection ~ 1300 2450
 Wire Bus Line
-	1300 2450 1300 2550
+	1300 2450 1300 4250
 Entry Wire Line
 	4200 1450 4100 1550
 Wire Wire Line
@@ -719,8 +667,410 @@ Text Notes 3800 7150 0    50   ~ 0
 For purposes of reading and writing, Instruction RAM\nis mapped to both the lower and upper halves of the\naddress space. Though, the control unit only\nexecutes code in the upper half.
 Text Notes 7600 1000 0    50   ~ 0
 Programs must take care to never read or write to Instruction RAM\nwhile the program counter is in the upper half of the address space.\nThis will surely lead to unexpected and incorrect operation.
+Wire Bus Line
+	6300 1950 6300 3600
+Wire Bus Line
+	6300 3600 6300 5800
+$Comp
+L 74xx:74LS04 U35
+U 1 1 5D8C01DC
+P 2800 1550
+AR Path="/5D8005AF/5D800744/5D8C01DC" Ref="U35"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D8C01DC" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D8C01DC" Ref="U?"  Part="1" 
+F 0 "U35" H 2800 1867 50  0000 C CNN
+F 1 "74LS04" H 2800 1776 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2800 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2800 1550 50  0001 C CNN
+	1    2800 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U37
+U 1 2 5D8C01E2
+P 3550 1650
+AR Path="/5D8005AF/5D800744/5D8C01E2" Ref="U37"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D8C01E2" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D8C01E2" Ref="U?"  Part="1" 
+F 0 "U37" H 3550 1975 50  0000 C CNN
+F 1 "74LS08" H 3550 1884 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3550 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3550 1650 50  0001 C CNN
+	1    3550 1650
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6100 4000 3700 4000
+	3250 1550 3100 1550
+$Comp
+L 74xx:74LS08 U34
+U 1 2 5D8C01E9
+P 2650 850
+AR Path="/5D8005AF/5D800744/5D8C01E9" Ref="U34"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D8C01E9" Ref="U?"  Part="2" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D8C01E9" Ref="U?"  Part="2" 
+F 0 "U34" H 2650 1175 50  0000 C CNN
+F 1 "74LS08" H 2650 1084 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2650 850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2650 850 50  0001 C CNN
+	1    2650 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U?
+U 1 2 5D8C01EF
+P 3550 2200
+AR Path="/5D2C0C74/5D8C01EF" Ref="U?"  Part="1" 
+AR Path="/5D2C1188/5D8C01EF" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5D8C01EF" Ref="U39"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D8C01EF" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D8C01EF" Ref="U?"  Part="1" 
+F 0 "U39" H 3550 2525 50  0000 C CNN
+F 1 "74LS32" H 3550 2434 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3550 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3550 2200 50  0001 C CNN
+	1    3550 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1750 2250 1750
+Text GLabel 2000 750  0    50   Input ~ 0
+~MI
+Text GLabel 2000 950  0    50   Input ~ 0
+~MO
+Wire Wire Line
+	2000 750  2150 750 
+Wire Wire Line
+	2000 950  2250 950 
+$Comp
+L 74xx:74LS32 U?
+U 1 2 5D8C0206
+P 3550 950
+AR Path="/5D2C0C74/5D8C0206" Ref="U?"  Part="1" 
+AR Path="/5D2C1188/5D8C0206" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5D8C0206" Ref="U36"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D8C0206" Ref="U?"  Part="2" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D8C0206" Ref="U?"  Part="2" 
+F 0 "U36" H 3550 1275 50  0000 C CNN
+F 1 "74LS32" H 3550 1184 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3550 950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3550 950 50  0001 C CNN
+	1    3550 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 850  3250 850 
+Wire Wire Line
+	3250 1050 2900 1050
+Wire Wire Line
+	2900 1050 2900 1150
+Wire Wire Line
+	2900 1150 2350 1150
+$Comp
+L 74xx:74LS04 U35
+U 3 1 5D8C0251
+P 5600 9050
+AR Path="/5D8005AF/5D800744/5D8C0251" Ref="U35"  Part="3" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D8C0251" Ref="U?"  Part="2" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D8C0251" Ref="U?"  Part="2" 
+F 0 "U35" H 5600 9367 50  0000 C CNN
+F 1 "74LS04" H 5600 9276 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5600 9050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5600 9050 50  0001 C CNN
+	3    5600 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U35
+U 4 1 5D8C0257
+P 6350 9050
+AR Path="/5D8005AF/5D800744/5D8C0257" Ref="U35"  Part="4" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D8C0257" Ref="U?"  Part="3" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D8C0257" Ref="U?"  Part="3" 
+F 0 "U35" H 6350 9367 50  0000 C CNN
+F 1 "74LS04" H 6350 9276 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6350 9050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6350 9050 50  0001 C CNN
+	4    6350 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U35
+U 5 1 5D8C025D
+P 5600 9600
+AR Path="/5D8005AF/5D800744/5D8C025D" Ref="U35"  Part="5" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D8C025D" Ref="U?"  Part="5" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D8C025D" Ref="U?"  Part="5" 
+F 0 "U35" H 5600 9917 50  0000 C CNN
+F 1 "74LS04" H 5600 9826 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5600 9600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5600 9600 50  0001 C CNN
+	5    5600 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U35
+U 6 1 5D8C0263
+P 6350 9600
+AR Path="/5D8005AF/5D800744/5D8C0263" Ref="U35"  Part="6" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D8C0263" Ref="U?"  Part="6" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D8C0263" Ref="U?"  Part="6" 
+F 0 "U35" H 6350 9917 50  0000 C CNN
+F 1 "74LS04" H 6350 9826 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6350 9600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6350 9600 50  0001 C CNN
+	6    6350 9600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5300 9050
+NoConn ~ 5300 9600
+NoConn ~ 5900 9600
+NoConn ~ 5900 9050
+NoConn ~ 6050 9050
+NoConn ~ 6050 9600
+NoConn ~ 6650 9600
+NoConn ~ 6650 9050
+Wire Wire Line
+	2350 1150 2350 1550
+Connection ~ 2350 1150
+Wire Wire Line
+	2350 1550 2500 1550
+Wire Wire Line
+	2350 1550 2350 2300
+Wire Wire Line
+	2350 2300 3250 2300
+Connection ~ 2350 1550
+Wire Wire Line
+	2250 950  2250 1750
+Connection ~ 2250 950 
+Wire Wire Line
+	2250 950  2350 950 
+Wire Wire Line
+	2150 2100 2150 750 
+Wire Wire Line
+	2150 2100 3250 2100
+Connection ~ 2150 750 
+Wire Wire Line
+	2150 750  2350 750 
+Wire Wire Line
+	1400 1150 2350 1150
+Wire Wire Line
+	3850 1650 3900 1650
+Wire Wire Line
+	3900 1650 3900 850 
+Wire Wire Line
+	3900 850  6050 850 
+Wire Wire Line
+	6050 850  6050 1550
+Wire Wire Line
+	3850 2200 3950 2200
+Wire Wire Line
+	3950 2200 3950 900 
+Wire Wire Line
+	3950 900  6000 900 
+Wire Wire Line
+	6000 900  6000 1450
+Wire Wire Line
+	3850 950  3850 800 
+Wire Wire Line
+	3850 800  6100 800 
+Wire Wire Line
+	6100 800  6100 2850
+$Comp
+L 74xx:74LS04 U35
+U 2 1 5D9FA680
+P 2800 4750
+AR Path="/5D8005AF/5D800744/5D9FA680" Ref="U35"  Part="2" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D9FA680" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D9FA680" Ref="U?"  Part="1" 
+F 0 "U35" H 2800 5067 50  0000 C CNN
+F 1 "74LS04" H 2800 4976 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2800 4750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2800 4750 50  0001 C CNN
+	2    2800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U34
+U 3 2 5D9FA686
+P 3550 4850
+AR Path="/5D8005AF/5D800744/5D9FA686" Ref="U34"  Part="3" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D9FA686" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D9FA686" Ref="U?"  Part="1" 
+F 0 "U34" H 3550 5175 50  0000 C CNN
+F 1 "74LS08" H 3550 5084 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3550 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3550 4850 50  0001 C CNN
+	3    3550 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4750 3100 4750
+$Comp
+L 74xx:74LS08 U34
+U 4 2 5D9FA68D
+P 2650 4050
+AR Path="/5D8005AF/5D800744/5D9FA68D" Ref="U34"  Part="4" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D9FA68D" Ref="U?"  Part="2" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D9FA68D" Ref="U?"  Part="2" 
+F 0 "U34" H 2650 4375 50  0000 C CNN
+F 1 "74LS08" H 2650 4284 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2650 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2650 4050 50  0001 C CNN
+	4    2650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U?
+U 4 2 5D9FA693
+P 3550 5400
+AR Path="/5D2C0C74/5D9FA693" Ref="U?"  Part="1" 
+AR Path="/5D2C1188/5D9FA693" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5D9FA693" Ref="U36"  Part="4" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D9FA693" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D9FA693" Ref="U?"  Part="1" 
+F 0 "U36" H 3550 5725 50  0000 C CNN
+F 1 "74LS32" H 3550 5634 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3550 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3550 5400 50  0001 C CNN
+	4    3550 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4950 2250 4950
+Text GLabel 2000 3950 0    50   Input ~ 0
+~MI
+Text GLabel 2000 4150 0    50   Input ~ 0
+~MO
+Wire Wire Line
+	2000 3950 2150 3950
+Wire Wire Line
+	2000 4150 2250 4150
+$Comp
+L 74xx:74LS32 U?
+U 3 2 5D9FA69E
+P 3550 4150
+AR Path="/5D2C0C74/5D9FA69E" Ref="U?"  Part="1" 
+AR Path="/5D2C1188/5D9FA69E" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5D9FA69E" Ref="U36"  Part="3" 
+AR Path="/5D8005AF/5D800744/5DA74300/5D9FA69E" Ref="U?"  Part="2" 
+AR Path="/5D8005AF/5D800744/5DA75946/5D9FA69E" Ref="U?"  Part="2" 
+F 0 "U36" H 3550 4475 50  0000 C CNN
+F 1 "74LS32" H 3550 4384 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3550 4150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3550 4150 50  0001 C CNN
+	3    3550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4050 3250 4050
+Wire Wire Line
+	3250 4250 2900 4250
+Wire Wire Line
+	2900 4250 2900 4350
+Wire Wire Line
+	2900 4350 2350 4350
+Wire Wire Line
+	2350 4350 2350 4750
+Connection ~ 2350 4350
+Wire Wire Line
+	2350 4750 2500 4750
+Wire Wire Line
+	2350 4750 2350 5500
+Wire Wire Line
+	2350 5500 3250 5500
+Connection ~ 2350 4750
+Wire Wire Line
+	2250 4150 2250 4950
+Connection ~ 2250 4150
+Wire Wire Line
+	2250 4150 2350 4150
+Wire Wire Line
+	2150 5300 2150 3950
+Wire Wire Line
+	2150 5300 3250 5300
+Connection ~ 2150 3950
+Wire Wire Line
+	2150 3950 2350 3950
+Wire Wire Line
+	1400 4350 2350 4350
+Wire Wire Line
+	3850 4850 3900 4850
+Wire Wire Line
+	3900 4850 3900 4050
+Wire Wire Line
+	3900 4050 6050 4050
+Wire Wire Line
+	3850 5400 3950 5400
+Wire Wire Line
+	3950 5400 3950 4100
+Wire Wire Line
+	3950 4100 6000 4100
+Wire Wire Line
+	3850 4150 3850 4000
+Wire Wire Line
+	3850 4000 6100 4000
+Wire Wire Line
+	6050 4050 6050 4900
+Wire Wire Line
+	6000 4100 6000 4800
+$Comp
+L Device:C C?
+U 1 1 5DAB8C29
+P 2850 7600
+AR Path="/5D2C07CD/5DAB8C29" Ref="C?"  Part="1" 
+AR Path="/5D2C1188/5DAB8C29" Ref="C?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DAB8C29" Ref="C33"  Part="1" 
+F 0 "C33" H 2965 7646 50  0000 L CNN
+F 1 "100nF" H 2965 7555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2888 7450 50  0001 C CNN
+F 3 "~" H 2850 7600 50  0001 C CNN
+	1    2850 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DAB8C2F
+P 3350 7600
+AR Path="/5D2C07CD/5DAB8C2F" Ref="C?"  Part="1" 
+AR Path="/5D2C1188/5DAB8C2F" Ref="C?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DAB8C2F" Ref="C34"  Part="1" 
+F 0 "C34" H 3465 7646 50  0000 L CNN
+F 1 "100nF" H 3465 7555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3388 7450 50  0001 C CNN
+F 3 "~" H 3350 7600 50  0001 C CNN
+	1    3350 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DAB8C35
+P 3850 7600
+AR Path="/5D2C07CD/5DAB8C35" Ref="C?"  Part="1" 
+AR Path="/5D2C1188/5DAB8C35" Ref="C?"  Part="1" 
+AR Path="/5D8005AF/5D800744/5DAB8C35" Ref="C35"  Part="1" 
+F 0 "C35" H 3965 7646 50  0000 L CNN
+F 1 "100nF" H 3965 7555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3888 7450 50  0001 C CNN
+F 3 "~" H 3850 7600 50  0001 C CNN
+	1    3850 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 7450 2850 7450
+Wire Wire Line
+	2850 7450 3350 7450
+Connection ~ 2850 7450
+Wire Wire Line
+	3350 7450 3850 7450
+Connection ~ 3350 7450
+Wire Wire Line
+	3850 7750 3350 7750
+Wire Wire Line
+	3350 7750 2850 7750
+Connection ~ 3350 7750
+Wire Wire Line
+	2850 7750 2350 7750
+Connection ~ 2850 7750
 Wire Wire Line
 	5800 5900 6800 5900
 Wire Wire Line
@@ -753,10 +1103,6 @@ Wire Wire Line
 	5800 5800 6800 5800
 Wire Wire Line
 	5800 5700 6800 5700
-Wire Bus Line
-	6300 1950 6300 3600
-Wire Bus Line
-	6300 3600 6300 5800
 Wire Bus Line
 	8300 3450 8300 5800
 Wire Bus Line

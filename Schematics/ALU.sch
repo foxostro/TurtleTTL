@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 23 24
+Sheet 21 22
 Title "ALU"
 Date ""
 Rev ""

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 18 24
+Sheet 16 22
 Title "Speed Control"
 Date ""
 Rev ""
@@ -854,17 +854,17 @@ Wire Wire Line
 $Comp
 L Comparator:LM393 U67
 U 2 1 5DBE61E6
-P 9450 5200
-F 0 "U67" V 9500 5400 50  0000 C CNN
-F 1 "LM393" V 9600 5400 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 9450 5200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 9450 5200 50  0001 C CNN
-	2    9450 5200
+P 12050 2400
+F 0 "U67" V 12100 2600 50  0000 C CNN
+F 1 "LM393" V 12200 2600 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 12050 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 12050 2400 50  0001 C CNN
+	2    12050 2400
 	0    1    1    0   
 $EndComp
-NoConn ~ 9350 4900
-NoConn ~ 9550 4900
-NoConn ~ 9450 5500
+NoConn ~ 11950 2100
+NoConn ~ 12150 2100
+NoConn ~ 12050 2700
 $Comp
 L Connector:Conn_01x09_Female J?
 U 1 1 5D95167C
