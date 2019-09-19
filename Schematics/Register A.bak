@@ -331,8 +331,6 @@ Wire Wire Line
 	4150 3100 2450 3100
 Text GLabel 2450 3100 0    50   Input ~ 0
 RegisterClock
-Wire Bus Line
-	5600 1650 5600 2800
 Text GLabel 3350 5000 0    50   Input ~ 0
 A[0..7]
 Wire Wire Line
@@ -430,6 +428,8 @@ Wire Wire Line
 	5150 2800 6250 2800
 Wire Wire Line
 	5150 2200 6250 2200
+Wire Bus Line
+	5600 1650 5600 2800
 Wire Bus Line
 	3100 1900 3100 2800
 Wire Bus Line

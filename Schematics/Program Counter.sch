@@ -685,6 +685,7 @@ Text Label 3300 5550 1    50   ~ 0
 PC14
 Text Label 3200 5550 1    50   ~ 0
 PC15
+Connection ~ 9000 4900
 Wire Bus Line
 	10150 1700 10150 3850
 Wire Bus Line
@@ -703,5 +704,4 @@ Wire Bus Line
 	1900 1600 1900 2300
 Wire Bus Line
 	3300 4900 9000 4900
-Connection ~ 9000 4900
 $EndSCHEMATC
