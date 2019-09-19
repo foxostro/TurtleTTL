@@ -248,12 +248,12 @@ Wire Wire Line
 	4250 3000 4250 2950
 Connection ~ 1450 4850
 $Comp
-L Connector:Conn_01x09_Male J?
+L Connector:Conn_01x09_Male J1
 U 1 1 5D8F9D32
 P 4650 2750
-F 0 "J?" V 4485 2728 50  0000 C CNN
+F 0 "J1" V 4485 2728 50  0000 C CNN
 F 1 "Conn_01x09_Male" V 4576 2728 50  0000 C CNN
-F 2 "" H 4650 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 4650 2750 50  0001 C CNN
 F 3 "~" H 4650 2750 50  0001 C CNN
 	1    4650 2750
 	0    -1   1    0   
