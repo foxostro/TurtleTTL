@@ -591,7 +591,7 @@ F 3 "" H 4450 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 1000 4450 2350
+	4450 1000 4450 1950
 Wire Wire Line
 	4450 2350 3650 2350
 Wire Wire Line
@@ -900,4 +900,23 @@ Wire Bus Line
 	6850 600  6850 1950
 Wire Bus Line
 	4200 2950 8400 2950
+Text Label 5250 4950 0    50   ~ 0
+A=B
+Text Label 5200 4850 0    50   ~ 0
+Cn+4
+Wire Wire Line
+	4450 2250 4450 2350
+$Comp
+L Device:R R?
+U 1 1 5D8CF661
+P 4450 2100
+AR Path="/5D2C0CA7/5D8CF661" Ref="R?"  Part="1" 
+AR Path="/5D2C0CE4/5D8CF661" Ref="R?"  Part="1" 
+F 0 "R?" H 4520 2146 50  0000 L CNN
+F 1 "1kΩ" H 4520 2055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4380 2100 50  0001 C CNN
+F 3 "~" H 4450 2100 50  0001 C CNN
+	1    4450 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
