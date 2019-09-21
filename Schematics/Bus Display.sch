@@ -17,397 +17,281 @@ $EndDescr
 $Comp
 L power:GND #PWR0193
 U 1 1 5D7E5A44
-P 2900 3550
-F 0 "#PWR0193" H 2900 3300 50  0001 C CNN
-F 1 "GND" H 2905 3377 50  0000 C CNN
-F 2 "" H 2900 3550 50  0001 C CNN
-F 3 "" H 2900 3550 50  0001 C CNN
-	1    2900 3550
+P 5550 3250
+F 0 "#PWR0193" H 5550 3000 50  0001 C CNN
+F 1 "GND" H 5555 3077 50  0000 C CNN
+F 2 "" H 5550 3250 50  0001 C CNN
+F 3 "" H 5550 3250 50  0001 C CNN
+	1    5550 3250
 	1    0    0    -1  
 $EndComp
-Text GLabel 1600 1450 0    50   Input ~ 0
+Text GLabel 3700 2200 0    50   Input ~ 0
 DataBus[0..7]
 Entry Wire Line
-	3800 1550 3700 1450
+	5150 2300 5050 2200
 Entry Wire Line
-	4150 1550 4050 1450
+	5250 2300 5150 2200
 Entry Wire Line
-	4500 1550 4400 1450
+	5350 2300 5250 2200
 Entry Wire Line
-	4850 1550 4750 1450
+	5050 2300 4950 2200
 Entry Wire Line
-	5200 1550 5100 1450
+	4950 2300 4850 2200
 Entry Wire Line
-	3450 1550 3350 1450
-Entry Wire Line
-	3100 1550 3000 1450
-Entry Wire Line
-	2750 1550 2650 1450
-$Comp
-L Device:R R30
-U 1 1 5D7FC690
-P 2750 3100
-F 0 "R30" H 2820 3146 50  0000 L CNN
-F 1 "1kΩ" H 2820 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2680 3100 50  0001 C CNN
-F 3 "~" H 2750 3100 50  0001 C CNN
-	1    2750 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R31
-U 1 1 5D7FC696
-P 3100 3100
-F 0 "R31" H 3170 3146 50  0000 L CNN
-F 1 "1kΩ" H 3170 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3030 3100 50  0001 C CNN
-F 3 "~" H 3100 3100 50  0001 C CNN
-	1    3100 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R32
-U 1 1 5D7FC69E
-P 3450 3100
-F 0 "R32" H 3520 3146 50  0000 L CNN
-F 1 "1kΩ" H 3520 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3380 3100 50  0001 C CNN
-F 3 "~" H 3450 3100 50  0001 C CNN
-	1    3450 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R37
-U 1 1 5D7FC6A6
-P 5200 3100
-F 0 "R37" H 5270 3146 50  0000 L CNN
-F 1 "1kΩ" H 5270 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5130 3100 50  0001 C CNN
-F 3 "~" H 5200 3100 50  0001 C CNN
-	1    5200 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R36
-U 1 1 5D7FC6AC
-P 4850 3100
-F 0 "R36" H 4920 3146 50  0000 L CNN
-F 1 "1kΩ" H 4920 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4780 3100 50  0001 C CNN
-F 3 "~" H 4850 3100 50  0001 C CNN
-	1    4850 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R35
-U 1 1 5D7FC6B3
-P 4500 3100
-F 0 "R35" H 4570 3146 50  0000 L CNN
-F 1 "1kΩ" H 4570 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4430 3100 50  0001 C CNN
-F 3 "~" H 4500 3100 50  0001 C CNN
-	1    4500 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R34
-U 1 1 5D7FC6BB
-P 4150 3100
-F 0 "R34" H 4220 3146 50  0000 L CNN
-F 1 "1kΩ" H 4220 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4080 3100 50  0001 C CNN
-F 3 "~" H 4150 3100 50  0001 C CNN
-	1    4150 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R33
-U 1 1 5D7FC6C3
-P 3800 3100
-F 0 "R33" H 3870 3146 50  0000 L CNN
-F 1 "1kΩ" H 3870 3055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3730 3100 50  0001 C CNN
-F 3 "~" H 3800 3100 50  0001 C CNN
-	1    3800 3100
-	1    0    0    -1  
-$EndComp
-Text Label 2750 1900 1    50   ~ 0
+	4850 2300 4750 2200
+Text Label 4850 2650 1    50   ~ 0
 DataBus7
-Text Label 3100 1900 1    50   ~ 0
+Text Label 4950 2650 1    50   ~ 0
 DataBus6
-Text Label 3450 1900 1    50   ~ 0
+Text Label 5050 2650 1    50   ~ 0
 DataBus5
-Text Label 3800 1900 1    50   ~ 0
+Text Label 5150 2650 1    50   ~ 0
 DataBus4
-Text Label 4150 1900 1    50   ~ 0
+Text Label 5250 2650 1    50   ~ 0
 DataBus3
-Text Label 4500 1900 1    50   ~ 0
+Text Label 5350 2650 1    50   ~ 0
 DataBus2
-Text Label 4850 1900 1    50   ~ 0
-DataBus1
-Text Label 5200 1900 1    50   ~ 0
-DataBus0
-Wire Wire Line
-	2750 1550 2750 2950
-Wire Wire Line
-	3100 1550 3100 2950
-Wire Wire Line
-	3450 1550 3450 2950
-Wire Wire Line
-	3800 1550 3800 2950
-Wire Wire Line
-	4150 1550 4150 2950
-Wire Wire Line
-	4500 1550 4500 2950
-Wire Wire Line
-	4850 1550 4850 2950
-Wire Wire Line
-	5200 1550 5200 2950
-Wire Wire Line
-	2750 3250 2750 3450
-Wire Wire Line
-	2750 3450 2900 3450
-Wire Wire Line
-	3100 3250 3100 3450
-Connection ~ 3100 3450
-Wire Wire Line
-	3100 3450 3450 3450
-Wire Wire Line
-	3450 3250 3450 3450
-Connection ~ 3450 3450
-Wire Wire Line
-	3450 3450 3800 3450
-Wire Wire Line
-	3800 3250 3800 3450
-Connection ~ 3800 3450
-Wire Wire Line
-	3800 3450 4150 3450
-Wire Wire Line
-	4150 3250 4150 3450
-Connection ~ 4150 3450
-Wire Wire Line
-	4150 3450 4500 3450
-Wire Wire Line
-	4500 3250 4500 3450
-Connection ~ 4500 3450
-Wire Wire Line
-	4500 3450 4850 3450
-Wire Wire Line
-	4850 3250 4850 3450
-Connection ~ 4850 3450
-Wire Wire Line
-	4850 3450 5200 3450
-Wire Wire Line
-	5200 3250 5200 3450
-Text Notes 3600 3650 0    50   ~ 0
+Text Notes 4300 3250 0    50   ~ 0
 Data Bus Pull-down Resistors
 $Comp
 L power:GND #PWR?
 U 1 1 5DCD04AD
-P 6700 5500
+P 6700 5050
 AR Path="/5D2C07CD/5DCD04AD" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C0CA7/5DCD04AD" Ref="#PWR?"  Part="1" 
 AR Path="/5D7BD0EA/5DCD04AD" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C12A5/5DCD04AD" Ref="#PWR0194"  Part="1" 
-F 0 "#PWR0194" H 6700 5250 50  0001 C CNN
-F 1 "GND" H 6705 5327 50  0000 C CNN
-F 2 "" H 6700 5500 50  0001 C CNN
-F 3 "" H 6700 5500 50  0001 C CNN
-	1    6700 5500
+F 0 "#PWR0194" H 6700 4800 50  0001 C CNN
+F 1 "GND" H 6705 4877 50  0000 C CNN
+F 2 "" H 6700 5050 50  0001 C CNN
+F 3 "" H 6700 5050 50  0001 C CNN
+	1    6700 5050
 	-1   0    0    1   
 $EndComp
 Entry Wire Line
-	5100 5000 5000 4900
+	5100 4550 5000 4450
 Entry Wire Line
-	5300 5000 5200 4900
+	5300 4550 5200 4450
 Entry Wire Line
-	5400 5000 5300 4900
+	5400 4550 5300 4450
 Entry Wire Line
-	5500 5000 5400 4900
+	5500 4550 5400 4450
 Entry Wire Line
-	5600 5000 5500 4900
+	5600 4550 5500 4450
 Entry Wire Line
-	5700 5000 5600 4900
+	5700 4550 5600 4450
 Entry Wire Line
-	5800 5000 5700 4900
+	5800 4550 5700 4450
 Entry Wire Line
-	5900 5000 5800 4900
+	5900 4550 5800 4450
 Entry Wire Line
-	6000 5000 5900 4900
+	6000 4550 5900 4450
 Entry Wire Line
-	6100 5000 6000 4900
+	6100 4550 6000 4450
 Entry Wire Line
-	6200 5000 6100 4900
+	6200 4550 6100 4450
 Entry Wire Line
-	6300 5000 6200 4900
+	6300 4550 6200 4450
 Entry Wire Line
-	6400 5000 6300 4900
+	6400 4550 6300 4450
 Entry Wire Line
-	6500 5000 6400 4900
+	6500 4550 6400 4450
 Entry Wire Line
-	6600 5000 6500 4900
-Text GLabel 4700 4900 0    50   Input ~ 0
+	6600 4550 6500 4450
+Text GLabel 4700 4450 0    50   Input ~ 0
 AddressBus[0..15]
-Text Label 5100 5550 1    50   ~ 0
+Text Label 5100 5100 1    50   ~ 0
 AddressBus15
-Text Label 5300 5550 1    50   ~ 0
+Text Label 5300 5100 1    50   ~ 0
 AddressBus13
-Text Label 5400 5550 1    50   ~ 0
+Text Label 5400 5100 1    50   ~ 0
 AddressBus12
-Text Label 5500 5550 1    50   ~ 0
+Text Label 5500 5100 1    50   ~ 0
 AddressBus11
-Text Label 5600 5550 1    50   ~ 0
+Text Label 5600 5100 1    50   ~ 0
 AddressBus10
-Text Label 5700 5550 1    50   ~ 0
+Text Label 5700 5100 1    50   ~ 0
 AddressBus9
-Text Label 5800 5550 1    50   ~ 0
+Text Label 5800 5100 1    50   ~ 0
 AddressBus8
-Text Label 5900 5550 1    50   ~ 0
+Text Label 5900 5100 1    50   ~ 0
 AddressBus7
-Text Label 6000 5550 1    50   ~ 0
+Text Label 6000 5100 1    50   ~ 0
 AddressBus6
-Text Label 6100 5550 1    50   ~ 0
+Text Label 6100 5100 1    50   ~ 0
 AddressBus5
-Text Label 6200 5550 1    50   ~ 0
+Text Label 6200 5100 1    50   ~ 0
 AddressBus4
-Text Label 6300 5550 1    50   ~ 0
+Text Label 6300 5100 1    50   ~ 0
 AddressBus3
-Text Label 6400 5550 1    50   ~ 0
+Text Label 6400 5100 1    50   ~ 0
 AddressBus2
-Text Label 6500 5550 1    50   ~ 0
+Text Label 6500 5100 1    50   ~ 0
 AddressBus1
-Text Label 6600 5550 1    50   ~ 0
+Text Label 6600 5100 1    50   ~ 0
 AddressBus0
 Wire Wire Line
-	5100 5000 5100 5600
+	5100 4550 5100 5150
 Wire Wire Line
-	5300 5000 5300 5600
+	5300 4550 5300 5150
 Wire Wire Line
-	5400 5000 5400 5600
+	5400 4550 5400 5150
 Wire Wire Line
-	5500 5000 5500 5600
+	5500 4550 5500 5150
 Wire Wire Line
-	5600 5000 5600 5600
+	5600 4550 5600 5150
 Wire Wire Line
-	5700 5000 5700 5600
+	5700 4550 5700 5150
 Wire Wire Line
-	5800 5000 5800 5600
+	5800 4550 5800 5150
 Wire Wire Line
-	5900 5000 5900 5600
+	5900 4550 5900 5150
 Wire Wire Line
-	6000 5000 6000 5600
+	6000 4550 6000 5150
 Wire Wire Line
-	6100 5000 6100 5600
+	6100 4550 6100 5150
 Wire Wire Line
-	6200 5000 6200 5600
+	6200 4550 6200 5150
 Wire Wire Line
-	6300 5000 6300 5600
+	6300 4550 6300 5150
 Wire Wire Line
-	6400 5000 6400 5600
+	6400 4550 6400 5150
 Wire Wire Line
-	6500 5000 6500 5600
+	6500 4550 6500 5150
 Wire Wire Line
-	6600 5000 6600 5600
+	6600 4550 6600 5150
 Wire Wire Line
-	6700 5600 6700 5500
+	6700 5150 6700 5050
 Wire Wire Line
-	2900 3450 2900 3550
-Connection ~ 2900 3450
+	5550 3150 5550 3250
 Wire Wire Line
-	2900 3450 3100 3450
-Wire Wire Line
-	5200 5000 5200 5600
-Text Label 5200 5550 1    50   ~ 0
+	5200 4550 5200 5150
+Text Label 5200 5100 1    50   ~ 0
 AddressBus14
 Entry Wire Line
-	5200 5000 5100 4900
+	5200 4550 5100 4450
 Wire Wire Line
-	8850 1700 8850 1900
+	6850 2450 6850 2650
 $Comp
 L power:GND #PWR0195
 U 1 1 5D8AA8B4
-P 8850 1700
-F 0 "#PWR0195" H 8850 1450 50  0001 C CNN
-F 1 "GND" H 8855 1527 50  0000 C CNN
-F 2 "" H 8850 1700 50  0001 C CNN
-F 3 "" H 8850 1700 50  0001 C CNN
-	1    8850 1700
+P 6850 2450
+F 0 "#PWR0195" H 6850 2200 50  0001 C CNN
+F 1 "GND" H 6855 2277 50  0000 C CNN
+F 2 "" H 6850 2450 50  0001 C CNN
+F 3 "" H 6850 2450 50  0001 C CNN
+	1    6850 2450
 	-1   0    0    1   
 $EndComp
 Entry Wire Line
-	8150 1550 8050 1450
+	6150 2300 6050 2200
 Wire Wire Line
-	8150 1550 8150 1900
-Text Label 8150 1900 1    50   ~ 0
+	6150 2300 6150 2650
+Text Label 6150 2650 1    50   ~ 0
 DataBus6
 Wire Wire Line
-	8350 1550 8350 1900
-Text Label 8350 1900 1    50   ~ 0
+	6350 2300 6350 2650
+Text Label 6350 2650 1    50   ~ 0
 DataBus4
 $Comp
 L Connector:Conn_01x09_Female J?
 U 1 1 5D870367
-P 8450 2100
+P 6450 2850
 AR Path="/5D29E36D/5D870367" Ref="J?"  Part="1" 
 AR Path="/5D2C12A5/5D870367" Ref="J12"  Part="1" 
-F 0 "J12" V 8600 2050 50  0000 C CNN
-F 1 "Data Bus LED Connector" V 8700 2050 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 8450 2100 50  0001 C CNN
-F 3 "~" H 8450 2100 50  0001 C CNN
-	1    8450 2100
+F 0 "J12" V 6600 2800 50  0000 C CNN
+F 1 "Data Bus LED Connector" V 6700 2800 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 6450 2850 50  0001 C CNN
+F 3 "~" H 6450 2850 50  0001 C CNN
+	1    6450 2850
 	0    1    1    0   
 $EndComp
-Text Label 8750 1900 1    50   ~ 0
+Text Label 6750 2650 1    50   ~ 0
 DataBus0
-Text Label 8650 1900 1    50   ~ 0
+Text Label 6650 2650 1    50   ~ 0
 DataBus1
-Text Label 8550 1900 1    50   ~ 0
+Text Label 6550 2650 1    50   ~ 0
 DataBus2
-Text Label 8450 1900 1    50   ~ 0
+Text Label 6450 2650 1    50   ~ 0
 DataBus3
-Text Label 8250 1900 1    50   ~ 0
+Text Label 6250 2650 1    50   ~ 0
 DataBus5
-Text Label 8050 1900 1    50   ~ 0
+Text Label 6050 2650 1    50   ~ 0
 DataBus7
 Wire Wire Line
-	8050 1550 8050 1900
+	6050 2300 6050 2650
 Wire Wire Line
-	8250 1550 8250 1900
+	6250 2300 6250 2650
 Wire Wire Line
-	8450 1550 8450 1900
+	6450 2300 6450 2650
 Wire Wire Line
-	8550 1550 8550 1900
+	6550 2300 6550 2650
 Wire Wire Line
-	8650 1550 8650 1900
+	6650 2300 6650 2650
 Wire Wire Line
-	8750 1550 8750 1900
+	6750 2300 6750 2650
 Entry Wire Line
-	8050 1550 7950 1450
+	6050 2300 5950 2200
 Entry Wire Line
-	8250 1550 8150 1450
+	6250 2300 6150 2200
 Entry Wire Line
-	8750 1550 8650 1450
+	6750 2300 6650 2200
 Entry Wire Line
-	8650 1550 8550 1450
+	6650 2300 6550 2200
 Entry Wire Line
-	8550 1550 8450 1450
+	6550 2300 6450 2200
 Entry Wire Line
-	8450 1550 8350 1450
+	6450 2300 6350 2200
 Entry Wire Line
-	8350 1550 8250 1450
+	6350 2300 6250 2200
 $Comp
 L Connector:Conn_01x17_Female J11
 U 1 1 5D8D33D7
-P 5900 5800
-F 0 "J11" V 5973 5780 50  0000 C CNN
-F 1 "Address Bus LED Connector" V 6064 5780 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x17_P2.54mm_Vertical" H 5900 5800 50  0001 C CNN
-F 3 "~" H 5900 5800 50  0001 C CNN
-	1    5900 5800
+P 5900 5350
+F 0 "J11" V 5973 5330 50  0000 C CNN
+F 1 "Address Bus LED Connector" V 6064 5330 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x17_P2.54mm_Vertical" H 5900 5350 50  0001 C CNN
+F 3 "~" H 5900 5350 50  0001 C CNN
+	1    5900 5350
 	0    1    1    0   
 $EndComp
+Text Label 5550 2650 1    50   ~ 0
+DataBus0
+Text Label 5450 2650 1    50   ~ 0
+DataBus1
+Entry Wire Line
+	5550 2300 5450 2200
+Entry Wire Line
+	5450 2300 5350 2200
+$Comp
+L Device:R_Network08 RN?
+U 1 1 5D8F8D59
+P 5150 2950
+F 0 "RN?" H 4670 2904 50  0000 R CNN
+F 1 "1kΩ" H 4670 2995 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 5625 2950 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5150 2950 50  0001 C CNN
+	1    5150 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 2300 5550 2750
+Wire Wire Line
+	5450 2750 5450 2300
+Wire Wire Line
+	5350 2300 5350 2750
+Wire Wire Line
+	5250 2750 5250 2300
+Wire Wire Line
+	5150 2300 5150 2750
+Wire Wire Line
+	5050 2750 5050 2300
+Wire Wire Line
+	4950 2300 4950 2750
+Wire Wire Line
+	4850 2750 4850 2300
 Wire Bus Line
-	4700 4900 6500 4900
+	4700 4450 6500 4450
 Wire Bus Line
-	1600 1450 8650 1450
+	3700 2200 6650 2200
 $EndSCHEMATC

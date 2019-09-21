@@ -435,17 +435,6 @@ F 3 "~" H 8950 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C69
-U 1 1 5D9F0A2F
-P 9450 5750
-F 0 "C69" H 9565 5796 50  0000 L CNN
-F 1 "100nF" H 9565 5705 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 9488 5600 50  0001 C CNN
-F 3 "~" H 9450 5750 50  0001 C CNN
-	1    9450 5750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0162
 U 1 1 5D9F0A35
 P 7450 5900
@@ -477,13 +466,7 @@ Wire Wire Line
 	8450 5600 8950 5600
 Connection ~ 8450 5600
 Wire Wire Line
-	8950 5600 9450 5600
-Connection ~ 8950 5600
-Wire Wire Line
-	9450 5900 8950 5900
-Wire Wire Line
 	8950 5900 8450 5900
-Connection ~ 8950 5900
 Wire Wire Line
 	8450 5900 7950 5900
 Connection ~ 8450 5900
