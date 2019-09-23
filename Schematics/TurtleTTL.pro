@@ -1,4 +1,4 @@
-update=Sunday, September 22, 2019 at 06:37:01 PM
+update=Sunday, September 22, 2019 at 06:47:06 PM
 version=1
 last_client=pcbnew
 [general]
@@ -73,10 +73,10 @@ SolderPasteRatio=-0
 Name=GND.Cu
 Type=1
 [pcbnew/Layer.In2.Cu]
-Name=In1.Cu
+Name=Inner.Cu
 Type=0
 [pcbnew/Layer.In3.Cu]
-Name=In2.Cu
+Name=Control.Cu
 Type=0
 [pcbnew/Layer.In4.Cu]
 Name=VCC.Cu
