@@ -1,6 +1,6 @@
-update=Thursday, September 19, 2019 at 11:33:57 PM
+update=Sunday, September 22, 2019 at 06:37:01 PM
 version=1
-last_client=kicad
+last_client=pcbnew
 [general]
 version=1
 RootSch=
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=4
+CopperLayerCount=6
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -70,8 +70,14 @@ SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.In1.Cu]
-Name=Gnd1.Cu
+Name=GND.Cu
 Type=1
 [pcbnew/Layer.In2.Cu]
-Name=Power.Cu
+Name=In1.Cu
+Type=0
+[pcbnew/Layer.In3.Cu]
+Name=In2.Cu
+Type=0
+[pcbnew/Layer.In4.Cu]
+Name=VCC.Cu
 Type=1
