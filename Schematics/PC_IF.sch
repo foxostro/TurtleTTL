@@ -15,34 +15,6 @@ Comment3 "This alleviates timing constraints related to the phase shift between 
 Comment4 "The PC/IF register sits between the program counter and the Instruction Fetch stage."
 $EndDescr
 $Comp
-L 74xx:74LS377 U?
-U 1 1 5DD0E967
-P 5500 2550
-AR Path="/5D2C0CA7/5DD0E967" Ref="U?"  Part="1" 
-AR Path="/5D7BE200/5DD0E967" Ref="U?"  Part="1" 
-AR Path="/5D8005AF/5D833E4B/5DD0E967" Ref="U22"  Part="1" 
-F 0 "U22" H 5250 3350 50  0000 C CNN
-F 1 "74F377" H 5250 3250 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 5500 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS377" H 5500 2550 50  0001 C CNN
-	1    5500 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS377 U?
-U 1 1 5DD0E9D6
-P 5500 4700
-AR Path="/5D2C0CA7/5DD0E9D6" Ref="U?"  Part="1" 
-AR Path="/5D7BE200/5DD0E9D6" Ref="U?"  Part="1" 
-AR Path="/5D8005AF/5D833E4B/5DD0E9D6" Ref="U23"  Part="1" 
-F 0 "U23" H 5250 5500 50  0000 C CNN
-F 1 "74F377" H 5250 5400 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 5500 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS377" H 5500 4700 50  0001 C CNN
-	1    5500 4700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR056
 U 1 1 5DD10B91
 P 5500 1750
@@ -371,6 +343,34 @@ Connection ~ 1000 7000
 Wire Wire Line
 	1500 7300 1000 7300
 Connection ~ 1000 7300
+$Comp
+L 74xx:74LS574 U?
+U 1 1 5D89A6E8
+P 5500 2550
+AR Path="/5D2C14C3/5D89A6E8" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D833E49/5D89A6E8" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D833E4B/5D89A6E8" Ref="U22"  Part="1" 
+F 0 "U22" H 5250 3350 50  0000 C CNN
+F 1 "74F574" H 5250 3250 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 5500 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS574" H 5500 2550 50  0001 C CNN
+	1    5500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS574 U?
+U 1 1 5D89C1BF
+P 5500 4700
+AR Path="/5D2C14C3/5D89C1BF" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D833E49/5D89C1BF" Ref="U?"  Part="1" 
+AR Path="/5D8005AF/5D833E4B/5D89C1BF" Ref="U23"  Part="1" 
+F 0 "U23" H 5250 5500 50  0000 C CNN
+F 1 "74F574" H 5250 5400 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 5500 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS574" H 5500 4700 50  0001 C CNN
+	1    5500 4700
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	4450 1350 4450 4800
 Wire Bus Line
