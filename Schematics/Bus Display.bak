@@ -264,10 +264,10 @@ Entry Wire Line
 Entry Wire Line
 	5450 2300 5350 2200
 $Comp
-L Device:R_Network08 RN?
+L Device:R_Network08 RN1
 U 1 1 5D8F8D59
 P 5150 2950
-F 0 "RN?" H 4670 2904 50  0000 R CNN
+F 0 "RN1" H 4670 2904 50  0000 R CNN
 F 1 "1kΩ" H 4670 2995 50  0000 R CNN
 F 2 "Resistor_THT:R_Array_SIP9" V 5625 2950 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5150 2950 50  0001 C CNN
