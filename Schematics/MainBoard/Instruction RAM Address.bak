@@ -136,10 +136,8 @@ Text Label 1600 2600 0    50   ~ 0
 PC_IF0
 Text Label 1600 2900 0    50   ~ 0
 PC_IF1
-Text Label 1600 3200 0    50   ~ 0
-PC_IF2
 Text Label 1600 3500 0    50   ~ 0
-PC_IF3
+PC_IF2
 Wire Bus Line
 	1500 1700 1250 1700
 Entry Wire Line
@@ -427,8 +425,6 @@ Connection ~ 3700 1850
 Text Label 3850 2700 0    50   ~ 0
 AddressBus4
 Text Label 1600 3600 0    50   ~ 0
-AddressBus3
-Text Label 1600 3300 0    50   ~ 0
 AddressBus2
 Text Label 1600 3000 0    50   ~ 0
 AddressBus1
@@ -492,9 +488,9 @@ IRAMAddr0
 Text Label 3500 2900 2    50   ~ 0
 IRAMAddr1
 Text Label 3500 3200 2    50   ~ 0
-IRAMAddr2
-Text Label 3500 3500 2    50   ~ 0
 IRAMAddr3
+Text Label 3500 3500 2    50   ~ 0
+IRAMAddr2
 Text Label 5750 2600 2    50   ~ 0
 IRAMAddr4
 Wire Wire Line
@@ -719,4 +715,8 @@ Wire Bus Line
 	1500 1700 1500 3700
 Wire Bus Line
 	10500 2700 10500 4950
+Text Label 1600 3300 0    50   ~ 0
+AddressBus3
+Text Label 1600 3200 0    50   ~ 0
+PC_IF3
 $EndSCHEMATC

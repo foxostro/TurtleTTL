@@ -85,23 +85,23 @@ Entry Wire Line
 Wire Bus Line
 	3500 2200 4100 2200
 $Comp
-L Connector:Conn_01x09_Female J?
+L Connector:Conn_01x09_Female J13
 U 1 1 5D9FCF7F
 P 5050 3000
-F 0 "J?" H 4942 3585 50  0000 C CNN
+F 0 "J13" H 4942 3585 50  0000 C CNN
 F 1 "PC/IF Connector [0..7]" H 4942 3494 50  0000 C CNN
-F 2 "" H 5050 3000 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 5050 3000 50  0001 C CNN
 F 3 "~" H 5050 3000 50  0001 C CNN
 	1    5050 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x09_Female J?
+L Connector:Conn_01x09_Female J14
 U 1 1 5D9FD60E
 P 5050 4150
-F 0 "J?" H 4900 4750 50  0000 L CNN
+F 0 "J14" H 4900 4750 50  0000 L CNN
 F 1 "PC/IF Connector [8..15]" H 4500 4650 50  0000 L CNN
-F 2 "" H 5050 4150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 5050 4150 50  0001 C CNN
 F 3 "~" H 5050 4150 50  0001 C CNN
 	1    5050 4150
 	1    0    0    -1  
@@ -191,10 +191,10 @@ Entry Wire Line
 Wire Wire Line
 	4200 2600 4300 2600
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0196
 U 1 1 5DA36C60
 P 4300 2600
-F 0 "#PWR?" H 4300 2450 50  0001 C CNN
+F 0 "#PWR0196" H 4300 2450 50  0001 C CNN
 F 1 "VCC" H 4317 2773 50  0000 C CNN
 F 2 "" H 4300 2600 50  0001 C CNN
 F 3 "" H 4300 2600 50  0001 C CNN
@@ -205,10 +205,10 @@ Connection ~ 4300 2600
 Wire Wire Line
 	4300 2600 4850 2600
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0197
 U 1 1 5DA4A833
 P 4350 3750
-F 0 "#PWR?" H 4350 3500 50  0001 C CNN
+F 0 "#PWR0197" H 4350 3500 50  0001 C CNN
 F 1 "GND" H 4355 3577 50  0000 C CNN
 F 2 "" H 4350 3750 50  0001 C CNN
 F 3 "" H 4350 3750 50  0001 C CNN
@@ -239,23 +239,23 @@ Wire Wire Line
 Wire Wire Line
 	4850 3850 4200 3850
 $Comp
-L Connector:Conn_01x08_Female J?
+L Connector:Conn_01x08_Female J15
 U 1 1 5DA78DB1
 P 6850 3100
-F 0 "J?" H 6742 3585 50  0000 C CNN
+F 0 "J15" H 6742 3585 50  0000 C CNN
 F 1 "IROM Connector [0..7]" H 6742 3494 50  0000 C CNN
-F 2 "" H 6850 3100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6850 3100 50  0001 C CNN
 F 3 "~" H 6850 3100 50  0001 C CNN
 	1    6850 3100
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x08_Female J?
+L Connector:Conn_01x08_Female J16
 U 1 1 5DA7AF94
 P 6850 4150
-F 0 "J?" H 6742 4635 50  0000 C CNN
+F 0 "J16" H 6742 4635 50  0000 C CNN
 F 1 "IROM Connector [8..15]" H 6742 4544 50  0000 C CNN
-F 2 "" H 6850 4150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6850 4150 50  0001 C CNN
 F 3 "~" H 6850 4150 50  0001 C CNN
 	1    6850 4150
 	-1   0    0    -1  
