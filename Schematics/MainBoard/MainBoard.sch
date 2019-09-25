@@ -1,11 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:TurtleTTL-cache
+LIBS:MainBoard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 22
-Title "Turtle TTL"
+Title "TurtleTTL: Main Board"
 Date ""
 Rev ""
 Comp ""

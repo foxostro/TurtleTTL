@@ -401,91 +401,91 @@ Entry Wire Line
 Wire Wire Line
 	4200 1450 4800 1450
 Text Label 4750 1450 2    50   ~ 0
-AddressBus0
+IRAMAddr0
 Entry Wire Line
 	4200 1550 4100 1650
 Wire Wire Line
 	4200 1550 4800 1550
 Text Label 4750 1550 2    50   ~ 0
-AddressBus1
+IRAMAddr1
 Entry Wire Line
 	4200 1650 4100 1750
 Wire Wire Line
 	4200 1650 4800 1650
 Text Label 4750 1650 2    50   ~ 0
-AddressBus2
+IRAMAddr2
 Entry Wire Line
 	4200 1750 4100 1850
 Wire Wire Line
 	4200 1750 4800 1750
 Text Label 4750 1750 2    50   ~ 0
-AddressBus3
+IRAMAddr3
 Entry Wire Line
 	4200 1850 4100 1950
 Wire Wire Line
 	4200 1850 4800 1850
 Text Label 4750 1850 2    50   ~ 0
-AddressBus4
+IRAMAddr4
 Entry Wire Line
 	4200 1950 4100 2050
 Wire Wire Line
 	4200 1950 4800 1950
 Text Label 4750 1950 2    50   ~ 0
-AddressBus5
+IRAMAddr5
 Entry Wire Line
 	4200 2050 4100 2150
 Wire Wire Line
 	4200 2050 4800 2050
 Text Label 4750 2050 2    50   ~ 0
-AddressBus6
+IRAMAddr6
 Entry Wire Line
 	4200 2150 4100 2250
 Wire Wire Line
 	4200 2150 4800 2150
 Text Label 4750 2150 2    50   ~ 0
-AddressBus7
+IRAMAddr7
 Entry Wire Line
 	4200 2250 4100 2350
 Wire Wire Line
 	4200 2250 4800 2250
 Text Label 4750 2250 2    50   ~ 0
-AddressBus8
+IRAMAddr8
 Entry Wire Line
 	4200 2350 4100 2450
 Wire Wire Line
 	4200 2350 4800 2350
 Text Label 4750 2350 2    50   ~ 0
-AddressBus9
+IRAMAddr9
 Entry Wire Line
 	4200 2450 4100 2550
 Wire Wire Line
 	4200 2450 4800 2450
 Text Label 4750 2450 2    50   ~ 0
-AddressBus10
+IRAMAddr10
 Entry Wire Line
 	4200 2550 4100 2650
 Wire Wire Line
 	4200 2550 4800 2550
 Text Label 4750 2550 2    50   ~ 0
-AddressBus11
+IRAMAddr11
 Entry Wire Line
 	4200 2650 4100 2750
 Wire Wire Line
 	4200 2650 4800 2650
 Text Label 4750 2650 2    50   ~ 0
-AddressBus12
+IRAMAddr12
 Entry Wire Line
 	4200 2750 4100 2850
 Wire Wire Line
 	4200 2750 4800 2750
 Text Label 4750 2750 2    50   ~ 0
-AddressBus13
+IRAMAddr13
 Entry Wire Line
 	4200 2850 4100 2950
 Wire Wire Line
 	4200 2850 4800 2850
 Text Label 4750 2850 2    50   ~ 0
-AddressBus14
+IRAMAddr14
 $Comp
 L Memory_RAM:IDT71256SA12TPG U?
 U 1 1 5D8E2F04
@@ -530,95 +530,95 @@ Entry Wire Line
 Wire Wire Line
 	4200 4800 4800 4800
 Text Label 4750 4800 2    50   ~ 0
-AddressBus0
+IRAMAddr0
 Entry Wire Line
 	4200 4900 4100 5000
 Wire Wire Line
 	4200 4900 4800 4900
 Text Label 4750 4900 2    50   ~ 0
-AddressBus1
+IRAMAddr1
 Entry Wire Line
 	4200 5000 4100 5100
 Wire Wire Line
 	4200 5000 4800 5000
 Text Label 4750 5000 2    50   ~ 0
-AddressBus2
+IRAMAddr2
 Entry Wire Line
 	4200 5100 4100 5200
 Wire Wire Line
 	4200 5100 4800 5100
 Text Label 4750 5100 2    50   ~ 0
-AddressBus3
+IRAMAddr3
 Entry Wire Line
 	4200 5200 4100 5300
 Wire Wire Line
 	4200 5200 4800 5200
 Text Label 4750 5200 2    50   ~ 0
-AddressBus4
+IRAMAddr4
 Entry Wire Line
 	4200 5300 4100 5400
 Wire Wire Line
 	4200 5300 4800 5300
 Text Label 4750 5300 2    50   ~ 0
-AddressBus5
+IRAMAddr5
 Entry Wire Line
 	4200 5400 4100 5500
 Wire Wire Line
 	4200 5400 4800 5400
 Text Label 4750 5400 2    50   ~ 0
-AddressBus6
+IRAMAddr6
 Entry Wire Line
 	4200 5500 4100 5600
 Wire Wire Line
 	4200 5500 4800 5500
 Text Label 4750 5500 2    50   ~ 0
-AddressBus7
+IRAMAddr7
 Entry Wire Line
 	4200 5600 4100 5700
 Wire Wire Line
 	4200 5600 4800 5600
 Text Label 4750 5600 2    50   ~ 0
-AddressBus8
+IRAMAddr8
 Entry Wire Line
 	4200 5700 4100 5800
 Wire Wire Line
 	4200 5700 4800 5700
 Text Label 4750 5700 2    50   ~ 0
-AddressBus9
+IRAMAddr9
 Entry Wire Line
 	4200 5800 4100 5900
 Wire Wire Line
 	4200 5800 4800 5800
 Text Label 4750 5800 2    50   ~ 0
-AddressBus10
+IRAMAddr10
 Entry Wire Line
 	4200 5900 4100 6000
 Wire Wire Line
 	4200 5900 4800 5900
 Text Label 4750 5900 2    50   ~ 0
-AddressBus11
+IRAMAddr11
 Entry Wire Line
 	4200 6000 4100 6100
 Wire Wire Line
 	4200 6000 4800 6000
 Text Label 4750 6000 2    50   ~ 0
-AddressBus12
+IRAMAddr12
 Entry Wire Line
 	4200 6100 4100 6200
 Wire Wire Line
 	4200 6100 4800 6100
 Text Label 4750 6100 2    50   ~ 0
-AddressBus13
+IRAMAddr13
 Entry Wire Line
 	4200 6200 4100 6300
 Wire Wire Line
 	4200 6200 4800 6200
 Text Label 4750 6200 2    50   ~ 0
-AddressBus14
+IRAMAddr14
 Wire Bus Line
 	4100 6500 1250 6500
 Text GLabel 1250 6500 0    50   Input ~ 0
-AddressBus[0..15]
+IRAMAddr[0..15]
 $Comp
 L power:GND #PWR089
 U 1 1 5DBCC3A9
@@ -1045,10 +1045,6 @@ Connection ~ 3350 7750
 Wire Wire Line
 	2850 7750 2350 7750
 Connection ~ 2850 7750
-Wire Bus Line
-	6300 1950 6300 3600
-Wire Bus Line
-	6300 3600 6300 5800
 Wire Wire Line
 	3100 850  3100 1550
 Connection ~ 3100 850 
@@ -1108,6 +1104,10 @@ Wire Wire Line
 	5800 5800 6800 5800
 Wire Wire Line
 	5800 5700 6800 5700
+Wire Bus Line
+	6300 1950 6300 3600
+Wire Bus Line
+	6300 3600 6300 5800
 Wire Bus Line
 	8300 3450 8300 5800
 Wire Bus Line
