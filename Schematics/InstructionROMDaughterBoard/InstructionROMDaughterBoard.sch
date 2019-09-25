@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:InstructionROMDaughterBoard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -330,30 +331,6 @@ F 3 "" H 6900 2500 50  0001 C CNN
 	1    6900 2500
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	5950 2100 5950 4000
-$Comp
-L Connector:Conn_01x09_Female J?
-U 1 1 5D8B4B64
-P 1500 4350
-F 0 "J?" H 1392 4935 50  0000 C CNN
-F 1 "PC/IF Connector [8..15]" H 1392 4844 50  0000 C CNN
-F 2 "" H 1500 4350 50  0001 C CNN
-F 3 "~" H 1500 4350 50  0001 C CNN
-	1    1500 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x09_Female J?
-U 1 1 5D8B3DE1
-P 1500 3200
-F 0 "J?" H 1392 3785 50  0000 C CNN
-F 1 "PC/IF Connector [0..7]" H 1392 3694 50  0000 C CNN
-F 2 "" H 1500 3200 50  0001 C CNN
-F 3 "~" H 1500 3200 50  0001 C CNN
-	1    1500 3200
-	-1   0    0    -1  
-$EndComp
 Entry Wire Line
 	2250 2800 2350 2700
 Entry Wire Line
@@ -550,70 +527,8 @@ Entry Wire Line
 	8900 3600 8800 3500
 Entry Wire Line
 	8900 4050 8800 3950
-Wire Bus Line
-	8800 2200 8800 4650
-Wire Bus Line
-	2350 2100 2350 4650
-Wire Bus Line
-	3850 2200 3850 3200
-Wire Bus Line
-	7900 2200 7900 3200
-Wire Wire Line
-	5500 4100 6250 4100
-Wire Wire Line
-	5500 4000 6250 4000
-Wire Wire Line
-	5500 3900 6250 3900
-Wire Wire Line
-	5500 3800 6250 3800
-Wire Wire Line
-	5500 3700 6250 3700
-Wire Wire Line
-	5500 3600 6250 3600
-Wire Wire Line
-	5500 3500 6250 3500
-Wire Wire Line
-	5500 3400 6250 3400
-Wire Wire Line
-	5500 3300 6250 3300
-Wire Wire Line
-	5500 3200 6250 3200
-Wire Wire Line
-	5500 3100 6250 3100
-Wire Wire Line
-	5500 3000 6250 3000
-Wire Wire Line
-	5500 2900 6250 2900
-Wire Wire Line
-	5500 2800 6250 2800
-Wire Wire Line
-	5500 2700 6250 2700
-Wire Wire Line
-	5500 2600 6250 2600
 Entry Wire Line
 	8900 2900 8800 2800
-$Comp
-L Connector:Conn_01x08_Female J?
-U 1 1 5D9ED656
-P 9650 3200
-F 0 "J?" H 9678 3176 50  0000 L CNN
-F 1 "IROM Connector [0..7]" H 9678 3085 50  0000 L CNN
-F 2 "" H 9650 3200 50  0001 C CNN
-F 3 "~" H 9650 3200 50  0001 C CNN
-	1    9650 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x08_Female J?
-U 1 1 5D9EE96F
-P 9650 4350
-F 0 "J?" H 9678 4326 50  0000 L CNN
-F 1 "IROM Connector [8..15]" H 9678 4235 50  0000 L CNN
-F 2 "" H 9650 4350 50  0001 C CNN
-F 3 "~" H 9650 4350 50  0001 C CNN
-	1    9650 4350
-	1    0    0    -1  
-$EndComp
 Text Label 9150 4050 2    50   ~ 0
 IROM8
 Text Label 9150 4150 2    50   ~ 0
@@ -646,4 +561,90 @@ Text Label 9150 3600 2    50   ~ 0
 IROM7
 Text Label 9150 3100 2    50   ~ 0
 IROM2
+Wire Bus Line
+	5950 2100 5950 4000
+$Comp
+L Connector:Conn_01x09_Male J?
+U 1 1 5D8B47B5
+P 1500 3200
+F 0 "J?" H 1608 3781 50  0000 C CNN
+F 1 "PC/IF Connector [0..7]" H 1608 3690 50  0000 C CNN
+F 2 "" H 1500 3200 50  0001 C CNN
+F 3 "~" H 1500 3200 50  0001 C CNN
+	1    1500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x09_Male J?
+U 1 1 5D8B7923
+P 1500 4350
+F 0 "J?" H 1608 4931 50  0000 C CNN
+F 1 "PC/IF Connector [8..15]" H 1608 4840 50  0000 C CNN
+F 2 "" H 1500 4350 50  0001 C CNN
+F 3 "~" H 1500 4350 50  0001 C CNN
+	1    1500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J?
+U 1 1 5D8C12A0
+P 9650 3200
+F 0 "J?" H 9622 3174 50  0000 R CNN
+F 1 "IROM Connector [0..7]" H 9622 3083 50  0000 R CNN
+F 2 "" H 9650 3200 50  0001 C CNN
+F 3 "~" H 9650 3200 50  0001 C CNN
+	1    9650 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J?
+U 1 1 5D8C22E3
+P 9650 4350
+F 0 "J?" H 9622 4324 50  0000 R CNN
+F 1 "IROM Connector [8..15]" H 9622 4233 50  0000 R CNN
+F 2 "" H 9650 4350 50  0001 C CNN
+F 3 "~" H 9650 4350 50  0001 C CNN
+	1    9650 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4100 6250 4100
+Wire Wire Line
+	5500 2600 6250 2600
+Wire Wire Line
+	5500 2700 6250 2700
+Wire Wire Line
+	5500 2800 6250 2800
+Wire Wire Line
+	5500 2900 6250 2900
+Wire Wire Line
+	5500 3000 6250 3000
+Wire Wire Line
+	5500 3100 6250 3100
+Wire Wire Line
+	5500 3200 6250 3200
+Wire Wire Line
+	5500 3300 6250 3300
+Wire Wire Line
+	5500 3400 6250 3400
+Wire Wire Line
+	5500 3500 6250 3500
+Wire Wire Line
+	5500 3600 6250 3600
+Wire Wire Line
+	5500 3700 6250 3700
+Wire Wire Line
+	5500 3800 6250 3800
+Wire Wire Line
+	5500 3900 6250 3900
+Wire Wire Line
+	5500 4000 6250 4000
+Wire Bus Line
+	3850 2200 3850 3200
+Wire Bus Line
+	7900 2200 7900 3200
+Wire Bus Line
+	8800 2200 8800 4650
+Wire Bus Line
+	2350 2100 2350 4650
 $EndSCHEMATC
