@@ -214,7 +214,7 @@ F 1 "74LS245" H 6750 3000 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 7000 2300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 7000 2300 50  0001 C CNN
 	1    7000 2300
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
@@ -398,7 +398,7 @@ F 1 "74LS245" H 6750 5450 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 7000 4750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 7000 4750 50  0001 C CNN
 	1    7000 4750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
@@ -478,44 +478,6 @@ Wire Wire Line
 	4400 5150 2700 5150
 Wire Wire Line
 	2700 5250 4400 5250
-Wire Wire Line
-	6500 2800 6250 2800
-Wire Wire Line
-	6250 2800 6250 3500
-Wire Wire Line
-	6250 3500 2700 3500
-Wire Wire Line
-	6500 5250 6250 5250
-Wire Wire Line
-	6250 5250 6250 5950
-Wire Wire Line
-	6250 5950 2700 5950
-$Comp
-L power:VCC #PWR?
-U 1 1 5D9AA39C
-P 6500 5150
-AR Path="/5D2C0CA7/5D9AA39C" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BD0EA/5D9AA39C" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 6500 5000 50  0001 C CNN
-F 1 "VCC" H 6517 5323 50  0000 C CNN
-F 2 "" H 6500 5150 50  0001 C CNN
-F 3 "" H 6500 5150 50  0001 C CNN
-	1    6500 5150
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5D9AAE34
-P 6500 2700
-AR Path="/5D2C0CA7/5D9AAE34" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BD0EA/5D9AAE34" Ref="#PWR039"  Part="1" 
-F 0 "#PWR039" H 6500 2550 50  0001 C CNN
-F 1 "VCC" H 6517 2873 50  0000 C CNN
-F 2 "" H 6500 2700 50  0001 C CNN
-F 3 "" H 6500 2700 50  0001 C CNN
-	1    6500 2700
-	0    -1   1    0   
-$EndComp
 Entry Wire Line
 	5450 2000 5550 1900
 Entry Wire Line
@@ -584,6 +546,42 @@ Text Label 6150 1900 2    50   ~ 0
 AddressBus14
 Text Label 6150 1800 2    50   ~ 0
 AddressBus15
+Wire Bus Line
+	5550 1250 5550 4850
+$Comp
+L power:GND #PWR?
+U 1 1 5D96A89B
+P 7500 2700
+F 0 "#PWR?" H 7500 2450 50  0001 C CNN
+F 1 "GND" V 7505 2572 50  0000 R CNN
+F 2 "" H 7500 2700 50  0001 C CNN
+F 3 "" H 7500 2700 50  0001 C CNN
+	1    7500 2700
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D96AFA2
+P 7500 5150
+F 0 "#PWR?" H 7500 4900 50  0001 C CNN
+F 1 "GND" V 7505 5022 50  0000 R CNN
+F 2 "" H 7500 5150 50  0001 C CNN
+F 3 "" H 7500 5150 50  0001 C CNN
+	1    7500 5150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7650 3500 7650 2800
+Wire Wire Line
+	7650 2800 7500 2800
+Wire Wire Line
+	7650 5250 7650 5950
+Wire Wire Line
+	7500 5250 7650 5250
+Wire Wire Line
+	2700 5950 7650 5950
+Wire Wire Line
+	2700 3500 7650 3500
 Wire Wire Line
 	5400 2500 6500 2500
 Wire Wire Line
@@ -616,8 +614,6 @@ Wire Wire Line
 	5400 4850 6500 4850
 Wire Wire Line
 	5400 4250 6500 4250
-Wire Bus Line
-	5550 1250 5550 4850
 Wire Bus Line
 	3350 1500 3350 4850
 Wire Bus Line
