@@ -33,21 +33,21 @@ DataBus[0..7]
 Entry Wire Line
 	8200 2100 8100 2200
 Text Label 7700 2300 0    50   ~ 0
-DataBus6
-Text Label 7700 2400 0    50   ~ 0
-DataBus5
-Text Label 7700 2500 0    50   ~ 0
-DataBus4
-Text Label 7700 2600 0    50   ~ 0
-DataBus3
-Text Label 7700 2700 0    50   ~ 0
-DataBus2
-Text Label 7700 2800 0    50   ~ 0
 DataBus1
+Text Label 7700 2400 0    50   ~ 0
+DataBus2
+Text Label 7700 2500 0    50   ~ 0
+DataBus3
+Text Label 7700 2600 0    50   ~ 0
+DataBus4
+Text Label 7700 2700 0    50   ~ 0
+DataBus5
+Text Label 7700 2800 0    50   ~ 0
+DataBus6
 Text Label 7700 2900 0    50   ~ 0
-DataBus0
-Text Label 7700 2200 0    50   ~ 0
 DataBus7
+Text Label 7700 2200 0    50   ~ 0
+DataBus0
 $Comp
 L Device:C C?
 U 1 1 5DD6C85F
@@ -211,21 +211,21 @@ DataBus[0..7]
 Entry Wire Line
 	3000 2100 3100 2200
 Text Label 3500 2300 2    50   ~ 0
-DataBus6
-Text Label 3500 2400 2    50   ~ 0
-DataBus5
-Text Label 3500 2500 2    50   ~ 0
-DataBus4
-Text Label 3500 2600 2    50   ~ 0
-DataBus3
-Text Label 3500 2700 2    50   ~ 0
-DataBus2
-Text Label 3500 2800 2    50   ~ 0
 DataBus1
+Text Label 3500 2400 2    50   ~ 0
+DataBus2
+Text Label 3500 2500 2    50   ~ 0
+DataBus3
+Text Label 3500 2600 2    50   ~ 0
+DataBus4
+Text Label 3500 2700 2    50   ~ 0
+DataBus5
+Text Label 3500 2800 2    50   ~ 0
+DataBus6
 Text Label 3500 2900 2    50   ~ 0
-DataBus0
-Text Label 3500 2200 2    50   ~ 0
 DataBus7
+Text Label 3500 2200 2    50   ~ 0
+DataBus0
 Entry Wire Line
 	5400 2400 5500 2300
 Entry Wire Line
@@ -245,21 +245,21 @@ Entry Wire Line
 Text GLabel 8850 1650 2    50   Output ~ 0
 B[0..7]
 Text Label 5350 2900 2    50   ~ 0
-B0
-Text Label 5350 2800 2    50   ~ 0
-B1
-Text Label 5350 2700 2    50   ~ 0
-B2
-Text Label 5350 2600 2    50   ~ 0
-B3
-Text Label 5350 2500 2    50   ~ 0
-B4
-Text Label 5350 2400 2    50   ~ 0
-B5
-Text Label 5350 2300 2    50   ~ 0
-B6
-Text Label 5350 2200 2    50   ~ 0
 B7
+Text Label 5350 2800 2    50   ~ 0
+B6
+Text Label 5350 2700 2    50   ~ 0
+B5
+Text Label 5350 2600 2    50   ~ 0
+B4
+Text Label 5350 2500 2    50   ~ 0
+B3
+Text Label 5350 2400 2    50   ~ 0
+B2
+Text Label 5350 2300 2    50   ~ 0
+B1
+Text Label 5350 2200 2    50   ~ 0
+B0
 Text GLabel 2350 3500 0    50   Input ~ 0
 ~BO
 Text GLabel 2350 3300 0    50   Input ~ 0
@@ -402,14 +402,23 @@ Entry Wire Line
 	3800 5450 3700 5350
 Entry Wire Line
 	3700 5450 3600 5350
-Wire Bus Line
-	5500 1650 5500 2800
 Wire Wire Line
 	7150 3200 7500 3200
 Wire Wire Line
 	7500 3200 7500 3800
 Wire Wire Line
 	2600 3800 7500 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5D99ADB7
+P 7150 3100
+F 0 "#PWR?" H 7150 2850 50  0001 C CNN
+F 1 "GND" V 7155 2972 50  0000 R CNN
+F 2 "" H 7150 3100 50  0001 C CNN
+F 3 "" H 7150 3100 50  0001 C CNN
+	1    7150 3100
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	5050 2900 6150 2900
 Wire Wire Line
@@ -427,20 +436,11 @@ Wire Wire Line
 Wire Wire Line
 	5050 2200 6150 2200
 Wire Bus Line
+	5500 1650 5500 2800
+Wire Bus Line
 	3050 5350 4000 5350
 Wire Bus Line
 	3000 1900 3000 2800
 Wire Bus Line
 	8200 1800 8200 2800
-$Comp
-L power:GND #PWR?
-U 1 1 5D99ADB7
-P 7150 3100
-F 0 "#PWR?" H 7150 2850 50  0001 C CNN
-F 1 "GND" V 7155 2972 50  0000 R CNN
-F 2 "" H 7150 3100 50  0001 C CNN
-F 3 "" H 7150 3100 50  0001 C CNN
-	1    7150 3100
-	0    -1   -1   0   
-$EndComp
 $EndSCHEMATC
