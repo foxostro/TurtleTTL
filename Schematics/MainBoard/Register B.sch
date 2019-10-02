@@ -162,7 +162,7 @@ F 1 "74LS245" H 6400 3400 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 6650 2700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6650 2700 50  0001 C CNN
 	1    6650 2700
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
@@ -402,23 +402,25 @@ Entry Wire Line
 	3800 5450 3700 5350
 Entry Wire Line
 	3700 5450 3600 5350
-Wire Wire Line
-	7150 3200 7500 3200
-Wire Wire Line
-	7500 3200 7500 3800
-Wire Wire Line
-	2600 3800 7500 3800
+Wire Bus Line
+	5500 1650 5500 2800
 $Comp
-L power:GND #PWR0199
-U 1 1 5D99ADB7
-P 7150 3100
-F 0 "#PWR0199" H 7150 2850 50  0001 C CNN
-F 1 "GND" V 7155 2972 50  0000 R CNN
-F 2 "" H 7150 3100 50  0001 C CNN
-F 3 "" H 7150 3100 50  0001 C CNN
-	1    7150 3100
+L power:VCC #PWR?
+U 1 1 5D9A4FBB
+P 6150 3100
+F 0 "#PWR?" H 6150 2950 50  0001 C CNN
+F 1 "VCC" V 6168 3227 50  0000 L CNN
+F 2 "" H 6150 3100 50  0001 C CNN
+F 3 "" H 6150 3100 50  0001 C CNN
+	1    6150 3100
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	6150 3200 5900 3200
+Wire Wire Line
+	5900 3200 5900 3800
+Wire Wire Line
+	2600 3800 5900 3800
 Wire Wire Line
 	5050 2900 6150 2900
 Wire Wire Line
@@ -435,8 +437,6 @@ Wire Wire Line
 	5050 2800 6150 2800
 Wire Wire Line
 	5050 2200 6150 2200
-Wire Bus Line
-	5500 1650 5500 2800
 Wire Bus Line
 	3050 5350 4000 5350
 Wire Bus Line
