@@ -119,11 +119,6 @@ Wire Wire Line
 	3150 2700 3150 3600
 Wire Wire Line
 	3150 3600 3950 3600
-NoConn ~ 4950 2900
-NoConn ~ 4950 3000
-NoConn ~ 4950 3100
-NoConn ~ 4950 3200
-NoConn ~ 4950 3300
 $Comp
 L 74xx:74LS138 U13
 U 1 1 5DD40EA8
@@ -159,12 +154,6 @@ F 3 "" H 6250 3600 50  0001 C CNN
 	1    6250 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 2600 5750 2600
-Wire Wire Line
-	4950 2700 5750 2700
-Wire Wire Line
-	4950 2800 5750 2800
 $Comp
 L power:VCC #PWR029
 U 1 1 5DD4525E
@@ -282,24 +271,22 @@ Entry Wire Line
 	3300 4850 3200 4750
 Entry Wire Line
 	3400 4850 3300 4750
-Text GLabel 2450 4750 0    50   Input ~ 0
-DeviceSelect[0..7]
-Text Label 2700 5400 1    50   ~ 0
-DeviceSelect7
-Text Label 2800 5400 1    50   ~ 0
-DeviceSelect6
-Text Label 2900 5400 1    50   ~ 0
-DeviceSelect5
-Text Label 3000 5400 1    50   ~ 0
-DeviceSelect4
-Text Label 3100 5400 1    50   ~ 0
-DeviceSelect3
-Text Label 3200 5400 1    50   ~ 0
-DeviceSelect2
-Text Label 3300 5400 1    50   ~ 0
-DeviceSelect1
-Text Label 3400 5400 1    50   ~ 0
-DeviceSelect0
+Text Label 2700 4950 1    50   ~ 0
+D7
+Text Label 2800 4950 1    50   ~ 0
+D6
+Text Label 2900 4950 1    50   ~ 0
+D5
+Text Label 3000 4950 1    50   ~ 0
+D4
+Text Label 3100 4950 1    50   ~ 0
+D3
+Text Label 3200 4950 1    50   ~ 0
+D2
+Text Label 3300 4950 1    50   ~ 0
+D1
+Text Label 3400 4950 1    50   ~ 0
+D0
 Wire Wire Line
 	3300 4850 3300 5450
 Wire Wire Line
@@ -375,7 +362,7 @@ L Connector:Conn_01x09_Female J2
 U 1 1 5D83DE8F
 P 3100 5650
 F 0 "J2" V 3250 5600 50  0000 C CNN
-F 1 "Device Select LED Connector" V 3350 5600 50  0000 C CNN
+F 1 "Register D LED Connector" V 3350 5600 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 3100 5650 50  0001 C CNN
 F 3 "~" H 3100 5650 50  0001 C CNN
 	1    3100 5650
@@ -395,10 +382,88 @@ Wire Wire Line
 	3000 5450 3000 4850
 Wire Wire Line
 	3100 4850 3100 5450
+Entry Wire Line
+	5150 2600 5250 2700
+Entry Wire Line
+	5150 2700 5250 2800
+Entry Wire Line
+	5150 2800 5250 2900
+Entry Wire Line
+	5150 2900 5250 3000
+Entry Wire Line
+	5150 3000 5250 3100
+Entry Wire Line
+	5150 3100 5250 3200
+Entry Wire Line
+	5150 3200 5250 3300
+Entry Wire Line
+	5150 3300 5250 3400
+Wire Wire Line
+	5150 2600 4950 2600
+Wire Wire Line
+	4950 2700 5150 2700
+Wire Wire Line
+	5150 2800 4950 2800
+Wire Wire Line
+	4950 2900 5150 2900
+Wire Wire Line
+	5150 3000 4950 3000
+Wire Wire Line
+	4950 3100 5150 3100
+Wire Wire Line
+	5150 3200 4950 3200
+Wire Wire Line
+	4950 3300 5150 3300
+Text GLabel 2450 4750 0    50   Input ~ 0
+D[0..7]
+Text GLabel 9450 4350 2    50   Output ~ 0
+D[0..7]
 Wire Bus Line
-	3350 2400 3350 3200
+	9450 4350 5250 4350
+Text Label 5150 2600 2    50   ~ 0
+D0
+Text Label 5150 2700 2    50   ~ 0
+D1
+Text Label 5150 2800 2    50   ~ 0
+D2
+Text Label 5150 2900 2    50   ~ 0
+D3
+Text Label 5150 3000 2    50   ~ 0
+D4
+Text Label 5150 3100 2    50   ~ 0
+D5
+Text Label 5150 3200 2    50   ~ 0
+D6
+Text Label 5150 3300 2    50   ~ 0
+D7
+Entry Wire Line
+	5450 2600 5550 2700
+Entry Wire Line
+	5450 2700 5550 2800
+Entry Wire Line
+	5550 2600 5450 2500
+Wire Bus Line
+	5250 2400 5450 2400
+Wire Wire Line
+	5550 2600 5750 2600
+Wire Wire Line
+	5750 2700 5550 2700
+Wire Wire Line
+	5550 2800 5750 2800
+Wire Bus Line
+	5450 2400 5450 2700
+Wire Bus Line
+	5250 2400 5250 4350
+Wire Bus Line
+	2450 4750 3300 4750
 Wire Bus Line
 	7400 2700 7400 4100
 Wire Bus Line
-	2450 4750 3300 4750
+	3350 2400 3350 3200
+Text Label 5650 2600 2    50   ~ 0
+D0
+Text Label 5650 2700 2    50   ~ 0
+D1
+Text Label 5650 2800 2    50   ~ 0
+D2
 $EndSCHEMATC

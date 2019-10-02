@@ -379,21 +379,21 @@ Wire Bus Line
 Text GLabel 9150 600  2    50   Output ~ 0
 DataBus[0..7]
 Text Label 6400 2050 0    50   ~ 0
-DataBus0
-Text Label 6400 1950 0    50   ~ 0
-DataBus1
-Text Label 6400 1850 0    50   ~ 0
-DataBus2
-Text Label 6400 1750 0    50   ~ 0
-DataBus3
-Text Label 6400 1650 0    50   ~ 0
-DataBus4
-Text Label 6400 1550 0    50   ~ 0
-DataBus5
-Text Label 6400 1450 0    50   ~ 0
-DataBus6
-Text Label 6400 1350 0    50   ~ 0
 DataBus7
+Text Label 6400 1950 0    50   ~ 0
+DataBus6
+Text Label 6400 1850 0    50   ~ 0
+DataBus5
+Text Label 6400 1750 0    50   ~ 0
+DataBus4
+Text Label 6400 1650 0    50   ~ 0
+DataBus3
+Text Label 6400 1550 0    50   ~ 0
+DataBus2
+Text Label 6400 1450 0    50   ~ 0
+DataBus1
+Text Label 6400 1350 0    50   ~ 0
+DataBus0
 Wire Wire Line
 	6750 2050 6400 2050
 Wire Wire Line
@@ -553,21 +553,21 @@ Wire Wire Line
 Wire Wire Line
 	4950 2050 5400 2050
 Text Label 5400 1350 2    50   ~ 0
-AluResult7
-Text Label 5400 1450 2    50   ~ 0
-AluResult6
-Text Label 5400 1550 2    50   ~ 0
-AluResult5
-Text Label 5400 1650 2    50   ~ 0
-AluResult4
-Text Label 5400 1750 2    50   ~ 0
-AluResult3
-Text Label 5400 1850 2    50   ~ 0
-AluResult2
-Text Label 5400 1950 2    50   ~ 0
-AluResult1
-Text Label 5400 2050 2    50   ~ 0
 AluResult0
+Text Label 5400 1450 2    50   ~ 0
+AluResult1
+Text Label 5400 1550 2    50   ~ 0
+AluResult2
+Text Label 5400 1650 2    50   ~ 0
+AluResult3
+Text Label 5400 1750 2    50   ~ 0
+AluResult4
+Text Label 5400 1850 2    50   ~ 0
+AluResult5
+Text Label 5400 1950 2    50   ~ 0
+AluResult6
+Text Label 5400 2050 2    50   ~ 0
+AluResult7
 $Comp
 L power:VCC #PWR0181
 U 1 1 5D7E9918
