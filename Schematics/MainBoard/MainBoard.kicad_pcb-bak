@@ -2128,7 +2128,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B465C)
-    (at 399.52 -247.62)
+    (at 206.353 368.076)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D38E544)
@@ -2190,7 +2190,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B463A)
-    (at 377.27 -233.37)
+    (at 184.103 382.326)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D38C231)
@@ -2252,7 +2252,7 @@
   )
 
   (module Package_DIP:DIP-16_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B4618)
-    (at 366.42 -233.37)
+    (at 173.253 382.326)
     (descr "16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D3FEA17)
@@ -2320,7 +2320,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B45F4)
-    (at 410.37 -247.62)
+    (at 217.203 368.076)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D3898BC)
@@ -2382,7 +2382,7 @@
   )
 
   (module Package_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B45D2)
-    (at 388.12 -228.22)
+    (at 194.953 387.476)
     (descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D38F3A1)
@@ -2434,7 +2434,7 @@
   )
 
   (module Package_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B45B6)
-    (at 388.67 -247.62)
+    (at 195.503 368.076)
     (descr "14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D2C0720/5D7C9FC5)
@@ -2486,7 +2486,7 @@
   )
 
   (module Package_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B4594)
-    (at 305.92 -247.62)
+    (at 112.753 368.076)
     (descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D79C284/5D7A1D4F)
@@ -2533,7 +2533,7 @@
   )
 
   (module Package_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B4578)
-    (at 316.77 -247.62)
+    (at 123.603 368.076)
     (descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D79C284/5D7A78E6)
@@ -2583,7 +2583,7 @@
   )
 
   (module Package_DIP:DIP-32_W15.24mm_Socket (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B455C)
-    (at 282.37 -247.57)
+    (at 89.203 368.126)
     (descr "32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket")
     (tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
     (path /5D79C284/5D87E8A6)
@@ -2689,7 +2689,7 @@
   )
 
   (module Package_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B4520)
-    (at 305.92 -235.87)
+    (at 112.753 379.826)
     (descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D79C284/5D7BAD1B)
@@ -2739,7 +2739,7 @@
   )
 
   (module Package_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 5A02E8C5) (tstamp 5D8B4504)
-    (at 301.32 -222.67)
+    (at 108.153 393.026)
     (descr "8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
     (path /5D79C284/5D7C00DB)
@@ -5143,7 +5143,7 @@
   )
 
   (module Button_Switch_THT:SW_PUSH_6mm_H5mm (layer F.Cu) (tedit 5A02FE31) (tstamp 5D8B3D56)
-    (at 399.37 -220.17)
+    (at 206.203 395.526)
     (descr "tactile push button, 6x6mm e.g. PHAP33xx series, height=5mm")
     (tags "tact sw push 6mm")
     (path /5D2C0720/5D843F11)
@@ -5194,7 +5194,7 @@
   )
 
   (module Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal (layer F.Cu) (tedit 5A3D4994) (tstamp 5D8B3D37)
-    (at 338.31 -235.92)
+    (at 145.143 379.776)
     (descr "Potentiometer, horizontal, ACP CA6-H2,5, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf")
     (tags "Potentiometer horizontal ACP CA6-H2,5")
     (path /5D79C284/5D839402)
@@ -5540,7 +5540,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3C75)
-    (at 398.92 -228.27)
+    (at 205.753 387.426)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D2C0720/5D43460F)
@@ -5581,7 +5581,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3C5E)
-    (at 409.69 -228.27)
+    (at 216.523 387.426)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D2C0720/5D39244B)
@@ -5622,7 +5622,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3C47)
-    (at 398.92 -224.22)
+    (at 205.753 391.476)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D2C0720/5D39306C)
@@ -5663,7 +5663,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3C30)
-    (at 349.11 -247.67)
+    (at 155.943 368.026)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7A33A0)
@@ -5704,7 +5704,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3C19)
-    (at 322.89 -223.37)
+    (at 129.723 392.326)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5DA34360)
@@ -5745,7 +5745,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3C02)
-    (at 322.89 -227.42)
+    (at 129.723 388.276)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7A8FDE)
@@ -5786,7 +5786,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3BEB)
-    (at 312.12 -220.12)
+    (at 118.953 395.576)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7A807B)
@@ -5827,7 +5827,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3BD4)
-    (at 327.49 -235.52)
+    (at 134.323 380.176)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5DA209AF)
@@ -5868,7 +5868,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3BBD)
-    (at 338.34 -247.67)
+    (at 145.173 368.026)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7B8705)
@@ -5909,7 +5909,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3BA6)
-    (at 316.72 -235.92)
+    (at 123.553 379.776)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7B86FB)
@@ -5950,7 +5950,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3B8F)
-    (at 327.57 -247.67)
+    (at 134.403 368.026)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5DA0DD43)
@@ -5991,7 +5991,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3B78)
-    (at 301.27 -210.97)
+    (at 108.103 404.726)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7BAD2B)
@@ -6032,7 +6032,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3B61)
-    (at 327.57 -243.62)
+    (at 134.403 372.076)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7BAD21)
@@ -6073,7 +6073,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3B4A)
-    (at 316.72 -231.87)
+    (at 123.553 383.826)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D9AF4B1)
@@ -6114,7 +6114,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3B33)
-    (at 327.57 -239.57)
+    (at 134.403 376.126)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7BDFB0)
@@ -6155,7 +6155,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3B1C)
-    (at 312.04 -210.97)
+    (at 118.873 404.726)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7BDFA6)
@@ -6196,7 +6196,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3B05)
-    (at 312.12 -216.07)
+    (at 118.953 399.626)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D99D8E1)
@@ -6237,7 +6237,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3AEE)
-    (at 327.49 -231.47)
+    (at 134.323 384.226)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7C00EB)
@@ -6278,7 +6278,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3AD7)
-    (at 338.34 -243.62)
+    (at 145.173 372.076)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7C00E1)
@@ -6319,7 +6319,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3AC0)
-    (at 338.34 -239.57)
+    (at 145.173 376.126)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D97DDCC)
@@ -6360,7 +6360,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3AA9)
-    (at 301.27 -206.92)
+    (at 108.103 408.776)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7E9B47)
@@ -6401,7 +6401,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3A92)
-    (at 312.04 -206.92)
+    (at 118.873 408.776)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D7E9B3D)
@@ -6442,7 +6442,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3A7B)
-    (at 322.89 -219.32)
+    (at 129.723 396.376)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D97CC48)
@@ -6483,7 +6483,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5D8B3A64)
-    (at 312.12 -224.17)
+    (at 118.953 391.526)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5D79C284/5D82D23E)
@@ -6810,7 +6810,7 @@
   )
 
   (module Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical (layer F.Cu) (tedit 5A19A431) (tstamp 5D8B3942)
-    (at 302.02 -247.37)
+    (at 108.853 368.326)
     (descr "Through hole straight socket strip, 1x09, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
     (tags "Through hole socket strip THT 1x09 2.54mm single row")
     (path /5D79C284/5D95167C)
@@ -7336,7 +7336,7 @@
   )
 
   (module LED_THT:LED_D5.0mm (layer F.Cu) (tedit 5995936A) (tstamp 5D8B3829)
-    (at 410.59 -219.02)
+    (at 217.423 396.676)
     (descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
     (tags "LED diameter 5.0mm 2 pins")
     (path /5D2C0720/5D42B044)
@@ -7918,7 +7918,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B36F1)
-    (at 377.22 -214.32)
+    (at 184.053 401.376)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D878675)
@@ -7957,7 +7957,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B36DC)
-    (at 421.17 -247.97)
+    (at 228.003 367.726)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D870AB8)
@@ -7996,7 +7996,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B36C7)
-    (at 421.17 -244.52)
+    (at 228.003 371.176)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D93673D)
@@ -8035,7 +8035,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B36B2)
-    (at 421.17 -241.07)
+    (at 228.003 374.626)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D936485)
@@ -8074,7 +8074,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B369D)
-    (at 409.69 -224.52)
+    (at 216.523 391.176)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D935F32)
@@ -8113,7 +8113,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B3688)
-    (at 420.46 -228.57)
+    (at 227.293 387.126)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D935B94)
@@ -8152,7 +8152,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B3673)
-    (at 421.17 -237.62)
+    (at 228.003 378.076)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D934C27)
@@ -8191,7 +8191,7 @@
   )
 
   (module Capacitor_THT:CP_Radial_D5.0mm_P2.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B365E)
-    (at 418.629775 -222.97)
+    (at 225.462775 392.726)
     (descr "CP, Radial series, Radial, pin pitch=2.00mm, , diameter=5mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 2.00mm  diameter 5mm Electrolytic Capacitor")
     (path /5D2C0720/5D394118)
@@ -8340,7 +8340,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B35DB)
-    (at 385.37 -214.32)
+    (at 192.203 401.376)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D2C0720/5D393902)
@@ -8379,7 +8379,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B35C6)
-    (at 281.87 -205.62)
+    (at 88.703 410.076)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D79C284/5DA68DA5)
@@ -8418,7 +8418,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B35B1)
-    (at 290.02 -205.62)
+    (at 96.853 410.076)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D79C284/5DA690FC)
@@ -8457,7 +8457,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B359C)
-    (at 322.81 -212.32)
+    (at 129.643 403.376)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D79C284/5DA694C8)
@@ -8496,7 +8496,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B3587)
-    (at 344.16 -235.82)
+    (at 150.993 379.876)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D79C284/5DA69963)
@@ -8535,7 +8535,7 @@
   )
 
   (module Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 5D8B3572)
-    (at 333.66 -227.57)
+    (at 140.493 388.126)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor")
     (path /5D79C284/5DA69DD0)
@@ -10088,7 +10088,7 @@
   )
 
   (module Oscillator:Oscillator_DIP-14 (layer F.Cu) (tedit 58CD3344) (tstamp 5D8B30EC)
-    (at 368.3 -238.76)
+    (at 175.133 376.936)
     (descr "Oscillator, DIP14, http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf")
     (tags oscillator)
     (path /5D2C0720/5D387BCA)
