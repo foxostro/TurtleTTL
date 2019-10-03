@@ -1,4 +1,4 @@
-update=Thursday, September 26, 2019 at 09:25:02 PM
+update=Wednesday, October 02, 2019 at 09:50:26 PM
 version=1
 last_client=kicad
 [general]
@@ -64,3 +64,13 @@ Type=1
 [pcbnew/Layer.In2.Cu]
 Name=VCC.Cu
 Type=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
