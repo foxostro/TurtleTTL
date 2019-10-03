@@ -15,43 +15,37 @@ Comment3 ""
 Comment4 "TTL microcomputer built from 74xx series logic chips."
 $EndDescr
 $Sheet
-S 4000 750  1500 500 
-U 5D2C1188
-F0 "Data RAM" 50
-F1 "Data RAM.sch" 50
-$EndSheet
-$Sheet
-S 4000 4950 1500 500 
+S 3950 4250 1500 500 
 U 5D29E36D
 F0 "Register D" 50
 F1 "Register D.sch" 50
 $EndSheet
 $Sheet
-S 4000 1450 1500 500 
+S 3950 750  1500 500 
 U 5D7BD0EA
 F0 "Register XY" 50
 F1 "Register XY.sch" 50
 $EndSheet
 $Sheet
-S 4000 2150 1500 500 
+S 3950 1450 1500 500 
 U 5D2C07CD
 F0 "Program Counter" 50
 F1 "Program Counter.sch" 50
 $EndSheet
 $Sheet
-S 4000 2850 1500 500 
+S 3950 2150 1500 500 
 U 5D8005AF
 F0 "Instruction Fetch" 50
 F1 "Instruction Fetch.sch" 50
 $EndSheet
 $Sheet
-S 4000 3550 1500 500 
+S 3950 2850 1500 500 
 U 5D2C0B92
 F0 "Instruction Decode" 50
 F1 "Instruction Decode.sch" 50
 $EndSheet
 $Sheet
-S 4000 4250 1500 500 
+S 3950 3550 1500 500 
 U 5D2C13FD
 F0 "Execute" 50
 F1 "Execute.sch" 50
@@ -75,19 +69,19 @@ F0 "Power-on Reset" 50
 F1 "Power-on Reset.sch" 50
 $EndSheet
 $Sheet
-S 4000 5650 1500 500 
+S 3950 4950 1500 500 
 U 5D2C0CA7
 F0 "Register A" 50
 F1 "Register A.sch" 50
 $EndSheet
 $Sheet
-S 4000 6350 1500 500 
+S 3950 5650 1500 500 
 U 5D2C0D13
 F0 "Register B" 50
 F1 "Register B.sch" 50
 $EndSheet
 $Sheet
-S 4000 7050 1500 500 
+S 3950 6350 1500 500 
 U 5D2C0CE4
 F0 "ALU" 50
 F1 "ALU.sch" 50

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 20 21
+Sheet 20 20
 Title "Register B"
 Date ""
 Rev ""
