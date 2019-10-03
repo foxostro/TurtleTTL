@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 22 21
+Sheet 22 20
 Title "Bus Display"
 Date ""
 Rev ""

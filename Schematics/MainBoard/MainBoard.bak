@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 22
+Sheet 1 21
 Title "TurtleTTL: Main Board"
 Date ""
 Rev ""
@@ -14,12 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 "TTL microcomputer built from 74xx series logic chips."
 $EndDescr
-$Sheet
-S 3000 1450 1500 500 
-U 5D2C0C74
-F0 "Output Display" 50
-F1 "Output Display.sch" 50
-$EndSheet
 $Sheet
 S 3000 3550 1500 500 
 U 5D2C1188
