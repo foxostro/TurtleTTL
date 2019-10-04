@@ -1,4 +1,4 @@
-update=Thursday, October 03, 2019 at 06:06:27 PM
+update=Thursday, October 03, 2019 at 06:58:29 PM
 version=1
 last_client=kicad
 [general]
@@ -69,13 +69,13 @@ SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.In1.Cu]
-Name=GND1.Cu
+Name=GND.Cu
 Type=1
 [pcbnew/Layer.In2.Cu]
-Name=In.Cu
-Type=1
+Name=In1.Cu
+Type=0
 [pcbnew/Layer.In3.Cu]
-Name=GND2.Cu
+Name=In2.Cu
 Type=0
 [pcbnew/Layer.In4.Cu]
 Name=VCC.Cu
