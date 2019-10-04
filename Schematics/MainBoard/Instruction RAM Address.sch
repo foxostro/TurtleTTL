@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 19
+Sheet 8 19
 Title "Instruction RAM Address"
 Date ""
 Rev ""
@@ -689,6 +689,12 @@ Wire Bus Line
 Connection ~ 9500 4950
 Wire Bus Line
 	9500 4950 10500 4950
+Text Label 1600 3300 0    50   ~ 0
+AddressBus3
+Text Label 1600 3200 0    50   ~ 0
+PC_IF3
+Text Label 3850 3500 0    50   ~ 0
+PC_IF6
 Wire Bus Line
 	6000 1700 6000 3700
 Wire Bus Line
@@ -713,10 +719,4 @@ Wire Bus Line
 	1500 1700 1500 3700
 Wire Bus Line
 	10500 2700 10500 4950
-Text Label 1600 3300 0    50   ~ 0
-AddressBus3
-Text Label 1600 3200 0    50   ~ 0
-PC_IF3
-Text Label 3850 3500 0    50   ~ 0
-PC_IF6
 $EndSCHEMATC

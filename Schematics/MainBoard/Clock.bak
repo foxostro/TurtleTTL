@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 17 20
+Sheet 14 19
 Title "Clock"
 Date ""
 Rev ""
@@ -15,11 +15,11 @@ Comment3 "the three-bit control signal."
 Comment4 "The clock module divides the signal from the crystal oscillator at a rate determined by"
 $EndDescr
 $Comp
-L Oscillator:ACO-xxxMHz 10MHz1
+L Oscillator:ACO-xxxMHz OSC1
 U 1 1 5D387BCA
 P 1700 1450
-F 0 "10MHz1" H 1357 1496 50  0000 R CNN
-F 1 "ACO-xxxMHz" H 1357 1405 50  0000 R CNN
+F 0 "OSC1" H 1357 1496 50  0000 R CNN
+F 1 "10MHz" H 1357 1405 50  0000 R CNN
 F 2 "Oscillator:Oscillator_DIP-14" H 2150 1100 50  0001 C CNN
 F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 1600 1450 50  0001 C CNN
 	1    1700 1450

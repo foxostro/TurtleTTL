@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 19 20
+Sheet 19 19
 Title "Register A"
 Date ""
 Rev ""
@@ -398,10 +398,10 @@ Wire Wire Line
 Wire Bus Line
 	5600 1650 5600 2800
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0198
 U 1 1 5D9A9CB2
 P 6250 3100
-F 0 "#PWR?" H 6250 2950 50  0001 C CNN
+F 0 "#PWR0198" H 6250 2950 50  0001 C CNN
 F 1 "VCC" V 6268 3227 50  0000 L CNN
 F 2 "" H 6250 3100 50  0001 C CNN
 F 3 "" H 6250 3100 50  0001 C CNN

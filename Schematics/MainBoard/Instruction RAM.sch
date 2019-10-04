@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 12 19
+Sheet 9 19
 Title "Instruction RAM"
 Date ""
 Rev ""
@@ -355,11 +355,11 @@ IRAM15
 Text GLabel 1250 2450 0    50   Input ~ 0
 DeviceSelect[0..7]
 Text Label 1400 1150 0    50   ~ 0
-DeviceSelect3
+DeviceSelect0
 Entry Wire Line
 	1300 1250 1400 1150
 Text Label 1400 4350 0    50   ~ 0
-DeviceSelect4
+DeviceSelect1
 Entry Wire Line
 	1300 4250 1400 4350
 Wire Bus Line
