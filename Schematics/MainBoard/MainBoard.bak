@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 19
+Sheet 1 20
 Title "TurtleTTL: Main Board"
 Date ""
 Rev ""
@@ -15,79 +15,79 @@ Comment3 ""
 Comment4 "TTL microcomputer built from 74xx series logic chips."
 $EndDescr
 $Sheet
-S 3950 4250 1500 500 
+S 4950 3800 1500 500 
 U 5D29E36D
 F0 "Register D" 50
 F1 "Register D.sch" 50
 $EndSheet
 $Sheet
-S 3950 750  1500 500 
+S 3200 1700 1500 500 
 U 5D7BD0EA
 F0 "Register XY" 50
 F1 "Register XY.sch" 50
 $EndSheet
 $Sheet
-S 3950 1450 1500 500 
+S 3200 2400 1500 500 
 U 5D2C07CD
 F0 "Program Counter" 50
 F1 "Program Counter.sch" 50
 $EndSheet
 $Sheet
-S 3950 2150 1500 500 
+S 3200 3100 1500 500 
 U 5D8005AF
 F0 "Instruction Fetch" 50
 F1 "Instruction Fetch.sch" 50
 $EndSheet
 $Sheet
-S 3950 2850 1500 500 
+S 3200 3800 1500 500 
 U 5D2C0B92
 F0 "Instruction Decode" 50
 F1 "Instruction Decode.sch" 50
 $EndSheet
 $Sheet
-S 3950 3550 1500 500 
+S 3200 4500 1500 500 
 U 5D2C13FD
 F0 "Execute" 50
 F1 "Execute.sch" 50
 $EndSheet
 $Sheet
-S 5650 1450 1500 500 
+S 6700 2400 1500 500 
 U 5D79C284
 F0 "Speed Control" 50
 F1 "Speed Control.sch" 50
 $EndSheet
 $Sheet
-S 5650 2150 1500 500 
+S 6700 3100 1500 500 
 U 5D2C0720
 F0 "Clock" 50
 F1 "Clock.sch" 50
 $EndSheet
 $Sheet
-S 5650 2850 1500 500 
+S 6700 3800 1500 500 
 U 5D2C0761
 F0 "Power-on Reset" 50
 F1 "Power-on Reset.sch" 50
 $EndSheet
 $Sheet
-S 3950 4950 1500 500 
+S 4950 1700 1500 500 
 U 5D2C0CA7
 F0 "Register A" 50
 F1 "Register A.sch" 50
 $EndSheet
 $Sheet
-S 3950 5650 1500 500 
+S 4950 2400 1500 500 
 U 5D2C0D13
 F0 "Register B" 50
 F1 "Register B.sch" 50
 $EndSheet
 $Sheet
-S 3950 6350 1500 500 
+S 4950 3100 1500 500 
 U 5D2C0CE4
 F0 "ALU" 50
 F1 "ALU.sch" 50
 $EndSheet
 $Sheet
-S 5650 750  1500 500 
+S 6700 1700 1500 500 
 U 5D2C12A5
 F0 "Bus Display" 50
 F1 "Bus Display.sch" 50
@@ -159,4 +159,10 @@ Wire Wire Line
 	2100 7050 1900 7050
 Wire Wire Line
 	2100 6950 2500 6950
+$Sheet
+S 4950 4500 1500 500 
+U 5D9F1D54
+F0 "Expansion" 50
+F1 "Expansion.sch" 50
+$EndSheet
 $EndSCHEMATC
