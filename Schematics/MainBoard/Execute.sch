@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 15 20
+Sheet 12 20
 Title "Execute"
 Date ""
 Rev ""
@@ -363,9 +363,9 @@ Text GLabel 5300 3800 1    50   Output ~ 0
 Text GLabel 5650 3800 1    50   Output ~ 0
 ~EO
 Text GLabel 6000 3800 1    50   Output ~ 0
-~MI
+~PI
 Text GLabel 6350 3800 1    50   Output ~ 0
-~MO
+~PO
 Text GLabel 6700 3800 1    50   Output ~ 0
 ~XO
 Text GLabel 7050 3800 1    50   Output ~ 0

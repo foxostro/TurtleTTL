@@ -2,7 +2,7 @@ EESchema Schematic File Version 4
 LIBS:MainBoard-cache
 EELAYER 29 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A 11000 8500
 encoding utf-8
 Sheet 20 20
 Title "Expansion"
@@ -202,7 +202,7 @@ Text Label 4400 2750 0    50   ~ 0
 Text Label 4400 2850 0    50   ~ 0
 ~MO
 Entry Wire Line
-	5150 2950 5250 2850
+	5100 2950 5200 2850
 Text Label 4400 2950 0    50   ~ 0
 DeviceSelect2
 Entry Wire Line
@@ -1565,7 +1565,7 @@ Text Label 6800 2850 0    50   ~ 0
 Text Label 6800 2950 0    50   ~ 0
 DeviceSelect3
 Entry Wire Line
-	7550 2950 7650 2850
+	7500 2950 7600 2850
 Text Label 9200 2750 0    50   ~ 0
 ~MI
 Text Label 9200 2850 0    50   ~ 0
@@ -1573,7 +1573,7 @@ Text Label 9200 2850 0    50   ~ 0
 Text Label 9200 2950 0    50   ~ 0
 DeviceSelect4
 Entry Wire Line
-	9950 2950 10050 2850
+	9900 2950 10000 2850
 Text Label 4400 5000 0    50   ~ 0
 ~MI
 Text Label 4400 5100 0    50   ~ 0
@@ -1599,8 +1599,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 2850 5150 2850
 Wire Wire Line
-	6650 2750 6750 2750
-Wire Wire Line
 	7550 2850 6750 2850
 Wire Wire Line
 	5050 2750 5050 1000
@@ -1608,10 +1606,6 @@ Wire Wire Line
 	9850 2750 9150 2750
 Wire Wire Line
 	9150 2850 9950 2850
-Wire Wire Line
-	4350 2950 5150 2950
-Wire Wire Line
-	6650 2950 6750 2950
 Wire Wire Line
 	7550 850  9950 850 
 Connection ~ 7550 850 
@@ -1636,8 +1630,6 @@ Connection ~ 5250 700
 Connection ~ 7650 700 
 Wire Bus Line
 	7650 700  10050 700 
-Wire Wire Line
-	9150 2950 9950 2950
 Wire Wire Line
 	5050 2750 5050 5000
 Wire Wire Line
@@ -1669,22 +1661,11 @@ Wire Wire Line
 	9150 5100 9950 5100
 Connection ~ 9950 2850
 Wire Wire Line
-	5150 2850 5150 2950
-Wire Wire Line
-	5150 2950 5150 5100
-Wire Wire Line
 	9150 5200 9950 5200
 Wire Bus Line
 	5150 700  5250 700 
-Connection ~ 6750 2750
 Wire Wire Line
 	6750 2750 7450 2750
-Connection ~ 6750 2850
-Wire Wire Line
-	6750 2850 6650 2850
-Connection ~ 6750 2950
-Wire Wire Line
-	6750 2950 7550 2950
 Wire Wire Line
 	6750 5100 7550 5100
 Wire Wire Line
@@ -1703,16 +1684,8 @@ Wire Bus Line
 	5250 700  7650 700 
 Wire Wire Line
 	4350 5100 5150 5100
-Wire Wire Line
-	7550 2850 7550 2950
-Wire Wire Line
-	9950 2850 9950 2950
 Entry Wire Line
 	7550 5200 7650 5100
-Wire Wire Line
-	7550 2950 7550 5100
-Wire Wire Line
-	9950 2950 9950 5100
 Wire Wire Line
 	5250 1600 5350 1600
 Wire Wire Line
@@ -1736,11 +1709,38 @@ Connection ~ 5050 1000
 Wire Wire Line
 	7550 5200 6750 5200
 Wire Bus Line
-	5250 700  5250 5100
+	5250 700  5250 2850
 Wire Bus Line
-	7650 700  7650 5100
+	5200 2850 5250 2850
+Wire Wire Line
+	5150 2850 5150 5100
 Wire Bus Line
-	10050 700  10050 5100
+	7650 700  7650 2850
+Wire Bus Line
+	10050 700  10050 2850
+Connection ~ 5250 2850
+Wire Bus Line
+	5250 2850 5250 5100
+Wire Wire Line
+	5100 2950 4350 2950
+Wire Wire Line
+	7550 2850 7550 5100
+Wire Bus Line
+	7600 2850 7650 2850
+Connection ~ 7650 2850
+Wire Bus Line
+	7650 2850 7650 5100
+Wire Wire Line
+	6750 2950 7500 2950
+Wire Wire Line
+	9950 2850 9950 5100
+Wire Bus Line
+	10000 2850 10050 2850
+Connection ~ 10050 2850
+Wire Bus Line
+	10050 2850 10050 5100
+Wire Wire Line
+	9900 2950 9150 2950
 Wire Bus Line
 	9750 1150 9750 4800
 Wire Bus Line
