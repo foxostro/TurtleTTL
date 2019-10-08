@@ -93,19 +93,6 @@ F0 "Bus Display" 50
 F1 "Bus Display.sch" 50
 $EndSheet
 $Comp
-L Connector:Barrel_Jack J?
-U 1 1 5D837B83
-P 1600 7150
-AR Path="/5D2C0761/5D837B83" Ref="J?"  Part="1" 
-AR Path="/5D837B83" Ref="J1"  Part="1" 
-F 0 "J1" H 1657 7475 50  0000 C CNN
-F 1 "Barrel_Jack" H 1657 7384 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1650 7110 50  0001 C CNN
-F 3 "~" H 1650 7110 50  0001 C CNN
-	1    1600 7150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR?
 U 1 1 5D837B89
 P 3050 6950
@@ -153,16 +140,27 @@ Wire Wire Line
 Wire Wire Line
 	3050 6950 2500 6950
 Connection ~ 2500 6950
-Wire Wire Line
-	2100 6950 2100 7050
-Wire Wire Line
-	2100 7050 1900 7050
-Wire Wire Line
-	2100 6950 2500 6950
 $Sheet
 S 4950 4500 1500 500 
 U 5D9F1D54
 F0 "Expansion" 50
 F1 "Expansion.sch" 50
 $EndSheet
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5D9C2947
+P 1700 7250
+F 0 "J1" H 1618 6925 50  0000 C CNN
+F 1 "DC Power +5V" H 1618 7016 50  0000 C CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-102_1x02_P5.00mm_45Degree" H 1700 7250 50  0001 C CNN
+F 3 "~" H 1700 7250 50  0001 C CNN
+	1    1700 7250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 7150 2300 7150
+Wire Wire Line
+	2300 7150 2300 6950
+Wire Wire Line
+	2300 6950 2500 6950
 $EndSCHEMATC

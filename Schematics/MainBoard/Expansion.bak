@@ -1662,6 +1662,35 @@ Entry Wire Line
 	9950 5100 10050 5000
 Wire Wire Line
 	9150 5100 9950 5100
+Wire Wire Line
+	4350 2950 4450 2950
+Wire Wire Line
+	4450 2950 4450 3050
+Connection ~ 4450 3050
+Wire Wire Line
+	6750 2950 6850 2950
+Wire Wire Line
+	6850 2950 6850 3050
+Connection ~ 6850 3050
+Wire Wire Line
+	4350 5200 4450 5200
+Wire Wire Line
+	4450 5200 4450 5300
+Connection ~ 4450 5300
+Wire Wire Line
+	6750 5200 6850 5200
+Wire Wire Line
+	6850 5200 6850 5300
+Connection ~ 6850 5300
+Wire Wire Line
+	9150 5200 9250 5200
+Wire Wire Line
+	9250 5200 9250 5300
+Connection ~ 9250 5300
+Wire Wire Line
+	9150 2950 9250 2950
+Wire Wire Line
+	9250 2950 9250 3050
 Wire Bus Line
 	10050 850  10050 5000
 Wire Bus Line
@@ -1686,4 +1715,5 @@ Wire Bus Line
 	5550 1300 5550 5800
 Wire Bus Line
 	3150 1300 3150 5800
+Connection ~ 9250 3050
 $EndSCHEMATC
