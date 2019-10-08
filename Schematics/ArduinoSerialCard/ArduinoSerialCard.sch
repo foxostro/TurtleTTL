@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ArduinoSerialCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -78,7 +79,7 @@ Wire Wire Line
 NoConn ~ 6650 3400
 NoConn ~ 6650 3500
 Text GLabel 4050 2750 0    50   Input ~ 0
-~MI
+~PI
 Text GLabel 4050 4800 0    50   Input ~ 0
 AddressBus[0..15]
 Wire Bus Line
@@ -96,7 +97,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 3600 4350 2550
 Text GLabel 4050 2550 0    50   Input ~ 0
-~MO
+~PO
 Wire Wire Line
 	4350 2550 4050 2550
 Wire Wire Line
