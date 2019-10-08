@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:OutputDisplayCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -11,7 +12,7 @@ Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Expansion card which displays a number on a four character LED display."
 $EndDescr
 Connection ~ 3700 1100
 Wire Wire Line

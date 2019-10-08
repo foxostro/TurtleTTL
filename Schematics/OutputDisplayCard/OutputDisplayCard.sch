@@ -446,59 +446,10 @@ F 3 "" H 6700 3950 50  0001 C CNN
 	1    6700 3950
 	1    0    0    -1  
 $EndComp
-Text Label 1550 6600 0    50   ~ 0
-DeviceSelect1
-Connection ~ 3150 6600
-Wire Wire Line
-	3150 6800 3300 6800
-Wire Wire Line
-	3150 6600 3150 6800
-Wire Wire Line
-	700  7000 3300 7000
-Wire Wire Line
-	3150 6400 3150 6600
-Wire Wire Line
-	3300 6400 3150 6400
-Wire Wire Line
-	3300 6200 700  6200
-$Comp
-L 74xx:74LS32 U2
-U 1 1 5E0EAE0A
-P 3600 6300
-F 0 "U2" H 3600 6625 50  0000 C CNN
-F 1 "74LS32" H 3600 6534 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3600 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3600 6300 50  0001 C CNN
-	1    3600 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 6600 1500 6600
-Entry Wire Line
-	1400 6500 1500 6600
-Wire Bus Line
-	1350 6500 1400 6500
-Text GLabel 700  7000 0    50   Input ~ 0
-~MO
-Wire Wire Line
-	3900 6900 5700 6900
-$Comp
-L 74xx:74LS32 U2
-U 2 1 5E142E05
-P 3600 6900
-F 0 "U2" H 3600 7225 50  0000 C CNN
-F 1 "74LS32" H 3600 7134 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3600 6900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3600 6900 50  0001 C CNN
-	2    3600 6900
-	1    0    0    -1  
-$EndComp
-Text GLabel 700  6200 0    50   Input ~ 0
-~MI
-Text GLabel 1350 6500 0    50   Input ~ 0
-DeviceSelect[0..15]
-Wire Wire Line
-	4050 6300 3900 6300
+Text GLabel 700  6900 0    50   Input ~ 0
+~PO
+Text GLabel 700  6300 0    50   Input ~ 0
+~PI
 Wire Wire Line
 	4050 6000 4050 6300
 Wire Wire Line
@@ -824,34 +775,10 @@ NoConn ~ 6800 9600
 NoConn ~ 5800 9600
 NoConn ~ 5800 9400
 NoConn ~ 5800 9300
-$Comp
-L 74xx:74LS32 U2
-U 3 1 5DAD680A
-P 5400 9150
-F 0 "U2" H 5400 9475 50  0000 C CNN
-F 1 "74LS32" H 5400 9384 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5400 9150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5400 9150 50  0001 C CNN
-	3    5400 9150
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U2
-U 4 1 5DAD8ADF
-P 5400 9750
-F 0 "U2" H 5400 10075 50  0000 C CNN
-F 1 "74LS32" H 5400 9984 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5400 9750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5400 9750 50  0001 C CNN
-	4    5400 9750
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5100 9050
-NoConn ~ 5100 9250
-NoConn ~ 5700 9150
-NoConn ~ 5100 9650
-NoConn ~ 5100 9850
-NoConn ~ 5700 9750
+Wire Wire Line
+	700  6900 5700 6900
+Wire Wire Line
+	700  6300 4050 6300
 Wire Wire Line
 	5150 5700 5950 5700
 Wire Wire Line
