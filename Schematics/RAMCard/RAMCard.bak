@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:RAMCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -11,7 +12,7 @@ Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "The MSB of the address selects between two 32KB SRAM ICs."
 $EndDescr
 $Comp
 L Memory_RAM:IDT71256SA12TPG U3
@@ -363,63 +364,10 @@ Text GLabel 1900 1250 0    50   BiDi ~ 0
 DataBus[0..7]
 Wire Bus Line
 	5850 1250 1900 1250
-Text GLabel 1850 2000 0    50   Input ~ 0
-DeviceSelect[0..7]
-Text GLabel 1850 1700 0    50   Input ~ 0
-~MI
-$Comp
-L 74xx:74LS32 U?
-U 2 1 5E2163C3
-P 4700 2400
-AR Path="/5D2C0C74/5E2163C3" Ref="U?"  Part="1" 
-AR Path="/5D2C1188/5E2163C3" Ref="U?"  Part="2" 
-AR Path="/5E2163C3" Ref="U1"  Part="2" 
-F 0 "U1" H 4700 2725 50  0000 C CNN
-F 1 "74LS32" H 4700 2634 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4700 2400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4700 2400 50  0001 C CNN
-	2    4700 2400
-	1    0    0    -1  
-$EndComp
-Text GLabel 1850 2500 0    50   Input ~ 0
-~MO
-Wire Bus Line
-	1850 2000 1900 2000
-Text Label 2050 2100 0    50   ~ 0
-DeviceSelect5
-Entry Wire Line
-	1900 2000 2000 2100
-Wire Wire Line
-	4250 2100 2000 2100
-$Comp
-L 74xx:74LS32 U?
-U 1 1 5E2163CE
-P 4700 1800
-AR Path="/5D2C0C74/5E2163CE" Ref="U?"  Part="1" 
-AR Path="/5D2C1188/5E2163CE" Ref="U?"  Part="1" 
-AR Path="/5E2163CE" Ref="U1"  Part="1" 
-F 0 "U1" H 4700 2125 50  0000 C CNN
-F 1 "74LS32" H 4700 2034 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4700 1800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4700 1800 50  0001 C CNN
-	1    4700 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 1700 1850 1700
-Wire Wire Line
-	4400 1900 4250 1900
-Wire Wire Line
-	4250 1900 4250 2100
-Wire Wire Line
-	1850 2500 4400 2500
-Wire Wire Line
-	4250 2100 4250 2300
-Wire Wire Line
-	4250 2300 4400 2300
-Connection ~ 4250 2100
-Wire Wire Line
-	5000 1800 5700 1800
+Text GLabel 1850 1800 0    50   Input ~ 0
+~PI
+Text GLabel 1850 2400 0    50   Input ~ 0
+~PO
 Wire Wire Line
 	5700 1800 5700 2050
 Wire Wire Line
@@ -429,8 +377,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 4350 5700 2050
 Connection ~ 5700 2050
-Wire Wire Line
-	5000 2400 5600 2400
 Wire Wire Line
 	5600 2400 5600 4450
 Wire Wire Line
@@ -577,40 +523,6 @@ Wire Wire Line
 Connection ~ 1300 7750
 Connection ~ 800  7750
 $Comp
-L 74xx:74LS32 U?
-U 3 1 5DB5AC2C
-P -1250 3150
-AR Path="/5D2C0C74/5DB5AC2C" Ref="U?"  Part="1" 
-AR Path="/5D2C1188/5DB5AC2C" Ref="U?"  Part="3" 
-AR Path="/5DB5AC2C" Ref="U1"  Part="3" 
-F 0 "U1" H -1250 3475 50  0000 C CNN
-F 1 "74LS32" H -1250 3384 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H -1250 3150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H -1250 3150 50  0001 C CNN
-	3    -1250 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U?
-U 4 1 5DB5BEE6
-P -1250 3700
-AR Path="/5D2C0C74/5DB5BEE6" Ref="U?"  Part="1" 
-AR Path="/5D2C1188/5DB5BEE6" Ref="U?"  Part="4" 
-AR Path="/5DB5BEE6" Ref="U1"  Part="4" 
-F 0 "U1" H -1250 4025 50  0000 C CNN
-F 1 "74LS32" H -1250 3934 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H -1250 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H -1250 3700 50  0001 C CNN
-	4    -1250 3700
-	1    0    0    -1  
-$EndComp
-NoConn ~ -1550 3050
-NoConn ~ -1550 3250
-NoConn ~ -1550 3600
-NoConn ~ -1550 3800
-NoConn ~ -950 3700
-NoConn ~ -950 3150
-$Comp
 L 74xx:74LS04 U2
 U 4 1 5DB73163
 P -1250 4850
@@ -675,6 +587,10 @@ NoConn ~ -850 4350
 NoConn ~ -850 4850
 NoConn ~ -250 4850
 NoConn ~ -250 4350
+Wire Wire Line
+	1850 2400 5600 2400
+Wire Wire Line
+	1850 1800 5700 1800
 Wire Bus Line
 	5850 1250 5850 5350
 Wire Bus Line
