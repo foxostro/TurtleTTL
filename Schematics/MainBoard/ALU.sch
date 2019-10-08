@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 21 20
+Sheet 18 20
 Title "ALU"
 Date ""
 Rev ""
@@ -690,7 +690,6 @@ Wire Wire Line
 	9150 950  7050 950 
 Wire Wire Line
 	7050 950  7050 2300
-NoConn ~ 4350 5700
 $Comp
 L power:GND #PWR?
 U 1 1 5D907C38
