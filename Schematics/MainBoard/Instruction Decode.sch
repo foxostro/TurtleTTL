@@ -638,7 +638,7 @@ Wire Wire Line
 Text Notes 4150 650  0    50   ~ 0
 ID/EX registers
 Text Notes 2600 700  0    50   ~ 0
-Microcode ROMs
+Lower Microcode ROM
 Text Label 4950 1350 0    50   ~ 0
 ControlWord0
 Text Label 4950 1450 0    50   ~ 0
@@ -884,4 +884,6 @@ Wire Bus Line
 	1850 1250 1850 7250
 Wire Bus Line
 	5650 1450 5650 4900
+Text Notes 2550 6900 0    50   ~ 0
+Upper Microcode ROM
 $EndSCHEMATC

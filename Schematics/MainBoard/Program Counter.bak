@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 7 20
+Sheet 4 20
 Title "Program Counter"
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1050 4250 0    50   Input ~ 0
+Text GLabel 1050 4100 0    50   Input ~ 0
 ~J
 $Comp
 L 74xx:74LS161 U18
@@ -29,8 +29,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 3000 2600 50  0001 C CNN
 $EndComp
 Text GLabel 1050 3950 0    50   Input ~ 0
 ~RST
-Text GLabel 1050 4100 0    50   Input ~ 0
-CE
 Wire Wire Line
 	2500 3100 2200 3100
 Wire Wire Line
@@ -57,23 +55,6 @@ Wire Wire Line
 	6450 2900 6450 3800
 Wire Wire Line
 	8600 2900 8600 3800
-Wire Wire Line
-	2000 2700 2000 2800
-Wire Wire Line
-	2000 4100 1050 4100
-Wire Wire Line
-	4300 2700 4300 4100
-Wire Wire Line
-	6350 2700 6350 4100
-Wire Wire Line
-	8500 2700 8500 4100
-Wire Wire Line
-	2000 2700 2500 2700
-Wire Wire Line
-	2000 2800 2500 2800
-Connection ~ 2000 2800
-Wire Wire Line
-	2000 2800 2000 4100
 $Comp
 L power:VCC #PWR049
 U 1 1 5D22033E
@@ -106,15 +87,7 @@ $EndComp
 Wire Wire Line
 	2500 2600 1900 2600
 Wire Wire Line
-	1900 2600 1900 4250
-Wire Wire Line
-	1900 4250 1050 4250
-Wire Wire Line
-	4200 2600 4200 4250
-Wire Wire Line
-	6250 2600 6250 4250
-Wire Wire Line
-	8400 2600 8400 4250
+	1900 4100 1050 4100
 Entry Wire Line
 	1900 2000 2000 2100
 Entry Wire Line
@@ -208,11 +181,8 @@ PC0
 Text Label 3500 2200 0    50   ~ 0
 PC1
 Wire Wire Line
-	1900 4250 4200 4250
-Connection ~ 1900 4250
-Wire Wire Line
-	2000 4100 4300 4100
-Connection ~ 2000 4100
+	1900 4100 4200 4100
+Connection ~ 1900 4100
 Wire Wire Line
 	2200 3950 4500 3950
 Connection ~ 2200 3950
@@ -241,11 +211,8 @@ PC6
 Text Label 5600 2400 0    50   ~ 0
 PC7
 Wire Wire Line
-	4200 4250 6250 4250
-Connection ~ 4200 4250
-Wire Wire Line
-	4300 4100 6350 4100
-Connection ~ 4300 4100
+	4200 4100 6250 4100
+Connection ~ 4200 4100
 Wire Wire Line
 	4500 3950 6550 3950
 Connection ~ 4500 3950
@@ -272,11 +239,8 @@ PC10
 Text Label 7700 2400 0    50   ~ 0
 PC11
 Wire Wire Line
-	6250 4250 8400 4250
-Connection ~ 6250 4250
-Wire Wire Line
-	6350 4100 8500 4100
-Connection ~ 6350 4100
+	6250 4100 8400 4100
+Connection ~ 6250 4100
 Wire Wire Line
 	6550 3950 8700 3950
 Connection ~ 6550 3950
@@ -327,8 +291,6 @@ PC[0..15]
 Wire Wire Line
 	8800 2600 8400 2600
 Wire Wire Line
-	8800 2700 8500 2700
-Wire Wire Line
 	8800 2400 8250 2400
 Wire Wire Line
 	8250 2300 8800 2300
@@ -369,8 +331,6 @@ Wire Wire Line
 	7200 3400 9300 3400
 Connection ~ 7200 3400
 Wire Wire Line
-	6700 2700 6350 2700
-Wire Wire Line
 	6700 2400 6150 2400
 Wire Wire Line
 	6150 2300 6700 2300
@@ -408,8 +368,6 @@ Wire Wire Line
 Connection ~ 5100 3400
 Wire Wire Line
 	5100 3400 7200 3400
-Wire Wire Line
-	4600 2700 4300 2700
 Wire Wire Line
 	4050 2400 4600 2400
 Wire Wire Line
@@ -686,6 +644,66 @@ PC14
 Text Label 3200 5550 1    50   ~ 0
 PC15
 Connection ~ 9000 4900
+Wire Wire Line
+	1900 2600 1900 4100
+Wire Wire Line
+	4200 2600 4200 4100
+Wire Wire Line
+	6250 2600 6250 4100
+Wire Wire Line
+	8400 2600 8400 4100
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9F891C
+P 8800 2700
+F 0 "#PWR?" H 8800 2550 50  0001 C CNN
+F 1 "VCC" V 8818 2827 50  0000 L CNN
+F 2 "" H 8800 2700 50  0001 C CNN
+F 3 "" H 8800 2700 50  0001 C CNN
+	1    8800 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9F8E27
+P 6700 2700
+F 0 "#PWR?" H 6700 2550 50  0001 C CNN
+F 1 "VCC" V 6718 2827 50  0000 L CNN
+F 2 "" H 6700 2700 50  0001 C CNN
+F 3 "" H 6700 2700 50  0001 C CNN
+	1    6700 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9F911A
+P 4600 2700
+F 0 "#PWR?" H 4600 2550 50  0001 C CNN
+F 1 "VCC" V 4618 2827 50  0000 L CNN
+F 2 "" H 4600 2700 50  0001 C CNN
+F 3 "" H 4600 2700 50  0001 C CNN
+	1    4600 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9F9777
+P 2300 2750
+F 0 "#PWR?" H 2300 2600 50  0001 C CNN
+F 1 "VCC" V 2318 2877 50  0000 L CNN
+F 2 "" H 2300 2750 50  0001 C CNN
+F 3 "" H 2300 2750 50  0001 C CNN
+	1    2300 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2500 2700 2400 2700
+Wire Wire Line
+	2400 2700 2400 2750
+Wire Wire Line
+	2400 2800 2500 2800
+Wire Wire Line
+	2300 2750 2400 2750
 Wire Bus Line
 	10150 1700 10150 3850
 Wire Bus Line
@@ -704,4 +722,7 @@ Wire Bus Line
 	1900 1600 1900 2300
 Wire Bus Line
 	3300 4900 9000 4900
+Connection ~ 2400 2750
+Wire Wire Line
+	2400 2750 2400 2800
 $EndSCHEMATC
