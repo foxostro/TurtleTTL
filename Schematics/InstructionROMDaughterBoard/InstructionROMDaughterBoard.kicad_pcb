@@ -9,7 +9,11 @@
     (nets 35)
   )
 
-  (page A4)
+  (page USLetter)
+  (title_block
+    (title "Instruction ROM Daughter Board")
+  )
+
   (layers
     (0 F.Cu signal)
     (1 GND.Cu power hide)

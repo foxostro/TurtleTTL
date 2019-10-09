@@ -9,7 +9,11 @@
     (nets 34)
   )
 
-  (page A4)
+  (page USLetter)
+  (title_block
+    (title LEDRiser16)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)

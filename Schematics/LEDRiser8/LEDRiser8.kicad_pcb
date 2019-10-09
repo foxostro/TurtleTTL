@@ -9,7 +9,11 @@
     (nets 22)
   )
 
-  (page A4)
+  (page USLetter)
+  (title_block
+    (title LEDRiser8)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -339,7 +343,7 @@
     (arrow2b (pts (xy 127.972374 67.029093) (xy 128.561514 68.154177)))
   )
   (dimension 26.162 (width 0.15) (layer Dwgs.User) (tstamp 5D82E5A1)
-    (gr_text "26.162 mm" (at 112.903 61.946) (layer Dwgs.User) (tstamp 5D82E5A2)
+    (gr_text "26.162 mm" (at 112.903 61.946) (layer Dwgs.User) (tstamp 5D82E5A1)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 99.822 67.056) (xy 99.822 62.659579)))
