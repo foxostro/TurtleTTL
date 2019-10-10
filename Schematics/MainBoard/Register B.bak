@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 20 20
+Sheet 17 20
 Title "Register B"
 Date ""
 Rev ""
@@ -402,8 +402,6 @@ Entry Wire Line
 	3800 5450 3700 5350
 Entry Wire Line
 	3700 5450 3600 5350
-Wire Bus Line
-	5500 1650 5500 2800
 $Comp
 L power:VCC #PWR0199
 U 1 1 5D9A4FBB
@@ -437,6 +435,8 @@ Wire Wire Line
 	5050 2800 6150 2800
 Wire Wire Line
 	5050 2200 6150 2200
+Wire Bus Line
+	5500 1650 5500 2800
 Wire Bus Line
 	3050 5350 4000 5350
 Wire Bus Line

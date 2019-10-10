@@ -639,12 +639,6 @@ NoConn ~ 6400 5350
 NoConn ~ 6400 5250
 NoConn ~ 6400 5150
 NoConn ~ 6400 5050
-NoConn ~ 5400 5050
-NoConn ~ 5400 5150
-NoConn ~ 5400 5250
-NoConn ~ 5400 5350
-NoConn ~ 5400 5450
-NoConn ~ 5400 5550
 Text GLabel 1250 6850 0    50   Input ~ 0
 RegisterClock
 Wire Wire Line
@@ -896,6 +890,47 @@ F 3 "~" H 4450 2100 50  0001 C CNN
 	1    4450 2100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5400 5050 5300 5050
+Wire Wire Line
+	5300 5050 5300 5150
+Wire Wire Line
+	5300 5550 5400 5550
+Wire Wire Line
+	5400 5450 5300 5450
+Connection ~ 5300 5450
+Wire Wire Line
+	5300 5450 5300 5550
+Wire Wire Line
+	5300 5350 5400 5350
+Connection ~ 5300 5350
+Wire Wire Line
+	5300 5350 5300 5450
+Wire Wire Line
+	5400 5250 5300 5250
+Connection ~ 5300 5250
+Wire Wire Line
+	5300 5250 5300 5350
+Wire Wire Line
+	5300 5150 5400 5150
+Connection ~ 5300 5150
+Wire Wire Line
+	5300 5150 5300 5250
+$Comp
+L power:VCC #PWR?
+U 1 1 5DA97BAF
+P 5100 5350
+F 0 "#PWR?" H 5100 5200 50  0001 C CNN
+F 1 "VCC" H 5117 5523 50  0000 C CNN
+F 2 "" H 5100 5350 50  0001 C CNN
+F 3 "" H 5100 5350 50  0001 C CNN
+	1    5100 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5350 5100 5450
+Wire Wire Line
+	5100 5450 5300 5450
 Wire Bus Line
 	2150 1250 2150 1550
 Wire Bus Line

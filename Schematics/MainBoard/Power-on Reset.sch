@@ -252,17 +252,6 @@ Text GLabel 9050 2000 2    50   Output ~ 0
 Wire Wire Line
 	4950 2000 5000 2000
 $Comp
-L 74xx:74LS157 U64
-U 1 1 5D9BAEF9
-P 6300 3450
-F 0 "U64" H 6500 4350 50  0000 C CNN
-F 1 "74LS157" H 6500 4250 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 6300 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 6300 3450 50  0001 C CNN
-	1    6300 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR0159
 U 1 1 5D9BBEFF
 P 6300 2500
@@ -323,10 +312,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 6250 1800 6250
 Wire Wire Line
-	5700 4150 5700 3850
-Wire Wire Line
 	5700 3150 5800 3150
-Connection ~ 5700 4150
 Wire Wire Line
 	5800 3250 5700 3250
 Connection ~ 5700 3250
@@ -349,25 +335,8 @@ Wire Wire Line
 	5700 3750 5700 3550
 Wire Wire Line
 	5800 3850 5700 3850
-Connection ~ 5700 3850
 Wire Wire Line
 	5700 3850 5700 3750
-Wire Wire Line
-	6800 3150 6950 3150
-Wire Wire Line
-	6950 4500 6300 4500
-Wire Wire Line
-	6950 3150 6950 3450
-Wire Wire Line
-	6800 3750 6950 3750
-Connection ~ 6950 3750
-Wire Wire Line
-	6950 3750 6950 4500
-Wire Wire Line
-	6800 3450 6950 3450
-Connection ~ 6950 3450
-Wire Wire Line
-	6950 3450 6950 3750
 Text GLabel 9050 2850 2    50   Output ~ 0
 ControlClock
 Wire Wire Line
@@ -485,4 +454,33 @@ F 3 "~" H 1300 1900 50  0001 C CNN
 	1    1300 1700
 	0    -1   -1   0   
 $EndComp
+$Comp
+L 74xx:74LS157 U64
+U 1 1 5D9BAEF9
+P 6300 3450
+F 0 "U64" H 6500 4350 50  0000 C CNN
+F 1 "74LS157" H 6500 4250 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 6300 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 6300 3450 50  0001 C CNN
+	1    6300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DA1C782
+P 5450 3450
+F 0 "#PWR?" H 5450 3300 50  0001 C CNN
+F 1 "VCC" H 5467 3623 50  0000 C CNN
+F 2 "" H 5450 3450 50  0001 C CNN
+F 3 "" H 5450 3450 50  0001 C CNN
+	1    5450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3450 5450 3550
+Wire Wire Line
+	5450 3550 5700 3550
+NoConn ~ 6800 3150
+NoConn ~ 6800 3450
+NoConn ~ 6800 3750
 $EndSCHEMATC

@@ -165,91 +165,7 @@ Wire Wire Line
 	8650 1450 8850 1450
 Wire Wire Line
 	8850 1750 8750 1750
-Wire Wire Line
-	1700 800  3150 800 
-Wire Wire Line
-	3150 800  3150 1450
-Wire Wire Line
-	3150 1650 3050 1650
 Connection ~ 1700 800 
-Wire Wire Line
-	3150 1550 3050 1550
-Connection ~ 3150 1550
-Wire Wire Line
-	3150 1550 3150 1650
-Wire Wire Line
-	3150 1450 3050 1450
-Connection ~ 3150 1450
-Wire Wire Line
-	3150 1450 3150 1550
-Wire Wire Line
-	4400 1650 4500 1650
-Wire Wire Line
-	4500 1650 4500 1550
-Wire Wire Line
-	4500 800  3150 800 
-Connection ~ 3150 800 
-Wire Wire Line
-	4400 1550 4500 1550
-Connection ~ 4500 1550
-Wire Wire Line
-	4500 1550 4500 1450
-Wire Wire Line
-	4400 1450 4500 1450
-Connection ~ 4500 1450
-Wire Wire Line
-	4500 1450 4500 800 
-Wire Wire Line
-	5800 1650 5900 1650
-Wire Wire Line
-	5900 1650 5900 1550
-Wire Wire Line
-	5900 1450 5800 1450
-Wire Wire Line
-	5800 1550 5900 1550
-Connection ~ 5900 1550
-Wire Wire Line
-	5900 1550 5900 1450
-Wire Wire Line
-	5900 1450 5900 800 
-Wire Wire Line
-	5900 800  4500 800 
-Connection ~ 5900 1450
-Connection ~ 4500 800 
-Wire Wire Line
-	7100 1650 7200 1650
-Wire Wire Line
-	7200 1650 7200 1550
-Wire Wire Line
-	7200 1450 7100 1450
-Wire Wire Line
-	7100 1550 7200 1550
-Connection ~ 7200 1550
-Wire Wire Line
-	7200 1550 7200 1450
-Wire Wire Line
-	7200 1450 7200 800 
-Wire Wire Line
-	7200 800  5900 800 
-Connection ~ 7200 1450
-Connection ~ 5900 800 
-Wire Wire Line
-	8450 1650 8550 1650
-Wire Wire Line
-	8550 1650 8550 1550
-Wire Wire Line
-	8550 1450 8450 1450
-Wire Wire Line
-	8450 1550 8550 1550
-Connection ~ 8550 1550
-Wire Wire Line
-	8550 1550 8550 1450
-Wire Wire Line
-	8550 1450 8550 800 
-Wire Wire Line
-	8550 800  7200 800 
-Connection ~ 8550 1450
-Connection ~ 7200 800 
 $Comp
 L 74xx:74LS393 U56
 U 2 1 5D38B39F
@@ -731,7 +647,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -1850 5850 50  0001 C CNN
 	2    -1850 5850
 	1    0    0    -1  
 $EndComp
-NoConn ~ -2150 5850
 NoConn ~ -1550 5850
 $Comp
 L 74xx:74LS04 U54
@@ -744,7 +659,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -1850 5300 50  0001 C CNN
 	3    -1850 5300
 	1    0    0    -1  
 $EndComp
-NoConn ~ -2150 5300
 NoConn ~ -1550 5300
 $Comp
 L 74xx:74LS04 U54
@@ -757,7 +671,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -1850 4800 50  0001 C CNN
 	4    -1850 4800
 	1    0    0    -1  
 $EndComp
-NoConn ~ -2150 4800
 NoConn ~ -1550 4800
 $Comp
 L 74xx:74LS04 U54
@@ -770,7 +683,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -1150 5850 50  0001 C CNN
 	5    -1150 5850
 	1    0    0    -1  
 $EndComp
-NoConn ~ -1450 5850
 NoConn ~ -850 5850
 $Comp
 L 74xx:74LS04 U54
@@ -783,7 +695,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -1150 5300 50  0001 C CNN
 	6    -1150 5300
 	1    0    0    -1  
 $EndComp
-NoConn ~ -1450 5300
 NoConn ~ -850 5300
 $Comp
 L Device:C C61
@@ -815,4 +726,52 @@ Wire Wire Line
 	9250 5250 9750 5250
 Wire Wire Line
 	9750 5550 9250 5550
+Wire Wire Line
+	1700 800  8550 800 
+NoConn ~ 7100 1450
+NoConn ~ 7100 1550
+NoConn ~ 7100 1650
+NoConn ~ 5800 1450
+NoConn ~ 5800 1550
+NoConn ~ 5800 1650
+NoConn ~ 4400 1450
+NoConn ~ 4400 1550
+NoConn ~ 4400 1650
+NoConn ~ 3050 1450
+NoConn ~ 3050 1550
+NoConn ~ 3050 1650
+NoConn ~ 8450 1450
+NoConn ~ 8450 1550
+NoConn ~ 8450 1650
+$Comp
+L power:VCC #PWR?
+U 1 1 5DBD1B45
+P -1500 4150
+F 0 "#PWR?" H -1500 4000 50  0001 C CNN
+F 1 "VCC" H -1483 4323 50  0000 C CNN
+F 2 "" H -1500 4150 50  0001 C CNN
+F 3 "" H -1500 4150 50  0001 C CNN
+	1    -1500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1450 5850 -1450 5300
+Wire Wire Line
+	-1450 4450 -1500 4450
+Wire Wire Line
+	-2150 4450 -2150 4800
+Connection ~ -1450 5300
+Wire Wire Line
+	-1450 5300 -1450 4450
+Connection ~ -2150 4800
+Wire Wire Line
+	-2150 4800 -2150 5300
+Connection ~ -2150 5300
+Wire Wire Line
+	-2150 5300 -2150 5850
+Wire Wire Line
+	-1500 4150 -1500 4450
+Connection ~ -1500 4450
+Wire Wire Line
+	-1500 4450 -2150 4450
 $EndSCHEMATC

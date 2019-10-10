@@ -152,7 +152,7 @@ U 1 1 5D9C2947
 P 1150 6900
 F 0 "J1" H 1068 6575 50  0000 C CNN
 F 1 "DC Power +5V" H 1068 6666 50  0000 C CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-102_1x02_P5.00mm_45Degree" H 1150 6900 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type055_RT01502HDWU_1x02_P5.00mm_Horizontal" H 1150 6900 50  0001 C CNN
 F 3 "~" H 1150 6900 50  0001 C CNN
 	1    1150 6900
 	-1   0    0    1   

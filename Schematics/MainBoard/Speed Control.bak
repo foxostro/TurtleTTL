@@ -458,8 +458,6 @@ $EndComp
 Wire Wire Line
 	7250 5000 7400 5000
 Wire Wire Line
-	7400 5000 7400 5700
-Wire Wire Line
 	7050 4350 7050 4250
 Wire Wire Line
 	7050 4250 7400 4250
@@ -510,33 +508,6 @@ Wire Wire Line
 	3850 2400 3850 2500
 Connection ~ 3850 2400
 Connection ~ 2700 2400
-Wire Wire Line
-	5750 5600 5750 5700
-Wire Wire Line
-	5750 5700 7400 5700
-Connection ~ 7400 5700
-Wire Wire Line
-	7400 5700 7400 6150
-Wire Wire Line
-	5650 5600 5650 5700
-Wire Wire Line
-	5650 5700 5750 5700
-Connection ~ 5750 5700
-Wire Wire Line
-	5550 5600 5550 5700
-Wire Wire Line
-	5550 5700 5650 5700
-Connection ~ 5650 5700
-Wire Wire Line
-	5450 5600 5450 5700
-Wire Wire Line
-	5450 5700 5550 5700
-Connection ~ 5550 5700
-Wire Wire Line
-	5350 5600 5350 5700
-Wire Wire Line
-	5350 5700 5450 5700
-Connection ~ 5450 5700
 Text GLabel 5050 6650 3    50   Output ~ 0
 ClockRate0
 Text GLabel 5150 6650 3    50   Output ~ 0
@@ -862,8 +833,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 12050 2400 50  0001 C CNN
 	2    12050 2400
 	0    1    1    0   
 $EndComp
-NoConn ~ 11950 2100
-NoConn ~ 12150 2100
 NoConn ~ 12050 2700
 $Comp
 L Connector:Conn_01x09_Female J?
@@ -978,4 +947,33 @@ Wire Wire Line
 Wire Wire Line
 	800  3300 800  4550
 Connection ~ 5050 3300
+$Comp
+L power:VCC #PWR?
+U 1 1 5DAD2B0E
+P 12050 1850
+F 0 "#PWR?" H 12050 1700 50  0001 C CNN
+F 1 "VCC" H 12067 2023 50  0000 C CNN
+F 2 "" H 12050 1850 50  0001 C CNN
+F 3 "" H 12050 1850 50  0001 C CNN
+	1    12050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 2100 11950 2000
+Wire Wire Line
+	11950 2000 12050 2000
+Wire Wire Line
+	12150 2000 12150 2100
+Wire Wire Line
+	12050 1850 12050 2000
+Connection ~ 12050 2000
+Wire Wire Line
+	12050 2000 12150 2000
+Wire Wire Line
+	7400 5000 7400 6150
+NoConn ~ 5350 5600
+NoConn ~ 5450 5600
+NoConn ~ 5550 5600
+NoConn ~ 5650 5600
+NoConn ~ 5750 5600
 $EndSCHEMATC
