@@ -175,7 +175,7 @@ AR Path="/5D2C0CA7/5DD10F71" Ref="U66"  Part="1"
 AR Path="/5D7BD0EA/5DD10F71" Ref="U?"  Part="1" 
 F 0 "U66" H 6500 3500 50  0000 C CNN
 F 1 "74LS245" H 6500 3400 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 6750 2700 50  0001 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 6750 2700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6750 2700 50  0001 C CNN
 	1    6750 2700
 	1    0    0    -1  
