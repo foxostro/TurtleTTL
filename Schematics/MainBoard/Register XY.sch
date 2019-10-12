@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:MainBoard-cache
+LIBS:RAMCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 21
+Sheet 3 22
 Title "Registers X and Y"
 Date ""
 Rev ""
@@ -1096,9 +1097,9 @@ U 1 1 5DA41394
 P 8950 4750
 AR Path="/5D2C07CD/5DA41394" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C0CA7/5DA41394" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BD0EA/5DA41394" Ref="#PWR?"  Part="1" 
+AR Path="/5D7BD0EA/5DA41394" Ref="#PWR0194"  Part="1" 
 AR Path="/5D2C12A5/5DA41394" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8950 4500 50  0001 C CNN
+F 0 "#PWR0194" H 8950 4500 50  0001 C CNN
 F 1 "GND" H 8955 4577 50  0000 C CNN
 F 2 "" H 8950 4750 50  0001 C CNN
 F 3 "" H 8950 4750 50  0001 C CNN

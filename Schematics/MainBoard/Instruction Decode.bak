@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:MainBoard-cache
+LIBS:RAMCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 11 21
+Sheet 11 22
 Title "Instruction Decode"
 Date ""
 Rev ""

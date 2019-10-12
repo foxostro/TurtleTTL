@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:MainBoard-cache
+LIBS:RAMCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 21
+Sheet 1 22
 Title "TurtleTTL: Main Board"
 Date ""
 Rev ""
@@ -252,9 +253,15 @@ F 3 "" H 4900 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 6700 4500 1500 500 
+S 8400 1700 1500 500 
 U 5E586E0B
 F0 "Register UV" 50
 F1 "Register UV.sch" 50
+$EndSheet
+$Sheet
+S 8400 2400 1500 500 
+U 5DAA13E6
+F0 "Data RAM" 50
+F1 "Data RAM.sch" 50
 $EndSheet
 $EndSCHEMATC

@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:MainBoard-cache
+LIBS:RAMCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 18 21
+Sheet 18 22
 Title "ALU"
 Date ""
 Rev ""
@@ -226,12 +227,6 @@ Entry Wire Line
 Wire Wire Line
 	2250 2650 2450 2650
 Text Label 2300 2650 0    50   ~ 0
-C5
-Entry Wire Line
-	2150 2650 2250 2750
-Wire Wire Line
-	2250 2750 2450 2750
-Text Label 2300 2750 0    50   ~ 0
 C4
 NoConn ~ 3650 2550
 NoConn ~ 3650 2650
@@ -931,6 +926,10 @@ Wire Wire Line
 	5100 5350 5100 5450
 Wire Wire Line
 	5100 5450 5300 5450
+Text GLabel 850  2750 0    50   Input ~ 0
+~CarryIn
+Wire Wire Line
+	850  2750 2450 2750
 Wire Bus Line
 	2150 1250 2150 1550
 Wire Bus Line
@@ -942,7 +941,7 @@ Wire Bus Line
 Wire Bus Line
 	2150 4650 2150 5150
 Wire Bus Line
-	2150 2050 2150 2650
+	2150 2050 2150 2550
 Wire Bus Line
 	4200 1150 4200 2950
 Wire Bus Line

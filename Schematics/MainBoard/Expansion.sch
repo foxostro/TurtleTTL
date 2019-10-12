@@ -1,10 +1,11 @@
 EESchema Schematic File Version 4
 LIBS:MainBoard-cache
+LIBS:RAMCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 20 21
+Sheet 20 22
 Title "Expansion"
 Date ""
 Rev ""
@@ -84,7 +85,7 @@ Wire Wire Line
 	4850 2650 4350 2650
 $Comp
 L Connector_Generic:Conn_02x20_Top_Bottom J17
-U 1 1 5DA1F396
+U 1 1 5DAA50DA
 P 4050 2850
 F 0 "J17" H 4100 3967 50  0000 C CNN
 F 1 "Device 2" H 4100 3876 50  0000 C CNN
@@ -911,7 +912,7 @@ Wire Wire Line
 	4450 3250 4450 3350
 $Comp
 L power:GND #PWR0212
-U 1 1 5E55ACB0
+U 1 1 5DAA50DB
 P 4700 3550
 F 0 "#PWR0212" H 4700 3300 50  0001 C CNN
 F 1 "GND" H 4705 3377 50  0000 C CNN
@@ -1326,7 +1327,7 @@ Wire Wire Line
 	3750 1950 3850 1950
 $Comp
 L power:VCC #PWR0201
-U 1 1 5EB25931
+U 1 1 5DAA50DD
 P 3500 1950
 F 0 "#PWR0201" H 3500 1800 50  0001 C CNN
 F 1 "VCC" H 3517 2123 50  0000 C CNN
