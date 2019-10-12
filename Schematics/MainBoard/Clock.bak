@@ -190,8 +190,6 @@ Wire Wire Line
 	4150 6500 4150 6700
 Text GLabel 5350 4850 2    50   Output ~ 0
 CLK
-Text GLabel 5350 5000 2    50   Output ~ 0
-~CLK
 $Comp
 L Device:R R24
 U 1 1 5D43460F
@@ -287,9 +285,6 @@ Wire Wire Line
 	5050 6150 5050 6700
 Wire Wire Line
 	4650 5000 5050 5000
-Wire Wire Line
-	5050 5000 5350 5000
-Connection ~ 5050 5000
 Wire Wire Line
 	3400 6200 3650 6200
 Text GLabel 5350 4700 2    50   Output ~ 0
@@ -445,15 +440,10 @@ Wire Wire Line
 	7250 5550 6750 5550
 Connection ~ 7250 5550
 Connection ~ 6750 5550
-Wire Wire Line
-	5050 5000 5050 5150
-Text GLabel 5350 5150 2    50   Output ~ 0
+Text GLabel 5350 5000 2    50   Output ~ 0
 RegisterClock
 Wire Wire Line
-	5350 5150 5050 5150
-Connection ~ 5050 5150
-Wire Wire Line
-	5050 5150 5050 5400
+	5350 5000 5050 5000
 Connection ~ 2600 4150
 Wire Wire Line
 	2600 3150 2600 3250
@@ -775,4 +765,7 @@ Wire Wire Line
 Connection ~ -1500 4450
 Wire Wire Line
 	-1500 4450 -2150 4450
+Connection ~ 5050 5000
+Wire Wire Line
+	5050 5000 5050 5400
 $EndSCHEMATC

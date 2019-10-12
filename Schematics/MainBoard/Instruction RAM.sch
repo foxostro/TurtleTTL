@@ -996,6 +996,17 @@ F 3 "" H 4500 8800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 8800 4500 8950
+Wire Bus Line
+	6300 1950 6300 3600
+Wire Bus Line
+	6300 3600 6300 5800
+Entry Wire Line
+	4200 3600 4100 3700
+Wire Wire Line
+	4200 3600 4800 3600
+Text Label 4750 3600 2    50   ~ 0
+IRAMAddr15
+NoConn ~ 4800 3600
 Wire Wire Line
 	5800 5900 6800 5900
 Wire Wire Line
@@ -1028,10 +1039,6 @@ Wire Wire Line
 	5800 5800 6800 5800
 Wire Wire Line
 	5800 5700 6800 5700
-Wire Bus Line
-	6300 1950 6300 3600
-Wire Bus Line
-	6300 3600 6300 5800
 Wire Bus Line
 	8300 3450 8300 5800
 Wire Bus Line

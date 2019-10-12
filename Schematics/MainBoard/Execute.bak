@@ -158,20 +158,6 @@ DataBus7
 Text GLabel 1150 2700 0    50   Input ~ 0
 ~CO
 $Comp
-L power:VCC #PWR?
-U 1 1 5D915857
-P 1700 7400
-AR Path="/5D2C0761/5D915857" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C0B92/5D915857" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C13FD/5D915857" Ref="#PWR0132"  Part="1" 
-F 0 "#PWR0132" H 1700 7250 50  0001 C CNN
-F 1 "VCC" H 1717 7573 50  0000 C CNN
-F 2 "" H 1700 7400 50  0001 C CNN
-F 3 "" H 1700 7400 50  0001 C CNN
-	1    1700 7400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5D91585D
 P 1700 7700
@@ -689,14 +675,6 @@ Entry Wire Line
 Entry Wire Line
 	3700 4550 3800 4450
 Entry Wire Line
-	3850 4550 3950 4450
-Entry Wire Line
-	4000 4550 4100 4450
-Entry Wire Line
-	4150 4550 4250 4450
-Entry Wire Line
-	4300 4550 4400 4450
-Entry Wire Line
 	4450 4550 4550 4450
 Entry Wire Line
 	4600 4550 4700 4450
@@ -713,25 +691,9 @@ Wire Wire Line
 Wire Wire Line
 	4550 3800 4550 4450
 Wire Wire Line
-	4400 3800 4400 4450
-Wire Wire Line
-	4250 3800 4250 4450
-Wire Wire Line
-	4100 3800 4100 4450
-Wire Wire Line
-	3950 3800 3950 4450
-Wire Wire Line
 	3800 3800 3800 4450
 Text Label 4550 4400 1    50   ~ 0
 ControlWord26
-Text Label 4400 4400 1    50   ~ 0
-ControlWord27
-Text Label 4250 4400 1    50   ~ 0
-ControlWord28
-Text Label 4100 4400 1    50   ~ 0
-ControlWord29
-Text Label 3950 4400 1    50   ~ 0
-ControlWord30
 Text Label 3800 4400 1    50   ~ 0
 ControlWord31
 Text GLabel 3800 3800 1    50   Output ~ 0
@@ -740,10 +702,6 @@ Text GLabel 4700 3800 1    50   Output ~ 0
 ~J
 Text GLabel 4850 3800 1    50   Output ~ 0
 ~LinkHiOut
-NoConn ~ 4400 3800
-NoConn ~ 4250 3800
-NoConn ~ 4100 3800
-NoConn ~ 3950 3800
 $Comp
 L Connector:Conn_01x09_Female J?
 U 1 1 5DA7DC98
@@ -896,4 +854,15 @@ Wire Bus Line
 	1500 4550 8350 4550
 Wire Bus Line
 	1500 5050 8000 5050
+$Comp
+L power:VCC #PWR0132
+U 1 1 5DD28AFB
+P 1700 7400
+F 0 "#PWR0132" H 1700 7250 50  0001 C CNN
+F 1 "VCC" H 1717 7573 50  0000 C CNN
+F 2 "" H 1700 7400 50  0001 C CNN
+F 3 "" H 1700 7400 50  0001 C CNN
+	1    1700 7400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

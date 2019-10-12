@@ -474,8 +474,6 @@ Entry Wire Line
 Wire Wire Line
 	10400 3500 9950 3500
 Wire Wire Line
-	9950 3200 10400 3200
-Wire Wire Line
 	10400 2900 9950 2900
 Wire Wire Line
 	9950 2600 10400 2600
@@ -696,6 +694,8 @@ Text Label 1600 3200 0    50   ~ 0
 PC_IF3
 Text Label 3850 3500 0    50   ~ 0
 PC_IF6
+Wire Wire Line
+	10400 3200 9950 3200
 Wire Bus Line
 	6000 1700 6000 3700
 Wire Bus Line

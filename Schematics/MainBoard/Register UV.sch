@@ -236,25 +236,11 @@ Entry Wire Line
 Entry Wire Line
 	3300 1750 3400 1650
 Wire Wire Line
-	3300 1750 3100 1750
-Wire Wire Line
-	3300 1650 3100 1650
-Wire Wire Line
-	3300 1550 3100 1550
-Wire Wire Line
-	3300 1450 3100 1450
-Text Label 3100 1450 0    50   ~ 0
-UV0
-Text Label 3100 1550 0    50   ~ 0
-UV1
-Wire Wire Line
 	1500 3450 3750 3450
 Connection ~ 1500 3450
 Wire Wire Line
 	1700 3150 3850 3150
 Connection ~ 1700 3150
-Wire Wire Line
-	9850 1950 9850 850 
 Entry Wire Line
 	5400 1450 5500 1350
 Entry Wire Line
@@ -263,14 +249,6 @@ Entry Wire Line
 	5400 1650 5500 1550
 Entry Wire Line
 	5400 1750 5500 1650
-Text Label 5200 1450 0    50   ~ 0
-UV4
-Text Label 5200 1550 0    50   ~ 0
-UV5
-Text Label 5200 1650 0    50   ~ 0
-UV6
-Text Label 5200 1750 0    50   ~ 0
-UV7
 Entry Wire Line
 	7500 1450 7600 1350
 Entry Wire Line
@@ -279,14 +257,6 @@ Entry Wire Line
 	7500 1650 7600 1550
 Entry Wire Line
 	7500 1750 7600 1650
-Text Label 7300 1450 0    50   ~ 0
-UV8
-Text Label 7300 1550 0    50   ~ 0
-UV9
-Text Label 7300 1650 0    50   ~ 0
-UV10
-Text Label 7300 1750 0    50   ~ 0
-UV11
 Entry Wire Line
 	9650 1450 9750 1350
 Entry Wire Line
@@ -295,14 +265,6 @@ Entry Wire Line
 	9650 1650 9750 1550
 Entry Wire Line
 	9650 1750 9750 1650
-Text Label 9450 1450 0    50   ~ 0
-UV12
-Text Label 9450 1550 0    50   ~ 0
-UV13
-Text Label 9450 1650 0    50   ~ 0
-UV14
-Text Label 9450 1750 0    50   ~ 0
-UV15
 Wire Bus Line
 	1300 950  1500 950 
 Connection ~ 1500 950 
@@ -331,16 +293,6 @@ Wire Wire Line
 	8400 1550 7850 1550
 Wire Wire Line
 	7850 1450 8400 1450
-Wire Wire Line
-	9400 1950 9850 1950
-Wire Wire Line
-	9650 1450 9400 1450
-Wire Wire Line
-	9400 1550 9650 1550
-Wire Wire Line
-	9650 1650 9400 1650
-Wire Wire Line
-	9400 1750 9650 1750
 $Comp
 L 74xx:74LS161 U?
 U 1 1 5E5A459A
@@ -364,14 +316,6 @@ Wire Wire Line
 	5750 1650 6300 1650
 Wire Wire Line
 	6300 1550 5750 1550
-Wire Wire Line
-	7500 1450 7300 1450
-Wire Wire Line
-	7500 1550 7300 1550
-Wire Wire Line
-	7500 1650 7300 1650
-Wire Wire Line
-	7500 1750 7300 1750
 $Comp
 L 74xx:74LS161 U?
 U 1 1 5E5A45A9
@@ -399,14 +343,6 @@ Wire Wire Line
 	3650 1550 4200 1550
 Wire Wire Line
 	4200 1450 3650 1450
-Wire Wire Line
-	5400 1450 5200 1450
-Wire Wire Line
-	5400 1550 5200 1550
-Wire Wire Line
-	5400 1650 5200 1650
-Wire Wire Line
-	5400 1750 5200 1750
 $Comp
 L 74xx:74LS161 U?
 U 1 1 5E5A45BA
@@ -421,10 +357,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS161" H 4700 1950 50  0001 C CNN
 	1    4700 1950
 	1    0    0    -1  
 $EndComp
-Text Label 3100 1750 0    50   ~ 0
-UV3
-Text Label 3100 1650 0    50   ~ 0
-UV2
 Wire Wire Line
 	7700 2150 7700 1950
 Wire Wire Line
@@ -514,9 +446,6 @@ Wire Wire Line
 Connection ~ 6800 850 
 Wire Wire Line
 	4700 850  6800 850 
-Connection ~ 8900 850 
-Wire Wire Line
-	9850 850  8900 850 
 Connection ~ 4700 850 
 Wire Wire Line
 	2600 850  4700 850 
@@ -672,22 +601,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 5650 4800 50  0001 C CNN
 	1    5650 4800
 	0    1    1    0   
 $EndComp
-Text Label 3600 4300 1    50   ~ 0
-UV11
-Text Label 3700 4300 1    50   ~ 0
-UV10
-Text Label 3900 4300 1    50   ~ 0
-UV8
-Text Label 3800 4300 1    50   ~ 0
-UV9
-Wire Wire Line
-	3600 4100 3600 4300
-Wire Wire Line
-	3700 4100 3700 4300
-Wire Wire Line
-	3800 4100 3800 4300
-Wire Wire Line
-	3900 4100 3900 4300
 Entry Wire Line
 	3900 4100 3800 4000
 Entry Wire Line
@@ -704,38 +617,6 @@ Entry Wire Line
 	3400 4100 3300 4000
 Entry Wire Line
 	3500 4100 3400 4000
-Text Label 3200 4300 1    50   ~ 0
-UV15
-Text Label 3300 4300 1    50   ~ 0
-UV14
-Text Label 3400 4300 1    50   ~ 0
-UV13
-Text Label 3500 4300 1    50   ~ 0
-UV12
-Wire Wire Line
-	3200 4100 3200 4300
-Wire Wire Line
-	3300 4100 3300 4300
-Wire Wire Line
-	3400 4100 3400 4300
-Wire Wire Line
-	3500 4100 3500 4300
-Text Label 5850 4300 1    50   ~ 0
-UV3
-Text Label 5950 4300 1    50   ~ 0
-UV2
-Text Label 6150 4300 1    50   ~ 0
-UV0
-Text Label 6050 4300 1    50   ~ 0
-UV1
-Wire Wire Line
-	5850 4100 5850 4300
-Wire Wire Line
-	5950 4100 5950 4300
-Wire Wire Line
-	6050 4100 6050 4300
-Wire Wire Line
-	6150 4100 6150 4300
 Entry Wire Line
 	6150 4100 6050 4000
 Entry Wire Line
@@ -752,22 +633,6 @@ Entry Wire Line
 	5650 4100 5550 4000
 Entry Wire Line
 	5750 4100 5650 4000
-Text Label 5450 4300 1    50   ~ 0
-UV7
-Text Label 5550 4300 1    50   ~ 0
-UV6
-Text Label 5650 4300 1    50   ~ 0
-UV5
-Text Label 5750 4300 1    50   ~ 0
-UV4
-Wire Wire Line
-	5450 4100 5450 4300
-Wire Wire Line
-	5550 4100 5550 4300
-Wire Wire Line
-	5650 4100 5650 4300
-Wire Wire Line
-	5750 4100 5750 4300
 Entry Wire Line
 	6150 6350 6050 6250
 Entry Wire Line
@@ -1129,6 +994,137 @@ F 3 "~" H 8650 4900 50  0001 C CNN
 	1    8650 4900
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3100 1450 3300 1450
+Wire Wire Line
+	3300 1550 3100 1550
+Wire Wire Line
+	3100 1650 3300 1650
+Wire Wire Line
+	3300 1750 3100 1750
+Wire Wire Line
+	5200 1450 5400 1450
+Wire Wire Line
+	5400 1550 5200 1550
+Wire Wire Line
+	5200 1650 5400 1650
+Wire Wire Line
+	5400 1750 5200 1750
+Wire Wire Line
+	7300 1450 7500 1450
+Wire Wire Line
+	7500 1550 7300 1550
+Wire Wire Line
+	7300 1650 7500 1650
+Wire Wire Line
+	7500 1750 7300 1750
+Wire Wire Line
+	9400 1450 9650 1450
+Wire Wire Line
+	9650 1550 9400 1550
+Wire Wire Line
+	9400 1650 9650 1650
+Wire Wire Line
+	9400 1750 9650 1750
+Wire Wire Line
+	5450 4100 5450 4300
+Wire Wire Line
+	5550 4100 5550 4300
+Wire Wire Line
+	5650 4100 5650 4300
+Wire Wire Line
+	5750 4100 5750 4300
+Wire Wire Line
+	5850 4100 5850 4300
+Wire Wire Line
+	5950 4100 5950 4300
+Wire Wire Line
+	6050 4300 6050 4100
+Wire Wire Line
+	6150 4300 6150 4100
+Wire Wire Line
+	3900 4300 3900 4100
+Wire Wire Line
+	3800 4100 3800 4300
+Wire Wire Line
+	3700 4300 3700 4100
+Wire Wire Line
+	3600 4100 3600 4300
+Wire Wire Line
+	3500 4300 3500 4100
+Wire Wire Line
+	3400 4300 3400 4100
+Wire Wire Line
+	3300 4100 3300 4300
+Wire Wire Line
+	3200 4300 3200 4100
+Text Label 6150 4300 1    50   ~ 0
+UV0
+Text Label 6050 4300 1    50   ~ 0
+UV1
+Text Label 5950 4300 1    50   ~ 0
+UV2
+Text Label 5850 4300 1    50   ~ 0
+UV3
+Text Label 5750 4300 1    50   ~ 0
+UV4
+Text Label 5650 4300 1    50   ~ 0
+UV5
+Text Label 5550 4300 1    50   ~ 0
+UV6
+Text Label 5450 4300 1    50   ~ 0
+UV7
+Text Label 3900 4300 1    50   ~ 0
+UV8
+Text Label 3800 4300 1    50   ~ 0
+UV9
+Text Label 3700 4300 1    50   ~ 0
+UV10
+Text Label 3600 4300 1    50   ~ 0
+UV11
+Text Label 3500 4300 1    50   ~ 0
+UV12
+Text Label 3400 4300 1    50   ~ 0
+UV13
+Text Label 3300 4300 1    50   ~ 0
+UV14
+Text Label 3200 4300 1    50   ~ 0
+UV15
+Text Label 3100 1450 0    50   ~ 0
+UV0
+Text Label 3100 1550 0    50   ~ 0
+UV1
+Text Label 3100 1650 0    50   ~ 0
+UV2
+Text Label 3100 1750 0    50   ~ 0
+UV3
+Text Label 5200 1450 0    50   ~ 0
+UV4
+Text Label 5200 1550 0    50   ~ 0
+UV5
+Text Label 5200 1650 0    50   ~ 0
+UV6
+Text Label 5200 1750 0    50   ~ 0
+UV7
+Text Label 7300 1450 0    50   ~ 0
+UV8
+Text Label 7300 1550 0    50   ~ 0
+UV9
+Text Label 7300 1650 0    50   ~ 0
+UV10
+Text Label 7300 1750 0    50   ~ 0
+UV11
+Text Label 9400 1450 0    50   ~ 0
+UV12
+Text Label 9400 1550 0    50   ~ 0
+UV13
+Text Label 9400 1650 0    50   ~ 0
+UV14
+Text Label 9400 1750 0    50   ~ 0
+UV15
+NoConn ~ 9400 1950
+Wire Bus Line
+	9750 1050 9750 4000
 Wire Bus Line
 	7600 1050 7600 1650
 Wire Bus Line
@@ -1143,8 +1139,6 @@ Wire Bus Line
 	3550 950  3550 1650
 Wire Bus Line
 	1500 950  1500 1650
-Wire Bus Line
-	9750 1050 9750 4000
 Wire Bus Line
 	3300 6350 10050 6350
 Wire Bus Line

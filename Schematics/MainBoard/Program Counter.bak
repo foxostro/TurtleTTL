@@ -71,9 +71,6 @@ Wire Wire Line
 	3000 1450 3000 1500
 Wire Wire Line
 	3000 1800 3000 1500
-Wire Wire Line
-	10250 1500 9300 1500
-Connection ~ 9300 1500
 $Comp
 L power:GND #PWR050
 U 1 1 5D228832
@@ -191,8 +188,6 @@ Wire Wire Line
 	2100 3800 4400 3800
 Connection ~ 2100 3800
 Wire Wire Line
-	10250 2600 10250 1500
-Wire Wire Line
 	3000 1500 5100 1500
 Connection ~ 3000 1500
 Entry Wire Line
@@ -303,8 +298,6 @@ Wire Wire Line
 	8800 2900 8600 2900
 Wire Wire Line
 	9300 1500 9300 1800
-Wire Wire Line
-	9800 2600 10250 2600
 Wire Wire Line
 	10050 2100 9800 2100
 Wire Wire Line
@@ -708,6 +701,7 @@ Wire Wire Line
 Connection ~ 2400 2750
 Wire Wire Line
 	2400 2750 2400 2800
+NoConn ~ 9800 2600
 Wire Bus Line
 	10150 1700 10150 3850
 Wire Bus Line
