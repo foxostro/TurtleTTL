@@ -739,7 +739,6 @@ Text GLabel 4700 3800 1    50   Output ~ 0
 ~J
 Text GLabel 4850 3800 1    50   Output ~ 0
 ~LinkHiOut
-NoConn ~ 4550 3800
 NoConn ~ 4400 3800
 NoConn ~ 4250 3800
 NoConn ~ 4100 3800
@@ -884,6 +883,8 @@ F 3 "" H 8200 5650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8200 5750 8200 5650
+Text GLabel 4550 3800 1    50   Output ~ 0
+~CarryIn
 Wire Bus Line
 	1100 1050 5850 1050
 Wire Bus Line
