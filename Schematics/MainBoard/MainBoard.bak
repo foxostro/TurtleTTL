@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 20
+Sheet 1 21
 Title "TurtleTTL: Main Board"
 Date ""
 Rev ""
@@ -251,4 +251,10 @@ F 3 "" H 4900 7100 50  0001 C CNN
 	1    4900 7100
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 6700 4500 1500 500 
+U 5E586E0B
+F0 "Register UV" 50
+F1 "Register UV.sch" 50
+$EndSheet
 $EndSCHEMATC

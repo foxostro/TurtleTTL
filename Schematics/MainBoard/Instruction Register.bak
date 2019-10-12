@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 10 20
+Sheet 10 21
 Title "Instruction Register"
 Date ""
 Rev ""
