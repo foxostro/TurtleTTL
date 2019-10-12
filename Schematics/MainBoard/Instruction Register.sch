@@ -970,23 +970,21 @@ Wire Bus Line
 $Comp
 L power:GND #PWR?
 U 1 1 5DBD46BA
-P 3500 6750
+P 2800 6550
 AR Path="/5D2C07CD/5DBD46BA" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C0CA7/5DBD46BA" Ref="#PWR?"  Part="1" 
 AR Path="/5D7BD0EA/5DBD46BA" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C12A5/5DBD46BA" Ref="#PWR?"  Part="1" 
 AR Path="/5D8005AF/5D833E49/5DBD46BA" Ref="#PWR095"  Part="1" 
-F 0 "#PWR095" H 3500 6500 50  0001 C CNN
-F 1 "GND" H 3505 6577 50  0000 C CNN
-F 2 "" H 3500 6750 50  0001 C CNN
-F 3 "" H 3500 6750 50  0001 C CNN
-	1    3500 6750
+F 0 "#PWR095" H 2800 6300 50  0001 C CNN
+F 1 "GND" H 2805 6377 50  0000 C CNN
+F 2 "" H 2800 6550 50  0001 C CNN
+F 3 "" H 2800 6550 50  0001 C CNN
+	1    2800 6550
 	-1   0    0    1   
 $EndComp
 Entry Wire Line
-	2000 6150 1900 6250
-Entry Wire Line
-	2200 6150 2100 6250
+	2100 6150 2000 6250
 Entry Wire Line
 	2300 6150 2200 6250
 Entry Wire Line
@@ -1000,53 +998,53 @@ Entry Wire Line
 Entry Wire Line
 	2800 6150 2700 6250
 Entry Wire Line
-	2900 6150 2800 6250
+	3250 6150 3150 6250
 Entry Wire Line
-	3000 6150 2900 6250
+	3350 6150 3250 6250
 Entry Wire Line
-	3100 6150 3000 6250
+	3450 6150 3350 6250
 Entry Wire Line
-	3200 6150 3100 6250
+	3550 6150 3450 6250
 Entry Wire Line
-	3300 6150 3200 6250
+	3650 6150 3550 6250
 Entry Wire Line
-	3400 6150 3300 6250
+	3750 6150 3650 6250
 Entry Wire Line
-	3500 6150 3400 6250
-Text Label 1900 6800 1    50   ~ 0
+	3850 6150 3750 6250
+Entry Wire Line
+	3950 6150 3850 6250
+Text Label 2000 6800 1    50   ~ 0
 IR15
-Text Label 2100 6800 1    50   ~ 0
-IR13
 Text Label 2200 6800 1    50   ~ 0
-IR12
+IR13
 Text Label 2300 6800 1    50   ~ 0
-IR11
+IR12
 Text Label 2400 6800 1    50   ~ 0
-IR10
+IR11
 Text Label 2500 6800 1    50   ~ 0
-IR9
+IR10
 Text Label 2600 6800 1    50   ~ 0
-IR8
+IR9
 Text Label 2700 6800 1    50   ~ 0
+IR8
+Text Label 3150 6800 1    50   ~ 0
 IR7
-Text Label 2800 6800 1    50   ~ 0
+Text Label 3250 6800 1    50   ~ 0
 IR6
-Text Label 2900 6800 1    50   ~ 0
+Text Label 3350 6800 1    50   ~ 0
 IR5
-Text Label 3000 6800 1    50   ~ 0
+Text Label 3450 6800 1    50   ~ 0
 IR4
-Text Label 3100 6800 1    50   ~ 0
+Text Label 3550 6800 1    50   ~ 0
 IR3
-Text Label 3200 6800 1    50   ~ 0
+Text Label 3650 6800 1    50   ~ 0
 IR2
-Text Label 3300 6800 1    50   ~ 0
+Text Label 3750 6800 1    50   ~ 0
 IR1
-Text Label 3400 6800 1    50   ~ 0
+Text Label 3850 6800 1    50   ~ 0
 IR0
 Wire Wire Line
-	1900 6250 1900 6850
-Wire Wire Line
-	2100 6250 2100 6850
+	2000 6250 2000 6850
 Wire Wire Line
 	2200 6250 2200 6850
 Wire Wire Line
@@ -1060,43 +1058,81 @@ Wire Wire Line
 Wire Wire Line
 	2700 6250 2700 6850
 Wire Wire Line
-	2800 6250 2800 6850
+	3150 6250 3150 6850
 Wire Wire Line
-	2900 6250 2900 6850
+	3250 6250 3250 6850
 Wire Wire Line
-	3000 6250 3000 6850
+	3350 6250 3350 6850
 Wire Wire Line
-	3100 6250 3100 6850
+	3450 6250 3450 6850
 Wire Wire Line
-	3200 6250 3200 6850
+	3550 6250 3550 6850
 Wire Wire Line
-	3300 6250 3300 6850
+	3650 6250 3650 6850
 Wire Wire Line
-	3400 6250 3400 6850
+	3750 6250 3750 6850
 Wire Wire Line
-	3500 6850 3500 6750
+	3850 6250 3850 6850
 Wire Wire Line
-	2000 6250 2000 6850
-Text Label 2000 6800 1    50   ~ 0
+	2100 6250 2100 6850
+Text Label 2100 6800 1    50   ~ 0
 IR14
 Entry Wire Line
-	2100 6150 2000 6250
-$Comp
-L Connector:Conn_01x17_Female J?
-U 1 1 5DBD46F1
-P 2700 7050
-AR Path="/5D2C12A5/5DBD46F1" Ref="J?"  Part="1" 
-AR Path="/5D8005AF/5D833E49/5DBD46F1" Ref="J4"  Part="1" 
-F 0 "J4" V 2773 7030 50  0000 C CNN
-F 1 "Instruction Register LED Connector" V 2864 7030 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x17_P2.54mm_Vertical" H 2700 7050 50  0001 C CNN
-F 3 "~" H 2700 7050 50  0001 C CNN
-	1    2700 7050
-	0    1    1    0   
-$EndComp
+	2200 6150 2100 6250
 Connection ~ 5150 6150
 Wire Bus Line
 	5150 6150 9750 6150
+Wire Wire Line
+	3950 6550 3950 6850
+$Comp
+L power:GND #PWR?
+U 1 1 5DA209EA
+P 3950 6550
+AR Path="/5D2C12A5/5DA209EA" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C0CA7/5DA209EA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3950 6300 50  0001 C CNN
+F 1 "GND" H 3955 6377 50  0000 C CNN
+F 2 "" H 3950 6550 50  0001 C CNN
+F 3 "" H 3950 6550 50  0001 C CNN
+	1    3950 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x09_Female J?
+U 1 1 5DA209F5
+P 3550 7050
+AR Path="/5D29E36D/5DA209F5" Ref="J?"  Part="1" 
+AR Path="/5D2C12A5/5DA209F5" Ref="J?"  Part="1" 
+AR Path="/5D2C0CE4/5DA209F5" Ref="J?"  Part="1" 
+AR Path="/5D2C0D13/5DA209F5" Ref="J?"  Part="1" 
+AR Path="/5D2C0CA7/5DA209F5" Ref="J?"  Part="1" 
+AR Path="/5D8005AF/5D833E49/5DA209F5" Ref="J?"  Part="1" 
+F 0 "J?" V 3650 7000 50  0000 C CNN
+F 1 "IR LED Connector [0..7]" V 3700 7000 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 3550 7050 50  0001 C CNN
+F 3 "~" H 3550 7050 50  0001 C CNN
+	1    3550 7050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 6550 2800 6850
+$Comp
+L Connector:Conn_01x09_Female J?
+U 1 1 5DA3B4FA
+P 2400 7050
+AR Path="/5D29E36D/5DA3B4FA" Ref="J?"  Part="1" 
+AR Path="/5D2C12A5/5DA3B4FA" Ref="J?"  Part="1" 
+AR Path="/5D2C0CE4/5DA3B4FA" Ref="J?"  Part="1" 
+AR Path="/5D2C0D13/5DA3B4FA" Ref="J?"  Part="1" 
+AR Path="/5D2C0CA7/5DA3B4FA" Ref="J?"  Part="1" 
+AR Path="/5D8005AF/5D833E49/5DA3B4FA" Ref="J?"  Part="1" 
+F 0 "J?" V 2500 7000 50  0000 C CNN
+F 1 "IR LED Connector [8..15]" V 2550 7000 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 2400 7050 50  0001 C CNN
+F 3 "~" H 2400 7050 50  0001 C CNN
+	1    2400 7050
+	0    1    1    0   
+$EndComp
 Wire Bus Line
 	950  900  950  2850
 Wire Bus Line
@@ -1120,5 +1156,5 @@ Wire Bus Line
 Wire Bus Line
 	5150 4200 5150 6150
 Wire Bus Line
-	2000 6150 5150 6150
+	2100 6150 5150 6150
 $EndSCHEMATC
