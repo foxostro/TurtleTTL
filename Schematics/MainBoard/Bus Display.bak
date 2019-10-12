@@ -53,123 +53,8 @@ Text Label 5350 2650 1    50   ~ 0
 DataBus2
 Text Notes 4300 3250 0    50   ~ 0
 Data Bus Pull-down Resistors
-$Comp
-L power:GND #PWR?
-U 1 1 5DCD04AD
-P 6700 5050
-AR Path="/5D2C07CD/5DCD04AD" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C0CA7/5DCD04AD" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BD0EA/5DCD04AD" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C12A5/5DCD04AD" Ref="#PWR0194"  Part="1" 
-F 0 "#PWR0194" H 6700 4800 50  0001 C CNN
-F 1 "GND" H 6705 4877 50  0000 C CNN
-F 2 "" H 6700 5050 50  0001 C CNN
-F 3 "" H 6700 5050 50  0001 C CNN
-	1    6700 5050
-	-1   0    0    1   
-$EndComp
-Entry Wire Line
-	5100 4550 5000 4450
-Entry Wire Line
-	5300 4550 5200 4450
-Entry Wire Line
-	5400 4550 5300 4450
-Entry Wire Line
-	5500 4550 5400 4450
-Entry Wire Line
-	5600 4550 5500 4450
-Entry Wire Line
-	5700 4550 5600 4450
-Entry Wire Line
-	5800 4550 5700 4450
-Entry Wire Line
-	5900 4550 5800 4450
-Entry Wire Line
-	6000 4550 5900 4450
-Entry Wire Line
-	6100 4550 6000 4450
-Entry Wire Line
-	6200 4550 6100 4450
-Entry Wire Line
-	6300 4550 6200 4450
-Entry Wire Line
-	6400 4550 6300 4450
-Entry Wire Line
-	6500 4550 6400 4450
-Entry Wire Line
-	6600 4550 6500 4450
-Text GLabel 4700 4450 0    50   Input ~ 0
-AddressBus[0..15]
-Text Label 5100 5100 1    50   ~ 0
-AddressBus15
-Text Label 5300 5100 1    50   ~ 0
-AddressBus13
-Text Label 5400 5100 1    50   ~ 0
-AddressBus12
-Text Label 5500 5100 1    50   ~ 0
-AddressBus11
-Text Label 5600 5100 1    50   ~ 0
-AddressBus10
-Text Label 5700 5100 1    50   ~ 0
-AddressBus9
-Text Label 5800 5100 1    50   ~ 0
-AddressBus8
-Text Label 5900 5100 1    50   ~ 0
-AddressBus7
-Text Label 6000 5100 1    50   ~ 0
-AddressBus6
-Text Label 6100 5100 1    50   ~ 0
-AddressBus5
-Text Label 6200 5100 1    50   ~ 0
-AddressBus4
-Text Label 6300 5100 1    50   ~ 0
-AddressBus3
-Text Label 6400 5100 1    50   ~ 0
-AddressBus2
-Text Label 6500 5100 1    50   ~ 0
-AddressBus1
-Text Label 6600 5100 1    50   ~ 0
-AddressBus0
-Wire Wire Line
-	5100 4550 5100 5150
-Wire Wire Line
-	5300 4550 5300 5150
-Wire Wire Line
-	5400 4550 5400 5150
-Wire Wire Line
-	5500 4550 5500 5150
-Wire Wire Line
-	5600 4550 5600 5150
-Wire Wire Line
-	5700 4550 5700 5150
-Wire Wire Line
-	5800 4550 5800 5150
-Wire Wire Line
-	5900 4550 5900 5150
-Wire Wire Line
-	6000 4550 6000 5150
-Wire Wire Line
-	6100 4550 6100 5150
-Wire Wire Line
-	6200 4550 6200 5150
-Wire Wire Line
-	6300 4550 6300 5150
-Wire Wire Line
-	6400 4550 6400 5150
-Wire Wire Line
-	6500 4550 6500 5150
-Wire Wire Line
-	6600 4550 6600 5150
-Wire Wire Line
-	6700 5150 6700 5050
 Wire Wire Line
 	5550 3150 5550 3250
-Wire Wire Line
-	5200 4550 5200 5150
-Text Label 5200 5100 1    50   ~ 0
-AddressBus14
-Entry Wire Line
-	5200 4550 5100 4450
 Wire Wire Line
 	6850 2450 6850 2650
 $Comp
@@ -244,17 +129,6 @@ Entry Wire Line
 	6450 2300 6350 2200
 Entry Wire Line
 	6350 2300 6250 2200
-$Comp
-L Connector:Conn_01x17_Female J11
-U 1 1 5D8D33D7
-P 5900 5350
-F 0 "J11" V 5973 5330 50  0000 C CNN
-F 1 "Address Bus LED Connector" V 6064 5330 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x17_P2.54mm_Vertical" H 5900 5350 50  0001 C CNN
-F 3 "~" H 5900 5350 50  0001 C CNN
-	1    5900 5350
-	0    1    1    0   
-$EndComp
 Text Label 5550 2650 1    50   ~ 0
 DataBus0
 Text Label 5450 2650 1    50   ~ 0
@@ -290,8 +164,6 @@ Wire Wire Line
 	4950 2300 4950 2750
 Wire Wire Line
 	4850 2750 4850 2300
-Wire Bus Line
-	4700 4450 6500 4450
 Wire Bus Line
 	3700 2200 6650 2200
 $EndSCHEMATC
