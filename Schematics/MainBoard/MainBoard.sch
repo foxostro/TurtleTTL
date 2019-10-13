@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 22
+Sheet 1 23
 Title "TurtleTTL: Main Board"
 Date ""
 Rev ""
@@ -33,19 +33,19 @@ F0 "Program Counter" 50
 F1 "Program Counter.sch" 50
 $EndSheet
 $Sheet
-S 3200 3100 1500 500 
+S 3200 3800 1500 500 
 U 5D8005AF
 F0 "Instruction Fetch" 50
 F1 "Instruction Fetch.sch" 50
 $EndSheet
 $Sheet
-S 3200 3800 1500 500 
+S 3200 4500 1500 500 
 U 5D2C0B92
 F0 "Instruction Decode" 50
 F1 "Instruction Decode.sch" 50
 $EndSheet
 $Sheet
-S 3200 4500 1500 500 
+S 3200 5200 1500 500 
 U 5D2C13FD
 F0 "Execute" 50
 F1 "Execute.sch" 50
@@ -277,4 +277,10 @@ F 3 "~" H 2450 6900 50  0001 C CNN
 	1    2450 6900
 	-1   0    0    1   
 $EndComp
+$Sheet
+S 3200 3100 1500 500 
+U 5DA6B866
+F0 "Link Register" 50
+F1 "Link Register.sch" 50
+$EndSheet
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 22
+Sheet 3 23
 Title "Registers X and Y"
 Date ""
 Rev ""
@@ -1070,26 +1070,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 5500 4950 50  0001 C CNN
 	1    5500 4950
 	0    1    1    0   
 $EndComp
-Wire Bus Line
-	9600 1200 9600 4150
-Wire Bus Line
-	7450 1200 7450 1800
-Wire Bus Line
-	5350 1200 5350 1800
-Wire Bus Line
-	3250 1200 3250 1800
-Wire Bus Line
-	7600 1100 7600 1800
-Wire Bus Line
-	5500 1100 5500 1800
-Wire Bus Line
-	3400 1100 3400 1800
-Wire Bus Line
-	1350 1100 1350 1800
-Wire Bus Line
-	3150 6500 9900 6500
-Wire Bus Line
-	2950 4150 9600 4150
 $Comp
 L power:VCC #PWR?
 U 1 1 5DFB1E6C
@@ -1116,4 +1096,24 @@ F 3 "" H 5100 4450 50  0001 C CNN
 	1    5100 4450
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	9600 1200 9600 4150
+Wire Bus Line
+	7450 1200 7450 1800
+Wire Bus Line
+	5350 1200 5350 1800
+Wire Bus Line
+	3250 1200 3250 1800
+Wire Bus Line
+	7600 1100 7600 1800
+Wire Bus Line
+	5500 1100 5500 1800
+Wire Bus Line
+	3400 1100 3400 1800
+Wire Bus Line
+	1350 1100 1350 1800
+Wire Bus Line
+	3150 6500 9900 6500
+Wire Bus Line
+	2950 4150 9600 4150
 $EndSCHEMATC

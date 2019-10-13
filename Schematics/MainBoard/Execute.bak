@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 12 22
+Sheet 12 23
 Title "Execute"
 Date ""
 Rev ""
@@ -843,16 +843,6 @@ Wire Wire Line
 	8200 5750 8200 5650
 Text GLabel 4550 3800 1    50   Output ~ 0
 ~CarryIn
-Wire Bus Line
-	1100 1050 5850 1050
-Wire Bus Line
-	5850 1050 5850 2300
-Wire Bus Line
-	7750 1800 7750 2800
-Wire Bus Line
-	1500 4550 8350 4550
-Wire Bus Line
-	1500 5050 8000 5050
 $Comp
 L power:VCC #PWR0132
 U 1 1 5DD28AFB
@@ -864,4 +854,16 @@ F 3 "" H 1700 7400 50  0001 C CNN
 	1    1700 7400
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	1100 1050 5850 1050
+Wire Bus Line
+	5850 1050 5850 2300
+Wire Bus Line
+	7750 1800 7750 2800
+Wire Bus Line
+	1500 4550 8350 4550
+Wire Bus Line
+	1500 5050 8000 5050
+Text Notes 3900 4250 0    50   ~ 0
+There are\nunused control\nsignals here\nfor future\nexpansion.
 $EndSCHEMATC
