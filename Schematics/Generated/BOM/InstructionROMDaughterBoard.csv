@@ -1,0 +1,10 @@
+Reference, Value, Footprint, Datasheet
+"C1","100nF","Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm","~"
+"C2","100nF","Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm","~"
+"U1","GLS29EE010","Package_DIP:DIP-32_W15.24mm_Socket",""
+"U2","GLS29EE010","Package_DIP:DIP-32_W15.24mm_Socket",""
+"J1","PC/IF Connector [0..7]","Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical","~"
+"J2","PC/IF Connector [8..15]","Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical","~"
+"J3","IROM Connector [0..7]","Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical","~"
+"J4","IROM Connector [8..15]","Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical","~"
+"C3","10µF","Capacitor_THT:CP_Radial_D5.0mm_P2.00mm","~"
