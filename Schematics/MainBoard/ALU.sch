@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:MainBoard-cache
-LIBS:RAMCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
@@ -262,7 +261,7 @@ Wire Bus Line
 NoConn ~ 3650 5250
 NoConn ~ 3650 5150
 Text Label 2300 5250 0    50   ~ 0
-C5
+C4
 Wire Wire Line
 	2250 5250 2450 5250
 Entry Wire Line
@@ -919,6 +918,17 @@ Text GLabel 850  2750 0    50   Input ~ 0
 ~CarryIn
 Wire Wire Line
 	850  2750 2450 2750
+$Comp
+L power:VCC #PWR0187
+U 1 1 5DD31F24
+P 5900 4550
+F 0 "#PWR0187" H 5900 4400 50  0001 C CNN
+F 1 "VCC" H 5917 4723 50  0000 C CNN
+F 2 "" H 5900 4550 50  0001 C CNN
+F 3 "" H 5900 4550 50  0001 C CNN
+	1    5900 4550
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	2150 1250 2150 1550
 Wire Bus Line
@@ -941,15 +951,4 @@ Wire Bus Line
 	6850 600  6850 1950
 Wire Bus Line
 	4200 2950 8400 2950
-$Comp
-L power:VCC #PWR0187
-U 1 1 5DD31F24
-P 5900 4550
-F 0 "#PWR0187" H 5900 4400 50  0001 C CNN
-F 1 "VCC" H 5917 4723 50  0000 C CNN
-F 2 "" H 5900 4550 50  0001 C CNN
-F 3 "" H 5900 4550 50  0001 C CNN
-	1    5900 4550
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

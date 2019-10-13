@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:MainBoard-cache
-LIBS:RAMCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
@@ -137,8 +136,6 @@ Wire Wire Line
 	1350 6900 1950 6900
 Connection ~ 1950 6900
 Wire Wire Line
-	1950 6900 2450 6900
-Wire Wire Line
 	2500 6600 1950 6600
 Connection ~ 1950 6600
 $Sheet
@@ -264,6 +261,11 @@ U 5DAA13E6
 F0 "Data RAM" 50
 F1 "Data RAM.sch" 50
 $EndSheet
+Wire Wire Line
+	2450 6900 2500 6900
+Wire Wire Line
+	1950 6900 2450 6900
+Connection ~ 2450 6900
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5DC78A91
@@ -275,7 +277,4 @@ F 3 "~" H 2450 6900 50  0001 C CNN
 	1    2450 6900
 	-1   0    0    1   
 $EndComp
-Connection ~ 2450 6900
-Wire Wire Line
-	2450 6900 2500 6900
 $EndSCHEMATC
