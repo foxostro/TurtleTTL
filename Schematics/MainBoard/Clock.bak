@@ -92,8 +92,6 @@ F 3 "~" H 2600 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  3950 1500 3950
-Wire Wire Line
 	2000 4550 2000 4750
 Wire Wire Line
 	2000 4750 2600 4750
@@ -445,45 +443,21 @@ Wire Wire Line
 	5350 5000 5050 5000
 Connection ~ 2600 4150
 Wire Wire Line
-	2600 3150 2600 3250
+	2600 3150 2600 3450
 Wire Wire Line
-	800  3450 800  3550
+	800  3150 800  3450
 Wire Wire Line
-	800  3150 800  3250
-Wire Wire Line
-	2600 3450 2600 4150
+	2600 3650 2600 4150
 $Comp
 L Device:R_Small R23
 U 1 1 5D39244B
-P 2600 3350
-F 0 "R23" H 2668 3396 50  0000 L CNN
-F 1 "47kΩ" H 2668 3305 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2600 3350 50  0001 C CNN
-F 3 "~" H 2600 3350 50  0001 C CNN
-	1    2600 3350
+P 2600 3550
+F 0 "R23" H 2668 3596 50  0000 L CNN
+F 1 "47kΩ" H 2668 3505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2600 3550 50  0001 C CNN
+F 3 "~" H 2600 3550 50  0001 C CNN
+	1    2600 3550
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R22
-U 1 1 5D39306C
-P 800 3350
-F 0 "R22" H 868 3396 50  0000 L CNN
-F 1 "220Ω" H 868 3305 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 800 3350 50  0001 C CNN
-F 3 "~" H 800 3350 50  0001 C CNN
-	1    800  3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5D843F11
-P 800 3750
-F 0 "SW1" V 846 3702 50  0000 R CNN
-F 1 "Step" V 755 3702 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 800 3950 50  0001 C CNN
-F 3 "~" H 800 3950 50  0001 C CNN
-	1    800  3750
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	3650 5200 3150 5200
@@ -767,4 +741,38 @@ Wire Wire Line
 Connection ~ 5050 5000
 Wire Wire Line
 	5050 5000 5050 5400
+Wire Wire Line
+	800  3950 1500 3950
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D843F11
+P 800 4400
+F 0 "SW1" V 846 4352 50  0000 R CNN
+F 1 "Step" V 755 4352 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 800 4600 50  0001 C CNN
+F 3 "~" H 800 4600 50  0001 C CNN
+	1    800  4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R22
+U 1 1 5D39306C
+P 800 3550
+F 0 "R22" H 868 3596 50  0000 L CNN
+F 1 "1kΩ" H 868 3505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 800 3550 50  0001 C CNN
+F 3 "~" H 800 3550 50  0001 C CNN
+	1    800  3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4750 800  4750
+Wire Wire Line
+	800  4750 800  4600
+Connection ~ 1050 4750
+Wire Wire Line
+	800  3650 800  3950
+Connection ~ 800  3950
+Wire Wire Line
+	800  3950 800  4200
 $EndSCHEMATC
