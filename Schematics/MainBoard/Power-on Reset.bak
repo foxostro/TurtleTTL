@@ -483,4 +483,206 @@ Wire Wire Line
 NoConn ~ 6800 3150
 NoConn ~ 6800 3450
 NoConn ~ 6800 3750
+$Comp
+L 74xx:74LS04 U62
+U 7 1 5DB5DD2A
+P 4100 -1650
+F 0 "U62" H 3700 -1300 50  0000 C CNN
+F 1 "74LS04" H 3700 -1400 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4100 -1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4100 -1650 50  0001 C CNN
+	7    4100 -1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U63
+U 5 1 5DB5E8C7
+P 4700 -1650
+F 0 "U63" H 5100 -1300 50  0000 C CNN
+F 1 "74LS08" H 5100 -1400 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4700 -1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4700 -1650 50  0001 C CNN
+	5    4700 -1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 5DB617C9
+P 4400 -2300
+F 0 "#PWR06" H 4400 -2450 50  0001 C CNN
+F 1 "VCC" H 4417 -2127 50  0000 C CNN
+F 2 "" H 4400 -2300 50  0001 C CNN
+F 3 "" H 4400 -2300 50  0001 C CNN
+	1    4400 -2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB61DFA
+P 4400 -1000
+AR Path="/5D2C0720/5DB61DFA" Ref="#PWR?"  Part="1" 
+AR Path="/5D2C0761/5DB61DFA" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 4400 -1250 50  0001 C CNN
+F 1 "GND" H 4405 -1173 50  0000 C CNN
+F 2 "" H 4400 -1000 50  0001 C CNN
+F 3 "" H 4400 -1000 50  0001 C CNN
+	1    4400 -1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 -1150 4100 -1050
+Wire Wire Line
+	4100 -1050 4400 -1050
+Wire Wire Line
+	4400 -1050 4400 -1000
+Wire Wire Line
+	4400 -1050 4700 -1050
+Wire Wire Line
+	4700 -1050 4700 -1150
+Connection ~ 4400 -1050
+Wire Wire Line
+	4400 -2300 4400 -2200
+Wire Wire Line
+	4400 -2200 4100 -2200
+Wire Wire Line
+	4100 -2200 4100 -2150
+Wire Wire Line
+	4400 -2200 4700 -2200
+Wire Wire Line
+	4700 -2200 4700 -2150
+Connection ~ 4400 -2200
+$Comp
+L 74xx:74LS04 U62
+U 4 1 5DB6F655
+P 5750 -1750
+F 0 "U62" H 5750 -1433 50  0000 C CNN
+F 1 "74LS04" H 5750 -1524 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5750 -1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5750 -1750 50  0001 C CNN
+	4    5750 -1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U62
+U 5 1 5DB7030C
+P 5750 -1250
+F 0 "U62" H 5750 -933 50  0000 C CNN
+F 1 "74LS04" H 5750 -1024 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5750 -1250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5750 -1250 50  0001 C CNN
+	5    5750 -1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U62
+U 6 1 5DB711C4
+P 5750 -750
+F 0 "U62" H 5750 -433 50  0000 C CNN
+F 1 "74LS04" H 5750 -524 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5750 -750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5750 -750 50  0001 C CNN
+	6    5750 -750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U62
+U 3 1 5DB71EB4
+P 5750 -2250
+F 0 "U62" H 5750 -1933 50  0000 C CNN
+F 1 "74LS04" H 5750 -2024 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5750 -2250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5750 -2250 50  0001 C CNN
+	3    5750 -2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR08
+U 1 1 5DB745DF
+P 5450 -2600
+F 0 "#PWR08" H 5450 -2750 50  0001 C CNN
+F 1 "VCC" H 5467 -2427 50  0000 C CNN
+F 2 "" H 5450 -2600 50  0001 C CNN
+F 3 "" H 5450 -2600 50  0001 C CNN
+	1    5450 -2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 -2250
+Wire Wire Line
+	5450 -2250 5450 -1750
+Connection ~ 5450 -1750
+Wire Wire Line
+	5450 -1750 5450 -1250
+Connection ~ 5450 -1250
+Wire Wire Line
+	5450 -1250 5450 -750
+NoConn ~ 6050 -2250
+NoConn ~ 6050 -1750
+NoConn ~ 6050 -1250
+NoConn ~ 6050 -750
+Wire Wire Line
+	5450 -2600 5450 -2250
+$Comp
+L 74xx:74LS08 U63
+U 2 1 5DB88E7D
+P 6750 -2100
+F 0 "U63" H 6750 -1775 50  0000 C CNN
+F 1 "74LS08" H 6750 -1866 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6750 -2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6750 -2100 50  0001 C CNN
+	2    6750 -2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U63
+U 3 1 5DB8B5C0
+P 6750 -1550
+F 0 "U63" H 6750 -1225 50  0000 C CNN
+F 1 "74LS08" H 6750 -1316 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6750 -1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6750 -1550 50  0001 C CNN
+	3    6750 -1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U63
+U 4 1 5DB8D2C7
+P 6750 -1000
+F 0 "U63" H 6750 -675 50  0000 C CNN
+F 1 "74LS08" H 6750 -766 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6750 -1000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6750 -1000 50  0001 C CNN
+	4    6750 -1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR09
+U 1 1 5DB945D5
+P 6450 -2600
+F 0 "#PWR09" H 6450 -2750 50  0001 C CNN
+F 1 "VCC" H 6467 -2427 50  0000 C CNN
+F 2 "" H 6450 -2600 50  0001 C CNN
+F 3 "" H 6450 -2600 50  0001 C CNN
+	1    6450 -2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 -2600 6450 -2200
+Connection ~ 6450 -2200
+Wire Wire Line
+	6450 -2200 6450 -2000
+Connection ~ 6450 -2000
+Wire Wire Line
+	6450 -2000 6450 -1650
+Connection ~ 6450 -1650
+Wire Wire Line
+	6450 -1650 6450 -1450
+Connection ~ 6450 -1450
+Wire Wire Line
+	6450 -1450 6450 -1100
+Connection ~ 6450 -1100
+Wire Wire Line
+	6450 -1100 6450 -900
+NoConn ~ 7050 -2100
+NoConn ~ 7050 -1550
+NoConn ~ 7050 -1000
 $EndSCHEMATC

@@ -1017,4 +1017,92 @@ F 3 "~" H 10150 2700 50  0001 C CNN
 	1    10150 2700
 	-1   0    0    1   
 $EndComp
+$Comp
+L Comparator:LM393 U49
+U 3 1 5DB9AA46
+P 12000 3850
+F 0 "U49" V 12050 4050 50  0000 C CNN
+F 1 "LM393" V 12150 4050 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 12000 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 12000 3850 50  0001 C CNN
+	3    12000 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Comparator:LM393 U50
+U 3 1 5DB9BA9E
+P 12000 4350
+F 0 "U50" V 12050 4550 50  0000 C CNN
+F 1 "LM393" V 12150 4550 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 12000 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 12000 4350 50  0001 C CNN
+	3    12000 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Comparator:LM393 U52
+U 3 1 5DB9C97A
+P 12000 4800
+F 0 "U52" V 12050 5000 50  0000 C CNN
+F 1 "LM393" V 12150 5000 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 12000 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 12000 4800 50  0001 C CNN
+	3    12000 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Comparator:LM393 U53
+U 3 1 5DB9EC8B
+P 12000 5200
+F 0 "U53" V 12050 5400 50  0000 C CNN
+F 1 "LM393" V 12150 5400 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 12000 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 12000 5200 50  0001 C CNN
+	3    12000 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5DBA03BC
+P 12300 3350
+F 0 "#PWR04" H 12300 3200 50  0001 C CNN
+F 1 "VCC" H 12317 3523 50  0000 C CNN
+F 2 "" H 12300 3350 50  0001 C CNN
+F 3 "" H 12300 3350 50  0001 C CNN
+	1    12300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 3350 12300 3750
+Connection ~ 12300 3750
+Wire Wire Line
+	12300 3750 12300 4250
+Connection ~ 12300 4250
+Wire Wire Line
+	12300 4250 12300 4700
+Connection ~ 12300 4700
+Wire Wire Line
+	12300 4700 12300 5100
+$Comp
+L power:GND #PWR03
+U 1 1 5DBB6392
+P 11700 5550
+F 0 "#PWR03" H 11700 5300 50  0001 C CNN
+F 1 "GND" H 11705 5377 50  0000 C CNN
+F 2 "" H 11700 5550 50  0001 C CNN
+F 3 "" H 11700 5550 50  0001 C CNN
+	1    11700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 3750 11700 4250
+Connection ~ 11700 4250
+Wire Wire Line
+	11700 4250 11700 4700
+Connection ~ 11700 4700
+Wire Wire Line
+	11700 4700 11700 5100
+Connection ~ 11700 5100
+Wire Wire Line
+	11700 5100 11700 5550
 $EndSCHEMATC

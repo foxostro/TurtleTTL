@@ -725,8 +725,6 @@ Wire Wire Line
 Wire Wire Line
 	-2150 4450 -2150 4800
 Connection ~ -1450 5300
-Wire Wire Line
-	-1450 5300 -1450 4450
 Connection ~ -2150 4800
 Wire Wire Line
 	-2150 4800 -2150 5300
@@ -775,4 +773,33 @@ Wire Wire Line
 Connection ~ 800  3950
 Wire Wire Line
 	800  3950 800  4200
+$Comp
+L 74xx:74LS04 U54
+U 7 1 5DB505A0
+P -950 4650
+F 0 "U54" V -600 4650 50  0000 C CNN
+F 1 "74LS04" V -700 4650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -950 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -950 4650 50  0001 C CNN
+	7    -950 4650
+	0    -1   -1   0   
+$EndComp
+Connection ~ -1450 4650
+Wire Wire Line
+	-1450 4650 -1450 4450
+Wire Wire Line
+	-1450 4650 -1450 5300
+$Comp
+L power:GND #PWR05
+U 1 1 5DB54F03
+P -450 4700
+F 0 "#PWR05" H -450 4450 50  0001 C CNN
+F 1 "GND" H -445 4527 50  0000 C CNN
+F 2 "" H -450 4700 50  0001 C CNN
+F 3 "" H -450 4700 50  0001 C CNN
+	1    -450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-450 4650 -450 4700
 $EndSCHEMATC
