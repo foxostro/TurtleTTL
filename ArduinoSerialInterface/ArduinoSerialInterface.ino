@@ -27,11 +27,11 @@ void setup() {
   
   Serial.begin(57600);
   while (!Serial);
-  Serial.println("ready.");
+  Serial.println("Arduino ready.");
 }
 
 void loop() {
-  bool clk, pi, po, addr0;
+  bool clk, sel, pi, po, addr0;
 
   // Wait for either PO or PI to become active.
   while (true) {
@@ -58,9 +58,14 @@ void loop() {
                    | (digitalRead(pinBus5) << 5)
                    | (digitalRead(pinBus6) << 6)
                    | (digitalRead(pinBus7) << 7);
-                   
-    Serial.print((char)bus);
-  } else {
+
+    if (bus != 255) {
+      Serial.print((char)bus);
+    }
+
+    // Wait for the clock falling edge. The bus value becomes invalid after this point.
+    while (digitalRead(pinCLK));
+  } else if (!po) {
     pinMode(pinBus0, OUTPUT);
     pinMode(pinBus1, OUTPUT);
     pinMode(pinBus2, OUTPUT);
@@ -87,20 +92,19 @@ void loop() {
     digitalWrite(pinBus5, (value>>5) & 1);
     digitalWrite(pinBus6, (value>>6) & 1);
     digitalWrite(pinBus7, (value>>7) & 1);
+
+    // Hold the value on the bus for the duration of the register clock pulse.
+    while (!digitalRead(pinCLK));
+    while (digitalRead(pinCLK));
+
+    // Stop driving the bus.
+    pinMode(pinBus0, INPUT);
+    pinMode(pinBus1, INPUT);
+    pinMode(pinBus2, INPUT);
+    pinMode(pinBus3, INPUT);
+    pinMode(pinBus4, INPUT);
+    pinMode(pinBus5, INPUT);
+    pinMode(pinBus6, INPUT);
+    pinMode(pinBus7, INPUT);
   }
-
-  // Wait.
-  while (digitalRead(pinCLK));
-  while (!digitalRead(pinCLK));
-  while (digitalRead(pinCLK));
-
-  // Stop driving the bus.
-  pinMode(pinBus0, INPUT);
-  pinMode(pinBus1, INPUT);
-  pinMode(pinBus2, INPUT);
-  pinMode(pinBus3, INPUT);
-  pinMode(pinBus4, INPUT);
-  pinMode(pinBus5, INPUT);
-  pinMode(pinBus6, INPUT);
-  pinMode(pinBus7, INPUT);
 }
