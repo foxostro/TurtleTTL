@@ -1,5 +1,5 @@
-const byte pinMO = 2;
-const byte pinMI = 3;
+const byte pinPI = 2;
+const byte pinPO = 3;
 const byte pinBus0 = 4;
 const byte pinBus1 = 5;
 const byte pinBus2 = 6;
@@ -8,14 +8,12 @@ const byte pinBus4 = 8;
 const byte pinBus5 = 9;
 const byte pinBus6 = 10;
 const byte pinBus7 = 11;
-const byte pinSEL = 12;
 const byte pinAddr0 = 13;
 const byte pinCLK = A0;
 
 void setup() {
-  pinMode(pinSEL, INPUT);
-  pinMode(pinMO, INPUT);
-  pinMode(pinMI, INPUT);
+  pinMode(pinPI, INPUT);
+  pinMode(pinPO, INPUT);
   pinMode(pinBus0, INPUT);
   pinMode(pinBus1, INPUT);
   pinMode(pinBus2, INPUT);
@@ -29,31 +27,26 @@ void setup() {
   
   Serial.begin(57600);
   while (!Serial);
+  Serial.println("ready.");
 }
 
 void loop() {
-  bool clk, sel, mi, mo, addr0;
+  bool clk, pi, po, addr0;
 
-  // Wait for either MO or MI to become active.
+  // Wait for either PO or PI to become active.
   while (true) {
-    // Make sure the device is selected too.
-    sel = digitalRead(pinSEL);
-    if (sel) {
-      return;
-    }
-    
-    mi = digitalRead(pinMI);
-    if (!mi) {
+    pi = digitalRead(pinPI);
+    if (!pi) {
       break;
     }
     
-    mo = digitalRead(pinMO);
-    if (!mo) {
+    po = digitalRead(pinPO);
+    if (!po) {
       break;
     }
   }
 
-  if (!mi) {
+  if (!pi) {
     // Wait for the rising edge of the clock before reading the bus.
     while (!digitalRead(pinCLK));
     
