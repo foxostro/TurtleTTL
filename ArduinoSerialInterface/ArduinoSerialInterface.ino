@@ -59,9 +59,7 @@ void loop() {
                    | (digitalRead(pinBus6) << 6)
                    | (digitalRead(pinBus7) << 7);
 
-    if (bus != 255) {
-      Serial.print((char)bus);
-    }
+    Serial.print((char)bus);
 
     // Wait for the clock falling edge. The bus value becomes invalid after this point.
     while (digitalRead(pinCLK));
