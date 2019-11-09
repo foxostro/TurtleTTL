@@ -1,65 +1,134 @@
+const byte pinOE = 4;
+const byte pinWE = 5;
+const byte pinAddr0 = 6;
+const byte pinData0 = A0;
+const byte pinData1 = A1;
+const byte pinData2 = A2;
+const byte pinData3 = A3;
+const byte pinData4 = A4;
+const byte pinData5 = A5;
+const byte pinData6 = A6;
+const byte pinData7 = A7;
+const byte commandPort = 0;
+const byte dataPort = 1;
+const byte READY = 0;
+const byte COMMAND_READ = 1;
+const byte COMMAND_WRITE = 2;
+const byte COMMAND_AVAIL = 3;
+const byte COMMAND_INIT = 4;
+
+volatile int pendingCommand = 0;
+
 void setup() {
-  DDRD &= 0b00000011; // Set pins 2 through 7 to input.
-  DDRB &= 0b11000000; // Set pins 8-13 for input.
-  DDRC &= 0b11111110; // Set analog pin 0 for input.
+  pinMode(pinWE, OUTPUT);
+  digitalWrite(pinWE, 1);
+  
+  pinMode(pinOE, OUTPUT);
+  digitalWrite(pinOE, 1);
+  
+  pinMode(pinAddr0, OUTPUT);
+  digitalWrite(pinAddr0, 0);
+
+  makeReady();
   
   Serial.begin(57600);
   while (!Serial);
   Serial.println("Arduino ready.");
+
+  attachInterrupt(digitalPinToInterrupt(2), clientStoredCommand, RISING);
+  attachInterrupt(digitalPinToInterrupt(3), clientStoredCommand, RISING);
+}
+
+void store(int address, byte value) {
+  pinMode(pinData0, OUTPUT);
+  pinMode(pinData1, OUTPUT);
+  pinMode(pinData2, OUTPUT);
+  pinMode(pinData3, OUTPUT);
+  pinMode(pinData4, OUTPUT);
+  pinMode(pinData5, OUTPUT);
+  pinMode(pinData6, OUTPUT);
+  pinMode(pinData7, OUTPUT);
+
+  digitalWrite(pinData0, (value>>0) & 1);
+  digitalWrite(pinData1, (value>>1) & 1);
+  digitalWrite(pinData2, (value>>2) & 1);
+  digitalWrite(pinData3, (value>>3) & 1);
+  digitalWrite(pinData4, (value>>4) & 1);
+  digitalWrite(pinData5, (value>>5) & 1);
+  digitalWrite(pinData6, (value>>6) & 1);
+  digitalWrite(pinData7, (value>>7) & 1);
+
+  digitalWrite(pinAddr0, address & 1);
+  digitalWrite(pinWE, 0);
+  digitalWrite(pinWE, 1);
+}
+
+int load(int address) {
+  pinMode(pinData0, INPUT);
+  pinMode(pinData1, INPUT);
+  pinMode(pinData2, INPUT);
+  pinMode(pinData3, INPUT);
+  pinMode(pinData4, INPUT);
+  pinMode(pinData5, INPUT);
+  pinMode(pinData6, INPUT);
+  pinMode(pinData7, INPUT);
+  
+  digitalWrite(pinAddr0, address & 1);
+  digitalWrite(pinOE, 0);
+  
+  const byte value = (digitalRead(pinData0))
+                   | (digitalRead(pinData1) << 1)
+                   | (digitalRead(pinData2) << 2)
+                   | (digitalRead(pinData3) << 3)
+                   | (digitalRead(pinData4) << 4)
+                   | (digitalRead(pinData5) << 5)
+                   | (digitalRead(pinData6) << 6)
+                   | (digitalRead(pinData7) << 7);
+
+  digitalWrite(pinOE, 1);
+
+  return value;
 }
 
 void loop() {
-  bool clk, sel, pi, po;
-
-  // Wait for either PO or PI to become active.
-  while (true) {
-    const byte d = PIND;
-    pi = (d & 0b00000100) != 0; // pin 2 is PI
-    if (!pi) {
-      break;
+  if (pendingCommand) {
+    int command = load(commandPort);
+    switch (command) {
+    case COMMAND_READ: doRead(); break;
+    case COMMAND_WRITE: doWrite(); break;
+    case COMMAND_AVAIL: doAvail(); break;
+    case COMMAND_INIT: doInit(); break;
+    case READY: break;
+    default: break; // ignore unknown commands
     }
-    
-    po = (d & 0b00001000) != 0; // pin 3 is PO
-    if (!po) {
-      break;
-    }
+    makeReady();
   }
+}
 
-  if (!pi) {
-    // Wait for the rising edge of the clock before reading the bus.
-    while((PINC & 1) == 0);
+void doRead() {
+  Serial.println("read");
+  store(dataPort, Serial.read());
+}
 
-    // Read the value of the bus.
-    // The eight bits of the bus map to pins 4 through 11.
-    const byte bus = ((PIND >> 4) & 0b00001111) | ((PINB & 0b00001111) << 4);
+void doWrite() {
+  Serial.println("write");
+  Serial.print((char)load(dataPort));
+}
 
-    Serial.print((char)bus);
+void doAvail() {
+  Serial.println("avail");
+  store(dataPort, Serial.available());
+}
 
-    // Wait for the clock falling edge. The bus value becomes invalid after this point.
-    while((PINC & 1) != 0);
-  } else if (!po) {
-    DDRD |= 0b11110000; // Set pins 2 through 7 to output.
-    DDRB |= 0b00001111; // Set pins 8-13 for output.
+void doInit() {
+  Serial.println("init");
+}
 
-    // Read pin 13 (ADDR0). If it's non-zero then get the number of available bytes.
-    int value = 0;
-    if (PINB & 0b00100000) {
-      value = Serial.available();
-    } else {
-      value = Serial.read();
-    }
+void makeReady() {
+  pendingCommand = 0;
+  store(commandPort, READY);
+}
 
-    // Output a value to the bus.
-    // The eight bits of the bus map to pins 4 through 11.
-    PORTD = (value & 0b00001111) << 4;
-    PORTB = (value & 0b11110000) >> 4;
-
-    // Hold the value on the bus for the duration of the register clock pulse.
-    while((PINC & 1) == 0);
-    while((PINC & 1) != 0);
-
-    // Stop driving the bus.
-    DDRD &= 0b00000011; // Set pins 2 through 7 to input.
-    DDRB &= 0b11000000; // Set pins 8-13 for input.
-  }
+void clientStoredCommand() {
+  pendingCommand = 1;
 }
