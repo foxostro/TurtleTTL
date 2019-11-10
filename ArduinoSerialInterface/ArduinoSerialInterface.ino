@@ -22,6 +22,7 @@ const byte COMMAND_ACK = 0;
 const byte COMMAND_READ = 1;
 const byte COMMAND_WRITE = 2;
 const byte COMMAND_AVAIL = 3;
+const byte COMMAND_INIT = 4;
 
 byte g_status = STATUS_READY;
 
@@ -112,6 +113,7 @@ void doLoopWhileReady() {
   case COMMAND_READ: doRead(); makeWaiting(); break;
   case COMMAND_WRITE: doWrite(); makeWaiting(); break;
   case COMMAND_AVAIL: doAvail(); makeWaiting(); break;
+  case COMMAND_INIT: doInit(); makeWaiting(); break;
   }
 }
 
@@ -143,4 +145,9 @@ void doWrite() {
 
 void doAvail() {
   store(PORT_DATA, Serial.available());
+}
+
+void doInit() { 
+  Serial.begin(57600);
+  while (!Serial);
 }
