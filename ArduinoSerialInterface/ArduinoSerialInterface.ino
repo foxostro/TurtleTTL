@@ -133,11 +133,7 @@ void makeWaiting() {
 }
 
 void doRead() {
-  Serial.print("read: ");
-  byte value = Serial.read();
-  Serial.print((char)value);
-  Serial.print("\n");
-  store(PORT_DATA, value);
+  store(PORT_DATA, Serial.read());
 }
 
 void doWrite() {
