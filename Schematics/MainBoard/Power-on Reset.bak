@@ -78,14 +78,14 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5D9A05F5
-P 1550 2550
+P 1550 2450
 AR Path="/5D2C0720/5D9A05F5" Ref="C?"  Part="1" 
 AR Path="/5D2C0761/5D9A05F5" Ref="C63"  Part="1" 
-F 0 "C63" H 1642 2596 50  0000 L CNN
-F 1 "10nF" H 1642 2505 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1550 2550 50  0001 C CNN
-F 3 "~" H 1550 2550 50  0001 C CNN
-	1    1550 2550
+F 0 "C63" H 1642 2496 50  0000 L CNN
+F 1 "10nF" H 1642 2405 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1550 2450 50  0001 C CNN
+F 3 "~" H 1550 2450 50  0001 C CNN
+	1    1550 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -105,8 +105,6 @@ Wire Wire Line
 	1300 1900 2000 1900
 Wire Wire Line
 	1300 1100 1300 1200
-Wire Wire Line
-	1300 1400 1300 1500
 Wire Wire Line
 	2500 2500 2500 2700
 Wire Wire Line
@@ -129,14 +127,14 @@ Connection ~ 1900 1100
 Wire Wire Line
 	1900 1100 2500 1100
 Wire Wire Line
-	1550 2650 1550 2700
+	1550 2550 1550 2700
 Wire Wire Line
 	1550 2700 2500 2700
 Connection ~ 2500 2700
 Wire Wire Line
 	2000 2100 1550 2100
 Wire Wire Line
-	1550 2100 1550 2450
+	1550 2100 1550 2350
 Wire Wire Line
 	3100 2650 3100 2700
 Wire Wire Line
@@ -446,12 +444,12 @@ Connection ~ 7450 5900
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5D8069CB
-P 1300 1700
-F 0 "SW2" V 1346 1652 50  0000 R CNN
-F 1 "Reset" V 1255 1652 50  0000 R CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 1300 1900 50  0001 C CNN
-F 3 "~" H 1300 1900 50  0001 C CNN
-	1    1300 1700
+P 1300 2450
+F 0 "SW2" V 1350 2750 50  0000 R CNN
+F 1 "Reset" V 1250 2800 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 1300 2650 50  0001 C CNN
+F 3 "~" H 1300 2650 50  0001 C CNN
+	1    1300 2450
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -685,4 +683,14 @@ Wire Wire Line
 NoConn ~ 7050 -2100
 NoConn ~ 7050 -1550
 NoConn ~ 7050 -1000
+Wire Wire Line
+	1300 1400 1300 1900
+Wire Wire Line
+	1300 2250 1300 1900
+Connection ~ 1300 1900
+Wire Wire Line
+	1300 2650 1300 2700
+Wire Wire Line
+	1300 2700 1550 2700
+Connection ~ 1550 2700
 $EndSCHEMATC

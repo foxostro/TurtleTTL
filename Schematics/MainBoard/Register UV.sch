@@ -565,7 +565,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 1950 8400 1950
 Text GLabel 1300 3300 0    50   Input ~ 0
-~UVInc
+UVInc
 Wire Wire Line
 	1600 2100 1600 3300
 Wire Wire Line

@@ -610,7 +610,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 2100 8250 2100
 Text GLabel 1150 3450 0    50   Input ~ 0
-~XYInc
+XYInc
 Wire Wire Line
 	1450 2250 1450 3450
 Wire Wire Line
