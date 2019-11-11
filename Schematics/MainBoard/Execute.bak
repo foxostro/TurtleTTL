@@ -333,7 +333,7 @@ Text GLabel 6350 3800 1    50   Output ~ 0
 Text GLabel 6500 3800 1    50   Output ~ 0
 ~PI
 Text GLabel 6650 3800 1    50   Output ~ 0
-~UVInc
+UVInc
 Text GLabel 6800 3800 1    50   Output ~ 0
 ~VO
 Text GLabel 6950 3800 1    50   Output ~ 0
@@ -568,7 +568,7 @@ Text GLabel 5300 3800 1    50   Output ~ 0
 Text GLabel 5450 3800 1    50   Output ~ 0
 ~MI
 Text GLabel 5600 3800 1    50   Output ~ 0
-~XYInc
+XYInc
 Text GLabel 5750 3800 1    50   Output ~ 0
 ~YO
 Text GLabel 5900 3800 1    50   Output ~ 0
