@@ -42,7 +42,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 3950 1050 3950
 Text GLabel 1050 3800 0    50   Input ~ 0
-ControlClock
+RegisterClock
 Wire Wire Line
 	2500 2900 2100 2900
 Wire Wire Line
