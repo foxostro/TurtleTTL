@@ -1,15 +1,23 @@
-const byte pinOE = 2;
-const byte pinWE = 3;
+const byte pinWE = 2;
+const byte pinOE = 3;
 const byte pinAddr0 = 4;
 const byte pinAddr1 = 5;
-const byte pinData0 = 6;
-const byte pinData1 = 7;
-const byte pinData2 = 8;
-const byte pinData3 = 9;
-const byte pinData4 = 10;
-const byte pinData5 = 11;
-const byte pinData6 = 12;
-const byte pinData7 = 13;
+const byte pinAddr2 = 6;
+const byte pinAddr3 = 7;
+const byte pinAddr4 = 8;
+const byte pinAddr5 = 9;
+const byte pinAddr6 = 10;
+const byte pinAddr7 = 11;
+const byte pinAddr8 = 12;
+const byte pinAddr9 = 13;
+const byte pinData0 = A7;
+const byte pinData1 = A6;
+const byte pinData2 = A5;
+const byte pinData3 = A4;
+const byte pinData4 = A3;
+const byte pinData5 = A2;
+const byte pinData6 = A1;
+const byte pinData7 = A0;
 
 const byte PORT_STATUS = 0;
 const byte PORT_COMMAND = 1;
@@ -30,15 +38,40 @@ void setup() {
   Serial.begin(57600);
   while (!Serial);
   
+  digitalWrite(pinWE, 1);
   digitalWrite(pinOE, 1);
   digitalWrite(pinAddr0, 0);
   digitalWrite(pinAddr1, 0);
-  digitalWrite(pinWE, 1);
+  digitalWrite(pinAddr2, 0);
+  digitalWrite(pinAddr3, 0);
+  digitalWrite(pinAddr4, 0);
+  digitalWrite(pinAddr5, 0);
+  digitalWrite(pinAddr6, 0);
+  digitalWrite(pinAddr7, 0);
+  digitalWrite(pinAddr8, 0);
+  digitalWrite(pinAddr9, 0);
   
   pinMode(pinWE, OUTPUT);
   pinMode(pinOE, OUTPUT);
   pinMode(pinAddr0, OUTPUT);
   pinMode(pinAddr1, OUTPUT);
+  pinMode(pinAddr2, OUTPUT);
+  pinMode(pinAddr3, OUTPUT);
+  pinMode(pinAddr4, OUTPUT);
+  pinMode(pinAddr5, OUTPUT);
+  pinMode(pinAddr6, OUTPUT);
+  pinMode(pinAddr7, OUTPUT);
+  pinMode(pinAddr8, OUTPUT);
+  pinMode(pinAddr9, OUTPUT);
+  
+  pinMode(pinData0, INPUT);
+  pinMode(pinData1, INPUT);
+  pinMode(pinData2, INPUT);
+  pinMode(pinData3, INPUT);
+  pinMode(pinData4, INPUT);
+  pinMode(pinData5, INPUT);
+  pinMode(pinData6, INPUT);
+  pinMode(pinData7, INPUT);
   
   store(PORT_DATA, 0);
   store(PORT_COMMAND, COMMAND_ACK);
@@ -66,6 +99,14 @@ void store(int address, byte value) {
 
   digitalWrite(pinAddr0, (address>>0) & 1);
   digitalWrite(pinAddr1, (address>>1) & 1);
+  digitalWrite(pinAddr2, (address>>2) & 1);
+  digitalWrite(pinAddr3, (address>>3) & 1);
+  digitalWrite(pinAddr4, (address>>4) & 1);
+  digitalWrite(pinAddr5, (address>>5) & 1);
+  digitalWrite(pinAddr6, (address>>6) & 1);
+  digitalWrite(pinAddr7, (address>>7) & 1);
+  digitalWrite(pinAddr8, (address>>8) & 1);
+  digitalWrite(pinAddr9, (address>>9) & 1);
 
   digitalWrite(pinWE, 0);
   digitalWrite(pinWE, 1);
@@ -83,6 +124,14 @@ int load(int address) {
   
   digitalWrite(pinAddr0, (address>>0) & 1);
   digitalWrite(pinAddr1, (address>>1) & 1);
+  digitalWrite(pinAddr2, (address>>2) & 1);
+  digitalWrite(pinAddr3, (address>>3) & 1);
+  digitalWrite(pinAddr4, (address>>4) & 1);
+  digitalWrite(pinAddr5, (address>>5) & 1);
+  digitalWrite(pinAddr6, (address>>6) & 1);
+  digitalWrite(pinAddr7, (address>>7) & 1);
+  digitalWrite(pinAddr8, (address>>8) & 1);
+  digitalWrite(pinAddr9, (address>>9) & 1);
   
   digitalWrite(pinOE, 0);
   
