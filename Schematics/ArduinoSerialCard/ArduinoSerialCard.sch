@@ -40,12 +40,6 @@ NoConn ~ 8900 3400
 NoConn ~ 8900 2100
 NoConn ~ 8900 2200
 Entry Wire Line
-	7100 3500 7200 3400
-Wire Wire Line
-	7200 3400 7900 3400
-Text Label 7250 3400 0    50   ~ 0
-AddressBus0
-Entry Wire Line
 	7200 2500 7100 2600
 Entry Wire Line
 	7200 2600 7100 2700
@@ -78,21 +72,21 @@ Wire Wire Line
 Wire Wire Line
 	7900 3200 7200 3200
 Text Label 7250 2500 0    50   ~ 0
-DataBus0
-Text Label 7250 2600 0    50   ~ 0
 DataBus1
+Text Label 7250 2600 0    50   ~ 0
+DataBus0
 Text Label 7250 2700 0    50   ~ 0
-DataBus2
-Text Label 7250 2800 0    50   ~ 0
 DataBus3
+Text Label 7250 2800 0    50   ~ 0
+DataBus2
 Text Label 7250 2900 0    50   ~ 0
-DataBus4
-Text Label 7250 3000 0    50   ~ 0
 DataBus5
+Text Label 7250 3000 0    50   ~ 0
+DataBus4
 Text Label 7250 3100 0    50   ~ 0
-DataBus6
-Text Label 7250 3200 0    50   ~ 0
 DataBus7
+Text Label 7250 3200 0    50   ~ 0
+DataBus6
 Entry Wire Line
 	4850 1950 4950 2050
 Entry Wire Line
@@ -130,14 +124,12 @@ L Connector_Generic:Conn_02x20_Top_Bottom J1
 U 1 1 5DA1F396
 P 4050 2850
 F 0 "J1" H 4100 3967 50  0000 C CNN
-F 1 "Device 2" H 4100 3876 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Horizontal" H 4050 2850 50  0001 C CNN
+F 1 "Conn" H 4100 3876 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 4050 2850 50  0001 C CNN
 F 3 "~" H 4050 2850 50  0001 C CNN
 	1    4050 2850
 	1    0    0    -1  
 $EndComp
-Text Label 3250 3750 0    50   ~ 0
-RegisterClock
 Text Label 4400 1950 0    50   ~ 0
 DataBus0
 Text Label 4400 2050 0    50   ~ 0
@@ -209,31 +201,11 @@ Wire Wire Line
 	4450 2950 4450 3050
 Connection ~ 4450 3050
 Wire Wire Line
-	5450 2400 5450 2850
-Wire Wire Line
-	5350 2300 5350 2750
-Wire Wire Line
-	4350 2850 5450 2850
+	4350 2850 5350 2850
 Wire Wire Line
 	5350 2300 7900 2300
 Wire Wire Line
 	5450 2400 7900 2400
-Wire Bus Line
-	4950 3500 7100 3500
-Wire Wire Line
-	9150 2700 9150 4150
-Wire Wire Line
-	9150 4150 3250 4150
-Wire Wire Line
-	3250 4150 3250 3750
-Wire Wire Line
-	3250 3750 3850 3750
-Wire Bus Line
-	3150 4250 4950 4250
-Wire Bus Line
-	4950 3500 4950 4250
-Wire Wire Line
-	8900 2700 9150 2700
 Wire Bus Line
 	4950 3300 7100 3300
 NoConn ~ 3850 3050
@@ -245,12 +217,6 @@ NoConn ~ 3850 2550
 NoConn ~ 3850 2450
 NoConn ~ 3850 2350
 NoConn ~ 3850 2250
-Entry Wire Line
-	3150 2250 3250 2150
-Wire Wire Line
-	3250 2150 3850 2150
-Text Label 3250 2150 0    50   ~ 0
-AddressBus0
 NoConn ~ 3850 3150
 NoConn ~ 3850 3250
 NoConn ~ 3850 3350
@@ -258,31 +224,28 @@ NoConn ~ 3850 3450
 NoConn ~ 3850 3550
 NoConn ~ 3850 3650
 NoConn ~ 3850 3850
-Wire Bus Line
-	3150 2250 3150 4250
-NoConn ~ 7900 3300
 Wire Wire Line
 	3500 1950 3500 2050
 $Comp
 L power:VCC #PWR0101
 U 1 1 5DBEB658
-P 3750 1950
-F 0 "#PWR0101" H 3750 1800 50  0001 C CNN
-F 1 "VCC" H 3767 2123 50  0000 C CNN
-F 2 "" H 3750 1950 50  0001 C CNN
-F 3 "" H 3750 1950 50  0001 C CNN
-	1    3750 1950
+P 3500 1950
+F 0 "#PWR0101" H 3500 1800 50  0001 C CNN
+F 1 "VCC" H 3517 2123 50  0000 C CNN
+F 2 "" H 3500 1950 50  0001 C CNN
+F 3 "" H 3500 1950 50  0001 C CNN
+	1    3500 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5DBEBC67
-P 3500 1950
-F 0 "#PWR0102" H 3500 1700 50  0001 C CNN
-F 1 "GND" H 3505 1777 50  0000 C CNN
-F 2 "" H 3500 1950 50  0001 C CNN
-F 3 "" H 3500 1950 50  0001 C CNN
-	1    3500 1950
+P 3750 1950
+F 0 "#PWR0102" H 3750 1700 50  0001 C CNN
+F 1 "GND" H 3755 1777 50  0000 C CNN
+F 2 "" H 3750 1950 50  0001 C CNN
+F 3 "" H 3750 1950 50  0001 C CNN
+	1    3750 1950
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -359,12 +322,6 @@ Wire Wire Line
 	8450 3850 8650 3850
 Wire Wire Line
 	8650 3850 8650 3900
-Wire Wire Line
-	4350 2750 5350 2750
-Wire Bus Line
-	7100 2600 7100 3300
-Wire Bus Line
-	4950 2050 4950 3300
 Connection ~ 8450 3850
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -377,4 +334,31 @@ F 3 "~" H 8550 1450 50  0001 C CNN
 	1    8550 1450
 	1    0    0    -1  
 $EndComp
+Text Label 7250 3300 0    50   ~ 0
+AddressBus0
+Text Label 3250 2150 0    50   ~ 0
+AddressBus0
+NoConn ~ 3850 3750
+NoConn ~ 8900 2700
+Wire Wire Line
+	3150 4250 3150 2150
+Wire Wire Line
+	7200 3300 7900 3300
+Wire Wire Line
+	3150 2150 3850 2150
+Wire Wire Line
+	7200 3300 7200 4250
+Wire Wire Line
+	3150 4250 7200 4250
+NoConn ~ 7900 3400
+Wire Wire Line
+	5450 2750 5450 2400
+Wire Wire Line
+	5350 2300 5350 2850
+Wire Wire Line
+	4350 2750 5450 2750
+Wire Bus Line
+	7100 2600 7100 3300
+Wire Bus Line
+	4950 2050 4950 3300
 $EndSCHEMATC
