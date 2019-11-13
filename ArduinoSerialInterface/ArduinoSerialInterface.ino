@@ -1,15 +1,14 @@
-const byte pinPI = 2;
-const byte pinPO = 3;
-const byte pinBus0 = 4;
-const byte pinBus1 = 5;
-const byte pinBus2 = 6;
-const byte pinBus3 = 7;
-const byte pinBus4 = 8;
-const byte pinBus5 = 9;
-const byte pinBus6 = 10;
-const byte pinBus7 = 11;
-const byte pinAddr0 = 13;
-const byte pinCLK = A0;
+const byte pinPO = 2;
+const byte pinPI = 3;
+const byte pinBus1 = 4;
+const byte pinBus0 = 5;
+const byte pinBus3 = 6;
+const byte pinBus2 = 7;
+const byte pinBus5 = 8;
+const byte pinBus4 = 9;
+const byte pinBus7 = 10;
+const byte pinBus6 = 11;
+const byte pinAddr1 = 13;
 
 void setup() {
   pinMode(pinPI, INPUT);
@@ -22,8 +21,7 @@ void setup() {
   pinMode(pinBus5, INPUT);
   pinMode(pinBus6, INPUT);
   pinMode(pinBus7, INPUT);
-  pinMode(pinAddr0, INPUT);
-  pinMode(pinCLK, INPUT);
+  pinMode(pinAddr1, INPUT);
   
   Serial.begin(57600);
   while (!Serial);
@@ -31,7 +29,7 @@ void setup() {
 }
 
 void loop() {
-  bool clk, sel, pi, po, addr0;
+  bool pi, po, addr1;
 
   // Wait for either PO or PI to become active.
   while (true) {
@@ -47,9 +45,6 @@ void loop() {
   }
 
   if (!pi) {
-    // Wait for the rising edge of the clock before reading the bus.
-    while (!digitalRead(pinCLK));
-    
     const byte bus = (digitalRead(pinBus0))
                    | (digitalRead(pinBus1) << 1)
                    | (digitalRead(pinBus2) << 2)
@@ -61,22 +56,12 @@ void loop() {
 
     Serial.print((char)bus);
 
-    // Wait for the clock falling edge. The bus value becomes invalid after this point.
-    while (digitalRead(pinCLK));
+    while (!digitalRead(pinPI));
   } else if (!po) {
-    pinMode(pinBus0, OUTPUT);
-    pinMode(pinBus1, OUTPUT);
-    pinMode(pinBus2, OUTPUT);
-    pinMode(pinBus3, OUTPUT);
-    pinMode(pinBus4, OUTPUT);
-    pinMode(pinBus5, OUTPUT);
-    pinMode(pinBus6, OUTPUT);
-    pinMode(pinBus7, OUTPUT);
-
-    addr0 = digitalRead(pinAddr0);
+    addr1 = digitalRead(pinAddr1);
 
     int value = 0;
-    if (addr0) {
+    if (addr1) {
       value = Serial.available();
     } else {
       value = Serial.read();
@@ -90,12 +75,18 @@ void loop() {
     digitalWrite(pinBus5, (value>>5) & 1);
     digitalWrite(pinBus6, (value>>6) & 1);
     digitalWrite(pinBus7, (value>>7) & 1);
+    
+    pinMode(pinBus0, OUTPUT);
+    pinMode(pinBus1, OUTPUT);
+    pinMode(pinBus2, OUTPUT);
+    pinMode(pinBus3, OUTPUT);
+    pinMode(pinBus4, OUTPUT);
+    pinMode(pinBus5, OUTPUT);
+    pinMode(pinBus6, OUTPUT);
+    pinMode(pinBus7, OUTPUT);
 
-    // Hold the value on the bus for the duration of the register clock pulse.
-    while (!digitalRead(pinCLK));
-    while (digitalRead(pinCLK));
+    while (!digitalRead(pinPO));
 
-    // Stop driving the bus.
     pinMode(pinBus0, INPUT);
     pinMode(pinBus1, INPUT);
     pinMode(pinBus2, INPUT);
