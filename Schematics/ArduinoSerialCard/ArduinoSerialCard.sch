@@ -72,21 +72,21 @@ Wire Wire Line
 Wire Wire Line
 	7900 3200 7200 3200
 Text Label 7250 2500 0    50   ~ 0
-DataBus1
-Text Label 7250 2600 0    50   ~ 0
-DataBus0
-Text Label 7250 2700 0    50   ~ 0
-DataBus3
-Text Label 7250 2800 0    50   ~ 0
-DataBus2
-Text Label 7250 2900 0    50   ~ 0
-DataBus5
-Text Label 7250 3000 0    50   ~ 0
-DataBus4
-Text Label 7250 3100 0    50   ~ 0
 DataBus7
-Text Label 7250 3200 0    50   ~ 0
+Text Label 7250 2600 0    50   ~ 0
 DataBus6
+Text Label 7250 2700 0    50   ~ 0
+DataBus5
+Text Label 7250 2800 0    50   ~ 0
+DataBus4
+Text Label 7250 2900 0    50   ~ 0
+DataBus3
+Text Label 7250 3000 0    50   ~ 0
+DataBus2
+Text Label 7250 3100 0    50   ~ 0
+DataBus1
+Text Label 7250 3200 0    50   ~ 0
+DataBus0
 Entry Wire Line
 	4850 1950 4950 2050
 Entry Wire Line
@@ -119,17 +119,6 @@ Wire Wire Line
 	4350 2550 4850 2550
 Wire Wire Line
 	4850 2650 4350 2650
-$Comp
-L Connector_Generic:Conn_02x20_Top_Bottom J1
-U 1 1 5DA1F396
-P 4050 2850
-F 0 "J1" H 4100 3967 50  0000 C CNN
-F 1 "Conn" H 4100 3876 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 4050 2850 50  0001 C CNN
-F 3 "~" H 4050 2850 50  0001 C CNN
-	1    4050 2850
-	1    0    0    -1  
-$EndComp
 Text Label 4400 1950 0    50   ~ 0
 DataBus0
 Text Label 4400 2050 0    50   ~ 0
@@ -227,25 +216,14 @@ NoConn ~ 3850 3850
 Wire Wire Line
 	3500 1950 3500 2050
 $Comp
-L power:VCC #PWR0101
-U 1 1 5DBEB658
-P 3500 1950
-F 0 "#PWR0101" H 3500 1800 50  0001 C CNN
-F 1 "VCC" H 3517 2123 50  0000 C CNN
-F 2 "" H 3500 1950 50  0001 C CNN
-F 3 "" H 3500 1950 50  0001 C CNN
-	1    3500 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0102
 U 1 1 5DBEBC67
-P 3750 1950
-F 0 "#PWR0102" H 3750 1700 50  0001 C CNN
-F 1 "GND" H 3755 1777 50  0000 C CNN
-F 2 "" H 3750 1950 50  0001 C CNN
-F 3 "" H 3750 1950 50  0001 C CNN
-	1    3750 1950
+P 3500 1550
+F 0 "#PWR0102" H 3500 1300 50  0001 C CNN
+F 1 "GND" H 3505 1377 50  0000 C CNN
+F 2 "" H 3500 1550 50  0001 C CNN
+F 3 "" H 3500 1550 50  0001 C CNN
+	1    3500 1550
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -262,78 +240,38 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5DBEE32D
-P 8350 3900
-F 0 "#PWR0104" H 8350 3650 50  0001 C CNN
-F 1 "GND" H 8355 3727 50  0000 C CNN
-F 2 "" H 8350 3900 50  0001 C CNN
-F 3 "" H 8350 3900 50  0001 C CNN
-	1    8350 3900
+P 8450 3900
+F 0 "#PWR0104" H 8450 3650 50  0001 C CNN
+F 1 "GND" H 8455 3727 50  0000 C CNN
+F 2 "" H 8450 3900 50  0001 C CNN
+F 3 "" H 8450 3900 50  0001 C CNN
+	1    8450 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8400 3700 8400 3750
 Wire Wire Line
 	8500 3750 8500 3700
-Wire Wire Line
-	8350 3850 8350 3900
 $Comp
 L power:VCC #PWR0105
 U 1 1 5DBF6341
-P 8250 1450
-F 0 "#PWR0105" H 8250 1300 50  0001 C CNN
-F 1 "VCC" H 8267 1623 50  0000 C CNN
-F 2 "" H 8250 1450 50  0001 C CNN
-F 3 "" H 8250 1450 50  0001 C CNN
-	1    8250 1450
+P 8300 1600
+F 0 "#PWR0105" H 8300 1450 50  0001 C CNN
+F 1 "VCC" H 8317 1773 50  0000 C CNN
+F 2 "" H 8300 1600 50  0001 C CNN
+F 3 "" H 8300 1600 50  0001 C CNN
+	1    8300 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3850 1950 3750 1950
 Wire Wire Line
-	3850 2050 3500 2050
-Wire Wire Line
-	8550 1450 8300 1450
-Wire Wire Line
-	8300 1450 8300 1700
-Connection ~ 8300 1450
-Wire Wire Line
-	8300 1450 8250 1450
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5DBFFCF0
-P 8650 3900
-F 0 "#FLG0102" H 8650 3975 50  0001 C CNN
-F 1 "PWR_FLAG" H 8650 4073 50  0000 C CNN
-F 2 "" H 8650 3900 50  0001 C CNN
-F 3 "~" H 8650 3900 50  0001 C CNN
-	1    8650 3900
-	-1   0    0    1   
-$EndComp
+	8300 1600 8300 1700
 Wire Wire Line
 	8400 3750 8450 3750
-Wire Wire Line
-	8450 3750 8450 3850
-Wire Wire Line
-	8450 3850 8350 3850
 Connection ~ 8450 3750
 Wire Wire Line
 	8450 3750 8500 3750
-Wire Wire Line
-	8450 3850 8650 3850
-Wire Wire Line
-	8650 3850 8650 3900
-Connection ~ 8450 3850
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5DBFC7CE
-P 8550 1450
-F 0 "#FLG0101" H 8550 1525 50  0001 C CNN
-F 1 "PWR_FLAG" H 8550 1623 50  0000 C CNN
-F 2 "" H 8550 1450 50  0001 C CNN
-F 3 "~" H 8550 1450 50  0001 C CNN
-	1    8550 1450
-	1    0    0    -1  
-$EndComp
 Text Label 7250 3300 0    50   ~ 0
 AddressBus0
 Text Label 3250 2150 0    50   ~ 0
@@ -345,8 +283,6 @@ Wire Wire Line
 Wire Wire Line
 	7200 3300 7900 3300
 Wire Wire Line
-	3150 2150 3850 2150
-Wire Wire Line
 	7200 3300 7200 4250
 Wire Wire Line
 	3150 4250 7200 4250
@@ -355,6 +291,72 @@ Wire Wire Line
 	5450 2750 5450 2400
 Wire Wire Line
 	5350 2300 5350 2850
+Wire Wire Line
+	8450 3750 8450 3900
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5DBFFCF0
+P 3200 1950
+F 0 "#FLG0102" H 3200 2025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 2123 50  0000 C CNN
+F 2 "" H 3200 1950 50  0001 C CNN
+F 3 "~" H 3200 1950 50  0001 C CNN
+	1    3200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 5DBEB658
+P 3500 1950
+F 0 "#PWR0101" H 3500 1800 50  0001 C CNN
+F 1 "VCC" H 3517 2123 50  0000 C CNN
+F 2 "" H 3500 1950 50  0001 C CNN
+F 3 "" H 3500 1950 50  0001 C CNN
+	1    3500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2050 3200 2050
+Wire Wire Line
+	3200 2050 3200 1950
+Connection ~ 3500 2050
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DCE3DA4
+P 3200 1550
+F 0 "#FLG0101" H 3200 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 1723 50  0000 C CNN
+F 2 "" H 3200 1550 50  0001 C CNN
+F 3 "~" H 3200 1550 50  0001 C CNN
+	1    3200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1550 3200 1650
+Wire Wire Line
+	3200 1650 3500 1650
+Wire Wire Line
+	3500 1650 3500 1550
+Wire Wire Line
+	3500 1650 3750 1650
+Wire Wire Line
+	3750 1650 3750 1950
+Connection ~ 3500 1650
+Wire Wire Line
+	3850 2050 3500 2050
+Wire Wire Line
+	3150 2150 3850 2150
+$Comp
+L Connector_Generic:Conn_02x20_Top_Bottom J1
+U 1 1 5DA1F396
+P 4050 2850
+F 0 "J1" H 4100 3967 50  0000 C CNN
+F 1 "Conn" H 4100 3876 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 4050 2850 50  0001 C CNN
+F 3 "~" H 4050 2850 50  0001 C CNN
+	1    4050 2850
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	4350 2750 5450 2750
 Wire Bus Line
