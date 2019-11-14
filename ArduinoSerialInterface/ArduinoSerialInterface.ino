@@ -44,6 +44,8 @@ void loop() {
     }
   }
 
+  addr1 = digitalRead(pinAddr1);
+
   if (!pi) {
     const byte bus = (digitalRead(pinBus0))
                    | (digitalRead(pinBus1) << 1)
@@ -54,12 +56,18 @@ void loop() {
                    | (digitalRead(pinBus6) << 6)
                    | (digitalRead(pinBus7) << 7);
 
-    Serial.print((char)bus);
+                   
+    int value = 0;
+    if (addr1) {
+      Serial.begin(57600);
+      while (!Serial);
+      Serial.println("Arduino ready.");
+    } else {
+      Serial.print((char)bus);
+    }
 
     while (!digitalRead(pinPI));
   } else if (!po) {
-    addr1 = digitalRead(pinAddr1);
-
     int value = 0;
     if (addr1) {
       value = Serial.available();
