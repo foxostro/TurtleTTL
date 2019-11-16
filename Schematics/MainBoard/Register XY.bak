@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 23
+Sheet 3 22
 Title "Registers X and Y"
 Date ""
 Rev ""
@@ -1050,12 +1050,6 @@ F 3 "" H 8950 4750 50  0001 C CNN
 $EndComp
 Wire Bus Line
 	9600 1200 10100 1200
-Wire Bus Line
-	1650 6550 1400 6550
-Text GLabel 1650 6550 2    50   Output ~ 0
-AddressBus[0..15]
-Text GLabel 1400 6550 0    50   Input ~ 0
-XY[0..15]
 NoConn ~ 9250 2100
 $Comp
 L 74xx:74LS245 U?
@@ -1097,6 +1091,10 @@ F 3 "" H 5100 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
+	3150 6500 9900 6500
+Wire Bus Line
+	2950 4150 9600 4150
+Wire Bus Line
 	9600 1200 9600 4150
 Wire Bus Line
 	7450 1200 7450 1800
@@ -1112,8 +1110,10 @@ Wire Bus Line
 	3400 1100 3400 1800
 Wire Bus Line
 	1350 1100 1350 1800
+Text GLabel 1400 6550 0    50   Input ~ 0
+XY[0..15]
+Text GLabel 1650 6550 2    50   Output ~ 0
+AddressBus[0..15]
 Wire Bus Line
-	3150 6500 9900 6500
-Wire Bus Line
-	2950 4150 9600 4150
+	1650 6550 1400 6550
 $EndSCHEMATC

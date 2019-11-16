@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+LIBS:ClockBoard-cache
+EELAYER 29 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 3
+Title "TurtleTTL: Adjustable Clock Board"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "An External Clock Card for TurtleTTL with a built-in speed control knob."
+$EndDescr
+$Sheet
+S 2350 3350 1500 500 
+U 5D79C284
+F0 "Speed Control" 50
+F1 "Speed Control.sch" 50
+$EndSheet
+$Sheet
+S 2350 4100 1500 500 
+U 5D2C0720
+F0 "Clock" 50
+F1 "Clock.sch" 50
+$EndSheet
+Text GLabel 6750 3950 2    50   Output ~ 0
+CLK
+Text GLabel 6750 3800 2    50   Output ~ 0
+FixedRateClock
+Text GLabel 6750 4100 2    50   Output ~ 0
+RegisterClock
+Text GLabel 4800 3950 0    50   Input ~ 0
+~HLT
+$Comp
+L Connector:Conn_01x09_Male J2
+U 1 1 5DCF93D4
+P 5800 4800
+F 0 "J2" V 5700 4800 50  0000 C CNN
+F 1 "Conn_01x09_Female" V 5600 4800 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 5800 4800 50  0001 C CNN
+F 3 "~" H 5800 4800 50  0001 C CNN
+	1    5800 4800
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4850 4550 5500 4550
+Wire Wire Line
+	5500 4550 5500 4600
+Wire Wire Line
+	5500 4550 5700 4550
+Wire Wire Line
+	5700 4550 5700 4600
+Connection ~ 5500 4550
+Wire Wire Line
+	5700 4550 5900 4550
+Wire Wire Line
+	5900 4550 5900 4600
+Connection ~ 5700 4550
+Wire Wire Line
+	5900 4550 6100 4550
+Wire Wire Line
+	6100 4550 6100 4600
+Connection ~ 5900 4550
+Wire Wire Line
+	4800 3950 5600 3950
+Wire Wire Line
+	5600 3950 5600 4600
+Wire Wire Line
+	5800 4600 5800 3800
+Wire Wire Line
+	5800 3800 6750 3800
+Wire Wire Line
+	6000 4600 6000 3950
+Wire Wire Line
+	6000 3950 6750 3950
+Wire Wire Line
+	6200 4600 6200 4100
+Wire Wire Line
+	6200 4100 6750 4100
+$Comp
+L Connector:Conn_01x09_Male J1
+U 1 1 5DD11944
+P 5800 3200
+F 0 "J1" V 5600 3200 50  0000 C CNN
+F 1 "Conn_01x09_Female" V 5700 3200 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 5800 3200 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+	1    5800 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 3650 5400 4600
+Wire Wire Line
+	4800 3650 5400 3650
+Wire Wire Line
+	4800 3600 4800 3650
+$Comp
+L power:VCC #PWR0101
+U 1 1 5DCDF129
+P 4800 3600
+F 0 "#PWR0101" H 4800 3450 50  0001 C CNN
+F 1 "VCC" H 4817 3773 50  0000 C CNN
+F 2 "" H 4800 3600 50  0001 C CNN
+F 3 "" H 4800 3600 50  0001 C CNN
+	1    4800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D888695
+P 4850 4550
+F 0 "#PWR0102" H 4850 4300 50  0001 C CNN
+F 1 "GND" H 4855 4377 50  0000 C CNN
+F 2 "" H 4850 4550 50  0001 C CNN
+F 3 "" H 4850 4550 50  0001 C CNN
+	1    4850 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3400 5400 3650
+Connection ~ 5400 3650
+Wire Wire Line
+	5500 4550 5500 3400
+Wire Wire Line
+	5600 3400 5600 3950
+Connection ~ 5600 3950
+Wire Wire Line
+	5700 3400 5700 4550
+Wire Wire Line
+	5800 3400 5800 3800
+Connection ~ 5800 3800
+Wire Wire Line
+	5900 3400 5900 4550
+Wire Wire Line
+	6000 3950 6000 3400
+Connection ~ 6000 3950
+Wire Wire Line
+	6100 3400 6100 4550
+Connection ~ 6100 4550
+Wire Wire Line
+	6200 4100 6200 3400
+Connection ~ 6200 4100
+$Comp
+L Device:CP1 C?
+U 1 1 5DCEC54F
+P 8400 4000
+AR Path="/5D2C0720/5DCEC54F" Ref="C?"  Part="1" 
+AR Path="/5DCEC54F" Ref="C1"  Part="1" 
+F 0 "C1" H 8492 4046 50  0000 L CNN
+F 1 "22µF" H 8492 3955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8400 4000 50  0001 C CNN
+F 3 "~" H 8400 4000 50  0001 C CNN
+	1    8400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3800 8400 3850
+$Comp
+L power:VCC #PWR0103
+U 1 1 5DCECEE1
+P 8400 3800
+F 0 "#PWR0103" H 8400 3650 50  0001 C CNN
+F 1 "VCC" H 8417 3973 50  0000 C CNN
+F 2 "" H 8400 3800 50  0001 C CNN
+F 3 "" H 8400 3800 50  0001 C CNN
+	1    8400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5DCED6EB
+P 8400 4250
+F 0 "#PWR0104" H 8400 4000 50  0001 C CNN
+F 1 "GND" H 8405 4077 50  0000 C CNN
+F 2 "" H 8400 4250 50  0001 C CNN
+F 3 "" H 8400 4250 50  0001 C CNN
+	1    8400 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4150 8400 4250
+$EndSCHEMATC

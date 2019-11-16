@@ -1,4 +1,4 @@
-update=Saturday, October 26, 2019 at 12:01:07 PM
+update=Friday, November 15, 2019 at 05:07:02 PM
 version=1
 last_client=kicad
 [general]
@@ -12,11 +12,21 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=6
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -62,21 +72,5 @@ SolderPasteRatio=-0
 Name=GND.Cu
 Type=1
 [pcbnew/Layer.In2.Cu]
-Name=In1.Cu
-Type=0
-[pcbnew/Layer.In3.Cu]
-Name=In2.Cu
-Type=0
-[pcbnew/Layer.In4.Cu]
 Name=VCC.Cu
 Type=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1

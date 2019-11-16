@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 12 23
+Sheet 12 22
 Title "Execute"
 Date ""
 Rev ""
@@ -14,38 +14,6 @@ Comment2 ""
 Comment3 "a constant value."
 Comment4 "The lower eight bits of the instruction register can be expressed onto the data bus as"
 $EndDescr
-Text Label 5050 5700 1    50   ~ 0
-ControlWord16
-Text Label 4950 5700 1    50   ~ 0
-ControlWord17
-Text Label 4850 5700 1    50   ~ 0
-ControlWord18
-Text Label 4750 5700 1    50   ~ 0
-ControlWord19
-Text Label 4650 5700 1    50   ~ 0
-ControlWord20
-Text Label 4550 5700 1    50   ~ 0
-ControlWord21
-Text Label 4450 5700 1    50   ~ 0
-ControlWord22
-Text Label 4350 5700 1    50   ~ 0
-ControlWord23
-Text Label 3450 5700 1    50   ~ 0
-ControlWord24
-Text Label 3350 5700 1    50   ~ 0
-ControlWord25
-Text Label 3250 5700 1    50   ~ 0
-ControlWord26
-Text Label 3150 5700 1    50   ~ 0
-ControlWord27
-Text Label 3050 5700 1    50   ~ 0
-ControlWord28
-Text Label 2950 5700 1    50   ~ 0
-ControlWord29
-Text Label 2850 5700 1    50   ~ 0
-ControlWord30
-Text Label 2750 5700 1    50   ~ 0
-ControlWord31
 Text GLabel 1500 4550 0    50   Input ~ 0
 ControlWord[0..31]
 $Comp
@@ -356,70 +324,6 @@ Text GLabel 8300 3800 1    50   Output ~ 0
 ~AO
 Text GLabel 8450 3800 1    50   Output ~ 0
 ~AI
-Entry Wire Line
-	4950 5050 5050 5150
-Entry Wire Line
-	4750 5050 4850 5150
-Entry Wire Line
-	4650 5050 4750 5150
-Entry Wire Line
-	4550 5050 4650 5150
-Entry Wire Line
-	4450 5050 4550 5150
-Entry Wire Line
-	4350 5050 4450 5150
-Entry Wire Line
-	4250 5050 4350 5150
-Entry Wire Line
-	3350 5050 3450 5150
-Entry Wire Line
-	3250 5050 3350 5150
-Entry Wire Line
-	3150 5050 3250 5150
-Entry Wire Line
-	3050 5050 3150 5150
-Entry Wire Line
-	2950 5050 3050 5150
-Entry Wire Line
-	2850 5050 2950 5150
-Entry Wire Line
-	2750 5050 2850 5150
-Entry Wire Line
-	2650 5050 2750 5150
-Wire Wire Line
-	2750 5150 2750 5750
-Wire Wire Line
-	2950 5150 2950 5750
-Wire Wire Line
-	3050 5150 3050 5750
-Wire Wire Line
-	3150 5150 3150 5750
-Wire Wire Line
-	3250 5150 3250 5750
-Wire Wire Line
-	3350 5150 3350 5750
-Wire Wire Line
-	3450 5150 3450 5750
-Wire Wire Line
-	4350 5150 4350 5750
-Wire Wire Line
-	4450 5150 4450 5750
-Wire Wire Line
-	4550 5150 4550 5750
-Wire Wire Line
-	4650 5150 4650 5750
-Wire Wire Line
-	4750 5150 4750 5750
-Wire Wire Line
-	4850 5150 4850 5750
-Wire Wire Line
-	4950 5150 4950 5750
-Wire Wire Line
-	5050 5150 5050 5750
-Wire Wire Line
-	2850 5150 2850 5750
-Entry Wire Line
-	4850 5050 4950 5150
 Wire Wire Line
 	4400 1300 4400 1600
 $Comp
@@ -501,8 +405,6 @@ Entry Wire Line
 	4000 1150 3900 1050
 Entry Wire Line
 	3900 1150 3800 1050
-Text GLabel 1500 5050 0    50   Input ~ 0
-ControlWord[0..31]
 Text GLabel 7100 3800 1    50   Output ~ 0
 ~UO
 Text Label 7100 4400 1    50   ~ 0
@@ -575,102 +477,6 @@ Text GLabel 5900 3800 1    50   Output ~ 0
 ~YI
 Text GLabel 6050 3800 1    50   Output ~ 0
 ~XO
-Text Label 8100 5700 1    50   ~ 0
-ControlWord0
-Text Label 8000 5700 1    50   ~ 0
-ControlWord1
-Text Label 7900 5700 1    50   ~ 0
-ControlWord2
-Text Label 7800 5700 1    50   ~ 0
-ControlWord3
-Text Label 7700 5700 1    50   ~ 0
-ControlWord4
-Text Label 7600 5700 1    50   ~ 0
-ControlWord5
-Text Label 7500 5700 1    50   ~ 0
-ControlWord6
-Text Label 7400 5700 1    50   ~ 0
-ControlWord7
-Text Label 6600 5700 1    50   ~ 0
-ControlWord8
-Text Label 6500 5700 1    50   ~ 0
-ControlWord9
-Text Label 6400 5700 1    50   ~ 0
-ControlWord10
-Text Label 6300 5700 1    50   ~ 0
-ControlWord11
-Text Label 6200 5700 1    50   ~ 0
-ControlWord12
-Text Label 6100 5700 1    50   ~ 0
-ControlWord13
-Text Label 6000 5700 1    50   ~ 0
-ControlWord14
-Text Label 5900 5700 1    50   ~ 0
-ControlWord15
-Entry Wire Line
-	8000 5050 8100 5150
-Entry Wire Line
-	7800 5050 7900 5150
-Entry Wire Line
-	7700 5050 7800 5150
-Entry Wire Line
-	7600 5050 7700 5150
-Entry Wire Line
-	7500 5050 7600 5150
-Entry Wire Line
-	7400 5050 7500 5150
-Entry Wire Line
-	7300 5050 7400 5150
-Entry Wire Line
-	6500 5050 6600 5150
-Entry Wire Line
-	6400 5050 6500 5150
-Entry Wire Line
-	6300 5050 6400 5150
-Entry Wire Line
-	6200 5050 6300 5150
-Entry Wire Line
-	6100 5050 6200 5150
-Entry Wire Line
-	6000 5050 6100 5150
-Entry Wire Line
-	5900 5050 6000 5150
-Entry Wire Line
-	5800 5050 5900 5150
-Wire Wire Line
-	5900 5150 5900 5750
-Wire Wire Line
-	6100 5150 6100 5750
-Wire Wire Line
-	6200 5150 6200 5750
-Wire Wire Line
-	6300 5150 6300 5750
-Wire Wire Line
-	6400 5150 6400 5750
-Wire Wire Line
-	6500 5150 6500 5750
-Wire Wire Line
-	6600 5150 6600 5750
-Wire Wire Line
-	7400 5150 7400 5750
-Wire Wire Line
-	7500 5150 7500 5750
-Wire Wire Line
-	7600 5150 7600 5750
-Wire Wire Line
-	7700 5150 7700 5750
-Wire Wire Line
-	7800 5150 7800 5750
-Wire Wire Line
-	7900 5150 7900 5750
-Wire Wire Line
-	8000 5150 8000 5750
-Wire Wire Line
-	8100 5150 8100 5750
-Wire Wire Line
-	6000 5150 6000 5750
-Entry Wire Line
-	7900 5050 8000 5150
 Entry Wire Line
 	3700 4550 3800 4450
 Entry Wire Line
@@ -701,146 +507,6 @@ Text GLabel 4700 3800 1    50   Output ~ 0
 ~J
 Text GLabel 4850 3800 1    50   Output ~ 0
 ~LinkHiOut
-$Comp
-L Connector:Conn_01x09_Female J?
-U 1 1 5DA7DC98
-P 3150 5950
-AR Path="/5D29E36D/5DA7DC98" Ref="J?"  Part="1" 
-AR Path="/5D2C12A5/5DA7DC98" Ref="J?"  Part="1" 
-AR Path="/5D2C0CE4/5DA7DC98" Ref="J?"  Part="1" 
-AR Path="/5D2C0D13/5DA7DC98" Ref="J?"  Part="1" 
-AR Path="/5D2C0CA7/5DA7DC98" Ref="J?"  Part="1" 
-AR Path="/5D2C13FD/5DA7DC98" Ref="J6"  Part="1" 
-F 0 "J6" V 3300 5900 50  0000 C CNN
-F 1 "Control Word LED Connector [24..31]" V 3400 5900 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 3150 5950 50  0001 C CNN
-F 3 "~" H 3150 5950 50  0001 C CNN
-	1    3150 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x09_Female J?
-U 1 1 5DA8731D
-P 4750 5950
-AR Path="/5D29E36D/5DA8731D" Ref="J?"  Part="1" 
-AR Path="/5D2C12A5/5DA8731D" Ref="J?"  Part="1" 
-AR Path="/5D2C0CE4/5DA8731D" Ref="J?"  Part="1" 
-AR Path="/5D2C0D13/5DA8731D" Ref="J?"  Part="1" 
-AR Path="/5D2C0CA7/5DA8731D" Ref="J?"  Part="1" 
-AR Path="/5D2C13FD/5DA8731D" Ref="J23"  Part="1" 
-F 0 "J23" V 4900 5900 50  0000 C CNN
-F 1 "Control Word LED Connector [16..23]" V 5000 5900 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 4750 5950 50  0001 C CNN
-F 3 "~" H 4750 5950 50  0001 C CNN
-	1    4750 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x09_Female J?
-U 1 1 5DA8CAD0
-P 6300 5950
-AR Path="/5D29E36D/5DA8CAD0" Ref="J?"  Part="1" 
-AR Path="/5D2C12A5/5DA8CAD0" Ref="J?"  Part="1" 
-AR Path="/5D2C0CE4/5DA8CAD0" Ref="J?"  Part="1" 
-AR Path="/5D2C0D13/5DA8CAD0" Ref="J?"  Part="1" 
-AR Path="/5D2C0CA7/5DA8CAD0" Ref="J?"  Part="1" 
-AR Path="/5D2C13FD/5DA8CAD0" Ref="J24"  Part="1" 
-F 0 "J24" V 6450 5900 50  0000 C CNN
-F 1 "Control Word LED Connector [8..15]" V 6550 5900 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 6300 5950 50  0001 C CNN
-F 3 "~" H 6300 5950 50  0001 C CNN
-	1    6300 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x09_Female J?
-U 1 1 5DA92064
-P 7800 5950
-AR Path="/5D29E36D/5DA92064" Ref="J?"  Part="1" 
-AR Path="/5D2C12A5/5DA92064" Ref="J?"  Part="1" 
-AR Path="/5D2C0CE4/5DA92064" Ref="J?"  Part="1" 
-AR Path="/5D2C0D13/5DA92064" Ref="J?"  Part="1" 
-AR Path="/5D2C0CA7/5DA92064" Ref="J?"  Part="1" 
-AR Path="/5D2C13FD/5DA92064" Ref="J25"  Part="1" 
-F 0 "J25" V 7950 5900 50  0000 C CNN
-F 1 "Control Word LED Connector [0..7]" V 8050 5900 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 7800 5950 50  0001 C CNN
-F 3 "~" H 7800 5950 50  0001 C CNN
-	1    7800 5950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DA98D34
-P 3550 5650
-AR Path="/5D2C07CD/5DA98D34" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C0CA7/5DA98D34" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BD0EA/5DA98D34" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C12A5/5DA98D34" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C13FD/5DA98D34" Ref="#PWR0135"  Part="1" 
-F 0 "#PWR0135" H 3550 5400 50  0001 C CNN
-F 1 "GND" H 3555 5477 50  0000 C CNN
-F 2 "" H 3550 5650 50  0001 C CNN
-F 3 "" H 3550 5650 50  0001 C CNN
-	1    3550 5650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3550 5750 3550 5650
-$Comp
-L power:GND #PWR?
-U 1 1 5DA9D201
-P 5150 5650
-AR Path="/5D2C07CD/5DA9D201" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C0CA7/5DA9D201" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BD0EA/5DA9D201" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C12A5/5DA9D201" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C13FD/5DA9D201" Ref="#PWR0246"  Part="1" 
-F 0 "#PWR0246" H 5150 5400 50  0001 C CNN
-F 1 "GND" H 5155 5477 50  0000 C CNN
-F 2 "" H 5150 5650 50  0001 C CNN
-F 3 "" H 5150 5650 50  0001 C CNN
-	1    5150 5650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5150 5750 5150 5650
-$Comp
-L power:GND #PWR?
-U 1 1 5DAA17E2
-P 6700 5650
-AR Path="/5D2C07CD/5DAA17E2" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C0CA7/5DAA17E2" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BD0EA/5DAA17E2" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C12A5/5DAA17E2" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C13FD/5DAA17E2" Ref="#PWR0251"  Part="1" 
-F 0 "#PWR0251" H 6700 5400 50  0001 C CNN
-F 1 "GND" H 6705 5477 50  0000 C CNN
-F 2 "" H 6700 5650 50  0001 C CNN
-F 3 "" H 6700 5650 50  0001 C CNN
-	1    6700 5650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6700 5750 6700 5650
-$Comp
-L power:GND #PWR?
-U 1 1 5DAA5E2C
-P 8200 5650
-AR Path="/5D2C07CD/5DAA5E2C" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C0CA7/5DAA5E2C" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BD0EA/5DAA5E2C" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C12A5/5DAA5E2C" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C13FD/5DAA5E2C" Ref="#PWR0252"  Part="1" 
-F 0 "#PWR0252" H 8200 5400 50  0001 C CNN
-F 1 "GND" H 8205 5477 50  0000 C CNN
-F 2 "" H 8200 5650 50  0001 C CNN
-F 3 "" H 8200 5650 50  0001 C CNN
-	1    8200 5650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8200 5750 8200 5650
 Text GLabel 4550 3800 1    50   Output ~ 0
 ~CarryIn
 $Comp
@@ -854,6 +520,8 @@ F 3 "" H 1700 7400 50  0001 C CNN
 	1    1700 7400
 	1    0    0    -1  
 $EndComp
+Text Notes 3900 4250 0    50   ~ 0
+There are\nunused control\nsignals here\nfor future\nexpansion.
 Wire Bus Line
 	1100 1050 5850 1050
 Wire Bus Line
@@ -862,8 +530,4 @@ Wire Bus Line
 	7750 1800 7750 2800
 Wire Bus Line
 	1500 4550 8350 4550
-Wire Bus Line
-	1500 5050 8000 5050
-Text Notes 3900 4250 0    50   ~ 0
-There are\nunused control\nsignals here\nfor future\nexpansion.
 $EndSCHEMATC
