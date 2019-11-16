@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 11 22
+Sheet 10 22
 Title "Instruction Decode"
 Date ""
 Rev ""

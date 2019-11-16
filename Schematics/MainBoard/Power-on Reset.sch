@@ -307,32 +307,6 @@ Wire Wire Line
 	5100 2950 5100 6250
 Wire Wire Line
 	5100 6250 1800 6250
-Wire Wire Line
-	5700 3150 5800 3150
-Wire Wire Line
-	5800 3250 5700 3250
-Connection ~ 5700 3250
-Wire Wire Line
-	5700 3250 5700 3150
-Wire Wire Line
-	5800 3450 5700 3450
-Connection ~ 5700 3450
-Wire Wire Line
-	5700 3450 5700 3250
-Wire Wire Line
-	5800 3550 5700 3550
-Connection ~ 5700 3550
-Wire Wire Line
-	5700 3550 5700 3450
-Wire Wire Line
-	5800 3750 5700 3750
-Connection ~ 5700 3750
-Wire Wire Line
-	5700 3750 5700 3550
-Wire Wire Line
-	5800 3850 5700 3850
-Wire Wire Line
-	5700 3850 5700 3750
 Text GLabel 9050 2850 2    50   Output ~ 0
 ControlClock
 Wire Wire Line
@@ -461,21 +435,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 6300 3450 50  0001 C CNN
 	1    6300 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR0249
-U 1 1 5DA1C782
-P 5450 3450
-F 0 "#PWR0249" H 5450 3300 50  0001 C CNN
-F 1 "VCC" H 5467 3623 50  0000 C CNN
-F 2 "" H 5450 3450 50  0001 C CNN
-F 3 "" H 5450 3450 50  0001 C CNN
-	1    5450 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 3450 5450 3550
-Wire Wire Line
-	5450 3550 5700 3550
 NoConn ~ 6800 3150
 NoConn ~ 6800 3450
 NoConn ~ 6800 3750
@@ -691,4 +650,45 @@ Wire Wire Line
 Wire Wire Line
 	1300 2700 1550 2700
 Connection ~ 1550 2700
+Wire Wire Line
+	5450 3550 5700 3550
+Wire Wire Line
+	5450 3450 5450 3550
+$Comp
+L power:VCC #PWR0249
+U 1 1 5DA1C782
+P 5450 3450
+F 0 "#PWR0249" H 5450 3300 50  0001 C CNN
+F 1 "VCC" H 5467 3623 50  0000 C CNN
+F 2 "" H 5450 3450 50  0001 C CNN
+F 3 "" H 5450 3450 50  0001 C CNN
+	1    5450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3850 5700 3850
+Wire Wire Line
+	5700 3850 5700 3750
+Connection ~ 5700 3750
+Wire Wire Line
+	5800 3750 5700 3750
+Wire Wire Line
+	5700 3750 5700 3550
+Connection ~ 5700 3550
+Wire Wire Line
+	5800 3550 5700 3550
+Wire Wire Line
+	5700 3550 5700 3450
+Connection ~ 5700 3450
+Wire Wire Line
+	5800 3450 5700 3450
+Wire Wire Line
+	5700 3450 5700 3250
+Wire Wire Line
+	5700 3250 5700 3150
+Connection ~ 5700 3250
+Wire Wire Line
+	5800 3250 5700 3250
+Wire Wire Line
+	5700 3150 5800 3150
 $EndSCHEMATC
