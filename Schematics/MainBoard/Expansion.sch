@@ -20,19 +20,6 @@ Text GLabel 2550 650  0    50   Input ~ 0
 ~PO[0..7]
 Text GLabel 2550 800  0    50   Input ~ 0
 ~PI[0..7]
-$Comp
-L power:VCC #PWR?
-U 1 1 5DF20E79
-P 4050 1700
-AR Path="/5D2C0CE4/5DF20E79" Ref="#PWR?"  Part="1" 
-AR Path="/5D9F1D54/5DF20E79" Ref="#PWR0125"  Part="1" 
-F 0 "#PWR0125" H 4050 1550 50  0001 C CNN
-F 1 "VCC" H 4067 1873 50  0000 C CNN
-F 2 "" H 4050 1700 50  0001 C CNN
-F 3 "" H 4050 1700 50  0001 C CNN
-	1    4050 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 2350 4500 2350
 Wire Wire Line
@@ -131,8 +118,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 5950 4500 6150
 Wire Wire Line
-	3800 2450 3600 2450
-Wire Wire Line
 	3600 6050 3800 6050
 Connection ~ 3600 6050
 Wire Wire Line
@@ -187,8 +172,6 @@ Connection ~ 3600 4850
 Connection ~ 3600 5050
 Connection ~ 3600 5250
 Wire Wire Line
-	3600 2450 3600 2650
-Wire Wire Line
 	3600 2650 3600 2850
 Wire Wire Line
 	3600 2850 3600 3050
@@ -223,14 +206,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 5850 3600 6050
 Wire Wire Line
-	3450 1800 4050 1800
-Wire Wire Line
 	4650 1800 4650 2250
-Wire Wire Line
-	4050 1700 4050 1800
-Connection ~ 4050 1800
-Wire Wire Line
-	4050 1800 4650 1800
 Wire Wire Line
 	4300 2850 5500 2850
 Entry Wire Line
@@ -330,14 +306,7 @@ DataBus0
 Text Label 4700 5250 0    50   ~ 0
 DataBus1
 Wire Wire Line
-	3600 2450 3600 2250
-Wire Wire Line
 	3600 2250 3800 2250
-Connection ~ 3600 2450
-Wire Wire Line
-	3800 2350 3450 2350
-Wire Wire Line
-	3450 1800 3450 2350
 $Comp
 L Connector_Generic:Conn_02x40_Odd_Even J?
 U 1 1 5DF20F7A
@@ -363,24 +332,6 @@ Text GLabel 2550 1250 0    50   Input ~ 0
 DataBus[0..7]
 Entry Wire Line
 	5300 5250 5400 5350
-Wire Wire Line
-	3450 2350 3450 2550
-Wire Wire Line
-	3450 2550 3800 2550
-Connection ~ 3450 2350
-Wire Wire Line
-	3450 2550 3450 2750
-Wire Wire Line
-	3450 2750 3800 2750
-Connection ~ 3450 2550
-Wire Wire Line
-	3450 2750 3450 2950
-Wire Wire Line
-	3450 2950 3800 2950
-Connection ~ 3450 2750
-Wire Wire Line
-	3450 2950 3450 5550
-Connection ~ 3450 2950
 Wire Wire Line
 	3450 6150 3800 6150
 Wire Wire Line
@@ -442,19 +393,6 @@ Text Label 3000 4350 0    50   ~ 0
 AddressBus2
 Text Label 3000 4550 0    50   ~ 0
 AddressBus0
-$Comp
-L power:GND #PWR?
-U 1 1 5E72E7EB
-P 4050 10850
-AR Path="/5D2C0CE4/5E72E7EB" Ref="#PWR?"  Part="1" 
-AR Path="/5D9F1D54/5E72E7EB" Ref="#PWR0126"  Part="1" 
-F 0 "#PWR0126" H 4050 10600 50  0001 C CNN
-F 1 "GND" H 4055 10677 50  0000 C CNN
-F 2 "" H 4050 10850 50  0001 C CNN
-F 3 "" H 4050 10850 50  0001 C CNN
-	1    4050 10850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4300 6600 4500 6600
 Wire Wire Line
@@ -645,8 +583,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 10100 3600 10300
 Wire Wire Line
-	4050 10650 4500 10650
-Wire Wire Line
 	4650 6050 4650 6500
 Entry Wire Line
 	5100 7300 5200 7400
@@ -763,11 +699,6 @@ Wire Wire Line
 Connection ~ 3600 6700
 Wire Wire Line
 	3800 6600 3450 6600
-Wire Wire Line
-	4050 10650 3600 10650
-Connection ~ 4050 10650
-Wire Wire Line
-	4050 10650 4050 10850
 $Comp
 L Connector_Generic:Conn_02x40_Odd_Even J?
 U 1 1 5E72E8B2
@@ -796,19 +727,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 6800 3800 6800
 Connection ~ 3450 6600
-Wire Wire Line
-	3450 6800 3450 7000
-Wire Wire Line
-	3450 7000 3800 7000
 Connection ~ 3450 6800
-Wire Wire Line
-	3450 7000 3450 7200
-Wire Wire Line
-	3450 7200 3800 7200
-Connection ~ 3450 7000
-Wire Wire Line
-	3450 7200 3450 9800
-Connection ~ 3450 7200
 Wire Wire Line
 	3450 10400 3800 10400
 Wire Wire Line
@@ -917,14 +836,14 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR?
 U 1 1 5F188DA6
-P 7250 1700
+P 1100 750
 AR Path="/5D2C0CE4/5F188DA6" Ref="#PWR?"  Part="1" 
 AR Path="/5D9F1D54/5F188DA6" Ref="#PWR0135"  Part="1" 
-F 0 "#PWR0135" H 7250 1550 50  0001 C CNN
-F 1 "VCC" H 7267 1873 50  0000 C CNN
-F 2 "" H 7250 1700 50  0001 C CNN
-F 3 "" H 7250 1700 50  0001 C CNN
-	1    7250 1700
+F 0 "#PWR0135" H 1100 600 50  0001 C CNN
+F 1 "VCC" H 1117 923 50  0000 C CNN
+F 2 "" H 1100 750 50  0001 C CNN
+F 3 "" H 1100 750 50  0001 C CNN
+	1    1100 750 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1117,14 +1036,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 5850 6800 6050
 Wire Wire Line
-	6650 1800 7250 1800
-Wire Wire Line
 	7850 1800 7850 2250
-Wire Wire Line
-	7250 1700 7250 1800
-Connection ~ 7250 1800
-Wire Wire Line
-	7250 1800 7850 1800
 Entry Wire Line
 	8300 3050 8400 3150
 Wire Wire Line
@@ -1256,19 +1168,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 2550 7000 2550
 Connection ~ 6650 2350
-Wire Wire Line
-	6650 2550 6650 2750
-Wire Wire Line
-	6650 2750 7000 2750
 Connection ~ 6650 2550
-Wire Wire Line
-	6650 2750 6650 2950
-Wire Wire Line
-	6650 2950 7000 2950
-Connection ~ 6650 2750
-Wire Wire Line
-	6650 2950 6650 5550
-Connection ~ 6650 2950
 Wire Wire Line
 	6650 6150 7000 6150
 Wire Wire Line
@@ -1330,19 +1230,6 @@ Text Label 6200 4350 0    50   ~ 0
 AddressBus2
 Text Label 6200 4550 0    50   ~ 0
 AddressBus0
-$Comp
-L power:GND #PWR?
-U 1 1 5F188E9B
-P 7250 10850
-AR Path="/5D2C0CE4/5F188E9B" Ref="#PWR?"  Part="1" 
-AR Path="/5D9F1D54/5F188E9B" Ref="#PWR0151"  Part="1" 
-F 0 "#PWR0151" H 7250 10600 50  0001 C CNN
-F 1 "GND" H 7255 10677 50  0000 C CNN
-F 2 "" H 7250 10850 50  0001 C CNN
-F 3 "" H 7250 10850 50  0001 C CNN
-	1    7250 10850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7500 6600 7700 6600
 Wire Wire Line
@@ -1533,8 +1420,6 @@ Wire Wire Line
 Wire Wire Line
 	6800 10100 6800 10300
 Wire Wire Line
-	7250 10650 7700 10650
-Wire Wire Line
 	7850 6050 7850 6500
 Entry Wire Line
 	8300 7300 8400 7400
@@ -1651,11 +1536,6 @@ Wire Wire Line
 Connection ~ 6800 6700
 Wire Wire Line
 	7000 6600 6650 6600
-Wire Wire Line
-	7250 10650 6800 10650
-Connection ~ 7250 10650
-Wire Wire Line
-	7250 10650 7250 10850
 $Comp
 L Connector_Generic:Conn_02x40_Odd_Even J?
 U 1 1 5F188F54
@@ -1684,19 +1564,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 6800 7000 6800
 Connection ~ 6650 6600
-Wire Wire Line
-	6650 6800 6650 7000
-Wire Wire Line
-	6650 7000 7000 7000
 Connection ~ 6650 6800
-Wire Wire Line
-	6650 7000 6650 7200
-Wire Wire Line
-	6650 7200 7000 7200
-Connection ~ 6650 7000
-Wire Wire Line
-	6650 7200 6650 9800
-Connection ~ 6650 7200
 Wire Wire Line
 	6650 10400 7000 10400
 Wire Wire Line
@@ -1915,19 +1783,7 @@ Wire Wire Line
 	10050 10200 10400 10200
 Wire Wire Line
 	10050 10400 10400 10400
-Connection ~ 10050 7200
-Wire Wire Line
-	10050 7200 10050 9800
-Connection ~ 10050 7000
-Wire Wire Line
-	10050 7200 10400 7200
-Wire Wire Line
-	10050 7000 10050 7200
 Connection ~ 10050 6800
-Wire Wire Line
-	10050 7000 10400 7000
-Wire Wire Line
-	10050 6800 10050 7000
 Connection ~ 10050 6600
 Wire Wire Line
 	10050 6800 10400 6800
@@ -1959,8 +1815,6 @@ $EndComp
 Wire Wire Line
 	10650 10650 10650 10850
 Connection ~ 10650 10650
-Wire Wire Line
-	10650 10650 10200 10650
 Wire Wire Line
 	10400 6600 10050 6600
 Connection ~ 10200 6700
@@ -2353,19 +2207,7 @@ Wire Wire Line
 	10050 5950 10400 5950
 Wire Wire Line
 	10050 6150 10400 6150
-Connection ~ 10050 2950
-Wire Wire Line
-	10050 2950 10050 5550
-Connection ~ 10050 2750
-Wire Wire Line
-	10050 2950 10400 2950
-Wire Wire Line
-	10050 2750 10050 2950
 Connection ~ 10050 2550
-Wire Wire Line
-	10050 2750 10400 2750
-Wire Wire Line
-	10050 2550 10050 2750
 Connection ~ 10050 2350
 Wire Wire Line
 	10050 2550 10400 2550
@@ -2496,14 +2338,7 @@ Wire Wire Line
 Entry Wire Line
 	11700 3050 11800 3150
 Wire Wire Line
-	10650 1800 11250 1800
-Connection ~ 10650 1800
-Wire Wire Line
-	10650 1700 10650 1800
-Wire Wire Line
 	11250 1800 11250 2250
-Wire Wire Line
-	10050 1800 10650 1800
 Wire Wire Line
 	10200 5850 10200 6050
 Wire Wire Line
@@ -2693,19 +2528,6 @@ Wire Wire Line
 	11100 6150 10900 6150
 Wire Wire Line
 	10900 2350 11100 2350
-$Comp
-L power:VCC #PWR?
-U 1 1 5FB8F8B4
-P 10650 1700
-AR Path="/5D2C0CE4/5FB8F8B4" Ref="#PWR?"  Part="1" 
-AR Path="/5D9F1D54/5FB8F8B4" Ref="#PWR0153"  Part="1" 
-F 0 "#PWR0153" H 10650 1550 50  0001 C CNN
-F 1 "VCC" H 10667 1873 50  0000 C CNN
-F 2 "" H 10650 1700 50  0001 C CNN
-F 3 "" H 10650 1700 50  0001 C CNN
-	1    10650 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6650 5950 6650 6150
 Wire Wire Line
@@ -2857,42 +2679,6 @@ Entry Wire Line
 	12150 2650 12250 2550
 Wire Wire Line
 	10900 2650 12150 2650
-Wire Bus Line
-	5800 800  5800 6600
-Wire Bus Line
-	5650 650  5650 6800
-Wire Bus Line
-	12450 800  12450 6600
-Wire Bus Line
-	12250 650  12250 6800
-Wire Bus Line
-	9050 800  9050 6600
-Wire Bus Line
-	8850 650  8850 6800
-Wire Bus Line
-	2700 1250 2700 9700
-Wire Bus Line
-	5900 1250 5900 9700
-Wire Bus Line
-	12000 1250 12000 9600
-Wire Bus Line
-	9300 1250 9300 9700
-Wire Bus Line
-	8600 1250 8600 9600
-Wire Bus Line
-	5400 1250 5400 9600
-Wire Bus Line
-	11800 1100 11800 8800
-Wire Bus Line
-	9500 1100 9500 8900
-Wire Bus Line
-	6100 1100 6100 8900
-Wire Bus Line
-	8400 1100 8400 8800
-Wire Bus Line
-	2900 1100 2900 8900
-Wire Bus Line
-	5200 1100 5200 8800
 Wire Wire Line
 	10900 9500 11900 9500
 Wire Wire Line
@@ -2917,4 +2703,202 @@ Wire Wire Line
 	10900 5050 11900 5050
 Wire Wire Line
 	10900 5250 11900 5250
+Wire Wire Line
+	3450 1800 3450 2350
+Connection ~ 3450 2350
+Wire Wire Line
+	3800 2350 3450 2350
+Wire Wire Line
+	3450 2350 3450 2550
+Connection ~ 3450 2550
+Wire Wire Line
+	3450 2550 3800 2550
+Wire Wire Line
+	3600 2450 3600 2250
+Wire Wire Line
+	3600 2450 3600 2650
+Connection ~ 3600 2450
+Wire Wire Line
+	3800 2450 3600 2450
+Text GLabel 2550 1400 0    50   Input ~ 0
+~RST
+Text GLabel 2550 1550 0    50   Input ~ 0
+ControlClock
+Wire Wire Line
+	3800 2950 3300 2950
+Wire Wire Line
+	3300 2950 3300 1550
+Wire Wire Line
+	3450 2550 3450 5550
+Wire Wire Line
+	3800 2750 3150 2750
+Wire Wire Line
+	3150 1400 2550 1400
+Wire Wire Line
+	3300 2950 3300 7200
+Wire Wire Line
+	3300 7200 3450 7200
+Connection ~ 3300 2950
+Wire Wire Line
+	3450 7200 3800 7200
+Wire Wire Line
+	6650 1800 7850 1800
+Wire Wire Line
+	3450 1800 4650 1800
+Connection ~ 6650 1800
+Connection ~ 4650 1800
+Wire Wire Line
+	4650 1800 6650 1800
+Wire Wire Line
+	3450 1800 1100 1800
+Wire Wire Line
+	1100 750  1100 1800
+Connection ~ 3450 1800
+Wire Wire Line
+	10050 1800 7850 1800
+Connection ~ 10050 1800
+Connection ~ 7850 1800
+Wire Wire Line
+	10050 1800 11250 1800
+Wire Wire Line
+	3600 10650 4500 10650
+Wire Wire Line
+	4500 10650 6800 10650
+Connection ~ 4500 10650
+Connection ~ 6800 10650
+Wire Wire Line
+	6800 10650 7700 10650
+Connection ~ 7700 10650
+Wire Wire Line
+	7700 10650 10200 10650
+Connection ~ 10200 10650
+Wire Wire Line
+	10200 10650 10650 10650
+Wire Wire Line
+	7000 7200 6500 7200
+Wire Wire Line
+	6500 7200 6500 2950
+Wire Wire Line
+	2550 1550 3300 1550
+Connection ~ 3300 1550
+Wire Wire Line
+	3300 1550 6500 1550
+Wire Wire Line
+	7000 2950 6500 2950
+Connection ~ 6500 2950
+Wire Wire Line
+	6500 2950 6500 1550
+Wire Wire Line
+	10400 7200 9900 7200
+Wire Wire Line
+	9900 7200 9900 2950
+Wire Wire Line
+	9900 2950 10400 2950
+Wire Wire Line
+	9900 2950 9900 1550
+Wire Wire Line
+	9900 1550 6500 1550
+Connection ~ 9900 2950
+Connection ~ 6500 1550
+Wire Wire Line
+	3450 6800 3450 9800
+Wire Wire Line
+	3800 7000 3150 7000
+Wire Wire Line
+	3150 1400 3150 2750
+Connection ~ 3150 2750
+Wire Wire Line
+	3150 2750 3150 7000
+Wire Wire Line
+	6650 2550 6650 5550
+Wire Wire Line
+	6650 6800 6650 9800
+Wire Wire Line
+	10050 6800 10050 9800
+Wire Wire Line
+	10050 2550 10050 5550
+Wire Wire Line
+	3150 1400 6350 1400
+Wire Wire Line
+	6350 1400 6350 2750
+Wire Wire Line
+	6350 2750 7000 2750
+Connection ~ 3150 1400
+Wire Wire Line
+	6350 2750 6350 7000
+Wire Wire Line
+	6350 7000 7000 7000
+Connection ~ 6350 2750
+Wire Wire Line
+	6350 1400 9750 1400
+Wire Wire Line
+	9750 1400 9750 2750
+Wire Wire Line
+	9750 2750 10400 2750
+Connection ~ 6350 1400
+Wire Wire Line
+	9750 2750 9750 7000
+Wire Wire Line
+	9750 7000 10400 7000
+Wire Bus Line
+	12250 650  12250 6800
+Wire Bus Line
+	12450 800  12450 6600
+Wire Bus Line
+	8850 650  8850 6800
+Wire Bus Line
+	9050 800  9050 6600
+Wire Bus Line
+	5800 800  5800 6600
+Wire Bus Line
+	5650 650  5650 6800
+Wire Bus Line
+	2700 1250 2700 9700
+Wire Bus Line
+	5900 1250 5900 9700
+Wire Bus Line
+	12000 1250 12000 9600
+Wire Bus Line
+	9300 1250 9300 9700
+Wire Bus Line
+	8600 1250 8600 9600
+Wire Bus Line
+	5400 1250 5400 9600
+Wire Bus Line
+	11800 1100 11800 8800
+Wire Bus Line
+	9500 1100 9500 8900
+Wire Bus Line
+	6100 1100 6100 8900
+Wire Bus Line
+	8400 1100 8400 8800
+Wire Bus Line
+	2900 1100 2900 8900
+Wire Bus Line
+	5200 1100 5200 8800
+Connection ~ 9750 2750
+Text Label 9900 7200 0    50   ~ 0
+ControlClock
+Text Label 9900 2950 0    50   ~ 0
+ControlClock
+Text Label 6500 2950 0    50   ~ 0
+ControlClock
+Text Label 6500 7200 0    50   ~ 0
+ControlClock
+Text Label 3300 7200 0    50   ~ 0
+ControlClock
+Text Label 3300 2950 0    50   ~ 0
+ControlClock
+Text Label 3150 2750 0    50   ~ 0
+~RST
+Text Label 3150 7000 0    50   ~ 0
+~RST
+Text Label 6350 7000 0    50   ~ 0
+~RST
+Text Label 6350 2750 0    50   ~ 0
+~RST
+Text Label 9750 2750 0    50   ~ 0
+~RST
+Text Label 9750 7000 0    50   ~ 0
+~RST
 $EndSCHEMATC
