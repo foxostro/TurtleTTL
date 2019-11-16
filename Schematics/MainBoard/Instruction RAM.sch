@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:MainBoard-cache
-LIBS:ResetBoard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
@@ -261,37 +260,37 @@ Entry Wire Line
 Entry Wire Line
 	6200 3600 6100 3700
 Text Label 8250 5000 0    50   ~ 0
-XY14
+AddressBus14
 Text Label 8250 4900 0    50   ~ 0
-XY13
+AddressBus13
 Text Label 8250 4800 0    50   ~ 0
-XY12
+AddressBus12
 Text Label 8250 4700 0    50   ~ 0
-XY11
+AddressBus11
 Wire Wire Line
 	8800 4700 8200 4700
 Entry Wire Line
 	8800 4700 8900 4800
 Text Label 8250 4600 0    50   ~ 0
-XY0
+AddressBus10
 Wire Wire Line
 	8800 4600 8200 4600
 Entry Wire Line
 	8800 4600 8900 4700
 Text Label 8250 4500 0    50   ~ 0
-XY9
+AddressBus9
 Wire Wire Line
 	8800 4500 8200 4500
 Entry Wire Line
 	8800 4500 8900 4600
 Text Label 8250 4400 0    50   ~ 0
-XY8
+AddressBus8
 Wire Wire Line
 	8800 4400 8200 4400
 Entry Wire Line
 	8800 4400 8900 4500
 Text Label 8250 4300 0    50   ~ 0
-XY7
+AddressBus7
 Wire Wire Line
 	8800 4300 8200 4300
 Entry Wire Line
@@ -534,79 +533,79 @@ Wire Wire Line
 Entry Wire Line
 	6200 7650 6100 7750
 Text Label 8250 9050 0    50   ~ 0
-XY14
+AddressBus14
 Text Label 8250 8950 0    50   ~ 0
-XY13
+AddressBus13
 Text Label 8250 8850 0    50   ~ 0
-XY12
+AddressBus12
 Text Label 8250 8750 0    50   ~ 0
-XY11
+AddressBus11
 Wire Wire Line
 	8800 8750 8200 8750
 Entry Wire Line
 	8800 8750 8900 8850
 Text Label 8250 8650 0    50   ~ 0
-XY0
+AddressBus10
 Wire Wire Line
 	8800 8650 8200 8650
 Entry Wire Line
 	8800 8650 8900 8750
 Text Label 8250 8550 0    50   ~ 0
-XY9
+AddressBus9
 Wire Wire Line
 	8800 8550 8200 8550
 Entry Wire Line
 	8800 8550 8900 8650
 Text Label 8250 8450 0    50   ~ 0
-XY8
+AddressBus8
 Wire Wire Line
 	8800 8450 8200 8450
 Entry Wire Line
 	8800 8450 8900 8550
 Text Label 8250 8350 0    50   ~ 0
-XY7
+AddressBus7
 Wire Wire Line
 	8800 8350 8200 8350
 Entry Wire Line
 	8800 8350 8900 8450
 Text Label 8250 8250 0    50   ~ 0
-XY6
+AddressBus6
 Wire Wire Line
 	8800 8250 8200 8250
 Entry Wire Line
 	8800 8250 8900 8350
 Text Label 8250 8150 0    50   ~ 0
-XY5
+AddressBus5
 Wire Wire Line
 	8800 8150 8200 8150
 Entry Wire Line
 	8800 8150 8900 8250
 Text Label 8250 8050 0    50   ~ 0
-XY4
+AddressBus4
 Wire Wire Line
 	8800 8050 8200 8050
 Entry Wire Line
 	8800 8050 8900 8150
 Text Label 8250 7950 0    50   ~ 0
-XY3
+AddressBus3
 Wire Wire Line
 	8800 7950 8200 7950
 Entry Wire Line
 	8800 7950 8900 8050
 Text Label 8250 7850 0    50   ~ 0
-XY2
+AddressBus2
 Wire Wire Line
 	8800 7850 8200 7850
 Entry Wire Line
 	8800 7850 8900 7950
 Text Label 8250 7750 0    50   ~ 0
-XY1
+AddressBus1
 Wire Wire Line
 	8800 7750 8200 7750
 Entry Wire Line
 	8800 7750 8900 7850
 Text Label 8250 7650 0    50   ~ 0
-XY0
+AddressBus0
 Wire Wire Line
 	8800 7650 8200 7650
 Entry Wire Line
@@ -645,7 +644,7 @@ Wire Bus Line
 Wire Bus Line
 	9250 3500 9250 7550
 Text GLabel 12350 9150 2    50   Input ~ 0
-XY[0..15]
+AddressBus[0..15]
 Wire Bus Line
 	8900 5100 9600 5100
 Wire Bus Line
@@ -863,19 +862,19 @@ PC_IF0
 Wire Wire Line
 	6200 3600 6800 3600
 Text Label 8250 4200 0    50   ~ 0
-XY6
+AddressBus6
 Text Label 8250 4100 0    50   ~ 0
-XY5
+AddressBus5
 Text Label 8250 4000 0    50   ~ 0
-XY4
+AddressBus4
 Text Label 8250 3900 0    50   ~ 0
-XY3
+AddressBus3
 Text Label 8250 3800 0    50   ~ 0
-XY2
+AddressBus2
 Text Label 8250 3700 0    50   ~ 0
-XY1
+AddressBus1
 Text Label 8250 3600 0    50   ~ 0
-XY0
+AddressBus0
 $Comp
 L 74xx:74LS04 U4
 U 1 1 5DD7AA43
