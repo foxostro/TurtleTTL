@@ -154,7 +154,7 @@ InsBus12
 Text Label 6400 3100 0    50   ~ 0
 InsBus11
 Text Label 6400 3200 0    50   ~ 0
-InsBus0
+InsBus10
 Text Label 6400 3300 0    50   ~ 0
 InsBus9
 Text Label 6400 3400 0    50   ~ 0
