@@ -887,7 +887,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5350 8700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5000 8700 2    50   ~ 0
-IRAMAddr15
+PC_IF15
 Wire Wire Line
 	4550 8700 5050 8700
 Entry Wire Line
