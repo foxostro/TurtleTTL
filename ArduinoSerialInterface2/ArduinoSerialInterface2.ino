@@ -1,7 +1,7 @@
 const int kPinSCK = 2;
 const int kPinMOSI[8] = {3, 4, 5, 6, 7, 8, 9, 10};
 const int kPinMISO[8]  = {11, 12, 13, A0, A1, A2, A3, A4};
-const byte kStatusSuccess = 0b10101010;
+const byte kStatusSuccess = 0xff;
 enum State {
   kStateIdle = 0,
   kStateWaitingForOutputByte
@@ -79,18 +79,22 @@ State doStateIdle(byte mosi) {
   State nextState = kStateIdle;
   switch (mosi) {
     case kCommandResetSerialLink:
+      //Serial.println("kCommandResetSerialLink");
       nextState = doCommandReset();
       break;
       
     case kCommandPutByte:
+      //Serial.println("kCommandPutByte");
       nextState = doCommandPutByte();
       break;
       
     case kCommandGetByte:
+      //Serial.println("kCommandGetByte");
       nextState = doCommandGetByte();
       break;
       
     case kCommandGetNumBytes:
+      //Serial.println("kCommandGetNumBytes");
       nextState = doCommandGetNumBytes();
       break;
   }
@@ -98,23 +102,32 @@ State doStateIdle(byte mosi) {
 }
 
 State doStateWaiting(byte mosi) {
+  //Serial.print("put byte: ");
   Serial.print((char)mosi);
+  //Serial.print("\n");
   set_miso(kStatusSuccess);
   return kStateIdle;
 }
 
 void loop() {
   wait_for_sck_rising_edge();
+  //Serial.println("rising edge of SCK");
   
   byte mosi = get_mosi();
   State nextState;
   
+  //Serial.print("mosi: ");
+  //Serial.print((int)mosi);
+  //Serial.print("\n");
+  
   switch (g_state) {
     case kStateIdle:
+      //Serial.println("kStateIdle");
       nextState = doStateIdle(mosi);
     break;
     
     case kStateWaitingForOutputByte:
+      //Serial.println("kStateWaitingForOutputByte");
       nextState = doStateWaiting(mosi);
     break;
   }
@@ -122,4 +135,5 @@ void loop() {
   g_state = nextState;
   
   wait_for_sck_falling_edge();
+  //Serial.println("falling edge of SCK");
 }
