@@ -229,27 +229,27 @@ Entry Wire Line
 Entry Wire Line
 	2850 2600 2950 2700
 Text GLabel 2200 1700 0    50   Input ~ 0
-PC[0..15]
+PC_IF[0..15]
 Wire Bus Line
 	2200 1700 2850 1700
 Entry Wire Line
 	2850 1900 2950 2000
-Text Label 3350 2100 2    50   ~ 0
-PC9
+Text Label 3300 2100 2    50   ~ 0
+PC_IF9
 Text Label 3350 2200 2    50   ~ 0
-PC10
+PC_IF10
 Text Label 3350 2300 2    50   ~ 0
-PC11
+PC_IF11
 Text Label 3350 2400 2    50   ~ 0
-PC12
+PC_IF12
 Text Label 3350 2500 2    50   ~ 0
-PC13
+PC_IF13
 Text Label 3350 2600 2    50   ~ 0
-PC14
+PC_IF14
 Text Label 3350 2700 2    50   ~ 0
-PC15
-Text Label 3350 2000 2    50   ~ 0
-PC8
+PC_IF15
+Text Label 3300 2000 2    50   ~ 0
+PC_IF8
 Wire Wire Line
 	2950 2700 3900 2700
 Wire Wire Line
@@ -655,22 +655,22 @@ Entry Wire Line
 	2850 4950 2950 5050
 Entry Wire Line
 	2850 4250 2950 4350
-Text Label 3350 4450 2    50   ~ 0
-PC1
-Text Label 3350 4550 2    50   ~ 0
-PC2
-Text Label 3350 4650 2    50   ~ 0
-PC3
-Text Label 3350 4750 2    50   ~ 0
-PC4
-Text Label 3350 4850 2    50   ~ 0
-PC5
-Text Label 3350 4950 2    50   ~ 0
-PC6
-Text Label 3350 5050 2    50   ~ 0
-PC7
-Text Label 3350 4350 2    50   ~ 0
-PC0
+Text Label 3300 4450 2    50   ~ 0
+PC_IF1
+Text Label 3300 4550 2    50   ~ 0
+PC_IF2
+Text Label 3300 4650 2    50   ~ 0
+PC_IF3
+Text Label 3300 4750 2    50   ~ 0
+PC_IF4
+Text Label 3300 4850 2    50   ~ 0
+PC_IF5
+Text Label 3300 4950 2    50   ~ 0
+PC_IF6
+Text Label 3300 5050 2    50   ~ 0
+PC_IF7
+Text Label 3300 4350 2    50   ~ 0
+PC_IF0
 Wire Wire Line
 	2950 5050 3900 5050
 Wire Wire Line
@@ -748,8 +748,6 @@ Wire Wire Line
 	6000 5350 5750 5350
 Wire Wire Line
 	5750 5350 5750 5950
-Wire Bus Line
-	5350 1900 5350 6700
 Wire Wire Line
 	2600 5350 2600 3000
 Wire Wire Line
@@ -767,6 +765,8 @@ Wire Wire Line
 Wire Wire Line
 	4900 2700 6000 2700
 Wire Wire Line
+	4900 5050 6000 5050
+Wire Wire Line
 	4900 2100 6000 2100
 Wire Wire Line
 	4900 2200 6000 2200
@@ -780,8 +780,6 @@ Wire Wire Line
 	4900 2600 6000 2600
 Wire Wire Line
 	4900 2000 6000 2000
-Wire Wire Line
-	4900 5050 6000 5050
 Wire Wire Line
 	4900 4450 6000 4450
 Wire Wire Line
@@ -798,6 +796,8 @@ Wire Wire Line
 	4900 4350 6000 4350
 Wire Bus Line
 	1800 6700 5350 6700
+Wire Bus Line
+	5350 1900 5350 6700
 Wire Bus Line
 	8050 1600 8050 4950
 Wire Bus Line
