@@ -388,14 +388,14 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 4350 2100 50  0001 C CNN
 	1    4350 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 950  3050 0    50   Input ~ 0
-PC[0..15]
+Text GLabel 1050 3050 0    50   Input ~ 0
+PC_IF[0..15]
 Entry Wire Line
 	950  2600 1050 2700
 Wire Wire Line
 	1050 2700 1600 2700
-Text Label 1400 2700 0    50   ~ 0
-PC15
+Text Label 1300 2700 0    50   ~ 0
+PC_IF15
 Entry Wire Line
 	3550 1500 3450 1400
 Entry Wire Line
@@ -458,8 +458,8 @@ Wire Bus Line
 Connection ~ 1050 750 
 Wire Bus Line
 	3150 900  950  900 
-Text Label 3650 2700 0    50   ~ 0
-PC15
+Text Label 3550 2700 0    50   ~ 0
+PC_IF15
 $Comp
 L power:VCC #PWR?
 U 1 1 5DA1423D
@@ -566,8 +566,8 @@ Entry Wire Line
 	5450 2600 5550 2700
 Wire Wire Line
 	5550 2700 6150 2700
-Text Label 5950 2700 0    50   ~ 0
-PC15
+Text Label 5850 2700 0    50   ~ 0
+PC_IF15
 $Comp
 L power:VCC #PWR?
 U 1 1 5DA1932D
@@ -674,8 +674,8 @@ Entry Wire Line
 	7750 2600 7850 2700
 Wire Wire Line
 	7850 2700 8450 2700
-Text Label 8250 2700 0    50   ~ 0
-PC15
+Text Label 8150 2700 0    50   ~ 0
+PC_IF15
 Wire Bus Line
 	8050 600  5750 600 
 Connection ~ 3450 600 
@@ -962,11 +962,11 @@ Wire Wire Line
 Connection ~ 3850 7600
 Connection ~ 1850 7900
 Wire Bus Line
-	950  2850 1100 2850
+	950  2850 1250 2850
 Wire Bus Line
-	1100 2850 1100 3050
+	1250 2850 1250 3050
 Wire Bus Line
-	950  3050 1100 3050
+	1050 3050 1250 3050
 $Comp
 L power:GND #PWR?
 U 1 1 5DBD46BA
