@@ -622,8 +622,6 @@ NoConn ~ 6400 5350
 NoConn ~ 6400 5250
 NoConn ~ 6400 5150
 NoConn ~ 6400 5050
-Text GLabel 1250 6850 0    50   Input ~ 0
-RegisterClock
 Wire Wire Line
 	5400 5750 4850 5750
 Wire Wire Line
@@ -929,6 +927,53 @@ F 3 "" H 5900 4550 50  0001 C CNN
 	1    5900 4550
 	1    0    0    -1  
 $EndComp
+Text GLabel 1250 6850 0    50   Input ~ 0
+ControlClock
+Text GLabel 3450 7500 0    50   Input ~ 0
+RegisterClock
+$Comp
+L Device:R R31
+U 1 1 5DE27F0C
+P 3750 7500
+F 0 "R31" V 3957 7500 50  0000 C CNN
+F 1 "100Ω" V 3866 7500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3680 7500 50  0001 C CNN
+F 3 "~" H 3750 7500 50  0001 C CNN
+	1    3750 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C83
+U 1 1 5DE28F0F
+P 4150 7500
+F 0 "C83" V 3898 7500 50  0000 C CNN
+F 1 "27pF" V 3989 7500 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4188 7350 50  0001 C CNN
+F 3 "~" H 4150 7500 50  0001 C CNN
+	1    4150 7500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0304
+U 1 1 5DE298A4
+P 4550 7550
+F 0 "#PWR0304" H 4550 7300 50  0001 C CNN
+F 1 "GND" H 4555 7377 50  0000 C CNN
+F 2 "" H 4550 7550 50  0001 C CNN
+F 3 "" H 4550 7550 50  0001 C CNN
+	1    4550 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 7550 4550 7500
+Wire Wire Line
+	4550 7500 4300 7500
+Wire Wire Line
+	4000 7500 3900 7500
+Wire Wire Line
+	3600 7500 3450 7500
+Text Notes 2750 7950 0    50   ~ 0
+AC termination of the RegisterClock signal.\nThis is here because it’s where I hacked it\nin on the Rev 1 board — I know it works\nwhen placed here.
 Wire Bus Line
 	2150 1250 2150 1550
 Wire Bus Line

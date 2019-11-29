@@ -388,7 +388,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 4350 2100 50  0001 C CNN
 	1    4350 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 950  3050 0    50   Input ~ 0
+Text GLabel 1050 3050 0    50   Input ~ 0
 PC_IF[0..15]
 Entry Wire Line
 	950  2600 1050 2700
@@ -962,11 +962,11 @@ Wire Wire Line
 Connection ~ 3850 7600
 Connection ~ 1850 7900
 Wire Bus Line
-	950  2850 1100 2850
+	950  2850 1250 2850
 Wire Bus Line
-	1100 2850 1100 3050
+	1250 2850 1250 3050
 Wire Bus Line
-	950  3050 1100 3050
+	1050 3050 1250 3050
 $Comp
 L power:GND #PWR?
 U 1 1 5DBD46BA
