@@ -802,4 +802,49 @@ F 3 "" H -450 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	-450 4650 -450 4700
+Text GLabel 2800 7450 0    50   Input ~ 0
+RegisterClock
+$Comp
+L Device:R R?
+U 1 1 5DE42A90
+P 3100 7450
+F 0 "R?" V 3307 7450 50  0000 C CNN
+F 1 "100Ω" V 3216 7450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3030 7450 50  0001 C CNN
+F 3 "~" H 3100 7450 50  0001 C CNN
+	1    3100 7450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DE42A96
+P 3500 7450
+F 0 "C?" V 3248 7450 50  0000 C CNN
+F 1 "27pF" V 3339 7450 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3538 7300 50  0001 C CNN
+F 3 "~" H 3500 7450 50  0001 C CNN
+	1    3500 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE42A9C
+P 3900 7500
+F 0 "#PWR?" H 3900 7250 50  0001 C CNN
+F 1 "GND" H 3905 7327 50  0000 C CNN
+F 2 "" H 3900 7500 50  0001 C CNN
+F 3 "" H 3900 7500 50  0001 C CNN
+	1    3900 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 7500 3900 7450
+Wire Wire Line
+	3900 7450 3650 7450
+Wire Wire Line
+	3350 7450 3250 7450
+Wire Wire Line
+	2950 7450 2800 7450
+Text Notes 2100 7900 0    50   ~ 0
+AC termination of the RegisterClock signal.\nThis is here because it’s where I hacked it\nin on the Rev 1 board — I know it works\nwhen placed here.
 $EndSCHEMATC
