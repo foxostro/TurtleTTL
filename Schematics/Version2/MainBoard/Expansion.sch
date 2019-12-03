@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 18 22
+Sheet 17 23
 Title "Expansion"
 Date ""
 Rev ""
@@ -2840,6 +2840,31 @@ Wire Wire Line
 	9750 2750 9750 7000
 Wire Wire Line
 	9750 7000 10400 7000
+Connection ~ 9750 2750
+Text Label 9900 7200 0    50   ~ 0
+ControlClock
+Text Label 9900 2950 0    50   ~ 0
+ControlClock
+Text Label 6500 2950 0    50   ~ 0
+ControlClock
+Text Label 6500 7200 0    50   ~ 0
+ControlClock
+Text Label 3300 7200 0    50   ~ 0
+ControlClock
+Text Label 3300 2950 0    50   ~ 0
+ControlClock
+Text Label 3150 2750 0    50   ~ 0
+~RST
+Text Label 3150 7000 0    50   ~ 0
+~RST
+Text Label 6350 7000 0    50   ~ 0
+~RST
+Text Label 6350 2750 0    50   ~ 0
+~RST
+Text Label 9750 2750 0    50   ~ 0
+~RST
+Text Label 9750 7000 0    50   ~ 0
+~RST
 Wire Bus Line
 	12250 650  12250 6800
 Wire Bus Line
@@ -2876,29 +2901,4 @@ Wire Bus Line
 	2900 1100 2900 8900
 Wire Bus Line
 	5200 1100 5200 8800
-Connection ~ 9750 2750
-Text Label 9900 7200 0    50   ~ 0
-ControlClock
-Text Label 9900 2950 0    50   ~ 0
-ControlClock
-Text Label 6500 2950 0    50   ~ 0
-ControlClock
-Text Label 6500 7200 0    50   ~ 0
-ControlClock
-Text Label 3300 7200 0    50   ~ 0
-ControlClock
-Text Label 3300 2950 0    50   ~ 0
-ControlClock
-Text Label 3150 2750 0    50   ~ 0
-~RST
-Text Label 3150 7000 0    50   ~ 0
-~RST
-Text Label 6350 7000 0    50   ~ 0
-~RST
-Text Label 6350 2750 0    50   ~ 0
-~RST
-Text Label 9750 2750 0    50   ~ 0
-~RST
-Text Label 9750 7000 0    50   ~ 0
-~RST
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 22 22
+Sheet 21 23
 Title "Power Supply"
 Date ""
 Rev ""
@@ -58,10 +58,10 @@ F 3 "~" H 5900 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 3450 5900 3450
+	6450 3450 6300 3450
 Connection ~ 5900 3450
 Wire Wire Line
-	5900 3750 6450 3750
+	5900 3750 6300 3750
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5DCFEDDC
@@ -107,4 +107,36 @@ Connection ~ 5900 3750
 Connection ~ 5300 3750
 Wire Wire Line
 	5300 3750 5300 3950
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E1FADC9
+P 6300 3950
+F 0 "#FLG0101" H 6300 4025 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 4123 50  0000 C CNN
+F 2 "" H 6300 3950 50  0001 C CNN
+F 3 "~" H 6300 3950 50  0001 C CNN
+	1    6300 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3950 6300 3750
+Connection ~ 6300 3750
+Wire Wire Line
+	6300 3750 6450 3750
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E1FB907
+P 6300 3250
+F 0 "#FLG0102" H 6300 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 3423 50  0000 C CNN
+F 2 "" H 6300 3250 50  0001 C CNN
+F 3 "~" H 6300 3250 50  0001 C CNN
+	1    6300 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3250 6300 3450
+Connection ~ 6300 3450
+Wire Wire Line
+	6300 3450 5900 3450
 $EndSCHEMATC

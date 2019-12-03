@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 20 22
+Sheet 19 23
 Title "Link Register"
 Date ""
 Rev ""
@@ -180,9 +180,9 @@ AR Path="/5D2C0CA7/5DA713C0" Ref="U?"  Part="1"
 AR Path="/5D7BD0EA/5DA713C0" Ref="U?"  Part="1" 
 AR Path="/5DA6B866/5DA713C0" Ref="U76"  Part="1" 
 F 0 "U76" H 6250 3300 50  0000 C CNN
-F 1 "74LS245" H 6250 3200 50  0000 C CNN
+F 1 "74AHCT245" H 6250 3200 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm" H 6500 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6500 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn54ahct245.pdf" H 6500 2500 50  0001 C CNN
 	1    6500 2500
 	1    0    0    -1  
 $EndComp
@@ -314,19 +314,6 @@ Text GLabel 2200 2900 0    50   Input ~ 0
 RegisterClock
 Wire Wire Line
 	2450 3600 5750 3600
-$Comp
-L power:VCC #PWR?
-U 1 1 5DA7142E
-P 6000 2900
-AR Path="/5D2C0CA7/5DA7142E" Ref="#PWR?"  Part="1" 
-AR Path="/5DA6B866/5DA7142E" Ref="#PWR0296"  Part="1" 
-F 0 "#PWR0296" H 6000 2750 50  0001 C CNN
-F 1 "VCC" V 6018 3027 50  0000 L CNN
-F 2 "" H 6000 2900 50  0001 C CNN
-F 3 "" H 6000 2900 50  0001 C CNN
-	1    6000 2900
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6000 3000 5750 3000
 Wire Wire Line
@@ -605,9 +592,9 @@ AR Path="/5D2C0CA7/5DAA9E65" Ref="U?"  Part="1"
 AR Path="/5D7BD0EA/5DAA9E65" Ref="U?"  Part="1" 
 AR Path="/5DA6B866/5DAA9E65" Ref="U77"  Part="1" 
 F 0 "U77" H 6250 5650 50  0000 C CNN
-F 1 "74LS245" H 6250 5550 50  0000 C CNN
+F 1 "74AHCT245" H 6250 5550 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm" H 6500 4850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6500 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn54ahct245.pdf" H 6500 4850 50  0001 C CNN
 	1    6500 4850
 	1    0    0    -1  
 $EndComp
@@ -762,6 +749,19 @@ Wire Wire Line
 Connection ~ 2700 2900
 Wire Wire Line
 	2700 2900 3900 2900
+$Comp
+L power:VCC #PWR0242
+U 1 1 5E1DE240
+P 5950 2900
+F 0 "#PWR0242" H 5950 2750 50  0001 C CNN
+F 1 "VCC" V 5968 3027 50  0000 L CNN
+F 2 "" H 5950 2900 50  0001 C CNN
+F 3 "" H 5950 2900 50  0001 C CNN
+	1    5950 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 2900 6000 2900
 Wire Wire Line
 	4900 2700 6000 2700
 Wire Wire Line

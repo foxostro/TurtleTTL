@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 22
+Sheet 20 23
 Title ""
 Date ""
 Rev ""
@@ -505,13 +505,12 @@ F 3 "~" H 6000 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5600 5850 5600 6200
-NoConn ~ 5050 2350
-Text Notes 3550 2250 0    50   ~ 0
-TODO: Need a control signal for Shifter output
 NoConn ~ 7150 2250
 NoConn ~ 7150 2450
 NoConn ~ 7150 2650
 NoConn ~ 5050 2550
+Text GLabel 5050 2350 0    50   Input ~ 0
+~ShifterOut
 Wire Bus Line
 	7100 2950 7100 3550
 Wire Bus Line

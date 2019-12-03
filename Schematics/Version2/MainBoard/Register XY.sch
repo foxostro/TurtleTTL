@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 22
+Sheet 3 23
 Title "Registers X and Y"
 Date ""
 Rev ""
@@ -500,22 +500,6 @@ Wire Wire Line
 	2450 1000 4550 1000
 Wire Wire Line
 	2450 1300 2450 1000
-Connection ~ 2450 1000
-Wire Wire Line
-	2450 950  2450 1000
-$Comp
-L power:VCC #PWR?
-U 1 1 5DBCA97A
-P 2450 950
-AR Path="/5D2C07CD/5DBCA97A" Ref="#PWR?"  Part="1" 
-AR Path="/5D7BD0EA/5DBCA97A" Ref="#PWR0256"  Part="1" 
-F 0 "#PWR0256" H 2450 800 50  0001 C CNN
-F 1 "VCC" H 2467 1123 50  0000 C CNN
-F 2 "" H 2450 950 50  0001 C CNN
-F 3 "" H 2450 950 50  0001 C CNN
-	1    2450 950 
-	1    0    0    -1  
-$EndComp
 Text Label 3500 1700 0    50   ~ 0
 DataBus5
 Text Label 3500 1600 0    50   ~ 0
@@ -624,9 +608,9 @@ P 3250 4950
 AR Path="/5D2C0CA7/5DDC9F0A" Ref="U?"  Part="1" 
 AR Path="/5D7BD0EA/5DDC9F0A" Ref="U7"  Part="1" 
 F 0 "U7" H 3000 5750 50  0000 C CNN
-F 1 "74LS245" H 3000 5650 50  0000 C CNN
+F 1 "74AHCT245" H 3000 5650 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm" H 3250 4950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 3250 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn54ahct245.pdf" H 3250 4950 50  0001 C CNN
 	1    3250 4950
 	0    1    1    0   
 $EndComp
@@ -1058,9 +1042,9 @@ P 5500 4950
 AR Path="/5D2C0CA7/5DDD930F" Ref="U?"  Part="1" 
 AR Path="/5D7BD0EA/5DDD930F" Ref="U9"  Part="1" 
 F 0 "U9" H 5250 5750 50  0000 C CNN
-F 1 "74LS245" H 5250 5650 50  0000 C CNN
+F 1 "74AHCT245" H 5250 5650 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm" H 5500 4950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 5500 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn54ahct245.pdf" H 5500 4950 50  0001 C CNN
 	1    5500 4950
 	0    1    1    0   
 $EndComp
@@ -1090,10 +1074,26 @@ F 3 "" H 5100 4450 50  0001 C CNN
 	1    5100 4450
 	1    0    0    -1  
 $EndComp
+Text GLabel 1400 6550 0    50   Input ~ 0
+XY[0..15]
+Text GLabel 1650 6550 2    50   Output ~ 0
+AddressBus[0..15]
 Wire Bus Line
-	3150 6500 9900 6500
-Wire Bus Line
-	2950 4150 9600 4150
+	1650 6550 1400 6550
+$Comp
+L power:VCC #PWR0240
+U 1 1 5E1BD4C2
+P 2450 900
+F 0 "#PWR0240" H 2450 750 50  0001 C CNN
+F 1 "VCC" H 2467 1073 50  0000 C CNN
+F 2 "" H 2450 900 50  0001 C CNN
+F 3 "" H 2450 900 50  0001 C CNN
+	1    2450 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 900  2450 1000
+Connection ~ 2450 1000
 Wire Bus Line
 	9600 1200 9600 4150
 Wire Bus Line
@@ -1110,10 +1110,8 @@ Wire Bus Line
 	3400 1100 3400 1800
 Wire Bus Line
 	1350 1100 1350 1800
-Text GLabel 1400 6550 0    50   Input ~ 0
-XY[0..15]
-Text GLabel 1650 6550 2    50   Output ~ 0
-AddressBus[0..15]
 Wire Bus Line
-	1650 6550 1400 6550
+	3150 6500 9900 6500
+Wire Bus Line
+	2950 4150 9600 4150
 $EndSCHEMATC

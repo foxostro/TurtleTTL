@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 9 22
+Sheet 9 23
 Title "Instruction Register"
 Date ""
 Rev ""
@@ -21,9 +21,9 @@ P 4350 3450
 AR Path="/5D2C14C3/5D25C885" Ref="U?"  Part="1" 
 AR Path="/5D8005AF/5D833E49/5D25C885" Ref="U39"  Part="1" 
 F 0 "U39" H 4100 4250 50  0000 C CNN
-F 1 "74F574" H 4100 4150 50  0000 C CNN
+F 1 "74AHCT574" H 4100 4150 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm" H 4350 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS574" H 4350 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct574.pdf" H 4350 3450 50  0001 C CNN
 	1    4350 3450
 	1    0    0    -1  
 $EndComp
@@ -34,9 +34,9 @@ P 8950 3450
 AR Path="/5D2C14C3/5D26023C" Ref="U?"  Part="1" 
 AR Path="/5D8005AF/5D833E49/5D26023C" Ref="U42"  Part="1" 
 F 0 "U42" H 8700 4250 50  0000 C CNN
-F 1 "74F574" H 8700 4150 50  0000 C CNN
+F 1 "74AHCT574" H 8700 4150 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm" H 8950 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS574" H 8950 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct574.pdf" H 8950 3450 50  0001 C CNN
 	1    8950 3450
 	1    0    0    -1  
 $EndComp

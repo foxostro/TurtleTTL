@@ -954,7 +954,8 @@ AR Path="/5D2C0CE4/5DA7DC98" Ref="J?"  Part="1"
 AR Path="/5D2C0D13/5DA7DC98" Ref="J?"  Part="1" 
 AR Path="/5D2C0CA7/5DA7DC98" Ref="J?"  Part="1" 
 AR Path="/5D2C13FD/5DA7DC98" Ref="J?"  Part="1" 
-F 0 "J?" V 5300 6350 50  0000 C CNN
+AR Path="/5DA7DC98" Ref="J3"  Part="1" 
+F 0 "J3" V 5300 6350 50  0000 C CNN
 F 1 "Control Word LED Connector [24..31]" V 5400 6350 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 5150 6400 50  0001 C CNN
 F 3 "~" H 5150 6400 50  0001 C CNN
@@ -971,7 +972,8 @@ AR Path="/5D2C0CE4/5DA8731D" Ref="J?"  Part="1"
 AR Path="/5D2C0D13/5DA8731D" Ref="J?"  Part="1" 
 AR Path="/5D2C0CA7/5DA8731D" Ref="J?"  Part="1" 
 AR Path="/5D2C13FD/5DA8731D" Ref="J?"  Part="1" 
-F 0 "J?" V 6900 6350 50  0000 C CNN
+AR Path="/5DA8731D" Ref="J4"  Part="1" 
+F 0 "J4" V 6900 6350 50  0000 C CNN
 F 1 "Control Word LED Connector [16..23]" V 7000 6350 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 6750 6400 50  0001 C CNN
 F 3 "~" H 6750 6400 50  0001 C CNN
@@ -988,7 +990,8 @@ AR Path="/5D2C0CE4/5DA8CAD0" Ref="J?"  Part="1"
 AR Path="/5D2C0D13/5DA8CAD0" Ref="J?"  Part="1" 
 AR Path="/5D2C0CA7/5DA8CAD0" Ref="J?"  Part="1" 
 AR Path="/5D2C13FD/5DA8CAD0" Ref="J?"  Part="1" 
-F 0 "J?" V 8450 6350 50  0000 C CNN
+AR Path="/5DA8CAD0" Ref="J5"  Part="1" 
+F 0 "J5" V 8450 6350 50  0000 C CNN
 F 1 "Control Word LED Connector [8..15]" V 8550 6350 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 8300 6400 50  0001 C CNN
 F 3 "~" H 8300 6400 50  0001 C CNN
@@ -1005,7 +1008,8 @@ AR Path="/5D2C0CE4/5DA92064" Ref="J?"  Part="1"
 AR Path="/5D2C0D13/5DA92064" Ref="J?"  Part="1" 
 AR Path="/5D2C0CA7/5DA92064" Ref="J?"  Part="1" 
 AR Path="/5D2C13FD/5DA92064" Ref="J?"  Part="1" 
-F 0 "J?" V 9950 6350 50  0000 C CNN
+AR Path="/5DA92064" Ref="J6"  Part="1" 
+F 0 "J6" V 9950 6350 50  0000 C CNN
 F 1 "Control Word LED Connector [0..7]" V 10050 6350 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 9800 6400 50  0001 C CNN
 F 3 "~" H 9800 6400 50  0001 C CNN
@@ -1021,7 +1025,8 @@ AR Path="/5D2C0CA7/5DA98D34" Ref="#PWR?"  Part="1"
 AR Path="/5D7BD0EA/5DA98D34" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C12A5/5DA98D34" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C13FD/5DA98D34" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5550 5850 50  0001 C CNN
+AR Path="/5DA98D34" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 5550 5850 50  0001 C CNN
 F 1 "GND" H 5555 5927 50  0000 C CNN
 F 2 "" H 5550 6100 50  0001 C CNN
 F 3 "" H 5550 6100 50  0001 C CNN
@@ -1039,7 +1044,8 @@ AR Path="/5D2C0CA7/5DA9D201" Ref="#PWR?"  Part="1"
 AR Path="/5D7BD0EA/5DA9D201" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C12A5/5DA9D201" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C13FD/5DA9D201" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7150 5850 50  0001 C CNN
+AR Path="/5DA9D201" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 7150 5850 50  0001 C CNN
 F 1 "GND" H 7155 5927 50  0000 C CNN
 F 2 "" H 7150 6100 50  0001 C CNN
 F 3 "" H 7150 6100 50  0001 C CNN
@@ -1057,7 +1063,8 @@ AR Path="/5D2C0CA7/5DAA17E2" Ref="#PWR?"  Part="1"
 AR Path="/5D7BD0EA/5DAA17E2" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C12A5/5DAA17E2" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C13FD/5DAA17E2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8700 5850 50  0001 C CNN
+AR Path="/5DAA17E2" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 8700 5850 50  0001 C CNN
 F 1 "GND" H 8705 5927 50  0000 C CNN
 F 2 "" H 8700 6100 50  0001 C CNN
 F 3 "" H 8700 6100 50  0001 C CNN
@@ -1075,7 +1082,8 @@ AR Path="/5D2C0CA7/5DAA5E2C" Ref="#PWR?"  Part="1"
 AR Path="/5D7BD0EA/5DAA5E2C" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C12A5/5DAA5E2C" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C13FD/5DAA5E2C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10200 5850 50  0001 C CNN
+AR Path="/5DAA5E2C" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 10200 5850 50  0001 C CNN
 F 1 "GND" H 10205 5927 50  0000 C CNN
 F 2 "" H 10200 6100 50  0001 C CNN
 F 3 "" H 10200 6100 50  0001 C CNN

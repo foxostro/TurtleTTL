@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 11 22
+Sheet 22 23
 Title "Execute"
 Date ""
 Rev ""
@@ -25,9 +25,9 @@ AR Path="/5D7BD0EA/5D9156B5" Ref="U?"  Part="1"
 AR Path="/5D2C0B92/5D9156B5" Ref="U?"  Part="1" 
 AR Path="/5D2C13FD/5D9156B5" Ref="U48"  Part="1" 
 F 0 "U48" H 6450 3000 50  0000 C CNN
-F 1 "74LS245" H 6450 2900 50  0000 C CNN
+F 1 "74AHCT245" H 6450 2900 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm" H 6750 2200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6750 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn54ahct245.pdf" H 6750 2200 50  0001 C CNN
 	1    6750 2200
 	1    0    0    -1  
 $EndComp
@@ -520,8 +520,30 @@ F 3 "" H 1700 7400 50  0001 C CNN
 	1    1700 7400
 	1    0    0    -1  
 $EndComp
-Text Notes 3900 4250 0    50   ~ 0
-There are\nunused control\nsignals here\nfor future\nexpansion.
+Entry Wire Line
+	4300 4550 4400 4450
+Wire Wire Line
+	4400 3800 4400 4450
+Text Label 4400 4400 1    50   ~ 0
+ControlWord27
+Text GLabel 4400 3800 1    50   Output ~ 0
+~ShifterOut
+Entry Wire Line
+	4150 4550 4250 4450
+Wire Wire Line
+	4250 3800 4250 4450
+Text Label 4250 4400 1    50   ~ 0
+ControlWord28
+Text GLabel 4250 3800 1    50   Output ~ 0
+~KI
+Entry Wire Line
+	4000 4550 4100 4450
+Wire Wire Line
+	4100 3800 4100 4450
+Text Label 4100 4400 1    50   ~ 0
+ControlWord29
+Text GLabel 4100 3800 1    50   Output ~ 0
+~KO
 Wire Bus Line
 	1100 1050 5850 1050
 Wire Bus Line
