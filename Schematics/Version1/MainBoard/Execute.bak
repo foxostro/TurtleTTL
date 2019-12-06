@@ -57,7 +57,7 @@ AR Path="/5D7BD0EA/5D9156B5" Ref="U?"  Part="1"
 AR Path="/5D2C0B92/5D9156B5" Ref="U?"  Part="1" 
 AR Path="/5D2C13FD/5D9156B5" Ref="U48"  Part="1" 
 F 0 "U48" H 6450 3000 50  0000 C CNN
-F 1 "74LS245" H 6450 2900 50  0000 C CNN
+F 1 "74AHCT245" H 6450 2900 50  0000 C CNN
 F 2 "Package_DIP:DIP-20_W7.62mm" H 6750 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6750 2200 50  0001 C CNN
 	1    6750 2200
@@ -854,6 +854,8 @@ F 3 "" H 1700 7400 50  0001 C CNN
 	1    1700 7400
 	1    0    0    -1  
 $EndComp
+Text Notes 3900 4250 0    50   ~ 0
+There are\nunused control\nsignals here\nfor future\nexpansion.
 Wire Bus Line
 	1100 1050 5850 1050
 Wire Bus Line
@@ -864,6 +866,4 @@ Wire Bus Line
 	1500 4550 8350 4550
 Wire Bus Line
 	1500 5050 8000 5050
-Text Notes 3900 4250 0    50   ~ 0
-There are\nunused control\nsignals here\nfor future\nexpansion.
 $EndSCHEMATC
