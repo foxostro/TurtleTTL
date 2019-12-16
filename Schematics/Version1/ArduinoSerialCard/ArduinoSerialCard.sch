@@ -519,39 +519,37 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR0118
 U 1 1 5DEA69CD
-P 2700 5300
-F 0 "#PWR0118" H 2700 5150 50  0001 C CNN
-F 1 "VCC" V 2718 5427 50  0000 L CNN
-F 2 "" H 2700 5300 50  0001 C CNN
-F 3 "" H 2700 5300 50  0001 C CNN
-	1    2700 5300
+P 2700 5100
+F 0 "#PWR0118" H 2700 4950 50  0001 C CNN
+F 1 "VCC" V 2718 5227 50  0000 L CNN
+F 2 "" H 2700 5100 50  0001 C CNN
+F 3 "" H 2700 5100 50  0001 C CNN
+	1    2700 5100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
+	2700 5100 2800 5100
+Wire Wire Line
+	2800 5200 2700 5200
+Wire Wire Line
+	2700 5200 2700 5250
+Wire Wire Line
 	2700 5300 2800 5300
-Wire Wire Line
-	2800 5100 2700 5100
-Wire Wire Line
-	2700 5100 2700 5150
-Wire Wire Line
-	2700 5200 2800 5200
 Wire Wire Line
 	3800 2000 3800 3450
 Wire Wire Line
 	3800 3450 2250 3450
 Wire Wire Line
-	2250 5150 2700 5150
+	2250 5250 2700 5250
 Wire Wire Line
 	3350 2000 3800 2000
-Connection ~ 2700 5150
+Connection ~ 2700 5250
 Wire Wire Line
-	2700 5150 2700 5200
+	2700 5250 2700 5300
 Wire Wire Line
 	3800 4600 4700 4600
 Wire Wire Line
 	2050 1400 2050 4600
-Wire Wire Line
-	2250 3450 2250 5150
 Wire Wire Line
 	3350 1200 4600 1200
 Wire Wire Line
@@ -870,4 +868,6 @@ Connection ~ 9300 6100
 NoConn ~ 7200 900 
 Text Notes 7950 1350 0    50   ~ 0
 TODO: The next version of this\nshould have an active-low Reset\nline on the connector.
+Wire Wire Line
+	2250 3450 2250 5250
 $EndSCHEMATC
