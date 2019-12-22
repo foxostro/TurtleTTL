@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 10 23
+Sheet 9 21
 Title "Instruction Decode"
 Date ""
 Rev ""
@@ -100,7 +100,7 @@ IR6
 Text Label 18050 5050 0    50   ~ 0
 IR7
 Text GLabel 16350 5250 0    50   Input ~ 0
-ControlClock
+ControlClock0
 $Comp
 L power:GND #PWR0129
 U 1 1 5DB73C30
@@ -217,9 +217,9 @@ U 1 1 5DB5EC09
 P 4400 7450
 AR Path="/5D2C0AA0/5DB5EC09" Ref="U?"  Part="1" 
 AR Path="/5D2C0B92/5DB5EC09" Ref="U17"  Part="1" 
-F 0 "U17" H 4050 7650 50  0000 C CNN
-F 1 "GLS29EE010" H 4050 7550 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 4400 7450 50  0001 C CNN
+F 0 "U17" H 3950 7650 50  0000 C CNN
+F 1 "Microcode ROM 2" H 3950 7550 50  0000 C CNN
+F 2 "Package_LCC:PLCC-32_THT-Socket" H 4400 7450 50  0001 C CNN
 F 3 "" H 4400 7450 50  0001 C CNN
 	1    4400 7450
 	1    0    0    -1  
@@ -230,9 +230,9 @@ U 1 1 5DB5EC5B
 P 4400 10400
 AR Path="/5D2C0AA0/5DB5EC5B" Ref="U?"  Part="1" 
 AR Path="/5D2C0B92/5DB5EC5B" Ref="U24"  Part="1" 
-F 0 "U24" H 4050 10600 50  0000 C CNN
-F 1 "GLS29EE010" H 4050 10500 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 4400 10400 50  0001 C CNN
+F 0 "U24" H 3950 10600 50  0000 C CNN
+F 1 "Microcode ROM 1" H 3950 10500 50  0000 C CNN
+F 2 "Package_LCC:PLCC-32_THT-Socket" H 4400 10400 50  0001 C CNN
 F 3 "" H 4400 10400 50  0001 C CNN
 	1    4400 10400
 	1    0    0    -1  
@@ -240,7 +240,7 @@ $EndComp
 Text GLabel 2600 13450 0    50   Input ~ 0
 IR[8..15]
 Text GLabel 2600 13600 0    50   Input ~ 0
-ControlClock
+ControlClock2
 $Comp
 L 74xx:74LS574 U?
 U 1 1 5DB75B66
@@ -894,19 +894,15 @@ Text GLabel 11200 7650 2    50   Output ~ 0
 ControlWord[0..31]
 Wire Bus Line
 	7150 7650 11200 7650
-Text Notes 2100 11250 0    50   ~ 0
-Microcode ROM 1
-Text Notes 2050 8300 0    50   ~ 0
-Microcode ROM 2
 $Comp
 L Memory_EEPROM:GLS29EE010 U?
 U 1 1 5EAAF06E
 P 4400 4500
 AR Path="/5D2C0AA0/5EAAF06E" Ref="U?"  Part="1" 
 AR Path="/5D2C0B92/5EAAF06E" Ref="U16"  Part="1" 
-F 0 "U16" H 4050 4700 50  0000 C CNN
-F 1 "GLS29EE010" H 4050 4600 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 4400 4500 50  0001 C CNN
+F 0 "U16" H 3950 4700 50  0000 C CNN
+F 1 "Microcode ROM 3" H 3950 4600 50  0000 C CNN
+F 2 "Package_LCC:PLCC-32_THT-Socket" H 4400 4500 50  0001 C CNN
 F 3 "" H 4400 4500 50  0001 C CNN
 	1    4400 4500
 	1    0    0    -1  
@@ -1220,17 +1216,15 @@ Connection ~ 10800 14300
 Connection ~ 10800 14600
 Connection ~ 3050 8350
 Connection ~ 3150 8450
-Text Notes 2100 5650 0    50   ~ 0
-Microcode ROM 3
 $Comp
 L Memory_EEPROM:GLS29EE010 U?
 U 1 1 5EAAF07C
 P 4400 1550
 AR Path="/5D2C0AA0/5EAAF07C" Ref="U?"  Part="1" 
 AR Path="/5D2C0B92/5EAAF07C" Ref="U5"  Part="1" 
-F 0 "U5" H 4050 1750 50  0000 C CNN
-F 1 "GLS29EE010" H 4050 1650 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 4400 1550 50  0001 C CNN
+F 0 "U5" H 3850 1750 50  0000 C CNN
+F 1 "Microcode ROM 4" H 3900 1650 50  0000 C CNN
+F 2 "Package_LCC:PLCC-32_THT-Socket" H 4400 1550 50  0001 C CNN
 F 3 "" H 4400 1550 50  0001 C CNN
 	1    4400 1550
 	1    0    0    -1  
@@ -1491,8 +1485,6 @@ Wire Wire Line
 	5100 5500 5100 2550
 Wire Wire Line
 	5100 2550 5400 2550
-Text Notes 2100 2700 0    50   ~ 0
-Microcode ROM 4
 Connection ~ 3050 5400
 Connection ~ 3150 5500
 Connection ~ 5100 5500
@@ -1538,17 +1530,6 @@ Wire Wire Line
 Connection ~ 9050 14600
 Wire Wire Line
 	9050 14600 8800 14600
-$Comp
-L power:VCC #PWR0212
-U 1 1 5DD15337
-P 3700 3450
-F 0 "#PWR0212" H 3700 3300 50  0001 C CNN
-F 1 "VCC" V 3718 3577 50  0000 L CNN
-F 2 "" H 3700 3450 50  0001 C CNN
-F 3 "" H 3700 3450 50  0001 C CNN
-	1    3700 3450
-	0    -1   -1   0   
-$EndComp
 Connection ~ 11800 14300
 Connection ~ 11800 14600
 Text Label 18150 10000 1    50   ~ 0
@@ -1917,4 +1898,15 @@ Wire Bus Line
 	3350 1550 3350 13450
 Wire Bus Line
 	15200 9350 21100 9350
+$Comp
+L power:VCC #PWR0212
+U 1 1 5E058274
+P 3700 3450
+F 0 "#PWR0212" H 3700 3300 50  0001 C CNN
+F 1 "VCC" V 3718 3577 50  0000 L CNN
+F 2 "" H 3700 3450 50  0001 C CNN
+F 3 "" H 3700 3450 50  0001 C CNN
+	1    3700 3450
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

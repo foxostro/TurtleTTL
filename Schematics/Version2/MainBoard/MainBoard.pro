@@ -1,4 +1,4 @@
-update=Monday, December 02, 2019 at 12:28:10 AM
+update=Saturday, December 21, 2019 at 03:31:28 PM
 version=1
 last_client=kicad
 [general]
@@ -12,16 +12,6 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -33,13 +23,13 @@ AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.1524
-MinViaDiameter=0.452399
+MinViaDiameter=0.604799
 MinViaDrill=0.299999
 MinMicroViaDiameter=0.452399
 MinMicroViaDrill=0.299999
 MinHoleToHole=0.1524
 TrackWidth1=0.1524
-ViaDiameter1=0.452399
+ViaDiameter1=0.604799
 ViaDrill1=0.299999
 dPairWidth1=0.2
 dPairGap1=0.25
@@ -69,8 +59,18 @@ SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.In1.Cu]
-Name=GND.Cu
+Name=In1.Cu
 Type=1
 [pcbnew/Layer.In2.Cu]
-Name=VCC.Cu
+Name=In2.Cu
 Type=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 17 23
+Sheet 14 21
 Title "Expansion"
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 "TurtleTTL provides several connectors for expansion cards."
 $EndDescr
 Text GLabel 2550 950  0    50   Input ~ 0
-RegisterClock
+RegisterClock0
 Text GLabel 2550 650  0    50   Input ~ 0
 ~PO[0..7]
 Text GLabel 2550 800  0    50   Input ~ 0
@@ -326,8 +326,6 @@ Text Label 4700 2450 0    50   ~ 0
 ~PI2
 Text Label 4700 2650 0    50   ~ 0
 ~PO2
-Text Label 4550 2850 0    50   ~ 0
-RegisterClock
 Text GLabel 2550 1250 0    50   Input ~ 0
 DataBus[0..7]
 Entry Wire Line
@@ -718,8 +716,6 @@ Text Label 4700 6700 0    50   ~ 0
 ~PI5
 Text Label 4700 6900 0    50   ~ 0
 ~PO5
-Text Label 4550 7100 0    50   ~ 0
-RegisterClock
 Entry Wire Line
 	5300 9500 5400 9600
 Wire Wire Line
@@ -1159,8 +1155,6 @@ Text Label 7900 2450 0    50   ~ 0
 ~PI3
 Text Label 7900 2650 0    50   ~ 0
 ~PO3
-Text Label 7750 2850 0    50   ~ 0
-RegisterClock
 Entry Wire Line
 	8500 5250 8600 5350
 Wire Wire Line
@@ -1555,8 +1549,6 @@ Text Label 7900 6700 0    50   ~ 0
 ~PI6
 Text Label 7900 6900 0    50   ~ 0
 ~PO6
-Text Label 7750 7100 0    50   ~ 0
-RegisterClock
 Entry Wire Line
 	8500 9500 8600 9600
 Wire Wire Line
@@ -1791,8 +1783,6 @@ Wire Wire Line
 	10050 6600 10050 6800
 Entry Wire Line
 	11900 9500 12000 9600
-Text Label 11150 7100 0    50   ~ 0
-RegisterClock
 Text Label 11300 6900 0    50   ~ 0
 ~PO7
 Text Label 11300 6700 0    50   ~ 0
@@ -2215,8 +2205,6 @@ Wire Wire Line
 	10050 2350 10050 2550
 Entry Wire Line
 	11900 5250 12000 5350
-Text Label 11150 2850 0    50   ~ 0
-RegisterClock
 Text Label 11300 2450 0    50   ~ 0
 ~PI4
 Wire Wire Line
@@ -2723,7 +2711,7 @@ Wire Wire Line
 Text GLabel 2550 1400 0    50   Input ~ 0
 ~RST
 Text GLabel 2550 1550 0    50   Input ~ 0
-ControlClock
+ControlClock1
 Wire Wire Line
 	3800 2950 3300 2950
 Wire Wire Line
@@ -2841,18 +2829,6 @@ Wire Wire Line
 Wire Wire Line
 	9750 7000 10400 7000
 Connection ~ 9750 2750
-Text Label 9900 7200 0    50   ~ 0
-ControlClock
-Text Label 9900 2950 0    50   ~ 0
-ControlClock
-Text Label 6500 2950 0    50   ~ 0
-ControlClock
-Text Label 6500 7200 0    50   ~ 0
-ControlClock
-Text Label 3300 7200 0    50   ~ 0
-ControlClock
-Text Label 3300 2950 0    50   ~ 0
-ControlClock
 Text Label 3150 2750 0    50   ~ 0
 ~RST
 Text Label 3150 7000 0    50   ~ 0

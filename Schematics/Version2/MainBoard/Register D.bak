@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 2 23
+Sheet 2 21
 Title "Register D"
 Date ""
 Rev ""
@@ -255,7 +255,7 @@ Entry Wire Line
 Text GLabel 1650 2700 0    50   Input ~ 0
 ~DI
 Text GLabel 1650 2550 0    50   Input ~ 0
-RegisterClock
+RegisterClock0
 $Comp
 L 74xx:74LS377 U?
 U 1 1 5D2A25F1

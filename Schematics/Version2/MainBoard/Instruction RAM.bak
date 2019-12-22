@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 23
+Sheet 7 21
 Title "Instruction RAM"
 Date ""
 Rev ""
@@ -1000,68 +1000,13 @@ F 3 "" H 7300 9400 50  0001 C CNN
 $EndComp
 $Comp
 L 74xx:74LS04 U4
-U 2 1 5DE6F245
-P 7700 13400
-F 0 "U4" H 7700 13717 50  0000 C CNN
-F 1 "74AHCT04" H 7700 13626 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7700 13400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H 7700 13400 50  0001 C CNN
-	2    7700 13400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U4
-U 3 1 5DE6FFEA
-P 7700 13950
-F 0 "U4" H 7700 14267 50  0000 C CNN
-F 1 "74AHCT04" H 7700 14176 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7700 13950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H 7700 13950 50  0001 C CNN
-	3    7700 13950
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U4
-U 4 1 5DE71226
-P 7700 14450
-F 0 "U4" H 7700 14767 50  0000 C CNN
-F 1 "74AHCT04" H 7700 14676 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7700 14450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H 7700 14450 50  0001 C CNN
-	4    7700 14450
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U4
-U 5 1 5DE71A94
-P 7700 14950
-F 0 "U4" H 7700 15267 50  0000 C CNN
-F 1 "74AHCT04" H 7700 15176 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7700 14950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H 7700 14950 50  0001 C CNN
-	5    7700 14950
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U4
-U 6 1 5DE72A1F
-P 7700 15450
-F 0 "U4" H 7700 15767 50  0000 C CNN
-F 1 "74AHCT04" H 7700 15676 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7700 15450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H 7700 15450 50  0001 C CNN
-	6    7700 15450
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U4
 U 7 1 5DE73977
-P 7400 16300
-F 0 "U4" H 7050 16500 50  0000 C CNN
-F 1 "74AHCT04" H 7050 16400 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7400 16300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H 7400 16300 50  0001 C CNN
-	7    7400 16300
+P 7400 13700
+F 0 "U4" H 7050 13900 50  0000 C CNN
+F 1 "74AHCT04" H 7050 13800 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7400 13700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H 7400 13700 50  0001 C CNN
+	7    7400 13700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1075,41 +1020,19 @@ F 3 "" H 7400 13100 50  0001 C CNN
 	1    7400 13100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7400 13100 7400 13400
-Connection ~ 7400 13400
-Wire Wire Line
-	7400 13400 7400 13950
-Connection ~ 7400 13950
-Wire Wire Line
-	7400 13950 7400 14450
-Connection ~ 7400 14450
-Wire Wire Line
-	7400 14450 7400 14950
-Connection ~ 7400 14950
-Wire Wire Line
-	7400 14950 7400 15450
-Connection ~ 7400 15450
-Wire Wire Line
-	7400 15450 7400 15800
 $Comp
 L power:GND #PWR0124
 U 1 1 5DE921A1
-P 7400 16900
-F 0 "#PWR0124" H 7400 16650 50  0001 C CNN
-F 1 "GND" H 7405 16727 50  0000 C CNN
-F 2 "" H 7400 16900 50  0001 C CNN
-F 3 "" H 7400 16900 50  0001 C CNN
-	1    7400 16900
+P 7400 14250
+F 0 "#PWR0124" H 7400 14000 50  0001 C CNN
+F 1 "GND" H 7405 14077 50  0000 C CNN
+F 2 "" H 7400 14250 50  0001 C CNN
+F 3 "" H 7400 14250 50  0001 C CNN
+	1    7400 14250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 16800 7400 16900
-NoConn ~ 8000 15450
-NoConn ~ 8000 14950
-NoConn ~ 8000 14450
-NoConn ~ 8000 13950
-NoConn ~ 8000 13400
+	7400 14200 7400 14250
 Wire Wire Line
 	7700 9250 7700 9350
 Wire Wire Line
@@ -1190,6 +1113,8 @@ Wire Wire Line
 Wire Wire Line
 	7600 1750 7600 1800
 Connection ~ 7500 1750
+Wire Wire Line
+	7400 13100 7400 13200
 Wire Bus Line
 	8900 2800 8900 3500
 Wire Bus Line

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 23
+Sheet 1 21
 Title "TurtleTTL: Main Board"
 Date ""
 Rev ""
@@ -15,16 +15,10 @@ Comment3 ""
 Comment4 "TTL microcomputer built from 74xx series logic chips."
 $EndDescr
 $Sheet
-S 6650 3800 1500 500 
+S 6650 3100 1500 500 
 U 5D29E36D
 F0 "Register D" 50
 F1 "Register D.sch" 50
-$EndSheet
-$Sheet
-S 3200 1700 1500 500 
-U 5D7BD0EA
-F0 "Register XY" 50
-F1 "Register XY.sch" 50
 $EndSheet
 $Sheet
 S 3200 2400 1500 500 
@@ -43,18 +37,6 @@ S 3200 4500 1500 500
 U 5D2C0B92
 F0 "Instruction Decode" 50
 F1 "Instruction Decode.sch" 50
-$EndSheet
-$Sheet
-S 6650 1700 1500 500 
-U 5D2C0720
-F0 "Clock" 50
-F1 "Clock.sch" 50
-$EndSheet
-$Sheet
-S 6650 2400 1500 500 
-U 5D2C0761
-F0 "Power-on Reset" 50
-F1 "Power-on Reset.sch" 50
 $EndSheet
 $Sheet
 S 4950 1700 1500 500 
@@ -81,7 +63,7 @@ F0 "Bus Display" 50
 F1 "Bus Display.sch" 50
 $EndSheet
 $Sheet
-S 6650 4500 1500 500 
+S 6650 3800 1500 500 
 U 5D9F1D54
 F0 "Expansion" 50
 F1 "Expansion.sch" 50
@@ -175,7 +157,7 @@ F 3 "" H 4800 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 6650 3100 1500 500 
+S 6650 5200 1500 500 
 U 5DAA13E6
 F0 "Data RAM" 50
 F1 "Data RAM.sch" 50
@@ -185,12 +167,6 @@ S 3200 3100 1500 500
 U 5DA6B866
 F0 "Link Register" 50
 F1 "Link Register.sch" 50
-$EndSheet
-$Sheet
-S 4950 3800 1500 500 
-U 5DCE1A08
-F0 "Shifter" 50
-F1 "Shifter.sch" 50
 $EndSheet
 $Comp
 L Mechanical:MountingHole_Pad H5
@@ -270,12 +246,6 @@ U 5D2C13FD
 F0 "Execute" 50
 F1 "Execute.sch" 50
 $EndSheet
-$Sheet
-S 6650 5200 1500 500 
-U 5DF275FF
-F0 "Register K" 50
-F1 "Register K.sch" 50
-$EndSheet
 $Comp
 L Mechanical:MountingHole_Pad H8
 U 1 1 5E0E2F6B
@@ -320,4 +290,22 @@ F 3 "" H 3950 7700 50  0001 C CNN
 	1    3950 7700
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 4950 3800 1500 500 
+U 5D2C0720
+F0 "Clock" 50
+F1 "Clock.sch" 50
+$EndSheet
+$Sheet
+S 6650 4500 1500 500 
+U 5E0B0BBA
+F0 "Register UV" 50
+F1 "Register UV.sch" 50
+$EndSheet
+$Sheet
+S 3200 1700 1500 500 
+U 5D7BD0EA
+F0 "Register XY" 50
+F1 "Register XY.sch" 50
+$EndSheet
 $EndSCHEMATC

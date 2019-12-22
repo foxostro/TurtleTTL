@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 6 23
+Sheet 5 21
 Title "PC/IF"
 Date ""
 Rev ""
@@ -48,7 +48,7 @@ F 3 "" H 5500 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2200 4050 0    50   Input ~ 0
-ControlClock
+ControlClock3
 Wire Wire Line
 	5000 5100 3400 5100
 $Comp

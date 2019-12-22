@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 21 23
+Sheet 17 21
 Title "Power Supply"
 Date ""
 Rev ""
@@ -51,8 +51,8 @@ AR Path="/5D2C0761/5DCFEDD3" Ref="C?"  Part="1"
 AR Path="/5DCFEDD3" Ref="C?"  Part="1" 
 AR Path="/5DCFC665/5DCFEDD3" Ref="C1"  Part="1" 
 F 0 "C1" H 5992 3646 50  0000 L CNN
-F 1 "10µF" H 5992 3555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5900 3600 50  0001 C CNN
+F 1 "100µF" H 5992 3555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5900 3600 50  0001 C CNN
 F 3 "~" H 5900 3600 50  0001 C CNN
 	1    5900 3600
 	1    0    0    -1  

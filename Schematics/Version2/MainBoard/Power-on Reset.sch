@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 12 23
+Sheet 11 22
 Title "Power-on Reset"
 Date ""
 Rev ""
@@ -246,72 +246,6 @@ Wire Wire Line
 Text GLabel 9050 2000 2    50   Output ~ 0
 ~RST
 Wire Wire Line
-	4950 2000 5000 2000
-$Comp
-L power:VCC #PWR0159
-U 1 1 5D9BBEFF
-P 6300 2500
-F 0 "#PWR0159" H 6300 2350 50  0001 C CNN
-F 1 "VCC" H 6317 2673 50  0000 C CNN
-F 2 "" H 6300 2500 50  0001 C CNN
-F 3 "" H 6300 2500 50  0001 C CNN
-	1    6300 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 2500 6300 2550
-$Comp
-L power:GND #PWR?
-U 1 1 5D9BDFC5
-P 6300 4550
-AR Path="/5D2C0720/5D9BDFC5" Ref="#PWR?"  Part="1" 
-AR Path="/5D2C0761/5D9BDFC5" Ref="#PWR0160"  Part="1" 
-F 0 "#PWR0160" H 6300 4300 50  0001 C CNN
-F 1 "GND" H 6305 4377 50  0000 C CNN
-F 2 "" H 6300 4550 50  0001 C CNN
-F 3 "" H 6300 4550 50  0001 C CNN
-	1    6300 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 4450 6300 4500
-Wire Wire Line
-	5800 4150 5700 4150
-Wire Wire Line
-	5700 4150 5700 4500
-Wire Wire Line
-	5700 4500 6300 4500
-Connection ~ 6300 4500
-Wire Wire Line
-	6300 4500 6300 4550
-Wire Wire Line
-	5800 4050 5000 4050
-Wire Wire Line
-	5000 4050 5000 2000
-Connection ~ 5000 2000
-Wire Wire Line
-	5000 2000 9050 2000
-Text GLabel 1800 6250 0    50   Input ~ 0
-CLK
-Text GLabel 1800 6100 0    50   Input ~ 0
-FixedRateClock
-Wire Wire Line
-	1800 6100 5050 6100
-Wire Wire Line
-	5050 6100 5050 2850
-Wire Wire Line
-	5050 2850 5800 2850
-Wire Wire Line
-	5800 2950 5100 2950
-Wire Wire Line
-	5100 2950 5100 6250
-Wire Wire Line
-	5100 6250 1800 6250
-Text GLabel 9050 2850 2    50   Output ~ 0
-ControlClock
-Wire Wire Line
-	6800 2850 9050 2850
-Wire Wire Line
 	2500 3700 2500 3900
 Wire Wire Line
 	2500 4700 2500 5250
@@ -332,87 +266,87 @@ $EndComp
 $Comp
 L Device:C C65
 U 1 1 5D9F0A17
-P 5700 6450
-F 0 "C65" H 5815 6496 50  0000 L CNN
-F 1 "100nF" H 5815 6405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5738 6300 50  0001 C CNN
-F 3 "~" H 5700 6450 50  0001 C CNN
-	1    5700 6450
+P 2650 7550
+F 0 "C65" H 2765 7596 50  0000 L CNN
+F 1 "100nF" H 2765 7505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2688 7400 50  0001 C CNN
+F 3 "~" H 2650 7550 50  0001 C CNN
+	1    2650 7550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C66
 U 1 1 5D9F0A1D
-P 6200 6450
-F 0 "C66" H 6315 6496 50  0000 L CNN
-F 1 "100nF" H 6315 6405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 6238 6300 50  0001 C CNN
-F 3 "~" H 6200 6450 50  0001 C CNN
-	1    6200 6450
+P 3150 7550
+F 0 "C66" H 3265 7596 50  0000 L CNN
+F 1 "100nF" H 3265 7505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3188 7400 50  0001 C CNN
+F 3 "~" H 3150 7550 50  0001 C CNN
+	1    3150 7550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C67
 U 1 1 5D9F0A23
-P 6700 6450
-F 0 "C67" H 6815 6496 50  0000 L CNN
-F 1 "100nF" H 6815 6405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 6738 6300 50  0001 C CNN
-F 3 "~" H 6700 6450 50  0001 C CNN
-	1    6700 6450
+P 3650 7550
+F 0 "C67" H 3765 7596 50  0000 L CNN
+F 1 "100nF" H 3765 7505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3688 7400 50  0001 C CNN
+F 3 "~" H 3650 7550 50  0001 C CNN
+	1    3650 7550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C68
 U 1 1 5D9F0A29
-P 7200 6450
-F 0 "C68" H 7315 6496 50  0000 L CNN
-F 1 "100nF" H 7315 6405 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 7238 6300 50  0001 C CNN
-F 3 "~" H 7200 6450 50  0001 C CNN
-	1    7200 6450
+P 4150 7550
+F 0 "C68" H 4265 7596 50  0000 L CNN
+F 1 "100nF" H 4265 7505 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4188 7400 50  0001 C CNN
+F 3 "~" H 4150 7550 50  0001 C CNN
+	1    4150 7550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0162
 U 1 1 5D9F0A35
-P 5700 6600
-F 0 "#PWR0162" H 5700 6350 50  0001 C CNN
-F 1 "GND" H 5705 6427 50  0000 C CNN
-F 2 "" H 5700 6600 50  0001 C CNN
-F 3 "" H 5700 6600 50  0001 C CNN
-	1    5700 6600
+P 2650 7700
+F 0 "#PWR0162" H 2650 7450 50  0001 C CNN
+F 1 "GND" H 2655 7527 50  0000 C CNN
+F 2 "" H 2650 7700 50  0001 C CNN
+F 3 "" H 2650 7700 50  0001 C CNN
+	1    2650 7700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0161
 U 1 1 5D9F0A3B
-P 5700 6300
-F 0 "#PWR0161" H 5700 6150 50  0001 C CNN
-F 1 "VCC" H 5717 6473 50  0000 C CNN
-F 2 "" H 5700 6300 50  0001 C CNN
-F 3 "" H 5700 6300 50  0001 C CNN
-	1    5700 6300
+P 2650 7400
+F 0 "#PWR0161" H 2650 7250 50  0001 C CNN
+F 1 "VCC" H 2667 7573 50  0000 C CNN
+F 2 "" H 2650 7400 50  0001 C CNN
+F 3 "" H 2650 7400 50  0001 C CNN
+	1    2650 7400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 6300 6200 6300
-Connection ~ 5700 6300
+	2650 7400 3150 7400
+Connection ~ 2650 7400
 Wire Wire Line
-	6200 6300 6700 6300
-Connection ~ 6200 6300
+	3150 7400 3650 7400
+Connection ~ 3150 7400
 Wire Wire Line
-	6700 6300 7200 6300
-Connection ~ 6700 6300
+	3650 7400 4150 7400
+Connection ~ 3650 7400
 Wire Wire Line
-	7200 6600 6700 6600
+	4150 7700 3650 7700
 Wire Wire Line
-	6700 6600 6200 6600
-Connection ~ 6700 6600
+	3650 7700 3150 7700
+Connection ~ 3650 7700
 Wire Wire Line
-	6200 6600 5700 6600
-Connection ~ 6200 6600
-Connection ~ 5700 6600
+	3150 7700 2650 7700
+Connection ~ 3150 7700
+Connection ~ 2650 7700
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5D8069CB
@@ -424,20 +358,6 @@ F 3 "~" H 1300 2650 50  0001 C CNN
 	1    1300 2450
 	0    -1   -1   0   
 $EndComp
-$Comp
-L 74xx:74LS157 U64
-U 1 1 5D9BAEF9
-P 6300 3450
-F 0 "U64" H 6500 4350 50  0000 C CNN
-F 1 "74AHCT157" H 6500 4250 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 6300 3450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct157.pdf" H 6300 3450 50  0001 C CNN
-	1    6300 3450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6800 3150
-NoConn ~ 6800 3450
-NoConn ~ 6800 3750
 $Comp
 L 74xx:74LS04 U62
 U 7 1 5DB5DD2A
@@ -650,135 +570,8 @@ Wire Wire Line
 Wire Wire Line
 	1300 2700 1550 2700
 Connection ~ 1550 2700
-Wire Wire Line
-	5450 3550 5700 3550
-Wire Wire Line
-	5450 3450 5450 3550
-$Comp
-L power:VCC #PWR0249
-U 1 1 5DA1C782
-P 5450 3450
-F 0 "#PWR0249" H 5450 3300 50  0001 C CNN
-F 1 "VCC" H 5467 3623 50  0000 C CNN
-F 2 "" H 5450 3450 50  0001 C CNN
-F 3 "" H 5450 3450 50  0001 C CNN
-	1    5450 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 3850 5700 3850
-Wire Wire Line
-	5700 3850 5700 3750
-Connection ~ 5700 3750
-Wire Wire Line
-	5800 3750 5700 3750
-Wire Wire Line
-	5700 3750 5700 3550
-Connection ~ 5700 3550
-Wire Wire Line
-	5800 3550 5700 3550
-Wire Wire Line
-	5700 3550 5700 3450
-Connection ~ 5700 3450
-Wire Wire Line
-	5800 3450 5700 3450
-Wire Wire Line
-	5700 3450 5700 3250
-Wire Wire Line
-	5700 3250 5700 3150
-Connection ~ 5700 3250
-Wire Wire Line
-	5800 3250 5700 3250
-Wire Wire Line
-	5700 3150 5800 3150
-$Comp
-L Device:C C33
-U 1 1 5E0FDF2F
-P 9800 6150
-F 0 "C33" H 9915 6196 50  0000 L CNN
-F 1 "27pF" H 9915 6105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 9838 6000 50  0001 C CNN
-F 3 "~" H 9800 6150 50  0001 C CNN
-	1    9800 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E0FE2B6
-P 9800 5750
-AR Path="/5D2C0720/5E0FE2B6" Ref="R?"  Part="1" 
-AR Path="/5D2C0761/5E0FE2B6" Ref="R2"  Part="1" 
-F 0 "R2" H 9868 5796 50  0000 L CNN
-F 1 "100Ω" H 9868 5705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9840 5740 50  0001 C CNN
-F 3 "~" H 9800 5750 50  0001 C CNN
-	1    9800 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9800 5900 9800 6000
-$Comp
-L power:GND #PWR0238
-U 1 1 5E104126
-P 9800 6400
-F 0 "#PWR0238" H 9800 6150 50  0001 C CNN
-F 1 "GND" H 9805 6227 50  0000 C CNN
-F 2 "" H 9800 6400 50  0001 C CNN
-F 3 "" H 9800 6400 50  0001 C CNN
-	1    9800 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9800 6300 9800 6400
-Text GLabel 9800 5450 1    50   Input ~ 0
-ControlClock
-Wire Wire Line
-	9800 5450 9800 5600
-$Comp
-L Device:C C32
-U 1 1 5E10AA35
-P 9350 6150
-F 0 "C32" H 9465 6196 50  0000 L CNN
-F 1 "27pF" H 9465 6105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 9388 6000 50  0001 C CNN
-F 3 "~" H 9350 6150 50  0001 C CNN
-	1    9350 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E10AA3B
-P 9350 5750
-AR Path="/5D2C0720/5E10AA3B" Ref="R?"  Part="1" 
-AR Path="/5D2C0761/5E10AA3B" Ref="R1"  Part="1" 
-F 0 "R1" H 9418 5796 50  0000 L CNN
-F 1 "100Ω" H 9418 5705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9390 5740 50  0001 C CNN
-F 3 "~" H 9350 5750 50  0001 C CNN
-	1    9350 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 5900 9350 6000
-$Comp
-L power:GND #PWR0239
-U 1 1 5E10AA42
-P 9350 6400
-F 0 "#PWR0239" H 9350 6150 50  0001 C CNN
-F 1 "GND" H 9355 6227 50  0000 C CNN
-F 2 "" H 9350 6400 50  0001 C CNN
-F 3 "" H 9350 6400 50  0001 C CNN
-	1    9350 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 6300 9350 6400
-Text GLabel 9350 5450 1    50   Input ~ 0
-RegisterClock
-Wire Wire Line
-	9350 5450 9350 5600
-Text Notes 6150 6050 0    50   ~ 0
+Text Notes 3100 7150 0    50   ~ 0
 Decoupling caps
-Text Notes 8650 4800 0    50   ~ 0
-AC termination of the clock lines.\nI had to add termination for RegisterClock\non the first revision. So, make sure there\nare pads for these components.
+Wire Wire Line
+	4950 2000 9050 2000
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 14 23
+Sheet 11 21
 Title "Register B"
 Date ""
 Rev ""
@@ -275,7 +275,7 @@ Text GLabel 2350 3500 0    50   Input ~ 0
 Text GLabel 2350 3300 0    50   Input ~ 0
 ~BI
 Text GLabel 2350 3100 0    50   Input ~ 0
-RegisterClock
+RegisterClock1
 Text GLabel 3050 5350 0    50   Input ~ 0
 B[0..7]
 Wire Bus Line

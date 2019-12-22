@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 22 23
+Sheet 19 21
 Title "Execute"
 Date ""
 Rev ""
@@ -520,30 +520,6 @@ F 3 "" H 1700 7400 50  0001 C CNN
 	1    1700 7400
 	1    0    0    -1  
 $EndComp
-Entry Wire Line
-	4300 4550 4400 4450
-Wire Wire Line
-	4400 3800 4400 4450
-Text Label 4400 4400 1    50   ~ 0
-ControlWord27
-Text GLabel 4400 3800 1    50   Output ~ 0
-~ShifterOut
-Entry Wire Line
-	4150 4550 4250 4450
-Wire Wire Line
-	4250 3800 4250 4450
-Text Label 4250 4400 1    50   ~ 0
-ControlWord28
-Text GLabel 4250 3800 1    50   Output ~ 0
-~KI
-Entry Wire Line
-	4000 4550 4100 4450
-Wire Wire Line
-	4100 3800 4100 4450
-Text Label 4100 4400 1    50   ~ 0
-ControlWord29
-Text GLabel 4100 3800 1    50   Output ~ 0
-~KO
 Wire Bus Line
 	1100 1050 5850 1050
 Wire Bus Line

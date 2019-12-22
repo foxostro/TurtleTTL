@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 19 23
+Sheet 16 21
 Title "Link Register"
 Date ""
 Rev ""
@@ -311,7 +311,7 @@ Text GLabel 2200 3100 0    50   Input ~ 0
 Wire Wire Line
 	2450 3100 2200 3100
 Text GLabel 2200 2900 0    50   Input ~ 0
-RegisterClock
+RegisterClock3
 Wire Wire Line
 	2450 3600 5750 3600
 Wire Wire Line

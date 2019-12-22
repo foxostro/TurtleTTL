@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 9 23
+Sheet 8 21
 Title "Instruction Register"
 Date ""
 Rev ""
@@ -41,7 +41,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct574.pdf" H 8950 3450 50  0001 C CN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1100 4550 0    50   Input ~ 0
-ControlClock
+ControlClock4
 Wire Wire Line
 	8450 3850 8200 3850
 Wire Wire Line

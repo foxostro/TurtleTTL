@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 4 23
+Sheet 3 21
 Title "Program Counter"
 Date ""
 Rev ""
@@ -42,7 +42,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 3950 1050 3950
 Text GLabel 1050 3800 0    50   Input ~ 0
-RegisterClock
+RegisterClock3
 Wire Wire Line
 	2500 2900 2100 2900
 Wire Wire Line
