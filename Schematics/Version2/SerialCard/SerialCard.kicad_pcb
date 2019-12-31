@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 7)
     (tracks 321)
     (zones 0)
     (modules 11)
@@ -1606,9 +1606,6 @@
     )
   )
 
-  (gr_text JLCJLCJLCJLC (at 73.66 110.49 90) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
   (gr_arc (start 163.83 91.44) (end 165.1 91.44) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 64.77 91.44) (end 64.77 90.17) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 63.5 91.44) (end 63.5 137.414) (layer Edge.Cuts) (width 0.05))

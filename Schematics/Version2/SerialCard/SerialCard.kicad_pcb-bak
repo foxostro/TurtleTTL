@@ -93,7 +93,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../Generated/Plots/ArduinoSerialCard/"))
+      (outputdirectory "../Generated/Plots/SerialCard/"))
   )
 
   (net 0 "")
@@ -1941,7 +1941,7 @@
   (segment (start 135.040001 132.500001) (end 135.89 133.35) (width 0.127) (layer B.Cu) (net 34))
   (segment (start 134.62 111.76) (end 134.849499 111.989499) (width 0.127) (layer B.Cu) (net 34))
 
-  (zone (net 2) (net_name GND) (layer In1.Cu) (tstamp 5DE32591) (hatch edge 0.508)
+  (zone (net 2) (net_name GND) (layer In1.Cu) (tstamp 5DFEF9A0) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.254) (thermal_bridge_width 0.508))
@@ -3852,7 +3852,7 @@
       )
     )
   )
-  (zone (net 1) (net_name VCC) (layer In2.Cu) (tstamp 5DE3258E) (hatch edge 0.508)
+  (zone (net 1) (net_name VCC) (layer In2.Cu) (tstamp 5DFEF99D) (hatch edge 0.508)
     (connect_pads (clearance 0.254))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.254) (thermal_bridge_width 0.508))
