@@ -1,0 +1,255 @@
+EESchema Schematic File Version 4
+LIBS:SoundCard-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title "VCA"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Voltage-controlled amplifier built on a pair of JFETs"
+$EndDescr
+Text HLabel 3250 4150 0    50   Input ~ 0
+CV
+Text HLabel 3250 2300 0    50   Input ~ 0
+IN
+Text HLabel 8250 2950 2    50   Output ~ 0
+OUT
+$Comp
+L Amplifier_Operational:TL072 U4
+U 1 1 5EC6BFC9
+P 3900 4250
+AR Path="/5EC13A08/5EC6BFC9" Ref="U4"  Part="1" 
+AR Path="/5EC13F4D/5EC6BFC9" Ref="U5"  Part="1" 
+F 0 "U5" H 3900 4617 50  0000 C CNN
+F 1 "TL072" H 3900 4526 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 3900 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3900 4250 50  0001 C CNN
+	1    3900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U4
+U 3 1 5EC74F11
+P 10700 1150
+AR Path="/5EC13A08/5EC74F11" Ref="U4"  Part="3" 
+AR Path="/5EC13F4D/5EC74F11" Ref="U5"  Part="3" 
+F 0 "U5" H 10658 1196 50  0000 L CNN
+F 1 "TL072" H 10658 1105 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 10700 1150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10700 1150 50  0001 C CNN
+	3    10700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U4
+U 2 1 5EC76EAF
+P 7700 2950
+AR Path="/5EC13A08/5EC76EAF" Ref="U4"  Part="2" 
+AR Path="/5EC13F4D/5EC76EAF" Ref="U5"  Part="2" 
+F 0 "U5" H 7700 2583 50  0000 C CNN
+F 1 "TL072" H 7700 2674 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 7700 2950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7700 2950 50  0001 C CNN
+	2    7700 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+15V #PWR049
+U 1 1 5EC7A1FC
+P 10600 850
+AR Path="/5EC13A08/5EC7A1FC" Ref="#PWR049"  Part="1" 
+AR Path="/5EC13F4D/5EC7A1FC" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 10600 700 50  0001 C CNN
+F 1 "+15V" H 10615 1023 50  0000 C CNN
+F 2 "" H 10600 850 50  0001 C CNN
+F 3 "" H 10600 850 50  0001 C CNN
+	1    10600 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-15V #PWR050
+U 1 1 5EC7AB1B
+P 10600 1450
+AR Path="/5EC13A08/5EC7AB1B" Ref="#PWR050"  Part="1" 
+AR Path="/5EC13F4D/5EC7AB1B" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 10600 1550 50  0001 C CNN
+F 1 "-15V" H 10615 1623 50  0000 C CNN
+F 2 "" H 10600 1450 50  0001 C CNN
+F 3 "" H 10600 1450 50  0001 C CNN
+	1    10600 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 2950 8100 2950
+Wire Wire Line
+	3250 4150 3600 4150
+Wire Wire Line
+	3600 4350 3500 4350
+Wire Wire Line
+	3500 4350 3500 4600
+Wire Wire Line
+	3500 4600 4300 4600
+Wire Wire Line
+	4300 4600 4300 4250
+Wire Wire Line
+	4300 4250 4200 4250
+$Comp
+L Device:R_US R19
+U 1 1 5EC883E2
+P 6250 2300
+AR Path="/5EC13A08/5EC883E2" Ref="R19"  Part="1" 
+AR Path="/5EC13F4D/5EC883E2" Ref="R23"  Part="1" 
+F 0 "R23" V 6045 2300 50  0000 C CNN
+F 1 "10kΩ" V 6136 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6290 2290 50  0001 C CNN
+F 3 "~" H 6250 2300 50  0001 C CNN
+	1    6250 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R20
+U 1 1 5EC88DED
+P 7650 2300
+AR Path="/5EC13A08/5EC88DED" Ref="R20"  Part="1" 
+AR Path="/5EC13F4D/5EC88DED" Ref="R24"  Part="1" 
+F 0 "R24" V 7445 2300 50  0000 C CNN
+F 1 "10kΩ" V 7536 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7690 2290 50  0001 C CNN
+F 3 "~" H 7650 2300 50  0001 C CNN
+	1    7650 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R21
+U 1 1 5EC896CF
+P 7650 3550
+AR Path="/5EC13A08/5EC896CF" Ref="R21"  Part="1" 
+AR Path="/5EC13F4D/5EC896CF" Ref="R25"  Part="1" 
+F 0 "R25" V 7445 3550 50  0000 C CNN
+F 1 "10kΩ" V 7536 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7690 3540 50  0001 C CNN
+F 3 "~" H 7650 3550 50  0001 C CNN
+	1    7650 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 2950 8100 2300
+Wire Wire Line
+	8100 2300 7800 2300
+Connection ~ 8100 2950
+Wire Wire Line
+	8100 2950 8000 2950
+Wire Wire Line
+	7500 2300 7150 2300
+Wire Wire Line
+	7150 2300 7150 2850
+Wire Wire Line
+	7150 2850 7400 2850
+Wire Wire Line
+	7400 3050 7150 3050
+Wire Wire Line
+	7150 3050 7150 3550
+Wire Wire Line
+	7150 3550 7500 3550
+Wire Wire Line
+	7150 2300 6400 2300
+Connection ~ 7150 2300
+$Comp
+L Device:R_US R18
+U 1 1 5EC894BF
+P 6200 3550
+AR Path="/5EC13A08/5EC894BF" Ref="R18"  Part="1" 
+AR Path="/5EC13F4D/5EC894BF" Ref="R22"  Part="1" 
+F 0 "R22" V 5995 3550 50  0000 C CNN
+F 1 "10kΩ" V 6086 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6240 3540 50  0001 C CNN
+F 3 "~" H 6200 3550 50  0001 C CNN
+	1    6200 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3550 7150 3550
+Connection ~ 7150 3550
+Wire Wire Line
+	6100 2300 5400 2300
+Wire Wire Line
+	5400 2300 5400 3550
+Wire Wire Line
+	5400 3550 6050 3550
+Wire Wire Line
+	3250 2300 5400 2300
+Connection ~ 5400 2300
+$Comp
+L Device:Q_NJFET_DSG Q1
+U 1 1 5EC8E7C6
+P 5300 4250
+AR Path="/5EC13A08/5EC8E7C6" Ref="Q1"  Part="1" 
+AR Path="/5EC13F4D/5EC8E7C6" Ref="Q3"  Part="1" 
+F 0 "Q3" H 5491 4296 50  0000 L CNN
+F 1 "Q_NJFET_DSG" H 5491 4205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5500 4350 50  0001 C CNN
+F 3 "~" H 5300 4250 50  0001 C CNN
+	1    5300 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4250 4300 4250
+Connection ~ 4300 4250
+Wire Wire Line
+	5400 3550 5400 4050
+Connection ~ 5400 3550
+$Comp
+L Device:Q_NJFET_DSG Q2
+U 1 1 5EC93D99
+P 7250 4200
+AR Path="/5EC13A08/5EC93D99" Ref="Q2"  Part="1" 
+AR Path="/5EC13F4D/5EC93D99" Ref="Q4"  Part="1" 
+F 0 "Q4" H 7441 4246 50  0000 L CNN
+F 1 "Q_NJFET_DSG" H 7441 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7450 4300 50  0001 C CNN
+F 3 "~" H 7250 4200 50  0001 C CNN
+	1    7250 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3550 7150 4000
+Wire Wire Line
+	7800 3550 8100 3550
+Wire Wire Line
+	8100 3550 8100 4200
+Wire Wire Line
+	8100 4200 7450 4200
+Wire Wire Line
+	8100 4200 8100 4850
+Wire Wire Line
+	8100 4850 7150 4850
+Wire Wire Line
+	5400 4850 5400 4450
+Connection ~ 8100 4200
+Wire Wire Line
+	7150 4400 7150 4850
+Connection ~ 7150 4850
+Wire Wire Line
+	7150 4850 5400 4850
+Wire Wire Line
+	7150 4850 7150 5050
+$Comp
+L power:GNDA #PWR051
+U 1 1 5ED8AE76
+P 7150 5050
+AR Path="/5EC13F4D/5ED8AE76" Ref="#PWR051"  Part="1" 
+AR Path="/5EC13A08/5ED8AE76" Ref="#PWR044"  Part="1" 
+F 0 "#PWR051" H 7150 4800 50  0001 C CNN
+F 1 "GNDA" H 7155 4877 50  0000 C CNN
+F 2 "" H 7150 5050 50  0001 C CNN
+F 3 "" H 7150 5050 50  0001 C CNN
+	1    7150 5050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

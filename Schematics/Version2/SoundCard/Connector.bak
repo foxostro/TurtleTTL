@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:AudioCard-cache
+LIBS:SoundCard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -14,40 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 "The connector which attaches the card to the computer main board."
 $EndDescr
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5E6FD14A
-P 5250 6750
-AR Path="/5E6FD14A" Ref="#FLG?"  Part="1" 
-AR Path="/5E6F11C7/5E6FD14A" Ref="#FLG0101"  Part="1" 
-F 0 "#FLG0101" H 5250 6825 50  0001 C CNN
-F 1 "PWR_FLAG" H 5250 6923 50  0000 C CNN
-F 2 "" H 5250 6750 50  0001 C CNN
-F 3 "~" H 5250 6750 50  0001 C CNN
-	1    5250 6750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 6850 5250 6750
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5E6FD151
-P 2800 950
-AR Path="/5E6FD151" Ref="#FLG?"  Part="1" 
-AR Path="/5E6F11C7/5E6FD151" Ref="#FLG0102"  Part="1" 
-F 0 "#FLG0102" H 2800 1025 50  0001 C CNN
-F 1 "PWR_FLAG" H 2800 1123 50  0000 C CNN
-F 2 "" H 2800 950 50  0001 C CNN
-F 3 "~" H 2800 950 50  0001 C CNN
-	1    2800 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 950  2800 1050
-Wire Wire Line
-	2800 1050 3100 1050
-Text GLabel 4550 1150 0    50   Output ~ 0
-RegisterClock
 Wire Wire Line
 	6300 2550 6500 2550
 Wire Wire Line
@@ -265,8 +231,6 @@ Wire Wire Line
 	5000 4350 5800 4350
 Wire Wire Line
 	5000 4550 5800 4550
-Wire Wire Line
-	5000 4750 5800 4750
 Text Label 6550 3250 0    50   ~ 0
 AddressBus15
 Text Label 6550 3450 0    50   ~ 0
@@ -298,16 +262,14 @@ P 6000 4450
 AR Path="/5D2C0CE4/5E6FD1FA" Ref="J?"  Part="1" 
 AR Path="/5D9F1D54/5E6FD1FA" Ref="J?"  Part="1" 
 AR Path="/5E6FD1FA" Ref="J?"  Part="1" 
-AR Path="/5E6F11C7/5E6FD1FA" Ref="J1"  Part="1" 
-F 0 "J1" H 6050 2225 50  0000 C CNN
+AR Path="/5E6F11C7/5E6FD1FA" Ref="J3"  Part="1" 
+F 0 "J3" H 6050 2225 50  0000 C CNN
 F 1 "Conn" H 6050 2316 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x40_P2.54mm_Horizontal" H 6000 4450 50  0001 C CNN
 F 3 "~" H 6000 4450 50  0001 C CNN
 	1    6000 4450
 	1    0    0    1   
 $EndComp
-Text GLabel 4550 1450 0    50   Output ~ 0
-DataBus[0..7]
 Entry Wire Line
 	7300 5450 7400 5550
 Wire Wire Line
@@ -383,8 +345,8 @@ U 1 1 5E6FD231
 P 3100 950
 AR Path="/5D2C0CE4/5E6FD231" Ref="#PWR?"  Part="1" 
 AR Path="/5D9F1D54/5E6FD231" Ref="#PWR?"  Part="1" 
-AR Path="/5E6F11C7/5E6FD231" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 3100 800 50  0001 C CNN
+AR Path="/5E6F11C7/5E6FD231" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 3100 800 50  0001 C CNN
 F 1 "VCC" H 3117 1123 50  0000 C CNN
 F 2 "" H 3100 950 50  0001 C CNN
 F 3 "" H 3100 950 50  0001 C CNN
@@ -408,8 +370,6 @@ Wire Wire Line
 Connection ~ 5600 2650
 Wire Wire Line
 	5800 2650 5600 2650
-Text GLabel 4550 1600 0    50   Output ~ 0
-~RST
 Wire Wire Line
 	5800 3150 5300 3150
 Wire Wire Line
@@ -424,8 +384,6 @@ Wire Wire Line
 	5450 2000 7600 2000
 Wire Wire Line
 	5450 2000 3100 2000
-Wire Wire Line
-	3100 950  3100 1050
 Connection ~ 5450 2000
 Wire Wire Line
 	3900 1750 5300 1750
@@ -438,40 +396,33 @@ Wire Bus Line
 Wire Bus Line
 	4550 1450 4700 1450
 Connection ~ 4700 1450
-Connection ~ 3100 1050
-Wire Wire Line
-	3100 1050 3100 2000
 Wire Wire Line
 	5600 6250 5600 6850
 Wire Wire Line
-	5250 6850 5600 6850
+	6050 6850 5600 6850
 Connection ~ 5600 6250
 Wire Wire Line
 	6500 6350 6500 6850
 Connection ~ 6500 6350
-Connection ~ 5600 6850
-Connection ~ 5250 6850
 Wire Wire Line
-	6500 6850 5600 6850
+	6500 6850 6050 6850
 Wire Wire Line
-	5250 6850 5250 7000
+	6050 6850 6050 7000
 $Comp
 L power:GND #PWR?
 U 1 1 5E6FD26D
-P 5250 7000
+P 6050 7000
 AR Path="/5E6FD26D" Ref="#PWR?"  Part="1" 
-AR Path="/5E6F11C7/5E6FD26D" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 5250 6750 50  0001 C CNN
-F 1 "GND" H 5255 6827 50  0000 C CNN
-F 2 "" H 5250 7000 50  0001 C CNN
-F 3 "" H 5250 7000 50  0001 C CNN
-	1    5250 7000
+AR Path="/5E6F11C7/5E6FD26D" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 6050 6750 50  0001 C CNN
+F 1 "GND" H 6055 6827 50  0000 C CNN
+F 2 "" H 6050 7000 50  0001 C CNN
+F 3 "" H 6050 7000 50  0001 C CNN
+	1    6050 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6300 2850 7900 2850
-Text GLabel 7900 2650 2    50   Output ~ 0
-~PI
 Wire Wire Line
 	6300 2650 7900 2650
 Wire Wire Line
@@ -506,30 +457,69 @@ Wire Wire Line
 Connection ~ 7600 5650
 Wire Wire Line
 	7600 5650 7600 5850
-NoConn ~ 7900 2850
-Text Label 7750 2850 0    50   ~ 0
-~PO
-NoConn ~ 3900 1750
 Text Label 3950 1750 0    50   ~ 0
 ControlClock1
-NoConn ~ 7100 3250
-NoConn ~ 7100 3450
-NoConn ~ 7100 3650
-NoConn ~ 7100 3850
-NoConn ~ 7100 4050
-NoConn ~ 7100 4250
-NoConn ~ 7100 4450
-NoConn ~ 7100 4650
-NoConn ~ 5000 4750
-NoConn ~ 5000 4550
-NoConn ~ 5000 4350
-NoConn ~ 5000 4150
-NoConn ~ 5000 3950
-NoConn ~ 5000 3750
-NoConn ~ 5000 3550
-NoConn ~ 5000 3350
+Text HLabel 4550 1150 0    50   Output ~ 0
+RegisterClock
+Text HLabel 4550 1450 0    50   3State ~ 0
+DataBus[0..7]
+Text HLabel 4550 1600 0    50   Output ~ 0
+~RST
+NoConn ~ 3900 1750
+Text HLabel 7900 2650 2    50   Output ~ 0
+~PI
+Text HLabel 7900 2850 2    50   Output ~ 0
+~PO
+Entry Wire Line
+	5000 3350 4900 3250
+Entry Wire Line
+	5000 3550 4900 3450
+Entry Wire Line
+	5000 3750 4900 3650
+Entry Wire Line
+	4900 3850 5000 3950
+Entry Wire Line
+	4900 4050 5000 4150
+Entry Wire Line
+	4900 4250 5000 4350
+Entry Wire Line
+	4900 4450 5000 4550
+Entry Wire Line
+	4900 4650 5000 4750
+Entry Wire Line
+	7200 3150 7100 3250
+Entry Wire Line
+	7200 3350 7100 3450
+Entry Wire Line
+	7200 3550 7100 3650
+Entry Wire Line
+	7200 3750 7100 3850
+Entry Wire Line
+	7200 3950 7100 4050
+Entry Wire Line
+	7200 4150 7100 4250
+Entry Wire Line
+	7200 4350 7100 4450
+Entry Wire Line
+	7200 4550 7100 4650
+Wire Bus Line
+	4900 1300 7200 1300
+Text HLabel 4550 1300 0    50   Output ~ 0
+AddressBus[0..15]
+Wire Bus Line
+	4900 1300 4550 1300
+Connection ~ 4900 1300
+Wire Wire Line
+	3100 950  3100 2000
+Connection ~ 6050 6850
+Wire Wire Line
+	5800 4750 5000 4750
 Wire Bus Line
 	4700 1450 4700 5650
 Wire Bus Line
 	7400 1450 7400 5550
+Wire Bus Line
+	4900 1300 4900 4650
+Wire Bus Line
+	7200 1300 7200 4550
 $EndSCHEMATC
