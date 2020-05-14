@@ -254,65 +254,61 @@ Entry Wire Line
 	3200 4000 3100 3900
 Entry Wire Line
 	3200 4100 3100 4000
-Text Label 4100 4100 0    50   ~ 0
+Text Label 3950 4100 0    50   ~ 0
 AddressBus1
-Text Label 4100 4000 0    50   ~ 0
+Text Label 3950 4000 0    50   ~ 0
 AddressBus0
-Text Label 4100 3900 0    50   ~ 0
+Text Label 3950 3900 0    50   ~ 0
 AddressBus2
-Text Label 4100 3800 0    50   ~ 0
+Text Label 3950 3800 0    50   ~ 0
 AddressBus3
-Text Label 4100 3700 0    50   ~ 0
+Text Label 3950 3700 0    50   ~ 0
 AddressBus4
-Text Label 4100 3600 0    50   ~ 0
+Text Label 3950 3600 0    50   ~ 0
 AddressBus5
-Text Label 4100 3500 0    50   ~ 0
+Text Label 3950 3500 0    50   ~ 0
 AddressBus6
-Text Label 4100 3400 0    50   ~ 0
+Text Label 3950 3400 0    50   ~ 0
 AddressBus7
 Wire Bus Line
 	2950 3100 3100 3100
 Connection ~ 3100 3100
-Wire Wire Line
-	4100 4000 5250 4000
-Wire Wire Line
-	4100 4100 5250 4100
 Wire Bus Line
-	3100 3100 4000 3100
+	3100 3100 3850 3100
 Entry Wire Line
-	4100 3400 4000 3300
+	3950 3400 3850 3300
 Entry Wire Line
-	4100 3500 4000 3400
+	3950 3500 3850 3400
 Entry Wire Line
-	4100 3600 4000 3500
+	3950 3600 3850 3500
 Entry Wire Line
-	4100 3700 4000 3600
+	3950 3700 3850 3600
 Entry Wire Line
-	4100 3800 4000 3700
+	3950 3800 3850 3700
 Entry Wire Line
-	4100 3900 4000 3800
+	3950 3900 3850 3800
 Entry Wire Line
-	4100 4000 4000 3900
+	3950 4000 3850 3900
 Entry Wire Line
-	4100 4100 4000 4000
-NoConn ~ 4600 3400
-NoConn ~ 4600 3500
-NoConn ~ 4600 3600
-NoConn ~ 4600 3700
-NoConn ~ 4600 3800
-NoConn ~ 4600 3900
+	3950 4100 3850 4000
+NoConn ~ 4450 3400
+NoConn ~ 4450 3500
+NoConn ~ 4450 3600
+NoConn ~ 4450 3700
+NoConn ~ 4450 3800
+NoConn ~ 4450 3900
 Wire Wire Line
-	4100 3900 4600 3900
+	3950 3900 4450 3900
 Wire Wire Line
-	4100 3800 4600 3800
+	3950 3800 4450 3800
 Wire Wire Line
-	4100 3700 4600 3700
+	3950 3700 4450 3700
 Wire Wire Line
-	4100 3600 4600 3600
+	3950 3600 4450 3600
 Wire Wire Line
-	4100 3500 4600 3500
+	3950 3500 4450 3500
 Wire Wire Line
-	4100 3400 4600 3400
+	3950 3400 4450 3400
 NoConn ~ 3750 3400
 NoConn ~ 3750 3500
 NoConn ~ 3750 3600
@@ -337,10 +333,14 @@ Wire Wire Line
 	3200 3500 3750 3500
 Wire Wire Line
 	3200 3400 3750 3400
+Wire Wire Line
+	3950 4000 5250 4000
+Wire Wire Line
+	3950 4100 5250 4100
 Wire Bus Line
 	3100 3100 3100 4000
 Wire Bus Line
 	4650 3000 4650 3800
 Wire Bus Line
-	4000 3100 4000 4000
+	3850 3100 3850 4000
 $EndSCHEMATC

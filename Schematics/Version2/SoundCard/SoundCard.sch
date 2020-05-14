@@ -20,7 +20,7 @@ U 1 1 5EBD7A3C
 P 7450 5200
 F 0 "J2" H 7170 5133 50  0000 R CNN
 F 1 "AudioJack3" H 7170 5224 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal" H 7450 5200 50  0001 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ1-3523N" H 7450 5200 50  0001 C CNN
 F 3 "~" H 7450 5200 50  0001 C CNN
 	1    7450 5200
 	-1   0    0    1   
@@ -36,8 +36,6 @@ Wire Wire Line
 Wire Wire Line
 	7250 5100 7150 5100
 Connection ~ 6750 5100
-Text Notes 7350 4900 0    50   ~ 0
-TODO: Need the proper footprint for the audio jack.
 Wire Wire Line
 	3000 1750 3150 1750
 NoConn ~ 3150 1750
