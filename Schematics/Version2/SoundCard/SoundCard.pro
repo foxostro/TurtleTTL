@@ -1,4 +1,4 @@
-update=Wednesday, May 13, 2020 at 07:18:27 PM
+update=Wednesday, May 13, 2020 at 08:52:49 PM
 version=1
 last_client=kicad
 [general]
@@ -12,11 +12,21 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=6
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -29,6 +39,9 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.127
 TrackWidth1=0.254
+TrackWidth2=0.635
+TrackWidth3=1.016
+TrackWidth4=1.27
 ViaDiameter1=0.45
 ViaDrill1=0.2
 dPairWidth1=0.2
@@ -64,19 +77,3 @@ Type=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=1
-[pcbnew/Layer.In3.Cu]
-Name=In3.Cu
-Type=1
-[pcbnew/Layer.In4.Cu]
-Name=In4.Cu
-Type=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
