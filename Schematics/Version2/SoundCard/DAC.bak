@@ -82,7 +82,7 @@ U 1 1 5EC02CCC
 P 5800 2650
 F 0 "U2" H 5800 2800 50  0000 C CNN
 F 1 "MAX505" H 5800 2700 50  0000 C CNN
-F 2 "Package_DIP:DIP-24_W7.62mm_Socket" H 5800 2650 50  0001 C CNN
+F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 5800 2650 50  0001 C CNN
 F 3 "" H 5800 2650 50  0001 C CNN
 	1    5800 2650
 	1    0    0    -1  
@@ -394,7 +394,7 @@ U 1 1 5F0EF0AE
 P 5800 5300
 F 0 "U?" H 5800 5450 50  0000 C CNN
 F 1 "MAX505" H 5800 5350 50  0000 C CNN
-F 2 "Package_DIP:DIP-24_W7.62mm_Socket" H 5800 5300 50  0001 C CNN
+F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 5800 5300 50  0001 C CNN
 F 3 "" H 5800 5300 50  0001 C CNN
 	1    5800 5300
 	1    0    0    -1  
@@ -518,7 +518,7 @@ U 1 1 5F105741
 P 2750 4750
 F 0 "U?" H 2450 5350 50  0000 C CNN
 F 1 "74AHCT138" H 2450 5250 50  0000 C CNN
-F 2 "" H 2750 4750 50  0001 C CNN
+F 2 "Package_SO:SOP-16_4.4x10.4mm_P1.27mm" H 2750 4750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 2750 4750 50  0001 C CNN
 	1    2750 4750
 	1    0    0    -1  
@@ -698,14 +698,14 @@ F 3 "" H 7300 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7300 6100 7300 6150
+Text Notes 8550 4850 0    50   ~ 0
+Outputs 4 through 7 are in [0, +2] volts
+Text Notes 8500 2300 0    50   ~ 0
+Outputs 0 through 3 are in [0, +5] volts
 Wire Bus Line
 	3100 2000 3100 2900
 Wire Bus Line
 	3850 2000 3850 5550
 Wire Bus Line
 	4650 1900 4650 5350
-Text Notes 8550 4850 0    50   ~ 0
-Outputs 4 through 7 are in [0, +2] volts
-Text Notes 8500 2300 0    50   ~ 0
-Outputs 0 through 3 are in [0, +5] volts
 $EndSCHEMATC

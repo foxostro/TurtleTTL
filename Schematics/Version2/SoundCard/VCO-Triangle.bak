@@ -26,7 +26,7 @@ AR Path="/5EC13923/5F0C5AFE" Ref="U?"  Part="1"
 AR Path="/5F0AFE61/5F0C5AFE" Ref="U?"  Part="1" 
 F 0 "U?" H 7750 3500 50  0000 C CNN
 F 1 "AS3340" H 7750 3400 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 8250 3100 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8250 3100 50  0001 C CNN
 F 3 "http://www.alfarzpp.lv/eng/sc/AS3340.pdf" H 8350 2950 50  0001 C CNN
 	1    7750 3400
 	1    0    0    -1  
@@ -434,7 +434,7 @@ AR Path="/5F0C8BE6" Ref="U?"  Part="1"
 AR Path="/5F0AFE61/5F0C8BE6" Ref="U2"  Part="1" 
 F 0 "U2" H 9750 4050 50  0000 C CNN
 F 1 "TL072" H 9750 3950 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 9750 3700 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9750 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9750 3700 50  0001 C CNN
 	1    9750 3700
 	1    0    0    -1  

@@ -109,7 +109,7 @@ U 1 1 5EC1EF44
 P -1250 7900
 F 0 "U1" H -1250 7533 50  0000 C CNN
 F 1 "TL072" H -1250 7624 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H -1250 7900 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H -1250 7900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H -1250 7900 50  0001 C CNN
 	1    -1250 7900
 	1    0    0    1   
@@ -194,7 +194,7 @@ U 3 1 5EC506D7
 P -1350 6750
 F 0 "U1" H -1537 6704 50  0000 R CNN
 F 1 "TL072" H -1537 6795 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H -1350 6750 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H -1350 6750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H -1350 6750 50  0001 C CNN
 	3    -1350 6750
 	1    0    0    -1  
@@ -543,7 +543,7 @@ AR Path="/5F17CA84" Ref="U1"  Part="2"
 AR Path="/5F0AFE61/5F17CA84" Ref="U?"  Part="1" 
 F 0 "U1" H 5550 2350 50  0000 C CNN
 F 1 "TL072" H 5550 2250 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 5550 2000 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5550 2000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5550 2000 50  0001 C CNN
 	2    5550 2000
 	1    0    0    -1  
@@ -642,7 +642,7 @@ U 3 1 5F0DEE3D
 P -900 6750
 F 0 "U2" H -1087 6704 50  0000 R CNN
 F 1 "TL072" H -1087 6795 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H -900 6750 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H -900 6750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H -900 6750 50  0001 C CNN
 	3    -900 6750
 	1    0    0    -1  

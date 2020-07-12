@@ -23,7 +23,7 @@ AR Path="/5F138FD4/5F17EAB0" Ref="U?"  Part="2"
 AR Path="/5F13FB70/5F17EAB0" Ref="U?"  Part="2" 
 F 0 "U?" H 5450 5300 50  0000 C CNN
 F 1 "AS3360" H 5450 5200 50  0000 C CNN
-F 2 "" H 6450 4050 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6450 4050 50  0001 C CNN
 F 3 "http://www.alfarzpp.lv/eng/sc/AS3360.pdf" H 6400 4100 50  0001 C CNN
 	2    5750 4750
 	1    0    0    -1  
@@ -357,7 +357,7 @@ AR Path="/5F138FD4/5F17E0D3" Ref="U?"  Part="1"
 AR Path="/5F13FB70/5F17E0D3" Ref="U?"  Part="1" 
 F 0 "U?" H 5400 3550 50  0000 C CNN
 F 1 "AS3360" H 5400 3450 50  0000 C CNN
-F 2 "" H 6450 2250 50  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6450 2250 50  0001 C CNN
 F 3 "http://www.alfarzpp.lv/eng/sc/AS3360.pdf" H 6400 2300 50  0001 C CNN
 	1    5750 2950
 	1    0    0    -1  
@@ -414,7 +414,7 @@ AR Path="/5F138FD4/5F104189" Ref="U?"  Part="3"
 AR Path="/5F13FB70/5F104189" Ref="U?"  Part="3" 
 F 0 "U?" H 12413 3454 50  0000 R CNN
 F 1 "TL072" H 12413 3545 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 12600 3500 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12600 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12600 3500 50  0001 C CNN
 	3    12600 3500
 	1    0    0    -1  
@@ -437,7 +437,7 @@ AR Path="/5F17CB2D/5F1FCF9C" Ref="U?"  Part="1"
 AR Path="/5F13FB70/5F1FCF9C" Ref="U?"  Part="1" 
 F 0 "U?" H 8100 3500 50  0000 C CNN
 F 1 "TL072" H 8100 3400 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 8100 3150 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8100 3150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8100 3150 50  0001 C CNN
 	1    8100 3150
 	1    0    0    -1  
@@ -528,7 +528,7 @@ AR Path="/5F17CB2D/5F209D32" Ref="U?"  Part="2"
 AR Path="/5F13FB70/5F209D32" Ref="U?"  Part="2" 
 F 0 "U?" H 8100 5300 50  0000 C CNN
 F 1 "TL072" H 8100 5200 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 8100 4950 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8100 4950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8100 4950 50  0001 C CNN
 	2    8100 4950
 	1    0    0    -1  
