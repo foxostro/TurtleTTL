@@ -67,7 +67,7 @@ L Oscillator:ACO-xxxMHz OSC1
 U 1 1 5D387BCA
 P 1150 5500
 F 0 "OSC1" H 807 5546 50  0000 R CNN
-F 1 "10MHz" H 807 5455 50  0000 R CNN
+F 1 "16MHz" H 807 5455 50  0000 R CNN
 F 2 "Oscillator:Oscillator_DIP-14" H 1600 5150 50  0001 C CNN
 F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 1050 5500 50  0001 C CNN
 	1    1150 5500
@@ -214,42 +214,32 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H 3850 5850 50  0001 C CNN
 	1    3850 5850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 1950 3200 1950
 $Comp
 L Device:R R6
 U 1 1 5DEC3D7D
-P 3200 2700
+P 3750 2850
 AR Path="/5D2C0720/5DEC3D7D" Ref="R6"  Part="1" 
 AR Path="/5D2C0761/5DEC3D7D" Ref="R?"  Part="1" 
-F 0 "R6" H 3268 2746 50  0000 L CNN
-F 1 "220Ω" H 3268 2655 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3240 2690 50  0001 C CNN
-F 3 "~" H 3200 2700 50  0001 C CNN
-	1    3200 2700
+F 0 "R6" H 3818 2896 50  0000 L CNN
+F 1 "220Ω" H 3818 2805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3790 2840 50  0001 C CNN
+F 3 "~" H 3750 2850 50  0001 C CNN
+	1    3750 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5DEC3D83
-P 3200 2250
+P 3750 2500
 AR Path="/5D2C0720/5DEC3D83" Ref="D2"  Part="1" 
 AR Path="/5D2C0761/5DEC3D83" Ref="D?"  Part="1" 
-F 0 "D2" V 3239 2133 50  0000 R CNN
-F 1 "Power OK" V 3148 2133 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 3200 2250 50  0001 C CNN
-F 3 "~" H 3200 2250 50  0001 C CNN
-	1    3200 2250
+F 0 "D2" V 3789 2383 50  0000 R CNN
+F 1 "Reset" V 3698 2383 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3750 2500 50  0001 C CNN
+F 3 "~" H 3750 2500 50  0001 C CNN
+	1    3750 2500
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3200 2400 3200 2550
-Wire Wire Line
-	3200 2850 3200 3000
-Wire Wire Line
-	3200 1950 3200 2100
-Wire Wire Line
-	2500 3000 3200 3000
 Text GLabel 10250 1950 2    50   Output ~ 0
 ~RST
 $Comp
@@ -298,21 +288,18 @@ Wire Wire Line
 Wire Wire Line
 	6850 2800 7650 2800
 Wire Wire Line
-	2500 2350 2500 3000
-Connection ~ 2500 3000
-Wire Wire Line
-	3200 3000 3200 3100
+	3750 3150 3750 3250
 $Comp
 L power:GND #PWR?
 U 1 1 5DEC3DB4
-P 3200 3100
+P 3750 3250
 AR Path="/5D2C0761/5DEC3DB4" Ref="#PWR?"  Part="1" 
 AR Path="/5D2C0720/5DEC3DB4" Ref="#PWR0161"  Part="1" 
-F 0 "#PWR0161" H 3200 2850 50  0001 C CNN
-F 1 "GND" H 3205 2927 50  0000 C CNN
-F 2 "" H 3200 3100 50  0001 C CNN
-F 3 "" H 3200 3100 50  0001 C CNN
-	1    3200 3100
+F 0 "#PWR0161" H 3750 3000 50  0001 C CNN
+F 1 "GND" H 3755 3077 50  0000 C CNN
+F 2 "" H 3750 3250 50  0001 C CNN
+F 3 "" H 3750 3250 50  0001 C CNN
+	1    3750 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -721,21 +708,20 @@ Wire Wire Line
 Connection ~ -1650 2850
 Wire Wire Line
 	-1650 2850 -1650 3350
-NoConn ~ -950 2850
 NoConn ~ -950 3350
 NoConn ~ -950 3850
 NoConn ~ -950 4350
 $Comp
 L 74xx:74LS04 U?
 U 1 1 5DFDD475
-P -1250 2850
+P 3350 2350
 AR Path="/5D2C0761/5DFDD475" Ref="U?"  Part="3" 
 AR Path="/5D2C0720/5DFDD475" Ref="U53"  Part="1" 
-F 0 "U53" H -1250 3167 50  0000 C CNN
-F 1 "74AHCT04" H -1250 3076 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H -1250 2850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H -1250 2850 50  0001 C CNN
-	1    -1250 2850
+F 0 "U53" H 3350 2667 50  0000 C CNN
+F 1 "74AHCT04" H 3350 2576 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3350 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ahct04.pdf" H 3350 2350 50  0001 C CNN
+	1    3350 2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -836,14 +822,6 @@ F 3 "~" H 1450 2150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2500 3000 1450 3000
-Wire Wire Line
-	1450 2150 1450 3000
-Connection ~ 3200 3000
-Connection ~ 3200 1950
-Wire Wire Line
-	3200 1950 4050 1950
-Wire Wire Line
 	1450 800  1450 950 
 Wire Wire Line
 	1450 1150 1450 1350
@@ -853,14 +831,12 @@ Connection ~ 1450 1350
 Wire Wire Line
 	1450 1350 1450 1750
 Wire Wire Line
-	2500 1350 2500 1550
+	4350 4000 4350 1950
+Connection ~ 4350 1950
 Wire Wire Line
-	4050 4000 4050 1950
-Connection ~ 4050 1950
+	4350 4000 5850 4000
 Wire Wire Line
-	4050 4000 5850 4000
-Wire Wire Line
-	4050 1950 10250 1950
+	4350 1950 10250 1950
 Connection ~ -3200 2950
 $Comp
 L Device:C C?
@@ -1025,4 +1001,33 @@ Wire Wire Line
 	3450 4800 3450 5350
 Text Notes 4500 2550 0    50   ~ 0
 Pass register clock through the 157 too,\nto reduce skew between the two clocks.
+Wire Wire Line
+	2900 1950 3000 1950
+Wire Wire Line
+	1450 3150 2500 3150
+Connection ~ 2500 3150
+Wire Wire Line
+	2500 3150 3750 3150
+Wire Wire Line
+	2500 2350 2500 3150
+Wire Wire Line
+	1450 2150 1450 3150
+Wire Wire Line
+	3750 2350 3650 2350
+Wire Wire Line
+	3750 2650 3750 2700
+Connection ~ 3750 3150
+Wire Wire Line
+	3750 3150 3750 3000
+Wire Wire Line
+	3050 2350 3000 2350
+Wire Wire Line
+	3000 2350 3000 1950
+Connection ~ 3000 1950
+Wire Wire Line
+	3000 1950 4350 1950
+Text Notes 2950 1900 0    50   ~ 0
+An inverter is necessary as a buffer,\nto avoid pulling too much current\nfrom the MCP100.
+Wire Wire Line
+	2500 1350 2500 1550
 $EndSCHEMATC
