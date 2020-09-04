@@ -902,6 +902,4 @@ F 3 "" H 6200 6850 50  0001 C CNN
 	1    6200 6850
 	-1   0    0    1   
 $EndComp
-Text Notes 1600 6000 0    100  ~ 0
-TODO: Add test points
 $EndSCHEMATC
