@@ -4430,7 +4430,7 @@
   )
 
   (gr_arc (start 64.77 104.14) (end 64.77 102.87) (angle -90) (layer Edge.Cuts) (width 0.05))
-  (gr_text "© 2020 Andrew Fox" (at 87.757 104.902) (layer B.SilkS) (tstamp 5EB08C87)
+  (gr_text "© 2020 Andrew Fox" (at 90.9066 104.8512) (layer B.SilkS) (tstamp 5EB08C87)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left mirror))
   )
   (gr_text -15V (at 155.575 118.745 90) (layer F.SilkS) (tstamp 5EBC2BE8)
@@ -4445,7 +4445,7 @@
   (gr_line (start 63.5 104.14) (end 63.5 137.414) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 165.1 102.87) (end 64.77 102.87) (layer Edge.Cuts) (width 0.05) (tstamp 5EB08C71))
   (gr_line (start 165.1 137.414) (end 165.1 102.87) (layer Edge.Cuts) (width 0.05))
-  (gr_text "Sound Card, Rev 3" (at 87.757 107.442) (layer B.SilkS) (tstamp 5EAF83D7)
+  (gr_text "Sound Card, Rev 3" (at 90.9066 107.3912) (layer B.SilkS) (tstamp 5EAF83D7)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left mirror))
   )
   (gr_line (start 63.5 137.414) (end 165.1 137.414) (layer Edge.Cuts) (width 0.05) (tstamp 5D9D67FC))
