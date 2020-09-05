@@ -968,10 +968,6 @@ $EndComp
 Wire Wire Line
 	5850 3100 5750 3100
 Wire Wire Line
-	5750 3100 5750 3150
-Wire Wire Line
-	5750 3200 5850 3200
-Wire Wire Line
 	3450 5350 3450 5850
 Wire Wire Line
 	3050 5600 3200 5600
@@ -980,12 +976,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 4300 5200 4300
 Wire Wire Line
-	5200 4300 5200 3150
-Wire Wire Line
-	5200 3150 5750 3150
-Connection ~ 5750 3150
-Wire Wire Line
-	5750 3150 5750 3200
+	5200 4300 5200 3200
 Wire Wire Line
 	6850 3100 7150 3100
 Wire Wire Line
@@ -1030,4 +1021,17 @@ Text Notes 2950 1900 0    50   ~ 0
 An inverter is necessary as a buffer,\nto avoid pulling too much current\nfrom the MCP100.
 Wire Wire Line
 	2500 1350 2500 1550
+Wire Wire Line
+	5200 3200 5850 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5F533C17
+P 5750 3100
+F 0 "#PWR?" H 5750 2850 50  0001 C CNN
+F 1 "GND" V 5755 2972 50  0000 R CNN
+F 2 "" H 5750 3100 50  0001 C CNN
+F 3 "" H 5750 3100 50  0001 C CNN
+	1    5750 3100
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
