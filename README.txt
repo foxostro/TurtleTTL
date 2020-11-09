@@ -1,0 +1,1 @@
+TurtleTTL is an eight-bit microcomputer built from discrete logic ICs. The project also includes a CPU simulator, assembler, and a compiler for a new high-level programming language targeting the hardware.
