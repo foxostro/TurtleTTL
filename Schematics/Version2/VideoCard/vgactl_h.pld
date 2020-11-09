@@ -1,0 +1,25 @@
+GAL22V10     ; VGA horizontal counter control logic
+vgactl_h
+
+
+Clock D0    D1    D2    D3    D4    D5    D6    D7    D8        NC       GND
+/OE   NC    NC    NC    Q4    Q3    Q2    Q1    Q0    HBlank    HSync    VCC
+
+
+Q0 =      /D7 + /D6 +  D5 +  D4 + /D3 +  D2 +  D1 +  D0 ;  11001000
+Q1 =      /D7 + /D6 +  D5 + /D4 +  D3 +  D2 + /D1 +  D0 ;  11010010
+Q2 =      /D7 + /D6 + /D5 + /D4 +  D3 +  D2 + /D1 +  D0 ;  11110010
+Q3 = /D8 + D7 +  D6 +  D5 +  D4 + /D3 +  D2 +  D1 +  D0 ; 100001000
+Q4 = /D8 + D7 +  D6 +  D5 +  D4 + /D3 +  D2 +  D1 + /D0 ; 100001001
+
+HSync.R = HSync * Q1 + /Q2
+HBlank.R = HBlank * Q0 + /Q3
+
+
+
+DESCRIPTION
+
+This is the control logic for the VGA horizontal counter.
+
+HSync is the VGA horizontal sync pulse
+HBlank is asserted during the horizontal blanking period

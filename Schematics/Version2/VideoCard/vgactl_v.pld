@@ -1,0 +1,25 @@
+GAL22V10     ; VGA vertical counter control logic
+vgactl_v
+
+
+Clock D0    D1    D2    D3    D4    D5    D6    D7    D8        D9       GND
+/OE   NC    NC    NC    Q4    Q3    Q2    Q1    Q0    VBlank    VSync    VCC
+
+
+Q0 = /D9 +   D8 +   D7 + /D6 +  D5 + /D4 + /D3 +  D2 +  D1 +  D0 ;  1001011000
+Q1 = /D9 +   D8 +   D7 + /D6 +  D5 + /D4 + /D3 +  D2 +  D1 + /D0 ;  1001011001
+Q2 = /D9 +   D8 +   D7 + /D6 +  D5 + /D4 + /D3 + /D2 +  D1 + /D0 ;  1001011101
+Q3 = /D9 +   D8 +   D7 + /D6 + /D5 + /D4 +  D3 + /D2 +  D1 +  D0 ;  1001110100
+Q4 = /D9 +   D8 +   D7 + /D6 + /D5 + /D4 +  D3 + /D2 +  D1 + /D0 ;  1001110101
+
+VSync.R = VSync * Q1 + /Q2
+VBlank.R = VBlank * Q0 + /Q3
+
+
+
+DESCRIPTION
+
+This is the control logic for the VGA vertical counter.
+
+VSync is the VGA vertical sync pulse
+VBlank is asserted during the vertical blanking period
